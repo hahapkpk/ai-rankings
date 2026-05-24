@@ -81,6 +81,7 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: '.'
+          exclude-path: 'node_modules'
 
       - name: 🚀 Deploy to GitHub Pages
         id: deployment

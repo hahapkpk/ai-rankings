@@ -1,15 +1,9 @@
 /**
- * AI Rankings Data Fetcher
+ * AI Rankings Data Fetcher v2
  * 
- * Uses Puppeteer to scrape data from 4 sources:
- * 1. OpenRouter Rankings (https://openrouter.ai/rankings)
- * 2. Vals AI SWE-bench (https://www.vals.ai/benchmarks/swebench)
- * 3. Arena AI Leaderboard (https://lmarena.ai/leaderboard/text)
- * 4. TERMS-Bench (https://terms-bench.github.io)
- * 
- * Outputs: data/latest-snapshot.json
- * 
- * Usage: node fetch-data.js
+ * Uses Puppeteer to scrape rendered data from 4 sources.
+ * Strategy: extract rendered HTML from tables, save as JSON.
+ * The build script then injects into the page template.
  */
 
 const puppeteer = require('puppeteer');
@@ -25,7 +19,7 @@ async function autoScroll(page) {
   await page.evaluate(async () => {
     await new Promise((resolve) => {
       let totalHeight = 0;
-      const distance = 300;
+      const distance = 500;
       const timer = setInterval(() => {
         const scrollHeight = document.body.scrollHeight;
         window.scrollBy(0, distance);
@@ -34,90 +28,86 @@ async function autoScroll(page) {
           clearInterval(timer);
           resolve();
         }
-      }, 100);
+      }, 150);
     });
   });
-  await new Promise(r => setTimeout(r, 1000));
-}
-
-async function waitForContent(page, selector, timeout = 15000) {
-  try {
-    await page.waitForSelector(selector, { timeout });
-    await new Promise(r => setTimeout(r, 2000));
-  } catch (e) {
-    console.warn(`  Warning: selector ${selector} not found within timeout`);
-  }
+  await new Promise(r => setTimeout(r, 1500));
 }
 
 // ============================================================
-// 1. OpenRouter Rankings
+// 1. OpenRouter Rankings - Extract from rendered DOM
 // ============================================================
 async function fetchOpenRouter(page) {
   console.log('📊 Fetching OpenRouter Rankings...');
-  const url = 'https://openrouter.ai/rankings';
-  await page.goto(url, { waitUntil: 'networkidle2', timeout: 30000 });
-  await autoScroll(page);
   
-  const data = await page.evaluate(() => {
-    const result = {
-      leaderboard: { today: [], week: [], month: [], trending: [] },
-      marketShare: [],
-      categories: {},
-      apps: { today: [], week: [], month: [] },
-      benchmarks: [],
-      fastest: [],
-      fetchedAt: new Date().toISOString()
-    };
-    
-    // Leaderboard tables
-    const periods = ['today', 'week', 'month', 'trending'];
-    periods.forEach(p => {
-      const table = document.querySelector(`[data-period="${p}"] tbody`) || 
-                    document.querySelector(`.period-table[data-period="${p}"] tbody`);
-      if (table) {
-        table.querySelectorAll('tr').forEach(tr => {
-          const cells = tr.querySelectorAll('td');
-          if (cells.length >= 4) {
-            result.leaderboard[p].push({
-              rank: cells[0]?.textContent.trim(),
-              model: cells[1]?.textContent.trim(),
-              provider: cells[2]?.textContent.trim(),
-              tokens: cells[3]?.textContent.trim(),
-              change: cells[4]?.textContent.trim()
+  const result = {
+    leaderboard: {},
+    fetchedAt: new Date().toISOString()
+  };
+  
+  // Try fetching weekly leaderboard
+  const periods = [
+    { key: 'week', url: 'https://openrouter.ai/rankings?view=week' },
+    { key: 'today', url: 'https://openrouter.ai/rankings?view=day' },
+    { key: 'month', url: 'https://openrouter.ai/rankings?view=month' },
+    { key: 'trending', url: 'https://openrouter.ai/rankings?view=trending' }
+  ];
+  
+  for (const period of periods) {
+    try {
+      console.log(`  Fetching ${period.key}...`);
+      await page.goto(period.url, { waitUntil: 'networkidle2', timeout: 30000 });
+      await autoScroll(page);
+      
+      const rows = await page.evaluate(() => {
+        const results = [];
+        // Try multiple selector strategies
+        const selectors = [
+          'table tbody tr',
+          '[class*="rankings"] tr',
+          '[class*="leaderboard"] tr',
+          'a[href*="/models/"]'
+        ];
+        
+        for (const sel of selectors) {
+          const els = document.querySelectorAll(sel);
+          if (els.length > 3) {
+            els.forEach(el => {
+              if (sel.includes('a[href')) {
+                // Extract from link elements
+                const row = el.closest('tr') || el.closest('[class*="row"]');
+                if (row) {
+                  const cells = row.querySelectorAll('td, [class*="cell"]');
+                  if (cells.length >= 3) {
+                    results.push(Array.from(cells).map(c => c.textContent.trim()));
+                  }
+                }
+              } else {
+                const cells = el.querySelectorAll('td');
+                if (cells.length >= 3) {
+                  results.push(Array.from(cells).map(c => c.textContent.trim()));
+                }
+              }
             });
+            break;
           }
-        });
-      }
-    });
-    
-    // If period-specific tables not found, try main table
-    if (result.leaderboard.week.length === 0) {
-      const mainTable = document.querySelector('table tbody');
-      if (mainTable) {
-        mainTable.querySelectorAll('tr').forEach(tr => {
-          const cells = tr.querySelectorAll('td');
-          if (cells.length >= 4) {
-            result.leaderboard.week.push({
-              rank: cells[0]?.textContent.trim(),
-              model: cells[1]?.textContent.trim(),
-              provider: cells[2]?.textContent.trim(),
-              tokens: cells[3]?.textContent.trim(),
-              change: cells[4]?.textContent.trim()
-            });
-          }
-        });
-      }
+        }
+        return results;
+      });
+      
+      result.leaderboard[period.key] = rows;
+      console.log(`  ✓ ${period.key}: ${rows.length} models`);
+    } catch (e) {
+      console.warn(`  ✗ ${period.key}: ${e.message}`);
+      result.leaderboard[period.key] = [];
     }
-    
-    return result;
-  });
+  }
   
-  console.log(`  ✓ Leaderboard: ${data.leaderboard.week.length} models`);
-  return data;
+  return result;
 }
 
 // ============================================================
-// 2. Vals AI SWE-bench
+// 2. Vals AI SWE-bench - Extract from rendered DOM
 // ============================================================
 async function fetchValsAI(page) {
   console.log('🧪 Fetching Vals AI...');
@@ -126,28 +116,20 @@ async function fetchValsAI(page) {
   await autoScroll(page);
   
   const data = await page.evaluate(() => {
-    const result = {
-      swebench: [],
-      benchmarks: [],
-      fetchedAt: new Date().toISOString()
-    };
-    
-    // SWE-bench table
-    const table = document.querySelector('table tbody');
+    const results = [];
+    const table = document.querySelector('table');
     if (table) {
-      table.querySelectorAll('tr').forEach(tr => {
-        const cells = tr.querySelectorAll('td');
-        if (cells.length >= 2) {
-          const row = {};
-          cells.forEach((cell, i) => {
-            row[`col${i}`] = cell.textContent.trim();
-          });
-          result.swebench.push(row);
+      const thead = table.querySelector('thead tr');
+      const headers = thead ? Array.from(thead.querySelectorAll('th')).map(th => th.textContent.trim()) : [];
+      
+      table.querySelectorAll('tbody tr').forEach(tr => {
+        const cells = Array.from(tr.querySelectorAll('td')).map(td => td.textContent.trim());
+        if (cells.length > 0) {
+          results.push({ headers, cells });
         }
       });
     }
-    
-    return result;
+    return { swebench: results, fetchedAt: new Date().toISOString() };
   });
   
   console.log(`  ✓ SWE-bench: ${data.swebench.length} entries`);
@@ -155,51 +137,42 @@ async function fetchValsAI(page) {
 }
 
 // ============================================================
-// 3. Arena AI Leaderboard
+// 3. Arena AI Leaderboard - Extract from rendered DOM
 // ============================================================
 async function fetchArenaAI(page) {
   console.log('⚔️ Fetching Arena AI...');
   const url = 'https://lmarena.ai/leaderboard/text';
   await page.goto(url, { waitUntil: 'networkidle2', timeout: 30000 });
-  await waitForContent(page, 'table');
+  
+  // Wait for table to appear
+  try {
+    await page.waitForSelector('table', { timeout: 20000 });
+  } catch (e) {
+    console.warn('  Warning: table not found in time');
+  }
   await autoScroll(page);
   
   const data = await page.evaluate(() => {
-    const result = {
-      textLeaderboard: [],
-      categories: [],
-      fetchedAt: new Date().toISOString()
-    };
+    const results = [];
+    const tables = document.querySelectorAll('table');
     
-    // Main leaderboard table
-    const table = document.querySelector('table tbody');
-    if (table) {
-      const headers = [];
-      const thead = document.querySelector('table thead tr');
-      if (thead) {
-        thead.querySelectorAll('th').forEach(th => {
-          headers.push(th.textContent.trim());
-        });
-      }
+    for (const table of tables) {
+      const thead = table.querySelector('thead tr');
+      const headers = thead ? Array.from(thead.querySelectorAll('th')).map(th => th.textContent.trim()) : [];
       
-      table.querySelectorAll('tr').forEach(tr => {
-        const cells = tr.querySelectorAll('td');
-        if (cells.length >= 2) {
-          const row = {};
-          cells.forEach((cell, i) => {
-            row[headers[i] || `col${i}`] = cell.textContent.trim();
-          });
-          result.textLeaderboard.push(row);
-        }
+      const rows = [];
+      table.querySelectorAll('tbody tr').forEach(tr => {
+        const cells = Array.from(tr.querySelectorAll('td')).map(td => td.textContent.trim());
+        if (cells.length > 0) rows.push(cells);
       });
+      
+      if (rows.length > results.length) {
+        results.length = 0;
+        results.push(...rows.map(r => ({ headers, cells: r })));
+      }
     }
     
-    // Category pills/tags
-    document.querySelectorAll('.category-tag, .pill, [data-category]').forEach(el => {
-      result.categories.push(el.textContent.trim());
-    });
-    
-    return result;
+    return { textLeaderboard: results, fetchedAt: new Date().toISOString() };
   });
   
   console.log(`  ✓ Arena: ${data.textLeaderboard.length} models`);
@@ -207,48 +180,18 @@ async function fetchArenaAI(page) {
 }
 
 // ============================================================
-// 4. TERMS-Bench
+// 4. TERMS-Bench - Extract from rendered DOM
 // ============================================================
 async function fetchTermsBench(page) {
   console.log('🤝 Fetching TERMS-Bench...');
-  const url = 'https://terms-bench.github.io/?theme=light&regime=overall&family_kind=all&difficulty_kind=all&diag_kind=all&commerce_src=grounded&commerce_persp=all&bankroll_src=synthetic&bankroll_mode=pool&bankroll_stats=mean';
-  await page.goto(url, { waitUntil: 'networkidle2', timeout: 30000 });
-  await waitForContent(page, 'table', 20000);
-  await new Promise(r => setTimeout(r, 3000));
   
-  const data = await page.evaluate(() => {
-    const result = {
-      main: { overall: [], overlap: [], urgency: [], nodeal: [] },
-      commerce: {},
-      bankroll: [],
-      difficulty: [],
-      robustness: [],
-      diagnostics: {},
-      fetchedAt: new Date().toISOString()
-    };
-    
-    // Main table
-    function extractTable(tableEl) {
-      if (!tableEl) return [];
-      const rows = [];
-      tableEl.querySelectorAll('tbody tr').forEach(tr => {
-        const cells = [];
-        tr.querySelectorAll('td').forEach(td => cells.push(td.textContent.trim()));
-        if (cells.length > 0) rows.push(cells);
-      });
-      return rows;
-    }
-    
-    const mainTable = document.querySelector('table');
-    if (mainTable) {
-      result.main.overall = extractTable(mainTable);
-    }
-    
-    return result;
-  });
+  const result = {
+    main: {},
+    fetchedAt: new Date().toISOString()
+  };
   
-  // Fetch different regimes
   const regimes = [
+    { key: 'overall', param: 'overall' },
     { key: 'overlap', param: 'overlap' },
     { key: 'urgency', param: 'urgency_shift' },
     { key: 'nodeal', param: 'no_deal' }
@@ -257,39 +200,41 @@ async function fetchTermsBench(page) {
   for (const regime of regimes) {
     try {
       console.log(`  Fetching regime: ${regime.key}...`);
-      await page.goto(`https://terms-bench.github.io/?theme=light&regime=${regime.param}`, { 
-        waitUntil: 'networkidle2', timeout: 20000 
-      });
-      await waitForContent(page, 'table', 15000);
+      const url = `https://terms-bench.github.io/?theme=light&regime=${regime.param}`;
+      await page.goto(url, { waitUntil: 'networkidle2', timeout: 20000 });
+      
+      try {
+        await page.waitForSelector('table', { timeout: 15000 });
+      } catch (e) {}
       await new Promise(r => setTimeout(r, 2000));
       
-      const regimeData = await page.evaluate(() => {
+      const data = await page.evaluate(() => {
         const table = document.querySelector('table');
         if (!table) return [];
         const rows = [];
         table.querySelectorAll('tbody tr').forEach(tr => {
-          const cells = [];
-          tr.querySelectorAll('td').forEach(td => cells.push(td.textContent.trim()));
+          const cells = Array.from(tr.querySelectorAll('td')).map(td => td.textContent.trim());
           if (cells.length > 0) rows.push(cells);
         });
         return rows;
       });
       
-      data.main[regime.key] = regimeData;
+      result.main[regime.key] = data;
+      console.log(`  ✓ ${regime.key}: ${data.length} agents`);
     } catch (e) {
-      console.warn(`  Warning: Failed to fetch regime ${regime.key}: ${e.message}`);
+      console.warn(`  ✗ ${regime.key}: ${e.message}`);
+      result.main[regime.key] = [];
     }
   }
   
-  console.log(`  ✓ TERMS: overall=${data.main.overall.length}, overlap=${data.main.overlap.length}`);
-  return data;
+  return result;
 }
 
 // ============================================================
 // Main
 // ============================================================
 async function main() {
-  console.log('🚀 Starting AI Rankings data fetch...\n');
+  console.log('🚀 Starting AI Rankings data fetch v2...\n');
   
   const browser = await puppeteer.launch({
     headless: 'new',
@@ -298,7 +243,6 @@ async function main() {
       '--disable-setuid-sandbox',
       '--disable-dev-shm-usage',
       '--disable-gpu',
-      '--disable-software-rasterizer',
       '--window-size=1920,1080'
     ]
   });
@@ -308,12 +252,11 @@ async function main() {
   await page.setUserAgent('Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36');
   
   const snapshot = {
-    version: '1.0',
+    version: '2.0',
     fetchedAt: new Date().toISOString(),
     sources: {}
   };
   
-  // Fetch each source (with error recovery)
   const fetchers = [
     { name: 'openrouter', fn: fetchOpenRouter },
     { name: 'valsai', fn: fetchValsAI },
@@ -334,26 +277,21 @@ async function main() {
   
   // Save snapshot
   fs.writeFileSync(SNAPSHOT_FILE, JSON.stringify(snapshot, null, 2));
-  console.log(`\n✅ Snapshot saved to ${SNAPSHOT_FILE}`);
-  console.log(`   Total size: ${(fs.statSync(SNAPSHOT_FILE).size / 1024).toFixed(1)} KB`);
+  console.log(`\n✅ Snapshot saved: ${(fs.statSync(SNAPSHOT_FILE).size / 1024).toFixed(1)} KB`);
   
-  // Also save a metadata file for the page to check
+  // Save metadata
   const meta = {
     lastUpdated: snapshot.fetchedAt,
-    sources: Object.keys(snapshot.sources).reduce((acc, k) => {
-      acc[k] = { 
-        status: snapshot.sources[k].error ? 'error' : 'ok',
-        itemCount: snapshot.sources[k].leaderboard?.week?.length || 
-                   snapshot.sources[k].swebench?.length ||
-                   snapshot.sources[k].textLeaderboard?.length ||
-                   snapshot.sources[k].main?.overall?.length || 0
-      };
-      return acc;
-    }, {})
+    sources: {}
   };
+  for (const k of Object.keys(snapshot.sources)) {
+    const s = snapshot.sources[k];
+    meta.sources[k] = {
+      status: s.error ? 'error' : 'ok',
+      itemCount: s.leaderboard?.week?.length || s.swebench?.length || s.textLeaderboard?.length || s.main?.overall?.length || 0
+    };
+  }
   fs.writeFileSync(path.join(OUT_DIR, 'meta.json'), JSON.stringify(meta, null, 2));
-  
-  return snapshot;
 }
 
 main().catch(err => {
