@@ -8,6 +8,12 @@ on:
     - cron: '0 12 * * *'   # 北京时间 20:00
   # 支持手动触发
   workflow_dispatch:
+  # 推送到 main 时也部署
+  push:
+    branches: [main]
+    paths:
+      - 'index.html'
+      - 'data/**'
 
 permissions:
   contents: write
@@ -19,9 +25,12 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  update-data:
+  update-and-deploy:
     runs-on: ubuntu-latest
     timeout-minutes: 15
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     
     steps:
       - name: 📥 Checkout repository
@@ -44,7 +53,7 @@ jobs:
       - name: 🏗️ Build page with fresh data
         run: node build-page.js
 
-      - name: 📊 Check for changes
+      - name: 📊 Check for data changes
         id: check_changes
         run: |
           if git diff --quiet index.html data/; then
@@ -56,7 +65,7 @@ jobs:
             git diff --stat index.html data/
           fi
 
-      - name: 📤 Commit changes
+      - name: 📤 Commit data changes
         if: steps.check_changes.outputs.has_changes == 'true'
         run: |
           git config user.name "github-actions[bot]"
@@ -65,6 +74,18 @@ jobs:
           TIMESTAMP=$(TZ='Asia/Shanghai' date '+%Y-%m-%d %H:%M:%S CST')
           git commit -m "🔄 自动更新排行榜数据 - ${TIMESTAMP}" || true
           git push
+
+      - name: 🔧 Setup Pages
+        uses: actions/configure-pages@v4
+
+      - name: 📤 Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: '.'
+
+      - name: 🚀 Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
 
       - name: 📋 Summary
         if: always()
@@ -80,27 +101,5 @@ jobs:
             echo '```' >> $GITHUB_STEP_SUMMARY
           fi
           echo "" >> $GITHUB_STEP_SUMMARY
-          echo "**Changes:** ${{ steps.check_changes.outputs.has_changes }}" >> $GITHUB_STEP_SUMMARY
-
-  deploy:
-    needs: update-data
-    runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    
-    steps:
-      - name: 📥 Checkout repository
-        uses: actions/checkout@v4
-
-      - name: 🔧 Setup Pages
-        uses: actions/configure-pages@v4
-
-      - name: 📤 Upload artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: '.'
-
-      - name: 🚀 Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+          echo "**Data Changes:** ${{ steps.check_changes.outputs.has_changes }}" >> $GITHUB_STEP_SUMMARY
+          echo "**Site URL:** ${{ steps.deployment.outputs.page_url }}" >> $GITHUB_STEP_SUMMARY
