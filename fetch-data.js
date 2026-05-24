@@ -53,11 +53,15 @@ async function fetchOpenRouter(page) {
   };
   
   try {
-    // Step 1: Fetch all models from the public API
-    console.log('  Step 1: Fetching model data from API...');
+    // Step 1: Navigate to OpenRouter first (to avoid CORS issues with fetch)
+    console.log('  Step 1: Navigating to OpenRouter for API access...');
+    await page.goto('https://openrouter.ai/rankings', { waitUntil: 'networkidle2', timeout: 30000 });
+    
+    // Step 2: Fetch all models from the public API (same-origin, no CORS)
+    console.log('  Step 2: Fetching model data from API...');
     const apiData = await page.evaluate(async () => {
       try {
-        const res = await fetch('https://openrouter.ai/api/frontend/models');
+        const res = await fetch('/api/frontend/models');
         const json = await res.json();
         return json;
       } catch (e) {
