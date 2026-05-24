@@ -1,9 +1,21 @@
 {
-  "lastUpdated": "2026-05-24T11:50:00.000Z",
+  "lastUpdated": "2026-05-24T12:02:06.794Z",
   "sources": {
-    "openrouter": { "status": "embedded", "itemCount": 10 },
-    "valsai": { "status": "embedded", "itemCount": 20 },
-    "arena": { "status": "embedded", "itemCount": 50 },
-    "terms": { "status": "embedded", "itemCount": 15 }
+    "openrouter": {
+      "status": "ok",
+      "itemCount": 0
+    },
+    "valsai": {
+      "status": "ok",
+      "itemCount": 0
+    },
+    "arena": {
+      "status": "ok",
+      "itemCount": 360
+    },
+    "terms": {
+      "status": "ok",
+      "itemCount": 5
+    }
   }
 }
