@@ -45,11 +45,13 @@ function build() {
     return;
   }
   
-  // Update timestamp
+  // Update timestamp - only replace in visible HTML content, not inside script tags
   const ts = formatTimestamp(snapshot.fetchedAt);
+  // Replace timestamp in HTML text nodes (not inside <script> tags)
+  // Match "⏱ 数据获取时间：" followed by timestamp format, but not inside quotes of JS strings
   html = html.replace(
-    /⏱ 数据获取时间：[^<]*/g,
-    `⏱ 数据获取时间：${ts}`
+    /(⏱ 数据获取时间：)\d{4}\/\d{2}\/\d{2} \d{2}:\d{2}:\d{2} \(UTC\+8\)/g,
+    `$1${ts}`
   );
   
   // Update OpenRouter leaderboard data if available

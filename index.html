@@ -739,7 +739,7 @@ th.sortable.desc::after { content: '↓'; opacity: 1; }
   .bench-grid { grid-template-columns: 1fr; }
 }
 </style>
-  <meta name="data-updated" content="2026-05-24T12:48:46.331Z" />
+  <meta name="data-updated" content="2026-05-24T12:45:18.555Z" />
 </head>
 <body>
 
@@ -825,17 +825,17 @@ th.sortable.desc::after { content: '↓'; opacity: 1; }
       <div class="table-wrap"><table>
         <thead><tr><th style="width:36px">#</th><th>模型</th><th style="text-align:right">Token 用量</th><th style="text-align:right">日变化</th></tr></thead>
         <tbody>
-      <tr><td>1</td><td class="model-name">Qwen3.7 Max 🧠<span class="provider">· Qwen</span></td><td>$0/$0</td><td>1000K</td></tr>
-      <tr><td>2</td><td class="model-name">Grok Build 0.1 🧠<span class="provider">· xAI</span></td><td>$0/$0</td><td>256K</td></tr>
-      <tr><td>3</td><td class="model-name">Gemini 3.5 Flash 🧠<span class="provider">· Google</span></td><td>$0/$0</td><td>1049K</td></tr>
-      <tr><td>4</td><td class="model-name">Claude Opus 4.7 (Fast) 🧠<span class="provider">· Anthropic</span></td><td>$0/$0</td><td>1000K</td></tr>
-      <tr><td>5</td><td class="model-name">qwen<span class="provider">· </span></td><td>$0/$0</td><td></td></tr>
-      <tr><td>6</td><td class="model-name">mistralai<span class="provider">· </span></td><td>$0/$0</td><td></td></tr>
-      <tr><td>7</td><td class="model-name">Voxtral Mini Transcribe<span class="provider">· Mistral AI</span></td><td>$0/$0</td><td></td></tr>
-      <tr><td>8</td><td class="model-name">deepseek<span class="provider">· </span></td><td>$0/$0</td><td></td></tr>
-      <tr><td>9</td><td class="model-name">Hermes 4 70B 🧠<span class="provider">· Nous Research</span></td><td>$0/$0</td><td>131K</td></tr>
-      <tr><td>10</td><td class="model-name">commands<span class="provider">· </span></td><td>$0/$0</td><td></td></tr>
-      </tbody>
+          <tr><td class="rank rank-1">1</td><td class="model-cell"><span class="model-name">Hy3 Preview</span><span class="provider">Tencent</span></td><td class="stat-val">408 B</td><td class="stat-pct pct-up">+7%</td></tr>
+          <tr><td class="rank rank-2">2</td><td class="model-cell"><span class="model-name">DeepSeek V4 Flash</span><span class="provider">DeepSeek</span></td><td class="stat-val">304 B</td><td class="stat-pct pct-up">+53%</td></tr>
+          <tr><td class="rank rank-3">3</td><td class="model-cell"><span class="model-name">Claude Opus 4.7</span><span class="provider">Anthropic</span></td><td class="stat-val">270 B</td><td class="stat-pct pct-up">+37%</td></tr>
+          <tr><td class="rank">4</td><td class="model-cell"><span class="model-name">Claude Sonnet 4.6</span><span class="provider">Anthropic</span></td><td class="stat-val">214 B</td><td class="stat-pct pct-up">+40%</td></tr>
+          <tr><td class="rank">5</td><td class="model-cell"><span class="model-name">Owl Alpha</span><span class="provider">OpenRouter</span></td><td class="stat-val">189 B</td><td class="stat-pct pct-up">+109%</td></tr>
+          <tr><td class="rank">6</td><td class="model-cell"><span class="model-name">DeepSeek V4 Pro</span><span class="provider">DeepSeek</span></td><td class="stat-val">133 B</td><td class="stat-pct pct-up">+20%</td></tr>
+          <tr><td class="rank">7</td><td class="model-cell"><span class="model-name">DeepSeek V3.2</span><span class="provider">DeepSeek</span></td><td class="stat-val">123 B</td><td class="stat-pct pct-up">+8%</td></tr>
+          <tr><td class="rank">8</td><td class="model-cell"><span class="model-name">Gemini 3 Flash Preview</span><span class="provider">Google</span></td><td class="stat-val">119 B</td><td class="stat-pct pct-up">+30%</td></tr>
+          <tr><td class="rank">9</td><td class="model-cell"><span class="model-name">MiMo-V2.5-Pro</span><span class="provider">Xiaomi</span></td><td class="stat-val">111 B</td><td class="stat-pct pct-up">+262%</td></tr>
+          <tr><td class="rank">10</td><td class="model-cell"><span class="model-name">Nemotron 3 Super（免费）</span><span class="provider">NVIDIA</span></td><td class="stat-val">89.5 B</td><td class="stat-pct pct-up">+4%</td></tr>
+        </tbody>
       </table></div>
     </div>
 
@@ -2474,7 +2474,222 @@ function setTimestamp() {
   var now = new Date();
   var s = now.toLocaleString('zh-CN', { year:'numeric', month:'2-digit', day:'2-digit', hour:'2-digit', minute:'2-digit', second:'2-digit', hour12:false });
   var el = document.getElementById('updateTime');
-  if (el) el.textContent = '⏱ 数据获取时间：2026/05/24 20:48:46 (UTC+8)<span style="display:inline-block;padding:1px 6px;border-radius:4px;font-size:0.7rem;background:' + c + '22;color:' + c + ';margin-left:4px;">' + l + '</span>';
+  if (el) el.textContent = '⏱ 数据获取时间：' + s + ' (UTC+8)';
+}
+setTimestamp();
+
+// ============================================================
+// 12. TERMS-BENCH DATA & RENDERING
+// ============================================================
+setupTabNav(document.getElementById('termsTabNav'), 'panel-terms');
+
+var TERMS = {};
+
+// -- Main Leaderboard (4 regimes) --
+TERMS.main = {
+  overall: [
+    [1,'Claude Opus 4.6','Anthropic','0.694','0.993','0.699','0.000','0.222','0.000','11.62','FRONTIER'],
+    [2,'GLM 5.1','Zhipu','0.686','0.951','0.721','0.000','0.218','0.013','11.70','OPEN'],
+    [3,'Claude Opus 4.7','Anthropic','0.660','0.982','0.672','0.000','0.229','0.000','11.09','FRONTIER'],
+    [4,'Gemma 4 31B','Google','0.640','0.998','0.641','0.000','0.260','0.001','10.64','OPEN'],
+    [5,'Gemini 3.1 Pro','Google','0.639','0.997','0.641','0.000','0.271','0.000','10.58','FRONTIER'],
+    [6,'DeepSeek V4 Pro','DeepSeek','0.618','0.975','0.633','0.000','0.228','0.006','10.53','OPEN'],
+    [7,'GPT-5.5','OpenAI','0.606','0.992','0.611','0.000','0.228','0.000','10.15','FRONTIER'],
+    [8,'Qwen 3.6 Plus','Alibaba','0.604','0.983','0.614','0.002','0.237','0.021','10.30','OPEN'],
+    [9,'Grok 4.20','xAI','0.601','0.991','0.606','0.000','0.212','0.015','10.03','FRONTIER'],
+    [10,'Kimi K2.6','Moonshot AI','0.597','0.971','0.614','0.000','0.236','0.000','10.17','OPEN'],
+    [11,'Doubao Seed 2.0 Pro','ByteDance','0.522','0.999','0.523','0.000','0.247','0.001','8.61','FRONTIER'],
+    [12,'FFixed 0.30','Baseline','0.387','0.999','0.387','0.000','—','0.000','6.50','BASELINE'],
+    [13,'FFixed 0.10','Baseline','0.290','0.945','0.307','0.000','—','0.000','5.08','BASELINE'],
+    [14,'FFixed 0.01','Baseline','0.273','0.922','0.296','0.000','—','0.000','4.77','BASELINE'],
+    [15,'GPT-4o mini','OpenAI','0.189','0.522','0.363','0.000','0.251','0.000','3.37','FRONTIER']
+  ],
+  overlap: [
+    [1,'Claude Opus 4.6','Anthropic','0.670','0.988','0.678','—','0.199','0.000','16.99','FRONTIER'],
+    [2,'GLM 5.1','Zhipu','0.668','0.943','0.708','—','0.206','0.000','17.33','OPEN'],
+    [3,'Claude Opus 4.7','Anthropic','0.644','0.978','0.658','—','0.220','0.000','16.42','FRONTIER'],
+    [4,'Gemini 3.1 Pro','Google','0.639','0.995','0.642','—','0.241','0.000','15.99','FRONTIER'],
+    [5,'Gemma 4 31B','Google','0.634','0.997','0.636','—','0.250','0.000','15.91','OPEN'],
+    [6,'DeepSeek V4 Pro','DeepSeek','0.604','0.973','0.620','—','0.226','0.000','15.62','OPEN'],
+    [7,'GPT-5.5','OpenAI','0.592','0.987','0.600','—','0.212','0.000','15.02','FRONTIER'],
+    [8,'Grok 4.20','xAI','0.588','0.987','0.596','—','0.214','0.000','14.91','FRONTIER'],
+    [9,'Qwen 3.6 Plus','Alibaba','0.577','0.975','0.592','—','0.232','0.000','14.96','OPEN'],
+    [10,'Kimi K2.6','Moonshot AI','0.576','0.963','0.598','—','0.220','0.000','14.88','OPEN'],
+    [11,'Doubao Seed 2.0 Pro','ByteDance','0.515','0.998','0.516','—','0.237','0.000','12.85','FRONTIER'],
+    [12,'FFixed 0.30','Baseline','0.383','0.998','0.384','—','—','0.000','9.66','BASELINE'],
+    [13,'FFixed 0.10','Baseline','0.283','0.935','0.303','—','—','0.000','7.45','BASELINE'],
+    [14,'FFixed 0.01','Baseline','0.256','0.902','0.284','—','—','0.000','6.74','BASELINE'],
+    [15,'GPT-4o mini','OpenAI','0.188','0.513','0.366','—','0.244','0.000','5.07','FRONTIER']
+  ],
+  urgency: [
+    [1,'Claude Opus 4.6','Anthropic','0.718','0.998','0.719','—','0.206','0.000','17.86','FRONTIER'],
+    [2,'GLM 5.1','Zhipu','0.703','0.958','0.734','—','0.215','0.000','17.76','OPEN'],
+    [3,'Claude Opus 4.7','Anthropic','0.676','0.985','0.686','—','0.228','0.000','16.86','FRONTIER'],
+    [4,'Gemma 4 31B','Google','0.645','1.000','0.645','—','0.272','0.000','16.01','OPEN'],
+    [5,'Gemini 3.1 Pro','Google','0.638','0.998','0.639','—','0.269','0.000','15.75','FRONTIER'],
+    [6,'DeepSeek V4 Pro','DeepSeek','0.632','0.977','0.647','—','0.234','0.000','15.95','OPEN'],
+    [7,'Qwen 3.6 Plus','Alibaba','0.630','0.990','0.637','—','0.244','0.000','15.97','OPEN'],
+    [8,'GPT-5.5','OpenAI','0.619','0.997','0.621','—','0.219','0.000','15.42','FRONTIER'],
+    [9,'Kimi K2.6','Moonshot AI','0.617','0.978','0.631','—','0.233','0.000','15.62','OPEN'],
+    [10,'Grok 4.20','xAI','0.614','0.995','0.617','—','0.204','0.000','15.20','FRONTIER'],
+    [11,'Doubao Seed 2.0 Pro','ByteDance','0.530','1.000','0.530','—','0.254','0.000','12.98','FRONTIER'],
+    [12,'FFixed 0.30','Baseline','0.391','1.000','0.391','—','—','0.000','9.85','BASELINE'],
+    [13,'FFixed 0.10','Baseline','0.297','0.955','0.311','—','—','0.000','7.78','BASELINE'],
+    [14,'FFixed 0.01','Baseline','0.290','0.943','0.308','—','—','0.000','7.56','BASELINE'],
+    [15,'GPT-4o mini','OpenAI','0.191','0.530','0.360','—','0.256','0.000','5.04','FRONTIER']
+  ],
+  nodeal: [
+    [1,'Claude Opus 4.6','Anthropic','—','0.000','—','0.000','0.247','0.000','0.00','FRONTIER'],
+    [2,'GLM 5.1','Zhipu','—','0.000','—','0.000','0.229','0.040','0.00','OPEN'],
+    [3,'Claude Opus 4.7','Anthropic','—','0.000','—','0.000','0.235','0.000','0.00','FRONTIER'],
+    [4,'Gemma 4 31B','Google','—','0.000','—','0.000','0.258','0.002','0.00','OPEN'],
+    [5,'Gemini 3.1 Pro','Google','—','0.000','—','0.000','0.289','0.000','0.00','FRONTIER'],
+    [6,'DeepSeek V4 Pro','DeepSeek','—','0.000','—','0.000','0.226','0.018','0.00','OPEN'],
+    [7,'GPT-5.5','OpenAI','—','0.000','—','0.000','0.240','0.000','0.00','FRONTIER'],
+    [8,'Qwen 3.6 Plus','Alibaba','—','0.002','—','0.002','0.235','0.062','-0.02','OPEN'],
+    [9,'Grok 4.20','xAI','—','0.000','—','0.000','0.215','0.045','0.00','FRONTIER'],
+    [10,'Kimi K2.6','Moonshot AI','—','0.000','—','0.000','0.248','0.000','0.00','OPEN'],
+    [11,'Doubao Seed 2.0 Pro','ByteDance','—','0.000','—','0.000','0.248','0.002','0.00','FRONTIER'],
+    [12,'FFixed 0.30','Baseline','—','0.000','—','0.000','—','0.000','0.00','BASELINE'],
+    [13,'FFixed 0.10','Baseline','—','0.000','—','0.000','—','0.000','0.00','BASELINE'],
+    [14,'FFixed 0.01','Baseline','—','0.000','—','0.000','—','0.000','0.00','BASELINE'],
+    [15,'GPT-4o mini','OpenAI','—','0.000','—','0.000','0.252','0.000','0.00','FRONTIER']
+  ]
+};
+
+// -- Commerce --
+TERMS.commerce = {
+  'grounded-combined': [
+    [1,'Claude Opus 4.6','Anthropic','$266,284','$1,849.20','28.4%','0.7%','93.8%','$1,022.83','27.3%','144'],
+    [2,'FFixed 0.30','Baseline','$219,573','$1,524.81','26.4%','2.8%','93.8%','$1,509.41','40.3%','144'],
+    [3,'FFixed 0.10','Baseline','$159,971','$1,110.91','29.1%','17.4%','93.8%','$2,130.27','56.9%','144'],
+    [4,'FFixed 0.01','Baseline','$141,965','$985.87','28.2%','22.2%','93.8%','$2,317.83','61.9%','144'],
+    [5,'GPT-4o mini','OpenAI','$29,992','$208.27','19.4%','54.9%','100.0%','$3,437.39','91.8%','144']
+  ],
+  'grounded-merchant': [
+    [1,'Claude Opus 4.6','Anthropic','$123,139','$1,710.26','24.1%','1.4%','100.0%','$1,483.15','36.7%','72'],
+    [2,'FFixed 0.30','Baseline','$107,569','$1,494.01','22.8%','1.4%','100.0%','$1,807.52','44.7%','72'],
+    [3,'FFixed 0.10','Baseline','$65,213','$905.73','26.6%','26.4%','100.0%','$2,689.94','66.5%','72'],
+    [4,'FFixed 0.01','Baseline','$44,456','$617.44','22.8%','37.5%','100.0%','$3,122.38','77.2%','72'],
+    [5,'GPT-4o mini','OpenAI','$7,909','$109.85','17.8%','58.3%','100.0%','$3,883.77','96.0%','72']
+  ],
+  'grounded-vendor': [
+    [1,'Claude Opus 4.6','Anthropic','$143,145','$1,988.13','32.4%','0.0%','87.5%','$562.52','16.3%','72'],
+    [2,'FFixed 0.30','Baseline','$112,004','$1,555.61','30.0%','4.2%','87.5%','$1,211.31','35.2%','72'],
+    [3,'FFixed 0.01','Baseline','$97,509','$1,354.30','30.7%','6.9%','87.5%','$1,513.27','43.9%','72'],
+    [4,'FFixed 0.10','Baseline','$94,758','$1,316.08','30.7%','8.3%','87.5%','$1,570.59','45.6%','72'],
+    [5,'GPT-4o mini','OpenAI','$22,083','$306.70','20.3%','51.4%','100.0%','$2,991.01','86.8%','72']
+  ],
+  'synthetic-combined': [
+    [1,'Claude Opus 4.6','Anthropic','$68,592','$476.33','41.4%','0.0%','100.0%','$296.00','29.3%','144'],
+    [2,'FFixed 0.30','Baseline','$48,776','$338.72','31.8%','0.0%','100.0%','$502.41','49.8%','144'],
+    [3,'FFixed 0.10','Baseline','$41,473','$288.01','30.2%','2.1%','100.0%','$578.48','57.3%','144'],
+    [4,'FFixed 0.01','Baseline','$37,111','$257.71','26.1%','2.1%','100.0%','$623.92','61.8%','144'],
+    [5,'GPT-4o mini','OpenAI','$19,786','$137.40','26.6%','32.6%','100.0%','$804.39','79.7%','144']
+  ],
+  'synthetic-merchant': [
+    [1,'Claude Opus 4.6','Anthropic','$33,495','$465.20','36.6%','0.0%','100.0%','$342.19','32.9%','72'],
+    [2,'FFixed 0.30','Baseline','$26,557','$368.85','29.1%','0.0%','100.0%','$486.72','46.8%','72'],
+    [3,'FFixed 0.10','Baseline','$22,561','$313.34','26.8%','2.8%','100.0%','$569.98','54.9%','72'],
+    [4,'FFixed 0.01','Baseline','$20,132','$279.61','21.4%','2.8%','100.0%','$620.58','59.7%','72'],
+    [5,'GPT-4o mini','OpenAI','$13,798','$191.63','23.0%','29.2%','100.0%','$752.54','72.4%','72']
+  ],
+  'synthetic-vendor': [
+    [1,'Claude Opus 4.6','Anthropic','$35,097','$487.46','46.3%','0.0%','100.0%','$249.81','25.5%','72'],
+    [2,'FFixed 0.30','Baseline','$22,219','$308.59','34.5%','0.0%','100.0%','$518.11','52.9%','72'],
+    [3,'FFixed 0.10','Baseline','$18,912','$262.67','33.5%','1.4%','100.0%','$586.98','59.9%','72'],
+    [4,'FFixed 0.01','Baseline','$16,979','$235.82','30.7%','1.4%','100.0%','$627.26','64.0%','72'],
+    [5,'GPT-4o mini','OpenAI','$5,988','$83.17','31.1%','36.1%','100.0%','$856.24','87.4%','72']
+  ]
+};
+
+// -- Bankroll --
+TERMS.bankroll = [
+  [1,'GLM 5.1','Zhipu','$443','±$60','$6.86','100%','—','$29','—','—','4'],
+  [2,'Claude Opus 4.6','Anthropic','$416','±$36','$6.33','100%','—','$37','—','—','4'],
+  [3,'Gemma 4 31B','Google','$410','±$53','$6.21','100%','—','$30','—','—','4'],
+  [4,'Gemini 3.1 Pro','Google','$396','±$38','$5.92','100%','—','$29','—','—','4'],
+  [5,'GPT-5.5','OpenAI','$380','±$55','$5.60','100%','—','$35','—','—','4'],
+  [6,'Grok 4.20','xAI','$110','±$49','$0.20','75%','p47.0','$65','—','—','4'],
+  [7,'GPT-4o mini','OpenAI','$21','±$17','-$1.57','50%','p29.5','$119','—','—','4']
+];
+
+// -- Difficulty --
+TERMS.difficulty = [
+  ['Claude Opus 4.6','0.78','0.71','0.68','0.61','0.45','−42%'],
+  ['GLM 5.1','0.79','0.74','0.65','0.56','0.40','−49%'],
+  ['Claude Opus 4.7','0.75','0.69','0.63','0.57','0.47','−38%'],
+  ['Gemma 4 31B','0.72','0.65','0.62','0.56','0.48','−33%'],
+  ['Gemini 3.1 Pro','0.71','0.65','0.62','0.56','0.51','−27%'],
+  ['DeepSeek V4 Pro','0.73','0.63','0.60','0.50','0.41','−43%'],
+  ['GPT-5.5','0.69','0.61','0.56','0.55','0.46','−34%'],
+  ['Qwen 3.6 Plus','0.70','0.64','0.59','0.49','0.36','−48%'],
+  ['Grok 4.20','0.68','0.60','0.57','0.55','0.43','−37%'],
+  ['Kimi K2.6','0.70','0.63','0.57','0.48','0.36','−48%'],
+  ['Doubao Seed 2.0 Pro','0.58','0.52','0.50','0.48','0.41','−29%'],
+  ['FFixed 0.30','0.41','0.36','0.36','0.41','0.42','+0%'],
+  ['FFixed 0.10','0.39','0.28','0.25','0.21','0.21','−45%'],
+  ['FFixed 0.01','0.38','0.27','0.24','0.20','0.08','−79%'],
+  ['GPT-4o mini','0.25','0.18','0.15','0.17','0.10','−58%']
+];
+
+// -- Robustness --
+TERMS.robustness = [
+  ['Claude Opus 4.6','0.694','0.710','+0.016','gain'],
+  ['GLM 5.1','0.686','0.625','−0.060','loss'],
+  ['Claude Opus 4.7','0.660','0.681','+0.021','gain'],
+  ['Gemma 4 31B','0.640','0.649','+0.009','flat'],
+  ['Gemini 3.1 Pro','0.639','0.671','+0.032','gain'],
+  ['DeepSeek V4 Pro','0.618','0.613','−0.005','flat'],
+  ['GPT-5.5','0.606','0.618','+0.012','gain'],
+  ['Qwen 3.6 Plus','0.604','0.492','−0.112','loss'],
+  ['Grok 4.20','0.601','0.562','−0.038','loss'],
+  ['Kimi K2.6','0.597','0.498','−0.099','loss'],
+  ['GPT-4o mini','0.189','0.086','−0.103','loss']
+];
+
+// -- Diagnostics --
+TERMS.diagnostics = {
+  agreement: [
+    ['Claude Opus 4.6','0.993','0.694'],['GLM 5.1','0.951','0.686'],['Claude Opus 4.7','0.982','0.660'],
+    ['Gemma 4 31B','0.998','0.640'],['Gemini 3.1 Pro','0.997','0.639'],['DeepSeek V4 Pro','0.975','0.618'],
+    ['GPT-5.5','0.992','0.606'],['Qwen 3.6 Plus','0.983','0.604'],['Grok 4.20','0.991','0.601'],
+    ['Kimi K2.6','0.971','0.597'],['Doubao Seed 2.0 Pro','0.999','0.522'],
+    ['FFixed 0.30','0.999','0.387'],['FFixed 0.10','0.945','0.290'],['FFixed 0.01','0.922','0.273'],
+    ['GPT-4o mini','0.522','0.189']
+  ],
+  opponent: [
+    ['Claude Opus 4.6','0.222','0.694'],['GLM 5.1','0.218','0.686'],['Claude Opus 4.7','0.229','0.660'],
+    ['Gemma 4 31B','0.260','0.640'],['Gemini 3.1 Pro','0.271','0.639'],['DeepSeek V4 Pro','0.228','0.618'],
+    ['GPT-5.5','0.228','0.606'],['Qwen 3.6 Plus','0.237','0.604'],['Grok 4.20','0.212','0.601'],
+    ['Kimi K2.6','0.236','0.597'],['Doubao Seed 2.0 Pro','0.247','0.522'],
+    ['GPT-4o mini','0.251','0.189']
+  ],
+  safety: [
+    ['Claude Opus 4.6','0.000','0.694'],['GLM 5.1','0.013','0.686'],['Claude Opus 4.7','0.000','0.660'],
+    ['Gemma 4 31B','0.001','0.640'],['Gemini 3.1 Pro','0.000','0.639'],['DeepSeek V4 Pro','0.006','0.618'],
+    ['GPT-5.5','0.000','0.606'],['Qwen 3.6 Plus','0.021','0.604'],['Grok 4.20','0.015','0.601'],
+    ['Kimi K2.6','0.000','0.597'],['Doubao Seed 2.0 Pro','0.001','0.522'],
+    ['FFixed 0.30','0.000','0.387'],['FFixed 0.10','0.000','0.290'],['FFixed 0.01','0.000','0.273'],
+    ['GPT-4o mini','0.000','0.189']
+  ],
+  nodeal: [
+    ['Claude Opus 4.6','0.000','0.694'],['GLM 5.1','0.000','0.686'],['Claude Opus 4.7','0.000','0.660'],
+    ['Gemma 4 31B','0.000','0.640'],['Gemini 3.1 Pro','0.000','0.639'],['DeepSeek V4 Pro','0.000','0.618'],
+    ['GPT-5.5','0.000','0.606'],['Qwen 3.6 Plus','0.002','0.604'],['Grok 4.20','0.000','0.601'],
+    ['Kimi K2.6','0.000','0.597'],['Doubao Seed 2.0 Pro','0.000','0.522'],
+    ['FFixed 0.30','0.000','0.387'],['FFixed 0.10','0.000','0.290'],['FFixed 0.01','0.000','0.273'],
+    ['GPT-4o mini','0.000','0.189']
+  ]
+};
+
+// -- Rendering functions --
+function termsKindTag(kind) {
+  var colors = {FRONTIER:'#6366f1',OPEN:'#10b981',BASELINE:'#94a3b8'};
+  var labels = {FRONTIER:'前沿',OPEN:'开源',BASELINE:'基线'};
+  var c = colors[kind] || '#94a3b8';
+  var l = labels[kind] || kind;
+  return '<span style="display:inline-block;padding:1px 6px;border-radius:4px;font-size:0.7rem;background:' + c + '22;color:' + c + ';margin-left:4px;">' + l + '</span>';
 }
 
 function termsSeBar(val) {
@@ -2669,7 +2884,12 @@ document.querySelectorAll('#termsCommPerspPills .pill').forEach(function(btn) {
               year:'numeric', month:'2-digit', day:'2-digit',
               hour:'2-digit', minute:'2-digit', second:'2-digit', hour12:false
             });
-            tsEl.textContent = '⏱ 数据获取时间：2026/05/24 20:48:46 (UTC+8)<span style="color:var(--text-dimmer)">⟳ 使用内嵌快照数据（离线模式）</span>';
+            tsEl.textContent = '⏱ 数据获取时间：' + s + ' (UTC+8)';
+          }
+        }
+      })
+      .catch(function() {
+        freshnessEl.innerHTML = '<span style="color:var(--text-dimmer)">⟳ 使用内嵌快照数据（离线模式）</span>';
       });
   }
   
@@ -2696,6 +2916,12 @@ document.querySelectorAll('#termsCommPerspPills .pill').forEach(function(btn) {
             year:'numeric', month:'2-digit', day:'2-digit',
             hour:'2-digit', minute:'2-digit', second:'2-digit', hour12:false
           });
-          el.textContent = '⏱ 数据获取时间：2026/05/24 20:48:46 (UTC+8)</script>
+          el.textContent = '⏱ 数据获取时间：' + s + ' (UTC+8)';
+        }
+      })
+      .catch(function() {});
+  }, REFRESH_INTERVAL);
+})();
+</script>
 </body>
 </html>
