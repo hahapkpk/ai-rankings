@@ -92,7 +92,7 @@ function build() {
       if (or.leaderboard.week && or.leaderboard.week.length > 0) {
         const weekRows = buildRows(or.leaderboard.week);
         // Find the OpenRouter section and replace the first tbody
-        const orSectionPattern = /(id="openrouter"[^>]*>[\\s\\S]*?<tbody>)([\\s\\S]*?)(<\\/tbody>)/;
+        const orSectionPattern = /(id="openrouter"[^>]*>[\s\S]*?<tbody>)([\s\S]*?)(<\/tbody>)/;
         if (html.match(orSectionPattern)) {
           html = html.replace(orSectionPattern, `$1\n${weekRows}\n      $3`);
         }
