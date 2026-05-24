@@ -739,7 +739,7 @@ th.sortable.desc::after { content: '↓'; opacity: 1; }
   .bench-grid { grid-template-columns: 1fr; }
 }
 </style>
-  <meta name="data-updated" content="2026-05-24T12:02:06.794Z" />
+  <meta name="data-updated" content="2026-05-24T12:10:16.295Z" />
 </head>
 <body>
 
@@ -2474,7 +2474,7 @@ function setTimestamp() {
   var now = new Date();
   var s = now.toLocaleString('zh-CN', { year:'numeric', month:'2-digit', day:'2-digit', hour:'2-digit', minute:'2-digit', second:'2-digit', hour12:false });
   var el = document.getElementById('updateTime');
-  if (el) el.textContent = '⏱ 数据获取时间：2026/05/24 20:02:06 (UTC+8)<span style="display:inline-block;padding:1px 6px;border-radius:4px;font-size:0.7rem;background:' + c + '22;color:' + c + ';margin-left:4px;">' + l + '</span>';
+  if (el) el.textContent = '⏱ 数据获取时间：2026/05/24 20:10:16 (UTC+8)<span style="display:inline-block;padding:1px 6px;border-radius:4px;font-size:0.7rem;background:' + c + '22;color:' + c + ';margin-left:4px;">' + l + '</span>';
 }
 
 function termsSeBar(val) {
@@ -2669,7 +2669,7 @@ document.querySelectorAll('#termsCommPerspPills .pill').forEach(function(btn) {
               year:'numeric', month:'2-digit', day:'2-digit',
               hour:'2-digit', minute:'2-digit', second:'2-digit', hour12:false
             });
-            tsEl.textContent = '⏱ 数据获取时间：2026/05/24 20:02:06 (UTC+8)<span style="color:var(--text-dimmer)">⟳ 使用内嵌快照数据（离线模式）</span>';
+            tsEl.textContent = '⏱ 数据获取时间：2026/05/24 20:10:16 (UTC+8)<span style="color:var(--text-dimmer)">⟳ 使用内嵌快照数据（离线模式）</span>';
       });
   }
   
@@ -2696,12 +2696,6 @@ document.querySelectorAll('#termsCommPerspPills .pill').forEach(function(btn) {
             year:'numeric', month:'2-digit', day:'2-digit',
             hour:'2-digit', minute:'2-digit', second:'2-digit', hour12:false
           });
-          el.textContent = '⏱ 数据获取时间：' + s + ' (UTC+8)';
-        }
-      })
-      .catch(function() {});
-  }, REFRESH_INTERVAL);
-})();
-</script>
+          el.textContent = '⏱ 数据获取时间：2026/05/24 20:10:16 (UTC+8)</script>
 </body>
 </html>
