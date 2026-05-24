@@ -1,0 +1,14 @@
+{
+  "name": "ai-rankings",
+  "version": "1.0.0",
+  "description": "AI Model Rankings - Unified Chinese Dashboard",
+  "private": true,
+  "scripts": {
+    "fetch": "node fetch-data.js",
+    "build": "node build-page.js",
+    "update": "node fetch-data.js && node build-page.js"
+  },
+  "dependencies": {
+    "puppeteer": "^22.0.0"
+  }
+}

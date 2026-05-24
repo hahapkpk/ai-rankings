@@ -1,0 +1,9 @@
+{
+  "lastUpdated": "2026-05-24T11:50:00.000Z",
+  "sources": {
+    "openrouter": { "status": "embedded", "itemCount": 10 },
+    "valsai": { "status": "embedded", "itemCount": 20 },
+    "arena": { "status": "embedded", "itemCount": 50 },
+    "terms": { "status": "embedded", "itemCount": 15 }
+  }
+}

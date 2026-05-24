@@ -1,0 +1,2903 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 模型排行榜 — 统一版</title>
+<style>
+/* ========================================
+   THEME SYSTEM (OpenRouter based, enhanced)
+   ======================================== */
+:root {
+  --font: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  --radius: 12px;
+  --transition: 0.3s ease;
+  --accent: #6366f1;
+  --accent2: #8b5cf6;
+  --gold: #f59e0b;
+  --silver: #94a3b8;
+  --bronze: #d97706;
+  --green: #10b981;
+  --red: #ef4444;
+  --orange: #f39c12;
+}
+
+/* -- 深色主题（默认） -- */
+[data-theme="dark"] {
+  --bg: #0a0a0f;
+  --bg-card: #111118;
+  --bg-card-hover: #1a1a25;
+  --bg-tabbar: rgba(10,10,15,0.96);
+  --border: #222233;
+  --border-subtle: rgba(34,34,51,0.5);
+  --text: #d0d0d8;
+  --text-heading: #e0e0e8;
+  --text-dim: #6b6b80;
+  --text-dimmer: #4e5673;
+  --hdr-gradient: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+  --hdr-title-gradient: linear-gradient(135deg, #a78bfa, #6366f1, #3b82f6);
+  --hdr-badge-bg: rgba(99,102,241,0.15);
+  --hdr-badge-text: #a78bfa;
+  --note-bg: rgba(99,102,241,0.08);
+  --note-text: #6b6b80;
+  --tr-hover: rgba(99,102,241,0.04);
+  --kpi-val: #e0e0e8;
+  --tag-bg: rgba(16,185,129,0.15);
+  --shadow: 0 4px 24px rgba(0,0,0,0.35);
+}
+
+/* -- 浅色主题 -- */
+[data-theme="light"] {
+  --bg: #f3f4f6;
+  --bg-card: #ffffff;
+  --bg-card-hover: #f9fafb;
+  --bg-tabbar: rgba(255,255,255,0.92);
+  --border: #e5e7eb;
+  --border-subtle: rgba(229,231,235,0.7);
+  --text: #374151;
+  --text-heading: #111827;
+  --text-dim: #9ca3af;
+  --text-dimmer: #a0a6c0;
+  --hdr-gradient: linear-gradient(135deg, #eff6ff 0%, #eef2ff 50%, #f0f9ff 100%);
+  --hdr-title-gradient: linear-gradient(135deg, #4f46e5, #6366f1, #3b82f6);
+  --hdr-badge-bg: #eef2ff;
+  --hdr-badge-text: #4f46e5;
+  --note-bg: #eef2ff;
+  --note-text: #6366f1;
+  --tr-hover: rgba(99,102,241,0.03);
+  --kpi-val: #111827;
+  --tag-bg: rgba(16,185,129,0.1);
+  --shadow: 0 4px 24px rgba(0,0,0,0.08);
+}
+
+/* -- 暖色主题 -- */
+[data-theme="warm"] {
+  --bg: #1c1917;
+  --bg-card: #292524;
+  --bg-card-hover: #38312e;
+  --bg-tabbar: rgba(28,25,23,0.96);
+  --border: #44403c;
+  --border-subtle: rgba(68,64,60,0.5);
+  --text: #d6d3d1;
+  --text-heading: #e7e5e4;
+  --text-dim: #78716c;
+  --text-dimmer: #6a5a48;
+  --hdr-gradient: linear-gradient(135deg, #292524 0%, #382d28 50%, #2d2117 100%);
+  --hdr-title-gradient: linear-gradient(135deg, #f59e0b, #d97706, #ea580c);
+  --hdr-badge-bg: rgba(245,158,11,0.15);
+  --hdr-badge-text: #fbbf24;
+  --note-bg: rgba(245,158,11,0.08);
+  --note-text: #a8a29e;
+  --tr-hover: rgba(245,158,11,0.04);
+  --kpi-val: #e7e5e4;
+  --tag-bg: rgba(16,185,129,0.12);
+  --accent: #f59e0b;
+  --accent2: #d97706;
+  --gold: #f59e0b;
+  --green: #7ec850;
+  --red: #d45040;
+  --shadow: 0 4px 24px rgba(0,0,0,0.4);
+}
+
+/* -- 森林主题 -- */
+[data-theme="forest"] {
+  --bg: #0e1a14;
+  --bg-card: #152418;
+  --bg-card-hover: #1e3022;
+  --bg-tabbar: rgba(14,26,20,0.96);
+  --border: #1e3a2a;
+  --border-subtle: rgba(30,58,42,0.5);
+  --text: #b8cbb9;
+  --text-heading: #d4e8d5;
+  --text-dim: #587a5e;
+  --text-dimmer: #3a6a4a;
+  --hdr-gradient: linear-gradient(135deg, #0e1a14 0%, #0f2a1a 50%, #0a1a10 100%);
+  --hdr-title-gradient: linear-gradient(135deg, #4ade80, #22c55e, #16a34a);
+  --hdr-badge-bg: rgba(34,197,94,0.15);
+  --hdr-badge-text: #4ade80;
+  --note-bg: rgba(34,197,94,0.08);
+  --note-text: #7b9e7e;
+  --tr-hover: rgba(34,197,94,0.03);
+  --kpi-val: #d4e8d5;
+  --tag-bg: rgba(74,222,128,0.12);
+  --accent: #22c55e;
+  --accent2: #16a34a;
+  --gold: #fbbf24;
+  --silver: #86a88b;
+  --bronze: #b7791f;
+  --shadow: 0 4px 24px rgba(0,0,0,0.35);
+}
+
+/* -- 海洋主题 -- */
+[data-theme="ocean"] {
+  --bg: #0c1929;
+  --bg-card: #112240;
+  --bg-card-hover: #1a3256;
+  --bg-tabbar: rgba(12,25,41,0.96);
+  --border: #1e3a5f;
+  --border-subtle: rgba(30,58,95,0.5);
+  --text: #a8c8e8;
+  --text-heading: #cce0f5;
+  --text-dim: #5078a0;
+  --text-dimmer: #3060a0;
+  --hdr-gradient: linear-gradient(135deg, #0c1929 0%, #0f2744 50%, #08182b 100%);
+  --hdr-title-gradient: linear-gradient(135deg, #60a5fa, #3b82f6, #2563eb);
+  --hdr-badge-bg: rgba(59,130,246,0.15);
+  --hdr-badge-text: #60a5fa;
+  --note-bg: rgba(59,130,246,0.08);
+  --note-text: #7098c0;
+  --tr-hover: rgba(59,130,246,0.03);
+  --kpi-val: #cce0f5;
+  --tag-bg: rgba(56,189,248,0.12);
+  --accent: #3b82f6;
+  --accent2: #2563eb;
+  --shadow: 0 4px 24px rgba(0,0,0,0.35);
+}
+
+/* -- 赛博主题 -- */
+[data-theme="cyber"] {
+  --bg: #0a0015;
+  --bg-card: #120025;
+  --bg-card-hover: #1a0038;
+  --bg-tabbar: rgba(10,0,21,0.96);
+  --border: #2d0060;
+  --border-subtle: rgba(45,0,96,0.5);
+  --text: #c4b5e8;
+  --text-heading: #e0d4ff;
+  --text-dim: #6b4d9a;
+  --text-dimmer: #6a3a90;
+  --hdr-gradient: linear-gradient(135deg, #0a0015 0%, #120030 50%, #0a0020 100%);
+  --hdr-title-gradient: linear-gradient(135deg, #f0abfc, #c084fc, #818cf8);
+  --hdr-badge-bg: rgba(192,132,252,0.15);
+  --hdr-badge-text: #c084fc;
+  --note-bg: rgba(192,132,252,0.08);
+  --note-text: #9078c0;
+  --tr-hover: rgba(192,132,252,0.04);
+  --kpi-val: #e0d4ff;
+  --tag-bg: rgba(244,114,182,0.12);
+  --accent: #c084fc;
+  --accent2: #a855f7;
+  --gold: #fbbf24;
+  --silver: #a78bfa;
+  --bronze: #f59e0b;
+  --green: #34d399;
+  --red: #f87171;
+  --shadow: 0 4px 24px rgba(0,0,0,0.5);
+}
+
+/* ========================================
+   BASE STYLES
+   ======================================== */
+* { margin:0; padding:0; box-sizing:border-box; }
+body {
+  font-family: var(--font);
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+  line-height: 1.6;
+  transition: background var(--transition), color var(--transition);
+}
+a { color: var(--accent2); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* -- Theme Switcher -- */
+.theme-bar {
+  position: fixed;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 200;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.theme-dot {
+  width: 14px; height: 14px;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: all var(--transition);
+  box-shadow: 0 0 8px rgba(0,0,0,0.3);
+  position: relative;
+}
+.theme-dot:hover { transform: scale(1.3); }
+.theme-dot.active { border-color: #fff; box-shadow: 0 0 14px currentColor; }
+.theme-dot::after {
+  content: attr(data-label);
+  position: absolute;
+  right: 22px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: var(--bg-card);
+  color: var(--text);
+  padding: 3px 10px;
+  border-radius: 6px;
+  font-size: 11px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s;
+  border: 1px solid var(--border);
+}
+.theme-dot:hover::after { opacity: 1; }
+@media (max-width: 640px) {
+  .theme-bar { right: 8px; gap: 6px; }
+  .theme-dot { width: 11px; height: 11px; }
+}
+
+/* -- Header -- */
+.header {
+  background: var(--hdr-gradient);
+  border-bottom: 1px solid var(--border);
+  padding: 28px 0 20px;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  transition: background var(--transition), border var(--transition);
+}
+.header h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  background: var(--hdr-title-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 6px;
+}
+.header p {
+  color: var(--text-dim);
+  font-size: 0.875rem;
+  transition: color var(--transition);
+  min-height: 1.4em;
+}
+.time-badge {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 3px 12px;
+  border-radius: 12px;
+  background: var(--hdr-badge-bg);
+  color: var(--hdr-badge-text);
+  font-size: 0.75rem;
+  transition: background var(--transition), color var(--transition);
+}
+
+/* ========================================
+   TOP-LEVEL SOURCE SWITCHER
+   ======================================== */
+.source-switcher {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  padding: 14px 20px;
+  background: var(--bg-tabbar);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 110px;
+  z-index: 99;
+  transition: background var(--transition), border var(--transition);
+}
+.source-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 28px;
+  border: 2px solid var(--border);
+  border-radius: 14px;
+  background: var(--bg-card);
+  color: var(--text-dim);
+  cursor: pointer;
+  font-size: 0.95rem;
+  font-weight: 600;
+  font-family: inherit;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+.source-btn::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 0.3s;
+  border-radius: 12px;
+}
+.source-btn[data-source="openrouter"]::before {
+  background: linear-gradient(135deg, rgba(99,102,241,0.12), rgba(139,92,246,0.12));
+}
+.source-btn[data-source="valsai"]::before {
+  background: linear-gradient(135deg, rgba(16,185,129,0.12), rgba(245,158,11,0.12));
+}
+.source-btn[data-source="arena"]::before {
+  background: linear-gradient(135deg, rgba(231,76,60,0.12), rgba(243,156,18,0.12));
+}
+.source-btn[data-source="terms"]::before {
+  background: linear-gradient(135deg, rgba(14,165,233,0.12), rgba(6,182,212,0.12));
+}
+.source-btn:hover {
+  border-color: var(--accent);
+  color: var(--text);
+  transform: translateY(-1px);
+}
+.source-btn.active {
+  color: #fff;
+  border-color: transparent;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+}
+.source-btn.active::before { opacity: 1; }
+.source-btn[data-source="openrouter"].active {
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  border-color: transparent;
+}
+.source-btn[data-source="valsai"].active {
+  background: linear-gradient(135deg, #10b981, #f59e0b);
+  border-color: transparent;
+}
+.source-btn[data-source="arena"].active {
+  background: linear-gradient(135deg, #e74c3c, #f39c12);
+  border-color: transparent;
+}
+.source-btn[data-source="terms"].active {
+  background: linear-gradient(135deg, #0ea5e9, #06b6d4);
+  border-color: transparent;
+}
+.source-btn .src-icon { font-size: 1.2rem; }
+.source-btn .src-label { position: relative; z-index: 1; }
+@media (max-width: 480px) {
+  .source-switcher { gap: 8px; padding: 10px 12px; }
+  .source-btn { padding: 10px 16px; font-size: 0.85rem; }
+}
+
+/* ========================================
+   TAB NAV (shared)
+   ======================================== */
+.tab-nav {
+  display: flex;
+  gap: 4px;
+  padding: 10px 24px;
+  overflow-x: auto;
+  background: var(--bg-tabbar);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 166px;
+  z-index: 98;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  transition: background var(--transition), border var(--transition);
+}
+.tab-nav::-webkit-scrollbar { display:none; }
+.tab-btn {
+  white-space: nowrap;
+  padding: 7px 16px;
+  border: none;
+  border-radius: 8px;
+  background: transparent;
+  color: var(--text-dim);
+  cursor: pointer;
+  font-size: 0.8125rem;
+  transition: all 0.2s;
+  font-family: inherit;
+}
+.tab-btn:hover { background: var(--bg-card-hover); color: var(--text); }
+.tab-btn.active { background: var(--accent); color: #fff; font-weight: 600; }
+
+/* -- Period sub-tabs -- */
+.period-tabs {
+  display: flex; gap: 4px; margin-bottom: 16px;
+}
+.period-btn {
+  white-space: nowrap; padding: 5px 14px;
+  border: 1px solid var(--border); border-radius: 20px;
+  background: transparent; color: var(--text-dim);
+  cursor: pointer; font-size: 0.78rem; font-family: inherit;
+  transition: all 0.2s;
+}
+.period-btn:hover { border-color: var(--accent); color: var(--text); }
+.period-btn.active { background: var(--accent); color: #fff; border-color: var(--accent); font-weight: 600; }
+.period-table { display: none; }
+.period-table.active { display: block; }
+
+/* -- Container -- */
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px 20px 60px;
+}
+
+/* -- Section -- */
+.section { display:none; }
+.section.active { display:block; }
+
+/* -- Source panels -- */
+.source-panel { display: none; }
+.source-panel.active { display: block; animation: fadeInPanel 0.35s ease; }
+
+@keyframes fadeInPanel {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* -- Card -- */
+.card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 24px;
+  margin-bottom: 20px;
+  transition: background var(--transition), border var(--transition);
+  box-shadow: var(--shadow);
+}
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 18px;
+  flex-wrap: wrap;
+}
+.card-icon { font-size: 1.25rem; }
+.card-title { font-size: 1.1rem; font-weight: 700; color: var(--text-heading); transition: color var(--transition); }
+.card-desc { font-size: 0.8rem; color: var(--text-dim); margin-left: auto; transition: color var(--transition); }
+
+/* -- Table -- */
+.table-wrap { overflow-x:auto; }
+table { width:100%; border-collapse:collapse; font-size:0.875rem; }
+th {
+  text-align: left; padding: 10px 12px;
+  color: var(--text-dim); font-weight: 500; font-size: 0.75rem;
+  text-transform: uppercase; letter-spacing: 0.5px;
+  border-bottom: 1px solid var(--border);
+  transition: color var(--transition), border var(--transition);
+  white-space: nowrap;
+}
+td { padding: 11px 12px; border-bottom: 1px solid var(--border-subtle); transition: border var(--transition); }
+tr:hover td { background: var(--tr-hover); }
+tr:last-child td { border-bottom: none; }
+
+/* -- Rank -- */
+.rank { font-weight: 700; font-size: 1rem; width: 36px; }
+.rank-1 { color: var(--gold); }
+.rank-2 { color: var(--silver); }
+.rank-3 { color: var(--bronze); }
+
+/* -- Model -- */
+.model-name { font-weight: 600; color: var(--text-heading); transition: color var(--transition); }
+.provider { color: var(--text-dim); font-size: 0.8rem; margin-left: 4px; transition: color var(--transition); }
+.provider::before { content: '\B7 '; }
+.model-cell { display:flex; align-items:center; gap:8px; }
+.model-cell-stack { display:flex; flex-direction:column; gap:2px; }
+
+/* -- Stats -- */
+.stat-val { font-weight: 600; color: var(--text); text-align: right; white-space: nowrap; transition: color var(--transition); }
+.stat-pct { text-align: right; white-space: nowrap; }
+.pct-up { color: var(--green); }
+.pct-neutral { color: var(--text-dim); }
+
+/* -- Bar -- */
+.bar-cell { min-width: 200px; }
+.bar-wrap { display:flex; align-items:center; gap:8px; }
+.bar-track { flex:1; height:6px; background:var(--border); border-radius:3px; overflow:hidden; transition: background var(--transition); }
+.bar-fill { height:100%; border-radius:3px; transition:width 0.6s ease; }
+.bar-fill.deepseek { background: linear-gradient(90deg, #4f46e5, #7c3aed); }
+.bar-fill.anthropic { background: linear-gradient(90deg, #d97706, #f59e0b); }
+.bar-fill.google { background: linear-gradient(90deg, #3b82f6, #60a5fa); }
+.bar-fill.tencent { background: linear-gradient(90deg, #059669, #10b981); }
+.bar-fill.openai { background: linear-gradient(90deg, #10b981, #34d399); }
+.bar-fill.qwen { background: linear-gradient(90deg, #8b5cf6, #a78bfa); }
+.bar-fill.others { background: linear-gradient(90deg, #6b6b80, #9ca3af); }
+
+/* -- KPI -- */
+.kpi-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(160px,1fr)); gap:12px; margin-bottom:20px; }
+.kpi-row { display:grid; grid-template-columns:repeat(auto-fit,minmax(180px,1fr)); gap:14px; margin-bottom:16px; }
+.kpi {
+  background: var(--bg-card-hover); border:1px solid var(--border); border-radius:10px;
+  padding:16px; text-align:center;
+  transition: background var(--transition), border var(--transition);
+}
+.kpi-val { font-size:1.5rem; font-weight:700; color:var(--kpi-val); transition: color var(--transition); }
+.kpi-label { font-size:0.75rem; color:var(--text-dim); margin-top:4px; transition: color var(--transition); }
+
+/* -- Two-column -- */
+.col2 { display:grid; grid-template-columns:1fr 1fr; gap:20px; }
+@media (max-width: 640px) { .col2 { grid-template-columns:1fr; } }
+
+/* -- App -- */
+.app-row { display:flex; align-items:flex-start; gap:12px; padding:14px 0; border-bottom:1px solid var(--border-subtle); transition: border var(--transition); }
+.app-row:last-child { border-bottom: none; }
+.app-rank { font-size:1.25rem; font-weight:700; width:32px; flex-shrink:0; transition: color var(--transition); }
+.app-info { flex:1; }
+.app-name { font-weight:600; color:var(--text-heading); transition: color var(--transition); }
+.app-desc { font-size:0.8rem; color:var(--text-dim); margin-top:2px; transition: color var(--transition); }
+.app-stat { text-align:right; flex-shrink:0; }
+.app-tokens { font-weight:600; color:var(--text); transition: color var(--transition); }
+.app-tag {
+  display:inline-block; padding:1px 6px; border-radius:10px;
+  background:var(--tag-bg); color:var(--green);
+  font-size:0.7rem; margin-left:6px;
+  transition: background var(--transition);
+}
+
+/* -- Note -- */
+.note {
+  margin-top:16px; padding:12px 16px;
+  background:var(--note-bg); border-radius:8px;
+  font-size:0.775rem; color:var(--note-text);
+  transition: background var(--transition), color var(--transition);
+  border-left: 3px solid var(--accent);
+}
+
+/* -- Footer -- */
+.footer {
+  text-align:center; padding:32px 20px 60px; color:var(--text-dim); font-size:0.75rem;
+  transition: color var(--transition);
+}
+.footer a { color: var(--accent); text-decoration:none; }
+
+/* -- Animation -- */
+@keyframes fadeIn { from {opacity:0;transform:translateY(8px);} to {opacity:1;transform:translateY(0);} }
+.card { animation: fadeIn 0.4s ease; }
+
+/* ========================================
+   ARENA AI SPECIFIC STYLES
+   ======================================== */
+
+/* -- License Tag -- */
+.license-tag {
+  display: inline-block; font-size: 0.68rem; padding: 2px 8px;
+  border-radius: 10px; font-weight: 600; white-space: nowrap;
+}
+.license-proprietary {
+  background: rgba(239,68,68,0.15); color: #f87171;
+  border: 1px solid rgba(239,68,68,0.25);
+}
+.license-open {
+  background: rgba(16,185,129,0.15); color: #34d399;
+  border: 1px solid rgba(16,185,129,0.25);
+}
+
+/* -- Elo Bar -- */
+.elo-bar {
+  display: inline-block; height: 4px; border-radius: 2px;
+  min-width: 30px; vertical-align: middle; margin-right: 6px;
+}
+.elo-gold { background: linear-gradient(90deg, #f59e0b, #fbbf24); }
+.elo-silver { background: linear-gradient(90deg, #94a3b8, #cbd5e1); }
+.elo-default { background: var(--border); }
+
+/* -- Preliminary Tag -- */
+.preliminary-tag {
+  display: inline-block; font-size: 0.6rem; padding: 1px 6px;
+  border-radius: 8px; background: rgba(243,156,18,0.15);
+  color: var(--orange); margin-left: 4px; vertical-align: middle;
+  border: 1px solid rgba(243,156,18,0.25);
+}
+
+/* -- Category Pills -- */
+.category-pills {
+  display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 16px;
+}
+.category-pills.collapsed .pill:nth-child(n+9) { display: none; }
+.pill {
+  display: inline-block; padding: 5px 14px; border-radius: 20px;
+  background: var(--bg-card-hover); border: 1px solid var(--border);
+  font-size: 0.78rem; color: var(--text-dim); cursor: pointer;
+  transition: all 0.2s; white-space: nowrap; font-family: inherit;
+}
+.pill:hover { border-color: var(--accent); color: var(--accent); }
+.pill.active { background: var(--accent); color: #fff; border-color: var(--accent); }
+.pill-expand {
+  padding: 5px 12px; border-radius: 20px; border: 1px dashed var(--border);
+  background: transparent; color: var(--text-dim); cursor: pointer;
+  font-size: 0.75rem; font-family: inherit; transition: all 0.2s;
+}
+.pill-expand:hover { border-color: var(--accent); color: var(--accent); }
+
+/* -- Filter bar -- */
+.filter-bar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.filter-label {
+  font-size: 0.8rem;
+  color: var(--text-dim);
+  white-space: nowrap;
+}
+
+/* -- Arena KPI -- */
+.arena-kpi {
+  background: var(--bg-card-hover); border: 1px solid var(--border);
+  border-radius: 10px; padding: 16px 20px; text-align: center;
+  transition: background var(--transition), border var(--transition);
+}
+.arena-kpi-val {
+  font-size: 1.5rem; font-weight: 700; color: var(--kpi-val);
+  transition: color var(--transition);
+}
+.arena-kpi-label {
+  font-size: 0.75rem; color: var(--text-dim); margin-top: 4px;
+  transition: color var(--transition);
+}
+
+/* -- Sortable Header -- */
+th.sortable {
+  cursor: pointer; user-select: none; position: relative;
+  padding-right: 20px;
+}
+th.sortable::after {
+  content: '⇅'; position: absolute; right: 4px; top: 50%;
+  transform: translateY(-50%); font-size: 0.65rem; opacity: 0.5;
+}
+th.sortable.asc::after { content: '↑'; opacity: 1; }
+th.sortable.desc::after { content: '↓'; opacity: 1; }
+
+/* -- License Filter -- */
+.license-filter {
+  display: flex; gap: 6px; margin-bottom: 14px;
+}
+.license-filter-btn {
+  padding: 5px 14px; border-radius: 20px;
+  border: 1px solid var(--border); background: transparent;
+  color: var(--text-dim); cursor: pointer; font-size: 0.78rem;
+  font-family: inherit; transition: all 0.2s;
+}
+.license-filter-btn:hover { border-color: var(--accent); color: var(--text); }
+.license-filter-btn.active { background: var(--accent); color: #fff; border-color: var(--accent); }
+
+/* -- Price Text -- */
+.price-text { font-size: 0.8rem; color: var(--text-dim); white-space: nowrap; }
+
+/* ========================================
+   VALS AI SPECIFIC STYLES
+   ======================================== */
+
+/* -- Heat Cell -- */
+.heat-cell {
+  text-align: right; font-weight: 600; padding: 6px 10px; border-radius: 4px;
+  position: relative; font-size: 0.85rem;
+}
+.pct-high { color: var(--green); }
+.pct-mid { color: var(--orange); }
+.pct-low { color: var(--red); }
+
+/* -- Insight Box -- */
+.insight-box {
+  background: var(--bg-card-hover); border: 1px solid var(--border); border-radius: 10px;
+  padding: 16px 20px; margin-bottom: 16px;
+  transition: background var(--transition), border var(--transition);
+}
+.insight-box h3 { font-size: 0.95rem; margin-bottom: 8px; color: var(--accent2); }
+.insight-box ul { padding-left: 20px; }
+.insight-box li { font-size: 0.85rem; color: var(--text-dim); margin-bottom: 6px; line-height: 1.6; }
+
+/* -- Benchmark Grid -- */
+.bench-grid {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 10px; margin-bottom: 20px;
+}
+.bench-card {
+  background: var(--bg-card-hover); border: 1px solid var(--border);
+  border-radius: 10px; padding: 14px 16px; cursor: default;
+  transition: all 0.2s;
+}
+.bench-card:hover { border-color: var(--accent); }
+.bench-cat { font-size: 0.7rem; color: var(--accent2); font-weight: 600; text-transform: uppercase; margin-bottom: 4px; }
+.bench-name { font-weight: 600; font-size: 0.92rem; color: var(--text-heading); transition: color var(--transition); }
+.bench-info { font-size: 0.75rem; color: var(--text-dim); margin-top: 2px; }
+.bench-new { background: var(--accent); color: #fff; font-size: 0.65rem; padding: 1px 6px; border-radius: 8px; margin-left: 6px; vertical-align: middle; }
+.bench-archived { color: var(--text-dimmer); font-size: 0.72rem; }
+
+/* -- Provider Tag -- */
+.provider-tag {
+  display: inline-block; font-size: 0.7rem; padding: 2px 8px; border-radius: 10px;
+  background: var(--bg-card-hover); border: 1px solid var(--border);
+  margin: 2px; white-space: nowrap; cursor: pointer;
+  transition: all 0.2s;
+}
+.provider-tag:hover { border-color: var(--accent); color: var(--accent); }
+.provider-tag.active-tag { border-color: var(--accent); color: var(--accent); background: var(--hdr-badge-bg); }
+
+/* -- Method Table -- */
+.method-table { width: 100%; border-collapse: collapse; font-size: 0.85rem; }
+.method-table th { background: var(--bg-card-hover); }
+.method-table td:first-child { font-weight: 600; color: var(--accent2); white-space: nowrap; }
+
+/* -- Section category headings (Vals AI all-benchmarks) -- */
+.bench-section-title {
+  font-size: 0.85rem; color: var(--accent2); margin: 12px 0 8px;
+  text-transform: uppercase; letter-spacing: 1px;
+}
+
+/* -- Responsive -- */
+@media (max-width: 640px) {
+  .header h1 { font-size: 1.5rem; }
+  .source-switcher { gap: 8px; }
+  .source-btn { padding: 10px 16px; font-size: 0.85rem; }
+  .card { padding: 16px; }
+  .kpi-grid, .kpi-row { grid-template-columns: 1fr 1fr; }
+  .bench-grid { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+
+<!-- ===== THEME SWITCHER ===== -->
+<div class="theme-bar" title="切换主题">
+  <div class="theme-dot active" data-theme="dark" data-label="深色" style="background:linear-gradient(135deg,#6366f1,#7c3aed); color:#7c3aed;"></div>
+  <div class="theme-dot" data-theme="light" data-label="浅色" style="background:linear-gradient(135deg,#e5e7eb,#d1d5db); color:#9ca3af;"></div>
+  <div class="theme-dot" data-theme="warm" data-label="暖色" style="background:linear-gradient(135deg,#d97706,#ea580c); color:#ea580c;"></div>
+  <div class="theme-dot" data-theme="forest" data-label="森林" style="background:linear-gradient(135deg,#22c55e,#16a34a); color:#16a34a;"></div>
+  <div class="theme-dot" data-theme="ocean" data-label="海洋" style="background:linear-gradient(135deg,#3b82f6,#2563eb); color:#2563eb;"></div>
+  <div class="theme-dot" data-theme="cyber" data-label="赛博" style="background:linear-gradient(135deg,#c084fc,#a855f7); color:#a855f7;"></div>
+</div>
+
+<!-- ===== HEADER ===== -->
+<div class="header">
+  <h1>AI 模型排行榜</h1>
+  <p id="headerSubtitle">基于 OpenRouter 平台数百万用户的真实使用数据</p>
+  <span class="time-badge" id="sourceBadge">数据来源：openrouter.ai</span>
+  <span class="time-badge" id="updateTime" style="margin-left:6px;">加载中...</span>
+  <a href="https://github.com/hahapkpk/ai-rankings" target="_blank" style="margin-left:8px;font-size:12px;color:var(--text-dim);text-decoration:none;opacity:0.7;">⚙️ GitHub</a>
+</div>
+
+<!-- ===== TOP-LEVEL SOURCE SWITCHER ===== -->
+<div class="source-switcher">
+  <button class="source-btn active" data-source="openrouter">
+    <span class="src-icon">🔄</span>
+    <span class="src-label">OpenRouter — 用量与市场份额</span>
+  </button>
+  <button class="source-btn" data-source="valsai">
+    <span class="src-icon">🧪</span>
+    <span class="src-label">Vals AI — 基准测试排行</span>
+  </button>
+  <button class="source-btn" data-source="arena">
+    <span class="src-icon">⚔️</span>
+    <span class="src-label">Arena AI — 盲测 Elo 评分</span>
+  </button>
+  <button class="source-btn" data-source="terms">
+    <span class="src-icon">🤝</span>
+    <span class="src-label">TERMS-Bench — 谈判智能体基准</span>
+  </button>
+</div>
+
+<!-- =============================================
+     OPENROUTER PANEL
+     ============================================= -->
+<div class="source-panel active" id="panel-openrouter">
+
+<!-- OpenRouter Tabs -->
+<div class="tab-nav" id="orTabNav">
+  <button class="tab-btn active" data-tab="leaderboard" data-group="or">🏆 综合排行</button>
+  <button class="tab-btn" data-tab="marketshare" data-group="or">📊 市场份额</button>
+  <button class="tab-btn" data-tab="programming" data-group="or">💻 编程</button>
+  <button class="tab-btn" data-tab="language" data-group="or">🌐 自然语言</button>
+  <button class="tab-btn" data-tab="python" data-group="or">🐍 Python</button>
+  <button class="tab-btn" data-tab="context" data-group="or">📏 上下文</button>
+  <button class="tab-btn" data-tab="tools" data-group="or">🔧 工具调用</button>
+  <button class="tab-btn" data-tab="images" data-group="or">🖼️ 图片处理</button>
+  <button class="tab-btn" data-tab="audio" data-group="or">🎵 音频输入</button>
+  <button class="tab-btn" data-tab="apps" data-group="or">📱 热门应用</button>
+  <button class="tab-btn" data-tab="benchmarks" data-group="or">🧠 基准评分</button>
+  <button class="tab-btn" data-tab="fastest" data-group="or">⚡ 最快模型</button>
+</div>
+
+<div class="container">
+
+<!-- 综合排行 -->
+<div class="section active" id="tab-leaderboard">
+  <div class="card">
+    <div class="card-header">
+      <span class="card-icon">🏆</span>
+      <span class="card-title">LLM 综合排行榜</span>
+      <span class="card-desc" id="lbPeriodLabel">本周 · 按 Token 用量排名</span>
+    </div>
+    <div class="period-tabs" id="periodTabs">
+      <button class="period-btn" data-period="today">🕐 今日</button>
+      <button class="period-btn active" data-period="week">📅 本周</button>
+      <button class="period-btn" data-period="month">📆 本月</button>
+      <button class="period-btn" data-period="trending">🔥 趋势</button>
+    </div>
+
+    <!-- Today -->
+    <div class="period-table" id="lb-today">
+      <div class="table-wrap"><table>
+        <thead><tr><th style="width:36px">#</th><th>模型</th><th style="text-align:right">Token 用量</th><th style="text-align:right">日变化</th></tr></thead>
+        <tbody>
+          <tr><td class="rank rank-1">1</td><td class="model-cell"><span class="model-name">Hy3 Preview</span><span class="provider">Tencent</span></td><td class="stat-val">408 B</td><td class="stat-pct pct-up">+7%</td></tr>
+          <tr><td class="rank rank-2">2</td><td class="model-cell"><span class="model-name">DeepSeek V4 Flash</span><span class="provider">DeepSeek</span></td><td class="stat-val">304 B</td><td class="stat-pct pct-up">+53%</td></tr>
+          <tr><td class="rank rank-3">3</td><td class="model-cell"><span class="model-name">Claude Opus 4.7</span><span class="provider">Anthropic</span></td><td class="stat-val">270 B</td><td class="stat-pct pct-up">+37%</td></tr>
+          <tr><td class="rank">4</td><td class="model-cell"><span class="model-name">Claude Sonnet 4.6</span><span class="provider">Anthropic</span></td><td class="stat-val">214 B</td><td class="stat-pct pct-up">+40%</td></tr>
+          <tr><td class="rank">5</td><td class="model-cell"><span class="model-name">Owl Alpha</span><span class="provider">OpenRouter</span></td><td class="stat-val">189 B</td><td class="stat-pct pct-up">+109%</td></tr>
+          <tr><td class="rank">6</td><td class="model-cell"><span class="model-name">DeepSeek V4 Pro</span><span class="provider">DeepSeek</span></td><td class="stat-val">133 B</td><td class="stat-pct pct-up">+20%</td></tr>
+          <tr><td class="rank">7</td><td class="model-cell"><span class="model-name">DeepSeek V3.2</span><span class="provider">DeepSeek</span></td><td class="stat-val">123 B</td><td class="stat-pct pct-up">+8%</td></tr>
+          <tr><td class="rank">8</td><td class="model-cell"><span class="model-name">Gemini 3 Flash Preview</span><span class="provider">Google</span></td><td class="stat-val">119 B</td><td class="stat-pct pct-up">+30%</td></tr>
+          <tr><td class="rank">9</td><td class="model-cell"><span class="model-name">MiMo-V2.5-Pro</span><span class="provider">Xiaomi</span></td><td class="stat-val">111 B</td><td class="stat-pct pct-up">+262%</td></tr>
+          <tr><td class="rank">10</td><td class="model-cell"><span class="model-name">Nemotron 3 Super（免费）</span><span class="provider">NVIDIA</span></td><td class="stat-val">89.5 B</td><td class="stat-pct pct-up">+4%</td></tr>
+        </tbody>
+      </table></div>
+    </div>
+
+    <!-- Week (default) -->
+    <div class="period-table active" id="lb-week">
+      <div class="table-wrap"><table>
+        <thead><tr><th style="width:36px">#</th><th>模型</th><th style="text-align:right">Token 用量</th><th style="text-align:right">周变化</th></tr></thead>
+        <tbody>
+          <tr><td class="rank rank-1">1</td><td class="model-cell"><span class="model-name">DeepSeek V4 Flash</span><span class="provider">DeepSeek</span></td><td class="stat-val">3.21 T</td><td class="stat-pct pct-up">+73%</td></tr>
+          <tr><td class="rank rank-2">2</td><td class="model-cell"><span class="model-name">Hy3 Preview</span><span class="provider">Tencent</span></td><td class="stat-val">3.08 T</td><td class="stat-pct pct-up">+16%</td></tr>
+          <tr><td class="rank rank-3">3</td><td class="model-cell"><span class="model-name">Claude Opus 4.7</span><span class="provider">Anthropic</span></td><td class="stat-val">1.84 T</td><td class="stat-pct pct-up">+18%</td></tr>
+          <tr><td class="rank">4</td><td class="model-cell"><span class="model-name">Claude Sonnet 4.6</span><span class="provider">Anthropic</span></td><td class="stat-val">1.82 T</td><td class="stat-pct pct-up">+18%</td></tr>
+          <tr><td class="rank">5</td><td class="model-cell"><span class="model-name">Owl Alpha</span><span class="provider">OpenRouter</span></td><td class="stat-val">1.15 T</td><td class="stat-pct pct-up">+46%</td></tr>
+          <tr><td class="rank">6</td><td class="model-cell"><span class="model-name">Gemini 3 Flash Preview</span><span class="provider">Google</span></td><td class="stat-val">1.13 T</td><td class="stat-pct pct-neutral">0%</td></tr>
+          <tr><td class="rank">7</td><td class="model-cell"><span class="model-name">DeepSeek V4 Pro</span><span class="provider">DeepSeek</span></td><td class="stat-val">1.03 T</td><td class="stat-pct pct-up">+17%</td></tr>
+          <tr><td class="rank">8</td><td class="model-cell"><span class="model-name">DeepSeek V3.2</span><span class="provider">DeepSeek</span></td><td class="stat-val">1.03 T</td><td class="stat-pct pct-up">+3%</td></tr>
+          <tr><td class="rank">9</td><td class="model-cell"><span class="model-name">Step 3.5 Flash</span><span class="provider">StepFun</span></td><td class="stat-val">728 B</td><td class="stat-pct pct-up">+10%</td></tr>
+          <tr><td class="rank">10</td><td class="model-cell"><span class="model-name">Kimi K2.6</span><span class="provider">MoonshotAI</span></td><td class="stat-val">675 B</td><td class="stat-pct pct-up">+41%</td></tr>
+        </tbody>
+      </table></div>
+    </div>
+
+    <!-- Month -->
+    <div class="period-table" id="lb-month">
+      <div class="table-wrap"><table>
+        <thead><tr><th style="width:36px">#</th><th>模型</th><th style="text-align:right">Token 用量</th><th style="text-align:right">月变化</th></tr></thead>
+        <tbody>
+          <tr><td class="rank rank-1">1</td><td class="model-cell"><span class="model-name">DeepSeek V4 Flash</span><span class="provider">DeepSeek</span></td><td class="stat-val">6.87 T</td><td class="stat-pct pct-neutral">新</td></tr>
+          <tr><td class="rank rank-2">2</td><td class="model-cell"><span class="model-name">Claude Sonnet 4.6</span><span class="provider">Anthropic</span></td><td class="stat-val">6.51 T</td><td class="stat-pct pct-up">+26%</td></tr>
+          <tr><td class="rank rank-3">3</td><td class="model-cell"><span class="model-name">Hy3 Preview</span><span class="provider">Tencent</span></td><td class="stat-val">6.18 T</td><td class="stat-pct pct-neutral">新</td></tr>
+          <tr><td class="rank">4</td><td class="model-cell"><span class="model-name">Hy3 Preview（免费）</span><span class="provider">Tencent</span></td><td class="stat-val">5.99 T</td><td class="stat-pct pct-up">&gt;999%</td></tr>
+          <tr><td class="rank">5</td><td class="model-cell"><span class="model-name">Claude Opus 4.7</span><span class="provider">Anthropic</span></td><td class="stat-val">5.89 T</td><td class="stat-pct pct-up">+506%</td></tr>
+          <tr><td class="rank">6</td><td class="model-cell"><span class="model-name">Kimi K2.6</span><span class="provider">MoonshotAI</span></td><td class="stat-val">5.87 T</td><td class="stat-pct pct-up">+642%</td></tr>
+          <tr><td class="rank">7</td><td class="model-cell"><span class="model-name">Gemini 3 Flash Preview</span><span class="provider">Google</span></td><td class="stat-val">4.57 T</td><td class="stat-pct pct-up">+1%</td></tr>
+          <tr><td class="rank">8</td><td class="model-cell"><span class="model-name">DeepSeek V3.2</span><span class="provider">DeepSeek</span></td><td class="stat-val">4.15 T</td><td class="stat-pct pct-up">+23%</td></tr>
+          <tr><td class="rank">9</td><td class="model-cell"><span class="model-name">DeepSeek V4 Pro</span><span class="provider">DeepSeek</span></td><td class="stat-val">3.06 T</td><td class="stat-pct pct-neutral">新</td></tr>
+          <tr><td class="rank">10</td><td class="model-cell"><span class="model-name">MiniMax M2.7</span><span class="provider">MiniMax</span></td><td class="stat-val">3.02 T</td><td class="stat-pct pct-up">+36%</td></tr>
+        </tbody>
+      </table></div>
+    </div>
+
+    <!-- Trending -->
+    <div class="period-table" id="lb-trending">
+      <div class="table-wrap"><table>
+        <thead><tr><th style="width:36px">#</th><th>模型</th><th style="text-align:right">Token 用量</th><th style="text-align:right">增幅</th></tr></thead>
+        <tbody>
+          <tr><td class="rank rank-1">1</td><td class="model-cell"><span class="model-name">Gemini 3.5 Flash</span><span class="provider">Google</span></td><td class="stat-val">229 B</td><td class="stat-pct pct-neutral">新</td></tr>
+          <tr><td class="rank rank-2">2</td><td class="model-cell"><span class="model-name">Qwen3.7 Max</span><span class="provider">Qwen</span></td><td class="stat-val">18.0 B</td><td class="stat-pct pct-neutral">新</td></tr>
+          <tr><td class="rank rank-3">3</td><td class="model-cell"><span class="model-name">Voxtral Mini Transcribe</span><span class="provider">MistralAI</span></td><td class="stat-val">3.51 M</td><td class="stat-pct pct-up">&gt;999%</td></tr>
+          <tr><td class="rank">4</td><td class="model-cell"><span class="model-name">Grok Voice TTS 1.0</span><span class="provider">xAI</span></td><td class="stat-val">2.71 M</td><td class="stat-pct pct-up">&gt;999%</td></tr>
+          <tr><td class="rank">5</td><td class="model-cell"><span class="model-name">Mistral Medium 3.5</span><span class="provider">MistralAI</span></td><td class="stat-val">37.2 B</td><td class="stat-pct pct-up">+920%</td></tr>
+          <tr><td class="rank">6</td><td class="model-cell"><span class="model-name">Ling-2.6-flash</span><span class="provider">InclusionAI</span></td><td class="stat-val">21.9 B</td><td class="stat-pct pct-up">+726%</td></tr>
+          <tr><td class="rank">7</td><td class="model-cell"><span class="model-name">LFM2-24B-A2B</span><span class="provider">Liquid</span></td><td class="stat-val">2.43 B</td><td class="stat-pct pct-up">+588%</td></tr>
+          <tr><td class="rank">8</td><td class="model-cell"><span class="model-name">Qianfan-OCR-Fast</span><span class="provider">Baidu</span></td><td class="stat-val">32.4 M</td><td class="stat-pct pct-up">+565%</td></tr>
+          <tr><td class="rank">9</td><td class="model-cell"><span class="model-name">Recraft V4 Vector</span><span class="provider">Recraft</span></td><td class="stat-val">1.97 M</td><td class="stat-pct pct-up">+564%</td></tr>
+          <tr><td class="rank">10</td><td class="model-cell"><span class="model-name">Laguna M.1（免费）</span><span class="provider">Poolside</span></td><td class="stat-val">125 M</td><td class="stat-pct pct-up">+509%</td></tr>
+        </tbody>
+      </table></div>
+    </div>
+
+    <div class="note">💡 排名基于 Prompt + Completion Token 总量（含推理 Token）。选择上方时间维度切换数据。</div>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <span class="card-icon">🔥</span>
+      <span class="card-title">趋势观察</span>
+      <span class="card-desc">本周 vs 今日亮点</span>
+    </div>
+    <div class="col2">
+      <div class="kpi"><div class="kpi-val" style="color:var(--gold)">Hy3 #1</div><div class="kpi-label">今日登顶</div></div>
+      <div class="kpi"><div class="kpi-val" style="color:var(--gold)">+109%</div><div class="kpi-label">Owl Alpha 日增幅</div></div>
+      <div class="kpi"><div class="kpi-val" style="color:var(--green)">MiMo +262%</div><div class="kpi-label">小米新锐飙升</div></div>
+      <div class="kpi"><div class="kpi-val" style="color:var(--green)">+642%</div><div class="kpi-label">Kimi K2.6 月增幅</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- 市场份额 -->
+<div class="section" id="tab-marketshare">
+  <div class="card">
+    <div class="card-header">
+      <span class="card-icon">📊</span>
+      <span class="card-title">市场份额</span>
+      <span class="card-desc">按模型提供商 Token 份额</span>
+    </div>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th style="width:36px">#</th><th>提供商</th><th style="text-align:right">Token 用量</th><th style="text-align:right">份额</th><th class="bar-cell">占比</th></tr></thead>
+        <tbody>
+          <tr><td class="rank rank-1">1</td><td class="model-name">DeepSeek</td><td class="stat-val">5.07 T</td><td class="stat-val">19.3%</td><td class="bar-cell"><div class="bar-wrap"><div class="bar-track"><div class="bar-fill deepseek" style="width:100%"></div></div></div></td></tr>
+          <tr><td class="rank rank-2">2</td><td class="model-name">Anthropic</td><td class="stat-val">4.39 T</td><td class="stat-val">16.7%</td><td class="bar-cell"><div class="bar-wrap"><div class="bar-track"><div class="bar-fill anthropic" style="width:86.5%"></div></div></div></td></tr>
+          <tr><td class="rank rank-3">3</td><td class="model-name">Google</td><td class="stat-val">4.01 T</td><td class="stat-val">15.3%</td><td class="bar-cell"><div class="bar-wrap"><div class="bar-track"><div class="bar-fill google" style="width:79.3%"></div></div></div></td></tr>
+          <tr><td class="rank">4</td><td class="model-name">Tencent</td><td class="stat-val">2.81 T</td><td class="stat-val">10.7%</td><td class="bar-cell"><div class="bar-wrap"><div class="bar-track"><div class="bar-fill tencent" style="width:55.4%"></div></div></div></td></tr>
+          <tr><td class="rank">5</td><td class="model-name">OpenAI</td><td class="stat-val">2.71 T</td><td class="stat-val">10.3%</td><td class="bar-cell"><div class="bar-wrap"><div class="bar-track"><div class="bar-fill openai" style="width:53.4%"></div></div></div></td></tr>
+          <tr><td class="rank">6</td><td class="model-name">Qwen</td><td class="stat-val">1.08 T</td><td class="stat-val">4.1%</td><td class="bar-cell"><div class="bar-wrap"><div class="bar-track"><div class="bar-fill qwen" style="width:21.2%"></div></div></div></td></tr>
+          <tr><td class="rank">7</td><td class="model-name">OpenRouter</td><td class="stat-val">1.01 T</td><td class="stat-val">3.9%</td><td class="bar-cell"><div class="bar-wrap"><div class="bar-track"><div class="bar-fill" style="width:20.2%;background:linear-gradient(90deg,#ec4899,#f472b6)"></div></div></div></td></tr>
+          <tr><td class="rank">8</td><td class="model-name">Z-AI</td><td class="stat-val">858 B</td><td class="stat-val">3.3%</td><td class="bar-cell"><div class="bar-wrap"><div class="bar-track"><div class="bar-fill" style="width:17.1%;background:linear-gradient(90deg,#14b8a6,#2dd4bf)"></div></div></div></td></tr>
+          <tr><td class="rank">9</td><td class="model-name">MoonshotAI</td><td class="stat-val">851 B</td><td class="stat-val">3.2%</td><td class="bar-cell"><div class="bar-wrap"><div class="bar-track"><div class="bar-fill" style="width:16.6%;background:linear-gradient(90deg,#f97316,#fb923c)"></div></div></div></td></tr>
+          <tr><td class="rank">10</td><td class="model-name">其他</td><td class="stat-val">3.46 T</td><td class="stat-val">13.2%</td><td class="bar-cell"><div class="bar-wrap"><div class="bar-track"><div class="bar-fill others" style="width:68.4%"></div></div></div></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="note">💡 DeepSeek 以 19.3% 的份额领跑，腾讯凭借 Hy3 系列冲至第四，国产模型合计占比超 37%。</div>
+  </div>
+</div>
+
+<!-- 编程 -->
+<div class="section" id="tab-programming">
+  <div class="card">
+    <div class="card-header">
+      <span class="card-icon">💻</span>
+      <span class="card-title">编程场景排行</span>
+      <span class="card-desc">按编程类别使用量</span>
+    </div>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th style="width:36px">#</th><th>模型</th><th style="text-align:right">Token 用量</th><th style="text-align:right">份额</th></tr></thead>
+        <tbody>
+          <tr><td class="rank rank-1">1</td><td class="model-cell"><span class="model-name">DeepSeek V4 Flash</span><span class="provider">DeepSeek</span></td><td class="stat-val">696 B</td><td class="stat-val">9.2%</td></tr>
+          <tr><td class="rank rank-2">2</td><td class="model-cell"><span class="model-name">Claude Opus 4.7</span><span class="provider">Anthropic</span></td><td class="stat-val">648 B</td><td class="stat-val">8.6%</td></tr>
+          <tr><td class="rank rank-3">3</td><td class="model-cell"><span class="model-name">Hy3 Preview</span><span class="provider">Tencent</span></td><td class="stat-val">591 B</td><td class="stat-val">7.8%</td></tr>
+          <tr><td class="rank">4</td><td class="model-cell"><span class="model-name">Kimi K2.6</span><span class="provider">MoonshotAI</span></td><td class="stat-val">488 B</td><td class="stat-val">6.5%</td></tr>
+          <tr><td class="rank">5</td><td class="model-cell"><span class="model-name">Step 3.5 Flash</span><span class="provider">StepFun</span></td><td class="stat-val">453 B</td><td class="stat-val">6.0%</td></tr>
+          <tr><td class="rank">6</td><td class="model-cell"><span class="model-name">Claude Sonnet 4.6</span><span class="provider">Anthropic</span></td><td class="stat-val">420 B</td><td class="stat-val">5.6%</td></tr>
+          <tr><td class="rank">7</td><td class="model-cell"><span class="model-name">Nemotron 3 Super（免费）</span><span class="provider">NVIDIA</span></td><td class="stat-val">356 B</td><td class="stat-val">4.7%</td></tr>
+          <tr><td class="rank">8</td><td class="model-cell"><span class="model-name">DeepSeek V4 Pro</span><span class="provider">DeepSeek</span></td><td class="stat-val">335 B</td><td class="stat-val">4.4%</td></tr>
+          <tr><td class="rank">9</td><td class="model-cell"><span class="model-name">GPT-5.5</span><span class="provider">OpenAI</span></td><td class="stat-val">258 B</td><td class="stat-val">3.4%</td></tr>
+          <tr><td class="rank">10</td><td class="model-cell"><span class="model-name">其他</span></td><td class="stat-val">3.31 T</td><td class="stat-val">43.8%</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<!-- 自然语言 -->
+<div class="section" id="tab-language">
+  <div class="card">
+    <div class="card-header">
+      <span class="card-icon">🌐</span>
+      <span class="card-title">自然语言排行（英语）</span>
+      <span class="card-desc">按自然语言类别使用量</span>
+    </div>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th style="width:36px">#</th><th>模型</th><th style="text-align:right">Token 用量</th><th style="text-align:right">份额</th></tr></thead>
+        <tbody>
+          <tr><td class="rank rank-1">1</td><td class="model-cell"><span class="model-name">Hy3 Preview</span><span class="provider">Tencent</span></td><td class="stat-val">415 B</td><td class="stat-val">8.7%</td></tr>
+          <tr><td class="rank rank-2">2</td><td class="model-cell"><span class="model-name">DeepSeek V4 Flash</span><span class="provider">DeepSeek</span></td><td class="stat-val">387 B</td><td class="stat-val">8.1%</td></tr>
+          <tr><td class="rank rank-3">3</td><td class="model-cell"><span class="model-name">Owl Alpha</span><span class="provider">OpenRouter</span></td><td class="stat-val">295 B</td><td class="stat-val">6.2%</td></tr>
+          <tr><td class="rank">4</td><td class="model-cell"><span class="model-name">Claude Sonnet 4.6</span><span class="provider">Anthropic</span></td><td class="stat-val">291 B</td><td class="stat-val">6.1%</td></tr>
+          <tr><td class="rank">5</td><td class="model-cell"><span class="model-name">Claude Opus 4.7</span><span class="provider">Anthropic</span></td><td class="stat-val">271 B</td><td class="stat-val">5.7%</td></tr>
+          <tr><td class="rank">6</td><td class="model-cell"><span class="model-name">DeepSeek V3.2</span><span class="provider">DeepSeek</span></td><td class="stat-val">224 B</td><td class="stat-val">4.7%</td></tr>
+          <tr><td class="rank">7</td><td class="model-cell"><span class="model-name">DeepSeek V4 Pro</span><span class="provider">DeepSeek</span></td><td class="stat-val">195 B</td><td class="stat-val">4.1%</td></tr>
+          <tr><td class="rank">8</td><td class="model-cell"><span class="model-name">MiMo-V2.5-Pro</span><span class="provider">Xiaomi</span></td><td class="stat-val">166 B</td><td class="stat-val">3.5%</td></tr>
+          <tr><td class="rank">9</td><td class="model-cell"><span class="model-name">Gemini 3 Flash Preview</span><span class="provider">Google</span></td><td class="stat-val">145 B</td><td class="stat-val">3.0%</td></tr>
+          <tr><td class="rank">10</td><td class="model-cell"><span class="model-name">其他</span></td><td class="stat-val">2.38 T</td><td class="stat-val">49.9%</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<!-- Python -->
+<div class="section" id="tab-python">
+  <div class="card">
+    <div class="card-header">
+      <span class="card-icon">🐍</span>
+      <span class="card-title">Python 编程排行</span>
+      <span class="card-desc">Python 语言场景使用量</span>
+    </div>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th style="width:36px">#</th><th>模型</th><th style="text-align:right">Token 用量</th><th style="text-align:right">份额</th></tr></thead>
+        <tbody>
+          <tr><td class="rank rank-1">1</td><td class="model-cell"><span class="model-name">Hy3 Preview</span><span class="provider">Tencent</span></td><td class="stat-val">170 B</td><td class="stat-val">13.3%</td></tr>
+          <tr><td class="rank rank-2">2</td><td class="model-cell"><span class="model-name">DeepSeek V4 Flash</span><span class="provider">DeepSeek</span></td><td class="stat-val">102 B</td><td class="stat-val">8.0%</td></tr>
+          <tr><td class="rank rank-3">3</td><td class="model-cell"><span class="model-name">Claude Opus 4.7</span><span class="provider">Anthropic</span></td><td class="stat-val">75.3 B</td><td class="stat-val">5.9%</td></tr>
+          <tr><td class="rank">4</td><td class="model-cell"><span class="model-name">DeepSeek V3.2</span><span class="provider">DeepSeek</span></td><td class="stat-val">73.7 B</td><td class="stat-val">5.8%</td></tr>
+          <tr><td class="rank">5</td><td class="model-cell"><span class="model-name">Owl Alpha</span><span class="provider">OpenRouter</span></td><td class="stat-val">69.8 B</td><td class="stat-val">5.5%</td></tr>
+          <tr><td class="rank">6</td><td class="model-cell"><span class="model-name">DeepSeek V4 Pro</span><span class="provider">DeepSeek</span></td><td class="stat-val">67.4 B</td><td class="stat-val">5.3%</td></tr>
+          <tr><td class="rank">7</td><td class="model-cell"><span class="model-name">Claude Sonnet 4.6</span><span class="provider">Anthropic</span></td><td class="stat-val">55.2 B</td><td class="stat-val">4.3%</td></tr>
+          <tr><td class="rank">8</td><td class="model-cell"><span class="model-name">Kimi K2.6</span><span class="provider">MoonshotAI</span></td><td class="stat-val">34.6 B</td><td class="stat-val">2.7%</td></tr>
+          <tr><td class="rank">9</td><td class="model-cell"><span class="model-name">Gemini 3 Flash Preview</span><span class="provider">Google</span></td><td class="stat-val">34.1 B</td><td class="stat-val">2.7%</td></tr>
+          <tr><td class="rank">10</td><td class="model-cell"><span class="model-name">其他</span></td><td class="stat-val">596 B</td><td class="stat-val">46.6%</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="note">💡 腾讯 Hy3 在 Python 编程领域以 13.3% 份额大幅领先，远超第二名 DeepSeek V4 Flash（8.0%）。</div>
+  </div>
+</div>
+
+<!-- 上下文长度 -->
+<div class="section" id="tab-context">
+  <div class="card">
+    <div class="card-header">
+      <span class="card-icon">📏</span>
+      <span class="card-title">上下文长度排行</span>
+      <span class="card-desc">1K - 10K Token 区间请求量</span>
+    </div>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th style="width:36px">#</th><th>模型</th><th style="text-align:right">请求数</th><th style="text-align:right">份额</th></tr></thead>
+        <tbody>
+          <tr><td class="rank rank-1">1</td><td class="model-cell"><span class="model-name">Gemini 2.5 Flash</span><span class="provider">Google</span></td><td class="stat-val">51.3 M</td><td class="stat-val">9.2%</td></tr>
+          <tr><td class="rank rank-2">2</td><td class="model-cell"><span class="model-name">Gemini 2.5 Flash Lite</span><span class="provider">Google</span></td><td class="stat-val">38.0 M</td><td class="stat-val">6.8%</td></tr>
+          <tr><td class="rank rank-3">3</td><td class="model-cell"><span class="model-name">Gemini 2.0 Flash</span><span class="provider">Google</span></td><td class="stat-val">35.1 M</td><td class="stat-val">6.3%</td></tr>
+          <tr><td class="rank">4</td><td class="model-cell"><span class="model-name">Grok 4.1 Fast</span><span class="provider">xAI</span></td><td class="stat-val">26.5 M</td><td class="stat-val">4.8%</td></tr>
+          <tr><td class="rank">5</td><td class="model-cell"><span class="model-name">DeepSeek V3.2</span><span class="provider">DeepSeek</span></td><td class="stat-val">25.9 M</td><td class="stat-val">4.7%</td></tr>
+          <tr><td class="rank">6</td><td class="model-cell"><span class="model-name">Gemini 3 Flash Preview</span><span class="provider">Google</span></td><td class="stat-val">22.8 M</td><td class="stat-val">4.1%</td></tr>
+          <tr><td class="rank">7</td><td class="model-cell"><span class="model-name">MiMo V2 Flash（免费）</span><span class="provider">Xiaomi</span></td><td class="stat-val">22.2 M</td><td class="stat-val">4.0%</td></tr>
+          <tr><td class="rank">8</td><td class="model-cell"><span class="model-name">gpt-oss-120b</span><span class="provider">OpenAI</span></td><td class="stat-val">21.9 M</td><td class="stat-val">3.9%</td></tr>
+          <tr><td class="rank">9</td><td class="model-cell"><span class="model-name">Mistral Nemo</span><span class="provider">MistralAI</span></td><td class="stat-val">20.6 M</td><td class="stat-val">3.7%</td></tr>
+          <tr><td class="rank">10</td><td class="model-cell"><span class="model-name">其他</span></td><td class="stat-val">292 M</td><td class="stat-val">52.5%</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="note">💡 中短上下文（1K-10K tokens）是主流使用场景，Google Gemini Flash 系列在此区间占据统治地位。</div>
+  </div>
+</div>
+
+<!-- 工具调用 -->
+<div class="section" id="tab-tools">
+  <div class="card">
+    <div class="card-header">
+      <span class="card-icon">🔧</span>
+      <span class="card-title">工具调用排行</span>
+      <span class="card-desc">模型在 Function Calling 方面的使用情况</span>
+    </div>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th style="width:36px">#</th><th>模型</th><th style="text-align:right">调用次数</th><th style="text-align:right">份额</th></tr></thead>
+        <tbody>
+          <tr><td class="rank rank-1">1</td><td class="model-cell"><span class="model-name">Hy3 Preview</span><span class="provider">Tencent</span></td><td class="stat-val">42.6 M</td><td class="stat-val">11.4%</td></tr>
+          <tr><td class="rank rank-2">2</td><td class="model-cell"><span class="model-name">DeepSeek V4 Flash</span><span class="provider">DeepSeek</span></td><td class="stat-val">38.5 M</td><td class="stat-val">10.3%</td></tr>
+          <tr><td class="rank rank-3">3</td><td class="model-cell"><span class="model-name">Claude Opus 4.7</span><span class="provider">Anthropic</span></td><td class="stat-val">20.2 M</td><td class="stat-val">5.4%</td></tr>
+          <tr><td class="rank">4</td><td class="model-cell"><span class="model-name">Claude Sonnet 4.6</span><span class="provider">Anthropic</span></td><td class="stat-val">19.7 M</td><td class="stat-val">5.3%</td></tr>
+          <tr><td class="rank">5</td><td class="model-cell"><span class="model-name">Gemini 3 Flash Preview</span><span class="provider">Google</span></td><td class="stat-val">19.1 M</td><td class="stat-val">5.1%</td></tr>
+          <tr><td class="rank">6</td><td class="model-cell"><span class="model-name">Gemma 4 31B</span><span class="provider">Google</span></td><td class="stat-val">14.4 M</td><td class="stat-val">3.8%</td></tr>
+          <tr><td class="rank">7</td><td class="model-cell"><span class="model-name">Kimi K2.6</span><span class="provider">MoonshotAI</span></td><td class="stat-val">11.3 M</td><td class="stat-val">3.0%</td></tr>
+          <tr><td class="rank">8</td><td class="model-cell"><span class="model-name">Gemini 2.5 Flash Lite</span><span class="provider">Google</span></td><td class="stat-val">10.6 M</td><td class="stat-val">2.8%</td></tr>
+          <tr><td class="rank">9</td><td class="model-cell"><span class="model-name">DeepSeek V4 Pro</span><span class="provider">DeepSeek</span></td><td class="stat-val">10.3 M</td><td class="stat-val">2.8%</td></tr>
+          <tr><td class="rank">10</td><td class="model-cell"><span class="model-name">其他</span></td><td class="stat-val">188 M</td><td class="stat-val">50.1%</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<!-- 图片处理 -->
+<div class="section" id="tab-images">
+  <div class="card">
+    <div class="card-header">
+      <span class="card-icon">🖼️</span>
+      <span class="card-title">图片处理排行</span>
+      <span class="card-desc">处理图片总量</span>
+    </div>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th style="width:36px">#</th><th>模型</th><th style="text-align:right">图片数</th><th style="text-align:right">份额</th></tr></thead>
+        <tbody>
+          <tr><td class="rank rank-1">1</td><td class="model-cell"><span class="model-name">Gemini 2.5 Flash Lite</span><span class="provider">Google</span></td><td class="stat-val">177 M</td><td class="stat-val">34.8%</td></tr>
+          <tr><td class="rank rank-2">2</td><td class="model-cell"><span class="model-name">Gemini 3 Flash Preview</span><span class="provider">Google</span></td><td class="stat-val">58.8 M</td><td class="stat-val">11.6%</td></tr>
+          <tr><td class="rank rank-3">3</td><td class="model-cell"><span class="model-name">Gemini 2.5 Flash</span><span class="provider">Google</span></td><td class="stat-val">35.4 M</td><td class="stat-val">7.0%</td></tr>
+          <tr><td class="rank">4</td><td class="model-cell"><span class="model-name">Claude Sonnet 4.6</span><span class="provider">Anthropic</span></td><td class="stat-val">23.3 M</td><td class="stat-val">4.6%</td></tr>
+          <tr><td class="rank">5</td><td class="model-cell"><span class="model-name">Qwen3 VL 32B Instruct</span><span class="provider">Qwen</span></td><td class="stat-val">18.0 M</td><td class="stat-val">3.5%</td></tr>
+          <tr><td class="rank">6</td><td class="model-cell"><span class="model-name">Gemini 2.0 Flash Lite</span><span class="provider">Google</span></td><td class="stat-val">12.4 M</td><td class="stat-val">2.5%</td></tr>
+          <tr><td class="rank">7</td><td class="model-cell"><span class="model-name">Claude Opus 4.7</span><span class="provider">Anthropic</span></td><td class="stat-val">12.0 M</td><td class="stat-val">2.4%</td></tr>
+          <tr><td class="rank">8</td><td class="model-cell"><span class="model-name">Gemini 3.1 Flash Lite Preview</span><span class="provider">Google</span></td><td class="stat-val">11.9 M</td><td class="stat-val">2.3%</td></tr>
+          <tr><td class="rank">9</td><td class="model-cell"><span class="model-name">GPT-5 Mini</span><span class="provider">OpenAI</span></td><td class="stat-val">10.2 M</td><td class="stat-val">2.0%</td></tr>
+          <tr><td class="rank">10</td><td class="model-cell"><span class="model-name">其他</span></td><td class="stat-val">149 M</td><td class="stat-val">29.3%</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="note">💡 Google Gemini 系列在图片处理领域占据绝对优势，2.5 Flash Lite 独占 34.8%。</div>
+  </div>
+</div>
+
+<!-- 音频输入 -->
+<div class="section" id="tab-audio">
+  <div class="card">
+    <div class="card-header">
+      <span class="card-icon">🎵</span>
+      <span class="card-title">音频输入排行</span>
+      <span class="card-desc">音频提示处理总量</span>
+    </div>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th style="width:36px">#</th><th>模型</th><th style="text-align:right">请求数</th><th style="text-align:right">份额</th></tr></thead>
+        <tbody>
+          <tr><td class="rank rank-1">1</td><td class="model-cell"><span class="model-name">Gemini 3 Flash Preview</span><span class="provider">Google</span></td><td class="stat-val">2.24 M</td><td class="stat-val">31.4%</td></tr>
+          <tr><td class="rank rank-2">2</td><td class="model-cell"><span class="model-name">Gemini 3.1 Pro Preview</span><span class="provider">Google</span></td><td class="stat-val">888 K</td><td class="stat-val">12.4%</td></tr>
+          <tr><td class="rank rank-3">3</td><td class="model-cell"><span class="model-name">Whisper Large V3</span><span class="provider">OpenAI</span></td><td class="stat-val">789 K</td><td class="stat-val">11.0%</td></tr>
+          <tr><td class="rank">4</td><td class="model-cell"><span class="model-name">MiMo-V2-Omni</span><span class="provider">Xiaomi</span></td><td class="stat-val">765 K</td><td class="stat-val">10.7%</td></tr>
+          <tr><td class="rank">5</td><td class="model-cell"><span class="model-name">Gemini 3.1 Flash Lite Preview</span><span class="provider">Google</span></td><td class="stat-val">549 K</td><td class="stat-val">7.7%</td></tr>
+          <tr><td class="rank">6</td><td class="model-cell"><span class="model-name">Gemini 2.5 Flash</span><span class="provider">Google</span></td><td class="stat-val">450 K</td><td class="stat-val">6.3%</td></tr>
+          <tr><td class="rank">7</td><td class="model-cell"><span class="model-name">Gemini 3.1 Flash Lite</span><span class="provider">Google</span></td><td class="stat-val">197 K</td><td class="stat-val">2.8%</td></tr>
+          <tr><td class="rank">8</td><td class="model-cell"><span class="model-name">Gemini 2.0 Flash Lite</span><span class="provider">Google</span></td><td class="stat-val">196 K</td><td class="stat-val">2.7%</td></tr>
+          <tr><td class="rank">9</td><td class="model-cell"><span class="model-name">Whisper Large V3 Turbo</span><span class="provider">OpenAI</span></td><td class="stat-val">175 K</td><td class="stat-val">2.5%</td></tr>
+          <tr><td class="rank">10</td><td class="model-cell"><span class="model-name">其他</span></td><td class="stat-val">892 K</td><td class="stat-val">12.5%</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<!-- 热门应用 -->
+<div class="section" id="tab-apps">
+  <div class="card">
+    <div class="card-header">
+      <span class="card-icon">📱</span>
+      <span class="card-title">Top 应用</span>
+      <span class="card-desc" id="appsLabel">今日 · 使用 OpenRouter 的热门 AI 应用</span>
+    </div>
+    <div class="period-tabs" id="appsPeriods">
+      <button class="period-btn apps-p active" data-p="today">🕐 今日</button>
+      <button class="period-btn apps-p" data-p="week">📅 本周</button>
+      <button class="period-btn apps-p" data-p="month">📆 本月</button>
+    </div>
+    <div class="period-table active" id="apps-today">
+<div class="app-row"><div class="app-rank rank-1">1</div><div class="app-info"><div class="app-name">Hermes Agent</div><div class="app-desc">Nous Research 开源自进化 AI 智能体，持久记忆 + 40+ 内置工具</div></div><div class="app-stat"><div class="app-tokens">394 B</div><div class="kpi-label">tokens</div></div></div>
+<div class="app-row"><div class="app-rank rank-2">2</div><div class="app-info"><div class="app-name">OpenClaw</div><div class="app-desc">开源 AI 智能体，接入通讯应用代用户执行操作</div></div><div class="app-stat"><div class="app-tokens">136 B</div><div class="kpi-label">tokens</div></div></div>
+<div class="app-row"><div class="app-rank rank-3">3</div><div class="app-info"><div class="app-name">Kilo Code</div><div class="app-desc">开源 AI 编程智能体，跨 VS Code / JetBrains / CLI</div></div><div class="app-stat"><div class="app-tokens">108 B</div><div class="kpi-label">tokens</div></div></div>
+<div class="app-row"><div class="app-rank">4</div><div class="app-info"><div class="app-name">opengateway <span class="app-tag">新</span></div><div class="app-desc">新晋应用，快速增长中</div></div><div class="app-stat"><div class="app-tokens">98.7 B</div><div class="kpi-label">tokens</div></div></div>
+<div class="app-row"><div class="app-rank">5</div><div class="app-info"><div class="app-name">Descript</div><div class="app-desc">AI 视频与播客编辑器</div></div><div class="app-stat"><div class="app-tokens">42.5 B</div><div class="kpi-label">tokens</div></div></div>
+<div class="app-row"><div class="app-rank">6</div><div class="app-info"><div class="app-name">Claude Code</div><div class="app-desc">Anthropic 智能体编程工具，自动迭代修复</div></div><div class="app-stat"><div class="app-tokens">38.1 B</div><div class="kpi-label">tokens</div></div></div>
+<div class="app-row"><div class="app-rank">7</div><div class="app-info"><div class="app-name">pi</div><div class="app-desc">专属编程智能体</div></div><div class="app-stat"><div class="app-tokens">30.0 B</div><div class="kpi-label">tokens</div></div></div>
+<div class="app-row"><div class="app-rank">8</div><div class="app-info"><div class="app-name">Janitor AI</div><div class="app-desc">角色扮演聊天平台，沉浸式互动创作</div></div><div class="app-stat"><div class="app-tokens">28.4 B</div><div class="kpi-label">tokens</div></div></div>
+<div class="app-row"><div class="app-rank">9</div><div class="app-info"><div class="app-name">Lemonade</div><div class="app-desc">Roblox 游戏 AI 工具</div></div><div class="app-stat"><div class="app-tokens">21.5 B</div><div class="kpi-label">tokens</div></div></div>
+<div class="app-row"><div class="app-rank">10</div><div class="app-info"><div class="app-name">ISEKAI ZERO</div><div class="app-desc">AI 冒险 — 与最爱的角色踏上旅程</div></div><div class="app-stat"><div class="app-tokens">20.8 B</div><div class="kpi-label">tokens</div></div></div>
+    </div>
+    <div class="period-table" id="apps-week">
+<div class="app-row"><div class="app-rank rank-1">1</div><div class="app-info"><div class="app-name">Hermes Agent</div><div class="app-desc">Nous Research 开源自进化 AI 智能体</div></div><div class="app-stat"><div class="app-tokens">3.17 T</div><div class="kpi-label">tokens</div></div></div>
+<div class="app-row"><div class="app-rank rank-2">2</div><div class="app-info"><div class="app-name">OpenClaw</div><div class="app-desc">开源 AI 智能体，接入通讯应用</div></div><div class="app-stat"><div class="app-tokens">1.16 T</div><div class="kpi-label">tokens</div></div></div>
+<div class="app-row"><div class="app-rank rank-3">3</div><div class="app-info"><div class="app-name">Kilo Code</div><div class="app-desc">开源 AI 编程智能体，跨平台</div></div><div class="app-stat"><div class="app-tokens">1.08 T</div><div class="kpi-label">tokens</div></div></div>
+<div class="app-row"><div class="app-rank">4</div><div class="app-info"><div class="app-name">Descript</div><div class="app-desc">AI 视频与播客编辑器</div></div><div class="app-stat"><div class="app-tokens">422 B</div><div class="kpi-label">tokens</div></div></div>
+<div class="app-row"><div class="app-rank">5</div><div class="app-info"><div class="app-name">Claude Code</div><div class="app-desc">Anthropic 智能体编程工具</div></div><div class="app-stat"><div class="app-tokens">388 B</div><div class="kpi-label">tokens</div></div></div>
+<div class="app-row"><div class="app-rank">6</div><div class="app-info"><div class="app-name">pi</div><div class="app-desc">专属编程智能体</div></div><div class="app-stat"><div class="app-tokens">342 B</div><div class="kpi-label">tokens</div></div></div>
+<div class="app-row"><div class="app-rank">7</div><div class="app-info"><div class="app-name">Janitor AI</div><div class="app-desc">角色扮演聊天平台</div></div><div class="app-stat"><div class="app-tokens">212 B</div><div class="kpi-label">tokens</div></div></div>
+<div class="app-row"><div class="app-rank">8</div><div class="app-info"><div class="app-name">ISEKAI ZERO</div><div class="app-desc">AI 冒险</div></div><div class="app-stat"><div class="app-tokens">181 B</div><div class="kpi-label">tokens</div></div></div>
+<div class="app-row"><div class="app-rank">9</div><div class="app-info"><div class="app-name">Pioneer (production)</div><div class="app-desc">推理 API，流量越多效果越好</div></div><div class="app-stat"><div class="app-tokens">179 B</div><div class="kpi-label">tokens</div></div></div>
+<div class="app-row"><div class="app-rank">10</div><div class="app-info"><div class="app-name">Lemonade</div><div class="app-desc">Roblox 游戏 AI 工具</div></div><div class="app-stat"><div class="app-tokens">159 B</div><div class="kpi-label">tokens</div></div></div>
+    </div>
+    <div class="period-table" id="apps-month">
+<div class="app-row"><div class="app-rank rank-1">1</div><div class="app-info"><div class="app-name">Hermes Agent</div><div class="app-desc">Nous Research 开源自进化 AI 智能体</div></div><div class="app-stat"><div class="app-tokens">8.91 T</div><div class="kpi-label">tokens</div></div></div>
+<div class="app-row"><div class="app-rank rank-2">2</div><div class="app-info"><div class="app-name">OpenClaw</div><div class="app-desc">开源 AI 智能体，接入通讯应用</div></div><div class="app-stat"><div class="app-tokens">6.72 T</div><div class="kpi-label">tokens</div></div></div>
+<div class="app-row"><div class="app-rank rank-3">3</div><div class="app-info"><div class="app-name">Kilo Code</div><div class="app-desc">开源 AI 编程智能体，跨平台</div></div><div class="app-stat"><div class="app-tokens">5.04 T</div><div class="kpi-label">tokens</div></div></div>
+<div class="app-row"><div class="app-rank">4</div><div class="app-info"><div class="app-name">Claude Code</div><div class="app-desc">Anthropic 智能体编程工具</div></div><div class="app-stat"><div class="app-tokens">2.39 T</div><div class="kpi-label">tokens</div></div></div>
+<div class="app-row"><div class="app-rank">5</div><div class="app-info"><div class="app-name">Descript</div><div class="app-desc">AI 视频与播客编辑器</div></div><div class="app-stat"><div class="app-tokens">1.46 T</div><div class="kpi-label">tokens</div></div></div>
+<div class="app-row"><div class="app-rank">6</div><div class="app-info"><div class="app-name">pi</div><div class="app-desc">专属编程智能体</div></div><div class="app-stat"><div class="app-tokens">1.15 T</div><div class="kpi-label">tokens</div></div></div>
+<div class="app-row"><div class="app-rank">7</div><div class="app-info"><div class="app-name">Janitor AI</div><div class="app-desc">角色扮演聊天平台</div></div><div class="app-stat"><div class="app-tokens">818 B</div><div class="kpi-label">tokens</div></div></div>
+<div class="app-row"><div class="app-rank">8</div><div class="app-info"><div class="app-name">ISEKAI ZERO</div><div class="app-desc">AI 冒险</div></div><div class="app-stat"><div class="app-tokens">808 B</div><div class="kpi-label">tokens</div></div></div>
+<div class="app-row"><div class="app-rank">9</div><div class="app-info"><div class="app-name">Cline</div><div class="app-desc">开源 AI 编程智能体，在 IDE 内自主操作</div></div><div class="app-stat"><div class="app-tokens">668 B</div><div class="kpi-label">tokens</div></div></div>
+<div class="app-row"><div class="app-rank">10</div><div class="app-info"><div class="app-name">Lemonade</div><div class="app-desc">Roblox 游戏 AI 工具</div></div><div class="app-stat"><div class="app-tokens">637 B</div><div class="kpi-label">tokens</div></div></div>
+    </div>
+  </div>
+</div>
+
+<!-- 基准评分 -->
+<div class="section" id="tab-benchmarks">
+  <div class="card">
+    <div class="card-header">
+      <span class="card-icon">🧠</span>
+      <span class="card-title">基准评分排行榜</span>
+      <span class="card-desc">Artificial Analysis 智力指数</span>
+    </div>
+    <div class="table-wrap"><table>
+      <thead><tr><th style="width:36px">#</th><th>模型</th><th style="text-align:right">智力指数</th></tr></thead>
+      <tbody>
+        <tr><td class="rank rank-1">1</td><td class="model-cell"><span class="model-name">GPT-5.5 (xhigh)</span><span class="provider">OpenAI</span></td><td class="stat-val">60.2</td></tr>
+        <tr><td class="rank rank-2">2</td><td class="model-cell"><span class="model-name">Claude Opus 4.7<span style="font-size:0.75rem;color:var(--text-dim)"> 推理 · 最大努力</span></span><span class="provider">Anthropic</span></td><td class="stat-val">57.3</td></tr>
+        <tr><td class="rank rank-3">3</td><td class="model-cell"><span class="model-name">Qwen3.7 Max</span><span class="provider">Qwen</span></td><td class="stat-val">56.6</td></tr>
+        <tr><td class="rank">4</td><td class="model-cell"><span class="model-name">MiMo-V2.5-Pro</span><span class="provider">Xiaomi</span></td><td class="stat-val">53.8</td></tr>
+        <tr><td class="rank">5</td><td class="model-cell"><span class="model-name">Grok 4.3</span><span class="provider">xAI</span></td><td class="stat-val">53.2</td></tr>
+        <tr><td class="rank">6</td><td class="model-cell"><span class="model-name">GPT-5 Codex (high)</span><span class="provider">OpenAI</span></td><td class="stat-val">44.6</td></tr>
+        <tr><td class="rank">7</td><td class="model-cell"><span class="model-name">Qwen3.6 35B A3B<span style="font-size:0.75rem;color:var(--text-dim)"> 推理</span></span><span class="provider">Qwen</span></td><td class="stat-val">43.5</td></tr>
+        <tr><td class="rank">8</td><td class="model-cell"><span class="model-name">MiniMax M2.1</span><span class="provider">MiniMax</span></td><td class="stat-val">39.4</td></tr>
+        <tr><td class="rank">9</td><td class="model-cell"><span class="model-name">Mistral Medium 3.5</span><span class="provider">MistralAI</span></td><td class="stat-val">39.2</td></tr>
+        <tr><td class="rank">10</td><td class="model-cell"><span class="model-name">Grok 4.1 Fast<span style="font-size:0.75rem;color:var(--text-dim)"> 推理</span></span><span class="provider">xAI</span></td><td class="stat-val">38.6</td></tr>
+      </tbody>
+    </table></div>
+    <div class="note">🧠 基于 Artificial Analysis Intelligence Index 综合评分，衡量模型在推理、知识、编程等多维度的智力水平。</div>
+  </div>
+</div>
+
+<!-- 最快模型 -->
+<div class="section" id="tab-fastest">
+  <div class="card">
+    <div class="card-header">
+      <span class="card-icon">⚡</span>
+      <span class="card-title">最快模型排行榜</span>
+      <span class="card-desc">按吞吐量 + 价格排名</span>
+    </div>
+    <div class="table-wrap"><table>
+      <thead><tr><th style="width:36px">#</th><th>模型 / 最快提供商</th><th style="text-align:right">速度</th><th style="text-align:right">价格</th></tr></thead>
+      <tbody>
+        <tr><td class="rank rank-1">1</td><td class="model-cell"><span class="model-name">gpt-oss-safeguard-20b</span><span class="provider">Groq 最快</span></td><td class="stat-val">705 tok/s</td><td class="stat-val">$0.07 / M</td></tr>
+        <tr><td class="rank rank-2">2</td><td class="model-cell"><span class="model-name">gpt-oss-120b</span><span class="provider">Cerebras 最快</span></td><td class="stat-val">681 tok/s</td><td class="stat-val">$0.35 / M</td></tr>
+        <tr><td class="rank rank-3">3</td><td class="model-cell"><span class="model-name">gpt-oss-20b</span><span class="provider">Groq 最快</span></td><td class="stat-val">650 tok/s</td><td class="stat-val">$0.07 / M</td></tr>
+        <tr><td class="rank">4</td><td class="model-cell"><span class="model-name">GLM 4.7</span><span class="provider">Cerebras 最快</span></td><td class="stat-val">416 tok/s</td><td class="stat-val">$2.25 / M</td></tr>
+        <tr><td class="rank">5</td><td class="model-cell"><span class="model-name">Qwen3 32B</span><span class="provider">Groq 最快</span></td><td class="stat-val">414 tok/s</td><td class="stat-val">$0.29 / M</td></tr>
+        <tr><td class="rank">6</td><td class="model-cell"><span class="model-name">Mercury 2</span><span class="provider">Inception 最快</span></td><td class="stat-val">373 tok/s</td><td class="stat-val">$0.25 / M</td></tr>
+        <tr><td class="rank">7</td><td class="model-cell"><span class="model-name">Llama 3.1 8B Instruct</span><span class="provider">Groq 最快</span></td><td class="stat-val">219 tok/s</td><td class="stat-val">$0.05 / M</td></tr>
+        <tr><td class="rank">8</td><td class="model-cell"><span class="model-name">Qwen3.6 35B A3B</span><span class="provider">WandB 最快</span></td><td class="stat-val">185 tok/s</td><td class="stat-val">$0.25 / M</td></tr>
+        <tr><td class="rank">9</td><td class="model-cell"><span class="model-name">MiniMax M2.5</span><span class="provider">Mara 最快</span></td><td class="stat-val">183 tok/s</td><td class="stat-val">$0.30 / M</td></tr>
+        <tr><td class="rank">10</td><td class="model-cell"><span class="model-name">Devstral Small 1.1</span><span class="provider">Mistral 最快</span></td><td class="stat-val">178 tok/s</td><td class="stat-val">$0.10 / M</td></tr>
+      </tbody>
+    </table></div>
+    <div class="note">⚡ 按最高吞吐量（tokens/秒）排名，同时标注每百万 token 价格。Groq 和 Cerebras 在速度端大幅领先。</div>
+  </div>
+</div>
+
+</div><!-- end container -->
+</div><!-- end panel-openrouter -->
+
+
+<!-- =============================================
+     VALS AI PANEL
+     ============================================= -->
+<div class="source-panel" id="panel-valsai">
+
+<!-- Vals AI Tabs -->
+<div class="tab-nav" id="valsTabNav">
+  <button class="tab-btn active" data-tab="swebench" data-group="vals">🔧 SWE-bench</button>
+  <button class="tab-btn" data-tab="gpqa" data-group="vals">🎓 GPQA</button>
+  <button class="tab-btn" data-tab="mmlu" data-group="vals">📚 MMLU Pro</button>
+  <button class="tab-btn" data-tab="livecode" data-group="vals">💻 LiveCode</button>
+  <button class="tab-btn" data-tab="ioi" data-group="vals">🏆 IOI</button>
+  <button class="tab-btn" data-tab="all" data-group="vals">📋 全部基准</button>
+  <button class="tab-btn" data-tab="method" data-group="vals">📐 方法论</button>
+</div>
+
+<div class="container">
+
+<!-- SWE-bench -->
+<div class="section active" id="tab-swebench">
+  <div class="card">
+    <div class="card-header">
+      <span class="card-icon">🔧</span>
+      <span class="card-title">SWE-bench Verified 排行榜</span>
+      <span class="card-desc">生产级软件工程任务 · 500 个用例</span>
+    </div>
+
+    <div class="kpi-row">
+      <div class="kpi"><div class="kpi-val" style="color:var(--gold)">82.6%</div><div class="kpi-label">GPT 5.5 最高准确率</div></div>
+      <div class="kpi"><div class="kpi-val" style="color:var(--silver)">82.0%</div><div class="kpi-label">Claude Opus 4.7 紧随其后</div></div>
+      <div class="kpi"><div class="kpi-val" style="color:var(--green)">48</div><div class="kpi-label">参评模型数量</div></div>
+      <div class="kpi"><div class="kpi-val" style="color:var(--accent2)">500</div><div class="kpi-label">经人类验证的测试用例</div></div>
+    </div>
+
+    <div class="insight-box">
+      <h3>💡 关键发现</h3>
+      <ul>
+        <li><strong>GPT 5.5</strong> 以 82.60% 领先，<strong>Claude Opus 4.7</strong> 以 82.00% 紧随其后</li>
+        <li>表现最好的模型通常<strong>精通 bash 和命令行工具</strong>进行代码导航和编辑</li>
+        <li><strong>闭源模型</strong>在 SWE-bench 上表现明显优于开源模型</li>
+        <li>最明显的性能差异出现在<strong>15分钟到1小时</strong>的任务上</li>
+      </ul>
+    </div>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th style="width:36px">#</th>
+            <th>模型</th>
+            <th style="text-align:right">综合准确率</th>
+            <th style="text-align:right" title="194个任务">&lt;15min</th>
+            <th style="text-align:right" title="261个任务">15m–1h</th>
+            <th style="text-align:right" title="42个任务">1–4h</th>
+            <th style="text-align:right" title="3个任务">&gt;4h</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td class="rank rank-1">1</td><td class="model-cell"><span class="model-name">GPT 5.5</span><span class="provider">OpenAI</span></td><td class="stat-val" style="color:var(--gold)">82.6%</td><td class="heat-cell pct-high">92%</td><td class="heat-cell pct-high">81%</td><td class="heat-cell pct-mid">50%</td><td class="heat-cell pct-high">67%</td></tr>
+          <tr><td class="rank rank-2">2</td><td class="model-cell"><span class="model-name">Claude Opus 4.7</span><span class="provider">Anthropic</span></td><td class="stat-val" style="color:var(--silver)">82.0%</td><td class="heat-cell pct-high">90%</td><td class="heat-cell pct-high">79%</td><td class="heat-cell pct-high">64%</td><td class="heat-cell pct-high">67%</td></tr>
+          <tr><td class="rank rank-3">3</td><td class="model-cell"><span class="model-name">Gemini 3.1 Pro Preview (02/26)</span><span class="provider">Google</span></td><td class="stat-val" style="color:var(--bronze)">78.8%</td><td class="heat-cell pct-high">89%</td><td class="heat-cell pct-high">78%</td><td class="heat-cell pct-mid">43%</td><td class="heat-cell pct-low">33%</td></tr>
+          <tr><td class="rank">4</td><td class="model-cell"><span class="model-name">Gemini 3.5 Flash</span><span class="provider">Google</span></td><td class="stat-val">78.6%</td><td class="heat-cell pct-high">87%</td><td class="heat-cell pct-high">78%</td><td class="heat-cell pct-mid">52%</td><td class="heat-cell pct-low">33%</td></tr>
+          <tr><td class="rank">5</td><td class="model-cell"><span class="model-name">Claude Opus 4.6 (Thinking)</span><span class="provider">Anthropic</span></td><td class="stat-val">78.2%</td><td class="heat-cell pct-high">90%</td><td class="heat-cell pct-high">75%</td><td class="heat-cell pct-mid">43%</td><td class="heat-cell pct-low">33%</td></tr>
+          <tr><td class="rank">6</td><td class="model-cell"><span class="model-name">GPT 5.4</span><span class="provider">OpenAI</span></td><td class="stat-val">78.2%</td><td class="heat-cell pct-high">88%</td><td class="heat-cell pct-high">76%</td><td class="heat-cell pct-mid">50%</td><td class="heat-cell pct-low">0%</td></tr>
+          <tr><td class="rank">7</td><td class="model-cell"><span class="model-name">GPT 5.3 Codex</span><span class="provider">OpenAI</span></td><td class="stat-val">78.0%</td><td class="heat-cell pct-high">90%</td><td class="heat-cell pct-high">73%</td><td class="heat-cell pct-mid">55%</td><td class="heat-cell pct-low">33%</td></tr>
+          <tr><td class="rank">8</td><td class="model-cell"><span class="model-name">Claude Sonnet 4.6</span><span class="provider">Anthropic</span></td><td class="stat-val">77.4%</td><td class="heat-cell pct-high">87%</td><td class="heat-cell pct-high">75%</td><td class="heat-cell pct-mid">50%</td><td class="heat-cell pct-low">33%</td></tr>
+          <tr><td class="rank">9</td><td class="model-cell"><span class="model-name">DeepSeek V4</span><span class="provider">DeepSeek</span></td><td class="stat-val">76.8%</td><td class="heat-cell pct-high">88%</td><td class="heat-cell pct-high">76%</td><td class="heat-cell pct-mid">45%</td><td class="heat-cell pct-low">0%</td></tr>
+          <tr><td class="rank">10</td><td class="model-cell"><span class="model-name">Claude Opus 4.5 (Thinking)</span><span class="provider">Anthropic</span></td><td class="stat-val">76.2%</td><td class="heat-cell pct-high">88%</td><td class="heat-cell pct-high">75%</td><td class="heat-cell pct-mid">40%</td><td class="heat-cell pct-low">0%</td></tr>
+          <tr><td class="rank">11</td><td class="model-cell"><span class="model-name">Gemini 3 Pro (11/25)</span><span class="provider">Google</span></td><td class="stat-val">75.8%</td><td class="heat-cell pct-high">88%</td><td class="heat-cell pct-high">74%</td><td class="heat-cell pct-mid">43%</td><td class="heat-cell pct-low">33%</td></tr>
+          <tr><td class="rank">12</td><td class="model-cell"><span class="model-name">GLM 5.1</span><span class="provider">zAI</span></td><td class="stat-val">75.4%</td><td class="heat-cell pct-high">89%</td><td class="heat-cell pct-high">73%</td><td class="heat-cell pct-mid">45%</td><td class="heat-cell pct-low">33%</td></tr>
+          <tr><td class="rank">13</td><td class="model-cell"><span class="model-name">Kimi K2.6</span><span class="provider">Moonshot AI</span></td><td class="stat-val">75.0%</td><td class="heat-cell pct-high">88%</td><td class="heat-cell pct-high">74%</td><td class="heat-cell pct-mid">40%</td><td class="heat-cell pct-low">0%</td></tr>
+          <tr><td class="rank">14</td><td class="model-cell"><span class="model-name">GPT 5.2</span><span class="provider">OpenAI</span></td><td class="stat-val">74.4%</td><td class="heat-cell pct-high">89%</td><td class="heat-cell pct-mid">72%</td><td class="heat-cell pct-mid">38%</td><td class="heat-cell pct-low">33%</td></tr>
+          <tr><td class="rank">15</td><td class="model-cell"><span class="model-name">Gemini 3 Flash (12/25)</span><span class="provider">Google</span></td><td class="stat-val">74.0%</td><td class="heat-cell pct-high">88%</td><td class="heat-cell pct-mid">72%</td><td class="heat-cell pct-mid">38%</td><td class="heat-cell pct-low">33%</td></tr>
+          <tr><td class="rank">16</td><td class="model-cell"><span class="model-name">MiniMax-M2.1</span><span class="provider">MiniMax</span></td><td class="stat-val">73.8%</td><td class="heat-cell pct-high">86%</td><td class="heat-cell pct-high">73%</td><td class="heat-cell pct-mid">40%</td><td class="heat-cell pct-low">33%</td></tr>
+          <tr><td class="rank">17</td><td class="model-cell"><span class="model-name">Muse Spark</span><span class="provider">Alibaba</span></td><td class="stat-val">73.0%</td><td class="heat-cell pct-high">85%</td><td class="heat-cell pct-high">73%</td><td class="heat-cell pct-mid">40%</td><td class="heat-cell pct-low">0%</td></tr>
+          <tr><td class="rank">18</td><td class="model-cell"><span class="model-name">MiniMax-M2.5</span><span class="provider">MiniMax</span></td><td class="stat-val">72.8%</td><td class="heat-cell pct-high">87%</td><td class="heat-cell pct-mid">71%</td><td class="heat-cell pct-mid">38%</td><td class="heat-cell pct-low">33%</td></tr>
+          <tr><td class="rank">19</td><td class="model-cell"><span class="model-name">MiniMax-M2.7</span><span class="provider">MiniMax</span></td><td class="stat-val">71.6%</td><td class="heat-cell pct-high">86%</td><td class="heat-cell pct-mid">72%</td><td class="heat-cell pct-low">31%</td><td class="heat-cell pct-low">33%</td></tr>
+          <tr><td class="rank">20</td><td class="model-cell"><span class="model-name">Qwen 3.6 Plus</span><span class="provider">Alibaba</span></td><td class="stat-val">71.4%</td><td class="heat-cell pct-high">86%</td><td class="heat-cell pct-mid">71%</td><td class="heat-cell pct-mid">38%</td><td class="heat-cell pct-low">0%</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="note">
+      📊 难度列说明：&lt;15min（194个任务）、15m–1h（261个任务）、1–4h（42个任务）、&gt;4h（3个任务）。
+      颜色标记：<span style="color:var(--green)">绿色 ≥80%</span>、<span style="color:var(--orange)">橙色 40–79%</span>、<span style="color:var(--red)">红色 &lt;40%</span>。
+      每个任务在隔离 Docker 容器中执行，模型需生成 patch 解决真实 GitHub issue，通过单元测试判定成功。
+    </div>
+  </div>
+
+  <!-- Provider Tags -->
+  <div class="card">
+    <div class="card-header">
+      <span class="card-icon">🏷️</span>
+      <span class="card-title">供应商筛选</span>
+      <span class="card-desc">点击标签筛选对应供应商的模型</span>
+    </div>
+    <div id="providerTags">
+      <span class="provider-tag active-tag" data-pv="all">全部</span>
+      <span class="provider-tag" data-pv="openai">OpenAI</span>
+      <span class="provider-tag" data-pv="anthropic">Anthropic</span>
+      <span class="provider-tag" data-pv="google">Google</span>
+      <span class="provider-tag" data-pv="deepseek">DeepSeek</span>
+      <span class="provider-tag" data-pv="alibaba">Alibaba</span>
+      <span class="provider-tag" data-pv="minimax">MiniMax</span>
+      <span class="provider-tag" data-pv="moonshot">Moonshot AI</span>
+      <span class="provider-tag" data-pv="zai">zAI</span>
+      <span class="provider-tag" data-pv="xai">xAI</span>
+      <span class="provider-tag" data-pv="mistral">Mistral</span>
+      <span class="provider-tag" data-pv="cohere">Cohere</span>
+      <span class="provider-tag" data-pv="meta">Meta</span>
+    </div>
+  </div>
+</div>
+
+<!-- GPQA -->
+<div class="section" id="tab-gpqa">
+  <div class="card">
+    <div class="card-header">
+      <span class="card-icon">🎓</span>
+      <span class="card-title">GPQA Diamond 排行榜</span>
+      <span class="card-desc">研究生级深度推理问答 · 106 个模型</span>
+    </div>
+    <div class="insight-box">
+      <h3>📋 基准说明</h3>
+      <ul>
+        <li>GPQA (Graduate-Level Google-Proof Q&A) 是由纽约大学等机构提出的高难度问答基准</li>
+        <li>问题由物理学、化学、生物学领域的博士生编写，即使拥有网络访问权限的人类专家也难以回答</li>
+        <li>Diamond 子集为经过最高质量控制的问题集</li>
+      </ul>
+    </div>
+    <div class="note">🔗 完整数据请访问 <a href="https://www.vals.ai/benchmarks/gpqa" target="_blank">vals.ai/benchmarks/gpqa</a>，本页面展示 SWE-bench Verified 详细数据。</div>
+  </div>
+</div>
+
+<!-- MMLU Pro -->
+<div class="section" id="tab-mmlu">
+  <div class="card">
+    <div class="card-header">
+      <span class="card-icon">📚</span>
+      <span class="card-title">MMLU Pro 排行榜</span>
+      <span class="card-desc">14 学科多选题 · 104 个模型</span>
+    </div>
+    <div class="insight-box">
+      <h3>📋 基准说明</h3>
+      <ul>
+        <li>MMLU Pro 是 MMLU 的增强版，涵盖 14 个学科领域的高难度多选题</li>
+        <li>相比原版 MMLU，增加了更多干扰选项和更复杂的推理需求</li>
+        <li>广泛用于评估大语言模型的通用知识广度和推理能力</li>
+      </ul>
+    </div>
+    <div class="note">🔗 完整数据请访问 <a href="https://www.vals.ai/benchmarks/mmlu_pro" target="_blank">vals.ai/benchmarks/mmlu_pro</a></div>
+  </div>
+</div>
+
+<!-- LiveCode -->
+<div class="section" id="tab-livecode">
+  <div class="card">
+    <div class="card-header">
+      <span class="card-icon">💻</span>
+      <span class="card-title">LiveCodeBench 排行榜</span>
+      <span class="card-desc">实时编码基准 · 111 个模型</span>
+    </div>
+    <div class="insight-box">
+      <h3>📋 基准说明</h3>
+      <ul>
+        <li>LiveCodeBench 使用来自 Codeforces、LeetCode、AtCoder 等平台的实时编程竞赛题目</li>
+        <li>持续更新题库，避免数据污染问题</li>
+        <li>评估模型在代码生成和问题解决方面的能力</li>
+      </ul>
+    </div>
+    <div class="note">🔗 完整数据请访问 <a href="https://www.vals.ai/benchmarks/lcb" target="_blank">vals.ai/benchmarks/lcb</a></div>
+  </div>
+</div>
+
+<!-- IOI -->
+<div class="section" id="tab-ioi">
+  <div class="card">
+    <div class="card-header">
+      <span class="card-icon">🏆</span>
+      <span class="card-title">IOI 排行榜</span>
+      <span class="card-desc">国际信息学奥林匹克 · 53 个模型</span>
+    </div>
+    <div class="insight-box">
+      <h3>📋 基准说明</h3>
+      <ul>
+        <li>IOI (International Olympiad in Informatics) 是面向高中生的最高水平编程竞赛</li>
+        <li>评估 AI 模型解决算法竞赛问题的能力</li>
+        <li>问题需要复杂的算法设计与优化</li>
+      </ul>
+    </div>
+    <div class="note">🔗 完整数据请访问 <a href="https://www.vals.ai/benchmarks/ioi" target="_blank">vals.ai/benchmarks/ioi</a></div>
+  </div>
+</div>
+
+<!-- 全部基准 -->
+<div class="section" id="tab-all">
+  <div class="card">
+    <div class="card-header">
+      <span class="card-icon">📋</span>
+      <span class="card-title">Vals AI 全部基准测试</span>
+      <span class="card-desc">25 个基准 · 覆盖编码 / 法律 / 金融 / 医疗 / 数学 / 学术 / 教育</span>
+    </div>
+
+    <h3 class="bench-section-title">🧮 编码 Coding</h3>
+    <div class="bench-grid">
+      <div class="bench-card"><div class="bench-cat">学术</div><div class="bench-name">SWE-bench Verified</div><div class="bench-info">48 个模型 · 生产级软件工程</div></div>
+      <div class="bench-card"><div class="bench-cat">学术</div><div class="bench-name">IOI</div><div class="bench-info">53 个模型 · 国际信息学奥林匹克</div></div>
+      <div class="bench-card"><div class="bench-cat">学术</div><div class="bench-name">LiveCodeBench</div><div class="bench-info">111 个模型 · 实时编码基准</div></div>
+      <div class="bench-card"><div class="bench-cat">学术</div><div class="bench-name">Terminal-Bench 2.0<span class="bench-new">新</span></div><div class="bench-info">64 个模型 · 终端任务</div></div>
+      <div class="bench-card"><div class="bench-cat">专有</div><div class="bench-name">Vibe Code Bench v1.1<span class="bench-new">新</span></div><div class="bench-info">45 个模型 · 从零构建 Web 应用</div></div>
+    </div>
+
+    <h3 class="bench-section-title">🎓 学术 Academic</h3>
+    <div class="bench-grid">
+      <div class="bench-card"><div class="bench-cat">学术</div><div class="bench-name">GPQA Diamond</div><div class="bench-info">106 个模型 · 研究生级推理问答</div></div>
+      <div class="bench-card"><div class="bench-cat">学术</div><div class="bench-name">MMLU Pro</div><div class="bench-info">104 个模型 · 14 学科多选题</div></div>
+      <div class="bench-card"><div class="bench-cat">学术</div><div class="bench-name">MMMU Pro</div><div class="bench-info">71 个模型 · 多模态多任务基准</div></div>
+    </div>
+
+    <h3 class="bench-section-title">📐 数学 Math</h3>
+    <div class="bench-grid">
+      <div class="bench-card"><div class="bench-cat">专有</div><div class="bench-name">ProofBench</div><div class="bench-info">33 个模型 · 形式化验证数学证明</div></div>
+      <div class="bench-card"><div class="bench-cat">学术 · 已归档</div><div class="bench-name">AIME</div><div class="bench-info">高中生数学竞赛</div></div>
+      <div class="bench-card"><div class="bench-cat">学术 · 已归档</div><div class="bench-name">MATH 500</div><div class="bench-info">概率/代数/三角</div></div>
+      <div class="bench-card"><div class="bench-cat">学术 · 已归档</div><div class="bench-name">MGSM</div><div class="bench-info">多语言数学问题</div></div>
+    </div>
+
+    <h3 class="bench-section-title">💰 金融 Finance</h3>
+    <div class="bench-grid">
+      <div class="bench-card"><div class="bench-cat">专有</div><div class="bench-name">Finance Agent v2<span class="bench-new">新</span></div><div class="bench-info">19 个模型 · 金融分析师核心任务</div></div>
+      <div class="bench-card"><div class="bench-cat">专有</div><div class="bench-name">CorpFin v2</div><div class="bench-info">107 个模型 · 长上下文信贷协议理解</div></div>
+      <div class="bench-card"><div class="bench-cat">专有</div><div class="bench-name">TaxEval v2</div><div class="bench-info">112 个模型 · 税务问题问答</div></div>
+      <div class="bench-card"><div class="bench-cat">专有</div><div class="bench-name">MortgageTax</div><div class="bench-info">75 个模型 · 税务证书图像理解</div></div>
+    </div>
+
+    <h3 class="bench-section-title">⚖️ 法律 Legal</h3>
+    <div class="bench-grid">
+      <div class="bench-card"><div class="bench-cat">学术</div><div class="bench-name">LegalBench</div><div class="bench-info">109 个模型 · 法律推理任务</div></div>
+      <div class="bench-card"><div class="bench-cat">专有 · 已归档</div><div class="bench-name">CaseLaw v2</div><div class="bench-info">加拿大法院案例问答</div></div>
+    </div>
+
+    <h3 class="bench-section-title">🏥 医疗 Healthcare</h3>
+    <div class="bench-grid">
+      <div class="bench-card"><div class="bench-cat">专有</div><div class="bench-name">MedCode</div><div class="bench-info">58 个模型 · 医疗账单流程支持</div></div>
+      <div class="bench-card"><div class="bench-cat">专有</div><div class="bench-name">MedScribe</div><div class="bench-info">58 个模型 · 医生行政工作支持</div></div>
+    </div>
+
+    <h3 class="bench-section-title">📊 综合指数 Index</h3>
+    <div class="bench-grid">
+      <div class="bench-card"><div class="bench-cat">专有</div><div class="bench-name">Vals Index</div><div class="bench-info">19 个模型 · 金融与编码加权性能</div></div>
+      <div class="bench-card"><div class="bench-cat">专有</div><div class="bench-name">Vals Multimodal Index</div><div class="bench-info">14 个模型 · 金融/编码/教育加权</div></div>
+    </div>
+
+    <h3 class="bench-section-title">📚 教育 Education</h3>
+    <div class="bench-grid">
+      <div class="bench-card"><div class="bench-cat">专有</div><div class="bench-name">SAGE</div><div class="bench-info">55 个模型 · 学生评估生成式评测</div></div>
+    </div>
+
+    <h3 class="bench-section-title">🃏 测试版 Beta</h3>
+    <div class="bench-grid">
+      <div class="bench-card"><div class="bench-cat">专有</div><div class="bench-name">Poker Agent<span class="bench-new">新</span></div><div class="bench-info">17 个模型 · 扑克游戏盈利能力</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- 方法论 -->
+<div class="section" id="tab-method">
+  <div class="card">
+    <div class="card-header">
+      <span class="card-icon">📐</span>
+      <span class="card-title">SWE-bench Verified 方法论</span>
+      <span class="card-desc">评估框架说明</span>
+    </div>
+
+    <div class="insight-box">
+      <h3>📄 论文来源</h3>
+      <ul>
+        <li>Jimenez 等人发表的论文 <a href="https://arxiv.org/pdf/2310.06770" target="_blank">"Can Language Models Resolve Real-World GitHub Issues?"</a></li>
+        <li>数据集：SWE-bench Verified 子集，由 OpenAI 于 2024 年 8 月发布</li>
+        <li>每个任务经人类专家审验，500 个高质量测试用例</li>
+      </ul>
+    </div>
+
+    <div class="table-wrap">
+      <table class="method-table">
+        <thead><tr><th>要素</th><th>说明</th></tr></thead>
+        <tbody>
+          <tr><td>Agent 框架</td><td><a href="https://github.com/SWE-agent/mini-swe-agent" target="_blank">mini-swe-agent</a>，最小化 bash-tool-only agent harness</td></tr>
+          <tr><td>可用工具</td><td>单一工具：<strong>bash</strong>。模型必须使用标准命令行工具（grep、find、sed 等）导航代码库、搜索文件并应用编辑</td></tr>
+          <tr><td>数据集</td><td>SWE-bench Verified 子集，500 个经人类验证的高质量测试用例</td></tr>
+          <tr><td>配置</td><td>使用提供商默认配置，max token limit 设为最高可能值</td></tr>
+          <tr><td>运行环境</td><td>隔离的云沙箱</td></tr>
+          <tr><td>延迟计算</td><td>从模型在每个任务中采取的第一步开始计算</td></tr>
+          <tr><td>评判标准</td><td>对生成的 patch 运行单元测试来确定成功与否</td></tr>
+          <tr><td>公平性原则</td><td>所有模型使用相同工具，确保公平对比</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="insight-box" style="margin-top:16px">
+      <h3>⚠️ 注意事项</h3>
+      <ul>
+        <li>SWE-bench 同时评估 <strong>agentic harness</strong> 和底层基础模型</li>
+        <li>不同实验室报告结果时采用的方法论不同</li>
+        <li>计算需求使得复现结果资源密集</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+</div><!-- end container -->
+</div><!-- end panel-valsai -->
+
+
+<!-- =============================================
+     ARENA AI PANEL
+     ============================================= -->
+<div class="source-panel" id="panel-arena">
+
+<!-- Arena AI Tabs -->
+<div class="tab-nav" id="arenaTabNav">
+  <button class="tab-btn active" data-tab="arena-text" data-group="arena">💬 文本对话</button>
+  <button class="tab-btn" data-tab="arena-webdev" data-group="arena">🌐 网页开发</button>
+  <button class="tab-btn" data-tab="arena-vision" data-group="arena">👁️ 视觉理解</button>
+  <button class="tab-btn" data-tab="arena-image" data-group="arena">🎨 文生图</button>
+  <button class="tab-btn" data-tab="arena-about" data-group="arena">ℹ️ 关于</button>
+</div>
+
+<div class="container">
+
+<!-- ===== 文本对话排行 ===== -->
+<div class="section active" id="tab-arena-text">
+  <div class="card">
+    <div class="card-header">
+      <span class="card-icon">🏆</span>
+      <span class="card-title">文本对话排行榜</span>
+      <span class="card-desc">Text Arena · 6,297,180 票 · 360 模型</span>
+    </div>
+
+    <!-- KPI -->
+    <div class="kpi-row">
+      <div class="arena-kpi"><div class="arena-kpi-val" style="color:var(--gold)">1,502</div><div class="arena-kpi-label">最高 Elo (Opus 4.6 Thinking)</div></div>
+      <div class="arena-kpi"><div class="arena-kpi-val" style="color:var(--accent2)">6,297,180</div><div class="arena-kpi-label">总投票数</div></div>
+      <div class="arena-kpi"><div class="arena-kpi-val" style="color:var(--green)">360</div><div class="arena-kpi-label">参评模型数</div></div>
+      <div class="arena-kpi"><div class="arena-kpi-val" style="color:var(--silver)">29</div><div class="arena-kpi-label">子分类数</div></div>
+    </div>
+
+    <!-- Category Pills -->
+    <div class="category-pills collapsed" id="textCategoryPills">
+      <button class="pill active">Overall</button>
+      <button class="pill">Expert</button>
+      <button class="pill">Occupational</button>
+      <button class="pill">Math</button>
+      <button class="pill">Instruction Following</button>
+      <button class="pill">Multi-Turn</button>
+      <button class="pill">Creative Writing</button>
+      <button class="pill">Coding</button>
+      <button class="pill">Hard Prompts</button>
+      <button class="pill">Hard Prompts (English)</button>
+      <button class="pill">Visualization</button>
+      <button class="pill">Roleplay</button>
+      <button class="pill">K-12 STEM</button>
+      <button class="pill">Social Sciences</button>
+      <button class="pill">Humanities</button>
+      <button class="pill">STEM</button>
+      <button class="pill">Chinese</button>
+      <button class="pill">French</button>
+      <button class="pill">German</button>
+      <button class="pill">Spanish</button>
+      <button class="pill">Russian</button>
+      <button class="pill">Japanese</button>
+      <button class="pill">Korean</button>
+      <button class="pill">Italian</button>
+      <button class="pill">Portuguese</button>
+      <button class="pill">Hindi</button>
+      <button class="pill">Bengali</button>
+      <button class="pill">Tamil</button>
+      <button class="pill">Telugu</button>
+      <button class="pill-expand" id="textPillExpand">展开更多 ▼</button>
+    </div>
+
+    <!-- License Filter -->
+    <div class="license-filter" id="textLicenseFilter">
+      <button class="license-filter-btn active" data-license="all">全部</button>
+      <button class="license-filter-btn" data-license="proprietary">专有</button>
+      <button class="license-filter-btn" data-license="open">开源</button>
+    </div>
+
+    <!-- Table -->
+    <div class="table-wrap">
+      <table id="arenaTextTable">
+        <thead>
+          <tr>
+            <th style="width:36px">#</th>
+            <th>模型</th>
+            <th>组织</th>
+            <th>许可证</th>
+            <th class="sortable" data-sort="elo" data-dir="desc">Elo评分</th>
+            <th class="sortable" data-sort="votes" data-dir="desc">投票数</th>
+            <th>价格($/M)</th>
+            <th>上下文</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr data-license="proprietary"><td class="rank rank-1">1</td><td class="model-name">Claude Opus 4.6 Thinking</td><td>Anthropic</td><td><span class="license-tag license-proprietary">专有</span></td><td><span class="elo-bar elo-gold" style="width:100%"></span><strong>1502</strong>±4</td><td>27,454</td><td class="price-text">$5/$25</td><td>1M</td></tr>
+          <tr data-license="proprietary"><td class="rank rank-2">2</td><td class="model-name">Claude Opus 4.7 Thinking</td><td>Anthropic</td><td><span class="license-tag license-proprietary">专有</span></td><td><span class="elo-bar elo-gold" style="width:99.3%"></span><strong>1500</strong>±6</td><td>12,920</td><td class="price-text">$5/$25</td><td>1M</td></tr>
+          <tr data-license="proprietary"><td class="rank rank-3">3</td><td class="model-name">Claude Opus 4.6</td><td>Anthropic</td><td><span class="license-tag license-proprietary">专有</span></td><td><span class="elo-bar elo-gold" style="width:98.7%"></span><strong>1498</strong>±4</td><td>29,240</td><td class="price-text">$5/$25</td><td>1M</td></tr>
+          <tr data-license="proprietary"><td class="rank">4</td><td class="model-name">Claude Opus 4.7</td><td>Anthropic</td><td><span class="license-tag license-proprietary">专有</span></td><td><span class="elo-bar elo-gold" style="width:97.3%"></span><strong>1492</strong>±6</td><td>13,571</td><td class="price-text">$5/$25</td><td>1M</td></tr>
+          <tr data-license="proprietary"><td class="rank">5</td><td class="model-name">Muse Spark</td><td>Meta</td><td><span class="license-tag license-proprietary">专有</span></td><td><span class="elo-bar elo-gold" style="width:96%"></span><strong>1489</strong>±6</td><td>11,103<span class="preliminary-tag">Preliminary</span></td><td class="price-text">N/A</td><td>N/A</td></tr>
+          <tr data-license="proprietary"><td class="rank">6</td><td class="model-name">Gemini 3.1 Pro Preview</td><td>Google</td><td><span class="license-tag license-proprietary">专有</span></td><td><span class="elo-bar elo-gold" style="width:95.3%"></span><strong>1488</strong>±4</td><td>34,189</td><td class="price-text">$2/$12</td><td>1M</td></tr>
+          <tr data-license="proprietary"><td class="rank">7</td><td class="model-name">Gemini 3 Pro</td><td>Google</td><td><span class="license-tag license-proprietary">专有</span></td><td><span class="elo-bar elo-gold" style="width:94%"></span><strong>1486</strong>±4</td><td>41,331</td><td class="price-text">$2/$12</td><td>1M</td></tr>
+          <tr data-license="proprietary"><td class="rank">8</td><td class="model-name">GPT-5.5 High</td><td>OpenAI</td><td><span class="license-tag license-proprietary">专有</span></td><td><span class="elo-bar elo-gold" style="width:90.7%"></span><strong>1481</strong>±6</td><td>10,172</td><td class="price-text">$5/$30</td><td>1.1M</td></tr>
+          <tr data-license="proprietary"><td class="rank">9</td><td class="model-name">Gemini 3.5 Flash</td><td>Google</td><td><span class="license-tag license-proprietary">专有</span></td><td><span class="elo-bar elo-gold" style="width:90%"></span><strong>1480</strong>±8</td><td>5,907<span class="preliminary-tag">Preliminary</span></td><td class="price-text">$1.50/$9</td><td>1M</td></tr>
+          <tr data-license="proprietary"><td class="rank">10</td><td class="model-name">GPT-5.4 High</td><td>OpenAI</td><td><span class="license-tag license-proprietary">专有</span></td><td><span class="elo-bar elo-gold" style="width:90%"></span><strong>1480</strong>±5</td><td>21,023</td><td class="price-text">$2.50/$15</td><td>1.1M</td></tr>
+          <tr data-license="proprietary"><td class="rank">11</td><td class="model-name">GPT-5.5</td><td>OpenAI</td><td><span class="license-tag license-proprietary">专有</span></td><td><span class="elo-bar elo-gold" style="width:88.7%"></span><strong>1478</strong>±6</td><td>10,294</td><td class="price-text">$5/$30</td><td>1.1M</td></tr>
+          <tr data-license="proprietary"><td class="rank">12</td><td class="model-name">Grok 4.20 Beta1</td><td>xAI</td><td><span class="license-tag license-proprietary">专有</span></td><td><span class="elo-bar elo-gold" style="width:88.7%"></span><strong>1478</strong>±5</td><td>22,458</td><td class="price-text">N/A</td><td>N/A</td></tr>
+          <tr data-license="proprietary"><td class="rank">13</td><td class="model-name">GPT-5.2 Chat Latest</td><td>OpenAI</td><td><span class="license-tag license-proprietary">专有</span></td><td><span class="elo-bar elo-gold" style="width:88%"></span><strong>1477</strong>±4</td><td>27,988</td><td class="price-text">$1.75/$14</td><td>128K</td></tr>
+          <tr data-license="proprietary"><td class="rank">14</td><td class="model-name">Qwen3.7 Max Preview</td><td>Alibaba</td><td><span class="license-tag license-proprietary">专有</span></td><td><span class="elo-bar elo-gold" style="width:86.7%"></span><strong>1475</strong>±10</td><td>3,741<span class="preliminary-tag">Preliminary</span></td><td class="price-text">$2.50/$7.50</td><td>1M</td></tr>
+          <tr data-license="proprietary"><td class="rank">15</td><td class="model-name">Grok 4.20 Beta Reasoning</td><td>xAI</td><td><span class="license-tag license-proprietary">专有</span></td><td><span class="elo-bar elo-gold" style="width:86.7%"></span><strong>1475</strong>±5</td><td>21,572</td><td class="price-text">$2/$6</td><td>2M</td></tr>
+          <tr data-license="proprietary"><td class="rank">16</td><td class="model-name">Grok 4.20 Multi-Agent</td><td>xAI</td><td><span class="license-tag license-proprietary">专有</span></td><td><span class="elo-bar elo-gold" style="width:86%"></span><strong>1474</strong>±5</td><td>21,565</td><td class="price-text">$2/$6</td><td>2M</td></tr>
+          <tr data-license="proprietary"><td class="rank">17</td><td class="model-name">Gemini 3 Flash</td><td>Google</td><td><span class="license-tag license-proprietary">专有</span></td><td><span class="elo-bar elo-gold" style="width:85.3%"></span><strong>1473</strong>±4</td><td>30,742</td><td class="price-text">$0.50/$3</td><td>1M</td></tr>
+          <tr data-license="proprietary"><td class="rank">18</td><td class="model-name">ERNIE 5.1</td><td>Baidu</td><td><span class="license-tag license-proprietary">专有</span></td><td><span class="elo-bar elo-gold" style="width:85.3%"></span><strong>1473</strong>±7</td><td>9,004<span class="preliminary-tag">Preliminary</span></td><td class="price-text">N/A</td><td>N/A</td></tr>
+          <tr data-license="proprietary"><td class="rank">19</td><td class="model-name">Claude Opus 4.5 Thinking</td><td>Anthropic</td><td><span class="license-tag license-proprietary">专有</span></td><td><span class="elo-bar elo-gold" style="width:85.3%"></span><strong>1473</strong>±4</td><td>37,130</td><td class="price-text">$5/$25</td><td>200K</td></tr>
+          <tr data-license="open"><td class="rank">20</td><td class="model-name">GLM 5.1</td><td>Z.ai</td><td><span class="license-tag license-open">开源(MIT)</span></td><td><span class="elo-bar elo-gold" style="width:84.7%"></span><strong>1472</strong>±6</td><td>12,295</td><td class="price-text">$1.40/$4.40</td><td>202.8K</td></tr>
+          <tr data-license="proprietary"><td class="rank">21</td><td class="model-name">GPT-5.5 Instant</td><td>OpenAI</td><td><span class="license-tag license-proprietary">专有</span></td><td><span class="elo-bar elo-gold" style="width:84.7%"></span><strong>1472</strong>±6</td><td>10,790</td><td class="price-text">$5/$30</td><td>1.1M</td></tr>
+          <tr data-license="proprietary"><td class="rank">22</td><td class="model-name">Claude Sonnet 4.6</td><td>Anthropic</td><td><span class="license-tag license-proprietary">专有</span></td><td><span class="elo-bar elo-gold" style="width:82%"></span><strong>1468</strong>±5</td><td>20,839</td><td class="price-text">$3/$15</td><td>1M</td></tr>
+          <tr data-license="proprietary"><td class="rank">23</td><td class="model-name">Claude Opus 4.5</td><td>Anthropic</td><td><span class="license-tag license-proprietary">专有</span></td><td><span class="elo-bar elo-gold" style="width:82%"></span><strong>1468</strong>±3</td><td>58,884</td><td class="price-text">$5/$25</td><td>200K</td></tr>
+          <tr data-license="proprietary"><td class="rank">24</td><td class="model-name">GPT-5.4</td><td>OpenAI</td><td><span class="license-tag license-proprietary">专有</span></td><td><span class="elo-bar elo-gold" style="width:81.3%"></span><strong>1467</strong>±5</td><td>22,146</td><td class="price-text">$2.50/$15</td><td>1.1M</td></tr>
+          <tr data-license="proprietary"><td class="rank">25</td><td class="model-name">Grok 4.1 Thinking</td><td>xAI</td><td><span class="license-tag license-proprietary">专有</span></td><td><span class="elo-bar elo-gold" style="width:81.3%"></span><strong>1467</strong>±3</td><td>59,368</td><td class="price-text">N/A</td><td>N/A</td></tr>
+          <tr data-license="open"><td class="rank">26</td><td class="model-name">MiMo V2.5 Pro</td><td>Xiaomi</td><td><span class="license-tag license-open">开源(MIT)</span></td><td><span class="elo-bar elo-gold" style="width:80%"></span><strong>1465</strong>±6</td><td>9,700</td><td class="price-text">$1/$3</td><td>1M</td></tr>
+          <tr data-license="proprietary"><td class="rank">27</td><td class="model-name">Qwen3.5 Max Preview</td><td>Alibaba</td><td><span class="license-tag license-proprietary">专有</span></td><td><span class="elo-bar elo-gold" style="width:78.7%"></span><strong>1464</strong>±5</td><td>17,346</td><td class="price-text">N/A</td><td>N/A</td></tr>
+          <tr data-license="proprietary"><td class="rank">28</td><td class="model-name">Gemini 3 Flash (thinking)</td><td>Google</td><td><span class="license-tag license-proprietary">专有</span></td><td><span class="elo-bar elo-gold" style="width:77.3%"></span><strong>1463</strong>±4</td><td>45,395</td><td class="price-text">$0.50/$3</td><td>1M</td></tr>
+          <tr data-license="open"><td class="rank">29</td><td class="model-name">Kimi K2.6</td><td>Moonshot</td><td><span class="license-tag license-open">开源</span></td><td><span class="elo-bar elo-gold" style="width:76.7%"></span><strong>1462</strong>±6</td><td>10,281</td><td class="price-text">$0.95/$4</td><td>262.1K</td></tr>
+          <tr data-license="open"><td class="rank">30</td><td class="model-name">DeepSeek V4 Pro Thinking</td><td>DeepSeek</td><td><span class="license-tag license-open">开源(MIT)</span></td><td><span class="elo-bar elo-silver" style="width:76%"></span><strong>1461</strong>±6</td><td>9,970</td><td class="price-text">$0.43/$0.87</td><td>1M</td></tr>
+          <tr data-license="proprietary"><td class="rank">31</td><td class="model-name">Grok 4.1</td><td>xAI</td><td><span class="license-tag license-proprietary">专有</span></td><td><span class="elo-bar elo-silver" style="width:75.3%"></span><strong>1460</strong>±3</td><td>63,263</td><td class="price-text">N/A</td><td>N/A</td></tr>
+          <tr data-license="open"><td class="rank">32</td><td class="model-name">DeepSeek V4 Pro</td><td>DeepSeek</td><td><span class="license-tag license-open">开源(MIT)</span></td><td><span class="elo-bar elo-silver" style="width:74.7%"></span><strong>1459</strong>±6</td><td>10,729</td><td class="price-text">$0.43/$0.87</td><td>1M</td></tr>
+          <tr data-license="proprietary"><td class="rank">33</td><td class="model-name">Qwen3.6 Max Preview</td><td>Alibaba</td><td><span class="license-tag license-proprietary">专有</span></td><td><span class="elo-bar elo-silver" style="width:72%"></span><strong>1457</strong>±9</td><td>4,227</td><td class="price-text">$1.04/$6.24</td><td>262.1K</td></tr>
+          <tr data-license="open"><td class="rank">34</td><td class="model-name">GLM 5</td><td>Z.ai</td><td><span class="license-tag license-open">开源(MIT)</span></td><td><span class="elo-bar elo-silver" style="width:72%"></span><strong>1457</strong>±5</td><td>20,816</td><td class="price-text">$1/$3.20</td><td>202.8K</td></tr>
+          <tr data-license="proprietary"><td class="rank">35</td><td class="model-name">Dola Seed 2.0 Pro</td><td>Bytedance</td><td><span class="license-tag license-proprietary">专有</span></td><td><span class="elo-bar elo-silver" style="width:71.3%"></span><strong>1456</strong>±4</td><td>30,543</td><td class="price-text">N/A</td><td>N/A</td></tr>
+          <tr data-license="proprietary"><td class="rank">36</td><td class="model-name">GPT-5.1 High</td><td>OpenAI</td><td><span class="license-tag license-proprietary">专有</span></td><td><span class="elo-bar elo-silver" style="width:70.7%"></span><strong>1455</strong>±4</td><td>40,848</td><td class="price-text">$1.25/$10</td><td>400K</td></tr>
+          <tr data-license="proprietary"><td class="rank">37</td><td class="model-name">Claude Sonnet 4.5 Thinking</td><td>Anthropic</td><td><span class="license-tag license-proprietary">专有</span></td><td><span class="elo-bar elo-silver" style="width:70%"></span><strong>1454</strong>±3</td><td>71,013</td><td class="price-text">$3/$15</td><td>200K</td></tr>
+          <tr data-license="proprietary"><td class="rank">38</td><td class="model-name">Claude Sonnet 4.5</td><td>Anthropic</td><td><span class="license-tag license-proprietary">专有</span></td><td><span class="elo-bar elo-silver" style="width:70%"></span><strong>1454</strong>±3</td><td>69,196</td><td class="price-text">$3/$15</td><td>200K</td></tr>
+          <tr data-license="proprietary"><td class="rank">39</td><td class="model-name">GPT-5.4 Mini High</td><td>OpenAI</td><td><span class="license-tag license-proprietary">专有</span></td><td><span class="elo-bar elo-silver" style="width:70%"></span><strong>1454</strong>±5</td><td>18,979</td><td class="price-text">$0.75/$4.50</td><td>400K</td></tr>
+          <tr data-license="open"><td class="rank">40</td><td class="model-name">Gemma 4 31B</td><td>Google</td><td><span class="license-tag license-open">开源(Apache 2.0)</span></td><td><span class="elo-bar elo-silver" style="width:68%"></span><strong>1451</strong>±8</td><td>5,840</td><td class="price-text">$0.14/$0.40</td><td>262.1K</td></tr>
+          <tr data-license="proprietary"><td class="rank">41</td><td class="model-name">Grok 4.3</td><td>xAI</td><td><span class="license-tag license-proprietary">专有</span></td><td><span class="elo-bar elo-silver" style="width:68%"></span><strong>1451</strong>±6</td><td>9,082</td><td class="price-text">$1.25/$2.50</td><td>1M</td></tr>
+          <tr data-license="proprietary"><td class="rank">42</td><td class="model-name">ERNIE 5.0</td><td>Baidu</td><td><span class="license-tag license-proprietary">专有</span></td><td><span class="elo-bar elo-silver" style="width:67.3%"></span><strong>1450</strong>±4</td><td>31,558</td><td class="price-text">N/A</td><td>N/A</td></tr>
+          <tr data-license="open"><td class="rank">43</td><td class="model-name">Kimi K2.5 Thinking</td><td>Moonshot</td><td><span class="license-tag license-open">开源</span></td><td><span class="elo-bar elo-silver" style="width:67.3%"></span><strong>1449</strong>±4</td><td>30,661</td><td class="price-text">$0.60/$3</td><td>N/A</td></tr>
+          <tr data-license="proprietary"><td class="rank">44</td><td class="model-name">ERNIE 5.0 Preview</td><td>Baidu</td><td><span class="license-tag license-proprietary">专有</span></td><td><span class="elo-bar elo-silver" style="width:67.3%"></span><strong>1449</strong>±7</td><td>9,754</td><td class="price-text">N/A</td><td>N/A</td></tr>
+          <tr data-license="proprietary"><td class="rank">45</td><td class="model-name">GPT-5.3 Chat Latest</td><td>OpenAI</td><td><span class="license-tag license-proprietary">专有</span></td><td><span class="elo-bar elo-silver" style="width:67.3%"></span><strong>1449</strong>±5</td><td>26,710</td><td class="price-text">$1.75/$14</td><td>128K</td></tr>
+          <tr data-license="proprietary"><td class="rank">46</td><td class="model-name">Claude Opus 4.1 Thinking</td><td>Anthropic</td><td><span class="license-tag license-proprietary">专有</span></td><td><span class="elo-bar elo-silver" style="width:67.3%"></span><strong>1449</strong>±3</td><td>49,822</td><td class="price-text">$15/$75</td><td>200K</td></tr>
+          <tr data-license="proprietary"><td class="rank">47</td><td class="model-name">MiMO V2 Pro</td><td>Xiaomi</td><td><span class="license-tag license-proprietary">专有</span></td><td><span class="elo-bar elo-silver" style="width:65.3%"></span><strong>1447</strong>±5</td><td>18,975</td><td class="price-text">$1/$3</td><td>1M</td></tr>
+          <tr data-license="proprietary"><td class="rank">48</td><td class="model-name">Claude Opus 4.1</td><td>Anthropic</td><td><span class="license-tag license-proprietary">专有</span></td><td><span class="elo-bar elo-silver" style="width:65.3%"></span><strong>1447</strong>±3</td><td>77,378</td><td class="price-text">$15/$75</td><td>200K</td></tr>
+          <tr data-license="proprietary"><td class="rank">49</td><td class="model-name">Gemini 2.5 Pro</td><td>Google</td><td><span class="license-tag license-proprietary">专有</span></td><td><span class="elo-bar elo-silver" style="width:64.7%"></span><strong>1446</strong>±3</td><td>118,726</td><td class="price-text">$1.25/$10</td><td>1M</td></tr>
+          <tr data-license="open"><td class="rank">50</td><td class="model-name">Qwen3.5 397B</td><td>Alibaba</td><td><span class="license-tag license-open">开源(Apache 2.0)</span></td><td><span class="elo-bar elo-silver" style="width:64%"></span><strong>1445</strong>±4</td><td>25,861</td><td class="price-text">$0.39/$2.34</td><td>262.1K</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="note">⚔️ 基于 Arena AI 6,297,180 票盲测投票的 Elo 评分排行。标有 <span class="preliminary-tag">Preliminary</span> 的数据为初步结果，投票数可能变动。点击表头可排序。</div>
+  </div>
+</div>
+
+<!-- ===== 网页开发排行 ===== -->
+<div class="section" id="tab-arena-webdev">
+  <div class="card">
+    <div class="card-header">
+      <span class="card-icon">🌐</span>
+      <span class="card-title">网页开发排行榜</span>
+      <span class="card-desc">Code Arena · WebDev</span>
+    </div>
+
+    <div class="kpi-row">
+      <div class="arena-kpi"><div class="arena-kpi-val" style="color:var(--gold)">1,567</div><div class="arena-kpi-label">最高 Elo (Opus 4.7 Thinking)</div></div>
+      <div class="arena-kpi"><div class="arena-kpi-val" style="color:var(--accent2)">WebDev</div><div class="arena-kpi-label">Code Arena 子赛道</div></div>
+    </div>
+
+    <div class="table-wrap">
+      <table id="arenaWebdevTable">
+        <thead>
+          <tr>
+            <th style="width:36px">#</th>
+            <th>模型</th>
+            <th>组织</th>
+            <th class="sortable" data-sort="elo" data-dir="desc">Elo评分</th>
+            <th class="sortable" data-sort="votes" data-dir="desc">投票数</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td class="rank rank-1">1</td><td class="model-name">Claude Opus 4.7 Thinking</td><td>Anthropic</td><td><span class="elo-bar elo-gold" style="width:100%"></span><strong>1567</strong>±10</td><td>4,462</td></tr>
+          <tr><td class="rank rank-2">2</td><td class="model-name">Claude Opus 4.7</td><td>Anthropic</td><td><span class="elo-bar elo-gold" style="width:95.5%"></span><strong>1560</strong>±10</td><td>4,186</td></tr>
+          <tr><td class="rank rank-3">3</td><td class="model-name">Claude Opus 4.6 Thinking</td><td>Anthropic</td><td><span class="elo-bar elo-gold" style="width:89.1%"></span><strong>1545</strong>±8</td><td>7,241</td></tr>
+          <tr><td class="rank">4</td><td class="model-name">Claude Opus 4.6</td><td>Anthropic</td><td><span class="elo-bar elo-gold" style="width:86.4%"></span><strong>1540</strong>±8</td><td>8,242</td></tr>
+          <tr><td class="rank">5</td><td class="model-name">GLM 5.1</td><td>Z.ai</td><td><span class="elo-bar elo-gold" style="width:81.8%"></span><strong>1532</strong>±11</td><td>3,611</td></tr>
+          <tr><td class="rank">6</td><td class="model-name">Claude Sonnet 4.6</td><td>Anthropic</td><td><span class="elo-bar elo-gold" style="width:76.4%"></span><strong>1524</strong>±7</td><td>10,408</td></tr>
+          <tr><td class="rank">7</td><td class="model-name">Kimi K2.6</td><td>Moonshot</td><td><span class="elo-bar elo-gold" style="width:72.7%"></span><strong>1519</strong>±11</td><td>3,437</td></tr>
+          <tr><td class="rank">8</td><td class="model-name">Muse Spark</td><td>Meta</td><td><span class="elo-bar elo-gold" style="width:63.6%"></span><strong>1509</strong>±16</td><td>1,630<span class="preliminary-tag">Preliminary</span></td></tr>
+          <tr><td class="rank">9</td><td class="model-name">Gemini 3.5 Flash</td><td>Google</td><td><span class="elo-bar elo-gold" style="width:61.8%"></span><strong>1507</strong>±14</td><td>2,148<span class="preliminary-tag">Preliminary</span></td></tr>
+          <tr><td class="rank">10</td><td class="model-name">GPT-5.5 XHigh Codex</td><td>OpenAI</td><td><span class="elo-bar elo-gold" style="width:59.1%"></span><strong>1503</strong>±11</td><td>3,456</td></tr>
+          <tr><td class="rank">11</td><td class="model-name">Qwen3.6 Max Preview</td><td>Alibaba</td><td><span class="elo-bar elo-gold" style="width:47.3%"></span><strong>1491</strong>±14</td><td>2,117</td></tr>
+          <tr><td class="rank">12</td><td class="model-name">Claude Opus 4.5 Thinking</td><td>Anthropic</td><td><span class="elo-bar elo-gold" style="width:46.4%"></span><strong>1490</strong>±7</td><td>13,067</td></tr>
+          <tr><td class="rank">13</td><td class="model-name">GPT-5.5 High Codex</td><td>OpenAI</td><td><span class="elo-bar elo-silver" style="width:38.2%"></span><strong>1480</strong>±11</td><td>3,664</td></tr>
+          <tr><td class="rank">14</td><td class="model-name">MiMo V2.5 Pro</td><td>Xiaomi</td><td><span class="elo-bar elo-silver" style="width:30.9%"></span><strong>1471</strong>±10</td><td>4,087</td></tr>
+          <tr><td class="rank">15</td><td class="model-name">Claude Opus 4.5</td><td>Anthropic</td><td><span class="elo-bar elo-silver" style="width:27.3%"></span><strong>1467</strong>±6</td><td>15,307</td></tr>
+          <tr><td class="rank">16</td><td class="model-name">Qwen3.6 Plus</td><td>Alibaba</td><td><span class="elo-bar elo-silver" style="width:21.8%"></span><strong>1461</strong>±9</td><td>5,421</td></tr>
+          <tr><td class="rank">17</td><td class="model-name">DeepSeek V4 Pro Thinking</td><td>DeepSeek</td><td><span class="elo-bar elo-silver" style="width:19.1%"></span><strong>1459</strong>±11</td><td>3,320</td></tr>
+          <tr><td class="rank">18</td><td class="model-name">GPT-5.4 High Codex</td><td>OpenAI</td><td><span class="elo-bar elo-silver" style="width:17.3%"></span><strong>1457</strong>±17</td><td>1,482</td></tr>
+          <tr><td class="rank">19</td><td class="model-name">Gemini 3.1 Pro Preview</td><td>Google</td><td><span class="elo-bar elo-silver" style="width:10%"></span><strong>1450</strong>±7</td><td>9,555</td></tr>
+          <tr><td class="rank">20</td><td class="model-name">GPT-5.5 Codex</td><td>OpenAI</td><td><span class="elo-bar elo-silver" style="width:0%"></span><strong>1440</strong>±11</td><td>3,436</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="note">🌐 Code Arena WebDev 子赛道，评估模型从零构建 Web 应用的能力。Anthropic Claude 系列在此赛道占据统治地位，前 6 名中占 5 席。</div>
+  </div>
+</div>
+
+<!-- ===== 视觉理解排行 ===== -->
+<div class="section" id="tab-arena-vision">
+  <div class="card">
+    <div class="card-header">
+      <span class="card-icon">👁️</span>
+      <span class="card-title">视觉理解排行榜</span>
+      <span class="card-desc">Vision Arena · 870,706 票 · 126 模型</span>
+    </div>
+
+    <div class="kpi-row">
+      <div class="arena-kpi"><div class="arena-kpi-val" style="color:var(--gold)">1,306</div><div class="arena-kpi-label">最高 Elo (Opus 4.7 Thinking)</div></div>
+      <div class="arena-kpi"><div class="arena-kpi-val" style="color:var(--accent2)">870,706</div><div class="arena-kpi-label">总投票数</div></div>
+      <div class="arena-kpi"><div class="arena-kpi-val" style="color:var(--green)">126</div><div class="arena-kpi-label">参评模型数</div></div>
+    </div>
+
+    <div class="table-wrap">
+      <table id="arenaVisionTable">
+        <thead>
+          <tr>
+            <th style="width:36px">#</th>
+            <th>模型</th>
+            <th>组织</th>
+            <th class="sortable" data-sort="elo" data-dir="desc">Elo评分</th>
+            <th class="sortable" data-sort="votes" data-dir="desc">投票数</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td class="rank rank-1">1</td><td class="model-name">Claude Opus 4.7 Thinking</td><td>Anthropic</td><td><span class="elo-bar elo-gold" style="width:100%"></span><strong>1306</strong>±9</td><td>6,531</td></tr>
+          <tr><td class="rank rank-2">2</td><td class="model-name">Claude Opus 4.7</td><td>Anthropic</td><td><span class="elo-bar elo-gold" style="width:97.6%"></span><strong>1304</strong>±9</td><td>6,779</td></tr>
+          <tr><td class="rank rank-3">3</td><td class="model-name">Claude Opus 4.6 Thinking</td><td>Anthropic</td><td><span class="elo-bar elo-gold" style="width:95.2%"></span><strong>1300</strong>±9</td><td>7,135</td></tr>
+          <tr><td class="rank">4</td><td class="model-name">Muse Spark</td><td>Meta</td><td><span class="elo-bar elo-gold" style="width:90.5%"></span><strong>1296</strong>±10</td><td>4,526<span class="preliminary-tag">Preliminary</span></td></tr>
+          <tr><td class="rank">5</td><td class="model-name">Claude Opus 4.6</td><td>Anthropic</td><td><span class="elo-bar elo-gold" style="width:85.7%"></span><strong>1293</strong>±8</td><td>8,549</td></tr>
+          <tr><td class="rank">6</td><td class="model-name">Gemini 3 Pro</td><td>Google</td><td><span class="elo-bar elo-gold" style="width:76.2%"></span><strong>1289</strong>±8</td><td>13,226</td></tr>
+          <tr><td class="rank">7</td><td class="model-name">GPT-5.5</td><td>OpenAI</td><td><span class="elo-bar elo-gold" style="width:71.4%"></span><strong>1288</strong>±10</td><td>4,662</td></tr>
+          <tr><td class="rank">8</td><td class="model-name">GPT-5.2 Chat Latest</td><td>OpenAI</td><td><span class="elo-bar elo-gold" style="width:52.4%"></span><strong>1280</strong>±8</td><td>12,478</td></tr>
+          <tr><td class="rank">9</td><td class="model-name">GPT-5.5 High</td><td>OpenAI</td><td><span class="elo-bar elo-gold" style="width:42.9%"></span><strong>1278</strong>±10</td><td>4,238</td></tr>
+          <tr><td class="rank">10</td><td class="model-name">Gemini 3.1 Pro Preview</td><td>Google</td><td><span class="elo-bar elo-gold" style="width:38.1%"></span><strong>1277</strong>±7</td><td>16,807</td></tr>
+          <tr><td class="rank">11</td><td class="model-name">GPT-5.4 High</td><td>OpenAI</td><td><span class="elo-bar elo-gold" style="width:38.1%"></span><strong>1277</strong>±9</td><td>5,884</td></tr>
+          <tr><td class="rank">12</td><td class="model-name">Claude Sonnet 4.6</td><td>Anthropic</td><td><span class="elo-bar elo-gold" style="width:28.6%"></span><strong>1275</strong>±8</td><td>8,916</td></tr>
+          <tr><td class="rank">13</td><td class="model-name">GPT-5.5 Instant</td><td>OpenAI</td><td><span class="elo-bar elo-gold" style="width:28.6%"></span><strong>1275</strong>±11</td><td>3,645</td></tr>
+          <tr><td class="rank">14</td><td class="model-name">Gemini 3 Flash</td><td>Google</td><td><span class="elo-bar elo-gold" style="width:19%"></span><strong>1271</strong>±6</td><td>21,195</td></tr>
+          <tr><td class="rank">15</td><td class="model-name">GPT-5.4</td><td>OpenAI</td><td><span class="elo-bar elo-silver" style="width:9.5%"></span><strong>1269</strong>±10</td><td>5,580</td></tr>
+          <tr><td class="rank">16</td><td class="model-name">Qwen3.7 Plus Preview</td><td>Alibaba</td><td><span class="elo-bar elo-silver" style="width:0%"></span><strong>1260</strong>±11</td><td>3,649<span class="preliminary-tag">Preliminary</span></td></tr>
+          <tr><td class="rank">17</td><td class="model-name">Gemini 3 Flash (thinking)</td><td>Google</td><td><span class="elo-bar elo-silver" style="width:0%"></span><strong>1260</strong>±7</td><td>19,319</td></tr>
+          <tr><td class="rank">18</td><td class="model-name">Dola Seed 2.0 Pro</td><td>Bytedance</td><td><span class="elo-bar elo-silver" style="width:0%"></span><strong>1259</strong>±8</td><td>8,926</td></tr>
+          <tr><td class="rank">19</td><td class="model-name">Kimi K2.6</td><td>Moonshot</td><td><span class="elo-bar elo-silver" style="width:0%"></span><strong>1259</strong>±9</td><td>5,612</td></tr>
+          <tr><td class="rank">20</td><td class="model-name">GPT-5.4 Mini High</td><td>OpenAI</td><td><span class="elo-bar elo-silver" style="width:0%"></span><strong>1254</strong>±8</td><td>8,582</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="note">👁️ Vision Arena 评估模型对图像的理解能力，包括 OCR、图表解读、场景描述等。870,706 票来自 126 个模型的盲测对比。</div>
+  </div>
+</div>
+
+<!-- ===== 文生图排行 ===== -->
+<div class="section" id="tab-arena-image">
+  <div class="card">
+    <div class="card-header">
+      <span class="card-icon">🎨</span>
+      <span class="card-title">文生图排行榜</span>
+      <span class="card-desc">Text-to-Image Arena</span>
+    </div>
+
+    <div class="kpi-row">
+      <div class="arena-kpi"><div class="arena-kpi-val" style="color:var(--gold)">1,389</div><div class="arena-kpi-label">最高 Elo (GPT-Image 2 Medium)</div></div>
+      <div class="arena-kpi"><div class="arena-kpi-val" style="color:var(--accent2)">Text-to-Image</div><div class="arena-kpi-label">文生图赛道</div></div>
+    </div>
+
+    <div class="table-wrap">
+      <table id="arenaImageTable">
+        <thead>
+          <tr>
+            <th style="width:36px">#</th>
+            <th>模型</th>
+            <th>组织</th>
+            <th class="sortable" data-sort="elo" data-dir="desc">Elo评分</th>
+            <th class="sortable" data-sort="votes" data-dir="desc">投票数</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td class="rank rank-1">1</td><td class="model-name">GPT-Image 2 (Medium)</td><td>OpenAI</td><td><span class="elo-bar elo-gold" style="width:100%"></span><strong>1389</strong>±7</td><td>39,046<span class="preliminary-tag">Preliminary</span></td></tr>
+          <tr><td class="rank rank-2">2</td><td class="model-name">Gemini 3.1 Flash Image Preview</td><td>Google</td><td><span class="elo-bar elo-gold" style="width:57.6%"></span><strong>1270</strong>±5</td><td>69,504</td></tr>
+          <tr><td class="rank rank-3">3</td><td class="model-name">Gemini 3 Pro Image Preview 2K</td><td>Google</td><td><span class="elo-bar elo-gold" style="width:47.3%"></span><strong>1243</strong>±4</td><td>108,214</td></tr>
+          <tr><td class="rank">4</td><td class="model-name">GPT-Image 1.5 High Fidelity</td><td>OpenAI</td><td><span class="elo-bar elo-gold" style="width:46.4%"></span><strong>1241</strong>±4</td><td>112,907</td></tr>
+          <tr><td class="rank">5</td><td class="model-name">Gemini 3 Pro Image Preview</td><td>Google</td><td><span class="elo-bar elo-gold" style="width:37.9%"></span><strong>1232</strong>±5</td><td>82,646</td></tr>
+          <tr><td class="rank">6</td><td class="model-name">Grok Imagine Image Quality</td><td>xAI</td><td><span class="elo-bar elo-gold" style="width:34.8%"></span><strong>1228</strong>±6</td><td>18,156<span class="preliminary-tag">Preliminary</span></td></tr>
+          <tr><td class="rank">7</td><td class="model-name">Uni 1.1 Max</td><td>Luma AI</td><td><span class="elo-bar elo-gold" style="width:17.4%"></span><strong>1192</strong>±7</td><td>7,852<span class="preliminary-tag">Preliminary</span></td></tr>
+          <tr><td class="rank">8</td><td class="model-name">MAI Image 2</td><td>Microsoft AI</td><td><span class="elo-bar elo-gold" style="width:12.1%"></span><strong>1182</strong>±5</td><td>47,011</td></tr>
+          <tr><td class="rank">9</td><td class="model-name">Uni 1.1</td><td>Luma AI</td><td><span class="elo-bar elo-silver" style="width:6.8%"></span><strong>1176</strong>±7</td><td>8,849<span class="preliminary-tag">Preliminary</span></td></tr>
+          <tr><td class="rank">10</td><td class="model-name">Grok Imagine Image</td><td>xAI</td><td><span class="elo-bar elo-silver" style="width:3.8%"></span><strong>1173</strong>±3</td><td>164,236</td></tr>
+          <tr><td class="rank">11</td><td class="model-name">Recraft V4.1 Utility Pro</td><td>Recraft</td><td><span class="elo-bar elo-silver" style="width:1.5%"></span><strong>1169</strong>±11</td><td>2,512<span class="preliminary-tag">Preliminary</span></td></tr>
+          <tr><td class="rank">12</td><td class="model-name">Qwen-Image 2.0 Pro</td><td>Alibaba</td><td><span class="elo-bar elo-silver" style="width:0%"></span><strong>1168</strong>±8</td><td>5,159</td></tr>
+          <tr><td class="rank">13</td><td class="model-name">Flux 2 Max</td><td>Black Forest Labs</td><td><span class="elo-bar elo-silver" style="width:0%"></span><strong>1164</strong>±4</td><td>110,207</td></tr>
+          <tr><td class="rank">14</td><td class="model-name">Grok Imagine Image Pro</td><td>xAI</td><td><span class="elo-bar elo-silver" style="width:0%"></span><strong>1161</strong>±4</td><td>92,852</td></tr>
+          <tr><td class="rank">15</td><td class="model-name">Reve V1.5</td><td>Reve</td><td><span class="elo-bar elo-silver" style="width:0%"></span><strong>1157</strong>±6</td><td>13,786</td></tr>
+          <tr><td class="rank">16</td><td class="model-name">Flux 2 Pro</td><td>Black Forest Labs</td><td><span class="elo-bar elo-silver" style="width:0%"></span><strong>1156</strong>±3</td><td>145,814</td></tr>
+          <tr><td class="rank">17</td><td class="model-name">Flux 2 Flex</td><td>Black Forest Labs</td><td><span class="elo-bar elo-silver" style="width:0%"></span><strong>1155</strong>±4</td><td>141,893</td></tr>
+          <tr><td class="rank">18</td><td class="model-name">Gemini 2.5 Flash Image Preview</td><td>Google</td><td><span class="elo-bar elo-silver" style="width:0%"></span><strong>1152</strong>±3</td><td>777,940</td></tr>
+          <tr><td class="rank">19</td><td class="model-name">Hunyuan Image 3.0</td><td>Tencent</td><td><span class="elo-bar elo-silver" style="width:0%"></span><strong>1151</strong>±3</td><td>172,942</td></tr>
+          <tr><td class="rank">20</td><td class="model-name">Flux 2 Dev</td><td>Black Forest Labs</td><td><span class="elo-bar elo-silver" style="width:0%"></span><strong>1148</strong>±5</td><td>57,994</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="note">🎨 Text-to-Image Arena 评估模型根据文本提示生成图像的能力。GPT-Image 2 以 1,389 Elo 大幅领先，Gemini 系列紧随其后。</div>
+  </div>
+</div>
+
+<!-- ===== 关于 ===== -->
+<div class="section" id="tab-arena-about">
+  <div class="card">
+    <div class="card-header">
+      <span class="card-icon">ℹ️</span>
+      <span class="card-title">关于 Arena AI</span>
+      <span class="card-desc">盲测机制与 Elo 评分方法</span>
+    </div>
+
+    <div class="insight-box">
+      <h3>⚔️ 什么是 Arena AI 盲测？</h3>
+      <ul>
+        <li>Arena AI（原 LMSYS Chatbot Arena）采用<strong>盲测对比</strong>机制：用户输入提示后，两个匿名模型同时生成回答</li>
+        <li>用户根据回答质量投票选择更优的一方，投票后才会揭晓模型身份</li>
+        <li>这种机制有效消除了品牌偏见，反映模型的真实使用体验</li>
+        <li>截至目前已累计<strong>超过 600 万票</strong>的人类偏好数据</li>
+      </ul>
+    </div>
+
+    <div class="insight-box">
+      <h3>📊 Elo 评分方法</h3>
+      <ul>
+        <li>采用国际象棋等竞技比赛中广泛使用的 <strong>Elo 评分系统</strong></li>
+        <li>每个模型初始分数为 1000，每次对局后根据结果和对手评分进行调整</li>
+        <li>击败高分对手获得更多分数，输给低分对手损失更多分数</li>
+        <li>Elo 评分后的 ±数值表示 95% 置信区间，数值越小表示评分越稳定</li>
+      </ul>
+    </div>
+
+    <div class="insight-box">
+      <h3>📋 文本对话 29 个子分类</h3>
+      <ul>
+        <li><strong>综合类</strong>：Overall（综合）、Expert（专家级）、Occupational（职业场景）</li>
+        <li><strong>能力类</strong>：Math（数学）、Instruction Following（指令遵循）、Multi-Turn（多轮对话）、Creative Writing（创意写作）、Coding（编程）、Hard Prompts（高难度提示）</li>
+        <li><strong>语言类</strong>：Hard Prompts (English)、Chinese、French、German、Spanish、Russian、Japanese、Korean、Italian、Portuguese、Hindi、Bengali、Tamil、Telugu</li>
+        <li><strong>领域类</strong>：Visualization（可视化）、Roleplay（角色扮演）、K-12 STEM、Social Sciences（社会科学）、Humanities（人文）、STEM</li>
+      </ul>
+    </div>
+
+    <div class="insight-box">
+      <h3>🏟️ 11 个主排行榜分类</h3>
+      <ul>
+        <li><strong>💬 Text</strong> — 文本对话（360 模型 · 6,297,180 票）</li>
+        <li><strong>🌐 WebDev</strong> — 网页开发</li>
+        <li><strong>👁️ Vision</strong> — 视觉理解（126 模型 · 870,706 票）</li>
+        <li><strong>📄 Document</strong> — 文档理解</li>
+        <li><strong>🎨 Text-to-Image</strong> — 文生图</li>
+        <li><strong>✏️ Image Edit</strong> — 图片编辑</li>
+        <li><strong>🖼️ Image-to-WebDev</strong> — 图片转网页</li>
+        <li><strong>🔍 Search</strong> — 搜索</li>
+        <li><strong>🎬 Text-to-Video</strong> — 文生视频</li>
+        <li><strong>🎥 Image-to-Video</strong> — 图片转视频</li>
+        <li><strong>🎞️ Video Edit</strong> — 视频编辑</li>
+      </ul>
+    </div>
+
+    <div class="note">🔗 更多信息请访问 <a href="https://lmarena.ai" target="_blank">lmarena.ai</a>（原 LMSYS Chatbot Arena）。Arena AI 是目前最大规模的 AI 模型人类偏好评估平台。</div>
+  </div>
+</div>
+
+</div><!-- end container -->
+</div><!-- end panel-arena -->
+
+
+<!-- =============================================
+     TERMS-BENCH PANEL
+     ============================================= -->
+<div class="source-panel" id="panel-terms">
+
+<!-- TERMS Tabs -->
+<div class="tab-nav" id="termsTabNav">
+  <button class="tab-btn active" data-tab="terms-main" data-group="terms">🏆 主排行榜</button>
+  <button class="tab-btn" data-tab="terms-commerce" data-group="terms">💰 商业利润</button>
+  <button class="tab-btn" data-tab="terms-bankroll" data-group="terms">🏦 资金链</button>
+  <button class="tab-btn" data-tab="terms-difficulty" data-group="terms">📊 难度衰减</button>
+  <button class="tab-btn" data-tab="terms-robust" data-group="terms">🔬 数据鲁棒性</button>
+  <button class="tab-btn" data-tab="terms-diag" data-group="terms">🔬 诊断分析</button>
+  <button class="tab-btn" data-tab="terms-about" data-group="terms">📖 关于</button>
+</div>
+
+<!-- ===== MAIN LEADERBOARD ===== -->
+<div class="section active" id="tab-terms-main">
+  <div class="card">
+    <h2 class="section-title">TERMS-Bench 主排行榜 — LLM 谈判智能体诊断评估</h2>
+    <p class="section-desc">TERMS-Bench-v1 (Bilateral Negotiation) · 15 个智能体 · 数据日期：2026-05-04</p>
+
+    <div class="filter-bar" style="margin-bottom:16px;">
+      <span class="filter-label">机制类型：</span>
+      <div class="pill-group" id="termsRegimePills">
+        <button class="pill active" data-regime="overall">全部</button>
+        <button class="pill" data-regime="overlap">重叠博弈</button>
+        <button class="pill" data-regime="urgency">紧迫压力</button>
+        <button class="pill" data-regime="nodeal">无交易</button>
+      </div>
+    </div>
+
+    <div class="table-wrap">
+      <table id="termsMainTable">
+        <thead>
+          <tr><th>#</th><th>智能体</th><th>提供商</th><th>SE⁺</th><th>AGR⁺</th><th>CSE⁺</th><th>FAGR⁻</th><th>BEtype</th><th>CritVol%</th><th>Ū</th></tr>
+        </thead>
+        <tbody id="termsMainBody"></tbody>
+      </table>
+    </div>
+
+    <div class="note" style="margin-top:14px;">
+      <strong>指标说明：</strong>
+      <span style="color:var(--green);">SE⁺</span> 可行剩余效率（越高越好）·
+      <span style="color:var(--green);">AGR⁺</span> 可行协议率（越高越好）·
+      <span style="color:var(--green);">CSE⁺</span> 条件交易质量（越高越好）·
+      <span style="color:var(--green);">FAGR⁻</span> 无交易假协议率（越低越好）·
+      <span style="color:var(--green);">BEtype</span> 信念误差（越低越好）·
+      <span style="color:var(--green);">CritVol%</span> 严重违规率（越低越好）·
+      Ū 平均效用（参考）
+    </div>
+  </div>
+</div>
+
+<!-- ===== COMMERCE ===== -->
+<div class="section" id="tab-terms-commerce">
+  <div class="card">
+    <h2 class="section-title">TERMS-Commerce 利润排行榜</h2>
+    <p class="section-desc">在商业场景中，谈判价格直接映射为利润。每场景含单位经济学（转售价值、履约成本、利润底线）。</p>
+
+    <div class="filter-bar" style="margin-bottom:12px;">
+      <span class="filter-label">数据源：</span>
+      <div class="pill-group" id="termsCommSrcPills">
+        <button class="pill" data-src="synthetic">合成数据</button>
+        <button class="pill active" data-src="grounded">真实商品</button>
+      </div>
+      <span class="filter-label" style="margin-left:20px;">视角：</span>
+      <div class="pill-group" id="termsCommPerspPills">
+        <button class="pill active" data-persp="combined">综合</button>
+        <button class="pill" data-persp="merchant">商家（买方）</button>
+        <button class="pill" data-persp="vendor">供应商（卖方）</button>
+      </div>
+    </div>
+
+    <div class="table-wrap">
+      <table id="termsCommTable">
+        <thead>
+          <tr><th>#</th><th>智能体</th><th>提供商</th><th>总利润</th><th>回合均值</th><th>利润率</th><th>亏损率</th><th>放弃率</th><th>剩余金钱</th><th>遗憾率</th><th>回合数</th></tr>
+        </thead>
+        <tbody id="termsCommBody"></tbody>
+      </table>
+    </div>
+    <div class="note" style="margin-top:12px;">💡 <strong>真实商品</strong>模式使用 Amazon 历史价格数据构建 ZOPA 分布和可观测产品上下文；<strong>合成数据</strong>模式使用参数化价格几何。</div>
+  </div>
+</div>
+
+<!-- ===== BANKROLL ===== -->
+<div class="section" id="tab-terms-bankroll">
+  <div class="card">
+    <h2 class="section-title">TERMS-Bankroll 有状态采购链排行榜</h2>
+    <p class="section-desc">代理运行 4 个商家端会话（对抗固定供应商池），每会话起始资金 $100，运行 50 个谈判周期。现金余额向前结转，低于 $0 则破产终止。</p>
+
+    <div class="table-wrap">
+      <table id="termsBankTable">
+        <thead>
+          <tr><th>#</th><th>智能体</th><th>提供商</th><th>终端余额</th><th>± SEM</th><th>周期均值</th><th>存活率</th><th>破产时间</th><th>最大回撤</th><th>记忆溢价</th><th>± SEM</th><th>会话数</th></tr>
+        </thead>
+        <tbody id="termsBankBody"></tbody>
+      </table>
+    </div>
+    <div class="note" style="margin-top:12px;">💡 终端余额 = 50 周期链结束后的现金余额；存活率 = 未破产会话占比；记忆溢价 = 拥有对话记忆相对无记忆的增益。</div>
+  </div>
+</div>
+
+<!-- ===== DIFFICULTY ===== -->
+<div class="section" id="tab-terms-difficulty">
+  <div class="card">
+    <h2 class="section-title">环境难度下的剩余效率衰减</h2>
+    <p class="section-desc">回合按结构化评分器分为 5 个等质量难度桶（ZOPA 紧密度 + 紧迫性压力 + 立场兼容性），从左到右阅读可看到结构难度增加时性能衰减。最右列报告 easy→hard 下降百分比。</p>
+
+    <div class="table-wrap">
+      <table id="termsDiffTable">
+        <thead>
+          <tr><th>智能体</th><th>难度0 (最易)</th><th>难度1</th><th>难度2</th><th>难度3</th><th>难度4 (最难)</th><th>Δ 易→难</th></tr>
+        </thead>
+        <tbody id="termsDiffBody"></tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<!-- ===== ROBUSTNESS ===== -->
+<div class="section" id="tab-terms-robust">
+  <div class="card">
+    <h2 class="section-title">数据驱动鲁棒性检验</h2>
+    <p class="section-desc">重新评估 11 个智能体在数据驱动变体上的表现（ZOPA 分布来自真实目录而非合成价格几何）。Spearman ρ = 0.90 (p &lt; 10⁻³)，排名顺序基本保持。结构性偏移：更强模型在数据驱动下倾向于获益，更弱模型倾向于受损。</p>
+
+    <div class="table-wrap">
+      <table id="termsRobustTable">
+        <thead>
+          <tr><th>#</th><th>智能体</th><th>合成 SE⁺</th><th>数据驱动 SE⁺</th><th>Δ 变化</th><th>趋势</th></tr>
+        </thead>
+        <tbody id="termsRobustBody"></tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<!-- ===== DIAGNOSTICS ===== -->
+<div class="section" id="tab-terms-diag">
+  <div class="card">
+    <h2 class="section-title">四轴诊断散点图数据</h2>
+    <p class="section-desc">四个正交诊断轴的散点数据：协议校准 × 剩余效率、对手建模 × 剩余效率、安全性 × 剩余效率、无交易纪律 × 剩余效率。</p>
+
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;">
+      <div class="card" style="padding:16px;">
+        <h3 style="font-size:0.95rem;margin-bottom:10px;color:var(--accent);">📊 协议校准 vs 剩余效率</h3>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>智能体</th><th>AGR⁺</th><th>SE⁺</th></tr></thead>
+            <tbody id="diagAggBody"></tbody>
+          </table>
+        </div>
+      </div>
+      <div class="card" style="padding:16px;">
+        <h3 style="font-size:0.95rem;margin-bottom:10px;color:var(--accent);">🧠 对手建模 vs 剩余效率</h3>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>智能体</th><th>BEtype</th><th>SE⁺</th></tr></thead>
+            <tbody id="diagBeBody"></tbody>
+          </table>
+        </div>
+      </div>
+      <div class="card" style="padding:16px;">
+        <h3 style="font-size:0.95rem;margin-bottom:10px;color:var(--accent);">🛡️ 安全性 vs 剩余效率</h3>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>智能体</th><th>CritVol%</th><th>SE⁺</th></tr></thead>
+            <tbody id="diagCritBody"></tbody>
+          </table>
+        </div>
+      </div>
+      <div class="card" style="padding:16px;">
+        <h3 style="font-size:0.95rem;margin-bottom:10px;color:var(--accent);">🚫 无交易纪律 vs 剩余效率</h3>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>智能体</th><th>FAGR⁻</th><th>SE⁺</th></tr></thead>
+            <tbody id="diagFagrBody"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== ABOUT ===== -->
+<div class="section" id="tab-terms-about">
+  <div class="card">
+    <h2 class="section-title">关于 TERMS-Bench</h2>
+    <div style="line-height:1.9;max-width:820px;">
+      <p><strong>TERMS-Bench</strong> 是一个用于大语言模型（LLM）谈判智能体的诊断性基准测试，来源于论文 <a href="https://arxiv.org/abs/2605.13909" target="_blank">arXiv:2605.13909</a>。</p>
+
+      <h3 style="margin:20px 0 8px;color:var(--accent);">🔬 核心设计原则</h3>
+      <ul style="padding-left:20px;">
+        <li><strong>模拟器驱动</strong>：对手是固定的随机策略（而非另一个 LLM），因此每个回合都可从种子复现，代理间比较干净公平</li>
+        <li><strong>无人工/LLM 裁判</strong>：所有指标均从记录的行动中程序化计算</li>
+        <li><strong>无综合评分</strong>：四个正交诊断轴独立报告，不合成复合分数</li>
+        <li><strong>双边价格谈判</strong>：每个智能体在三种机制和六个行为家族中与固定的、历史反应型对手进行多轮交替报价</li>
+      </ul>
+
+      <h3 style="margin:20px 0 8px;color:var(--accent);">🎮 游戏机制</h3>
+      <ul style="padding-left:20px;">
+        <li>单一双边价格谈判，针对一件物品</li>
+        <li>每方持有私有类型 t = (r, κ, η) — 保留价格、紧迫性、立场</li>
+        <li>最多 K = 10 轮的交替报价</li>
+        <li>每轮代理接收对手的价格 + 情绪 + 立场提示</li>
+        <li>代理返回 Offer(price, message)、Accept 或 Reject</li>
+      </ul>
+
+      <h3 style="margin:20px 0 8px;color:var(--accent);">📐 四个正交诊断轴</h3>
+      <ul style="padding-left:20px;">
+        <li><strong>SE⁺</strong> 可行剩余效率 — 捕获的可用谈判剩余比例（越高越好）</li>
+        <li><strong>AGR⁺</strong> 可行协议率 — 可行回合中达成协议的比例（越高越好）</li>
+        <li><strong>CSE⁺</strong> 条件可行交易质量 — 以达成协议为条件的 SE⁺（越高越好）</li>
+        <li><strong>FAGR⁻</strong> 无交易假协议率 — 不可行回合中仍然同意的比例（越低越好）</li>
+        <li><strong>BEtype</strong> 信念误差 — 对手保留价值、紧迫性和立场的信念聚合误差（越低越好）</li>
+        <li><strong>CritVol%</strong> 严重违规率 — 价格边界/个体理性/无效行动违规回合比例（越低越好）</li>
+      </ul>
+
+      <h3 style="margin:20px 0 8px;color:var(--accent);">🎭 六个对手行为家族</h3>
+      <p>雷达图/多边形图的六个辐条：Candid（坦率）、Taciturn（沉默）、Expressive（表现力）、Strategic（策略性）、Stochastic（随机）、Adversarial（对抗性）</p>
+
+      <h3 style="margin:20px 0 8px;color:var(--accent);">📖 引用</h3>
+      <pre style="background:var(--bg);padding:12px;border-radius:8px;font-size:0.8rem;overflow-x:auto;">@misc{zhang2026termsbench,
+  title={TERMS-Bench: Diagnosing LLM Negotiation Agents Beyond Deal Rate},
+  author={Zhang, Erica and Zhang, Fangzhao and Pappu, Aneesh
+          and El, Batu and Blanchet, Jose and Athey, Susan
+          and Liu, Jiashuo and Zou, James},
+  year={2026},
+  eprint={2605.13909},
+  archivePrefix={arXiv},
+  primaryClass={cs.GT}
+}</pre>
+    </div>
+  </div>
+</div>
+
+</div><!-- end panel-terms -->
+
+
+<!-- ===== FOOTER ===== -->
+<div class="footer">
+  数据来源：<a href="https://openrouter.ai/rankings" target="_blank">OpenRouter Rankings</a> · <a href="https://www.vals.ai" target="_blank">Vals AI</a> · <a href="https://lmarena.ai" target="_blank">Arena AI</a> · <a href="https://terms-bench.github.io" target="_blank">TERMS-Bench</a> · 仅供参考
+</div>
+
+<script>
+// ============================================================
+// 1. THEME SWITCHER
+// ============================================================
+var themeDots = document.querySelectorAll('.theme-dot');
+var html = document.documentElement;
+
+function setTheme(name) {
+  html.setAttribute('data-theme', name);
+  themeDots.forEach(function(d) { d.classList.remove('active'); });
+  var activeDot = document.querySelector('.theme-dot[data-theme="' + name + '"]');
+  if (activeDot) activeDot.classList.add('active');
+  try { localStorage.setItem('rankings-theme', name); } catch(e) {}
+}
+
+themeDots.forEach(function(dot) {
+  dot.addEventListener('click', function() { setTheme(dot.dataset.theme); });
+});
+
+// Restore saved theme
+try {
+  var savedTheme = localStorage.getItem('rankings-theme');
+  if (savedTheme) setTheme(savedTheme);
+} catch(e) {}
+
+// ============================================================
+// 2. TOP-LEVEL SOURCE SWITCHER
+// ============================================================
+var sourceBtns = document.querySelectorAll('.source-btn');
+var subtitleEl = document.getElementById('headerSubtitle');
+var sourceBadgeEl = document.getElementById('sourceBadge');
+var currentSource = 'openrouter';
+
+var sourceMeta = {
+  openrouter: {
+    subtitle: '基于 OpenRouter 平台数百万用户的真实使用数据',
+    badge: '数据来源：openrouter.ai'
+  },
+  valsai: {
+    subtitle: '基于 Vals AI 基准测试评估数据',
+    badge: '数据来源：vals.ai'
+  },
+  arena: {
+    subtitle: '基于 Arena AI 600万+用户盲测投票的 Elo 评分排行',
+    badge: '数据来源：lmarena.ai'
+  },
+  terms: {
+    subtitle: 'TERMS-Bench — LLM 谈判智能体诊断基准（arXiv:2605.13909）',
+    badge: '数据来源：terms-bench.github.io'
+  }
+};
+
+function switchSource(source) {
+  currentSource = source;
+  sourceBtns.forEach(function(b) { b.classList.remove('active'); });
+  document.querySelector('.source-btn[data-source="' + source + '"]').classList.add('active');
+
+  document.querySelectorAll('.source-panel').forEach(function(p) { p.classList.remove('active'); });
+  document.getElementById('panel-' + source).classList.add('active');
+
+  if (subtitleEl) subtitleEl.textContent = sourceMeta[source].subtitle;
+  if (sourceBadgeEl) sourceBadgeEl.textContent = sourceMeta[source].badge;
+}
+
+sourceBtns.forEach(function(btn) {
+  btn.addEventListener('click', function() { switchSource(btn.dataset.source); });
+});
+
+// ============================================================
+// 3. TAB SWITCHING (scoped by group)
+// ============================================================
+function setupTabNav(navEl, panelId) {
+  var btns = navEl.querySelectorAll('.tab-btn');
+  var panel = document.getElementById(panelId);
+  btns.forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      btns.forEach(function(b) { b.classList.remove('active'); });
+      panel.querySelectorAll('.section').forEach(function(s) { s.classList.remove('active'); });
+      btn.classList.add('active');
+      var target = document.getElementById('tab-' + btn.dataset.tab);
+      if (target) target.classList.add('active');
+    });
+  });
+}
+
+setupTabNav(document.getElementById('orTabNav'), 'panel-openrouter');
+setupTabNav(document.getElementById('valsTabNav'), 'panel-valsai');
+setupTabNav(document.getElementById('arenaTabNav'), 'panel-arena');
+
+// ============================================================
+// 4. PERIOD SUB-TAB SWITCHING (OpenRouter leaderboard)
+// ============================================================
+var periodBtns = document.querySelectorAll('#periodTabs .period-btn');
+var periodTables = document.querySelectorAll('#periodTabs ~ .period-table, #periodTabs').length ? document.querySelectorAll('#tab-leaderboard .period-table') : [];
+var periodLabels = { today: '今日 · 按 Token 用量排名', week: '本周 · 按 Token 用量排名', month: '本月 · 按 Token 用量排名', trending: '趋势 · 飙升最快模型' };
+var lbLabel = document.getElementById('lbPeriodLabel');
+
+periodBtns.forEach(function(btn) {
+  btn.addEventListener('click', function() {
+    periodBtns.forEach(function(b) { b.classList.remove('active'); });
+    document.querySelectorAll('#tab-leaderboard .period-table').forEach(function(t) { t.classList.remove('active'); });
+    btn.classList.add('active');
+    var pid = 'lb-' + btn.dataset.period;
+    var el = document.getElementById(pid);
+    if (el) el.classList.add('active');
+    if (lbLabel) lbLabel.textContent = periodLabels[btn.dataset.period] || '';
+  });
+});
+
+// ============================================================
+// 5. APPS PERIOD SUB-TAB SWITCHING
+// ============================================================
+var appsBtns = document.querySelectorAll('.apps-p');
+var appsLabels = { today: '今日 · 使用 OpenRouter 的热门 AI 应用', week: '本周 · 使用 OpenRouter 的热门 AI 应用', month: '本月 · 使用 OpenRouter 的热门 AI 应用' };
+var appsLabelEl = document.getElementById('appsLabel');
+
+appsBtns.forEach(function(btn) {
+  btn.addEventListener('click', function() {
+    appsBtns.forEach(function(b) { b.classList.remove('active'); });
+    document.querySelectorAll('#apps-today, #apps-week, #apps-month').forEach(function(t) { t.classList.remove('active'); });
+    btn.classList.add('active');
+    var el = document.getElementById('apps-' + btn.dataset.p);
+    if (el) el.classList.add('active');
+    if (appsLabelEl) appsLabelEl.textContent = appsLabels[btn.dataset.p] || '';
+  });
+});
+
+// ============================================================
+// 6. PROVIDER TAG FILTERING (Vals AI SWE-bench)
+// ============================================================
+var pvTags = document.querySelectorAll('#providerTags .provider-tag');
+pvTags.forEach(function(tag) {
+  tag.addEventListener('click', function() {
+    pvTags.forEach(function(t) { t.classList.remove('active-tag'); });
+    tag.classList.add('active-tag');
+    var pv = tag.dataset.pv;
+    var rows = document.querySelectorAll('#tab-swebench tbody tr');
+    rows.forEach(function(row) {
+      if (pv === 'all') { row.style.display = ''; return; }
+      var provider = row.querySelector('.provider');
+      if (!provider) { row.style.display = 'none'; return; }
+      var pText = provider.textContent.toLowerCase().trim();
+      var match = false;
+      if (pv === 'openai' && pText === 'openai') match = true;
+      else if (pv === 'anthropic' && pText === 'anthropic') match = true;
+      else if (pv === 'google' && pText === 'google') match = true;
+      else if (pv === 'deepseek' && pText === 'deepseek') match = true;
+      else if (pv === 'alibaba' && pText === 'alibaba') match = true;
+      else if (pv === 'minimax' && pText === 'minimax') match = true;
+      else if (pv === 'moonshot' && (pText === 'moonshot ai' || pText === 'moonshot')) match = true;
+      else if (pv === 'zai' && pText === 'zai') match = true;
+      else if (pv === 'xai' && pText === 'xai') match = true;
+      else if (pv === 'mistral' && pText === 'mistral') match = true;
+      else if (pv === 'cohere' && pText === 'cohere') match = true;
+      else if (pv === 'meta' && pText === 'meta') match = true;
+      row.style.display = match ? '' : 'none';
+    });
+  });
+});
+
+// ============================================================
+// 7. URL HASH NAVIGATION
+// ============================================================
+var hash = window.location.hash.replace('#', '');
+if (hash) {
+  // Check if it's a source prefix like "or:leaderboard" or "vals:swebench"
+  if (hash.indexOf(':') > -1) {
+    var parts = hash.split(':');
+    var src = parts[0] === 'or' ? 'openrouter' : (parts[0] === 'vals' ? 'valsai' : parts[0]);
+    switchSource(src);
+    var targetBtn = document.querySelector('#panel-' + src + ' .tab-btn[data-tab="' + parts[1] + '"]');
+    if (targetBtn) targetBtn.click();
+  } else {
+    var targetBtn = document.querySelector('.tab-btn[data-tab="' + hash + '"]');
+    if (targetBtn) targetBtn.click();
+  }
+}
+
+// ============================================================
+// 9. ARENA AI — LICENSE FILTER
+// ============================================================
+var licenseBtns = document.querySelectorAll('#textLicenseFilter .license-filter-btn');
+licenseBtns.forEach(function(btn) {
+  btn.addEventListener('click', function() {
+    licenseBtns.forEach(function(b) { b.classList.remove('active'); });
+    btn.classList.add('active');
+    var license = btn.dataset.license;
+    var rows = document.querySelectorAll('#arenaTextTable tbody tr');
+    rows.forEach(function(row) {
+      if (license === 'all') { row.style.display = ''; return; }
+      var rowLicense = row.getAttribute('data-license');
+      row.style.display = (rowLicense === license) ? '' : 'none';
+    });
+  });
+});
+
+// ============================================================
+// 10. ARENA AI — TABLE SORTING
+// ============================================================
+function setupArenaSorting(tableId) {
+  var table = document.getElementById(tableId);
+  if (!table) return;
+  var headers = table.querySelectorAll('th.sortable');
+  headers.forEach(function(th) {
+    th.addEventListener('click', function() {
+      var sortKey = th.dataset.sort;
+      var currentDir = th.dataset.dir || 'desc';
+      var newDir = currentDir === 'desc' ? 'asc' : 'desc';
+
+      // Reset all headers
+      headers.forEach(function(h) {
+        h.classList.remove('asc', 'desc');
+        h.dataset.dir = 'desc';
+      });
+      th.classList.add(newDir);
+      th.dataset.dir = newDir;
+
+      var tbody = table.querySelector('tbody');
+      var rows = Array.prototype.slice.call(tbody.querySelectorAll('tr'));
+      var colIndex = Array.prototype.indexOf.call(th.parentNode.children, th);
+
+      rows.sort(function(a, b) {
+        var aCell = a.children[colIndex];
+        var bCell = b.children[colIndex];
+        var aVal, bVal;
+
+        if (sortKey === 'elo') {
+          aVal = parseInt(aCell.textContent.replace(/[^0-9]/g, ''), 10);
+          bVal = parseInt(bCell.textContent.replace(/[^0-9]/g, ''), 10);
+        } else if (sortKey === 'votes') {
+          aVal = parseInt(aCell.textContent.replace(/[^0-9]/g, ''), 10);
+          bVal = parseInt(bCell.textContent.replace(/[^0-9]/g, ''), 10);
+        } else {
+          aVal = aCell.textContent.trim();
+          bVal = bCell.textContent.trim();
+        }
+
+        if (typeof aVal === 'number' && typeof bVal === 'number') {
+          return newDir === 'asc' ? aVal - bVal : bVal - aVal;
+        }
+        return newDir === 'asc' ? String(aVal).localeCompare(String(bVal)) : String(bVal).localeCompare(String(aVal));
+      });
+
+      rows.forEach(function(row) { tbody.appendChild(row); });
+
+      // Re-number ranks
+      var rank = 1;
+      var visibleRows = tbody.querySelectorAll('tr');
+      visibleRows.forEach(function(row) {
+        if (row.style.display === 'none') return;
+        var rankCell = row.querySelector('.rank');
+        if (rankCell) {
+          rankCell.textContent = rank;
+          rankCell.className = 'rank';
+          if (rank === 1) rankCell.classList.add('rank-1');
+          else if (rank === 2) rankCell.classList.add('rank-2');
+          else if (rank === 3) rankCell.classList.add('rank-3');
+        }
+        rank++;
+      });
+    });
+  });
+}
+
+setupArenaSorting('arenaTextTable');
+setupArenaSorting('arenaWebdevTable');
+setupArenaSorting('arenaVisionTable');
+setupArenaSorting('arenaImageTable');
+
+// ============================================================
+// 11. ARENA AI — CATEGORY PILLS EXPAND
+// ============================================================
+var pillExpand = document.getElementById('textPillExpand');
+if (pillExpand) {
+  pillExpand.addEventListener('click', function() {
+    var container = document.getElementById('textCategoryPills');
+    if (container.classList.contains('collapsed')) {
+      container.classList.remove('collapsed');
+      pillExpand.textContent = '收起 ▲';
+    } else {
+      container.classList.add('collapsed');
+      pillExpand.textContent = '展开更多 ▼';
+    }
+  });
+}
+
+// ============================================================
+// 8. TIMESTAMP
+// ============================================================
+function setTimestamp() {
+  var now = new Date();
+  var s = now.toLocaleString('zh-CN', { year:'numeric', month:'2-digit', day:'2-digit', hour:'2-digit', minute:'2-digit', second:'2-digit', hour12:false });
+  var el = document.getElementById('updateTime');
+  if (el) el.textContent = '⏱ 数据获取时间：' + s + ' (UTC+8)';
+}
+setTimestamp();
+
+// ============================================================
+// 12. TERMS-BENCH DATA & RENDERING
+// ============================================================
+setupTabNav(document.getElementById('termsTabNav'), 'panel-terms');
+
+var TERMS = {};
+
+// -- Main Leaderboard (4 regimes) --
+TERMS.main = {
+  overall: [
+    [1,'Claude Opus 4.6','Anthropic','0.694','0.993','0.699','0.000','0.222','0.000','11.62','FRONTIER'],
+    [2,'GLM 5.1','Zhipu','0.686','0.951','0.721','0.000','0.218','0.013','11.70','OPEN'],
+    [3,'Claude Opus 4.7','Anthropic','0.660','0.982','0.672','0.000','0.229','0.000','11.09','FRONTIER'],
+    [4,'Gemma 4 31B','Google','0.640','0.998','0.641','0.000','0.260','0.001','10.64','OPEN'],
+    [5,'Gemini 3.1 Pro','Google','0.639','0.997','0.641','0.000','0.271','0.000','10.58','FRONTIER'],
+    [6,'DeepSeek V4 Pro','DeepSeek','0.618','0.975','0.633','0.000','0.228','0.006','10.53','OPEN'],
+    [7,'GPT-5.5','OpenAI','0.606','0.992','0.611','0.000','0.228','0.000','10.15','FRONTIER'],
+    [8,'Qwen 3.6 Plus','Alibaba','0.604','0.983','0.614','0.002','0.237','0.021','10.30','OPEN'],
+    [9,'Grok 4.20','xAI','0.601','0.991','0.606','0.000','0.212','0.015','10.03','FRONTIER'],
+    [10,'Kimi K2.6','Moonshot AI','0.597','0.971','0.614','0.000','0.236','0.000','10.17','OPEN'],
+    [11,'Doubao Seed 2.0 Pro','ByteDance','0.522','0.999','0.523','0.000','0.247','0.001','8.61','FRONTIER'],
+    [12,'FFixed 0.30','Baseline','0.387','0.999','0.387','0.000','—','0.000','6.50','BASELINE'],
+    [13,'FFixed 0.10','Baseline','0.290','0.945','0.307','0.000','—','0.000','5.08','BASELINE'],
+    [14,'FFixed 0.01','Baseline','0.273','0.922','0.296','0.000','—','0.000','4.77','BASELINE'],
+    [15,'GPT-4o mini','OpenAI','0.189','0.522','0.363','0.000','0.251','0.000','3.37','FRONTIER']
+  ],
+  overlap: [
+    [1,'Claude Opus 4.6','Anthropic','0.670','0.988','0.678','—','0.199','0.000','16.99','FRONTIER'],
+    [2,'GLM 5.1','Zhipu','0.668','0.943','0.708','—','0.206','0.000','17.33','OPEN'],
+    [3,'Claude Opus 4.7','Anthropic','0.644','0.978','0.658','—','0.220','0.000','16.42','FRONTIER'],
+    [4,'Gemini 3.1 Pro','Google','0.639','0.995','0.642','—','0.241','0.000','15.99','FRONTIER'],
+    [5,'Gemma 4 31B','Google','0.634','0.997','0.636','—','0.250','0.000','15.91','OPEN'],
+    [6,'DeepSeek V4 Pro','DeepSeek','0.604','0.973','0.620','—','0.226','0.000','15.62','OPEN'],
+    [7,'GPT-5.5','OpenAI','0.592','0.987','0.600','—','0.212','0.000','15.02','FRONTIER'],
+    [8,'Grok 4.20','xAI','0.588','0.987','0.596','—','0.214','0.000','14.91','FRONTIER'],
+    [9,'Qwen 3.6 Plus','Alibaba','0.577','0.975','0.592','—','0.232','0.000','14.96','OPEN'],
+    [10,'Kimi K2.6','Moonshot AI','0.576','0.963','0.598','—','0.220','0.000','14.88','OPEN'],
+    [11,'Doubao Seed 2.0 Pro','ByteDance','0.515','0.998','0.516','—','0.237','0.000','12.85','FRONTIER'],
+    [12,'FFixed 0.30','Baseline','0.383','0.998','0.384','—','—','0.000','9.66','BASELINE'],
+    [13,'FFixed 0.10','Baseline','0.283','0.935','0.303','—','—','0.000','7.45','BASELINE'],
+    [14,'FFixed 0.01','Baseline','0.256','0.902','0.284','—','—','0.000','6.74','BASELINE'],
+    [15,'GPT-4o mini','OpenAI','0.188','0.513','0.366','—','0.244','0.000','5.07','FRONTIER']
+  ],
+  urgency: [
+    [1,'Claude Opus 4.6','Anthropic','0.718','0.998','0.719','—','0.206','0.000','17.86','FRONTIER'],
+    [2,'GLM 5.1','Zhipu','0.703','0.958','0.734','—','0.215','0.000','17.76','OPEN'],
+    [3,'Claude Opus 4.7','Anthropic','0.676','0.985','0.686','—','0.228','0.000','16.86','FRONTIER'],
+    [4,'Gemma 4 31B','Google','0.645','1.000','0.645','—','0.272','0.000','16.01','OPEN'],
+    [5,'Gemini 3.1 Pro','Google','0.638','0.998','0.639','—','0.269','0.000','15.75','FRONTIER'],
+    [6,'DeepSeek V4 Pro','DeepSeek','0.632','0.977','0.647','—','0.234','0.000','15.95','OPEN'],
+    [7,'Qwen 3.6 Plus','Alibaba','0.630','0.990','0.637','—','0.244','0.000','15.97','OPEN'],
+    [8,'GPT-5.5','OpenAI','0.619','0.997','0.621','—','0.219','0.000','15.42','FRONTIER'],
+    [9,'Kimi K2.6','Moonshot AI','0.617','0.978','0.631','—','0.233','0.000','15.62','OPEN'],
+    [10,'Grok 4.20','xAI','0.614','0.995','0.617','—','0.204','0.000','15.20','FRONTIER'],
+    [11,'Doubao Seed 2.0 Pro','ByteDance','0.530','1.000','0.530','—','0.254','0.000','12.98','FRONTIER'],
+    [12,'FFixed 0.30','Baseline','0.391','1.000','0.391','—','—','0.000','9.85','BASELINE'],
+    [13,'FFixed 0.10','Baseline','0.297','0.955','0.311','—','—','0.000','7.78','BASELINE'],
+    [14,'FFixed 0.01','Baseline','0.290','0.943','0.308','—','—','0.000','7.56','BASELINE'],
+    [15,'GPT-4o mini','OpenAI','0.191','0.530','0.360','—','0.256','0.000','5.04','FRONTIER']
+  ],
+  nodeal: [
+    [1,'Claude Opus 4.6','Anthropic','—','0.000','—','0.000','0.247','0.000','0.00','FRONTIER'],
+    [2,'GLM 5.1','Zhipu','—','0.000','—','0.000','0.229','0.040','0.00','OPEN'],
+    [3,'Claude Opus 4.7','Anthropic','—','0.000','—','0.000','0.235','0.000','0.00','FRONTIER'],
+    [4,'Gemma 4 31B','Google','—','0.000','—','0.000','0.258','0.002','0.00','OPEN'],
+    [5,'Gemini 3.1 Pro','Google','—','0.000','—','0.000','0.289','0.000','0.00','FRONTIER'],
+    [6,'DeepSeek V4 Pro','DeepSeek','—','0.000','—','0.000','0.226','0.018','0.00','OPEN'],
+    [7,'GPT-5.5','OpenAI','—','0.000','—','0.000','0.240','0.000','0.00','FRONTIER'],
+    [8,'Qwen 3.6 Plus','Alibaba','—','0.002','—','0.002','0.235','0.062','-0.02','OPEN'],
+    [9,'Grok 4.20','xAI','—','0.000','—','0.000','0.215','0.045','0.00','FRONTIER'],
+    [10,'Kimi K2.6','Moonshot AI','—','0.000','—','0.000','0.248','0.000','0.00','OPEN'],
+    [11,'Doubao Seed 2.0 Pro','ByteDance','—','0.000','—','0.000','0.248','0.002','0.00','FRONTIER'],
+    [12,'FFixed 0.30','Baseline','—','0.000','—','0.000','—','0.000','0.00','BASELINE'],
+    [13,'FFixed 0.10','Baseline','—','0.000','—','0.000','—','0.000','0.00','BASELINE'],
+    [14,'FFixed 0.01','Baseline','—','0.000','—','0.000','—','0.000','0.00','BASELINE'],
+    [15,'GPT-4o mini','OpenAI','—','0.000','—','0.000','0.252','0.000','0.00','FRONTIER']
+  ]
+};
+
+// -- Commerce --
+TERMS.commerce = {
+  'grounded-combined': [
+    [1,'Claude Opus 4.6','Anthropic','$266,284','$1,849.20','28.4%','0.7%','93.8%','$1,022.83','27.3%','144'],
+    [2,'FFixed 0.30','Baseline','$219,573','$1,524.81','26.4%','2.8%','93.8%','$1,509.41','40.3%','144'],
+    [3,'FFixed 0.10','Baseline','$159,971','$1,110.91','29.1%','17.4%','93.8%','$2,130.27','56.9%','144'],
+    [4,'FFixed 0.01','Baseline','$141,965','$985.87','28.2%','22.2%','93.8%','$2,317.83','61.9%','144'],
+    [5,'GPT-4o mini','OpenAI','$29,992','$208.27','19.4%','54.9%','100.0%','$3,437.39','91.8%','144']
+  ],
+  'grounded-merchant': [
+    [1,'Claude Opus 4.6','Anthropic','$123,139','$1,710.26','24.1%','1.4%','100.0%','$1,483.15','36.7%','72'],
+    [2,'FFixed 0.30','Baseline','$107,569','$1,494.01','22.8%','1.4%','100.0%','$1,807.52','44.7%','72'],
+    [3,'FFixed 0.10','Baseline','$65,213','$905.73','26.6%','26.4%','100.0%','$2,689.94','66.5%','72'],
+    [4,'FFixed 0.01','Baseline','$44,456','$617.44','22.8%','37.5%','100.0%','$3,122.38','77.2%','72'],
+    [5,'GPT-4o mini','OpenAI','$7,909','$109.85','17.8%','58.3%','100.0%','$3,883.77','96.0%','72']
+  ],
+  'grounded-vendor': [
+    [1,'Claude Opus 4.6','Anthropic','$143,145','$1,988.13','32.4%','0.0%','87.5%','$562.52','16.3%','72'],
+    [2,'FFixed 0.30','Baseline','$112,004','$1,555.61','30.0%','4.2%','87.5%','$1,211.31','35.2%','72'],
+    [3,'FFixed 0.01','Baseline','$97,509','$1,354.30','30.7%','6.9%','87.5%','$1,513.27','43.9%','72'],
+    [4,'FFixed 0.10','Baseline','$94,758','$1,316.08','30.7%','8.3%','87.5%','$1,570.59','45.6%','72'],
+    [5,'GPT-4o mini','OpenAI','$22,083','$306.70','20.3%','51.4%','100.0%','$2,991.01','86.8%','72']
+  ],
+  'synthetic-combined': [
+    [1,'Claude Opus 4.6','Anthropic','$68,592','$476.33','41.4%','0.0%','100.0%','$296.00','29.3%','144'],
+    [2,'FFixed 0.30','Baseline','$48,776','$338.72','31.8%','0.0%','100.0%','$502.41','49.8%','144'],
+    [3,'FFixed 0.10','Baseline','$41,473','$288.01','30.2%','2.1%','100.0%','$578.48','57.3%','144'],
+    [4,'FFixed 0.01','Baseline','$37,111','$257.71','26.1%','2.1%','100.0%','$623.92','61.8%','144'],
+    [5,'GPT-4o mini','OpenAI','$19,786','$137.40','26.6%','32.6%','100.0%','$804.39','79.7%','144']
+  ],
+  'synthetic-merchant': [
+    [1,'Claude Opus 4.6','Anthropic','$33,495','$465.20','36.6%','0.0%','100.0%','$342.19','32.9%','72'],
+    [2,'FFixed 0.30','Baseline','$26,557','$368.85','29.1%','0.0%','100.0%','$486.72','46.8%','72'],
+    [3,'FFixed 0.10','Baseline','$22,561','$313.34','26.8%','2.8%','100.0%','$569.98','54.9%','72'],
+    [4,'FFixed 0.01','Baseline','$20,132','$279.61','21.4%','2.8%','100.0%','$620.58','59.7%','72'],
+    [5,'GPT-4o mini','OpenAI','$13,798','$191.63','23.0%','29.2%','100.0%','$752.54','72.4%','72']
+  ],
+  'synthetic-vendor': [
+    [1,'Claude Opus 4.6','Anthropic','$35,097','$487.46','46.3%','0.0%','100.0%','$249.81','25.5%','72'],
+    [2,'FFixed 0.30','Baseline','$22,219','$308.59','34.5%','0.0%','100.0%','$518.11','52.9%','72'],
+    [3,'FFixed 0.10','Baseline','$18,912','$262.67','33.5%','1.4%','100.0%','$586.98','59.9%','72'],
+    [4,'FFixed 0.01','Baseline','$16,979','$235.82','30.7%','1.4%','100.0%','$627.26','64.0%','72'],
+    [5,'GPT-4o mini','OpenAI','$5,988','$83.17','31.1%','36.1%','100.0%','$856.24','87.4%','72']
+  ]
+};
+
+// -- Bankroll --
+TERMS.bankroll = [
+  [1,'GLM 5.1','Zhipu','$443','±$60','$6.86','100%','—','$29','—','—','4'],
+  [2,'Claude Opus 4.6','Anthropic','$416','±$36','$6.33','100%','—','$37','—','—','4'],
+  [3,'Gemma 4 31B','Google','$410','±$53','$6.21','100%','—','$30','—','—','4'],
+  [4,'Gemini 3.1 Pro','Google','$396','±$38','$5.92','100%','—','$29','—','—','4'],
+  [5,'GPT-5.5','OpenAI','$380','±$55','$5.60','100%','—','$35','—','—','4'],
+  [6,'Grok 4.20','xAI','$110','±$49','$0.20','75%','p47.0','$65','—','—','4'],
+  [7,'GPT-4o mini','OpenAI','$21','±$17','-$1.57','50%','p29.5','$119','—','—','4']
+];
+
+// -- Difficulty --
+TERMS.difficulty = [
+  ['Claude Opus 4.6','0.78','0.71','0.68','0.61','0.45','−42%'],
+  ['GLM 5.1','0.79','0.74','0.65','0.56','0.40','−49%'],
+  ['Claude Opus 4.7','0.75','0.69','0.63','0.57','0.47','−38%'],
+  ['Gemma 4 31B','0.72','0.65','0.62','0.56','0.48','−33%'],
+  ['Gemini 3.1 Pro','0.71','0.65','0.62','0.56','0.51','−27%'],
+  ['DeepSeek V4 Pro','0.73','0.63','0.60','0.50','0.41','−43%'],
+  ['GPT-5.5','0.69','0.61','0.56','0.55','0.46','−34%'],
+  ['Qwen 3.6 Plus','0.70','0.64','0.59','0.49','0.36','−48%'],
+  ['Grok 4.20','0.68','0.60','0.57','0.55','0.43','−37%'],
+  ['Kimi K2.6','0.70','0.63','0.57','0.48','0.36','−48%'],
+  ['Doubao Seed 2.0 Pro','0.58','0.52','0.50','0.48','0.41','−29%'],
+  ['FFixed 0.30','0.41','0.36','0.36','0.41','0.42','+0%'],
+  ['FFixed 0.10','0.39','0.28','0.25','0.21','0.21','−45%'],
+  ['FFixed 0.01','0.38','0.27','0.24','0.20','0.08','−79%'],
+  ['GPT-4o mini','0.25','0.18','0.15','0.17','0.10','−58%']
+];
+
+// -- Robustness --
+TERMS.robustness = [
+  ['Claude Opus 4.6','0.694','0.710','+0.016','gain'],
+  ['GLM 5.1','0.686','0.625','−0.060','loss'],
+  ['Claude Opus 4.7','0.660','0.681','+0.021','gain'],
+  ['Gemma 4 31B','0.640','0.649','+0.009','flat'],
+  ['Gemini 3.1 Pro','0.639','0.671','+0.032','gain'],
+  ['DeepSeek V4 Pro','0.618','0.613','−0.005','flat'],
+  ['GPT-5.5','0.606','0.618','+0.012','gain'],
+  ['Qwen 3.6 Plus','0.604','0.492','−0.112','loss'],
+  ['Grok 4.20','0.601','0.562','−0.038','loss'],
+  ['Kimi K2.6','0.597','0.498','−0.099','loss'],
+  ['GPT-4o mini','0.189','0.086','−0.103','loss']
+];
+
+// -- Diagnostics --
+TERMS.diagnostics = {
+  agreement: [
+    ['Claude Opus 4.6','0.993','0.694'],['GLM 5.1','0.951','0.686'],['Claude Opus 4.7','0.982','0.660'],
+    ['Gemma 4 31B','0.998','0.640'],['Gemini 3.1 Pro','0.997','0.639'],['DeepSeek V4 Pro','0.975','0.618'],
+    ['GPT-5.5','0.992','0.606'],['Qwen 3.6 Plus','0.983','0.604'],['Grok 4.20','0.991','0.601'],
+    ['Kimi K2.6','0.971','0.597'],['Doubao Seed 2.0 Pro','0.999','0.522'],
+    ['FFixed 0.30','0.999','0.387'],['FFixed 0.10','0.945','0.290'],['FFixed 0.01','0.922','0.273'],
+    ['GPT-4o mini','0.522','0.189']
+  ],
+  opponent: [
+    ['Claude Opus 4.6','0.222','0.694'],['GLM 5.1','0.218','0.686'],['Claude Opus 4.7','0.229','0.660'],
+    ['Gemma 4 31B','0.260','0.640'],['Gemini 3.1 Pro','0.271','0.639'],['DeepSeek V4 Pro','0.228','0.618'],
+    ['GPT-5.5','0.228','0.606'],['Qwen 3.6 Plus','0.237','0.604'],['Grok 4.20','0.212','0.601'],
+    ['Kimi K2.6','0.236','0.597'],['Doubao Seed 2.0 Pro','0.247','0.522'],
+    ['GPT-4o mini','0.251','0.189']
+  ],
+  safety: [
+    ['Claude Opus 4.6','0.000','0.694'],['GLM 5.1','0.013','0.686'],['Claude Opus 4.7','0.000','0.660'],
+    ['Gemma 4 31B','0.001','0.640'],['Gemini 3.1 Pro','0.000','0.639'],['DeepSeek V4 Pro','0.006','0.618'],
+    ['GPT-5.5','0.000','0.606'],['Qwen 3.6 Plus','0.021','0.604'],['Grok 4.20','0.015','0.601'],
+    ['Kimi K2.6','0.000','0.597'],['Doubao Seed 2.0 Pro','0.001','0.522'],
+    ['FFixed 0.30','0.000','0.387'],['FFixed 0.10','0.000','0.290'],['FFixed 0.01','0.000','0.273'],
+    ['GPT-4o mini','0.000','0.189']
+  ],
+  nodeal: [
+    ['Claude Opus 4.6','0.000','0.694'],['GLM 5.1','0.000','0.686'],['Claude Opus 4.7','0.000','0.660'],
+    ['Gemma 4 31B','0.000','0.640'],['Gemini 3.1 Pro','0.000','0.639'],['DeepSeek V4 Pro','0.000','0.618'],
+    ['GPT-5.5','0.000','0.606'],['Qwen 3.6 Plus','0.002','0.604'],['Grok 4.20','0.000','0.601'],
+    ['Kimi K2.6','0.000','0.597'],['Doubao Seed 2.0 Pro','0.000','0.522'],
+    ['FFixed 0.30','0.000','0.387'],['FFixed 0.10','0.000','0.290'],['FFixed 0.01','0.000','0.273'],
+    ['GPT-4o mini','0.000','0.189']
+  ]
+};
+
+// -- Rendering functions --
+function termsKindTag(kind) {
+  var colors = {FRONTIER:'#6366f1',OPEN:'#10b981',BASELINE:'#94a3b8'};
+  var labels = {FRONTIER:'前沿',OPEN:'开源',BASELINE:'基线'};
+  var c = colors[kind] || '#94a3b8';
+  var l = labels[kind] || kind;
+  return '<span style="display:inline-block;padding:1px 6px;border-radius:4px;font-size:0.7rem;background:' + c + '22;color:' + c + ';margin-left:4px;">' + l + '</span>';
+}
+
+function termsSeBar(val) {
+  if (val === '—' || val === undefined) return '<span style="color:var(--text-dim);">—</span>';
+  var n = parseFloat(val);
+  if (isNaN(n)) return val;
+  var pct = Math.round(n * 100);
+  var color = n >= 0.6 ? 'var(--green)' : n >= 0.4 ? 'var(--gold)' : 'var(--red)';
+  return '<div style="display:flex;align-items:center;gap:6px;"><div style="width:50px;height:6px;background:var(--border);border-radius:3px;overflow:hidden;"><div style="width:' + pct + '%;height:100%;background:' + color + ';border-radius:3px;"></div></div><span style="color:' + color + ';font-weight:600;">' + val + '</span></div>';
+}
+
+function termsDiffCell(val) {
+  if (val === '—') return '<td style="color:var(--text-dim);text-align:center;">—</td>';
+  var n = parseFloat(val);
+  if (isNaN(n)) return '<td style="text-align:center;">' + val + '</td>';
+  var opacity = 0.3 + n * 0.7;
+  var bg = 'rgba(16,185,129,' + (opacity * 0.35).toFixed(2) + ')';
+  var color = n >= 0.6 ? 'var(--green)' : n >= 0.4 ? 'var(--gold)' : 'var(--red)';
+  return '<td style="text-align:center;background:' + bg + ';color:' + color + ';font-weight:600;">' + val + '</td>';
+}
+
+function renderTermsMain(regime) {
+  var data = TERMS.main[regime] || TERMS.main.overall;
+  var html = '';
+  data.forEach(function(r) {
+    html += '<tr><td>' + r[0] + '</td><td><strong>' + r[1] + '</strong>' + termsKindTag(r[10]) + '</td><td style="color:var(--text-dim);">' + r[2] + '</td>';
+    html += '<td>' + termsSeBar(r[3]) + '</td>';
+    html += '<td style="text-align:center;">' + r[4] + '</td><td style="text-align:center;">' + r[5] + '</td>';
+    html += '<td style="text-align:center;">' + r[6] + '</td><td style="text-align:center;">' + r[7] + '</td>';
+    html += '<td style="text-align:center;">' + r[8] + '</td><td style="text-align:center;color:var(--text-dim);">' + r[9] + '</td></tr>';
+  });
+  document.getElementById('termsMainBody').innerHTML = html;
+}
+
+function renderTermsCommerce() {
+  var src = document.querySelector('#termsCommSrcPills .pill.active').dataset.src;
+  var persp = document.querySelector('#termsCommPerspPills .pill.active').dataset.persp;
+  var key = src + '-' + persp;
+  var data = TERMS.commerce[key] || TERMS.commerce['grounded-combined'];
+  var html = '';
+  data.forEach(function(r) {
+    var negProfit = parseFloat(r[6]);
+    var negColor = negProfit > 30 ? 'var(--red)' : negProfit > 10 ? 'var(--gold)' : 'var(--green)';
+    html += '<tr><td>' + r[0] + '</td><td><strong>' + r[1] + '</strong></td><td style="color:var(--text-dim);">' + r[2] + '</td>';
+    html += '<td style="font-weight:600;color:var(--green);">' + r[3] + '</td>';
+    html += '<td style="text-align:center;">' + r[4] + '</td><td style="text-align:center;">' + r[5] + '</td>';
+    html += '<td style="text-align:center;color:' + negColor + ';">' + r[6] + '</td>';
+    html += '<td style="text-align:center;">' + r[7] + '</td>';
+    html += '<td style="text-align:center;color:var(--text-dim);">' + r[8] + '</td>';
+    html += '<td style="text-align:center;color:var(--red);">' + r[9] + '</td>';
+    html += '<td style="text-align:center;color:var(--text-dim);">' + r[10] + '</td></tr>';
+  });
+  document.getElementById('termsCommBody').innerHTML = html;
+}
+
+function renderTermsBankroll() {
+  var html = '';
+  TERMS.bankroll.forEach(function(r) {
+    var surv = r[6];
+    var survColor = surv === '100%' ? 'var(--green)' : surv === '75%' ? 'var(--gold)' : 'var(--red)';
+    html += '<tr><td>' + r[0] + '</td><td><strong>' + r[1] + '</strong></td><td style="color:var(--text-dim);">' + r[2] + '</td>';
+    html += '<td style="font-weight:600;color:var(--green);">' + r[3] + '</td>';
+    html += '<td style="color:var(--text-dim);">' + r[4] + '</td>';
+    html += '<td style="text-align:center;">' + r[5] + '</td>';
+    html += '<td style="text-align:center;color:' + survColor + ';font-weight:600;">' + r[6] + '</td>';
+    html += '<td style="text-align:center;">' + r[7] + '</td>';
+    html += '<td style="text-align:center;color:var(--red);">' + r[8] + '</td>';
+    html += '<td style="text-align:center;color:var(--text-dim);">' + r[9] + '</td>';
+    html += '<td style="color:var(--text-dim);">' + r[10] + '</td>';
+    html += '<td style="text-align:center;color:var(--text-dim);">' + r[11] + '</td></tr>';
+  });
+  document.getElementById('termsBankBody').innerHTML = html;
+}
+
+function renderTermsDifficulty() {
+  var html = '';
+  TERMS.difficulty.forEach(function(r) {
+    var delta = r[6];
+    var deltaColor = delta.startsWith('+') ? 'var(--green)' : delta.startsWith('−') ? 'var(--red)' : 'var(--text-dim)';
+    html += '<tr><td><strong>' + r[0] + '</strong></td>';
+    for (var i = 1; i <= 5; i++) html += termsDiffCell(r[i]);
+    html += '<td style="text-align:center;font-weight:700;color:' + deltaColor + ';">' + delta + '</td></tr>';
+  });
+  document.getElementById('termsDiffBody').innerHTML = html;
+}
+
+function renderTermsRobustness() {
+  var html = '';
+  TERMS.robustness.forEach(function(r, i) {
+    var delta = r[3];
+    var trendIcon = r[4] === 'gain' ? '📈' : r[4] === 'loss' ? '📉' : '➡️';
+    var deltaColor = r[4] === 'gain' ? 'var(--green)' : r[4] === 'loss' ? 'var(--red)' : 'var(--text-dim)';
+    html += '<tr><td>' + (i+1) + '</td><td><strong>' + r[0] + '</strong></td>';
+    html += '<td style="text-align:center;">' + r[1] + '</td>';
+    html += '<td style="text-align:center;">' + r[2] + '</td>';
+    html += '<td style="text-align:center;color:' + deltaColor + ';font-weight:600;">' + delta + '</td>';
+    html += '<td style="text-align:center;">' + trendIcon + '</td></tr>';
+  });
+  document.getElementById('termsRobustBody').innerHTML = html;
+}
+
+function renderTermsDiagnostics() {
+  var panels = [
+    {data: TERMS.diagnostics.agreement, bodyId: 'diagAggBody', m1: 'AGR⁺', m2: 'SE⁺'},
+    {data: TERMS.diagnostics.opponent, bodyId: 'diagBeBody', m1: 'BEtype', m2: 'SE⁺'},
+    {data: TERMS.diagnostics.safety, bodyId: 'diagCritBody', m1: 'CritVol%', m2: 'SE⁺'},
+    {data: TERMS.diagnostics.nodeal, bodyId: 'diagFagrBody', m1: 'FAGR⁻', m2: 'SE⁺'}
+  ];
+  panels.forEach(function(p) {
+    var html = '';
+    p.data.forEach(function(r) {
+      var xVal = parseFloat(r[1]);
+      var yVal = parseFloat(r[2]);
+      var xColor = (p.m1 === 'BEtype' || p.m1 === 'CritVol%' || p.m1 === 'FAGR⁻') ? (xVal > 0.02 ? 'var(--red)' : 'var(--green)') : 'var(--accent)';
+      html += '<tr><td>' + r[0] + '</td><td style="color:' + xColor + ';text-align:center;">' + r[1] + '</td><td style="color:var(--green);text-align:center;">' + r[2] + '</td></tr>';
+    });
+    document.getElementById(p.bodyId).innerHTML = html;
+  });
+}
+
+// -- Render all on load --
+renderTermsMain('overall');
+renderTermsCommerce();
+renderTermsBankroll();
+renderTermsDifficulty();
+renderTermsRobustness();
+renderTermsDiagnostics();
+
+// -- Regime pills --
+document.querySelectorAll('#termsRegimePills .pill').forEach(function(btn) {
+  btn.addEventListener('click', function() {
+    document.querySelectorAll('#termsRegimePills .pill').forEach(function(b) { b.classList.remove('active'); });
+    btn.classList.add('active');
+    renderTermsMain(btn.dataset.regime);
+  });
+});
+
+// -- Commerce source/perspective pills --
+document.querySelectorAll('#termsCommSrcPills .pill').forEach(function(btn) {
+  btn.addEventListener('click', function() {
+    document.querySelectorAll('#termsCommSrcPills .pill').forEach(function(b) { b.classList.remove('active'); });
+    btn.classList.add('active');
+    renderTermsCommerce();
+  });
+});
+document.querySelectorAll('#termsCommPerspPills .pill').forEach(function(btn) {
+  btn.addEventListener('click', function() {
+    document.querySelectorAll('#termsCommPerspPills .pill').forEach(function(b) { b.classList.remove('active'); });
+    btn.classList.add('active');
+    renderTermsCommerce();
+  });
+});
+
+// setTimestamp already called above
+
+// ============================================================
+// 13. DATA FRESHNESS & AUTO-REFRESH
+// ============================================================
+(function() {
+  // 显示数据更新状态
+  var statusEl = document.createElement('div');
+  statusEl.id = 'dataStatus';
+  statusEl.style.cssText = 'text-align:center;padding:8px 16px;font-size:12px;color:var(--text-dim);border-top:1px solid var(--border);margin-top:16px;';
+  statusEl.innerHTML = '📡 数据状态：<span id="dataFreshness">加载中…</span> · 自动刷新：每30分钟检查';
+  document.querySelector('.footer').parentNode.insertBefore(statusEl, document.querySelector('.footer').nextSibling);
+  
+  var freshnessEl = document.getElementById('dataFreshness');
+  
+  function checkFreshness() {
+    fetch('data/meta.json?' + Date.now(), { cache: 'no-store' })
+      .then(function(r) { return r.json(); })
+      .then(function(meta) {
+        if (meta && meta.lastUpdated) {
+          var d = new Date(meta.lastUpdated);
+          var now = new Date();
+          var diffMin = Math.round((now - d) / 60000);
+          var timeStr = d.toLocaleString('zh-CN', {
+            year:'numeric', month:'2-digit', day:'2-digit',
+            hour:'2-digit', minute:'2-digit', hour12:false
+          });
+          if (diffMin < 60) {
+            freshnessEl.innerHTML = '<span style="color:var(--green)">✓ 最新数据（' + diffMin + '分钟前更新 · ' + timeStr + '）</span>';
+          } else if (diffMin < 720) {
+            freshnessEl.innerHTML = '<span style="color:var(--orange)">⚠ ' + Math.floor(diffMin/60) + '小时前更新 · ' + timeStr + '</span>';
+          } else {
+            freshnessEl.innerHTML = '<span style="color:var(--red)">✗ 数据较旧（' + Math.floor(diffMin/1440) + '天前 · ' + timeStr + '）</span>';
+          }
+          // 更新页面时间戳
+          var tsEl = document.getElementById('updateTime');
+          if (tsEl) {
+            var s = d.toLocaleString('zh-CN', {
+              year:'numeric', month:'2-digit', day:'2-digit',
+              hour:'2-digit', minute:'2-digit', second:'2-digit', hour12:false
+            });
+            tsEl.textContent = '⏱ 数据获取时间：' + s + ' (UTC+8)';
+          }
+        }
+      })
+      .catch(function() {
+        freshnessEl.innerHTML = '<span style="color:var(--text-dimmer)">⟳ 使用内嵌快照数据（离线模式）</span>';
+      });
+  }
+  
+  // 立即检查一次
+  checkFreshness();
+  // 每30分钟检查一次
+  setInterval(checkFreshness, 30 * 60 * 1000);
+})();
+</script>
+
+</body>
+</html>
