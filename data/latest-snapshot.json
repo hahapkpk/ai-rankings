@@ -1,6 +1,6 @@
 {
-  "version": "2.0",
-  "fetchedAt": "2026-05-24T12:10:16.295Z",
+  "version": "3.0",
+  "fetchedAt": "2026-05-24T12:25:54.057Z",
   "sources": {
     "openrouter": {
       "leaderboard": {
@@ -9,11 +9,127 @@
         "month": [],
         "trending": []
       },
-      "fetchedAt": "2026-05-24T12:10:16.296Z"
+      "topModels": [],
+      "fetchedAt": "2026-05-24T12:25:54.058Z",
+      "debug": {
+        "tableCount": 0,
+        "linkCount": 0,
+        "bodyLength": 8586,
+        "sampleText": "Skip to content\nOpenRouter\n/\nMay 2026\nQwen3.7 Max\nGrok Build 0.1\nGemini 3.5 Flash\nGrok Imagine Video\nGrok Imagine Image Quality\nVoxtral Mini Transcribe\nGrok Voice TTS 1.0\nQwen3 ASR Flash\nRecraft V4.1 Pro Vector\nRecraft V4.1 Vector\nRecraft V4.1 Utility Pro\nRecraft V4.1 Utility\nRecraft V4.1 Pro\nRecraft V4.1\nRecraft V4 Pro Vector\nRecraft V4 Vector\nClaude Opus 4.7 (Fast)\nPerceptron Mk1\nModels\nFusion\nChat\nRankings\nApps\nEnterprise\nPricing\nDocs\nSign Up\nAI Model Rankings\n\nBased on benchmarks and real usage data from millions of users accessing models through OpenRouter.\n\nTop Models\n\nWeekly usage of models across OpenRouter\n\nMay 26, 2025\nJul 7\nAug 18\nSep 29\nNov 10\nDec 22\nFeb 2\nMar 16\nApr 27\n7.5T\n15T\n22.5T\n30T\nLLM Leaderboard\n\nCompare the most popular models on OpenRouter \n\nThis Week\n1.\nDeepSeek V4 Flash\nby\ndeepseek\n3.21T tokens\n73%\n2.\nHy3 preview\nby\ntencent\n3.08T tokens\n16%\n3.\nClaude Opus 4.7\nby\nanthropic\n1.84T tokens\n18%\n4.\nClaude Sonnet 4.6\nby\nanthropic\n1.82T tokens\n18%\n5.\nOwl Alpha\nby\nopenrouter\n1.15T tokens\n46%\n6.\nGemini 3 Flash Preview\nby\ngoogle\n1.13T tokens\n0%\n7.\nDeepSeek V4 Pro\nby\ndeepseek\n1.03T tokens\n17%\n8.\nDeepSeek V3.2\nby\ndeepseek\n1.03T tokens\n3%\n9.\nStep 3.5 Flash\nby\nstepfun\n728B tokens\n10%\n10.\nKimi K2.6\nby\nmoonshotai\n675B tokens\n41%\nShow more\nMarket Share\n\nCompare OpenRouter token share by model author\n\nMay 26, 2025\nJul 7\nAug 18\nSep 29\nNov 10\nDec 22\nFeb 2\nMar 16\nApr 27\n30%\n60%\n100%\n1.\ndeepseek\n5.24T\n19.5%\n2.\nanthropic\n4.49T\n16.7%\n3.\ngoogle\n4.09T\n15.2%\n4.\ntencent\n2.89T\n10.7%\n5.\nopenai\n2.77T\n10.3%\n6.\nqwen\n1.11T\n4.1%\n7.\nopenrouter\n1.04T\n3.9%\n8.\nz-ai\n875B\n3.3%\n9.\nmoonshotai\n869B\n3.2%\n10.\nOthers\n3.54T\n13.2%\nBenchmarks\n\nTop models on OpenRouter by Artificial Analysis Intelligence Index \n\nIntelligence Index Score\n$2.00\n$4.00\n$5.25\n28\n38\n48\n58\n64\n1.\nGPT-5.5 (xhigh)\nby\nopenai\n60.2\n2.\nClaude Opus 4.7 (Adaptive Reasoning, Max Effort)\nby\nanthropic\n57.3\n3.\nQwen3.7 Max\nby\nqwen\n56.6\n4.\nMiMo-V2.5-Pro\nby\nxiaomi\n53.8\n5.\nGrok 4.3\nby\nx-ai\n53.2\n6.\nGPT-5 Codex (high)\nby\nopenai\n44.6\n7.",
+        "textBlocks": [
+          {
+            "text": "1. DeepSeek V4 Flashby deepseek3.21T tokens73%",
+            "class": "grid grid-cols-12 items-center",
+            "tag": "DIV"
+          },
+          {
+            "text": "3.21T tokens73%",
+            "class": "text-muted-foreground col-span-4 text-right text-sm",
+            "tag": "DIV"
+          },
+          {
+            "text": "3.21T tokens",
+            "class": "",
+            "tag": "DIV"
+          },
+          {
+            "text": "2. Hy3 previewby tencent3.08T tokens16%",
+            "class": "grid grid-cols-12 items-center",
+            "tag": "DIV"
+          },
+          {
+            "text": "3.08T tokens16%",
+            "class": "text-muted-foreground col-span-4 text-right text-sm",
+            "tag": "DIV"
+          },
+          {
+            "text": "3.08T tokens",
+            "class": "",
+            "tag": "DIV"
+          },
+          {
+            "text": "3. Claude Opus 4.7by anthropic1.84T tokens18%",
+            "class": "grid grid-cols-12 items-center",
+            "tag": "DIV"
+          },
+          {
+            "text": "1.84T tokens18%",
+            "class": "text-muted-foreground col-span-4 text-right text-sm",
+            "tag": "DIV"
+          },
+          {
+            "text": "1.84T tokens",
+            "class": "",
+            "tag": "DIV"
+          },
+          {
+            "text": "4. Claude Sonnet 4.6by anthropic1.82T tokens18%",
+            "class": "grid grid-cols-12 items-center",
+            "tag": "DIV"
+          },
+          {
+            "text": "1.82T tokens18%",
+            "class": "text-muted-foreground col-span-4 text-right text-sm",
+            "tag": "DIV"
+          },
+          {
+            "text": "1.82T tokens",
+            "class": "",
+            "tag": "DIV"
+          },
+          {
+            "text": "5.Owl Alphaby openrouter1.15T tokens46%",
+            "class": "grid grid-cols-12 items-center",
+            "tag": "DIV"
+          },
+          {
+            "text": "1.15T tokens46%",
+            "class": "text-muted-foreground col-span-4 text-right text-sm",
+            "tag": "DIV"
+          },
+          {
+            "text": "1.15T tokens",
+            "class": "",
+            "tag": "DIV"
+          },
+          {
+            "text": "6. Gemini 3 Flash Previewby google1.13T tokens0%",
+            "class": "grid grid-cols-12 items-center",
+            "tag": "DIV"
+          },
+          {
+            "text": "1.13T tokens0%",
+            "class": "text-muted-foreground col-span-4 text-right text-sm",
+            "tag": "DIV"
+          },
+          {
+            "text": "1.13T tokens",
+            "class": "",
+            "tag": "DIV"
+          },
+          {
+            "text": "7. DeepSeek V4 Proby deepseek1.03T tokens17%",
+            "class": "grid grid-cols-12 items-center",
+            "tag": "DIV"
+          },
+          {
+            "text": "1.03T tokens17%",
+            "class": "text-muted-foreground col-span-4 text-right text-sm",
+            "tag": "DIV"
+          }
+        ]
+      }
     },
     "valsai": {
-      "swebench": [],
-      "fetchedAt": "2026-05-24T12:10:58.932Z"
+      "swebench": [
+        "1.05\n\n320.54\ns\n\nSEE 38 MORE MODELS\nBest Performing\nBest Budget\nBest Speed\nKey Takeaways\n\nGPT 5.5 leads with a performance of 82.60%",
+        " achieving the best accuracy on SWE-bench Verified. Claude Opus 4.7 follows closely at 82.00%",
+        " comes in third with 78.80%",
+        " and GPT 5.4 tied at 78.20%",
+        " and GPT 5.3 Codex at 78.00%"
+      ],
+      "method": "regex-percent",
+      "fetchedAt": "2026-05-24T12:27:19.189Z"
     },
     "arena": {
       "textLeaderboard": [
@@ -7218,7 +7334,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-05-24T12:11:05.534Z"
+      "fetchedAt": "2026-05-24T12:27:25.779Z"
     },
     "terms": {
       "main": {
@@ -7491,7 +7607,7 @@
           ]
         ]
       },
-      "fetchedAt": "2026-05-24T12:11:05.539Z"
+      "fetchedAt": "2026-05-24T12:27:25.783Z"
     }
   }
 }
