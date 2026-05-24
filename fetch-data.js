@@ -39,7 +39,9 @@ async function autoScroll(page) {
 }
 
 // ============================================================
-// 1. OpenRouter Rankings - Scrape rendered DOM + intercept RSC
+// 1. OpenRouter Rankings - API + DOM hybrid approach
+//    Strategy: Fetch model data via API, then use the rendered
+//    rankings page to determine the ranking order.
 // ============================================================
 async function fetchOpenRouter(page) {
   console.log('📊 Fetching OpenRouter Rankings...');
@@ -50,164 +52,163 @@ async function fetchOpenRouter(page) {
     fetchedAt: new Date().toISOString()
   };
   
-  const periods = [
-    { key: 'week', url: 'https://openrouter.ai/rankings?view=week' },
-    { key: 'today', url: 'https://openrouter.ai/rankings?view=day' },
-    { key: 'month', url: 'https://openrouter.ai/rankings?view=month' },
-    { key: 'trending', url: 'https://openrouter.ai/rankings?view=trending' }
-  ];
-  
-  for (const period of periods) {
-    try {
-      console.log(`  Fetching ${period.key} from ${period.url}...`);
-      
-      // Set up RSC response interception
-      let rscData = null;
-      const interceptHandler = async (response) => {
-        const url = response.url();
-        if (url.includes('/rankings') && response.request().method() === 'POST') {
-          try {
-            const contentType = response.headers()['content-type'] || '';
-            if (contentType.includes('text')) {
-              const text = await response.text();
-              // RSC responses may contain data in a structured format
-              // Try to extract model data from the response
-              if (text && text.length > 100) {
-                rscData = text;
-              }
-            }
-          } catch (e) {
-            // Ignore interception errors
-          }
-        }
-      };
-      page.on('response', interceptHandler);
-      
-      await page.goto(period.url, { waitUntil: 'networkidle2', timeout: 45000 });
-      
-      // Wait for content to render
-      await new Promise(r => setTimeout(r, 5000));
-      await autoScroll(page);
-      await new Promise(r => setTimeout(r, 3000));
-      
-      // Remove the handler
-      page.off('response', interceptHandler);
-      
-      // Extract data from the rendered DOM
-      const domData = await page.evaluate(() => {
-        const results = [];
+  try {
+    // Step 1: Fetch all models from the public API
+    console.log('  Step 1: Fetching model data from API...');
+    const apiData = await page.evaluate(async () => {
+      try {
+        const res = await fetch('https://openrouter.ai/api/frontend/models');
+        const json = await res.json();
+        return json;
+      } catch (e) {
+        return { error: e.message };
+      }
+    });
+    
+    if (apiData.error) {
+      throw new Error(`API fetch failed: ${apiData.error}`);
+    }
+    
+    const models = apiData.data || [];
+    console.log(`  ✓ API returned ${models.length} models`);
+    
+    // Build a lookup map by slug and name for enrichment
+    const modelMap = {};
+    models.forEach(m => {
+      modelMap[m.slug] = m;
+      if (m.short_name) modelMap[m.short_name] = m;
+      if (m.name) modelMap[m.name] = m;
+    });
+    
+    // Step 2: Navigate to rankings page and extract the model order
+    console.log('  Step 2: Extracting ranking order from page...');
+    const periods = [
+      { key: 'week', url: 'https://openrouter.ai/rankings?view=week' },
+      { key: 'today', url: 'https://openrouter.ai/rankings?view=day' },
+      { key: 'month', url: 'https://openrouter.ai/rankings?view=month' },
+      { key: 'trending', url: 'https://openrouter.ai/rankings?view=trending' }
+    ];
+    
+    for (const period of periods) {
+      try {
+        await page.goto(period.url, { waitUntil: 'networkidle2', timeout: 45000 });
+        await new Promise(r => setTimeout(r, 5000));
         
-        // Strategy 1: Look for any table-like structure
-        const tables = document.querySelectorAll('table');
-        if (tables.length > 0) {
-          for (const table of tables) {
-            const rows = table.querySelectorAll('tbody tr');
-            rows.forEach(tr => {
-              const cells = Array.from(tr.querySelectorAll('td')).map(td => td.textContent.trim());
-              if (cells.length >= 2) results.push(cells);
-            });
-          }
-          if (results.length > 0) return { rows: results, method: 'table' };
-        }
-        
-        // Strategy 2: Look for grid/flex layout with model cards/rows
-        // Next.js apps often use div-based layouts
-        const potentialRows = document.querySelectorAll(
-          '[class*="leaderboard"] [class*="row"], ' +
-          '[class*="rankings"] [class*="row"], ' +
-          '[class*="model-row"], ' +
-          '[class*="ModelRow"], ' +
-          '[class*="table-row"], ' +
-          'a[href*="/models/"]'
-        );
-        if (potentialRows.length > 3) {
-          const items = [];
-          potentialRows.forEach(el => {
-            const text = el.textContent.trim();
-            const href = el.getAttribute('href') || '';
-            if (text && text.length > 3 && text.length < 500) {
-              items.push({ text, href, tag: el.tagName, className: el.className });
+        // Extract model names in the order they appear on the page
+        const pageModels = await page.evaluate(() => {
+          // The rankings page renders model names as links or text
+          const names = [];
+          
+          // Try links to model pages first
+          const links = document.querySelectorAll('a[href*="/models/"]');
+          links.forEach(link => {
+            const name = link.textContent.trim();
+            if (name && name.length > 1 && name.length < 100) {
+              const href = link.getAttribute('href') || '';
+              const slug = href.replace('/models/', '');
+              names.push({ name, slug, source: 'link' });
             }
           });
-          if (items.length > 0) return { rows: items, method: 'class-selector' };
-        }
-        
-        // Strategy 3: Find all links to model pages and their parent containers
-        const modelLinks = document.querySelectorAll('a[href*="/models/"]');
-        if (modelLinks.length > 3) {
-          const models = [];
-          modelLinks.forEach(link => {
-            const row = link.closest('div[class]') || link.closest('tr') || link.parentElement;
-            if (row) {
-              const text = row.textContent.trim();
-              const href = link.getAttribute('href');
-              const modelName = link.textContent.trim();
-              if (modelName && text) {
-                models.push({ 
-                  name: modelName, 
-                  href,
-                  rowText: text.substring(0, 200),
-                  parentTag: row.tagName,
-                  parentClass: row.className
-                });
+          
+          // If no links found, try extracting from all text content
+          if (names.length === 0) {
+            const bodyText = document.body.innerText;
+            const lines = bodyText.split('\n').map(l => l.trim()).filter(l => l.length > 2);
+            // Look for known model name patterns
+            const modelPatterns = [
+              /(?:GPT|Claude|Gemini|Llama|Qwen|Mistral|Grok|DeepSeek|Command|Phi|Mixtral|Nous|Hermes|Dolphin|Mytho|Wizard|Falcon|Stable|Codestral|Mathstral|Pixtral|Voyage|Jamba|DBRX|Yi|Intern|Solar|Arctic|Granite|Granite|Gemma|Reka|Cohere|Aya|Cerebras|Llama3|o1|o3|o4|R1|R1-)\S*/gi,
+              /[a-z0-9-]+\/[a-z0-9.-]+/g  // slug pattern like "openai/gpt-4o"
+            ];
+            
+            const found = new Set();
+            for (const pattern of modelPatterns) {
+              let match;
+              while ((match = pattern.exec(bodyText)) !== null) {
+                const m = match[0];
+                if (!found.has(m) && m.length > 3) {
+                  found.add(m);
+                  names.push({ name: m, slug: '', source: 'regex' });
+                }
               }
             }
-          });
-          if (models.length > 0) return { rows: models, method: 'model-links' };
-        }
-        
-        // Strategy 4: Dump significant text blocks for debugging
-        const allDivs = document.querySelectorAll('div');
-        const textBlocks = [];
-        allDivs.forEach(div => {
-          if (div.children.length === 0 || div.children.length <= 3) {
-            const text = div.textContent.trim();
-            if (text && text.length > 10 && text.length < 200 && 
-                (text.includes('%') || text.match(/\d{2,}/))) {
-              textBlocks.push({ text, class: div.className, tag: div.tagName });
+            
+            // If still nothing, just grab the non-empty lines that look like model names
+            if (names.length === 0) {
+              for (const line of lines) {
+                if (line.length > 3 && line.length < 80 && 
+                    !line.startsWith('Skip') && !line.startsWith('OpenRouter') &&
+                    !line.startsWith('Models') && !line.startsWith('Based on') &&
+                    line !== 'No models found') {
+                  names.push({ name: line, slug: '', source: 'line' });
+                }
+              }
             }
           }
+          
+          return names;
         });
         
-        return { 
-          rows: [], 
-          method: 'none',
-          debug: {
-            tableCount: document.querySelectorAll('table').length,
-            linkCount: document.querySelectorAll('a[href*="/models/"]').length,
-            bodyLength: document.body.innerText.length,
-            sampleText: document.body.innerText.substring(0, 3000),
-            textBlocks: textBlocks.slice(0, 30)
+        console.log(`  ${period.key}: Found ${pageModels.length} model references on page`);
+        
+        // Step 3: Merge API data with page ordering to build leaderboard
+        const leaderboard = [];
+        const seen = new Set();
+        
+        for (const pm of pageModels) {
+          // Try to find the full model data
+          let model = modelMap[pm.slug] || modelMap[pm.name];
+          
+          // If slug is like "openai/gpt-4o", try matching
+          if (!model && pm.slug) {
+            model = models.find(m => m.slug === pm.slug || m.slug === pm.name);
           }
-        };
-      });
-      
-      if (domData.rows && domData.rows.length > 0) {
-        result.leaderboard[period.key] = domData.rows;
-        console.log(`  ✓ ${period.key}: ${domData.rows.length} models (method: ${domData.method})`);
-      } else {
-        result.leaderboard[period.key] = [];
-        // Save debug info for the first period only
-        if (period.key === 'week' && domData.debug) {
-          result.debug = domData.debug;
-          console.log(`  ⚠ ${period.key}: 0 models found`);
-          console.log(`    Tables: ${domData.debug.tableCount}, Model links: ${domData.debug.linkCount}`);
-          console.log(`    Body length: ${domData.debug.bodyLength}`);
-          // Log first few text blocks for diagnosis
-          if (domData.debug.sampleText) {
-            const lines = domData.debug.sampleText.split('\n').filter(l => l.trim()).slice(0, 20);
-            console.log(`    Sample text (first 20 lines):`);
-            lines.forEach(l => console.log(`      ${l.substring(0, 100)}`));
+          if (!model && pm.name) {
+            model = models.find(m => m.short_name === pm.name || m.name === pm.name || 
+                                    m.name.includes(pm.name) || pm.name.includes(m.short_name || ''));
           }
-        } else {
-          console.log(`  ⚠ ${period.key}: 0 models found`);
+          
+          const modelId = model ? model.slug : pm.name;
+          if (seen.has(modelId)) continue;
+          seen.add(modelId);
+          
+          const rank = leaderboard.length + 1;
+          const pricing = model?.pricing || {};
+          const promptPrice = parseFloat(pricing.prompt || 0);
+          const completionPrice = parseFloat(pricing.completion || 0);
+          
+          leaderboard.push({
+            rank,
+            model: model?.short_name || model?.name || pm.name,
+            slug: model?.slug || pm.slug || '',
+            provider: model?.author_display_name || model?.author || '',
+            contextLength: model?.context_length || 0,
+            isFree: model?.is_free || false,
+            supportsReasoning: model?.supports_reasoning || false,
+            inputModalities: model?.input_modalities || [],
+            outputModalities: model?.output_modalities || [],
+            promptPricePerM: promptPrice > 0 ? (promptPrice * 1000000).toFixed(2) : '0',
+            completionPricePerM: completionPrice > 0 ? (completionPrice * 1000000).toFixed(2) : '0',
+            source: pm.source
+          });
+          
+          if (leaderboard.length >= 50) break;
         }
+        
+        result.leaderboard[period.key] = leaderboard;
+        console.log(`  ✓ ${period.key}: ${leaderboard.length} ranked models`);
+        
+      } catch (e) {
+        console.warn(`  ✗ ${period.key}: ${e.message}`);
+        result.leaderboard[period.key] = [];
       }
-      
-    } catch (e) {
-      console.warn(`  ✗ ${period.key}: ${e.message}`);
-      result.leaderboard[period.key] = [];
     }
+    
+    // Build topModels summary from week ranking
+    result.topModels = (result.leaderboard.week || []).slice(0, 20);
+    
+  } catch (e) {
+    console.warn(`  ✗ OpenRouter failed: ${e.message}`);
+    result.error = e.message;
   }
   
   return result;

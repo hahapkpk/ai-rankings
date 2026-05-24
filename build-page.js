@@ -56,25 +56,24 @@ function build() {
   if (snapshot.sources.openrouter && !snapshot.sources.openrouter.error) {
     const or = snapshot.sources.openrouter;
     
-    // Handle both old format (array of arrays) and new format (objects with rank/model/tokens)
+    // Build HTML rows from leaderboard entries
     const buildRows = (entries) => {
       return entries.map(item => {
         if (Array.isArray(item)) {
           // Old format: just cell arrays
           return `      <tr>${item.map(c => `<td>${c}</td>`).join('')}</tr>`;
         }
-        // New API format: objects with rank, model, provider, tokens, change
-        const changeClass = item.change && String(item.change).startsWith('+') ? 'up' : 
-                           item.change && String(item.change).startsWith('-') ? 'down' : '';
-        const changeText = item.change || '0%';
+        // New format: objects with rank, model, provider, pricing, etc.
         const freeBadge = item.isFree ? ' <span style="color:#22c55e;font-size:0.7em">FREE</span>' : '';
-        const reasoningBadge = item.supportsReasoning !== undefined && item.supportsReasoning ? ' 🧠' : '';
-        return `      <tr><td>${item.rank}</td><td class="model-name">${item.model}${freeBadge}${reasoningBadge}<span class="provider">· ${item.provider}</span></td><td>${item.tokens}</td><td class="change ${changeClass}">${changeText}</td><td>${item.throughput || '-'} t/s</td><td>${item.latency || '-'} ms</td></tr>`;
+        const reasoningBadge = item.supportsReasoning ? ' 🧠' : '';
+        const price = item.promptPricePerM ? `$${item.promptPricePerM}/$${item.completionPricePerM}` : '';
+        const ctx = item.contextLength ? `${(item.contextLength / 1000).toFixed(0)}K` : '';
+        return `      <tr><td>${item.rank}</td><td class="model-name">${item.model}${freeBadge}${reasoningBadge}<span class="provider">· ${item.provider}</span></td><td>${price}</td><td>${ctx}</td></tr>`;
       }).join('\n');
     };
     
     // Update leaderboard periods
-    ['today', 'week', 'trending'].forEach(period => {
+    ['today', 'week', 'month', 'trending'].forEach(period => {
       if (or.leaderboard && or.leaderboard[period] && or.leaderboard[period].length > 0) {
         const rows = buildRows(or.leaderboard[period]);
         
