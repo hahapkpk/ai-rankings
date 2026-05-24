@@ -1,9 +1,13 @@
 /**
- * AI Rankings Data Fetcher v2
+ * AI Rankings Data Fetcher v3
  * 
- * Uses Puppeteer to scrape rendered data from 4 sources.
- * Strategy: extract rendered HTML from tables, save as JSON.
- * The build script then injects into the page template.
+ * Strategy overhaul:
+ * - OpenRouter: Use Puppeteer to scrape the rendered rankings page.
+ *   The rankings page uses Next.js RSC, so we scrape the rendered DOM.
+ *   Multiple strategies: intercept RSC network response + extract rendered DOM.
+ * - Vals AI: Improved Puppeteer scraping with longer waits
+ * - Arena AI: Keep working Puppeteer scraping
+ * - TERMS-Bench: Keep working Puppeteer scraping
  */
 
 const puppeteer = require('puppeteer');
@@ -35,17 +39,17 @@ async function autoScroll(page) {
 }
 
 // ============================================================
-// 1. OpenRouter Rankings - Extract from rendered DOM
+// 1. OpenRouter Rankings - Scrape rendered DOM + intercept RSC
 // ============================================================
 async function fetchOpenRouter(page) {
   console.log('📊 Fetching OpenRouter Rankings...');
   
   const result = {
     leaderboard: {},
+    topModels: [],
     fetchedAt: new Date().toISOString()
   };
   
-  // Try fetching weekly leaderboard
   const periods = [
     { key: 'week', url: 'https://openrouter.ai/rankings?view=week' },
     { key: 'today', url: 'https://openrouter.ai/rankings?view=day' },
@@ -55,48 +59,151 @@ async function fetchOpenRouter(page) {
   
   for (const period of periods) {
     try {
-      console.log(`  Fetching ${period.key}...`);
-      await page.goto(period.url, { waitUntil: 'networkidle2', timeout: 30000 });
-      await autoScroll(page);
+      console.log(`  Fetching ${period.key} from ${period.url}...`);
       
-      const rows = await page.evaluate(() => {
-        const results = [];
-        // Try multiple selector strategies
-        const selectors = [
-          'table tbody tr',
-          '[class*="rankings"] tr',
-          '[class*="leaderboard"] tr',
-          'a[href*="/models/"]'
-        ];
-        
-        for (const sel of selectors) {
-          const els = document.querySelectorAll(sel);
-          if (els.length > 3) {
-            els.forEach(el => {
-              if (sel.includes('a[href')) {
-                // Extract from link elements
-                const row = el.closest('tr') || el.closest('[class*="row"]');
-                if (row) {
-                  const cells = row.querySelectorAll('td, [class*="cell"]');
-                  if (cells.length >= 3) {
-                    results.push(Array.from(cells).map(c => c.textContent.trim()));
-                  }
-                }
-              } else {
-                const cells = el.querySelectorAll('td');
-                if (cells.length >= 3) {
-                  results.push(Array.from(cells).map(c => c.textContent.trim()));
-                }
+      // Set up RSC response interception
+      let rscData = null;
+      const interceptHandler = async (response) => {
+        const url = response.url();
+        if (url.includes('/rankings') && response.request().method() === 'POST') {
+          try {
+            const contentType = response.headers()['content-type'] || '';
+            if (contentType.includes('text')) {
+              const text = await response.text();
+              // RSC responses may contain data in a structured format
+              // Try to extract model data from the response
+              if (text && text.length > 100) {
+                rscData = text;
               }
-            });
-            break;
+            }
+          } catch (e) {
+            // Ignore interception errors
           }
         }
-        return results;
+      };
+      page.on('response', interceptHandler);
+      
+      await page.goto(period.url, { waitUntil: 'networkidle2', timeout: 45000 });
+      
+      // Wait for content to render
+      await new Promise(r => setTimeout(r, 5000));
+      await autoScroll(page);
+      await new Promise(r => setTimeout(r, 3000));
+      
+      // Remove the handler
+      page.off('response', interceptHandler);
+      
+      // Extract data from the rendered DOM
+      const domData = await page.evaluate(() => {
+        const results = [];
+        
+        // Strategy 1: Look for any table-like structure
+        const tables = document.querySelectorAll('table');
+        if (tables.length > 0) {
+          for (const table of tables) {
+            const rows = table.querySelectorAll('tbody tr');
+            rows.forEach(tr => {
+              const cells = Array.from(tr.querySelectorAll('td')).map(td => td.textContent.trim());
+              if (cells.length >= 2) results.push(cells);
+            });
+          }
+          if (results.length > 0) return { rows: results, method: 'table' };
+        }
+        
+        // Strategy 2: Look for grid/flex layout with model cards/rows
+        // Next.js apps often use div-based layouts
+        const potentialRows = document.querySelectorAll(
+          '[class*="leaderboard"] [class*="row"], ' +
+          '[class*="rankings"] [class*="row"], ' +
+          '[class*="model-row"], ' +
+          '[class*="ModelRow"], ' +
+          '[class*="table-row"], ' +
+          'a[href*="/models/"]'
+        );
+        if (potentialRows.length > 3) {
+          const items = [];
+          potentialRows.forEach(el => {
+            const text = el.textContent.trim();
+            const href = el.getAttribute('href') || '';
+            if (text && text.length > 3 && text.length < 500) {
+              items.push({ text, href, tag: el.tagName, className: el.className });
+            }
+          });
+          if (items.length > 0) return { rows: items, method: 'class-selector' };
+        }
+        
+        // Strategy 3: Find all links to model pages and their parent containers
+        const modelLinks = document.querySelectorAll('a[href*="/models/"]');
+        if (modelLinks.length > 3) {
+          const models = [];
+          modelLinks.forEach(link => {
+            const row = link.closest('div[class]') || link.closest('tr') || link.parentElement;
+            if (row) {
+              const text = row.textContent.trim();
+              const href = link.getAttribute('href');
+              const modelName = link.textContent.trim();
+              if (modelName && text) {
+                models.push({ 
+                  name: modelName, 
+                  href,
+                  rowText: text.substring(0, 200),
+                  parentTag: row.tagName,
+                  parentClass: row.className
+                });
+              }
+            }
+          });
+          if (models.length > 0) return { rows: models, method: 'model-links' };
+        }
+        
+        // Strategy 4: Dump significant text blocks for debugging
+        const allDivs = document.querySelectorAll('div');
+        const textBlocks = [];
+        allDivs.forEach(div => {
+          if (div.children.length === 0 || div.children.length <= 3) {
+            const text = div.textContent.trim();
+            if (text && text.length > 10 && text.length < 200 && 
+                (text.includes('%') || text.match(/\d{2,}/))) {
+              textBlocks.push({ text, class: div.className, tag: div.tagName });
+            }
+          }
+        });
+        
+        return { 
+          rows: [], 
+          method: 'none',
+          debug: {
+            tableCount: document.querySelectorAll('table').length,
+            linkCount: document.querySelectorAll('a[href*="/models/"]').length,
+            bodyLength: document.body.innerText.length,
+            sampleText: document.body.innerText.substring(0, 3000),
+            textBlocks: textBlocks.slice(0, 30)
+          }
+        };
       });
       
-      result.leaderboard[period.key] = rows;
-      console.log(`  ✓ ${period.key}: ${rows.length} models`);
+      if (domData.rows && domData.rows.length > 0) {
+        result.leaderboard[period.key] = domData.rows;
+        console.log(`  ✓ ${period.key}: ${domData.rows.length} models (method: ${domData.method})`);
+      } else {
+        result.leaderboard[period.key] = [];
+        // Save debug info for the first period only
+        if (period.key === 'week' && domData.debug) {
+          result.debug = domData.debug;
+          console.log(`  ⚠ ${period.key}: 0 models found`);
+          console.log(`    Tables: ${domData.debug.tableCount}, Model links: ${domData.debug.linkCount}`);
+          console.log(`    Body length: ${domData.debug.bodyLength}`);
+          // Log first few text blocks for diagnosis
+          if (domData.debug.sampleText) {
+            const lines = domData.debug.sampleText.split('\n').filter(l => l.trim()).slice(0, 20);
+            console.log(`    Sample text (first 20 lines):`);
+            lines.forEach(l => console.log(`      ${l.substring(0, 100)}`));
+          }
+        } else {
+          console.log(`  ⚠ ${period.key}: 0 models found`);
+        }
+      }
+      
     } catch (e) {
       console.warn(`  ✗ ${period.key}: ${e.message}`);
       result.leaderboard[period.key] = [];
@@ -107,37 +214,89 @@ async function fetchOpenRouter(page) {
 }
 
 // ============================================================
-// 2. Vals AI SWE-bench - Extract from rendered DOM
+// 2. Vals AI SWE-bench - Improved Puppeteer scraping
 // ============================================================
 async function fetchValsAI(page) {
   console.log('🧪 Fetching Vals AI...');
   const url = 'https://www.vals.ai/benchmarks/swebench';
-  await page.goto(url, { waitUntil: 'networkidle2', timeout: 30000 });
-  await autoScroll(page);
   
-  const data = await page.evaluate(() => {
-    const results = [];
-    const table = document.querySelector('table');
-    if (table) {
-      const thead = table.querySelector('thead tr');
-      const headers = thead ? Array.from(thead.querySelectorAll('th')).map(th => th.textContent.trim()) : [];
-      
-      table.querySelectorAll('tbody tr').forEach(tr => {
-        const cells = Array.from(tr.querySelectorAll('td')).map(td => td.textContent.trim());
-        if (cells.length > 0) {
-          results.push({ headers, cells });
-        }
-      });
+  try {
+    await page.goto(url, { waitUntil: 'networkidle2', timeout: 45000 });
+    
+    // Wait longer for dynamic content to render
+    await new Promise(r => setTimeout(r, 5000));
+    
+    // Try to wait for table or data to appear
+    try {
+      await page.waitForSelector('table, [class*="table"], [class*="benchmark"]', { timeout: 15000 });
+    } catch (e) {
+      console.log('  ⚠ Standard table selector not found, trying alternative approach...');
     }
-    return { swebench: results, fetchedAt: new Date().toISOString() };
-  });
-  
-  console.log(`  ✓ SWE-bench: ${data.swebench.length} entries`);
-  return data;
+    
+    await autoScroll(page);
+    await new Promise(r => setTimeout(r, 3000));
+    
+    const data = await page.evaluate(() => {
+      const results = [];
+      
+      // Strategy 1: Standard HTML table
+      const tables = document.querySelectorAll('table');
+      if (tables.length > 0) {
+        for (const table of tables) {
+          const thead = table.querySelector('thead tr') || table.querySelector('tr');
+          const headers = thead ? Array.from(thead.querySelectorAll('th, td')).map(th => th.textContent.trim()) : [];
+          
+          const rows = [];
+          table.querySelectorAll('tbody tr').forEach(tr => {
+            const cells = Array.from(tr.querySelectorAll('td')).map(td => td.textContent.trim());
+            if (cells.length > 0) rows.push({ headers, cells });
+          });
+          
+          if (rows.length > results.length) {
+            results.length = 0;
+            results.push(...rows);
+          }
+        }
+        if (results.length > 0) return { swebench: results, method: 'table', fetchedAt: new Date().toISOString() };
+      }
+      
+      // Strategy 2: Look for percentage patterns (e.g., "82.60%")
+      const allText = document.body.innerText;
+      const percentMatches = allText.match(/[\w\s\-.]+\s+\d+\.\d+%/g);
+      if (percentMatches && percentMatches.length > 3) {
+        return { swebench: percentMatches.slice(0, 30), method: 'regex-percent', fetchedAt: new Date().toISOString() };
+      }
+      
+      // Strategy 3: Dump sample text for debugging
+      return { 
+        swebench: [], 
+        method: 'none',
+        debug: {
+          tableCount: document.querySelectorAll('table').length,
+          bodyLength: allText.length,
+          sampleText: allText.substring(0, 2000)
+        },
+        fetchedAt: new Date().toISOString() 
+      };
+    });
+    
+    const count = Array.isArray(data.swebench) ? data.swebench.length : 0;
+    console.log(`  ✓ Vals AI: ${count} entries (method: ${data.method || 'unknown'})`);
+    
+    if (count === 0 && data.debug) {
+      console.log(`    Tables: ${data.debug.tableCount}, Body: ${data.debug.bodyLength} chars`);
+    }
+    
+    return data;
+    
+  } catch (e) {
+    console.warn(`  ✗ Vals AI failed: ${e.message}`);
+    return { swebench: [], error: e.message, fetchedAt: new Date().toISOString() };
+  }
 }
 
 // ============================================================
-// 3. Arena AI Leaderboard - Extract from rendered DOM
+// 3. Arena AI Leaderboard - Working Puppeteer scraping
 // ============================================================
 async function fetchArenaAI(page) {
   console.log('⚔️ Fetching Arena AI...');
@@ -180,7 +339,7 @@ async function fetchArenaAI(page) {
 }
 
 // ============================================================
-// 4. TERMS-Bench - Extract from rendered DOM
+// 4. TERMS-Bench - Working Puppeteer scraping
 // ============================================================
 async function fetchTermsBench(page) {
   console.log('🤝 Fetching TERMS-Bench...');
@@ -234,7 +393,7 @@ async function fetchTermsBench(page) {
 // Main
 // ============================================================
 async function main() {
-  console.log('🚀 Starting AI Rankings data fetch v2...\n');
+  console.log('🚀 Starting AI Rankings data fetch v3...\n');
   
   const browser = await puppeteer.launch({
     headless: 'new',
@@ -252,7 +411,7 @@ async function main() {
   await page.setUserAgent('Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36');
   
   const snapshot = {
-    version: '2.0',
+    version: '3.0',
     fetchedAt: new Date().toISOString(),
     sources: {}
   };
@@ -275,8 +434,27 @@ async function main() {
   
   await browser.close();
   
-  // Save snapshot
-  fs.writeFileSync(SNAPSHOT_FILE, JSON.stringify(snapshot, null, 2));
+  // Save snapshot (truncate debug info to keep file size reasonable)
+  const snapshotForFile = { ...snapshot };
+  if (snapshotForFile.sources.openrouter?.debug) {
+    // Keep debug but truncate sampleText
+    if (snapshotForFile.sources.openrouter.debug.sampleText) {
+      snapshotForFile.sources.openrouter.debug.sampleText = 
+        snapshotForFile.sources.openrouter.debug.sampleText.substring(0, 2000);
+    }
+    if (snapshotForFile.sources.openrouter.debug.textBlocks) {
+      snapshotForFile.sources.openrouter.debug.textBlocks = 
+        snapshotForFile.sources.openrouter.debug.textBlocks.slice(0, 20);
+    }
+  }
+  if (snapshotForFile.sources.valsai?.debug) {
+    if (snapshotForFile.sources.valsai.debug.sampleText) {
+      snapshotForFile.sources.valsai.debug.sampleText = 
+        snapshotForFile.sources.valsai.debug.sampleText.substring(0, 2000);
+    }
+  }
+  
+  fs.writeFileSync(SNAPSHOT_FILE, JSON.stringify(snapshotForFile, null, 2));
   console.log(`\n✅ Snapshot saved: ${(fs.statSync(SNAPSHOT_FILE).size / 1024).toFixed(1)} KB`);
   
   // Save metadata
@@ -286,12 +464,28 @@ async function main() {
   };
   for (const k of Object.keys(snapshot.sources)) {
     const s = snapshot.sources[k];
+    let count = 0;
+    if (s.leaderboard) {
+      // Sum all periods
+      count = Object.values(s.leaderboard).reduce((sum, arr) => sum + (arr?.length || 0), 0);
+    } else if (Array.isArray(s.swebench)) {
+      count = s.swebench.length;
+    } else if (s.textLeaderboard) {
+      count = s.textLeaderboard.length;
+    } else if (s.main) {
+      count = s.main.overall?.length || 0;
+    }
     meta.sources[k] = {
       status: s.error ? 'error' : 'ok',
-      itemCount: s.leaderboard?.week?.length || s.swebench?.length || s.textLeaderboard?.length || s.main?.overall?.length || 0
+      itemCount: count
     };
   }
   fs.writeFileSync(path.join(OUT_DIR, 'meta.json'), JSON.stringify(meta, null, 2));
+  
+  console.log('\n📊 Data Summary:');
+  for (const [k, v] of Object.entries(meta.sources)) {
+    console.log(`  ${k}: ${v.status} (${v.itemCount} items)`);
+  }
 }
 
 main().catch(err => {

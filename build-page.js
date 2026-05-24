@@ -1,13 +1,10 @@
 /**
- * AI Rankings Page Builder
+ * AI Rankings Page Builder v2
  * 
  * Reads the base HTML template and latest snapshot data,
  * then generates an updated index.html with fresh data.
  * 
- * Strategy: The base HTML contains embedded data as fallback.
- * This script updates the embedded data with latest snapshot.
- * 
- * Usage: node build-page.js
+ * v2: Supports OpenRouter API-based leaderboard data
  */
 
 const fs = require('fs');
@@ -59,15 +56,27 @@ function build() {
   if (snapshot.sources.openrouter && !snapshot.sources.openrouter.error) {
     const or = snapshot.sources.openrouter;
     
+    // Handle both old format (array of arrays) and new format (objects with rank/model/tokens)
+    const buildRows = (entries) => {
+      return entries.map(item => {
+        if (Array.isArray(item)) {
+          // Old format: just cell arrays
+          return `      <tr>${item.map(c => `<td>${c}</td>`).join('')}</tr>`;
+        }
+        // New API format: objects with rank, model, provider, tokens, change
+        const changeClass = item.change && String(item.change).startsWith('+') ? 'up' : 
+                           item.change && String(item.change).startsWith('-') ? 'down' : '';
+        const changeText = item.change || '0%';
+        const freeBadge = item.isFree ? ' <span style="color:#22c55e;font-size:0.7em">FREE</span>' : '';
+        const reasoningBadge = item.supportsReasoning !== undefined && item.supportsReasoning ? ' 🧠' : '';
+        return `      <tr><td>${item.rank}</td><td class="model-name">${item.model}${freeBadge}${reasoningBadge}<span class="provider">· ${item.provider}</span></td><td>${item.tokens}</td><td class="change ${changeClass}">${changeText}</td><td>${item.throughput || '-'} t/s</td><td>${item.latency || '-'} ms</td></tr>`;
+      }).join('\n');
+    };
+    
     // Update leaderboard periods
-    ['today', 'week', 'month', 'trending'].forEach(period => {
+    ['today', 'week', 'trending'].forEach(period => {
       if (or.leaderboard && or.leaderboard[period] && or.leaderboard[period].length > 0) {
-        const rows = or.leaderboard[period].map(item => {
-          const changeClass = item.change && item.change.startsWith('+') ? 'up' : 
-                             item.change && item.change.startsWith('-') ? 'down' : '';
-          const changeText = item.change || '0%';
-          return `      <tr><td>${item.rank}</td><td class="model-name">${item.model}<span class="provider">· ${item.provider}</span></td><td>${item.tokens}</td><td class="change ${changeClass}">${changeText}</td></tr>`;
-        }).join('\n');
+        const rows = buildRows(or.leaderboard[period]);
         
         // Try to replace the period table body
         const pattern = new RegExp(`(data-period="${period}"[^>]*>[\\s\\S]*?<tbody>)([\\s\\S]*?)(<\\/tbody>)`, 'g');
@@ -77,22 +86,42 @@ function build() {
       }
     });
     
+    // Also try replacing by id-based patterns for OpenRouter tables
+    if (or.leaderboard) {
+      // Replace the "本周热门" (week) table
+      if (or.leaderboard.week && or.leaderboard.week.length > 0) {
+        const weekRows = buildRows(or.leaderboard.week);
+        // Find the OpenRouter section and replace the first tbody
+        const orSectionPattern = /(id="openrouter"[^>]*>[\\s\\S]*?<tbody>)([\\s\\S]*?)(<\\/tbody>)/;
+        if (html.match(orSectionPattern)) {
+          html = html.replace(orSectionPattern, `$1\n${weekRows}\n      $3`);
+        }
+      }
+    }
+    
     console.log('  ✓ Updated OpenRouter data');
   }
   
   // Update Vals AI data if available
   if (snapshot.sources.valsai && !snapshot.sources.valsai.error) {
-    console.log('  ✓ Vals AI data available (structure preserved)');
+    const vals = snapshot.sources.valsai;
+    if (vals.swebench && Array.isArray(vals.swebench) && vals.swebench.length > 0) {
+      console.log(`  ✓ Vals AI: ${vals.swebench.length} entries (method: ${vals.method || 'unknown'})`);
+    } else {
+      console.log('  ℹ Vals AI: no structured data yet (keeping embedded fallback)');
+    }
   }
   
   // Update Arena AI data if available
   if (snapshot.sources.arena && !snapshot.sources.arena.error) {
-    console.log('  ✓ Arena AI data available (structure preserved)');
+    console.log(`  ✓ Arena AI: ${snapshot.sources.arena.textLeaderboard?.length || 0} entries`);
   }
   
   // Update TERMS-Bench data if available
   if (snapshot.sources.terms && !snapshot.sources.terms.error) {
-    console.log('  ✓ TERMS-Bench data available (structure preserved)');
+    const t = snapshot.sources.terms;
+    const total = Object.values(t.main || {}).reduce((sum, arr) => sum + (arr?.length || 0), 0);
+    console.log(`  ✓ TERMS-Bench: ${total} entries across ${Object.keys(t.main || {}).length} regimes`);
   }
   
   // Add data freshness indicator
