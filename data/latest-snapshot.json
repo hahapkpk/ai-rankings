@@ -1,6 +1,6 @@
 {
   "version": "3.0",
-  "fetchedAt": "2026-05-24T13:54:44.239Z",
+  "fetchedAt": "2026-05-25T02:55:50.486Z",
   "sources": {
     "openrouter": {
       "leaderboard": {
@@ -609,6 +609,59 @@
           },
           {
             "rank": 8,
+            "model": "Gemma 4 26B A4B  (free)",
+            "slug": "google/gemma-4-26b-a4b-it",
+            "provider": "Google",
+            "contextLength": 262144,
+            "isFree": false,
+            "supportsReasoning": true,
+            "inputModalities": [
+              "image",
+              "text",
+              "video"
+            ],
+            "outputModalities": [
+              "text"
+            ],
+            "promptPricePerM": "0",
+            "completionPricePerM": "0",
+            "source": "regex"
+          },
+          {
+            "rank": 9,
+            "model": "Llama Nemotron Embed VL 1B V2 (free)",
+            "slug": "nvidia/llama-nemotron-embed-vl-1b-v2",
+            "provider": "Nvidia",
+            "contextLength": 131072,
+            "isFree": false,
+            "supportsReasoning": false,
+            "inputModalities": [
+              "text",
+              "image"
+            ],
+            "outputModalities": [
+              "embeddings"
+            ],
+            "promptPricePerM": "0",
+            "completionPricePerM": "0",
+            "source": "regex"
+          },
+          {
+            "rank": 10,
+            "model": "llama",
+            "slug": "",
+            "provider": "",
+            "contextLength": 0,
+            "isFree": false,
+            "supportsReasoning": false,
+            "inputModalities": [],
+            "outputModalities": [],
+            "promptPricePerM": "0",
+            "completionPricePerM": "0",
+            "source": "regex"
+          },
+          {
+            "rank": 11,
             "model": "deepseek",
             "slug": "",
             "provider": "",
@@ -622,7 +675,7 @@
             "source": "regex"
           },
           {
-            "rank": 9,
+            "rank": 12,
             "model": "Hermes 4 70B",
             "slug": "nousresearch/hermes-4-70b",
             "provider": "Nous Research",
@@ -640,7 +693,7 @@
             "source": "regex"
           },
           {
-            "rank": 10,
+            "rank": 13,
             "model": "commands",
             "slug": "",
             "provider": "",
@@ -814,7 +867,7 @@
           "source": "regex"
         }
       ],
-      "fetchedAt": "2026-05-24T13:54:44.240Z"
+      "fetchedAt": "2026-05-25T02:55:50.487Z"
     },
     "valsai": {
       "swebench": [
@@ -825,7 +878,7 @@
         " and GPT 5.3 Codex at 78.00%"
       ],
       "method": "regex-percent",
-      "fetchedAt": "2026-05-24T13:55:39.616Z"
+      "fetchedAt": "2026-05-25T02:56:42.718Z"
     },
     "arena": {
       "textLeaderboard": [
@@ -8030,7 +8083,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-05-24T13:55:46.218Z"
+      "fetchedAt": "2026-05-25T02:56:49.496Z"
     },
     "terms": {
       "main": {
@@ -8303,7 +8356,7 @@
           ]
         ]
       },
-      "fetchedAt": "2026-05-24T13:55:46.223Z"
+      "fetchedAt": "2026-05-25T02:56:49.503Z"
     }
   }
 }
