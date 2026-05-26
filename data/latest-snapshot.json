@@ -1,6 +1,6 @@
 {
   "version": "3.0",
-  "fetchedAt": "2026-05-25T14:58:37.588Z",
+  "fetchedAt": "2026-05-26T02:43:45.418Z",
   "sources": {
     "openrouter": {
       "leaderboard": {
@@ -151,6 +151,20 @@
           {
             "rank": 9,
             "model": "commands",
+            "slug": "",
+            "provider": "",
+            "contextLength": 0,
+            "isFree": false,
+            "supportsReasoning": false,
+            "inputModalities": [],
+            "outputModalities": [],
+            "promptPricePerM": "0",
+            "completionPricePerM": "0",
+            "source": "regex"
+          },
+          {
+            "rank": 10,
+            "model": "commands,",
             "slug": "",
             "provider": "",
             "contextLength": 0,
@@ -320,6 +334,20 @@
             "promptPricePerM": "0",
             "completionPricePerM": "0",
             "source": "regex"
+          },
+          {
+            "rank": 10,
+            "model": "commands,",
+            "slug": "",
+            "provider": "",
+            "contextLength": 0,
+            "isFree": false,
+            "supportsReasoning": false,
+            "inputModalities": [],
+            "outputModalities": [],
+            "promptPricePerM": "0",
+            "completionPricePerM": "0",
+            "source": "regex"
           }
         ],
         "month": [
@@ -479,6 +507,20 @@
             "promptPricePerM": "0",
             "completionPricePerM": "0",
             "source": "regex"
+          },
+          {
+            "rank": 10,
+            "model": "commands,",
+            "slug": "",
+            "provider": "",
+            "contextLength": 0,
+            "isFree": false,
+            "supportsReasoning": false,
+            "inputModalities": [],
+            "outputModalities": [],
+            "promptPricePerM": "0",
+            "completionPricePerM": "0",
+            "source": "regex"
           }
         ],
         "trending": [
@@ -577,20 +619,6 @@
           },
           {
             "rank": 6,
-            "model": "mistralai",
-            "slug": "",
-            "provider": "",
-            "contextLength": 0,
-            "isFree": false,
-            "supportsReasoning": false,
-            "inputModalities": [],
-            "outputModalities": [],
-            "promptPricePerM": "0",
-            "completionPricePerM": "0",
-            "source": "regex"
-          },
-          {
-            "rank": 7,
             "model": "Voxtral Mini Transcribe",
             "slug": "mistralai/voxtral-mini-transcribe",
             "provider": "Mistral AI",
@@ -608,7 +636,53 @@
             "source": "regex"
           },
           {
+            "rank": 7,
+            "model": "mistralai",
+            "slug": "",
+            "provider": "",
+            "contextLength": 0,
+            "isFree": false,
+            "supportsReasoning": false,
+            "inputModalities": [],
+            "outputModalities": [],
+            "promptPricePerM": "0",
+            "completionPricePerM": "0",
+            "source": "regex"
+          },
+          {
             "rank": 8,
+            "model": "Command",
+            "slug": "cohere/command",
+            "provider": "Cohere",
+            "contextLength": 4096,
+            "isFree": false,
+            "supportsReasoning": false,
+            "inputModalities": [
+              "text"
+            ],
+            "outputModalities": [
+              "text"
+            ],
+            "promptPricePerM": "0",
+            "completionPricePerM": "0",
+            "source": "regex"
+          },
+          {
+            "rank": 9,
+            "model": "cohere",
+            "slug": "",
+            "provider": "",
+            "contextLength": 0,
+            "isFree": false,
+            "supportsReasoning": false,
+            "inputModalities": [],
+            "outputModalities": [],
+            "promptPricePerM": "0",
+            "completionPricePerM": "0",
+            "source": "regex"
+          },
+          {
+            "rank": 10,
             "model": "Gemma 4 26B A4B  (free)",
             "slug": "google/gemma-4-26b-a4b-it",
             "provider": "Google",
@@ -623,39 +697,6 @@
             "outputModalities": [
               "text"
             ],
-            "promptPricePerM": "0",
-            "completionPricePerM": "0",
-            "source": "regex"
-          },
-          {
-            "rank": 9,
-            "model": "Llama Nemotron Embed VL 1B V2 (free)",
-            "slug": "nvidia/llama-nemotron-embed-vl-1b-v2",
-            "provider": "Nvidia",
-            "contextLength": 131072,
-            "isFree": false,
-            "supportsReasoning": false,
-            "inputModalities": [
-              "text",
-              "image"
-            ],
-            "outputModalities": [
-              "embeddings"
-            ],
-            "promptPricePerM": "0",
-            "completionPricePerM": "0",
-            "source": "regex"
-          },
-          {
-            "rank": 10,
-            "model": "llama",
-            "slug": "",
-            "provider": "",
-            "contextLength": 0,
-            "isFree": false,
-            "supportsReasoning": false,
-            "inputModalities": [],
-            "outputModalities": [],
             "promptPricePerM": "0",
             "completionPricePerM": "0",
             "source": "regex"
@@ -695,6 +736,20 @@
           {
             "rank": 13,
             "model": "commands",
+            "slug": "",
+            "provider": "",
+            "contextLength": 0,
+            "isFree": false,
+            "supportsReasoning": false,
+            "inputModalities": [],
+            "outputModalities": [],
+            "promptPricePerM": "0",
+            "completionPricePerM": "0",
+            "source": "regex"
+          },
+          {
+            "rank": 14,
+            "model": "commands,",
             "slug": "",
             "provider": "",
             "contextLength": 0,
@@ -865,9 +920,23 @@
           "promptPricePerM": "0",
           "completionPricePerM": "0",
           "source": "regex"
+        },
+        {
+          "rank": 10,
+          "model": "commands,",
+          "slug": "",
+          "provider": "",
+          "contextLength": 0,
+          "isFree": false,
+          "supportsReasoning": false,
+          "inputModalities": [],
+          "outputModalities": [],
+          "promptPricePerM": "0",
+          "completionPricePerM": "0",
+          "source": "regex"
         }
       ],
-      "fetchedAt": "2026-05-25T14:58:37.589Z"
+      "fetchedAt": "2026-05-26T02:43:45.419Z"
     },
     "valsai": {
       "swebench": [
@@ -878,7 +947,7 @@
         " and GPT 5.3 Codex at 78.00%"
       ],
       "method": "regex-percent",
-      "fetchedAt": "2026-05-25T15:00:04.463Z"
+      "fetchedAt": "2026-05-26T02:45:01.617Z"
     },
     "arena": {
       "textLeaderboard": [
@@ -8083,7 +8152,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-05-25T15:00:12.244Z"
+      "fetchedAt": "2026-05-26T02:45:08.187Z"
     },
     "terms": {
       "main": {
@@ -8356,7 +8425,7 @@
           ]
         ]
       },
-      "fetchedAt": "2026-05-25T15:00:12.249Z"
+      "fetchedAt": "2026-05-26T02:45:08.192Z"
     }
   }
 }
