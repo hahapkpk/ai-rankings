@@ -1,6 +1,6 @@
 {
   "version": "3.0",
-  "fetchedAt": "2026-05-27T02:54:40.032Z",
+  "fetchedAt": "2026-05-27T09:33:20.055Z",
   "sources": {
     "openrouter": {
       "leaderboard": {
@@ -151,6 +151,20 @@
           {
             "rank": 9,
             "model": "commands",
+            "slug": "",
+            "provider": "",
+            "contextLength": 0,
+            "isFree": false,
+            "supportsReasoning": false,
+            "inputModalities": [],
+            "outputModalities": [],
+            "promptPricePerM": "0",
+            "completionPricePerM": "0",
+            "source": "regex"
+          },
+          {
+            "rank": 10,
+            "model": "commands,",
             "slug": "",
             "provider": "",
             "contextLength": 0,
@@ -320,6 +334,20 @@
             "promptPricePerM": "0",
             "completionPricePerM": "0",
             "source": "regex"
+          },
+          {
+            "rank": 10,
+            "model": "commands,",
+            "slug": "",
+            "provider": "",
+            "contextLength": 0,
+            "isFree": false,
+            "supportsReasoning": false,
+            "inputModalities": [],
+            "outputModalities": [],
+            "promptPricePerM": "0",
+            "completionPricePerM": "0",
+            "source": "regex"
           }
         ],
         "month": [
@@ -469,6 +497,20 @@
           {
             "rank": 9,
             "model": "commands",
+            "slug": "",
+            "provider": "",
+            "contextLength": 0,
+            "isFree": false,
+            "supportsReasoning": false,
+            "inputModalities": [],
+            "outputModalities": [],
+            "promptPricePerM": "0",
+            "completionPricePerM": "0",
+            "source": "regex"
+          },
+          {
+            "rank": 10,
+            "model": "commands,",
             "slug": "",
             "provider": "",
             "contextLength": 0,
@@ -704,6 +746,20 @@
             "promptPricePerM": "0",
             "completionPricePerM": "0",
             "source": "regex"
+          },
+          {
+            "rank": 14,
+            "model": "commands,",
+            "slug": "",
+            "provider": "",
+            "contextLength": 0,
+            "isFree": false,
+            "supportsReasoning": false,
+            "inputModalities": [],
+            "outputModalities": [],
+            "promptPricePerM": "0",
+            "completionPricePerM": "0",
+            "source": "regex"
           }
         ]
       },
@@ -864,9 +920,23 @@
           "promptPricePerM": "0",
           "completionPricePerM": "0",
           "source": "regex"
+        },
+        {
+          "rank": 10,
+          "model": "commands,",
+          "slug": "",
+          "provider": "",
+          "contextLength": 0,
+          "isFree": false,
+          "supportsReasoning": false,
+          "inputModalities": [],
+          "outputModalities": [],
+          "promptPricePerM": "0",
+          "completionPricePerM": "0",
+          "source": "regex"
         }
       ],
-      "fetchedAt": "2026-05-27T02:54:40.033Z"
+      "fetchedAt": "2026-05-27T09:33:20.055Z"
     },
     "valsai": {
       "swebench": [
@@ -877,7 +947,7 @@
         " and GPT 5.3 Codex at 78.00%"
       ],
       "method": "regex-percent",
-      "fetchedAt": "2026-05-27T02:56:04.338Z"
+      "fetchedAt": "2026-05-27T09:34:27.129Z"
     },
     "arena": {
       "textLeaderboard": [
@@ -8082,7 +8152,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-05-27T02:56:11.294Z"
+      "fetchedAt": "2026-05-27T09:34:34.068Z"
     },
     "terms": {
       "main": {
@@ -8355,7 +8425,7 @@
           ]
         ]
       },
-      "fetchedAt": "2026-05-27T02:56:11.299Z"
+      "fetchedAt": "2026-05-27T09:34:34.072Z"
     }
   }
 }
