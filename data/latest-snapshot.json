@@ -1,6 +1,6 @@
 {
   "version": "3.0",
-  "fetchedAt": "2026-05-27T09:33:20.055Z",
+  "fetchedAt": "2026-05-27T15:52:46.194Z",
   "sources": {
     "openrouter": {
       "leaderboard": {
@@ -936,7 +936,7 @@
           "source": "regex"
         }
       ],
-      "fetchedAt": "2026-05-27T09:33:20.055Z"
+      "fetchedAt": "2026-05-27T15:52:46.195Z"
     },
     "valsai": {
       "swebench": [
@@ -947,7 +947,7 @@
         " and GPT 5.3 Codex at 78.00%"
       ],
       "method": "regex-percent",
-      "fetchedAt": "2026-05-27T09:34:27.129Z"
+      "fetchedAt": "2026-05-27T15:53:48.078Z"
     },
     "arena": {
       "textLeaderboard": [
@@ -8152,7 +8152,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-05-27T09:34:34.068Z"
+      "fetchedAt": "2026-05-27T15:53:56.198Z"
     },
     "terms": {
       "main": {
@@ -8425,7 +8425,7 @@
           ]
         ]
       },
-      "fetchedAt": "2026-05-27T09:34:34.072Z"
+      "fetchedAt": "2026-05-27T15:53:56.203Z"
     }
   }
 }
