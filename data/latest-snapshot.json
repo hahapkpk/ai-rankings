@@ -1,330 +1,34 @@
 {
   "version": "3.0",
-  "fetchedAt": "2026-05-28T16:05:33.926Z",
+  "fetchedAt": "2026-05-29T02:45:25.357Z",
   "sources": {
     "openrouter": {
       "leaderboard": {
-        "week": [
-          {
-            "rank": 1,
-            "model": "Qwen3.7 Max",
-            "slug": "qwen/qwen3.7-max",
-            "provider": "Qwen",
-            "contextLength": 1000000,
-            "isFree": false,
-            "supportsReasoning": true,
-            "inputModalities": [
-              "text"
-            ],
-            "outputModalities": [
-              "text"
-            ],
-            "promptPricePerM": "0",
-            "completionPricePerM": "0",
-            "source": "regex"
-          },
-          {
-            "rank": 2,
-            "model": "Grok Build 0.1",
-            "slug": "x-ai/grok-build-0.1",
-            "provider": "xAI",
-            "contextLength": 256000,
-            "isFree": false,
-            "supportsReasoning": true,
-            "inputModalities": [
-              "text",
-              "image"
-            ],
-            "outputModalities": [
-              "text"
-            ],
-            "promptPricePerM": "0",
-            "completionPricePerM": "0",
-            "source": "regex"
-          },
-          {
-            "rank": 3,
-            "model": "Gemini Embedding 2",
-            "slug": "google/gemini-embedding-2",
-            "provider": "Google",
-            "contextLength": 8192,
-            "isFree": false,
-            "supportsReasoning": false,
-            "inputModalities": [
-              "text",
-              "image",
-              "file",
-              "audio",
-              "video"
-            ],
-            "outputModalities": [
-              "embeddings"
-            ],
-            "promptPricePerM": "0",
-            "completionPricePerM": "0",
-            "source": "regex"
-          },
-          {
-            "rank": 4,
-            "model": "DeepSeek V4 Pro",
-            "slug": "deepseek/deepseek-v4-pro",
-            "provider": "DeepSeek",
-            "contextLength": 1048576,
-            "isFree": false,
-            "supportsReasoning": true,
-            "inputModalities": [
-              "text"
-            ],
-            "outputModalities": [
-              "text"
-            ],
-            "promptPricePerM": "0",
-            "completionPricePerM": "0",
-            "source": "regex"
-          },
-          {
-            "rank": 5,
-            "model": "deepseek",
-            "slug": "",
-            "provider": "",
-            "contextLength": 0,
-            "isFree": false,
-            "supportsReasoning": false,
-            "inputModalities": [],
-            "outputModalities": [],
-            "promptPricePerM": "0",
-            "completionPricePerM": "0",
-            "source": "regex"
-          },
-          {
-            "rank": 6,
-            "model": "Claude Opus 4.7 (Fast)",
-            "slug": "anthropic/claude-opus-4.7-fast",
-            "provider": "Anthropic",
-            "contextLength": 1000000,
-            "isFree": false,
-            "supportsReasoning": true,
-            "inputModalities": [
-              "text",
-              "image",
-              "file"
-            ],
-            "outputModalities": [
-              "text"
-            ],
-            "promptPricePerM": "0",
-            "completionPricePerM": "0",
-            "source": "regex"
-          },
-          {
-            "rank": 7,
-            "model": "qwen",
-            "slug": "",
-            "provider": "",
-            "contextLength": 0,
-            "isFree": false,
-            "supportsReasoning": false,
-            "inputModalities": [],
-            "outputModalities": [],
-            "promptPricePerM": "0",
-            "completionPricePerM": "0",
-            "source": "regex"
-          },
-          {
-            "rank": 8,
-            "model": "Hermes 4 70B",
-            "slug": "nousresearch/hermes-4-70b",
-            "provider": "Nous Research",
-            "contextLength": 131072,
-            "isFree": false,
-            "supportsReasoning": true,
-            "inputModalities": [
-              "text"
-            ],
-            "outputModalities": [
-              "text"
-            ],
-            "promptPricePerM": "0",
-            "completionPricePerM": "0",
-            "source": "regex"
-          },
-          {
-            "rank": 9,
-            "model": "commands",
-            "slug": "",
-            "provider": "",
-            "contextLength": 0,
-            "isFree": false,
-            "supportsReasoning": false,
-            "inputModalities": [],
-            "outputModalities": [],
-            "promptPricePerM": "0",
-            "completionPricePerM": "0",
-            "source": "regex"
-          }
-        ],
-        "today": [
-          {
-            "rank": 1,
-            "model": "Qwen3.7 Max",
-            "slug": "qwen/qwen3.7-max",
-            "provider": "Qwen",
-            "contextLength": 1000000,
-            "isFree": false,
-            "supportsReasoning": true,
-            "inputModalities": [
-              "text"
-            ],
-            "outputModalities": [
-              "text"
-            ],
-            "promptPricePerM": "0",
-            "completionPricePerM": "0",
-            "source": "regex"
-          },
-          {
-            "rank": 2,
-            "model": "Grok Build 0.1",
-            "slug": "x-ai/grok-build-0.1",
-            "provider": "xAI",
-            "contextLength": 256000,
-            "isFree": false,
-            "supportsReasoning": true,
-            "inputModalities": [
-              "text",
-              "image"
-            ],
-            "outputModalities": [
-              "text"
-            ],
-            "promptPricePerM": "0",
-            "completionPricePerM": "0",
-            "source": "regex"
-          },
-          {
-            "rank": 3,
-            "model": "Gemini Embedding 2",
-            "slug": "google/gemini-embedding-2",
-            "provider": "Google",
-            "contextLength": 8192,
-            "isFree": false,
-            "supportsReasoning": false,
-            "inputModalities": [
-              "text",
-              "image",
-              "file",
-              "audio",
-              "video"
-            ],
-            "outputModalities": [
-              "embeddings"
-            ],
-            "promptPricePerM": "0",
-            "completionPricePerM": "0",
-            "source": "regex"
-          },
-          {
-            "rank": 4,
-            "model": "DeepSeek V4 Pro",
-            "slug": "deepseek/deepseek-v4-pro",
-            "provider": "DeepSeek",
-            "contextLength": 1048576,
-            "isFree": false,
-            "supportsReasoning": true,
-            "inputModalities": [
-              "text"
-            ],
-            "outputModalities": [
-              "text"
-            ],
-            "promptPricePerM": "0",
-            "completionPricePerM": "0",
-            "source": "regex"
-          },
-          {
-            "rank": 5,
-            "model": "deepseek",
-            "slug": "",
-            "provider": "",
-            "contextLength": 0,
-            "isFree": false,
-            "supportsReasoning": false,
-            "inputModalities": [],
-            "outputModalities": [],
-            "promptPricePerM": "0",
-            "completionPricePerM": "0",
-            "source": "regex"
-          },
-          {
-            "rank": 6,
-            "model": "Claude Opus 4.7 (Fast)",
-            "slug": "anthropic/claude-opus-4.7-fast",
-            "provider": "Anthropic",
-            "contextLength": 1000000,
-            "isFree": false,
-            "supportsReasoning": true,
-            "inputModalities": [
-              "text",
-              "image",
-              "file"
-            ],
-            "outputModalities": [
-              "text"
-            ],
-            "promptPricePerM": "0",
-            "completionPricePerM": "0",
-            "source": "regex"
-          },
-          {
-            "rank": 7,
-            "model": "qwen",
-            "slug": "",
-            "provider": "",
-            "contextLength": 0,
-            "isFree": false,
-            "supportsReasoning": false,
-            "inputModalities": [],
-            "outputModalities": [],
-            "promptPricePerM": "0",
-            "completionPricePerM": "0",
-            "source": "regex"
-          },
-          {
-            "rank": 8,
-            "model": "Hermes 4 70B",
-            "slug": "nousresearch/hermes-4-70b",
-            "provider": "Nous Research",
-            "contextLength": 131072,
-            "isFree": false,
-            "supportsReasoning": true,
-            "inputModalities": [
-              "text"
-            ],
-            "outputModalities": [
-              "text"
-            ],
-            "promptPricePerM": "0",
-            "completionPricePerM": "0",
-            "source": "regex"
-          },
-          {
-            "rank": 9,
-            "model": "commands",
-            "slug": "",
-            "provider": "",
-            "contextLength": 0,
-            "isFree": false,
-            "supportsReasoning": false,
-            "inputModalities": [],
-            "outputModalities": [],
-            "promptPricePerM": "0",
-            "completionPricePerM": "0",
-            "source": "regex"
-          }
-        ],
+        "week": [],
+        "today": [],
         "month": [
           {
             "rank": 1,
+            "model": "Claude Opus 4.8 (Fast)",
+            "slug": "anthropic/claude-opus-4.8-fast",
+            "provider": "Anthropic",
+            "contextLength": 1000000,
+            "isFree": false,
+            "supportsReasoning": true,
+            "inputModalities": [
+              "text",
+              "image",
+              "file"
+            ],
+            "outputModalities": [
+              "text"
+            ],
+            "promptPricePerM": "0",
+            "completionPricePerM": "0",
+            "source": "regex"
+          },
+          {
+            "rank": 2,
             "model": "Qwen3.7 Max",
             "slug": "qwen/qwen3.7-max",
             "provider": "Qwen",
@@ -342,7 +46,7 @@
             "source": "regex"
           },
           {
-            "rank": 2,
+            "rank": 3,
             "model": "Grok Build 0.1",
             "slug": "x-ai/grok-build-0.1",
             "provider": "xAI",
@@ -361,7 +65,7 @@
             "source": "regex"
           },
           {
-            "rank": 3,
+            "rank": 4,
             "model": "Gemini Embedding 2",
             "slug": "google/gemini-embedding-2",
             "provider": "Google",
@@ -383,7 +87,7 @@
             "source": "regex"
           },
           {
-            "rank": 4,
+            "rank": 5,
             "model": "DeepSeek V4 Pro",
             "slug": "deepseek/deepseek-v4-pro",
             "provider": "DeepSeek",
@@ -401,7 +105,7 @@
             "source": "regex"
           },
           {
-            "rank": 5,
+            "rank": 6,
             "model": "deepseek",
             "slug": "",
             "provider": "",
@@ -410,26 +114,6 @@
             "supportsReasoning": false,
             "inputModalities": [],
             "outputModalities": [],
-            "promptPricePerM": "0",
-            "completionPricePerM": "0",
-            "source": "regex"
-          },
-          {
-            "rank": 6,
-            "model": "Claude Opus 4.7 (Fast)",
-            "slug": "anthropic/claude-opus-4.7-fast",
-            "provider": "Anthropic",
-            "contextLength": 1000000,
-            "isFree": false,
-            "supportsReasoning": true,
-            "inputModalities": [
-              "text",
-              "image",
-              "file"
-            ],
-            "outputModalities": [
-              "text"
-            ],
             "promptPricePerM": "0",
             "completionPricePerM": "0",
             "source": "regex"
@@ -484,6 +168,26 @@
         "trending": [
           {
             "rank": 1,
+            "model": "Claude Opus 4.8 (Fast)",
+            "slug": "anthropic/claude-opus-4.8-fast",
+            "provider": "Anthropic",
+            "contextLength": 1000000,
+            "isFree": false,
+            "supportsReasoning": true,
+            "inputModalities": [
+              "text",
+              "image",
+              "file"
+            ],
+            "outputModalities": [
+              "text"
+            ],
+            "promptPricePerM": "0",
+            "completionPricePerM": "0",
+            "source": "regex"
+          },
+          {
+            "rank": 2,
             "model": "Qwen3.7 Max",
             "slug": "qwen/qwen3.7-max",
             "provider": "Qwen",
@@ -501,7 +205,7 @@
             "source": "regex"
           },
           {
-            "rank": 2,
+            "rank": 3,
             "model": "Grok Build 0.1",
             "slug": "x-ai/grok-build-0.1",
             "provider": "xAI",
@@ -520,7 +224,7 @@
             "source": "regex"
           },
           {
-            "rank": 3,
+            "rank": 4,
             "model": "Gemini Embedding 2",
             "slug": "google/gemini-embedding-2",
             "provider": "Google",
@@ -542,7 +246,7 @@
             "source": "regex"
           },
           {
-            "rank": 4,
+            "rank": 5,
             "model": "qwen",
             "slug": "",
             "provider": "",
@@ -556,71 +260,7 @@
             "source": "regex"
           },
           {
-            "rank": 5,
-            "model": "Voxtral Mini Transcribe",
-            "slug": "mistralai/voxtral-mini-transcribe",
-            "provider": "Mistral AI",
-            "contextLength": 0,
-            "isFree": false,
-            "supportsReasoning": false,
-            "inputModalities": [
-              "audio"
-            ],
-            "outputModalities": [
-              "transcription"
-            ],
-            "promptPricePerM": "0",
-            "completionPricePerM": "0",
-            "source": "regex"
-          },
-          {
             "rank": 6,
-            "model": "mistralai",
-            "slug": "",
-            "provider": "",
-            "contextLength": 0,
-            "isFree": false,
-            "supportsReasoning": false,
-            "inputModalities": [],
-            "outputModalities": [],
-            "promptPricePerM": "0",
-            "completionPricePerM": "0",
-            "source": "regex"
-          },
-          {
-            "rank": 7,
-            "model": "Command",
-            "slug": "cohere/command",
-            "provider": "Cohere",
-            "contextLength": 4096,
-            "isFree": false,
-            "supportsReasoning": false,
-            "inputModalities": [
-              "text"
-            ],
-            "outputModalities": [
-              "text"
-            ],
-            "promptPricePerM": "0",
-            "completionPricePerM": "0",
-            "source": "regex"
-          },
-          {
-            "rank": 8,
-            "model": "cohere",
-            "slug": "",
-            "provider": "",
-            "contextLength": 0,
-            "isFree": false,
-            "supportsReasoning": false,
-            "inputModalities": [],
-            "outputModalities": [],
-            "promptPricePerM": "0",
-            "completionPricePerM": "0",
-            "source": "regex"
-          },
-          {
-            "rank": 9,
             "model": "deepseek",
             "slug": "",
             "provider": "",
@@ -634,7 +274,7 @@
             "source": "regex"
           },
           {
-            "rank": 10,
+            "rank": 7,
             "model": "Hermes 4 70B",
             "slug": "nousresearch/hermes-4-70b",
             "provider": "Nous Research",
@@ -652,7 +292,7 @@
             "source": "regex"
           },
           {
-            "rank": 11,
+            "rank": 8,
             "model": "commands",
             "slug": "",
             "provider": "",
@@ -664,200 +304,22 @@
             "promptPricePerM": "0",
             "completionPricePerM": "0",
             "source": "regex"
-          },
-          {
-            "rank": 12,
-            "model": "Claude Opus 4.7 (Fast)",
-            "slug": "anthropic/claude-opus-4.7-fast",
-            "provider": "Anthropic",
-            "contextLength": 1000000,
-            "isFree": false,
-            "supportsReasoning": true,
-            "inputModalities": [
-              "text",
-              "image",
-              "file"
-            ],
-            "outputModalities": [
-              "text"
-            ],
-            "promptPricePerM": "0",
-            "completionPricePerM": "0",
-            "source": "regex"
           }
         ]
       },
-      "topModels": [
-        {
-          "rank": 1,
-          "model": "Qwen3.7 Max",
-          "slug": "qwen/qwen3.7-max",
-          "provider": "Qwen",
-          "contextLength": 1000000,
-          "isFree": false,
-          "supportsReasoning": true,
-          "inputModalities": [
-            "text"
-          ],
-          "outputModalities": [
-            "text"
-          ],
-          "promptPricePerM": "0",
-          "completionPricePerM": "0",
-          "source": "regex"
-        },
-        {
-          "rank": 2,
-          "model": "Grok Build 0.1",
-          "slug": "x-ai/grok-build-0.1",
-          "provider": "xAI",
-          "contextLength": 256000,
-          "isFree": false,
-          "supportsReasoning": true,
-          "inputModalities": [
-            "text",
-            "image"
-          ],
-          "outputModalities": [
-            "text"
-          ],
-          "promptPricePerM": "0",
-          "completionPricePerM": "0",
-          "source": "regex"
-        },
-        {
-          "rank": 3,
-          "model": "Gemini Embedding 2",
-          "slug": "google/gemini-embedding-2",
-          "provider": "Google",
-          "contextLength": 8192,
-          "isFree": false,
-          "supportsReasoning": false,
-          "inputModalities": [
-            "text",
-            "image",
-            "file",
-            "audio",
-            "video"
-          ],
-          "outputModalities": [
-            "embeddings"
-          ],
-          "promptPricePerM": "0",
-          "completionPricePerM": "0",
-          "source": "regex"
-        },
-        {
-          "rank": 4,
-          "model": "DeepSeek V4 Pro",
-          "slug": "deepseek/deepseek-v4-pro",
-          "provider": "DeepSeek",
-          "contextLength": 1048576,
-          "isFree": false,
-          "supportsReasoning": true,
-          "inputModalities": [
-            "text"
-          ],
-          "outputModalities": [
-            "text"
-          ],
-          "promptPricePerM": "0",
-          "completionPricePerM": "0",
-          "source": "regex"
-        },
-        {
-          "rank": 5,
-          "model": "deepseek",
-          "slug": "",
-          "provider": "",
-          "contextLength": 0,
-          "isFree": false,
-          "supportsReasoning": false,
-          "inputModalities": [],
-          "outputModalities": [],
-          "promptPricePerM": "0",
-          "completionPricePerM": "0",
-          "source": "regex"
-        },
-        {
-          "rank": 6,
-          "model": "Claude Opus 4.7 (Fast)",
-          "slug": "anthropic/claude-opus-4.7-fast",
-          "provider": "Anthropic",
-          "contextLength": 1000000,
-          "isFree": false,
-          "supportsReasoning": true,
-          "inputModalities": [
-            "text",
-            "image",
-            "file"
-          ],
-          "outputModalities": [
-            "text"
-          ],
-          "promptPricePerM": "0",
-          "completionPricePerM": "0",
-          "source": "regex"
-        },
-        {
-          "rank": 7,
-          "model": "qwen",
-          "slug": "",
-          "provider": "",
-          "contextLength": 0,
-          "isFree": false,
-          "supportsReasoning": false,
-          "inputModalities": [],
-          "outputModalities": [],
-          "promptPricePerM": "0",
-          "completionPricePerM": "0",
-          "source": "regex"
-        },
-        {
-          "rank": 8,
-          "model": "Hermes 4 70B",
-          "slug": "nousresearch/hermes-4-70b",
-          "provider": "Nous Research",
-          "contextLength": 131072,
-          "isFree": false,
-          "supportsReasoning": true,
-          "inputModalities": [
-            "text"
-          ],
-          "outputModalities": [
-            "text"
-          ],
-          "promptPricePerM": "0",
-          "completionPricePerM": "0",
-          "source": "regex"
-        },
-        {
-          "rank": 9,
-          "model": "commands",
-          "slug": "",
-          "provider": "",
-          "contextLength": 0,
-          "isFree": false,
-          "supportsReasoning": false,
-          "inputModalities": [],
-          "outputModalities": [],
-          "promptPricePerM": "0",
-          "completionPricePerM": "0",
-          "source": "regex"
-        }
-      ],
-      "fetchedAt": "2026-05-28T16:05:33.926Z"
+      "topModels": [],
+      "fetchedAt": "2026-05-29T02:45:25.358Z"
     },
     "valsai": {
       "swebench": [
-        "1.05\n\n320.54\ns\n\nSEE 40 MORE MODELS\nBest Performing\nBest Budget\nBest Speed\nKey Takeaways\n\nGPT 5.5 leads with a performance of 82.60%",
+        "0.44\n\n634.61\ns\n\nSEE 40 MORE MODELS\nBest Performing\nBest Budget\nBest Speed\nKey Takeaways\n\nGPT 5.5 leads with a performance of 82.60%",
         " achieving the best accuracy on SWE-bench Verified. Claude Opus 4.7 follows closely at 82.00%",
         " comes in third with 78.80%",
         " and GPT 5.4 tied at 78.20%",
         " and GPT 5.3 Codex at 78.00%"
       ],
       "method": "regex-percent",
-      "fetchedAt": "2026-05-28T16:06:52.862Z"
+      "fetchedAt": "2026-05-29T02:48:40.044Z"
     },
     "arena": {
       "textLeaderboard": [
@@ -3717,7 +3179,7 @@
             "glm-4.5-airZ.ai · MIT",
             "1373±4",
             "31,095",
-            "$0.13 / $0.84",
+            "$0.13 / $0.85",
             "131.1K"
           ]
         },
@@ -8062,7 +7524,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-05-28T16:06:59.531Z"
+      "fetchedAt": "2026-05-29T02:48:46.551Z"
     },
     "terms": {
       "main": {
@@ -8335,7 +7797,7 @@
           ]
         ]
       },
-      "fetchedAt": "2026-05-28T16:06:59.536Z"
+      "fetchedAt": "2026-05-29T02:48:46.558Z"
     }
   }
 }
