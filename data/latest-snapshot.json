@@ -1,11 +1,12 @@
 {
   "version": "3.0",
-  "fetchedAt": "2026-05-31T08:36:34.651Z",
+  "fetchedAt": "2026-05-31T13:50:10.726Z",
   "sources": {
     "openrouter": {
       "leaderboard": {
         "week": [],
-        "today": [
+        "today": [],
+        "month": [
           {
             "rank": 1,
             "model": "Claude Opus 4.8 (Fast)",
@@ -164,7 +165,6 @@
             "source": "regex"
           }
         ],
-        "month": [],
         "trending": [
           {
             "rank": 1,
@@ -308,7 +308,7 @@
         ]
       },
       "topModels": [],
-      "fetchedAt": "2026-05-31T08:36:34.651Z"
+      "fetchedAt": "2026-05-31T13:50:10.727Z"
     },
     "valsai": {
       "swebench": [
@@ -319,7 +319,7 @@
         " and GPT 5.3 Codex at 78.00%"
       ],
       "method": "regex-percent",
-      "fetchedAt": "2026-05-31T08:39:08.346Z"
+      "fetchedAt": "2026-05-31T13:52:35.272Z"
     },
     "arena": {
       "textLeaderboard": [
@@ -7524,7 +7524,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-05-31T08:39:15.625Z"
+      "fetchedAt": "2026-05-31T13:52:42.036Z"
     },
     "terms": {
       "main": {
@@ -7797,7 +7797,7 @@
           ]
         ]
       },
-      "fetchedAt": "2026-05-31T08:39:15.630Z"
+      "fetchedAt": "2026-05-31T13:52:42.041Z"
     }
   }
 }
