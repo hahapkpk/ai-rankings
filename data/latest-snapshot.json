@@ -1,23 +1,23 @@
 {
   "version": "3.0",
-  "fetchedAt": "2026-06-02T16:38:36.946Z",
+  "fetchedAt": "2026-06-03T03:37:12.035Z",
   "sources": {
     "openrouter": {
       "leaderboard": {},
       "topModels": [],
-      "fetchedAt": "2026-06-02T16:38:36.947Z",
+      "fetchedAt": "2026-06-03T03:37:12.035Z",
       "error": "Navigation timeout of 30000 ms exceeded"
     },
     "valsai": {
       "swebench": [
-        "0.44\n\n634.61\ns\n\nSEE 40 MORE MODELS\nBest Performing\nBest Budget\nBest Speed\nKey Takeaways\n\nGPT 5.5 leads with a performance of 82.60%",
+        "0.44\n\n634.61\ns\n\nSEE 42 MORE MODELS\nBest Performing\nBest Budget\nBest Speed\nKey Takeaways\n\nGPT 5.5 leads with a performance of 82.60%",
         " achieving the best accuracy on SWE-bench Verified. Claude Opus 4.7 follows closely at 82.00%",
         " comes in third with 78.80%",
-        " and GPT 5.4 tied at 78.20%",
+        " tied at 78.20%",
         " and GPT 5.3 Codex at 78.00%"
       ],
       "method": "regex-percent",
-      "fetchedAt": "2026-06-02T16:39:19.255Z"
+      "fetchedAt": "2026-06-03T03:37:53.946Z"
     },
     "arena": {
       "textLeaderboard": [
@@ -7222,7 +7222,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-06-02T16:39:26.148Z"
+      "fetchedAt": "2026-06-03T03:38:00.848Z"
     },
     "terms": {
       "main": {
@@ -7495,7 +7495,7 @@
           ]
         ]
       },
-      "fetchedAt": "2026-06-02T16:39:26.154Z"
+      "fetchedAt": "2026-06-03T03:38:00.853Z"
     }
   }
 }
