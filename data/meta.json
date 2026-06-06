@@ -1,9 +1,9 @@
 {
-  "lastUpdated": "2026-06-06T08:26:20.618Z",
+  "lastUpdated": "2026-06-06T13:49:40.205Z",
   "sources": {
     "openrouter": {
-      "status": "error",
-      "itemCount": 0
+      "status": "ok",
+      "itemCount": 18
     },
     "valsai": {
       "status": "ok",
