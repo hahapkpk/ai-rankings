@@ -1,11 +1,11 @@
 {
   "version": "3.0",
-  "fetchedAt": "2026-06-07T13:59:23.303Z",
+  "fetchedAt": "2026-06-08T03:29:50.024Z",
   "sources": {
     "openrouter": {
       "leaderboard": {},
       "topModels": [],
-      "fetchedAt": "2026-06-07T13:59:23.303Z",
+      "fetchedAt": "2026-06-08T03:29:50.025Z",
       "error": "Navigation timeout of 30000 ms exceeded"
     },
     "valsai": {
@@ -17,7 +17,7 @@
         " and GPT 5.3 Codex at 78.00%"
       ],
       "method": "regex-percent",
-      "fetchedAt": "2026-06-07T14:00:06.135Z"
+      "fetchedAt": "2026-06-08T03:30:32.200Z"
     },
     "arena": {
       "textLeaderboard": [
@@ -3717,7 +3717,7 @@
             "gemma-3-12b-itGoogle · Gemma",
             "1342±10",
             "3,829",
-            "$0.04 / $0.13",
+            "$0.05 / $0.15",
             "131.1K"
           ]
         },
@@ -4037,7 +4037,7 @@
             "qwen3-30b-a3bAlibaba · Apache 2.0",
             "1327±5",
             "26,491",
-            "$0.09 / $0.45",
+            "$0.12 / $0.50",
             "131.1K"
           ]
         },
@@ -4737,7 +4737,7 @@
             "gemma-3-4b-itGoogle · Gemma",
             "1303±9",
             "4,171",
-            "$0.04 / $0.08",
+            "$0.05 / $0.10",
             "131.1K"
           ]
         },
@@ -7322,7 +7322,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-06-07T14:00:12.745Z"
+      "fetchedAt": "2026-06-08T03:30:39.873Z"
     },
     "terms": {
       "main": {
@@ -7595,7 +7595,7 @@
           ]
         ]
       },
-      "fetchedAt": "2026-06-07T14:00:12.751Z"
+      "fetchedAt": "2026-06-08T03:30:39.879Z"
     }
   }
 }
