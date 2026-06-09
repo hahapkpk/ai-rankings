@@ -1,6 +1,6 @@
 {
   "version": "3.0",
-  "fetchedAt": "2026-06-08T15:58:01.417Z",
+  "fetchedAt": "2026-06-09T02:40:18.819Z",
   "sources": {
     "openrouter": {
       "leaderboard": {
@@ -65,28 +65,6 @@
           },
           {
             "rank": 4,
-            "model": "Gemini Embedding 2",
-            "slug": "google/gemini-embedding-2",
-            "provider": "Google",
-            "contextLength": 8192,
-            "isFree": false,
-            "supportsReasoning": false,
-            "inputModalities": [
-              "text",
-              "image",
-              "file",
-              "audio",
-              "video"
-            ],
-            "outputModalities": [
-              "embeddings"
-            ],
-            "promptPricePerM": "0",
-            "completionPricePerM": "0",
-            "source": "regex"
-          },
-          {
-            "rank": 5,
             "model": "DeepSeek V4 Pro",
             "slug": "deepseek/deepseek-v4-pro",
             "provider": "DeepSeek",
@@ -104,8 +82,22 @@
             "source": "regex"
           },
           {
-            "rank": 6,
+            "rank": 5,
             "model": "deepseek",
+            "slug": "",
+            "provider": "",
+            "contextLength": 0,
+            "isFree": false,
+            "supportsReasoning": false,
+            "inputModalities": [],
+            "outputModalities": [],
+            "promptPricePerM": "0",
+            "completionPricePerM": "0",
+            "source": "regex"
+          },
+          {
+            "rank": 6,
+            "model": "qwen",
             "slug": "",
             "provider": "",
             "contextLength": 0,
@@ -211,28 +203,6 @@
           },
           {
             "rank": 4,
-            "model": "Gemini Embedding 2",
-            "slug": "google/gemini-embedding-2",
-            "provider": "Google",
-            "contextLength": 8192,
-            "isFree": false,
-            "supportsReasoning": false,
-            "inputModalities": [
-              "text",
-              "image",
-              "file",
-              "audio",
-              "video"
-            ],
-            "outputModalities": [
-              "embeddings"
-            ],
-            "promptPricePerM": "0",
-            "completionPricePerM": "0",
-            "source": "regex"
-          },
-          {
-            "rank": 5,
             "model": "DeepSeek V4 Pro",
             "slug": "deepseek/deepseek-v4-pro",
             "provider": "DeepSeek",
@@ -250,8 +220,22 @@
             "source": "regex"
           },
           {
-            "rank": 6,
+            "rank": 5,
             "model": "deepseek",
+            "slug": "",
+            "provider": "",
+            "contextLength": 0,
+            "isFree": false,
+            "supportsReasoning": false,
+            "inputModalities": [],
+            "outputModalities": [],
+            "promptPricePerM": "0",
+            "completionPricePerM": "0",
+            "source": "regex"
+          },
+          {
+            "rank": 6,
+            "model": "qwen",
             "slug": "",
             "provider": "",
             "contextLength": 0,
@@ -357,6 +341,38 @@
           },
           {
             "rank": 4,
+            "model": "DeepSeek V4 Pro",
+            "slug": "deepseek/deepseek-v4-pro",
+            "provider": "DeepSeek",
+            "contextLength": 1048576,
+            "isFree": false,
+            "supportsReasoning": true,
+            "inputModalities": [
+              "text"
+            ],
+            "outputModalities": [
+              "text"
+            ],
+            "promptPricePerM": "0",
+            "completionPricePerM": "0",
+            "source": "regex"
+          },
+          {
+            "rank": 5,
+            "model": "deepseek",
+            "slug": "",
+            "provider": "",
+            "contextLength": 0,
+            "isFree": false,
+            "supportsReasoning": false,
+            "inputModalities": [],
+            "outputModalities": [],
+            "promptPricePerM": "0",
+            "completionPricePerM": "0",
+            "source": "regex"
+          },
+          {
+            "rank": 6,
             "model": "Gemini Embedding 2",
             "slug": "google/gemini-embedding-2",
             "provider": "Google",
@@ -378,26 +394,8 @@
             "source": "regex"
           },
           {
-            "rank": 5,
-            "model": "DeepSeek V4 Pro",
-            "slug": "deepseek/deepseek-v4-pro",
-            "provider": "DeepSeek",
-            "contextLength": 1048576,
-            "isFree": false,
-            "supportsReasoning": true,
-            "inputModalities": [
-              "text"
-            ],
-            "outputModalities": [
-              "text"
-            ],
-            "promptPricePerM": "0",
-            "completionPricePerM": "0",
-            "source": "regex"
-          },
-          {
-            "rank": 6,
-            "model": "deepseek",
+            "rank": 7,
+            "model": "qwen",
             "slug": "",
             "provider": "",
             "contextLength": 0,
@@ -410,7 +408,7 @@
             "source": "regex"
           },
           {
-            "rank": 7,
+            "rank": 8,
             "model": "Hermes 4 70B",
             "slug": "nousresearch/hermes-4-70b",
             "provider": "Nous Research",
@@ -428,7 +426,7 @@
             "source": "regex"
           },
           {
-            "rank": 8,
+            "rank": 9,
             "model": "commands",
             "slug": "",
             "provider": "",
@@ -503,22 +501,14 @@
           },
           {
             "rank": 4,
-            "model": "Gemini Embedding 2",
-            "slug": "google/gemini-embedding-2",
-            "provider": "Google",
-            "contextLength": 8192,
+            "model": "qwen",
+            "slug": "",
+            "provider": "",
+            "contextLength": 0,
             "isFree": false,
             "supportsReasoning": false,
-            "inputModalities": [
-              "text",
-              "image",
-              "file",
-              "audio",
-              "video"
-            ],
-            "outputModalities": [
-              "embeddings"
-            ],
+            "inputModalities": [],
+            "outputModalities": [],
             "promptPricePerM": "0",
             "completionPricePerM": "0",
             "source": "regex"
@@ -543,6 +533,28 @@
           },
           {
             "rank": 6,
+            "model": "Gemini Embedding 2",
+            "slug": "google/gemini-embedding-2",
+            "provider": "Google",
+            "contextLength": 8192,
+            "isFree": false,
+            "supportsReasoning": false,
+            "inputModalities": [
+              "text",
+              "image",
+              "file",
+              "audio",
+              "video"
+            ],
+            "outputModalities": [
+              "embeddings"
+            ],
+            "promptPricePerM": "0",
+            "completionPricePerM": "0",
+            "source": "regex"
+          },
+          {
+            "rank": 7,
             "model": "GPT-4o",
             "slug": "openai/gpt-4o",
             "provider": "OpenAI",
@@ -562,7 +574,7 @@
             "source": "regex"
           },
           {
-            "rank": 7,
+            "rank": 8,
             "model": "deepseek",
             "slug": "",
             "provider": "",
@@ -576,7 +588,7 @@
             "source": "regex"
           },
           {
-            "rank": 8,
+            "rank": 9,
             "model": "Hermes 4 70B",
             "slug": "nousresearch/hermes-4-70b",
             "provider": "Nous Research",
@@ -594,7 +606,7 @@
             "source": "regex"
           },
           {
-            "rank": 9,
+            "rank": 10,
             "model": "commands",
             "slug": "",
             "provider": "",
@@ -670,28 +682,6 @@
         },
         {
           "rank": 4,
-          "model": "Gemini Embedding 2",
-          "slug": "google/gemini-embedding-2",
-          "provider": "Google",
-          "contextLength": 8192,
-          "isFree": false,
-          "supportsReasoning": false,
-          "inputModalities": [
-            "text",
-            "image",
-            "file",
-            "audio",
-            "video"
-          ],
-          "outputModalities": [
-            "embeddings"
-          ],
-          "promptPricePerM": "0",
-          "completionPricePerM": "0",
-          "source": "regex"
-        },
-        {
-          "rank": 5,
           "model": "DeepSeek V4 Pro",
           "slug": "deepseek/deepseek-v4-pro",
           "provider": "DeepSeek",
@@ -709,8 +699,22 @@
           "source": "regex"
         },
         {
-          "rank": 6,
+          "rank": 5,
           "model": "deepseek",
+          "slug": "",
+          "provider": "",
+          "contextLength": 0,
+          "isFree": false,
+          "supportsReasoning": false,
+          "inputModalities": [],
+          "outputModalities": [],
+          "promptPricePerM": "0",
+          "completionPricePerM": "0",
+          "source": "regex"
+        },
+        {
+          "rank": 6,
+          "model": "qwen",
           "slug": "",
           "provider": "",
           "contextLength": 0,
@@ -755,7 +759,7 @@
           "source": "regex"
         }
       ],
-      "fetchedAt": "2026-06-08T15:58:01.417Z"
+      "fetchedAt": "2026-06-09T02:40:18.819Z"
     },
     "valsai": {
       "swebench": [
@@ -766,7 +770,7 @@
         " and GPT 5.3 Codex at 78.00%"
       ],
       "method": "regex-percent",
-      "fetchedAt": "2026-06-08T15:59:12.699Z"
+      "fetchedAt": "2026-06-09T02:41:47.652Z"
     },
     "arena": {
       "textLeaderboard": [
@@ -8071,7 +8075,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-06-08T15:59:18.772Z"
+      "fetchedAt": "2026-06-09T02:41:54.553Z"
     },
     "terms": {
       "main": {
@@ -8344,7 +8348,7 @@
           ]
         ]
       },
-      "fetchedAt": "2026-06-08T15:59:18.776Z"
+      "fetchedAt": "2026-06-09T02:41:54.559Z"
     }
   }
 }
