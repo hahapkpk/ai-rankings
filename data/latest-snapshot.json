@@ -1,11 +1,11 @@
 {
   "version": "3.0",
-  "fetchedAt": "2026-06-12T03:27:05.379Z",
+  "fetchedAt": "2026-06-12T09:59:30.732Z",
   "sources": {
     "openrouter": {
       "leaderboard": {},
       "topModels": [],
-      "fetchedAt": "2026-06-12T03:27:05.380Z",
+      "fetchedAt": "2026-06-12T09:59:30.733Z",
       "error": "API fetch failed: Unexpected token '<', \"<!DOCTYPE \"... is not valid JSON"
     },
     "valsai": {
@@ -17,7 +17,7 @@
         " and Gemini 3.5 Flash at 78.80%"
       ],
       "method": "regex-percent",
-      "fetchedAt": "2026-06-12T03:27:23.244Z"
+      "fetchedAt": "2026-06-12T09:59:48.939Z"
     },
     "arena": {
       "textLeaderboard": [
@@ -1417,7 +1417,7 @@
             "kimi-k2.5-instantMoonshot · Modified MIT",
             "1431±7",
             "8,173",
-            "$0.40 / $1.90",
+            "$0.35 / $1.89",
             "262.1K"
           ]
         },
@@ -7342,7 +7342,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-06-12T03:27:30.083Z"
+      "fetchedAt": "2026-06-12T09:59:55.610Z"
     },
     "terms": {
       "main": {
@@ -7615,7 +7615,7 @@
           ]
         ]
       },
-      "fetchedAt": "2026-06-12T03:27:30.089Z"
+      "fetchedAt": "2026-06-12T09:59:55.615Z"
     }
   }
 }
