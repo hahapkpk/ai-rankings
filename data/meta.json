@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-13T14:05:21.905Z",
+  "lastUpdated": "2026-06-14T03:30:42.909Z",
   "sources": {
     "openrouter": {
       "status": "error",
@@ -15,7 +15,7 @@
     },
     "terms": {
       "status": "ok",
-      "itemCount": 5
+      "itemCount": 6
     }
   }
 }
