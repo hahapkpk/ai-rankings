@@ -1,23 +1,23 @@
 {
   "version": "3.0",
-  "fetchedAt": "2026-06-18T15:31:41.309Z",
+  "fetchedAt": "2026-06-19T03:48:54.705Z",
   "sources": {
     "openrouter": {
       "leaderboard": {},
       "topModels": [],
-      "fetchedAt": "2026-06-18T15:31:41.310Z",
+      "fetchedAt": "2026-06-19T03:48:54.706Z",
       "error": "API fetch failed: Unexpected token '<', \"<!DOCTYPE \"... is not valid JSON"
     },
     "valsai": {
       "swebench": [
-        "0.27\n\n896.71\ns\n\nSEE 50 MORE MODELS\nBest Performing\nBest Budget\nBest Speed\nKey Takeaways\n\nClaude Fable 5 leads with a performance of 95.00%",
+        "0.80\n\n307.12\ns\n\nSEE 54 MORE MODELS\nBest Performing\nBest Budget\nBest Speed\nKey Takeaways\n\nClaude Fable 5 leads with a performance of 95.00%",
         " achieving the best accuracy on SWE-bench Verified. Claude Opus 4.8 follows at 88.60%",
         ".\n\nGPT 5.5 comes in third with 82.60%",
         " followed by Claude Opus 4.7 at 82.00%",
         " and Gemini 3.5 Flash at 78.80%"
       ],
       "method": "regex-percent",
-      "fetchedAt": "2026-06-18T15:31:59.222Z"
+      "fetchedAt": "2026-06-19T03:49:12.343Z"
     },
     "arena": {
       "textLeaderboard": [
@@ -7362,7 +7362,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-06-18T15:32:05.848Z"
+      "fetchedAt": "2026-06-19T03:49:21.707Z"
     },
     "terms": {
       "main": {
@@ -7687,7 +7687,7 @@
           ]
         ]
       },
-      "fetchedAt": "2026-06-18T15:32:05.854Z"
+      "fetchedAt": "2026-06-19T03:49:21.712Z"
     }
   }
 }
