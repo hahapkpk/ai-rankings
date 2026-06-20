@@ -1,11 +1,11 @@
 {
   "version": "3.0",
-  "fetchedAt": "2026-06-20T08:43:46.806Z",
+  "fetchedAt": "2026-06-20T14:09:53.707Z",
   "sources": {
     "openrouter": {
       "leaderboard": {},
       "topModels": [],
-      "fetchedAt": "2026-06-20T08:43:46.806Z",
+      "fetchedAt": "2026-06-20T14:09:53.707Z",
       "error": "API fetch failed: Unexpected token '<', \"<!DOCTYPE \"... is not valid JSON"
     },
     "valsai": {
@@ -17,7 +17,7 @@
         " and Gemini 3.5 Flash at 78.80%"
       ],
       "method": "regex-percent",
-      "fetchedAt": "2026-06-20T08:44:05.759Z"
+      "fetchedAt": "2026-06-20T14:10:13.716Z"
     },
     "arena": {
       "textLeaderboard": [
@@ -3097,7 +3097,7 @@
             "trinity-large-thinkingArcee AI · Apache 2.0",
             "1369±5",
             "29,305",
-            "$0.22 / $0.85",
+            "$0.25 / $0.80",
             "262.1K"
           ]
         },
@@ -7362,7 +7362,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-06-20T08:44:12.351Z"
+      "fetchedAt": "2026-06-20T14:10:20.615Z"
     },
     "terms": {
       "main": {
@@ -7687,7 +7687,7 @@
           ]
         ]
       },
-      "fetchedAt": "2026-06-20T08:44:12.357Z"
+      "fetchedAt": "2026-06-20T14:10:20.621Z"
     }
   }
 }
