@@ -1,11 +1,11 @@
 {
   "version": "3.0",
-  "fetchedAt": "2026-06-22T03:40:41.688Z",
+  "fetchedAt": "2026-06-22T11:38:54.902Z",
   "sources": {
     "openrouter": {
       "leaderboard": {},
       "topModels": [],
-      "fetchedAt": "2026-06-22T03:40:41.688Z",
+      "fetchedAt": "2026-06-22T11:38:54.903Z",
       "error": "API fetch failed: Unexpected token '<', \"<!DOCTYPE \"... is not valid JSON"
     },
     "valsai": {
@@ -17,7 +17,7 @@
         " and Gemini 3.5 Flash at 78.80%"
       ],
       "method": "regex-percent",
-      "fetchedAt": "2026-06-22T03:40:59.465Z"
+      "fetchedAt": "2026-06-22T11:39:14.131Z"
     },
     "arena": {
       "textLeaderboard": [
@@ -4157,7 +4157,7 @@
             "Anthropicclaude-3-5-haiku-20241022Anthropic · Proprietary",
             "1324±3",
             "69,979",
-            "$0.80 / $4",
+            "$1 / $5",
             "200K"
           ]
         },
@@ -7362,7 +7362,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-06-22T03:41:06.263Z"
+      "fetchedAt": "2026-06-22T11:39:21.367Z"
     },
     "terms": {
       "main": {
@@ -7687,7 +7687,7 @@
           ]
         ]
       },
-      "fetchedAt": "2026-06-22T03:41:06.268Z"
+      "fetchedAt": "2026-06-22T11:39:21.373Z"
     }
   }
 }
