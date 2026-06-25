@@ -1,11 +1,11 @@
 {
   "version": "3.0",
-  "fetchedAt": "2026-06-24T14:36:57.271Z",
+  "fetchedAt": "2026-06-25T02:46:24.966Z",
   "sources": {
     "openrouter": {
       "leaderboard": {},
       "topModels": [],
-      "fetchedAt": "2026-06-24T14:36:57.271Z",
+      "fetchedAt": "2026-06-25T02:46:24.967Z",
       "error": "API fetch failed: Unexpected token '<', \"<!DOCTYPE \"... is not valid JSON"
     },
     "valsai": {
@@ -17,7 +17,7 @@
         " and Gemini 3.5 Flash at 78.80%"
       ],
       "method": "regex-percent",
-      "fetchedAt": "2026-06-24T14:37:15.399Z"
+      "fetchedAt": "2026-06-25T02:46:44.224Z"
     },
     "arena": {
       "textLeaderboard": [
@@ -1397,7 +1397,7 @@
             "mimo-v2.5Xiaomi · MIT",
             "1433±5",
             "27,111",
-            "$0.14 / $0.28",
+            "$0.10 / $0.28",
             "1M"
           ]
         },
@@ -1937,7 +1937,7 @@
             "minimax-m2.7MiniMax · Modified MIT",
             "1417±4",
             "34,620",
-            "$0.25 / $1",
+            "$0.24 / $0.96",
             "204.8K"
           ]
         },
@@ -7362,7 +7362,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-06-24T14:37:22.347Z"
+      "fetchedAt": "2026-06-25T02:46:50.891Z"
     },
     "terms": {
       "main": {
@@ -7687,7 +7687,7 @@
           ]
         ]
       },
-      "fetchedAt": "2026-06-24T14:37:22.352Z"
+      "fetchedAt": "2026-06-25T02:46:50.897Z"
     }
   }
 }
