@@ -1,11 +1,11 @@
 {
   "version": "3.0",
-  "fetchedAt": "2026-06-26T14:30:32.358Z",
+  "fetchedAt": "2026-06-27T02:41:53.763Z",
   "sources": {
     "openrouter": {
       "leaderboard": {},
       "topModels": [],
-      "fetchedAt": "2026-06-26T14:30:32.359Z",
+      "fetchedAt": "2026-06-27T02:41:53.764Z",
       "error": "API fetch failed: Unexpected token '<', \"<!DOCTYPE \"... is not valid JSON"
     },
     "valsai": {
@@ -17,7 +17,7 @@
         " and Gemini 3.5 Flash at 78.80%"
       ],
       "method": "regex-percent",
-      "fetchedAt": "2026-06-26T14:30:49.720Z"
+      "fetchedAt": "2026-06-27T02:42:12.354Z"
     },
     "arena": {
       "textLeaderboard": [
@@ -2237,8 +2237,8 @@
             "mistral-medium-2508Mistral · Proprietary",
             "1410±3",
             "93,957",
-            "$2.70 / $8.10",
-            "32K"
+            "$0.40 / $2",
+            "131.1K"
           ]
         },
         {
@@ -7382,7 +7382,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-06-26T14:30:57.530Z"
+      "fetchedAt": "2026-06-27T02:42:20.656Z"
     },
     "terms": {
       "main": {
@@ -7707,7 +7707,7 @@
           ]
         ]
       },
-      "fetchedAt": "2026-06-26T14:30:57.536Z"
+      "fetchedAt": "2026-06-27T02:42:20.661Z"
     }
   }
 }
