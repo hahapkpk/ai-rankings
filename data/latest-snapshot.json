@@ -1,11 +1,11 @@
 {
   "version": "3.0",
-  "fetchedAt": "2026-06-27T13:48:28.058Z",
+  "fetchedAt": "2026-06-28T02:56:26.686Z",
   "sources": {
     "openrouter": {
       "leaderboard": {},
       "topModels": [],
-      "fetchedAt": "2026-06-27T13:48:28.059Z",
+      "fetchedAt": "2026-06-28T02:56:26.686Z",
       "error": "API fetch failed: Unexpected token '<', \"<!DOCTYPE \"... is not valid JSON"
     },
     "valsai": {
@@ -17,7 +17,7 @@
         " and Gemini 3.5 Flash at 78.80%"
       ],
       "method": "regex-percent",
-      "fetchedAt": "2026-06-27T13:48:45.324Z"
+      "fetchedAt": "2026-06-28T02:56:44.857Z"
     },
     "arena": {
       "textLeaderboard": [
@@ -7382,7 +7382,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-06-27T13:48:51.571Z"
+      "fetchedAt": "2026-06-28T02:56:51.672Z"
     },
     "terms": {
       "main": {
@@ -7707,7 +7707,7 @@
           ]
         ]
       },
-      "fetchedAt": "2026-06-27T13:48:51.576Z"
+      "fetchedAt": "2026-06-28T02:56:51.678Z"
     }
   }
 }
