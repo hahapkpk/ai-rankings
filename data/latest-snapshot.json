@@ -1,11 +1,11 @@
 {
   "version": "3.0",
-  "fetchedAt": "2026-06-30T14:24:27.974Z",
+  "fetchedAt": "2026-07-01T02:56:34.073Z",
   "sources": {
     "openrouter": {
       "leaderboard": {},
       "topModels": [],
-      "fetchedAt": "2026-06-30T14:24:27.975Z",
+      "fetchedAt": "2026-07-01T02:56:34.074Z",
       "error": "API fetch failed: Unexpected token '<', \"<!DOCTYPE \"... is not valid JSON"
     },
     "valsai": {
@@ -17,7 +17,7 @@
         " and Gemini 3.5 Flash at 78.80%"
       ],
       "method": "regex-percent",
-      "fetchedAt": "2026-06-30T14:24:45.810Z"
+      "fetchedAt": "2026-07-01T02:56:51.198Z"
     },
     "arena": {
       "textLeaderboard": [
@@ -1337,7 +1337,7 @@
             "deepseek-v4-flashDeepSeek · MIT",
             "1435±5",
             "33,456",
-            "$0.09 / $0.18",
+            "$0.10 / $0.20",
             "1M"
           ]
         },
@@ -2417,7 +2417,7 @@
             "qwen3-235b-a22b-thinking-2507Alibaba · Apache 2.0",
             "1399±7",
             "8,991",
-            "$0.10 / $0.10",
+            "$0.15 / $1.50",
             "262.1K"
           ]
         },
@@ -7382,7 +7382,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-06-30T14:24:52.621Z"
+      "fetchedAt": "2026-07-01T02:56:57.828Z"
     },
     "terms": {
       "main": {
@@ -7707,7 +7707,7 @@
           ]
         ]
       },
-      "fetchedAt": "2026-06-30T14:24:52.627Z"
+      "fetchedAt": "2026-07-01T02:56:57.833Z"
     }
   }
 }
