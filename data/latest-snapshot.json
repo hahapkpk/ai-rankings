@@ -1,11 +1,11 @@
 {
   "version": "3.0",
-  "fetchedAt": "2026-07-06T15:38:53.631Z",
+  "fetchedAt": "2026-07-07T02:37:05.614Z",
   "sources": {
     "openrouter": {
       "leaderboard": {},
       "topModels": [],
-      "fetchedAt": "2026-07-06T15:38:53.632Z",
+      "fetchedAt": "2026-07-07T02:37:05.615Z",
       "error": "API fetch failed: Unexpected token '<', \"<!DOCTYPE \"... is not valid JSON"
     },
     "valsai": {
@@ -17,7 +17,7 @@
         " and Gemini 3.5 Flash at 78.80%"
       ],
       "method": "regex-percent",
-      "fetchedAt": "2026-07-06T15:39:12.474Z"
+      "fetchedAt": "2026-07-07T02:37:24.051Z"
     },
     "arena": {
       "textLeaderboard": [
@@ -6457,7 +6457,7 @@
             "Metallama-3.2-3b-instructMeta · Llama 3.2",
             "1166±8",
             "7,936",
-            "$0.05 / $0.34",
+            "$0.05 / $0.33",
             "131.1K"
           ]
         },
@@ -7402,7 +7402,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-07-06T15:39:20.355Z"
+      "fetchedAt": "2026-07-07T02:37:32.123Z"
     },
     "terms": {
       "main": {
@@ -7727,7 +7727,7 @@
           ]
         ]
       },
-      "fetchedAt": "2026-07-06T15:39:20.360Z"
+      "fetchedAt": "2026-07-07T02:37:32.129Z"
     }
   }
 }
