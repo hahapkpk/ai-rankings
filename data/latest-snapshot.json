@@ -1,23 +1,23 @@
 {
   "version": "3.0",
-  "fetchedAt": "2026-07-08T14:19:23.798Z",
+  "fetchedAt": "2026-07-09T02:29:05.589Z",
   "sources": {
     "openrouter": {
       "leaderboard": {},
       "topModels": [],
-      "fetchedAt": "2026-07-08T14:19:23.799Z",
+      "fetchedAt": "2026-07-09T02:29:05.589Z",
       "error": "API fetch failed: Unexpected token '<', \"<!DOCTYPE \"... is not valid JSON"
     },
     "valsai": {
       "swebench": [
-        "0.78\n\n312.26\ns\n\nSEE 55 MORE MODELS\nBest Performing\nBest Budget\nBest Speed\nKey Takeaways\n\nClaude Fable 5 leads with a performance of 95.00%",
+        "0.95\n\n254.13\ns\n\nSEE 56 MORE MODELS\nBest Performing\nBest Budget\nBest Speed\nKey Takeaways\n\nClaude Fable 5 leads with a performance of 95.00%",
         " achieving the best accuracy on SWE-bench Verified. Claude Opus 4.8 follows at 88.60%",
         ".\n\nGPT 5.5 comes in third with 82.60%",
         " followed by Claude Opus 4.7 at 82.00%",
         " and Gemini 3.5 Flash at 78.80%"
       ],
       "method": "regex-percent",
-      "fetchedAt": "2026-07-08T14:19:41.906Z"
+      "fetchedAt": "2026-07-09T02:29:24.080Z"
     },
     "arena": {
       "textLeaderboard": [
@@ -354,7 +354,7 @@
           "cells": [
             "17",
             "930",
-            "grok-4.20-beta-0309-reasoningxAI · Proprietary",
+            "grok-4.20-beta-0309-reasoningSpaceXAI · Proprietary",
             "1475±4",
             "51,724",
             "$2 / $6",
@@ -374,7 +374,7 @@
           "cells": [
             "18",
             "931",
-            "grok-4.20-beta1xAI · Proprietary",
+            "grok-4.20-beta1SpaceXAI · Proprietary",
             "1474±5",
             "26,920",
             "N/A",
@@ -494,7 +494,7 @@
           "cells": [
             "24",
             "1134",
-            "grok-4.20-multi-agent-beta-0309xAI · Proprietary",
+            "grok-4.20-multi-agent-beta-0309SpaceXAI · Proprietary",
             "1470±4",
             "50,647",
             "$2 / $6",
@@ -614,7 +614,7 @@
           "cells": [
             "30",
             "1836",
-            "grok-4.1-thinkingxAI · Proprietary",
+            "grok-4.1-thinkingSpaceXAI · Proprietary",
             "1466±3",
             "65,565",
             "N/A",
@@ -754,7 +754,7 @@
           "cells": [
             "37",
             "2945",
-            "grok-4.1xAI · Proprietary",
+            "grok-4.1SpaceXAI · Proprietary",
             "1459±3",
             "67,704",
             "N/A",
@@ -1154,7 +1154,7 @@
           "cells": [
             "57",
             "4568",
-            "grok-4.3xAI · Proprietary",
+            "grok-4.3SpaceXAI · Proprietary",
             "1444±5",
             "37,636",
             "$1.25 / $2.50",
@@ -1395,7 +1395,7 @@
             "69",
             "5782",
             "qwen3-max-previewAlibaba · Proprietary",
-            "1435±5",
+            "1435±4",
             "27,707",
             "$0.78 / $3.90",
             "262.1K"
@@ -1494,7 +1494,7 @@
           "cells": [
             "74",
             "6389",
-            "grok-4-1-fast-reasoningxAI · Proprietary",
+            "grok-4-1-fast-reasoningSpaceXAI · Proprietary",
             "1431±3",
             "56,849",
             "$0.20 / $0.50",
@@ -1814,7 +1814,7 @@
           "cells": [
             "90",
             "73111",
-            "grok-4-fast-chatxAI · Proprietary",
+            "grok-4-fast-chatSpaceXAI · Proprietary",
             "1421±8",
             "6,808",
             "$3 / $15",
@@ -2154,7 +2154,7 @@
           "cells": [
             "107",
             "90119",
-            "grok-3-preview-02-24xAI · Proprietary",
+            "grok-3-preview-02-24SpaceXAI · Proprietary",
             "1412±4",
             "32,900",
             "$3 / $15",
@@ -2234,7 +2234,7 @@
           "cells": [
             "111",
             "90121",
-            "grok-4-0709xAI · Proprietary",
+            "grok-4-0709SpaceXAI · Proprietary",
             "1410±4",
             "41,363",
             "$3 / $15",
@@ -2314,7 +2314,7 @@
           "cells": [
             "115",
             "101129",
-            "grok-4-fast-reasoningxAI · Proprietary",
+            "grok-4-fast-reasoningSpaceXAI · Proprietary",
             "1404±5",
             "18,708",
             "$0.20 / $0.50",
@@ -2954,7 +2954,7 @@
           "cells": [
             "147",
             "138155",
-            "trinity-large-previewArcee AI · Apache 2.0",
+            "trinity-large-previewApache 2.0",
             "1379±4",
             "30,115",
             "$0.15 / $0.45",
@@ -3134,7 +3134,7 @@
           "cells": [
             "156",
             "148164",
-            "trinity-large-thinkingArcee AI · Apache 2.0",
+            "trinity-large-thinkingApache 2.0",
             "1369±5",
             "29,229",
             "$0.25 / $0.80",
@@ -3254,7 +3254,7 @@
           "cells": [
             "162",
             "153177",
-            "grok-3-mini-highxAI · Proprietary",
+            "grok-3-mini-highSpaceXAI · Proprietary",
             "1362±5",
             "16,953",
             "$0.25 / $1.27",
@@ -3354,7 +3354,7 @@
           "cells": [
             "167",
             "160185",
-            "grok-3-mini-betaxAI · Proprietary",
+            "grok-3-mini-betaSpaceXAI · Proprietary",
             "1357±5",
             "22,703",
             "$0.30 / $0.50",
@@ -3374,7 +3374,7 @@
           "cells": [
             "168",
             "155190",
-            "intellect-3Prime Intellect · MIT",
+            "intellect-3MIT",
             "1356±8",
             "5,329",
             "$0.20 / $1.10",
@@ -3673,7 +3673,7 @@
           ],
           "cells": [
             "183",
-            "164201",
+            "165201",
             "qwen-plus-0125Alibaba · Proprietary",
             "1346±8",
             "5,819",
@@ -3914,7 +3914,7 @@
           "cells": [
             "195",
             "178206",
-            "grok-2-2024-08-13xAI · Proprietary",
+            "grok-2-2024-08-13SpaceXAI · Proprietary",
             "1336±4",
             "63,498",
             "$2 / $10",
@@ -4074,7 +4074,7 @@
           "cells": [
             "203",
             "189219",
-            "01.AIyi-lightning01 AI · Proprietary",
+            "yi-lightningProprietary",
             "1328±5",
             "27,332",
             "N/A",
@@ -4514,7 +4514,7 @@
           "cells": [
             "225",
             "208238",
-            "athene-v2-chatNexusFlow · NexusFlow",
+            "athene-v2-chatNexusFlow",
             "1314±5",
             "24,739",
             "N/A",
@@ -4634,7 +4634,7 @@
           "cells": [
             "231",
             "221242",
-            "grok-2-mini-2024-08-13xAI · Proprietary",
+            "grok-2-mini-2024-08-13SpaceXAI · Proprietary",
             "1308±4",
             "52,567",
             "$2 / $10",
@@ -4694,7 +4694,7 @@
           "cells": [
             "234",
             "221243",
-            "athene-70b-0725NexusFlow · CC-BY-NC-4.0",
+            "athene-70b-0725CC-BY-NC-4.0",
             "1306±6",
             "19,621",
             "N/A",
@@ -4934,7 +4934,7 @@
           "cells": [
             "246",
             "240258",
-            "jamba-1.5-largeAI21 Labs · Jamba Open",
+            "jamba-1.5-largeJamba Open",
             "1289±7",
             "8,662",
             "$2 / $8",
@@ -4974,7 +4974,7 @@
           "cells": [
             "248",
             "240258",
-            "reka-core-20240904Reka AI · Proprietary",
+            "reka-core-20240904Proprietary",
             "1288±7",
             "7,312",
             "N/A",
@@ -5035,7 +5035,7 @@
             "251",
             "243258",
             "gemini-1.5-flash-001Google · Proprietary",
-            "1286±5",
+            "1286±4",
             "62,833",
             "$0.07 / $0.30",
             "1M"
@@ -5134,7 +5134,7 @@
           "cells": [
             "256",
             "244264",
-            "gemma-2-9b-it-simpoPrinceton · MIT",
+            "gemma-2-9b-it-simpoMIT",
             "1280±7",
             "10,072",
             "$0.03 / $0.09",
@@ -5274,7 +5274,7 @@
           "cells": [
             "263",
             "251270",
-            "reka-flash-20240904Reka AI · Proprietary",
+            "reka-flash-20240904Proprietary",
             "1272±7",
             "7,536",
             "N/A",
@@ -5574,7 +5574,7 @@
           "cells": [
             "278",
             "274286",
-            "jamba-1.5-miniAI21 Labs · Jamba Open",
+            "jamba-1.5-miniJamba Open",
             "1239±7",
             "8,858",
             "$0.20 / $0.40",
@@ -5674,7 +5674,7 @@
           "cells": [
             "283",
             "276293",
-            "reka-flash-21b-20240226-onlineReka AI · Proprietary",
+            "reka-flash-21b-20240226-onlineProprietary",
             "1233±7",
             "15,450",
             "N/A",
@@ -5754,7 +5754,7 @@
           "cells": [
             "287",
             "279294",
-            "reka-flash-21b-20240226Reka AI · Proprietary",
+            "reka-flash-21b-20240226Proprietary",
             "1226±6",
             "24,806",
             "N/A",
@@ -5894,7 +5894,7 @@
           "cells": [
             "294",
             "290299",
-            "01.AIyi-1.5-34b-chat01 AI · Apache-2.0",
+            "yi-1.5-34b-chatApache-2.0",
             "1212±5",
             "24,146",
             "N/A",
@@ -5914,7 +5914,7 @@
           "cells": [
             "295",
             "285301",
-            "zephyr-orpo-141b-A35b-v0.1HuggingFace · Apache 2.0",
+            "zephyr-orpo-141b-A35b-v0.1Apache 2.0",
             "1212±11",
             "4,652",
             "N/A",
@@ -6074,7 +6074,7 @@
           "cells": [
             "303",
             "297312",
-            "dbrx-instruct-previewDatabricks · DBRX LICENSE",
+            "dbrx-instruct-previewDBRX LICENSE",
             "1194±6",
             "32,191",
             "$0.60 / $0.60",
@@ -6094,8 +6094,8 @@
           "cells": [
             "304",
             "297316",
-            "internlm2_5-20b-chatInternLM · Other",
-            "1191±7",
+            "internlm2_5-20b-chatOther",
+            "1190±7",
             "9,901",
             "$0 / $0",
             "32.8K"
@@ -6174,7 +6174,7 @@
           "cells": [
             "308",
             "303318",
-            "01.AIyi-34b-chat01 AI · Yi License",
+            "yi-34b-chatYi License",
             "1183±7",
             "15,483",
             "$0.90 / $0.90",
@@ -6214,7 +6214,7 @@
           "cells": [
             "310",
             "303323",
-            "openchat-3.5OpenChat · Apache-2.0",
+            "openchat-3.5Apache-2.0",
             "1182±10",
             "7,968",
             "$0.20 / $0.20",
@@ -6234,7 +6234,7 @@
           "cells": [
             "311",
             "303323",
-            "openchat-3.5-0106OpenChat · Apache-2.0",
+            "openchat-3.5-0106Apache-2.0",
             "1182±8",
             "12,637",
             "N/A",
@@ -6274,7 +6274,7 @@
           "cells": [
             "313",
             "304323",
-            "snowflake-arctic-instructSnowflake · Apache 2.0",
+            "snowflake-arctic-instructApache 2.0",
             "1179±6",
             "32,832",
             "N/A",
@@ -6314,7 +6314,7 @@
           "cells": [
             "315",
             "304323",
-            "tulu-2-dpo-70bAllenAI/UW · AI2 ImpACT Low-risk",
+            "tulu-2-dpo-70bAI2 ImpACT Low-risk",
             "1177±10",
             "6,535",
             "N/A",
@@ -6334,7 +6334,7 @@
           "cells": [
             "316",
             "304327",
-            "openhermes-2.5-mistral-7bNousResearch · Apache-2.0",
+            "openhermes-2.5-mistral-7bApache-2.0",
             "1175±10",
             "5,006",
             "$0.17 / $0.17",
@@ -6354,7 +6354,7 @@
           "cells": [
             "317",
             "306326",
-            "vicuna-33bLMSYS · Non-commercial",
+            "vicuna-33bNon-commercial",
             "1172±6",
             "22,479",
             "$0 / $0",
@@ -6374,7 +6374,7 @@
           "cells": [
             "318",
             "306329",
-            "starling-lm-7b-betaNexusflow · Apache-2.0",
+            "starling-lm-7b-betaApache-2.0",
             "1171±7",
             "16,056",
             "N/A",
@@ -6434,7 +6434,7 @@
           "cells": [
             "321",
             "308330",
-            "starling-lm-7b-alphaUC Berkeley · CC-BY-NC-4.0",
+            "starling-lm-7b-alphaCC-BY-NC-4.0",
             "1167±8",
             "10,224",
             "N/A",
@@ -6474,7 +6474,7 @@
           "cells": [
             "323",
             "307333",
-            "nous-hermes-2-mixtral-8x7b-dpoNousResearch · Apache-2.0",
+            "nous-hermes-2-mixtral-8x7b-dpoApache-2.0",
             "1164±12",
             "3,777",
             "$0.90 / $0.90",
@@ -6515,7 +6515,7 @@
             "325",
             "316340",
             "qwq-32b-previewAlibaba · Apache 2.0",
-            "1155±12",
+            "1155±11",
             "3,231",
             "$0.50 / $1",
             "16.4K"
@@ -6554,7 +6554,7 @@
           "cells": [
             "327",
             "317343",
-            "solar-10.7b-instruct-v1.0Upstage AI · CC-BY-NC-4.0",
+            "solar-10.7b-instruct-v1.0CC-BY-NC-4.0",
             "1151±13",
             "4,155",
             "$0.30 / $0.30",
@@ -6574,7 +6574,7 @@
           "cells": [
             "328",
             "316345",
-            "dolphin-2.2.1-mistral-7bCognitive Computations · Apache-2.0",
+            "dolphin-2.2.1-mistral-7bApache-2.0",
             "1151±15",
             "1,679",
             "$0.50 / $0.50",
@@ -6594,7 +6594,7 @@
           "cells": [
             "329",
             "321343",
-            "mpt-30b-chatMosaicML · CC-BY-NC-SA-4.0",
+            "mpt-30b-chatCC-BY-NC-SA-4.0",
             "1150±12",
             "2,572",
             "N/A",
@@ -6654,7 +6654,7 @@
           "cells": [
             "332",
             "320347",
-            "falcon-180b-chatTII · Falcon-180B TII License",
+            "falcon-180b-chatFalcon-180B TII License",
             "1147±17",
             "1,295",
             "N/A",
@@ -6734,7 +6734,7 @@
           "cells": [
             "336",
             "325346",
-            "vicuna-13bLMSYS · Llama 2 Community",
+            "vicuna-13bLlama 2 Community",
             "1140±7",
             "19,367",
             "$0.30 / $0.30",
@@ -6834,7 +6834,7 @@
           "cells": [
             "341",
             "329350",
-            "zephyr-7b-betaHuggingFace · MIT",
+            "zephyr-7b-betaMIT",
             "1130±9",
             "11,118",
             "$0.15 / $0.15",
@@ -6894,7 +6894,7 @@
           "cells": [
             "344",
             "329352",
-            "guanaco-33bUW · Non-commercial",
+            "guanaco-33bNon-commercial",
             "1126±12",
             "2,921",
             "N/A",
@@ -6914,7 +6914,7 @@
           "cells": [
             "345",
             "327353",
-            "zephyr-7b-alphaHuggingFace · MIT",
+            "zephyr-7b-alphaMIT",
             "1126±16",
             "1,785",
             "N/A",
@@ -6934,7 +6934,7 @@
           "cells": [
             "346",
             "336353",
-            "stripedhyena-nous-7bTogether AI · Apache 2.0",
+            "stripedhyena-nous-7bApache 2.0",
             "1120±11",
             "5,182",
             "$0.20 / $0.20",
@@ -6994,7 +6994,7 @@
           "cells": [
             "349",
             "341353",
-            "vicuna-7bLMSYS · Llama 2 Community",
+            "vicuna-7bLlama 2 Community",
             "1114±9",
             "6,923",
             "$0.20 / $0.20",
@@ -7014,7 +7014,7 @@
           "cells": [
             "350",
             "337354",
-            "smollm2-1.7b-instructHuggingFace · Apache 2.0",
+            "smollm2-1.7b-instructApache 2.0",
             "1114±14",
             "2,199",
             "N/A",
@@ -7154,7 +7154,7 @@
           "cells": [
             "357",
             "356361",
-            "koala-13bUC Berkeley · Non-commercial",
+            "koala-13bNon-commercial",
             "1070±10",
             "6,965",
             "N/A",
@@ -7174,7 +7174,7 @@
           "cells": [
             "358",
             "356361",
-            "alpaca-13bStanford · Non-commercial",
+            "alpaca-13bNon-commercial",
             "1068±11",
             "5,745",
             "N/A",
@@ -7194,7 +7194,7 @@
           "cells": [
             "359",
             "354362",
-            "gpt4all-13b-snoozyNomic AI · Non-commercial",
+            "gpt4all-13b-snoozyNon-commercial",
             "1066±15",
             "1,743",
             "N/A",
@@ -7214,7 +7214,7 @@
           "cells": [
             "360",
             "356362",
-            "mpt-7b-chatMosaicML · CC-BY-NC-SA-4.0",
+            "mpt-7b-chatCC-BY-NC-SA-4.0",
             "1062±12",
             "3,924",
             "N/A",
@@ -7234,7 +7234,7 @@
           "cells": [
             "361",
             "356362",
-            "chatglm3-6bTsinghua · Apache-2.0",
+            "chatglm3-6bApache-2.0",
             "1055±12",
             "4,658",
             "N/A",
@@ -7254,7 +7254,7 @@
           "cells": [
             "362",
             "359364",
-            "RWKV-4-Raven-14BRWKV · Apache 2.0",
+            "RWKV-4-Raven-14BApache 2.0",
             "1041±11",
             "4,845",
             "N/A",
@@ -7274,7 +7274,7 @@
           "cells": [
             "363",
             "362364",
-            "chatglm2-6bTsinghua · Apache-2.0",
+            "chatglm2-6bApache-2.0",
             "1023±14",
             "2,658",
             "N/A",
@@ -7294,7 +7294,7 @@
           "cells": [
             "364",
             "362364",
-            "oasst-pythia-12bOpenAssistant · Apache 2.0",
+            "oasst-pythia-12bApache 2.0",
             "1022±11",
             "6,310",
             "N/A",
@@ -7314,7 +7314,7 @@
           "cells": [
             "365",
             "365368",
-            "chatglm-6bTsinghua · Non-commercial",
+            "chatglm-6bNon-commercial",
             "995±13",
             "4,914",
             "N/A",
@@ -7334,7 +7334,7 @@
           "cells": [
             "366",
             "365368",
-            "fastchat-t5-3bLMSYS · Apache 2.0",
+            "fastchat-t5-3bApache 2.0",
             "991±12",
             "4,203",
             "N/A",
@@ -7354,7 +7354,7 @@
           "cells": [
             "367",
             "365368",
-            "dolly-v2-12bDatabricks · MIT",
+            "dolly-v2-12bMIT",
             "980±14",
             "3,412",
             "N/A",
@@ -7394,7 +7394,7 @@
           "cells": [
             "369",
             "368369",
-            "Stabilitystablelm-tuned-alpha-7bStability AI · CC-BY-NC-SA-4.0",
+            "stablelm-tuned-alpha-7bCC-BY-NC-SA-4.0",
             "952±13",
             "3,287",
             "N/A",
@@ -7402,7 +7402,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-07-08T14:19:49.738Z"
+      "fetchedAt": "2026-07-09T02:29:30.836Z"
     },
     "terms": {
       "main": {
@@ -7727,7 +7727,7 @@
           ]
         ]
       },
-      "fetchedAt": "2026-07-08T14:19:49.743Z"
+      "fetchedAt": "2026-07-09T02:29:30.841Z"
     }
   }
 }
