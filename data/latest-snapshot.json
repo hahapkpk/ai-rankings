@@ -1,23 +1,23 @@
 {
   "version": "3.0",
-  "fetchedAt": "2026-07-09T15:15:31.454Z",
+  "fetchedAt": "2026-07-10T02:30:55.566Z",
   "sources": {
     "openrouter": {
       "leaderboard": {},
       "topModels": [],
-      "fetchedAt": "2026-07-09T15:15:31.455Z",
+      "fetchedAt": "2026-07-10T02:30:55.567Z",
       "error": "API fetch failed: Unexpected token '<', \"<!DOCTYPE \"... is not valid JSON"
     },
     "valsai": {
       "swebench": [
-        "1.49\n\n962.37\ns\n\nSEE 57 MORE MODELS\nBest Performing\nBest Budget\nBest Speed\nKey Takeaways\n\nClaude Fable 5 leads with a performance of 95.00%",
+        "A\n\nSEE 59 MORE MODELS\nBest Performing\nBest Budget\nBest Speed\nKey Takeaways\n\nClaude Fable 5 leads with a performance of 95.00%",
         " achieving the best accuracy on SWE-bench Verified. Claude Opus 4.8 follows at 88.60%",
         ".\n\nGPT 5.5 comes in third with 82.60%",
         " followed by Claude Opus 4.7 at 82.00%",
         " and Gemini 3.5 Flash at 78.80%"
       ],
       "method": "regex-percent",
-      "fetchedAt": "2026-07-09T15:15:49.607Z"
+      "fetchedAt": "2026-07-10T02:31:13.295Z"
     },
     "arena": {
       "textLeaderboard": [
@@ -1997,7 +1997,7 @@
             "minimax-m2.7MiniMax · Modified MIT",
             "1417±4",
             "42,368",
-            "$0.18 / $0.72",
+            "$0.24 / $0.96",
             "204.8K"
           ]
         },
@@ -2657,7 +2657,7 @@
             "minimax-m2.5MiniMax · Modified MIT",
             "1391±4",
             "41,241",
-            "$0.12 / $0.48",
+            "$0.15 / $0.90",
             "204.8K"
           ]
         },
@@ -3457,7 +3457,7 @@
             "gpt-oss-120bOpenAI · Apache 2.0",
             "1353±4",
             "30,639",
-            "$0.03 / $0.15",
+            "$0.04 / $0.18",
             "131.1K"
           ]
         },
@@ -7402,7 +7402,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-07-09T15:15:56.797Z"
+      "fetchedAt": "2026-07-10T02:31:20.821Z"
     },
     "terms": {
       "main": {
@@ -7727,7 +7727,7 @@
           ]
         ]
       },
-      "fetchedAt": "2026-07-09T15:15:56.802Z"
+      "fetchedAt": "2026-07-10T02:31:20.826Z"
     }
   }
 }
