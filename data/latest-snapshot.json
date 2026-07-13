@@ -1,11 +1,11 @@
 {
   "version": "3.0",
-  "fetchedAt": "2026-07-13T02:13:26.143Z",
+  "fetchedAt": "2026-07-13T08:53:36.285Z",
   "sources": {
     "openrouter": {
       "leaderboard": {},
       "topModels": [],
-      "fetchedAt": "2026-07-13T02:13:26.144Z",
+      "fetchedAt": "2026-07-13T08:53:36.286Z",
       "error": "API fetch failed: Unexpected token '<', \"<!DOCTYPE \"... is not valid JSON"
     },
     "valsai": {
@@ -18,7 +18,7 @@
         " and Gemini 3.5 Flash at 78.80%"
       ],
       "method": "regex-percent",
-      "fetchedAt": "2026-07-13T02:13:43.778Z"
+      "fetchedAt": "2026-07-13T08:53:53.256Z"
     },
     "arena": {
       "textLeaderboard": [
@@ -34,10 +34,10 @@
           ],
           "cells": [
             "1",
-            "16",
+            "17",
             "Anthropicclaude-fable-5Anthropic · Proprietary",
-            "1509±9",
-            "4,299",
+            "1505±8",
+            "7,252",
             "$10 / $50",
             "1M"
           ]
@@ -114,7 +114,7 @@
           ],
           "cells": [
             "5",
-            "38",
+            "28",
             "Anthropicclaude-opus-4-7Anthropic · Proprietary",
             "1494±4",
             "47,222",
@@ -7503,7 +7503,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-07-13T02:13:51.447Z"
+      "fetchedAt": "2026-07-13T08:54:00.380Z"
     },
     "terms": {
       "main": {
@@ -7828,7 +7828,7 @@
           ]
         ]
       },
-      "fetchedAt": "2026-07-13T02:13:51.453Z"
+      "fetchedAt": "2026-07-13T08:54:00.385Z"
     }
   }
 }
