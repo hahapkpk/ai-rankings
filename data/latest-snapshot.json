@@ -1,11 +1,11 @@
 {
   "version": "3.0",
-  "fetchedAt": "2026-07-17T02:09:23.360Z",
+  "fetchedAt": "2026-07-17T07:55:22.433Z",
   "sources": {
     "openrouter": {
       "leaderboard": {},
       "topModels": [],
-      "fetchedAt": "2026-07-17T02:09:23.361Z",
+      "fetchedAt": "2026-07-17T07:55:22.434Z",
       "error": "API fetch failed: Unexpected token '<', \"<!DOCTYPE \"... is not valid JSON"
     },
     "valsai": {
@@ -18,7 +18,7 @@
         " and Gemini 3.5 Flash at 78.80%"
       ],
       "method": "regex-percent",
-      "fetchedAt": "2026-07-17T02:09:39.003Z"
+      "fetchedAt": "2026-07-17T07:55:39.615Z"
     },
     "arena": {
       "textLeaderboard": [
@@ -1338,7 +1338,7 @@
             "qwen3.5-397b-a17bAlibaba · Apache 2.0",
             "1442±4",
             "56,154",
-            "$0.45 / $3",
+            "$0.39 / $2.34",
             "262.1K"
           ]
         },
@@ -2138,7 +2138,7 @@
             "minimax-m2.7MiniMax · Modified MIT",
             "1417±4",
             "47,935",
-            "$0.30 / $1.20",
+            "$0.25 / $1",
             "204.8K"
           ]
         },
@@ -3299,7 +3299,7 @@
             "1368±6",
             "11,713",
             "$0.06 / $0.40",
-            "200K"
+            "202.8K"
           ]
         },
         {
@@ -3338,7 +3338,7 @@
             "gemma-3-27b-itGoogle · Gemma",
             "1366±4",
             "47,510",
-            "$0.08 / $0.45",
+            "$0.10 / $0.30",
             "131.1K"
           ]
         },
@@ -7543,7 +7543,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-07-17T02:09:47.169Z"
+      "fetchedAt": "2026-07-17T07:55:47.144Z"
     },
     "terms": {
       "main": {
@@ -7868,7 +7868,7 @@
           ]
         ]
       },
-      "fetchedAt": "2026-07-17T02:09:47.173Z"
+      "fetchedAt": "2026-07-17T07:55:47.150Z"
     }
   }
 }
