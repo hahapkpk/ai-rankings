@@ -1,16 +1,16 @@
 {
   "version": "3.0",
-  "fetchedAt": "2026-07-17T13:43:39.975Z",
+  "fetchedAt": "2026-07-18T01:58:34.173Z",
   "sources": {
     "openrouter": {
       "leaderboard": {},
       "topModels": [],
-      "fetchedAt": "2026-07-17T13:43:39.975Z",
+      "fetchedAt": "2026-07-18T01:58:34.174Z",
       "error": "API fetch failed: Unexpected token '<', \"<!DOCTYPE \"... is not valid JSON"
     },
     "valsai": {
       "swebench": [
-        "2.42\n\n441.99\ns\n\nSEE 60 MORE MODELS\nBest Performing\nBest Budget\nBest Speed\nKey Takeaways\n\nClaude Fable 5 leads with a performance of 95.00%",
+        "0.35\n\n209.12\ns\n\nSEE 61 MORE MODELS\nBest Performing\nBest Budget\nBest Speed\nKey Takeaways\n\nClaude Fable 5 leads with a performance of 95.00%",
         " achieving the best accuracy on SWE-bench Verified. Claude Opus 4.8 follows at 88.60%",
         ".\n\nGrok 4.5 comes in third with 86.60%",
         " followed by GPT 5.5 at 82.60%",
@@ -18,7 +18,7 @@
         " and Gemini 3.5 Flash at 78.80%"
       ],
       "method": "regex-percent",
-      "fetchedAt": "2026-07-17T13:43:57.537Z"
+      "fetchedAt": "2026-07-18T01:58:51.067Z"
     },
     "arena": {
       "textLeaderboard": [
@@ -1358,8 +1358,8 @@
             "Thinking MachinesinklingThinky · Apache 2.0",
             "1441±15",
             "1,543",
-            "N/A",
-            "N/A"
+            "$1 / $4.05",
+            "1M"
           ]
         },
         {
@@ -3299,7 +3299,7 @@
             "1368±6",
             "11,713",
             "$0.06 / $0.40",
-            "202.8K"
+            "200K"
           ]
         },
         {
@@ -7543,7 +7543,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-07-17T13:44:05.650Z"
+      "fetchedAt": "2026-07-18T01:58:59.676Z"
     },
     "terms": {
       "main": {
@@ -7868,7 +7868,7 @@
           ]
         ]
       },
-      "fetchedAt": "2026-07-17T13:44:05.654Z"
+      "fetchedAt": "2026-07-18T01:58:59.682Z"
     }
   }
 }
