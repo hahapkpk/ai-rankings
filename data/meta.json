@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-21T13:57:17.237Z",
+  "lastUpdated": "2026-07-22T02:06:48.476Z",
   "sources": {
     "openrouter": {
       "status": "error",
@@ -11,7 +11,7 @@
     },
     "arena": {
       "status": "ok",
-      "itemCount": 376
+      "itemCount": 378
     },
     "terms": {
       "status": "ok",
