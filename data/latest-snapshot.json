@@ -1,11 +1,11 @@
 {
   "version": "3.0",
-  "fetchedAt": "2026-07-23T14:06:30.472Z",
+  "fetchedAt": "2026-07-24T02:10:12.766Z",
   "sources": {
     "openrouter": {
       "leaderboard": {},
       "topModels": [],
-      "fetchedAt": "2026-07-23T14:06:30.473Z",
+      "fetchedAt": "2026-07-24T02:10:12.767Z",
       "error": "API fetch failed: Unexpected token '<', \"<!DOCTYPE \"... is not valid JSON"
     },
     "valsai": {
@@ -18,7 +18,7 @@
         " and Grok 4.5 at 86.60%"
       ],
       "method": "regex-percent",
-      "fetchedAt": "2026-07-23T14:06:48.151Z"
+      "fetchedAt": "2026-07-24T02:10:29.433Z"
     },
     "arena": {
       "textLeaderboard": [
@@ -1259,7 +1259,7 @@
             "1445±8",
             "5,386",
             "$1 / $4.05",
-            "524.3K"
+            "1M"
           ]
         },
         {
@@ -2458,7 +2458,7 @@
             "qwen3.5-27bAlibaba · Apache 2.0",
             "1409±4",
             "27,314",
-            "$0.26 / $2.60",
+            "$0.20 / $1.56",
             "262.1K"
           ]
         },
@@ -3378,7 +3378,7 @@
             "gemma-3-27b-itGoogle · Gemma",
             "1366±4",
             "47,508",
-            "$0.10 / $0.30",
+            "$0.08 / $0.45",
             "262.1K"
           ]
         },
@@ -3878,7 +3878,7 @@
             "minimax-m2MiniMax · Apache 2.0",
             "1346±8",
             "6,862",
-            "$0.30 / $1.20",
+            "$0.26 / $1.02",
             "204.8K"
           ]
         },
@@ -7583,7 +7583,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-07-23T14:06:57.757Z"
+      "fetchedAt": "2026-07-24T02:10:38.688Z"
     },
     "terms": {
       "main": {
@@ -7908,7 +7908,7 @@
           ]
         ]
       },
-      "fetchedAt": "2026-07-23T14:06:57.763Z"
+      "fetchedAt": "2026-07-24T02:10:38.693Z"
     }
   }
 }
