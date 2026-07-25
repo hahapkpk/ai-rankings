@@ -1,24 +1,25 @@
 {
   "version": "3.0",
-  "fetchedAt": "2026-07-24T13:49:13.552Z",
+  "fetchedAt": "2026-07-25T02:09:24.526Z",
   "sources": {
     "openrouter": {
       "leaderboard": {},
       "topModels": [],
-      "fetchedAt": "2026-07-24T13:49:13.553Z",
+      "fetchedAt": "2026-07-25T02:09:24.527Z",
       "error": "API fetch failed: Unexpected token '<', \"<!DOCTYPE \"... is not valid JSON"
     },
     "valsai": {
       "swebench": [
-        "0.35\n\n209.12\ns\n\nSEE 64 MORE MODELS\nBest Performing\nBest Budget\nBest Speed\nKey Takeaways\n\nGPT-5.6 Sol leads with a performance of 96.20%",
-        " achieving the best accuracy on SWE-bench Verified. Claude Fable 5 follows at 95.00%",
-        ".\n\nKimi K3 comes in third with 93.40%",
+        "1.36\n\n426.43\ns\n\nSEE 65 MORE MODELS\nBest Performing\nBest Budget\nBest Speed\nKey Takeaways\n\nClaude Opus 5 leads SWE-bench Verified with 97.00%",
+        " followed by GPT-5.6 Sol at 96.20%",
+        " and Claude Fable 5 at 95.00%",
+        ".\n\nKimi K3 scores 93.40%",
         " followed by GPT-5.6 Luna at 93.00%",
         " Claude Opus 4.8 at 88.60%",
         " and Grok 4.5 at 86.60%"
       ],
       "method": "regex-percent",
-      "fetchedAt": "2026-07-24T13:49:30.869Z"
+      "fetchedAt": "2026-07-25T02:09:40.810Z"
     },
     "arena": {
       "textLeaderboard": [
@@ -1538,7 +1539,7 @@
             "deepseek-v4-flashDeepSeek · MIT",
             "1436±4",
             "45,050",
-            "$0.10 / $0.20",
+            "$0.09 / $0.19",
             "1M"
           ]
         },
@@ -2578,7 +2579,7 @@
             "qwen3-next-80b-a3b-instructAlibaba · Apache 2.0",
             "1401±5",
             "22,859",
-            "$0.15 / $1.20",
+            "$0.10 / $1.10",
             "262.1K"
           ]
         },
@@ -4638,7 +4639,7 @@
             "gpt-oss-20bOpenAI · Apache 2.0",
             "1317±6",
             "10,621",
-            "$0.03 / $0.14",
+            "$0.03 / $0.13",
             "131.1K"
           ]
         },
@@ -7583,7 +7584,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-07-24T13:49:39.970Z"
+      "fetchedAt": "2026-07-25T02:09:50.916Z"
     },
     "terms": {
       "main": {
@@ -7908,7 +7909,7 @@
           ]
         ]
       },
-      "fetchedAt": "2026-07-24T13:49:39.975Z"
+      "fetchedAt": "2026-07-25T02:09:50.921Z"
     }
   }
 }

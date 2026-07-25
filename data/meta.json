@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-24T13:49:13.552Z",
+  "lastUpdated": "2026-07-25T02:09:24.526Z",
   "sources": {
     "openrouter": {
       "status": "error",
@@ -7,7 +7,7 @@
     },
     "valsai": {
       "status": "ok",
-      "itemCount": 6
+      "itemCount": 7
     },
     "arena": {
       "status": "ok",
