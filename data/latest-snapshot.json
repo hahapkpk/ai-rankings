@@ -1,11 +1,11 @@
 {
   "version": "3.0",
-  "fetchedAt": "2026-07-26T08:11:40.320Z",
+  "fetchedAt": "2026-07-26T13:27:36.315Z",
   "sources": {
     "openrouter": {
       "leaderboard": {},
       "topModels": [],
-      "fetchedAt": "2026-07-26T08:11:40.320Z",
+      "fetchedAt": "2026-07-26T13:27:36.315Z",
       "error": "API fetch failed: Unexpected token '<', \"<!DOCTYPE \"... is not valid JSON"
     },
     "valsai": {
@@ -19,7 +19,7 @@
         " and Grok 4.5 at 86.60%"
       ],
       "method": "regex-percent",
-      "fetchedAt": "2026-07-26T08:11:56.587Z"
+      "fetchedAt": "2026-07-26T13:27:53.733Z"
     },
     "arena": {
       "textLeaderboard": [
@@ -7584,7 +7584,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-07-26T08:12:06.176Z"
+      "fetchedAt": "2026-07-26T13:28:02.476Z"
     },
     "terms": {
       "main": {
@@ -7909,7 +7909,7 @@
           ]
         ]
       },
-      "fetchedAt": "2026-07-26T08:12:06.182Z"
+      "fetchedAt": "2026-07-26T13:28:02.480Z"
     }
   }
 }
