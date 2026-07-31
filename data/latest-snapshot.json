@@ -1,11 +1,11 @@
 {
   "version": "3.0",
-  "fetchedAt": "2026-07-30T14:07:33.429Z",
+  "fetchedAt": "2026-07-31T02:14:11.280Z",
   "sources": {
     "openrouter": {
       "leaderboard": {},
       "topModels": [],
-      "fetchedAt": "2026-07-30T14:07:33.430Z",
+      "fetchedAt": "2026-07-31T02:14:11.281Z",
       "error": "API fetch failed: Unexpected token '<', \"<!DOCTYPE \"... is not valid JSON"
     },
     "valsai": {
@@ -19,7 +19,7 @@
         " and Grok 4.5 at 86.60%"
       ],
       "method": "regex-percent",
-      "fetchedAt": "2026-07-30T14:07:50.397Z"
+      "fetchedAt": "2026-07-31T02:14:28.007Z"
     },
     "arena": {
       "textLeaderboard": [
@@ -315,7 +315,7 @@
           ],
           "cells": [
             "15",
-            "532",
+            "533",
             "gemini-3.6-flashGoogle · Proprietary",
             "1482±8Preliminary",
             "6,065",
@@ -355,7 +355,7 @@
           ],
           "cells": [
             "17",
-            "1232",
+            "1233",
             "gpt-5.4-highOpenAI · Proprietary",
             "1477±4",
             "60,292",
@@ -375,7 +375,7 @@
           ],
           "cells": [
             "18",
-            "836",
+            "837",
             "gemini-3.5-flash-highGoogle · Proprietary",
             "1476±7",
             "10,011",
@@ -395,7 +395,7 @@
           ],
           "cells": [
             "19",
-            "1235",
+            "1236",
             "gpt-5.2-chat-latest-20260210OpenAI · Proprietary",
             "1476±4",
             "34,060",
@@ -415,7 +415,7 @@
           ],
           "cells": [
             "20",
-            "1235",
+            "1236",
             "gpt-5.5OpenAI · Proprietary",
             "1476±4",
             "48,792",
@@ -435,7 +435,7 @@
           ],
           "cells": [
             "21",
-            "744",
+            "745",
             "qwen3.7-max-previewAlibaba · Proprietary",
             "1475±10Preliminary",
             "3,697",
@@ -455,7 +455,7 @@
           ],
           "cells": [
             "22",
-            "1238",
+            "1239",
             "Anthropicclaude-opus-4-8Anthropic · Proprietary",
             "1474±5",
             "33,401",
@@ -475,7 +475,7 @@
           ],
           "cells": [
             "23",
-            "1337",
+            "1338",
             "grok-4.20-beta1SpaceXAI · Proprietary",
             "1474±5",
             "26,598",
@@ -495,7 +495,7 @@
           ],
           "cells": [
             "24",
-            "1340",
+            "1341",
             "gpt-5.5-instantOpenAI · Proprietary",
             "1473±5",
             "25,708",
@@ -515,7 +515,7 @@
           ],
           "cells": [
             "25",
-            "1440",
+            "1441",
             "gemini-3-flashGoogle · Proprietary",
             "1473±4",
             "30,643",
@@ -535,7 +535,7 @@
           ],
           "cells": [
             "26",
-            "1539",
+            "1540",
             "Anthropicclaude-opus-4-5-20251101-thinking-32kAnthropic · Proprietary",
             "1473±4",
             "36,980",
@@ -555,7 +555,7 @@
           ],
           "cells": [
             "27",
-            "1539",
+            "1540",
             "grok-4.20-beta-0309-reasoningSpaceXAI · Proprietary",
             "1472±4",
             "61,762",
@@ -575,7 +575,7 @@
           ],
           "cells": [
             "28",
-            "1342",
+            "1343",
             "gemini-3.5-flash-mediumGoogle · Proprietary",
             "1472±6",
             "16,248",
@@ -595,7 +595,7 @@
           ],
           "cells": [
             "29",
-            "1540",
+            "1541",
             "Anthropicclaude-sonnet-4-6Anthropic · Proprietary",
             "1472±4",
             "58,826",
@@ -615,7 +615,7 @@
           ],
           "cells": [
             "30",
-            "1642",
+            "1643",
             "grok-4.20-multi-agent-beta-0309SpaceXAI · Proprietary",
             "1471±4",
             "60,452",
@@ -635,7 +635,7 @@
           ],
           "cells": [
             "31",
-            "1644",
+            "1645",
             "glm-5.2-maxZ.ai · MIT",
             "1469±6",
             "19,995",
@@ -655,7 +655,7 @@
           ],
           "cells": [
             "32",
-            "1843",
+            "1844",
             "Anthropicclaude-opus-4-5-20251101Anthropic · Proprietary",
             "1469±3",
             "70,573",
@@ -675,7 +675,7 @@
           ],
           "cells": [
             "33",
-            "1844",
+            "1845",
             "glm-5.1Z.ai · MIT",
             "1469±4",
             "32,555",
@@ -695,7 +695,27 @@
           ],
           "cells": [
             "34",
-            "1649",
+            "1648",
+            "gpt-5.6-terra-xhighOpenAI · Proprietary",
+            "1468±7",
+            "8,621",
+            "N/A",
+            "N/A"
+          ]
+        },
+        {
+          "headers": [
+            "Rank",
+            "Rank Spread",
+            "Model",
+            "Score",
+            "Votes",
+            "Price $/M",
+            "Context"
+          ],
+          "cells": [
+            "35",
+            "1650",
             "grok-4.5SpaceXAI · Proprietary",
             "1468±7",
             "9,998",
@@ -714,8 +734,8 @@
             "Context"
           ],
           "cells": [
-            "35",
-            "1844",
+            "36",
+            "1845",
             "ernie-5.1Baidu · Proprietary",
             "1468±5Preliminary",
             "36,892",
@@ -734,8 +754,8 @@
             "Context"
           ],
           "cells": [
-            "36",
-            "2245",
+            "37",
+            "2246",
             "grok-4.1-thinkingSpaceXAI · Proprietary",
             "1466±3",
             "65,116",
@@ -754,8 +774,8 @@
             "Context"
           ],
           "cells": [
-            "37",
-            "2149",
+            "38",
+            "2150",
             "mimo-v2.5-proXiaomi · MIT",
             "1465±4",
             "43,790",
@@ -774,8 +794,8 @@
             "Context"
           ],
           "cells": [
-            "38",
-            "2049",
+            "39",
+            "2050",
             "qwen3.5-max-previewAlibaba · Proprietary",
             "1465±5",
             "21,306",
@@ -794,8 +814,8 @@
             "Context"
           ],
           "cells": [
-            "39",
-            "2347",
+            "40",
+            "2348",
             "gpt-5.4OpenAI · Proprietary",
             "1465±4",
             "63,194",
@@ -814,8 +834,8 @@
             "Context"
           ],
           "cells": [
-            "40",
-            "3155",
+            "41",
+            "3157",
             "kimi-k2.6Moonshot · Modified MIT",
             "1461±5",
             "37,350",
@@ -834,8 +854,8 @@
             "Context"
           ],
           "cells": [
-            "41",
-            "2561",
+            "42",
+            "2563",
             "qwen3.6-max-previewAlibaba · Proprietary",
             "1460±8",
             "5,159",
@@ -854,8 +874,8 @@
             "Context"
           ],
           "cells": [
-            "42",
-            "3555",
+            "43",
+            "3557",
             "grok-4.1SpaceXAI · Proprietary",
             "1460±3",
             "67,322",
@@ -874,8 +894,8 @@
             "Context"
           ],
           "cells": [
-            "43",
-            "3056",
+            "44",
+            "3058",
             "Anthropicclaude-sonnet-5-highAnthropic · Proprietary",
             "1460±6",
             "15,622",
@@ -894,8 +914,8 @@
             "Context"
           ],
           "cells": [
-            "44",
-            "2861",
+            "45",
+            "2863",
             "gemini-3.5-flash-liteGoogle · Proprietary",
             "1460±8Preliminary",
             "6,015",
@@ -914,8 +934,8 @@
             "Context"
           ],
           "cells": [
-            "45",
-            "3655",
+            "46",
+            "3657",
             "gemini-3-flash (thinking-minimal)Google · Proprietary",
             "1459±3",
             "85,621",
@@ -934,8 +954,8 @@
             "Context"
           ],
           "cells": [
-            "46",
-            "2869",
+            "47",
+            "2871",
             "Tencenthy3Tencent · Apache 2.0",
             "1457±10",
             "3,267",
@@ -954,8 +974,8 @@
             "Context"
           ],
           "cells": [
-            "47",
-            "3661",
+            "48",
+            "3663",
             "qwen3.7-plusAlibaba · Proprietary",
             "1457±5",
             "23,946",
@@ -974,8 +994,8 @@
             "Context"
           ],
           "cells": [
-            "48",
-            "3759",
+            "49",
+            "3861",
             "deepseek-v4-proDeepSeek · MIT",
             "1457±4",
             "46,848",
@@ -994,8 +1014,8 @@
             "Context"
           ],
           "cells": [
-            "49",
-            "3761",
+            "50",
+            "3863",
             "glm-5Z.ai · MIT",
             "1457±4",
             "27,644",
@@ -1014,8 +1034,8 @@
             "Context"
           ],
           "cells": [
-            "50",
-            "4061",
+            "51",
+            "4163",
             "Bytedancedola-seed-2.0-proBytedance · Proprietary",
             "1456±4",
             "69,821",
@@ -1034,8 +1054,8 @@
             "Context"
           ],
           "cells": [
-            "51",
-            "4059",
+            "52",
+            "4161",
             "Anthropicclaude-sonnet-4-5-20250929-thinking-32kAnthropic · Proprietary",
             "1456±3",
             "81,949",
@@ -1054,8 +1074,8 @@
             "Context"
           ],
           "cells": [
-            "52",
-            "4062",
+            "53",
+            "4164",
             "deepseek-v4-pro-thinkingDeepSeek · MIT",
             "1455±4",
             "44,669",
@@ -1074,8 +1094,8 @@
             "Context"
           ],
           "cells": [
-            "53",
-            "4061",
+            "54",
+            "4163",
             "Anthropicclaude-sonnet-4-5-20250929Anthropic · Proprietary",
             "1455±3",
             "80,347",
@@ -1094,8 +1114,8 @@
             "Context"
           ],
           "cells": [
-            "54",
-            "4062",
+            "55",
+            "4164",
             "gpt-5.1-highOpenAI · Proprietary",
             "1455±4",
             "40,700",
@@ -1114,8 +1134,28 @@
             "Context"
           ],
           "cells": [
-            "55",
-            "4073",
+            "56",
+            "4175",
+            "gpt-5.6-luna-xhighOpenAI · Proprietary",
+            "1452±7",
+            "8,890",
+            "N/A",
+            "N/A"
+          ]
+        },
+        {
+          "headers": [
+            "Rank",
+            "Rank Spread",
+            "Model",
+            "Score",
+            "Votes",
+            "Price $/M",
+            "Context"
+          ],
+          "cells": [
+            "57",
+            "4175",
             "gemma-4-31bGoogle · Apache 2.0",
             "1451±8",
             "5,841",
@@ -1134,8 +1174,8 @@
             "Context"
           ],
           "cells": [
-            "56",
-            "4470",
+            "58",
+            "4572",
             "kimi-k2.5-thinkingMoonshot · Modified MIT",
             "1450±4",
             "64,226",
@@ -1154,8 +1194,8 @@
             "Context"
           ],
           "cells": [
-            "57",
-            "4673",
+            "59",
+            "4775",
             "Anthropicclaude-opus-4-1-20250805-thinking-16kAnthropic · Proprietary",
             "1449±3",
             "49,741",
@@ -1174,8 +1214,8 @@
             "Context"
           ],
           "cells": [
-            "58",
-            "4373",
+            "60",
+            "4475",
             "ernie-5.0-preview-1203Baidu · Proprietary",
             "1449±7",
             "9,732",
@@ -1194,8 +1234,8 @@
             "Context"
           ],
           "cells": [
-            "59",
-            "4673",
+            "61",
+            "4775",
             "gpt-5.4-mini-highOpenAI · Proprietary",
             "1449±4",
             "59,093",
@@ -1214,8 +1254,8 @@
             "Context"
           ],
           "cells": [
-            "60",
-            "4473",
+            "62",
+            "4575",
             "gpt-5.3-chat-latestOpenAI · Proprietary",
             "1449±4",
             "32,624",
@@ -1234,8 +1274,8 @@
             "Context"
           ],
           "cells": [
-            "61",
-            "4473",
+            "63",
+            "4575",
             "mimo-v2-proXiaomi · Proprietary",
             "1448±5",
             "24,257",
@@ -1254,8 +1294,8 @@
             "Context"
           ],
           "cells": [
-            "62",
-            "5273",
+            "64",
+            "5375",
             "ernie-5.0-0110Baidu · Proprietary",
             "1447±4",
             "35,065",
@@ -1274,8 +1314,8 @@
             "Context"
           ],
           "cells": [
-            "63",
-            "5473",
+            "65",
+            "5575",
             "Anthropicclaude-opus-4-1-20250805Anthropic · Proprietary",
             "1447±3",
             "77,225",
@@ -1294,8 +1334,8 @@
             "Context"
           ],
           "cells": [
-            "64",
-            "5473",
+            "66",
+            "5575",
             "gemini-2.5-proGoogle · Proprietary",
             "1446±2",
             "124,076",
@@ -1314,8 +1354,8 @@
             "Context"
           ],
           "cells": [
-            "65",
-            "5480",
+            "67",
+            "5582",
             "gpt-4.5-preview-2025-02-27OpenAI · Proprietary",
             "1445±6",
             "14,547",
@@ -1334,8 +1374,8 @@
             "Context"
           ],
           "cells": [
-            "66",
-            "5479",
+            "68",
+            "5581",
             "minimax-m3MiniMax · MiniMax Community License",
             "1444±5",
             "29,879",
@@ -1354,8 +1394,8 @@
             "Context"
           ],
           "cells": [
-            "67",
-            "5480",
+            "69",
+            "5582",
             "qwen3.6-plusAlibaba · Proprietary",
             "1443±4",
             "45,069",
@@ -1374,8 +1414,8 @@
             "Context"
           ],
           "cells": [
-            "68",
-            "5677",
+            "70",
+            "5779",
             "chatgpt-4o-latest-20250326OpenAI · Proprietary",
             "1443±3",
             "82,360",
@@ -1394,8 +1434,8 @@
             "Context"
           ],
           "cells": [
-            "69",
-            "5485",
+            "71",
+            "5587",
             "Thinking MachinesinklingThinky · Apache 2.0",
             "1443±7",
             "7,501",
@@ -1414,8 +1454,8 @@
             "Context"
           ],
           "cells": [
-            "70",
-            "5680",
+            "72",
+            "5782",
             "qwen3.5-397b-a17bAlibaba · Apache 2.0",
             "1443±4",
             "59,613",
@@ -1434,8 +1474,8 @@
             "Context"
           ],
           "cells": [
-            "71",
-            "5581",
+            "73",
+            "5683",
             "grok-4.3SpaceXAI · Proprietary",
             "1443±4",
             "48,239",
@@ -1454,8 +1494,8 @@
             "Context"
           ],
           "cells": [
-            "72",
-            "5485",
+            "74",
+            "5587",
             "glm-4.7Z.ai · MIT",
             "1442±6",
             "12,090",
@@ -1474,8 +1514,8 @@
             "Context"
           ],
           "cells": [
-            "73",
-            "6587",
+            "75",
+            "6789",
             "gpt-5.1OpenAI · Proprietary",
             "1439±4",
             "43,332",
@@ -1494,8 +1534,8 @@
             "Context"
           ],
           "cells": [
-            "74",
-            "5694",
+            "76",
+            "5796",
             "gemma-4-26b-a4bGoogle · Apache 2.0",
             "1438±8",
             "5,754",
@@ -1514,8 +1554,8 @@
             "Context"
           ],
           "cells": [
-            "75",
-            "6590",
+            "77",
+            "6792",
             "deepseek-v4-flash-thinkingDeepSeek · MIT",
             "1438±4",
             "46,445",
@@ -1534,8 +1574,8 @@
             "Context"
           ],
           "cells": [
-            "76",
-            "6590",
+            "78",
+            "6792",
             "gpt-5.2-highOpenAI · Proprietary",
             "1437±4",
             "47,668",
@@ -1554,8 +1594,8 @@
             "Context"
           ],
           "cells": [
-            "77",
-            "6692",
+            "79",
+            "6894",
             "deepseek-v4-flashDeepSeek · MIT",
             "1436±4",
             "46,729",
@@ -1574,8 +1614,8 @@
             "Context"
           ],
           "cells": [
-            "78",
-            "7092",
+            "80",
+            "7294",
             "gpt-5.2OpenAI · Proprietary",
             "1435±3",
             "78,810",
@@ -1594,8 +1634,8 @@
             "Context"
           ],
           "cells": [
-            "79",
-            "6695",
+            "81",
+            "6897",
             "longcat-flash-chat-2602-expMeituan · Proprietary",
             "1435±5",
             "27,761",
@@ -1614,8 +1654,8 @@
             "Context"
           ],
           "cells": [
-            "80",
-            "6795",
+            "82",
+            "6997",
             "qwen3-max-previewAlibaba · Proprietary",
             "1435±5",
             "27,675",
@@ -1634,8 +1674,8 @@
             "Context"
           ],
           "cells": [
-            "81",
-            "7195",
+            "83",
+            "7397",
             "mimo-v2.5Xiaomi · MIT",
             "1434±4",
             "44,261",
@@ -1654,8 +1694,8 @@
             "Context"
           ],
           "cells": [
-            "82",
-            "7195",
+            "84",
+            "7397",
             "gpt-5-highOpenAI · Proprietary",
             "1434±5",
             "31,887",
@@ -1674,8 +1714,8 @@
             "Context"
           ],
           "cells": [
-            "83",
-            "65103",
+            "85",
+            "67105",
             "glm-5v-turboZ.ai · Proprietary",
             "1434±7",
             "9,294",
@@ -1694,8 +1734,8 @@
             "Context"
           ],
           "cells": [
-            "84",
-            "7198",
+            "86",
+            "73100",
             "gemini-3.1-flash-lite-previewGoogle · Proprietary",
             "1432±4",
             "60,164",
@@ -1714,8 +1754,8 @@
             "Context"
           ],
           "cells": [
-            "85",
-            "71107",
+            "87",
+            "73109",
             "kimi-k2.5-instantMoonshot · Modified MIT",
             "1431±7",
             "8,146",
@@ -1734,8 +1774,8 @@
             "Context"
           ],
           "cells": [
-            "86",
-            "74100",
+            "88",
+            "76102",
             "grok-4-1-fast-reasoningSpaceXAI · Proprietary",
             "1431±3",
             "56,476",
@@ -1754,8 +1794,8 @@
             "Context"
           ],
           "cells": [
-            "87",
-            "74102",
+            "89",
+            "76104",
             "o3-2025-04-16OpenAI · Proprietary",
             "1431±4",
             "59,667",
@@ -1774,8 +1814,28 @@
             "Context"
           ],
           "cells": [
-            "88",
-            "73108",
+            "",
+            "N/A",
+            "Thinking Machinesinkling-smallThinky · Apache 2.0",
+            "1431±11AutoEval",
+            "N/A",
+            "N/A",
+            "N/A"
+          ]
+        },
+        {
+          "headers": [
+            "Rank",
+            "Rank Spread",
+            "Model",
+            "Score",
+            "Votes",
+            "Price $/M",
+            "Context"
+          ],
+          "cells": [
+            "90",
+            "75110",
             "mimo-v2-omniXiaomi · Proprietary",
             "1430±6",
             "19,224",
@@ -1794,8 +1854,8 @@
             "Context"
           ],
           "cells": [
-            "89",
-            "76103",
+            "91",
+            "78105",
             "kimi-k2-thinking-turboMoonshot · Modified MIT",
             "1430±3",
             "61,733",
@@ -1814,8 +1874,8 @@
             "Context"
           ],
           "cells": [
-            "90",
-            "74114",
+            "92",
+            "76116",
             "mistral-medium-3.5Mistral · Modified MIT",
             "1427±7",
             "10,917",
@@ -1834,8 +1894,8 @@
             "Context"
           ],
           "cells": [
-            "91",
-            "78110",
+            "93",
+            "80112",
             "gpt-5-chatOpenAI · Proprietary",
             "1427±4",
             "31,517",
@@ -1854,8 +1914,8 @@
             "Context"
           ],
           "cells": [
-            "92",
-            "76115",
+            "94",
+            "78117",
             "nvidia-nemotron-3-ultra-550b-a55b-nvfp4Nvidia · OpenMDW-1.1",
             "1426±7",
             "10,583",
@@ -1874,8 +1934,8 @@
             "Context"
           ],
           "cells": [
-            "93",
-            "73118",
+            "95",
+            "75120",
             "amazon-nova-experimental-chat-26-02-10Amazon · Proprietary",
             "1426±10",
             "3,395",
@@ -1894,8 +1954,8 @@
             "Context"
           ],
           "cells": [
-            "94",
-            "83113",
+            "96",
+            "85115",
             "glm-4.6Z.ai · MIT",
             "1425±4",
             "35,592",
@@ -1914,8 +1974,8 @@
             "Context"
           ],
           "cells": [
-            "95",
-            "84112",
+            "97",
+            "86114",
             "deepseek-v3.2DeepSeek · MIT",
             "1425±4",
             "47,019",
@@ -1934,8 +1994,8 @@
             "Context"
           ],
           "cells": [
-            "96",
-            "78116",
+            "98",
+            "80118",
             "deepseek-v3.2-exp-thinkingDeepSeek · MIT",
             "1425±7",
             "9,061",
@@ -1954,8 +2014,8 @@
             "Context"
           ],
           "cells": [
-            "97",
-            "83114",
+            "99",
+            "85116",
             "Anthropicclaude-opus-4-20250514-thinking-16kAnthropic · Proprietary",
             "1425±4",
             "36,843",
@@ -1974,8 +2034,8 @@
             "Context"
           ],
           "cells": [
-            "98",
-            "79116",
+            "100",
+            "81118",
             "qwen3-max-2025-09-23Alibaba · Proprietary",
             "1424±6",
             "9,140",
@@ -1994,8 +2054,8 @@
             "Context"
           ],
           "cells": [
-            "99",
-            "88114",
+            "101",
+            "90116",
             "qwen3-235b-a22b-instruct-2507Alibaba · Apache 2.0",
             "1423±3",
             "96,779",
@@ -2014,8 +2074,8 @@
             "Context"
           ],
           "cells": [
-            "100",
-            "83118",
+            "102",
+            "85120",
             "deepseek-v3.2-expDeepSeek · MIT",
             "1423±6",
             "11,906",
@@ -2034,8 +2094,8 @@
             "Context"
           ],
           "cells": [
-            "101",
-            "88115",
+            "103",
+            "90117",
             "deepseek-v3.2-thinkingDeepSeek · MIT",
             "1423±4",
             "40,851",
@@ -2054,8 +2114,8 @@
             "Context"
           ],
           "cells": [
-            "102",
-            "85118",
+            "104",
+            "87120",
             "deepseek-r1-0528DeepSeek · MIT",
             "1422±6",
             "18,424",
@@ -2074,8 +2134,8 @@
             "Context"
           ],
           "cells": [
-            "103",
-            "84122",
+            "105",
+            "86124",
             "grok-4-fast-chatSpaceXAI · Proprietary",
             "1421±8",
             "6,805",
@@ -2094,8 +2154,8 @@
             "Context"
           ],
           "cells": [
-            "104",
-            "86125",
+            "106",
+            "88127",
             "ernie-5.0-preview-1022Baidu · Proprietary",
             "1418±9",
             "4,702",
@@ -2114,8 +2174,8 @@
             "Context"
           ],
           "cells": [
-            "105",
-            "89125",
+            "107",
+            "91127",
             "kimi-k2-0905-previewMoonshot · Modified MIT",
             "1418±6",
             "11,765",
@@ -2134,8 +2194,8 @@
             "Context"
           ],
           "cells": [
-            "106",
-            "91123",
+            "108",
+            "93125",
             "kimi-k2-0711-previewMoonshot · Modified MIT",
             "1418±5",
             "27,592",
@@ -2154,8 +2214,8 @@
             "Context"
           ],
           "cells": [
-            "107",
-            "85128",
+            "109",
+            "87130",
             "deepseek-v3.1-terminus-thinkingDeepSeek · MIT",
             "1418±10",
             "3,457",
@@ -2174,8 +2234,8 @@
             "Context"
           ],
           "cells": [
-            "108",
-            "90125",
+            "110",
+            "92127",
             "deepseek-v3.1DeepSeek · MIT",
             "1417±6",
             "14,945",
@@ -2194,8 +2254,8 @@
             "Context"
           ],
           "cells": [
-            "109",
-            "92124",
+            "111",
+            "94126",
             "qwen3.5-122b-a10bAlibaba · Apache 2.0",
             "1417±4",
             "28,247",
@@ -2214,8 +2274,8 @@
             "Context"
           ],
           "cells": [
-            "110",
-            "90125",
+            "112",
+            "92127",
             "deepseek-v3.1-thinkingDeepSeek · MIT",
             "1417±7",
             "11,721",
@@ -2234,8 +2294,8 @@
             "Context"
           ],
           "cells": [
-            "111",
-            "93122",
+            "113",
+            "95124",
             "minimax-m2.7MiniMax · Modified MIT",
             "1417±4",
             "51,372",
@@ -2254,8 +2314,8 @@
             "Context"
           ],
           "cells": [
-            "112",
-            "88133",
+            "114",
+            "90135",
             "amazon-nova-experimental-chat-26-01-10Amazon · Proprietary",
             "1416±10",
             "3,395",
@@ -2274,8 +2334,8 @@
             "Context"
           ],
           "cells": [
-            "113",
-            "91126",
+            "115",
+            "93128",
             "qwen3-vl-235b-a22b-instructAlibaba · Apache 2.0",
             "1415±6",
             "11,489",
@@ -2294,8 +2354,8 @@
             "Context"
           ],
           "cells": [
-            "114",
-            "98125",
+            "116",
+            "100127",
             "mistral-large-3Mistral · Apache 2.0",
             "1415±3",
             "52,509",
@@ -2314,8 +2374,8 @@
             "Context"
           ],
           "cells": [
-            "115",
-            "88133",
+            "117",
+            "90135",
             "deepseek-v3.1-terminusDeepSeek · MIT",
             "1415±10",
             "3,690",
@@ -2334,8 +2394,8 @@
             "Context"
           ],
           "cells": [
-            "116",
-            "100125",
+            "118",
+            "102127",
             "gpt-4.1-2025-04-14OpenAI · Proprietary",
             "1414±4",
             "50,904",
@@ -2354,8 +2414,8 @@
             "Context"
           ],
           "cells": [
-            "117",
-            "100126",
+            "119",
+            "102128",
             "Anthropicclaude-opus-4-20250514Anthropic · Proprietary",
             "1413±4",
             "44,141",
@@ -2374,8 +2434,8 @@
             "Context"
           ],
           "cells": [
-            "118",
-            "103125",
+            "120",
+            "105127",
             "Anthropicclaude-haiku-4-5-20251001Anthropic · Proprietary",
             "1412±3",
             "110,068",
@@ -2394,8 +2454,8 @@
             "Context"
           ],
           "cells": [
-            "119",
-            "96134",
+            "121",
+            "98136",
             "Tencenthunyuan-hy3-previewTencent · tencent-hunyuan-community",
             "1412±8",
             "6,575",
@@ -2414,8 +2474,8 @@
             "Context"
           ],
           "cells": [
-            "120",
-            "103130",
+            "122",
+            "105132",
             "grok-3-preview-02-24SpaceXAI · Proprietary",
             "1411±4",
             "32,863",
@@ -2434,8 +2494,8 @@
             "Context"
           ],
           "cells": [
-            "121",
-            "103133",
+            "123",
+            "105135",
             "glm-4.5Z.ai · MIT",
             "1411±5",
             "24,277",
@@ -2454,8 +2514,8 @@
             "Context"
           ],
           "cells": [
-            "122",
-            "105127",
+            "124",
+            "107129",
             "gemini-2.5-flashGoogle · Proprietary",
             "1410±2",
             "124,020",
@@ -2474,8 +2534,8 @@
             "Context"
           ],
           "cells": [
-            "123",
-            "103133",
+            "125",
+            "105135",
             "grok-4-0709SpaceXAI · Proprietary",
             "1410±4",
             "41,317",
@@ -2494,8 +2554,8 @@
             "Context"
           ],
           "cells": [
-            "124",
-            "107130",
+            "126",
+            "109132",
             "mistral-medium-2508Mistral · Proprietary",
             "1409±3",
             "93,448",
@@ -2514,8 +2574,8 @@
             "Context"
           ],
           "cells": [
-            "125",
-            "106135",
+            "127",
+            "108137",
             "qwen3.5-27bAlibaba · Apache 2.0",
             "1408±4",
             "27,096",
@@ -2534,8 +2594,8 @@
             "Context"
           ],
           "cells": [
-            "126",
-            "116139",
+            "128",
+            "118141",
             "gemini-2.5-flash-preview-09-2025Google · Proprietary",
             "1404±4",
             "32,864",
@@ -2554,8 +2614,8 @@
             "Context"
           ],
           "cells": [
-            "127",
-            "114141",
+            "129",
+            "116143",
             "grok-4-fast-reasoningSpaceXAI · Proprietary",
             "1404±5",
             "18,691",
@@ -2574,8 +2634,8 @@
             "Context"
           ],
           "cells": [
-            "128",
-            "118142",
+            "130",
+            "120144",
             "qwen3-235b-a22b-no-thinkingAlibaba · Apache 2.0",
             "1403±5",
             "38,150",
@@ -2594,8 +2654,8 @@
             "Context"
           ],
           "cells": [
-            "129",
-            "120141",
+            "131",
+            "122143",
             "gpt-5.4-nano-highOpenAI · Proprietary",
             "1403±4",
             "58,091",
@@ -2614,8 +2674,8 @@
             "Context"
           ],
           "cells": [
-            "130",
-            "120142",
+            "132",
+            "122144",
             "o1-2024-12-17OpenAI · Proprietary",
             "1402±4",
             "27,807",
@@ -2634,8 +2694,8 @@
             "Context"
           ],
           "cells": [
-            "131",
-            "120142",
+            "133",
+            "122144",
             "qwen3-next-80b-a3b-instructAlibaba · Apache 2.0",
             "1401±5",
             "22,846",
@@ -2654,8 +2714,8 @@
             "Context"
           ],
           "cells": [
-            "132",
-            "118144",
+            "134",
+            "120146",
             "longcat-flash-chatMeituan · MIT",
             "1401±6",
             "11,380",
@@ -2674,8 +2734,8 @@
             "Context"
           ],
           "cells": [
-            "133",
-            "125144",
+            "135",
+            "127146",
             "Anthropicclaude-sonnet-4-20250514-thinking-32kAnthropic · Proprietary",
             "1399±4",
             "35,053",
@@ -2694,8 +2754,8 @@
             "Context"
           ],
           "cells": [
-            "134",
-            "124151",
+            "136",
+            "126153",
             "qwen3-235b-a22b-thinking-2507Alibaba · Apache 2.0",
             "1399±7",
             "8,983",
@@ -2714,8 +2774,8 @@
             "Context"
           ],
           "cells": [
-            "135",
-            "126149",
+            "137",
+            "128151",
             "deepseek-r1DeepSeek · MIT",
             "1398±5",
             "18,524",
@@ -2734,8 +2794,8 @@
             "Context"
           ],
           "cells": [
-            "136",
-            "126149",
+            "138",
+            "128151",
             "qwen3.5-flashAlibaba · Proprietary",
             "1397±4",
             "57,925",
@@ -2754,8 +2814,8 @@
             "Context"
           ],
           "cells": [
-            "137",
-            "126154",
+            "139",
+            "128156",
             "qwen3-vl-235b-a22b-thinkingAlibaba · Apache 2.0",
             "1396±7",
             "7,931",
@@ -2774,8 +2834,8 @@
             "Context"
           ],
           "cells": [
-            "138",
-            "127152",
+            "140",
+            "129154",
             "deepseek-v3-0324DeepSeek · MIT",
             "1395±4",
             "45,444",
@@ -2794,8 +2854,8 @@
             "Context"
           ],
           "cells": [
-            "139",
-            "127153",
+            "141",
+            "129155",
             "qwen3.5-35b-a3bAlibaba · Apache 2.0",
             "1395±4",
             "28,909",
@@ -2814,8 +2874,8 @@
             "Context"
           ],
           "cells": [
-            "140",
-            "117160",
+            "142",
+            "119162",
             "Tencenthunyuan-vision-1.5-thinkingTencent · Proprietary",
             "1395±12",
             "2,215",
@@ -2834,8 +2894,8 @@
             "Context"
           ],
           "cells": [
-            "141",
-            "129153",
+            "143",
+            "131155",
             "Stepfunstep-3.5-flashStepFun · Apache 2.0",
             "1395±4",
             "57,037",
@@ -2854,8 +2914,8 @@
             "Context"
           ],
           "cells": [
-            "142",
-            "126158",
+            "144",
+            "128160",
             "amazon-nova-experimental-chat-12-10Amazon · Proprietary",
             "1394±10",
             "3,675",
@@ -2874,8 +2934,8 @@
             "Context"
           ],
           "cells": [
-            "143",
-            "132154",
+            "145",
+            "134156",
             "mimo-v2-flash (non-thinking)Xiaomi · MIT",
             "1393±4",
             "46,276",
@@ -2894,8 +2954,8 @@
             "Context"
           ],
           "cells": [
-            "144",
-            "134158",
+            "146",
+            "136160",
             "minimax-m2.5MiniMax · Modified MIT",
             "1390±4",
             "40,783",
@@ -2914,8 +2974,8 @@
             "Context"
           ],
           "cells": [
-            "145",
-            "134158",
+            "147",
+            "136160",
             "gpt-5-mini-highOpenAI · Proprietary",
             "1390±5",
             "26,991",
@@ -2934,8 +2994,8 @@
             "Context"
           ],
           "cells": [
-            "146",
-            "134158",
+            "148",
+            "136160",
             "o4-mini-2025-04-16OpenAI · Proprietary",
             "1390±4",
             "45,385",
@@ -2954,8 +3014,8 @@
             "Context"
           ],
           "cells": [
-            "147",
-            "134158",
+            "149",
+            "136160",
             "Anthropicclaude-sonnet-4-20250514Anthropic · Proprietary",
             "1389±4",
             "40,241",
@@ -2974,8 +3034,8 @@
             "Context"
           ],
           "cells": [
-            "148",
-            "134158",
+            "150",
+            "136160",
             "o1-previewOpenAI · Proprietary",
             "1388±5",
             "31,122",
@@ -2994,8 +3054,8 @@
             "Context"
           ],
           "cells": [
-            "149",
-            "136160",
+            "151",
+            "138162",
             "qwen3-coder-480b-a35b-instructAlibaba · Apache 2.0",
             "1388±5",
             "25,681",
@@ -3014,8 +3074,8 @@
             "Context"
           ],
           "cells": [
-            "150",
-            "137158",
+            "152",
+            "139160",
             "Anthropicclaude-3-7-sonnet-20250219-thinking-32kAnthropic · Proprietary",
             "1388±4",
             "38,796",
@@ -3034,8 +3094,8 @@
             "Context"
           ],
           "cells": [
-            "151",
-            "136160",
+            "153",
+            "138162",
             "mimo-v2-flash (thinking)Xiaomi · MIT",
             "1387±6",
             "10,928",
@@ -3054,8 +3114,8 @@
             "Context"
           ],
           "cells": [
-            "152",
-            "138160",
+            "154",
+            "140162",
             "mistral-medium-2505Mistral · Proprietary",
             "1387±5",
             "33,177",
@@ -3074,8 +3134,8 @@
             "Context"
           ],
           "cells": [
-            "153",
-            "132163",
+            "155",
+            "134165",
             "Tencenthunyuan-t1-20250711Tencent · Proprietary",
             "1387±9",
             "4,697",
@@ -3094,8 +3154,8 @@
             "Context"
           ],
           "cells": [
-            "154",
-            "140161",
+            "156",
+            "142163",
             "minimax-m2.1-previewMiniMax · MIT",
             "1384±5",
             "17,065",
@@ -3114,8 +3174,8 @@
             "Context"
           ],
           "cells": [
-            "155",
-            "142162",
+            "157",
+            "144164",
             "qwen3-30b-a3b-instruct-2507Alibaba · Apache 2.0",
             "1383±5",
             "23,706",
@@ -3134,8 +3194,8 @@
             "Context"
           ],
           "cells": [
-            "156",
-            "142162",
+            "158",
+            "144164",
             "gpt-4.1-mini-2025-04-14OpenAI · Proprietary",
             "1383±4",
             "39,287",
@@ -3154,8 +3214,8 @@
             "Context"
           ],
           "cells": [
-            "157",
-            "142165",
+            "159",
+            "144167",
             "Tencenthunyuan-turbos-20250416Tencent · Proprietary",
             "1382±6",
             "10,716",
@@ -3174,8 +3234,8 @@
             "Context"
           ],
           "cells": [
-            "158",
-            "149165",
+            "160",
+            "151167",
             "gemini-2.5-flash-lite-preview-09-2025-no-thinkingGoogle · Proprietary",
             "1380±3",
             "47,159",
@@ -3194,8 +3254,8 @@
             "Context"
           ],
           "cells": [
-            "159",
-            "149167",
+            "161",
+            "151169",
             "trinity-large-previewApache 2.0",
             "1379±4",
             "29,688",
@@ -3214,8 +3274,8 @@
             "Context"
           ],
           "cells": [
-            "160",
-            "142175",
+            "162",
+            "144177",
             "glm-4.6vZ.ai · MIT",
             "1377±11",
             "2,796",
@@ -3234,8 +3294,8 @@
             "Context"
           ],
           "cells": [
-            "161",
-            "153170",
+            "163",
+            "155172",
             "qwen3-235b-a22bAlibaba · Apache 2.0",
             "1375±5",
             "26,244",
@@ -3254,8 +3314,8 @@
             "Context"
           ],
           "cells": [
-            "162",
-            "154170",
+            "164",
+            "156172",
             "gemini-2.5-flash-lite-preview-06-17-thinkingGoogle · Proprietary",
             "1374±5",
             "32,854",
@@ -3274,8 +3334,8 @@
             "Context"
           ],
           "cells": [
-            "163",
-            "156170",
+            "165",
+            "158172",
             "qwen2.5-maxAlibaba · Proprietary",
             "1374±4",
             "32,589",
@@ -3294,8 +3354,8 @@
             "Context"
           ],
           "cells": [
-            "164",
-            "157170",
+            "166",
+            "159172",
             "Anthropicclaude-3-5-sonnet-20241022Anthropic · Proprietary",
             "1373±3",
             "88,297",
@@ -3314,8 +3374,8 @@
             "Context"
           ],
           "cells": [
-            "165",
-            "157172",
+            "167",
+            "159174",
             "glm-4.5-airZ.ai · MIT",
             "1373±4",
             "31,042",
@@ -3334,8 +3394,8 @@
             "Context"
           ],
           "cells": [
-            "166",
-            "159174",
+            "168",
+            "161176",
             "Anthropicclaude-3-7-sonnet-20250219Anthropic · Proprietary",
             "1372±4",
             "43,144",
@@ -3354,8 +3414,8 @@
             "Context"
           ],
           "cells": [
-            "167",
-            "159177",
+            "169",
+            "161179",
             "qwen3-next-80b-a3b-thinkingAlibaba · Apache 2.0",
             "1369±6",
             "13,674",
@@ -3374,8 +3434,8 @@
             "Context"
           ],
           "cells": [
-            "168",
-            "160176",
+            "170",
+            "162178",
             "trinity-large-thinkingApache 2.0",
             "1369±5",
             "28,834",
@@ -3394,8 +3454,8 @@
             "Context"
           ],
           "cells": [
-            "169",
-            "160179",
+            "171",
+            "162181",
             "glm-4.7-flashZ.ai · MIT",
             "1368±6",
             "11,690",
@@ -3414,8 +3474,8 @@
             "Context"
           ],
           "cells": [
-            "170",
-            "160180",
+            "172",
+            "162182",
             "amazon-nova-experimental-chat-11-10Amazon · Proprietary",
             "1366±4",
             "25,252",
@@ -3434,8 +3494,8 @@
             "Context"
           ],
           "cells": [
-            "171",
-            "164179",
+            "173",
+            "166181",
             "gemma-3-27b-itGoogle · Gemma",
             "1366±4",
             "47,471",
@@ -3454,8 +3514,8 @@
             "Context"
           ],
           "cells": [
-            "172",
-            "165182",
+            "174",
+            "167184",
             "minimax-m1MiniMax · Apache 2.0",
             "1364±4",
             "35,135",
@@ -3474,8 +3534,8 @@
             "Context"
           ],
           "cells": [
-            "173",
-            "164184",
+            "175",
+            "166186",
             "o3-mini-highOpenAI · Proprietary",
             "1364±5",
             "18,589",
@@ -3494,8 +3554,8 @@
             "Context"
           ],
           "cells": [
-            "174",
-            "166189",
+            "176",
+            "168191",
             "grok-3-mini-highSpaceXAI · Proprietary",
             "1362±5",
             "16,938",
@@ -3514,8 +3574,8 @@
             "Context"
           ],
           "cells": [
-            "175",
-            "165194",
+            "177",
+            "167196",
             "nvidia-nemotron-3-super-120b-a12bNvidia · NVIDIA Open Model",
             "1361±7",
             "7,491",
@@ -3534,8 +3594,8 @@
             "Context"
           ],
           "cells": [
-            "176",
-            "168189",
+            "178",
+            "170191",
             "gemini-2.0-flash-001Google · Proprietary",
             "1360±4",
             "43,719",
@@ -3554,8 +3614,8 @@
             "Context"
           ],
           "cells": [
-            "177",
-            "169194",
+            "179",
+            "171196",
             "deepseek-v3DeepSeek · DeepSeek",
             "1359±5",
             "21,770",
@@ -3574,8 +3634,8 @@
             "Context"
           ],
           "cells": [
-            "178",
-            "169197",
+            "180",
+            "171199",
             "mistral-small-2506Mistral · Apache 2.0",
             "1357±5",
             "17,688",
@@ -3594,8 +3654,8 @@
             "Context"
           ],
           "cells": [
-            "179",
-            "172197",
+            "181",
+            "174199",
             "grok-3-mini-betaSpaceXAI · Proprietary",
             "1357±5",
             "22,674",
@@ -3614,8 +3674,8 @@
             "Context"
           ],
           "cells": [
-            "180",
-            "167202",
+            "182",
+            "169204",
             "intellect-3MIT",
             "1356±8",
             "5,328",
@@ -3634,8 +3694,8 @@
             "Context"
           ],
           "cells": [
-            "181",
-            "174201",
+            "183",
+            "176203",
             "Coherecommand-a-03-2025Cohere · CC-BY-NC-4.0",
             "1354±3",
             "56,196",
@@ -3654,8 +3714,8 @@
             "Context"
           ],
           "cells": [
-            "182",
-            "174202",
+            "184",
+            "176204",
             "gemini-2.0-flash-lite-preview-02-05Google · Proprietary",
             "1353±4",
             "24,955",
@@ -3674,8 +3734,8 @@
             "Context"
           ],
           "cells": [
-            "183",
-            "171203",
+            "185",
+            "173205",
             "glm-4.5vZ.ai · MIT",
             "1353±8",
             "4,955",
@@ -3694,8 +3754,8 @@
             "Context"
           ],
           "cells": [
-            "184",
-            "174202",
+            "186",
+            "176204",
             "gpt-oss-120bOpenAI · Apache 2.0",
             "1352±4",
             "30,615",
@@ -3714,8 +3774,8 @@
             "Context"
           ],
           "cells": [
-            "185",
-            "176202",
+            "187",
+            "178204",
             "gemini-1.5-pro-002Google · Proprietary",
             "1351±3",
             "55,606",
@@ -3734,8 +3794,8 @@
             "Context"
           ],
           "cells": [
-            "186",
-            "176204",
+            "188",
+            "178206",
             "amazon-nova-experimental-chat-10-20Amazon · Proprietary",
             "1349±6",
             "11,452",
@@ -3754,8 +3814,8 @@
             "Context"
           ],
           "cells": [
-            "187",
-            "172213",
+            "189",
+            "174215",
             "Tencenthunyuan-turbos-20250226Tencent · Proprietary",
             "1349±12",
             "2,220",
@@ -3774,8 +3834,8 @@
             "Context"
           ],
           "cells": [
-            "188",
-            "176206",
+            "190",
+            "178208",
             "Stepfunstep-3StepFun · Apache 2.0",
             "1348±7",
             "6,534",
@@ -3794,8 +3854,8 @@
             "Context"
           ],
           "cells": [
-            "189",
-            "180204",
+            "191",
+            "182206",
             "o3-miniOpenAI · Proprietary",
             "1348±4",
             "57,297",
@@ -3814,8 +3874,8 @@
             "Context"
           ],
           "cells": [
-            "190",
-            "173214",
+            "192",
+            "175216",
             "amazon-nova-experimental-chat-10-09Amazon · Proprietary",
             "1348±11",
             "2,823",
@@ -3834,8 +3894,8 @@
             "Context"
           ],
           "cells": [
-            "191",
-            "173216",
+            "193",
+            "175218",
             "llama-3.1-nemotron-ultra-253b-v1Nvidia · Nvidia Open Model",
             "1348±12",
             "2,549",
@@ -3854,8 +3914,8 @@
             "Context"
           ],
           "cells": [
-            "192",
-            "174213",
+            "194",
+            "176215",
             "qwen3-32bAlibaba · Apache 2.0",
             "1347±9",
             "3,926",
@@ -3874,8 +3934,8 @@
             "Context"
           ],
           "cells": [
-            "193",
-            "174214",
+            "195",
+            "176216",
             "mercury-2Inception AI · Proprietary",
             "1347±11",
             "3,099",
@@ -3894,8 +3954,8 @@
             "Context"
           ],
           "cells": [
-            "194",
-            "178212",
+            "196",
+            "180214",
             "ling-flash-2.0Ant Group · MIT",
             "1346±7",
             "6,993",
@@ -3914,8 +3974,8 @@
             "Context"
           ],
           "cells": [
-            "195",
-            "176213",
+            "197",
+            "178215",
             "qwen-plus-0125Alibaba · Proprietary",
             "1346±8",
             "5,819",
@@ -3934,8 +3994,8 @@
             "Context"
           ],
           "cells": [
-            "196",
-            "176213",
+            "198",
+            "178215",
             "minimax-m2MiniMax · Apache 2.0",
             "1346±8",
             "6,861",
@@ -3954,8 +4014,8 @@
             "Context"
           ],
           "cells": [
-            "197",
-            "181206",
+            "199",
+            "183208",
             "gpt-4o-2024-05-13OpenAI · Proprietary",
             "1346±3",
             "112,881",
@@ -3974,8 +4034,8 @@
             "Context"
           ],
           "cells": [
-            "198",
-            "178216",
+            "200",
+            "180218",
             "nvidia-llama-3.3-nemotron-super-49b-v1.5Nvidia · Nvidia Open",
             "1343±10",
             "3,344",
@@ -3994,8 +4054,8 @@
             "Context"
           ],
           "cells": [
-            "199",
-            "180216",
+            "201",
+            "182218",
             "glm-4-plus-0111Z.ai · Proprietary",
             "1343±8",
             "5,760",
@@ -4014,8 +4074,8 @@
             "Context"
           ],
           "cells": [
-            "200",
-            "185212",
+            "202",
+            "187214",
             "Anthropicclaude-3-5-sonnet-20240620Anthropic · Proprietary",
             "1343±3",
             "82,419",
@@ -4034,8 +4094,8 @@
             "Context"
           ],
           "cells": [
-            "201",
-            "180217",
+            "203",
+            "182219",
             "gemma-3-12b-itGoogle · Gemma",
             "1342±10",
             "3,829",
@@ -4054,8 +4114,8 @@
             "Context"
           ],
           "cells": [
-            "202",
-            "178221",
+            "204",
+            "180223",
             "Tencenthunyuan-turbo-0110Tencent · Proprietary",
             "1341±12",
             "2,290",
@@ -4074,8 +4134,8 @@
             "Context"
           ],
           "cells": [
-            "203",
-            "186220",
+            "205",
+            "188222",
             "gpt-5-nano-highOpenAI · Proprietary",
             "1337±7",
             "8,257",
@@ -4094,8 +4154,8 @@
             "Context"
           ],
           "cells": [
-            "204",
-            "190216",
+            "206",
+            "192218",
             "o1-miniOpenAI · Proprietary",
             "1337±4",
             "51,981",
@@ -4114,8 +4174,8 @@
             "Context"
           ],
           "cells": [
-            "205",
-            "188220",
+            "207",
+            "190222",
             "nova-2-liteAmazon · Proprietary",
             "1337±6",
             "12,213",
@@ -4134,8 +4194,8 @@
             "Context"
           ],
           "cells": [
-            "206",
-            "190219",
+            "208",
+            "192221",
             "qwq-32bAlibaba · Apache 2.0",
             "1336±4",
             "25,366",
@@ -4154,8 +4214,8 @@
             "Context"
           ],
           "cells": [
-            "207",
-            "190217",
+            "209",
+            "192219",
             "grok-2-2024-08-13SpaceXAI · Proprietary",
             "1336±4",
             "63,498",
@@ -4174,8 +4234,8 @@
             "Context"
           ],
           "cells": [
-            "208",
-            "190220",
+            "210",
+            "192222",
             "gemini-advanced-0514Google · Proprietary",
             "1335±5",
             "50,148",
@@ -4194,8 +4254,8 @@
             "Context"
           ],
           "cells": [
-            "209",
-            "190220",
+            "211",
+            "192222",
             "gpt-4o-2024-08-06OpenAI · Proprietary",
             "1335±4",
             "45,499",
@@ -4214,8 +4274,8 @@
             "Context"
           ],
           "cells": [
-            "210",
-            "192220",
+            "212",
+            "194222",
             "Metallama-3.1-405b-instruct-bf16Meta · Llama 3.1 Community",
             "1335±4",
             "41,375",
@@ -4234,8 +4294,8 @@
             "Context"
           ],
           "cells": [
-            "211",
-            "188227",
+            "213",
+            "190229",
             "Stepfunstep-2-16k-exp-202412StepFun · Proprietary",
             "1334±9",
             "4,833",
@@ -4254,8 +4314,8 @@
             "Context"
           ],
           "cells": [
-            "212",
-            "196221",
+            "214",
+            "198223",
             "Metallama-3.1-405b-instruct-fp8Meta · Llama 3.1 Community",
             "1333±4",
             "59,656",
@@ -4274,8 +4334,8 @@
             "Context"
           ],
           "cells": [
-            "213",
-            "198229",
+            "215",
+            "200231",
             "olmo-3.1-32b-instructAi2 · Apache 2.0",
             "1330±6",
             "12,200",
@@ -4294,8 +4354,8 @@
             "Context"
           ],
           "cells": [
-            "214",
-            "180251",
+            "216",
+            "182253",
             "molmo-2-8bAi2 · Apache 2.0",
             "1329±21",
             "799",
@@ -4314,8 +4374,8 @@
             "Context"
           ],
           "cells": [
-            "215",
-            "202231",
+            "217",
+            "204233",
             "yi-lightningProprietary",
             "1328±5",
             "27,332",
@@ -4334,8 +4394,8 @@
             "Context"
           ],
           "cells": [
-            "216",
-            "190243",
+            "218",
+            "192245",
             "llama-3.3-nemotron-49b-super-v1Nvidia · Nvidia",
             "1328±12",
             "2,218",
@@ -4354,8 +4414,8 @@
             "Context"
           ],
           "cells": [
-            "217",
-            "204232",
+            "219",
+            "206234",
             "qwen3-30b-a3bAlibaba · Apache 2.0",
             "1327±5",
             "26,450",
@@ -4374,8 +4434,8 @@
             "Context"
           ],
           "cells": [
-            "218",
-            "205232",
+            "220",
+            "207234",
             "Metallama-4-maverick-17b-128e-instructMeta · Llama 4",
             "1327±4",
             "39,934",
@@ -4394,8 +4454,8 @@
             "Context"
           ],
           "cells": [
-            "219",
-            "198242",
+            "221",
+            "200244",
             "Tencenthunyuan-large-2025-02-10Tencent · Proprietary",
             "1326±10",
             "3,738",
@@ -4414,8 +4474,8 @@
             "Context"
           ],
           "cells": [
-            "220",
-            "212237",
+            "222",
+            "214239",
             "gpt-4-turbo-2024-04-09OpenAI · Proprietary",
             "1324±4",
             "98,114",
@@ -4434,8 +4494,8 @@
             "Context"
           ],
           "cells": [
-            "221",
-            "212237",
+            "223",
+            "214239",
             "Anthropicclaude-3-5-haiku-20241022Anthropic · Proprietary",
             "1324±3",
             "69,912",
@@ -4454,8 +4514,8 @@
             "Context"
           ],
           "cells": [
-            "222",
-            "212238",
+            "224",
+            "214240",
             "gemini-1.5-pro-001Google · Proprietary",
             "1324±4",
             "79,138",
@@ -4474,8 +4534,8 @@
             "Context"
           ],
           "cells": [
-            "223",
-            "204243",
+            "225",
+            "206245",
             "deepseek-v2.5-1210DeepSeek · DeepSeek",
             "1323±8",
             "6,795",
@@ -4494,8 +4554,8 @@
             "Context"
           ],
           "cells": [
-            "224",
-            "212239",
+            "226",
+            "214241",
             "Metallama-4-scout-17b-16e-instructMeta · Llama",
             "1323±5",
             "30,259",
@@ -4514,8 +4574,8 @@
             "Context"
           ],
           "cells": [
-            "225",
-            "210243",
+            "227",
+            "212245",
             "gpt-4.1-nano-2025-04-14OpenAI · Proprietary",
             "1322±8",
             "6,103",
@@ -4534,8 +4594,8 @@
             "Context"
           ],
           "cells": [
-            "226",
-            "213239",
+            "228",
+            "215241",
             "Anthropicclaude-3-opus-20240229Anthropic · Proprietary",
             "1322±3",
             "194,909",
@@ -4554,8 +4614,8 @@
             "Context"
           ],
           "cells": [
-            "227",
-            "212245",
+            "229",
+            "214247",
             "ring-flash-2.0Ant Group · MIT",
             "1320±7",
             "7,132",
@@ -4574,8 +4634,8 @@
             "Context"
           ],
           "cells": [
-            "228",
-            "212245",
+            "230",
+            "214247",
             "Stepfunstep-1o-turbo-202506StepFun · Proprietary",
             "1320±7",
             "9,018",
@@ -4594,8 +4654,8 @@
             "Context"
           ],
           "cells": [
-            "229",
-            "213243",
+            "231",
+            "215245",
             "glm-4-plusZ.ai · Proprietary",
             "1319±5",
             "26,126",
@@ -4614,8 +4674,8 @@
             "Context"
           ],
           "cells": [
-            "230",
-            "217243",
+            "232",
+            "219245",
             "Metallama-3.3-70b-instructMeta · Llama-3.3",
             "1318±3",
             "54,712",
@@ -4634,8 +4694,8 @@
             "Context"
           ],
           "cells": [
-            "231",
-            "215245",
+            "233",
+            "217247",
             "gemma-3n-e4b-itGoogle · Gemma",
             "1318±5",
             "22,553",
@@ -4654,8 +4714,8 @@
             "Context"
           ],
           "cells": [
-            "232",
-            "214246",
+            "234",
+            "216248",
             "qwen-max-0919Alibaba · Qwen",
             "1318±6",
             "16,478",
@@ -4674,8 +4734,8 @@
             "Context"
           ],
           "cells": [
-            "233",
-            "217243",
+            "235",
+            "219245",
             "gpt-4o-mini-2024-07-18OpenAI · Proprietary",
             "1318±4",
             "68,707",
@@ -4694,8 +4754,8 @@
             "Context"
           ],
           "cells": [
-            "234",
-            "214249",
+            "236",
+            "216251",
             "gpt-oss-20bOpenAI · Apache 2.0",
             "1317±6",
             "10,621",
@@ -4714,8 +4774,8 @@
             "Context"
           ],
           "cells": [
-            "235",
-            "217250",
+            "237",
+            "219252",
             "nvidia-nemotron-3-nano-30b-a3b-bf16Nvidia · NVIDIA Open Model",
             "1316±6",
             "15,492",
@@ -4734,8 +4794,8 @@
             "Context"
           ],
           "cells": [
-            "236",
-            "217251",
+            "238",
+            "219253",
             "qwen2.5-plus-1127Alibaba · Proprietary",
             "1315±6",
             "10,187",
@@ -4754,8 +4814,8 @@
             "Context"
           ],
           "cells": [
-            "237",
-            "220251",
+            "239",
+            "222253",
             "athene-v2-chatNexusFlow",
             "1314±5",
             "24,739",
@@ -4774,8 +4834,8 @@
             "Context"
           ],
           "cells": [
-            "238",
-            "222250",
+            "240",
+            "224252",
             "mistral-large-2407Mistral · Mistral Research",
             "1314±4",
             "45,459",
@@ -4794,8 +4854,8 @@
             "Context"
           ],
           "cells": [
-            "239",
-            "222251",
+            "241",
+            "224253",
             "gpt-4-0125-previewOpenAI · Proprietary",
             "1313±4",
             "93,439",
@@ -4814,8 +4874,8 @@
             "Context"
           ],
           "cells": [
-            "240",
-            "223251",
+            "242",
+            "225253",
             "gpt-4-1106-previewOpenAI · Proprietary",
             "1312±4",
             "100,105",
@@ -4834,8 +4894,8 @@
             "Context"
           ],
           "cells": [
-            "241",
-            "217255",
+            "243",
+            "219257",
             "Tencenthunyuan-standard-2025-02-10Tencent · Proprietary",
             "1311±10",
             "3,904",
@@ -4854,8 +4914,8 @@
             "Context"
           ],
           "cells": [
-            "242",
-            "229254",
+            "244",
+            "231256",
             "gemini-1.5-flash-002Google · Proprietary",
             "1309±4",
             "34,902",
@@ -4874,8 +4934,8 @@
             "Context"
           ],
           "cells": [
-            "243",
-            "233254",
+            "245",
+            "235256",
             "grok-2-mini-2024-08-13SpaceXAI · Proprietary",
             "1308±4",
             "52,567",
@@ -4894,8 +4954,8 @@
             "Context"
           ],
           "cells": [
-            "244",
-            "233255",
+            "246",
+            "235257",
             "deepseek-v2.5DeepSeek · DeepSeek",
             "1307±5",
             "24,572",
@@ -4914,8 +4974,8 @@
             "Context"
           ],
           "cells": [
-            "245",
-            "222256",
+            "247",
+            "224258",
             "granite-4.1-8bIBM · Apache 2.0",
             "1307±10",
             "4,001",
@@ -4934,8 +4994,8 @@
             "Context"
           ],
           "cells": [
-            "246",
-            "233255",
+            "248",
+            "235257",
             "athene-70b-0725CC-BY-NC-4.0",
             "1306±6",
             "19,621",
@@ -4954,8 +5014,8 @@
             "Context"
           ],
           "cells": [
-            "247",
-            "219262",
+            "249",
+            "221264",
             "mercuryInception AI · Proprietary",
             "1306±14",
             "1,949",
@@ -4974,8 +5034,8 @@
             "Context"
           ],
           "cells": [
-            "248",
-            "229255",
+            "250",
+            "231257",
             "olmo-3-32b-thinkAi2 · Apache 2.0",
             "1306±8",
             "5,931",
@@ -4994,8 +5054,8 @@
             "Context"
           ],
           "cells": [
-            "249",
-            "236255",
+            "251",
+            "238257",
             "mistral-large-2411Mistral · MRL",
             "1305±4",
             "28,073",
@@ -5014,8 +5074,8 @@
             "Context"
           ],
           "cells": [
-            "250",
-            "234255",
+            "252",
+            "236257",
             "magistral-medium-2506Mistral · Proprietary",
             "1304±6",
             "11,618",
@@ -5034,8 +5094,8 @@
             "Context"
           ],
           "cells": [
-            "251",
-            "241255",
+            "253",
+            "243257",
             "mistral-small-3.1-24b-instruct-2503Mistral · Apache 2.0",
             "1303±5",
             "33,183",
@@ -5054,8 +5114,8 @@
             "Context"
           ],
           "cells": [
-            "252",
-            "232262",
+            "254",
+            "234264",
             "gemma-3-4b-itGoogle · Gemma",
             "1303±9",
             "4,171",
@@ -5074,8 +5134,8 @@
             "Context"
           ],
           "cells": [
-            "253",
-            "241255",
+            "255",
+            "243257",
             "qwen2.5-72b-instructAlibaba · Qwen",
             "1303±4",
             "39,406",
@@ -5094,8 +5154,8 @@
             "Context"
           ],
           "cells": [
-            "254",
-            "241265",
+            "256",
+            "243267",
             "llama-3.1-nemotron-70b-instructNvidia · Llama 3.1",
             "1299±8",
             "7,140",
@@ -5114,8 +5174,8 @@
             "Context"
           ],
           "cells": [
-            "255",
-            "243267",
+            "257",
+            "245269",
             "Tencenthunyuan-large-visionTencent · Proprietary",
             "1294±9",
             "5,364",
@@ -5134,8 +5194,8 @@
             "Context"
           ],
           "cells": [
-            "256",
-            "251266",
+            "258",
+            "253268",
             "Metallama-3.1-70b-instructMeta · Llama 3.1 Community",
             "1293±4",
             "55,240",
@@ -5154,8 +5214,8 @@
             "Context"
           ],
           "cells": [
-            "257",
-            "252267",
+            "259",
+            "254269",
             "amazon-nova-pro-v1.0Amazon · Proprietary",
             "1290±5",
             "24,745",
@@ -5174,8 +5234,8 @@
             "Context"
           ],
           "cells": [
-            "258",
-            "252270",
+            "260",
+            "254272",
             "jamba-1.5-largeJamba Open",
             "1289±7",
             "8,662",
@@ -5194,8 +5254,8 @@
             "Context"
           ],
           "cells": [
-            "259",
-            "254267",
+            "261",
+            "256269",
             "gemma-2-27b-itGoogle · Gemma license",
             "1289±3",
             "75,754",
@@ -5214,8 +5274,8 @@
             "Context"
           ],
           "cells": [
-            "260",
-            "252270",
+            "262",
+            "254272",
             "reka-core-20240904Proprietary",
             "1288±7",
             "7,312",
@@ -5234,8 +5294,8 @@
             "Context"
           ],
           "cells": [
-            "261",
-            "252275",
+            "263",
+            "254277",
             "ibm-granite-h-smallIBM · Apache 2.0",
             "1287±8",
             "5,676",
@@ -5254,8 +5314,8 @@
             "Context"
           ],
           "cells": [
-            "262",
-            "254269",
+            "264",
+            "256271",
             "gpt-4-0314OpenAI · Proprietary",
             "1287±5",
             "54,173",
@@ -5274,8 +5334,8 @@
             "Context"
           ],
           "cells": [
-            "263",
-            "255270",
+            "265",
+            "257272",
             "gemini-1.5-flash-001Google · Proprietary",
             "1286±5",
             "62,833",
@@ -5294,8 +5354,8 @@
             "Context"
           ],
           "cells": [
-            "264",
-            "252276",
+            "266",
+            "254278",
             "llama-3.1-nemotron-51b-instructNvidia · Llama 3.1",
             "1286±10",
             "3,749",
@@ -5314,8 +5374,8 @@
             "Context"
           ],
           "cells": [
-            "265",
-            "252276",
+            "267",
+            "254278",
             "llama-3.1-tulu-3-70bAi2 · Llama 3.1",
             "1286±10",
             "2,846",
@@ -5334,8 +5394,8 @@
             "Context"
           ],
           "cells": [
-            "266",
-            "254276",
+            "268",
+            "256278",
             "olmo-3.1-32b-thinkAi2 · Apache 2.0",
             "1285±7",
             "8,496",
@@ -5354,8 +5414,8 @@
             "Context"
           ],
           "cells": [
-            "267",
-            "259276",
+            "269",
+            "261278",
             "Anthropicclaude-3-sonnet-20240229Anthropic · Proprietary",
             "1281±4",
             "109,284",
@@ -5374,8 +5434,8 @@
             "Context"
           ],
           "cells": [
-            "268",
-            "256276",
+            "270",
+            "258278",
             "gemma-2-9b-it-simpoMIT",
             "1280±7",
             "10,072",
@@ -5394,8 +5454,8 @@
             "Context"
           ],
           "cells": [
-            "269",
-            "260277",
+            "271",
+            "262279",
             "nemotron-4-340b-instructNvidia · NVIDIA Open Model",
             "1277±5",
             "19,659",
@@ -5414,8 +5474,8 @@
             "Context"
           ],
           "cells": [
-            "270",
-            "263276",
+            "272",
+            "265278",
             "Metallama-3-70b-instructMeta · Llama 3 Community",
             "1276±4",
             "156,876",
@@ -5434,8 +5494,8 @@
             "Context"
           ],
           "cells": [
-            "271",
-            "259279",
+            "273",
+            "261281",
             "Coherecommand-r-plus-08-2024Cohere · CC-BY-NC-4.0",
             "1276±7",
             "9,866",
@@ -5454,8 +5514,8 @@
             "Context"
           ],
           "cells": [
-            "272",
-            "263277",
+            "274",
+            "265279",
             "gpt-4-0613OpenAI · Proprietary",
             "1275±4",
             "88,723",
@@ -5474,8 +5534,8 @@
             "Context"
           ],
           "cells": [
-            "273",
-            "263279",
+            "275",
+            "265281",
             "mistral-small-24b-instruct-2501Mistral · Apache 2.0",
             "1274±6",
             "14,681",
@@ -5494,8 +5554,8 @@
             "Context"
           ],
           "cells": [
-            "274",
-            "263280",
+            "276",
+            "265282",
             "glm-4-0520Z.ai · Proprietary",
             "1273±7",
             "9,788",
@@ -5514,8 +5574,8 @@
             "Context"
           ],
           "cells": [
-            "275",
-            "263282",
+            "277",
+            "265284",
             "reka-flash-20240904Proprietary",
             "1272±7",
             "7,536",
@@ -5534,8 +5594,8 @@
             "Context"
           ],
           "cells": [
-            "276",
-            "264284",
+            "278",
+            "266286",
             "qwen2.5-coder-32b-instructAlibaba · Apache 2.0",
             "1270±8",
             "5,432",
@@ -5554,8 +5614,8 @@
             "Context"
           ],
           "cells": [
-            "277",
-            "270285",
+            "279",
+            "272287",
             "Coherec4ai-aya-expanse-32bCohere · CC-BY-NC-4.0",
             "1267±5",
             "27,124",
@@ -5574,8 +5634,8 @@
             "Context"
           ],
           "cells": [
-            "278",
-            "272284",
+            "280",
+            "274286",
             "gemma-2-9b-itGoogle · Gemma license",
             "1267±4",
             "54,611",
@@ -5594,8 +5654,8 @@
             "Context"
           ],
           "cells": [
-            "279",
-            "272286",
+            "281",
+            "274288",
             "deepseek-coder-v2DeepSeek · DeepSeek License",
             "1265±6",
             "15,147",
@@ -5614,8 +5674,8 @@
             "Context"
           ],
           "cells": [
-            "280",
-            "274287",
+            "282",
+            "276289",
             "qwen2-72b-instructAlibaba · Qianwen LICENSE",
             "1261±5",
             "37,325",
@@ -5634,8 +5694,8 @@
             "Context"
           ],
           "cells": [
-            "281",
-            "275286",
+            "283",
+            "277288",
             "Coherecommand-r-plusCohere · CC-BY-NC-4.0",
             "1261±4",
             "77,554",
@@ -5654,8 +5714,8 @@
             "Context"
           ],
           "cells": [
-            "282",
-            "276286",
+            "284",
+            "278288",
             "Anthropicclaude-3-haiku-20240307Anthropic · Proprietary",
             "1261±4",
             "117,701",
@@ -5674,8 +5734,8 @@
             "Context"
           ],
           "cells": [
-            "283",
-            "275287",
+            "285",
+            "277289",
             "amazon-nova-lite-v1.0Amazon · Proprietary",
             "1260±5",
             "19,372",
@@ -5694,8 +5754,8 @@
             "Context"
           ],
           "cells": [
-            "284",
-            "276287",
+            "286",
+            "278289",
             "gemini-1.5-flash-8b-001Google · Proprietary",
             "1259±4",
             "35,558",
@@ -5714,8 +5774,8 @@
             "Context"
           ],
           "cells": [
-            "285",
-            "279287",
+            "287",
+            "281289",
             "phi-4Microsoft · MIT",
             "1256±5",
             "24,126",
@@ -5734,8 +5794,8 @@
             "Context"
           ],
           "cells": [
-            "286",
-            "278293",
+            "288",
+            "280295",
             "olmo-2-0325-32b-instructAi2 · Apache-2.0",
             "1251±11",
             "3,334",
@@ -5754,8 +5814,8 @@
             "Context"
           ],
           "cells": [
-            "287",
-            "282293",
+            "289",
+            "284295",
             "Coherecommand-r-08-2024Cohere · CC-BY-NC-4.0",
             "1250±7",
             "10,140",
@@ -5774,8 +5834,8 @@
             "Context"
           ],
           "cells": [
-            "288",
-            "286296",
+            "290",
+            "288298",
             "mistral-large-2402Mistral · Proprietary",
             "1242±5",
             "62,436",
@@ -5794,8 +5854,8 @@
             "Context"
           ],
           "cells": [
-            "289",
-            "286296",
+            "291",
+            "288298",
             "amazon-nova-micro-v1.0Amazon · Proprietary",
             "1241±5",
             "19,364",
@@ -5814,8 +5874,8 @@
             "Context"
           ],
           "cells": [
-            "290",
-            "286298",
+            "292",
+            "288300",
             "jamba-1.5-miniJamba Open",
             "1239±7",
             "8,858",
@@ -5834,8 +5894,8 @@
             "Context"
           ],
           "cells": [
-            "291",
-            "286303",
+            "293",
+            "288305",
             "ministral-8b-2410Mistral · MRL",
             "1237±9",
             "4,781",
@@ -5854,8 +5914,8 @@
             "Context"
           ],
           "cells": [
-            "292",
-            "286303",
+            "294",
+            "288305",
             "gemini-pro-dev-apiGoogle · Proprietary",
             "1236±7",
             "18,354",
@@ -5874,8 +5934,8 @@
             "Context"
           ],
           "cells": [
-            "293",
-            "288303",
+            "295",
+            "290305",
             "qwen1.5-110b-chatAlibaba · Qianwen LICENSE",
             "1234±6",
             "26,195",
@@ -5894,8 +5954,8 @@
             "Context"
           ],
           "cells": [
-            "294",
-            "286306",
+            "296",
+            "288308",
             "Tencenthunyuan-standard-256kTencent · Proprietary",
             "1233±12",
             "2,728",
@@ -5914,8 +5974,8 @@
             "Context"
           ],
           "cells": [
-            "295",
-            "288305",
+            "297",
+            "290307",
             "reka-flash-21b-20240226-onlineProprietary",
             "1233±7",
             "15,450",
@@ -5934,8 +5994,8 @@
             "Context"
           ],
           "cells": [
-            "296",
-            "288304",
+            "298",
+            "290306",
             "qwen1.5-72b-chatAlibaba · Qianwen LICENSE",
             "1233±5",
             "39,302",
@@ -5954,8 +6014,8 @@
             "Context"
           ],
           "cells": [
-            "297",
-            "290305",
+            "299",
+            "292307",
             "mixtral-8x22b-instruct-v0.1Mistral · Apache 2.0",
             "1229±5",
             "51,416",
@@ -5974,8 +6034,8 @@
             "Context"
           ],
           "cells": [
-            "298",
-            "291306",
+            "300",
+            "293308",
             "Coherecommand-rCohere · CC-BY-NC-4.0",
             "1226±5",
             "54,036",
@@ -5994,8 +6054,8 @@
             "Context"
           ],
           "cells": [
-            "299",
-            "291306",
+            "301",
+            "293308",
             "reka-flash-21b-20240226Proprietary",
             "1226±6",
             "24,806",
@@ -6014,8 +6074,8 @@
             "Context"
           ],
           "cells": [
-            "300",
-            "291306",
+            "302",
+            "293308",
             "gpt-3.5-turbo-0125OpenAI · Proprietary",
             "1225±5",
             "66,207",
@@ -6034,8 +6094,8 @@
             "Context"
           ],
           "cells": [
-            "301",
-            "295306",
+            "303",
+            "297308",
             "Metallama-3-8b-instructMeta · Llama 3 Community",
             "1223±4",
             "104,642",
@@ -6054,8 +6114,8 @@
             "Context"
           ],
           "cells": [
-            "302",
-            "291308",
+            "304",
+            "293310",
             "Coherec4ai-aya-expanse-8bCohere · CC-BY-NC-4.0",
             "1223±7",
             "9,818",
@@ -6074,8 +6134,8 @@
             "Context"
           ],
           "cells": [
-            "303",
-            "290310",
+            "305",
+            "292312",
             "gemini-proGoogle · Proprietary",
             "1223±12",
             "6,390",
@@ -6094,8 +6154,8 @@
             "Context"
           ],
           "cells": [
-            "304",
-            "294308",
+            "306",
+            "296310",
             "mistral-mediumMistral · Proprietary",
             "1222±5",
             "34,550",
@@ -6114,8 +6174,8 @@
             "Context"
           ],
           "cells": [
-            "305",
-            "291310",
+            "307",
+            "293312",
             "llama-3.1-tulu-3-8bAi2 · Llama 3.1",
             "1220±11",
             "2,896",
@@ -6134,8 +6194,8 @@
             "Context"
           ],
           "cells": [
-            "306",
-            "302311",
+            "308",
+            "304313",
             "yi-1.5-34b-chatApache-2.0",
             "1213±5",
             "24,146",
@@ -6154,8 +6214,8 @@
             "Context"
           ],
           "cells": [
-            "307",
-            "297313",
+            "309",
+            "299315",
             "zephyr-orpo-141b-A35b-v0.1Apache 2.0",
             "1212±11",
             "4,652",
@@ -6174,8 +6234,8 @@
             "Context"
           ],
           "cells": [
-            "308",
-            "304311",
+            "310",
+            "306313",
             "Metallama-3.1-8b-instructMeta · Llama 3.1 Community",
             "1211±4",
             "49,605",
@@ -6194,8 +6254,8 @@
             "Context"
           ],
           "cells": [
-            "309",
-            "302317",
+            "311",
+            "304319",
             "granite-3.1-8b-instructIBM · Apache 2.0",
             "1208±11",
             "3,090",
@@ -6214,8 +6274,8 @@
             "Context"
           ],
           "cells": [
-            "310",
-            "306317",
+            "312",
+            "308319",
             "qwen1.5-32b-chatAlibaba · Qianwen LICENSE",
             "1203±6",
             "21,741",
@@ -6234,8 +6294,8 @@
             "Context"
           ],
           "cells": [
-            "311",
-            "304318",
+            "313",
+            "306320",
             "gpt-3.5-turbo-1106OpenAI · Proprietary",
             "1203±9",
             "16,619",
@@ -6254,8 +6314,8 @@
             "Context"
           ],
           "cells": [
-            "312",
-            "308317",
+            "314",
+            "310319",
             "gemma-2-2b-itGoogle · Gemma license",
             "1200±4",
             "46,616",
@@ -6274,8 +6334,8 @@
             "Context"
           ],
           "cells": [
-            "313",
-            "308319",
+            "315",
+            "310321",
             "phi-3-medium-4k-instructMicrosoft · MIT",
             "1197±5",
             "25,055",
@@ -6294,8 +6354,8 @@
             "Context"
           ],
           "cells": [
-            "314",
-            "309319",
+            "316",
+            "311321",
             "mixtral-8x7b-instruct-v0.1Mistral · Apache 2.0",
             "1197±4",
             "73,503",
@@ -6314,8 +6374,8 @@
             "Context"
           ],
           "cells": [
-            "315",
-            "309324",
+            "317",
+            "311326",
             "dbrx-instruct-previewDBRX LICENSE",
             "1195±6",
             "32,191",
@@ -6334,8 +6394,8 @@
             "Context"
           ],
           "cells": [
-            "316",
-            "309328",
+            "318",
+            "311330",
             "internlm2_5-20b-chatOther",
             "1191±7",
             "9,901",
@@ -6354,8 +6414,8 @@
             "Context"
           ],
           "cells": [
-            "317",
-            "309328",
+            "319",
+            "311330",
             "qwen1.5-14b-chatAlibaba · Qianwen LICENSE",
             "1191±7",
             "17,839",
@@ -6374,8 +6434,8 @@
             "Context"
           ],
           "cells": [
-            "318",
-            "312335",
+            "320",
+            "314337",
             "deepseek-llm-67b-chatDeepSeek · DeepSeek License",
             "1184±11",
             "4,932",
@@ -6394,8 +6454,8 @@
             "Context"
           ],
           "cells": [
-            "319",
-            "313334",
+            "321",
+            "315336",
             "wizardlm-70bMicrosoft · Llama 2 Community",
             "1184±9",
             "8,214",
@@ -6414,8 +6474,8 @@
             "Context"
           ],
           "cells": [
-            "320",
-            "315331",
+            "322",
+            "317333",
             "yi-34b-chatYi License",
             "1183±7",
             "15,483",
@@ -6434,8 +6494,8 @@
             "Context"
           ],
           "cells": [
-            "321",
-            "315335",
+            "323",
+            "317337",
             "granite-3.0-8b-instructIBM · Apache 2.0",
             "1182±9",
             "6,638",
@@ -6454,8 +6514,8 @@
             "Context"
           ],
           "cells": [
-            "322",
-            "315335",
+            "324",
+            "317337",
             "openchat-3.5Apache-2.0",
             "1182±10",
             "7,968",
@@ -6474,8 +6534,8 @@
             "Context"
           ],
           "cells": [
-            "323",
-            "315335",
+            "325",
+            "317337",
             "openchat-3.5-0106Apache-2.0",
             "1182±8",
             "12,637",
@@ -6494,8 +6554,8 @@
             "Context"
           ],
           "cells": [
-            "324",
-            "316332",
+            "326",
+            "318334",
             "gemma-1.1-7b-itGoogle · Gemma license",
             "1182±6",
             "23,893",
@@ -6514,8 +6574,8 @@
             "Context"
           ],
           "cells": [
-            "325",
-            "316335",
+            "327",
+            "318337",
             "snowflake-arctic-instructApache 2.0",
             "1179±6",
             "32,832",
@@ -6534,8 +6594,8 @@
             "Context"
           ],
           "cells": [
-            "326",
-            "315335",
+            "328",
+            "317337",
             "granite-3.1-2b-instructIBM · Apache 2.0",
             "1178±11",
             "3,188",
@@ -6554,8 +6614,8 @@
             "Context"
           ],
           "cells": [
-            "327",
-            "316335",
+            "329",
+            "318337",
             "tulu-2-dpo-70bAI2 ImpACT Low-risk",
             "1177±10",
             "6,535",
@@ -6574,8 +6634,8 @@
             "Context"
           ],
           "cells": [
-            "328",
-            "316339",
+            "330",
+            "318341",
             "openhermes-2.5-mistral-7bApache-2.0",
             "1175±10",
             "5,006",
@@ -6594,8 +6654,8 @@
             "Context"
           ],
           "cells": [
-            "329",
-            "318338",
+            "331",
+            "320340",
             "vicuna-33bNon-commercial",
             "1172±6",
             "22,479",
@@ -6614,8 +6674,8 @@
             "Context"
           ],
           "cells": [
-            "330",
-            "318341",
+            "332",
+            "320343",
             "starling-lm-7b-betaApache-2.0",
             "1171±7",
             "16,056",
@@ -6634,8 +6694,8 @@
             "Context"
           ],
           "cells": [
-            "331",
-            "318339",
+            "333",
+            "320341",
             "phi-3-small-8k-instructMicrosoft · MIT",
             "1171±6",
             "17,766",
@@ -6654,8 +6714,8 @@
             "Context"
           ],
           "cells": [
-            "332",
-            "320339",
+            "334",
+            "322341",
             "Metallama-2-70b-chatMeta · Llama 2 Community",
             "1170±5",
             "38,492",
@@ -6674,8 +6734,8 @@
             "Context"
           ],
           "cells": [
-            "333",
-            "320342",
+            "335",
+            "322344",
             "starling-lm-7b-alphaCC-BY-NC-4.0",
             "1167±8",
             "10,224",
@@ -6694,8 +6754,8 @@
             "Context"
           ],
           "cells": [
-            "334",
-            "321342",
+            "336",
+            "323344",
             "Metallama-3.2-3b-instructMeta · Llama 3.2",
             "1166±8",
             "7,936",
@@ -6714,8 +6774,8 @@
             "Context"
           ],
           "cells": [
-            "335",
-            "319345",
+            "337",
+            "321347",
             "nous-hermes-2-mixtral-8x7b-dpoApache-2.0",
             "1164±12",
             "3,777",
@@ -6734,8 +6794,8 @@
             "Context"
           ],
           "cells": [
-            "336",
-            "332348",
+            "338",
+            "334350",
             "granite-3.0-2b-instructIBM · Apache 2.0",
             "1156±8",
             "6,837",
@@ -6754,8 +6814,8 @@
             "Context"
           ],
           "cells": [
-            "337",
-            "328352",
+            "339",
+            "330354",
             "qwq-32b-previewAlibaba · Apache 2.0",
             "1155±11",
             "3,231",
@@ -6774,8 +6834,8 @@
             "Context"
           ],
           "cells": [
-            "338",
-            "328353",
+            "340",
+            "330355",
             "llama2-70b-steerlm-chatNvidia · Llama 2 Community",
             "1154±13",
             "3,585",
@@ -6794,8 +6854,8 @@
             "Context"
           ],
           "cells": [
-            "339",
-            "329355",
+            "341",
+            "331357",
             "solar-10.7b-instruct-v1.0CC-BY-NC-4.0",
             "1152±13",
             "4,155",
@@ -6814,8 +6874,8 @@
             "Context"
           ],
           "cells": [
-            "340",
-            "328357",
+            "342",
+            "330359",
             "dolphin-2.2.1-mistral-7bApache-2.0",
             "1152±15",
             "1,679",
@@ -6834,8 +6894,8 @@
             "Context"
           ],
           "cells": [
-            "341",
-            "333355",
+            "343",
+            "335357",
             "mpt-30b-chatCC-BY-NC-SA-4.0",
             "1150±12",
             "2,572",
@@ -6854,8 +6914,8 @@
             "Context"
           ],
           "cells": [
-            "342",
-            "335352",
+            "344",
+            "337354",
             "mistral-7b-instruct-v0.2Mistral · Apache-2.0",
             "1149±7",
             "19,402",
@@ -6874,8 +6934,8 @@
             "Context"
           ],
           "cells": [
-            "343",
-            "335353",
+            "345",
+            "337355",
             "wizardlm-13bMicrosoft · Llama 2 Community",
             "1149±9",
             "7,044",
@@ -6894,8 +6954,8 @@
             "Context"
           ],
           "cells": [
-            "344",
-            "332359",
+            "346",
+            "334361",
             "falcon-180b-chatFalcon-180B TII License",
             "1147±17",
             "1,295",
@@ -6914,8 +6974,8 @@
             "Context"
           ],
           "cells": [
-            "345",
-            "335358",
+            "347",
+            "337360",
             "qwen1.5-7b-chatAlibaba · Qianwen LICENSE",
             "1143±10",
             "4,737",
@@ -6934,8 +6994,8 @@
             "Context"
           ],
           "cells": [
-            "346",
-            "336357",
+            "348",
+            "338359",
             "phi-3-mini-4k-instruct-june-2024Microsoft · MIT",
             "1143±6",
             "12,297",
@@ -6954,8 +7014,8 @@
             "Context"
           ],
           "cells": [
-            "347",
-            "336357",
+            "349",
+            "338359",
             "Metallama-2-13b-chatMeta · Llama 2 Community",
             "1141±7",
             "19,174",
@@ -6974,8 +7034,8 @@
             "Context"
           ],
           "cells": [
-            "348",
-            "337358",
+            "350",
+            "339360",
             "vicuna-13bLlama 2 Community",
             "1141±7",
             "19,367",
@@ -6994,8 +7054,8 @@
             "Context"
           ],
           "cells": [
-            "349",
-            "336360",
+            "351",
+            "338362",
             "qwen-14b-chatAlibaba · Qianwen LICENSE",
             "1138±11",
             "4,964",
@@ -7014,8 +7074,8 @@
             "Context"
           ],
           "cells": [
-            "350",
-            "337359",
+            "352",
+            "339361",
             "palm-2Google · Proprietary",
             "1138±9",
             "8,554",
@@ -7034,8 +7094,8 @@
             "Context"
           ],
           "cells": [
-            "351",
-            "337360",
+            "353",
+            "339362",
             "gemma-7b-itGoogle · Gemma license",
             "1137±9",
             "8,925",
@@ -7054,8 +7114,8 @@
             "Context"
           ],
           "cells": [
-            "352",
-            "337360",
+            "354",
+            "339362",
             "Metacodellama-34b-instructMeta · Llama 2 Community",
             "1136±9",
             "7,366",
@@ -7074,8 +7134,8 @@
             "Context"
           ],
           "cells": [
-            "353",
-            "341362",
+            "355",
+            "343364",
             "zephyr-7b-betaMIT",
             "1130±9",
             "11,118",
@@ -7094,8 +7154,8 @@
             "Context"
           ],
           "cells": [
-            "354",
-            "343362",
+            "356",
+            "345364",
             "phi-3-mini-128k-instructMicrosoft · MIT",
             "1129±7",
             "20,685",
@@ -7114,8 +7174,8 @@
             "Context"
           ],
           "cells": [
-            "355",
-            "346362",
+            "357",
+            "348364",
             "phi-3-mini-4k-instructMicrosoft · MIT",
             "1128±6",
             "20,118",
@@ -7134,8 +7194,8 @@
             "Context"
           ],
           "cells": [
-            "356",
-            "341364",
+            "358",
+            "343366",
             "guanaco-33bNon-commercial",
             "1127±12",
             "2,921",
@@ -7154,8 +7214,8 @@
             "Context"
           ],
           "cells": [
-            "357",
-            "339365",
+            "359",
+            "341367",
             "zephyr-7b-alphaMIT",
             "1126±16",
             "1,785",
@@ -7174,8 +7234,8 @@
             "Context"
           ],
           "cells": [
-            "358",
-            "348365",
+            "360",
+            "350367",
             "stripedhyena-nous-7bApache 2.0",
             "1121±11",
             "5,182",
@@ -7194,8 +7254,8 @@
             "Context"
           ],
           "cells": [
-            "359",
-            "343366",
+            "361",
+            "345368",
             "Metacodellama-70b-instructMeta · Llama 2 Community",
             "1119±18",
             "1,143",
@@ -7214,8 +7274,8 @@
             "Context"
           ],
           "cells": [
-            "360",
-            "353365",
+            "362",
+            "355367",
             "gemma-1.1-2b-itGoogle · Gemma license",
             "1116±8",
             "10,854",
@@ -7234,8 +7294,8 @@
             "Context"
           ],
           "cells": [
-            "361",
-            "353365",
+            "363",
+            "355367",
             "vicuna-7bLlama 2 Community",
             "1114±9",
             "6,923",
@@ -7254,8 +7314,8 @@
             "Context"
           ],
           "cells": [
-            "362",
-            "350366",
+            "364",
+            "352368",
             "smollm2-1.7b-instructApache 2.0",
             "1114±14",
             "2,199",
@@ -7274,8 +7334,8 @@
             "Context"
           ],
           "cells": [
-            "363",
-            "356366",
+            "365",
+            "358368",
             "Metallama-3.2-1b-instructMeta · Llama 3.2",
             "1111±8",
             "8,045",
@@ -7294,8 +7354,8 @@
             "Context"
           ],
           "cells": [
-            "364",
-            "356366",
+            "366",
+            "358368",
             "mistral-7b-instructMistral · Apache 2.0",
             "1109±9",
             "8,977",
@@ -7314,8 +7374,8 @@
             "Context"
           ],
           "cells": [
-            "365",
-            "357366",
+            "367",
+            "359368",
             "Metallama-2-7b-chatMeta · Llama 2 Community",
             "1107±7",
             "14,148",
@@ -7334,8 +7394,8 @@
             "Context"
           ],
           "cells": [
-            "366",
-            "361369",
+            "368",
+            "363371",
             "gemma-2b-itGoogle · Gemma license",
             "1093±11",
             "4,780",
@@ -7354,8 +7414,8 @@
             "Context"
           ],
           "cells": [
-            "367",
-            "366369",
+            "369",
+            "368371",
             "qwen1.5-4b-chatAlibaba · Qianwen LICENSE",
             "1090±9",
             "7,597",
@@ -7374,8 +7434,8 @@
             "Context"
           ],
           "cells": [
-            "368",
-            "366373",
+            "370",
+            "368375",
             "olmo-7b-instructAi2 · Apache-2.0",
             "1073±11",
             "6,328",
@@ -7394,8 +7454,8 @@
             "Context"
           ],
           "cells": [
-            "369",
-            "368373",
+            "371",
+            "370375",
             "koala-13bNon-commercial",
             "1070±10",
             "6,965",
@@ -7414,8 +7474,8 @@
             "Context"
           ],
           "cells": [
-            "370",
-            "368373",
+            "372",
+            "370375",
             "alpaca-13bNon-commercial",
             "1069±11",
             "5,745",
@@ -7434,8 +7494,8 @@
             "Context"
           ],
           "cells": [
-            "371",
-            "366374",
+            "373",
+            "368376",
             "gpt4all-13b-snoozyNon-commercial",
             "1067±15",
             "1,743",
@@ -7454,8 +7514,8 @@
             "Context"
           ],
           "cells": [
-            "372",
-            "368374",
+            "374",
+            "370376",
             "mpt-7b-chatCC-BY-NC-SA-4.0",
             "1062±12",
             "3,924",
@@ -7474,8 +7534,8 @@
             "Context"
           ],
           "cells": [
-            "373",
-            "368374",
+            "375",
+            "370376",
             "chatglm3-6bApache-2.0",
             "1056±12",
             "4,658",
@@ -7494,8 +7554,8 @@
             "Context"
           ],
           "cells": [
-            "374",
-            "371376",
+            "376",
+            "373378",
             "RWKV-4-Raven-14BApache 2.0",
             "1041±11",
             "4,845",
@@ -7514,8 +7574,8 @@
             "Context"
           ],
           "cells": [
-            "375",
-            "374376",
+            "377",
+            "376378",
             "chatglm2-6bApache-2.0",
             "1024±14",
             "2,658",
@@ -7534,8 +7594,8 @@
             "Context"
           ],
           "cells": [
-            "376",
-            "374376",
+            "378",
+            "376378",
             "oasst-pythia-12bApache 2.0",
             "1022±11",
             "6,310",
@@ -7554,8 +7614,8 @@
             "Context"
           ],
           "cells": [
-            "377",
-            "377380",
+            "379",
+            "379382",
             "chatglm-6bNon-commercial",
             "995±13",
             "4,914",
@@ -7574,8 +7634,8 @@
             "Context"
           ],
           "cells": [
-            "378",
-            "377380",
+            "380",
+            "379382",
             "fastchat-t5-3bApache 2.0",
             "992±12",
             "4,203",
@@ -7594,8 +7654,8 @@
             "Context"
           ],
           "cells": [
-            "379",
-            "377380",
+            "381",
+            "379382",
             "dolly-v2-12bMIT",
             "981±14",
             "3,412",
@@ -7614,8 +7674,8 @@
             "Context"
           ],
           "cells": [
-            "380",
-            "377381",
+            "382",
+            "379383",
             "Metallama-13bMeta · Non-commercial",
             "974±16",
             "2,391",
@@ -7634,8 +7694,8 @@
             "Context"
           ],
           "cells": [
-            "381",
-            "380381",
+            "383",
+            "382383",
             "stablelm-tuned-alpha-7bCC-BY-NC-SA-4.0",
             "952±13",
             "3,287",
@@ -7644,7 +7704,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-07-30T14:07:59.458Z"
+      "fetchedAt": "2026-07-31T02:14:37.251Z"
     },
     "terms": {
       "main": {
@@ -7969,7 +8029,7 @@
           ]
         ]
       },
-      "fetchedAt": "2026-07-30T14:07:59.463Z"
+      "fetchedAt": "2026-07-31T02:14:37.256Z"
     }
   }
 }
