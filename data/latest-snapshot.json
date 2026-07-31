@@ -1,11 +1,11 @@
 {
   "version": "3.0",
-  "fetchedAt": "2026-07-31T08:37:29.866Z",
+  "fetchedAt": "2026-07-31T14:12:28.886Z",
   "sources": {
     "openrouter": {
       "leaderboard": {},
       "topModels": [],
-      "fetchedAt": "2026-07-31T08:37:29.867Z",
+      "fetchedAt": "2026-07-31T14:12:28.887Z",
       "error": "API fetch failed: Unexpected token '<', \"<!DOCTYPE \"... is not valid JSON"
     },
     "valsai": {
@@ -19,7 +19,7 @@
         " and Grok 4.5 at 86.60%"
       ],
       "method": "regex-percent",
-      "fetchedAt": "2026-07-31T08:37:47.065Z"
+      "fetchedAt": "2026-07-31T14:12:45.696Z"
     },
     "arena": {
       "textLeaderboard": [
@@ -4759,7 +4759,7 @@
             "gpt-oss-20bOpenAI · Apache 2.0",
             "1317±6",
             "10,621",
-            "$0.03 / $0.13",
+            "$0.03 / $0.14",
             "131.1K"
           ]
         },
@@ -7704,7 +7704,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-07-31T08:37:56.007Z"
+      "fetchedAt": "2026-07-31T14:12:54.803Z"
     },
     "terms": {
       "main": {
@@ -8029,7 +8029,7 @@
           ]
         ]
       },
-      "fetchedAt": "2026-07-31T08:37:56.012Z"
+      "fetchedAt": "2026-07-31T14:12:54.809Z"
     }
   }
 }
