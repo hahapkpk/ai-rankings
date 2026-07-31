@@ -1,11 +1,11 @@
 {
   "version": "3.0",
-  "fetchedAt": "2026-07-31T02:14:11.280Z",
+  "fetchedAt": "2026-07-31T08:37:29.866Z",
   "sources": {
     "openrouter": {
       "leaderboard": {},
       "topModels": [],
-      "fetchedAt": "2026-07-31T02:14:11.281Z",
+      "fetchedAt": "2026-07-31T08:37:29.867Z",
       "error": "API fetch failed: Unexpected token '<', \"<!DOCTYPE \"... is not valid JSON"
     },
     "valsai": {
@@ -19,7 +19,7 @@
         " and Grok 4.5 at 86.60%"
       ],
       "method": "regex-percent",
-      "fetchedAt": "2026-07-31T02:14:28.007Z"
+      "fetchedAt": "2026-07-31T08:37:47.065Z"
     },
     "arena": {
       "textLeaderboard": [
@@ -2759,7 +2759,7 @@
             "qwen3-235b-a22b-thinking-2507Alibaba · Apache 2.0",
             "1399±7",
             "8,983",
-            "$0.30 / $3",
+            "$0.23 / $2.30",
             "262.1K"
           ]
         },
@@ -7704,7 +7704,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-07-31T02:14:37.251Z"
+      "fetchedAt": "2026-07-31T08:37:56.007Z"
     },
     "terms": {
       "main": {
@@ -8029,7 +8029,7 @@
           ]
         ]
       },
-      "fetchedAt": "2026-07-31T02:14:37.256Z"
+      "fetchedAt": "2026-07-31T08:37:56.012Z"
     }
   }
 }
