@@ -1,11 +1,11 @@
 {
   "version": "3.0",
-  "fetchedAt": "2026-07-31T14:12:28.886Z",
+  "fetchedAt": "2026-08-01T02:21:33.280Z",
   "sources": {
     "openrouter": {
       "leaderboard": {},
       "topModels": [],
-      "fetchedAt": "2026-07-31T14:12:28.887Z",
+      "fetchedAt": "2026-08-01T02:21:33.281Z",
       "error": "API fetch failed: Unexpected token '<', \"<!DOCTYPE \"... is not valid JSON"
     },
     "valsai": {
@@ -19,7 +19,7 @@
         " and Grok 4.5 at 86.60%"
       ],
       "method": "regex-percent",
-      "fetchedAt": "2026-07-31T14:12:45.696Z"
+      "fetchedAt": "2026-08-01T02:21:50.284Z"
     },
     "arena": {
       "textLeaderboard": [
@@ -39,7 +39,7 @@
             "Anthropicclaude-fable-5Anthropic · Proprietary",
             "1508±6",
             "16,056",
-            "$5 / $25",
+            "$10 / $50",
             "1M"
           ]
         },
@@ -59,7 +59,7 @@
             "Anthropicclaude-opus-4-6-thinkingAnthropic · Proprietary",
             "1505±4",
             "64,805",
-            "$2.50 / $12.50",
+            "$5 / $25",
             "1M"
           ]
         },
@@ -99,7 +99,7 @@
             "Anthropicclaude-opus-4-6Anthropic · Proprietary",
             "1497±4",
             "68,516",
-            "$2.50 / $12.50",
+            "$5 / $25",
             "1M"
           ]
         },
@@ -219,7 +219,7 @@
             "gemini-3.1-pro-previewGoogle · Proprietary",
             "1486±3",
             "86,683",
-            "$1 / $6",
+            "$2 / $12",
             "1M"
           ]
         },
@@ -299,7 +299,7 @@
             "Anthropicclaude-opus-4-8-thinkingAnthropic · Proprietary",
             "1484±5",
             "32,817",
-            "$2.50 / $12.50",
+            "$5 / $25",
             "1M"
           ]
         },
@@ -319,7 +319,7 @@
             "gemini-3.6-flashGoogle · Proprietary",
             "1482±8Preliminary",
             "6,065",
-            "$0.75 / $3.75",
+            "$1.50 / $7.50",
             "1M"
           ]
         },
@@ -339,7 +339,7 @@
             "gpt-5.5-highOpenAI · Proprietary",
             "1482±4",
             "47,572",
-            "$2.50 / $15",
+            "$5 / $30",
             "1.1M"
           ]
         },
@@ -379,7 +379,7 @@
             "gemini-3.5-flash-highGoogle · Proprietary",
             "1476±7",
             "10,011",
-            "$0.75 / $4.50",
+            "$1.50 / $9",
             "1M"
           ]
         },
@@ -419,7 +419,7 @@
             "gpt-5.5OpenAI · Proprietary",
             "1476±4",
             "48,792",
-            "$2.50 / $15",
+            "$5 / $30",
             "1.1M"
           ]
         },
@@ -459,7 +459,7 @@
             "Anthropicclaude-opus-4-8Anthropic · Proprietary",
             "1474±5",
             "33,401",
-            "$2.50 / $12.50",
+            "$5 / $25",
             "1M"
           ]
         },
@@ -499,7 +499,7 @@
             "gpt-5.5-instantOpenAI · Proprietary",
             "1473±5",
             "25,708",
-            "$2.50 / $15",
+            "$5 / $30",
             "1.1M"
           ]
         },
@@ -579,7 +579,7 @@
             "gemini-3.5-flash-mediumGoogle · Proprietary",
             "1472±6",
             "16,248",
-            "$0.75 / $4.50",
+            "$1.50 / $9",
             "1M"
           ]
         },
@@ -899,7 +899,7 @@
             "Anthropicclaude-sonnet-5-highAnthropic · Proprietary",
             "1460±6",
             "15,622",
-            "$1 / $5",
+            "$2 / $10",
             "1M"
           ]
         },
@@ -919,7 +919,7 @@
             "gemini-3.5-flash-liteGoogle · Proprietary",
             "1460±8Preliminary",
             "6,015",
-            "$0.15 / $1.25",
+            "$0.30 / $2.50",
             "1M"
           ]
         },
@@ -1076,7 +1076,7 @@
           "cells": [
             "53",
             "4164",
-            "deepseek-v4-pro-thinkingDeepSeek · MIT",
+            "deepseek-v4-pro-high-previewDeepSeek · MIT",
             "1455±4",
             "44,669",
             "$0.43 / $0.87",
@@ -1119,7 +1119,7 @@
             "gpt-5.1-highOpenAI · Proprietary",
             "1455±4",
             "40,700",
-            "$0.63 / $5",
+            "$1.25 / $10",
             "400K"
           ]
         },
@@ -1339,7 +1339,7 @@
             "gemini-2.5-proGoogle · Proprietary",
             "1446±2",
             "124,076",
-            "$0.63 / $5",
+            "$1.25 / $10",
             "1M"
           ]
         },
@@ -1519,7 +1519,7 @@
             "gpt-5.1OpenAI · Proprietary",
             "1439±4",
             "43,332",
-            "$0.63 / $5",
+            "$1.25 / $10",
             "400K"
           ]
         },
@@ -1556,7 +1556,7 @@
           "cells": [
             "77",
             "6792",
-            "deepseek-v4-flash-thinkingDeepSeek · MIT",
+            "deepseek-v4-flash-high-previewDeepSeek · MIT",
             "1438±4",
             "46,445",
             "$0.25 / $1.75",
@@ -1579,7 +1579,7 @@
             "gpt-5.2-highOpenAI · Proprietary",
             "1437±4",
             "47,668",
-            "$0.88 / $7",
+            "$1.75 / $14",
             "400K"
           ]
         },
@@ -1619,7 +1619,7 @@
             "gpt-5.2OpenAI · Proprietary",
             "1435±3",
             "78,810",
-            "$0.88 / $7",
+            "$1.75 / $14",
             "400K"
           ]
         },
@@ -1699,7 +1699,7 @@
             "gpt-5-highOpenAI · Proprietary",
             "1434±5",
             "31,887",
-            "$0.63 / $5",
+            "$1.25 / $10",
             "400K"
           ]
         },
@@ -2519,7 +2519,7 @@
             "gemini-2.5-flashGoogle · Proprietary",
             "1410±2",
             "124,020",
-            "$0.15 / $1.25",
+            "$0.30 / $2.50",
             "1M"
           ]
         },
@@ -2979,7 +2979,7 @@
             "gpt-5-mini-highOpenAI · Proprietary",
             "1390±5",
             "26,991",
-            "$0.13 / $1",
+            "$0.25 / $2",
             "400K"
           ]
         },
@@ -4139,7 +4139,7 @@
             "gpt-5-nano-highOpenAI · Proprietary",
             "1337±7",
             "8,257",
-            "$0.03 / $0.20",
+            "$0.05 / $0.40",
             "400K"
           ]
         },
@@ -7704,7 +7704,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-07-31T14:12:54.803Z"
+      "fetchedAt": "2026-08-01T02:21:58.618Z"
     },
     "terms": {
       "main": {
@@ -8029,7 +8029,7 @@
           ]
         ]
       },
-      "fetchedAt": "2026-07-31T14:12:54.809Z"
+      "fetchedAt": "2026-08-01T02:21:58.622Z"
     }
   }
 }
