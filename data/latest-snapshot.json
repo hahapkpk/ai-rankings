@@ -1,16 +1,16 @@
 {
   "version": "3.0",
-  "fetchedAt": "2026-08-04T14:20:51.241Z",
+  "fetchedAt": "2026-08-05T02:00:12.571Z",
   "sources": {
     "openrouter": {
       "leaderboard": {},
       "topModels": [],
-      "fetchedAt": "2026-08-04T14:20:51.243Z",
+      "fetchedAt": "2026-08-05T02:00:12.572Z",
       "error": "API fetch failed: Unexpected token '<', \"<!DOCTYPE \"... is not valid JSON"
     },
     "valsai": {
       "swebench": [
-        "1.36\n\n426.43\ns\n\nSEE 67 MORE MODELS\nBest Performing\nBest Budget\nBest Speed\nKey Takeaways\n\nClaude Opus 5 leads SWE-bench Verified with 97.00%",
+        "0.71\n\n669.67\ns\n\nSEE 68 MORE MODELS\nBest Performing\nBest Budget\nBest Speed\nKey Takeaways\n\nClaude Opus 5 leads SWE-bench Verified with 97.00%",
         " followed by GPT-5.6 Sol at 96.20%",
         " and Claude Fable 5 at 95.00%",
         ".\n\nKimi K3 scores 93.40%",
@@ -19,7 +19,7 @@
         " and Grok 4.5 at 86.60%"
       ],
       "method": "regex-percent",
-      "fetchedAt": "2026-08-04T14:21:09.288Z"
+      "fetchedAt": "2026-08-05T02:00:29.734Z"
     },
     "arena": {
       "textLeaderboard": [
@@ -2319,7 +2319,7 @@
             "minimax-m2.7MiniMax · Modified MIT",
             "1417±4",
             "53,523",
-            "$0.25 / $1",
+            "$0.27 / $1.08",
             "204.8K"
           ]
         },
@@ -7744,7 +7744,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-08-04T14:21:17.269Z"
+      "fetchedAt": "2026-08-05T02:00:39.844Z"
     },
     "terms": {
       "main": {
@@ -8069,7 +8069,7 @@
           ]
         ]
       },
-      "fetchedAt": "2026-08-04T14:21:17.274Z"
+      "fetchedAt": "2026-08-05T02:00:39.850Z"
     }
   }
 }
