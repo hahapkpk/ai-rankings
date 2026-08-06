@@ -1,11 +1,11 @@
 {
   "version": "3.0",
-  "fetchedAt": "2026-08-05T14:13:19.224Z",
+  "fetchedAt": "2026-08-06T02:04:12.295Z",
   "sources": {
     "openrouter": {
       "leaderboard": {},
       "topModels": [],
-      "fetchedAt": "2026-08-05T14:13:19.225Z",
+      "fetchedAt": "2026-08-06T02:04:12.296Z",
       "error": "API fetch failed: Unexpected token '<', \"<!DOCTYPE \"... is not valid JSON"
     },
     "valsai": {
@@ -19,7 +19,7 @@
         " and Grok 4.5 at 86.60%"
       ],
       "method": "regex-percent",
-      "fetchedAt": "2026-08-05T14:13:36.900Z"
+      "fetchedAt": "2026-08-06T02:04:28.629Z"
     },
     "arena": {
       "textLeaderboard": [
@@ -1854,26 +1854,6 @@
             "Context"
           ],
           "cells": [
-            "",
-            "N/A",
-            "Thinking Machinesinkling-smallThinky · Apache 2.0",
-            "1431±11AutoEval",
-            "N/A",
-            "N/A",
-            "N/A"
-          ]
-        },
-        {
-          "headers": [
-            "Rank",
-            "Rank Spread",
-            "Model",
-            "Score",
-            "Votes",
-            "Price $/M",
-            "Context"
-          ],
-          "cells": [
             "92",
             "76112",
             "mimo-v2-omniXiaomi · Proprietary",
@@ -2899,7 +2879,7 @@
             "qwen3-vl-235b-a22b-thinkingAlibaba · Apache 2.0",
             "1395±7",
             "7,937",
-            "$0.98 / $3.95",
+            "$0.40 / $4",
             "131.1K"
           ]
         },
@@ -3039,7 +3019,7 @@
             "minimax-m2.5MiniMax · Modified MIT",
             "1390±4",
             "40,751",
-            "$0.15 / $0.90",
+            "$0.22 / $0.90",
             "204.8K"
           ]
         },
@@ -7744,7 +7724,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-08-05T14:13:46.232Z"
+      "fetchedAt": "2026-08-06T02:04:37.851Z"
     },
     "terms": {
       "main": {
@@ -8069,7 +8049,7 @@
           ]
         ]
       },
-      "fetchedAt": "2026-08-05T14:13:46.238Z"
+      "fetchedAt": "2026-08-06T02:04:37.857Z"
     }
   }
 }
