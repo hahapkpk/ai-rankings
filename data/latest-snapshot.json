@@ -1,11 +1,11 @@
 {
   "version": "3.0",
-  "fetchedAt": "2026-08-07T13:08:39.000Z",
+  "fetchedAt": "2026-08-08T01:10:51.875Z",
   "sources": {
     "openrouter": {
       "leaderboard": {},
       "topModels": [],
-      "fetchedAt": "2026-08-07T13:08:39.001Z",
+      "fetchedAt": "2026-08-08T01:10:51.878Z",
       "error": "API fetch failed: Unexpected token '<', \"<!DOCTYPE \"... is not valid JSON"
     },
     "valsai": {
@@ -19,7 +19,7 @@
         " and Grok 4.5 at 86.60%"
       ],
       "method": "regex-percent",
-      "fetchedAt": "2026-08-07T13:08:56.037Z"
+      "fetchedAt": "2026-08-08T01:11:08.782Z"
     },
     "arena": {
       "textLeaderboard": [
@@ -379,7 +379,7 @@
             "gpt-5.6-sol-xhighOpenAI · Proprietary",
             "1482±6",
             "12,839",
-            "N/A",
+            "$5 / $30",
             "N/A"
           ]
         },
@@ -779,7 +779,7 @@
             "gpt-5.6-terra-xhighOpenAI · Proprietary",
             "1467±6",
             "13,275",
-            "N/A",
+            "$2.50 / $15",
             "N/A"
           ]
         },
@@ -1219,7 +1219,7 @@
             "gpt-5.6-luna-xhighOpenAI · Proprietary",
             "1450±6",
             "13,651",
-            "N/A",
+            "$1 / $6",
             "N/A"
           ]
         },
@@ -1841,6 +1841,26 @@
             "59,661",
             "$2 / $8",
             "200K"
+          ]
+        },
+        {
+          "headers": [
+            "Rank",
+            "Rank Spread",
+            "Model",
+            "Score",
+            "Votes",
+            "Price $/M",
+            "Context"
+          ],
+          "cells": [
+            "",
+            "N/A",
+            "Thinking Machinesinkling-smallThinky · Apache 2.0",
+            "1431±11AutoEval",
+            "N/A",
+            "N/A",
+            "N/A"
           ]
         },
         {
@@ -7724,7 +7744,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-08-07T13:09:04.941Z"
+      "fetchedAt": "2026-08-08T01:11:17.827Z"
     },
     "terms": {
       "main": {
@@ -8049,7 +8069,7 @@
           ]
         ]
       },
-      "fetchedAt": "2026-08-07T13:09:04.947Z"
+      "fetchedAt": "2026-08-08T01:11:17.833Z"
     }
   }
 }
