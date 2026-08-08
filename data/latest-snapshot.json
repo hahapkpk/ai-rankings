@@ -1,11 +1,11 @@
 {
   "version": "3.0",
-  "fetchedAt": "2026-08-08T01:10:51.875Z",
+  "fetchedAt": "2026-08-08T06:37:38.773Z",
   "sources": {
     "openrouter": {
       "leaderboard": {},
       "topModels": [],
-      "fetchedAt": "2026-08-08T01:10:51.878Z",
+      "fetchedAt": "2026-08-08T06:37:38.773Z",
       "error": "API fetch failed: Unexpected token '<', \"<!DOCTYPE \"... is not valid JSON"
     },
     "valsai": {
@@ -19,7 +19,7 @@
         " and Grok 4.5 at 86.60%"
       ],
       "method": "regex-percent",
-      "fetchedAt": "2026-08-08T01:11:08.782Z"
+      "fetchedAt": "2026-08-08T06:37:55.033Z"
     },
     "arena": {
       "textLeaderboard": [
@@ -1999,7 +1999,7 @@
             "deepseek-v3.2DeepSeek · MIT",
             "1425±4",
             "46,999",
-            "$0.27 / $0.40",
+            "$0.26 / $0.38",
             "163.8K"
           ]
         },
@@ -2119,7 +2119,7 @@
             "deepseek-v3.2-thinkingDeepSeek · MIT",
             "1423±4",
             "40,832",
-            "$0.27 / $0.40",
+            "$0.26 / $0.38",
             "163.8K"
           ]
         },
@@ -7744,7 +7744,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-08-08T01:11:17.827Z"
+      "fetchedAt": "2026-08-08T06:38:03.619Z"
     },
     "terms": {
       "main": {
@@ -8069,7 +8069,7 @@
           ]
         ]
       },
-      "fetchedAt": "2026-08-08T01:11:17.833Z"
+      "fetchedAt": "2026-08-08T06:38:03.625Z"
     }
   }
 }
