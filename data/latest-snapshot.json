@@ -1,11 +1,11 @@
 {
   "version": "3.0",
-  "fetchedAt": "2026-08-08T12:52:21.469Z",
+  "fetchedAt": "2026-08-09T01:16:03.491Z",
   "sources": {
     "openrouter": {
       "leaderboard": {},
       "topModels": [],
-      "fetchedAt": "2026-08-08T12:52:21.470Z",
+      "fetchedAt": "2026-08-09T01:16:03.491Z",
       "error": "API fetch failed: Unexpected token '<', \"<!DOCTYPE \"... is not valid JSON"
     },
     "valsai": {
@@ -19,7 +19,7 @@
         " and Grok 4.5 at 86.60%"
       ],
       "method": "regex-percent",
-      "fetchedAt": "2026-08-08T12:52:41.267Z"
+      "fetchedAt": "2026-08-09T01:16:20.918Z"
     },
     "arena": {
       "textLeaderboard": [
@@ -1999,7 +1999,7 @@
             "deepseek-v3.2DeepSeek · MIT",
             "1425±4",
             "46,999",
-            "$0.26 / $0.38",
+            "$0.27 / $0.40",
             "163.8K"
           ]
         },
@@ -2119,7 +2119,7 @@
             "deepseek-v3.2-thinkingDeepSeek · MIT",
             "1423±4",
             "40,832",
-            "$0.26 / $0.38",
+            "$0.27 / $0.40",
             "163.8K"
           ]
         },
@@ -2339,7 +2339,7 @@
             "minimax-m2.7MiniMax · Modified MIT",
             "1416±4",
             "55,513",
-            "$0.27 / $1.08",
+            "$0.30 / $1.20",
             "204.8K"
           ]
         },
@@ -7744,7 +7744,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-08-08T12:52:51.574Z"
+      "fetchedAt": "2026-08-09T01:16:30.295Z"
     },
     "terms": {
       "main": {
@@ -8069,7 +8069,7 @@
           ]
         ]
       },
-      "fetchedAt": "2026-08-08T12:52:51.580Z"
+      "fetchedAt": "2026-08-09T01:16:30.300Z"
     }
   }
 }
