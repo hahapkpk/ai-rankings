@@ -1,11 +1,11 @@
 {
   "version": "3.0",
-  "fetchedAt": "2026-08-11T06:52:35.671Z",
+  "fetchedAt": "2026-08-11T13:10:17.105Z",
   "sources": {
     "openrouter": {
       "leaderboard": {},
       "topModels": [],
-      "fetchedAt": "2026-08-11T06:52:35.672Z",
+      "fetchedAt": "2026-08-11T13:10:17.106Z",
       "error": "API fetch failed: Unexpected token '<', \"<!DOCTYPE \"... is not valid JSON"
     },
     "valsai": {
@@ -16,7 +16,7 @@
         "bodyLength": 7148,
         "sampleText": "Benchmarks\n\nModels\n\nComparison\n\nVals-Smith\n\nApp Reports\n\nGovernment\n\nNews\n\nAbout\n\nCODING\n\nSWE-BENCH VERIFIED\n\nSWE-bench Verified\nACADEMIC\n\nUPDATED: 8/8/2026\n\nSolving production software engineering tasks\n\nVIEW:\nALL MODELS\nHARNESS:\nALL HARNESSES\nTASK:\nOVERALL\n\nSystems (80)\n\nHarness\n\nScore\n\nCost/Test\n\nLatency\n\n1\n\nClaude Opus 5\nMini-SWE-agent\n\n97.00\n%\n± 0.76\n\n$1.29\n\n576.99\ns\n\n2\n\nGPT-5.6 Sol\nMini-SWE-agent\n\n96.20\n%\n± 0.86\n\n$1.15\n\n182.37\ns\n\n3\n\nClaude Fable 5\nMini-SWE-agent\n\n95.00\n%\n± 0.98\n\n$2.05\n\n356.18\ns\n\n4\n\nKimi K3\nMini-SWE-agent\n\n93.40\n%\n± 1.11\n\n$0.76\n\n619.49\ns\n\n5\n\nGPT-5.6 Luna\nMini-SWE-agent\n\n93.00\n%\n± 1.14\n\n$0.04\n\n201.07\ns\n\n6\n\nDeepSeek V4 Flash 0731\nMini-SWE-agent\n\n88.80\n%\n± 1.41\n\n$0.01\n\n202.39\ns\n\n7\n\nClaude Opus 4.8\nMini-SWE-agent\n\n88.60\n%\n± 1.42\n\n$1.92\n\n566.95\ns\n\n8\n\nGrok 4.5\nMini-SWE-agent\n\n86.60\n%\n± 1.52\n\n$0.54\n\n199.57\ns\n\n9\n\nMuse Spark 1.2\nMini-SWE-agent\n\n86.60\n%\n± 1.52\n\n$0.55\n\n487.09\ns\n\n10\n\nClaude Opus 4.8\nClaude Code\n\n85.80\n%\n± 1.56\n\n$0.67\n\n135.40\ns\n\nSEE 70 MORE MODELS\nBest Performing\nBest Budget\nBest Speed\nKey Takeaways\n\nThree of the 79 models evaluated reach 95% or better, and the leader, Claude Opus 5 at 97.00%, sits 3.00 percentage points from a perfect score — little room is left to separate frontier models on this benchmark alone.\n\nOpen-weight models are competitive but not yet at the very top: Kimi K3 is the strongest at 93.40%, a few points behind the closed leaders and ahead of closed models such as Claude Opus 4.8 (88.60%) and Grok 4.5 (86.60%).\n\nResolution Rate by Task Difficulty\nMODEL\n<15 MIN\n194 tasks\n15M–1H\n261 tasks\n1–4 HR\n42 tasks\n>4 HR\n3 tasks\nClaude Opus 5\n98%\n97%\n90%\n100%\nGPT-5.6 Sol\n97%\n95%\n98%\n100%\nClaude Fable 5\n96%\n95%\n93%\n100%\nKimi K3\n92%\n95%\n93%\n67%\nGPT-5.6 Luna\n96%\n92%\n86%\n67%\nDeepSeek V4 Flash 0731\n91%\n87%\n90%\n67%\nClaude Opus 4.8\n93%\n88%\n74%\n67%\nGrok 4.5\n94%\n84%\n74%\n67%\nMuse Spark 1.2\n92%\n87%\n64%\n33%\nClaude Opus 4.8\n91%\n84%\n71%\n67%\nQwen 3.8 Max\n93%\n84%\n64%\n67%\nGLM 5.2\n88%\n82%\n67%\n67%\nGPT 5.5\n92%\n81%\n50%\n67%\nInkling Small\n94%\n80%\n43%\n33"
       },
-      "fetchedAt": "2026-08-11T06:52:52.117Z"
+      "fetchedAt": "2026-08-11T13:10:33.761Z"
     },
     "arena": {
       "textLeaderboard": [
@@ -996,7 +996,7 @@
             "deepseek-v4-proDeepSeek · MIT",
             "1458±4",
             "53,689",
-            "$0.64 / $1.28",
+            "$0.63 / $1.26",
             "1M"
           ]
         },
@@ -1076,7 +1076,7 @@
             "deepseek-v4-pro-high-previewDeepSeek · MIT",
             "1456±4",
             "51,116",
-            "$0.64 / $1.28",
+            "$0.63 / $1.26",
             "1M"
           ]
         },
@@ -2076,7 +2076,7 @@
             "glm-4.6Z.ai · MIT",
             "1424±4",
             "35,834",
-            "$0.50 / $2",
+            "$0.55 / $2.20",
             "204.8K"
           ]
         },
@@ -7761,7 +7761,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-08-11T06:53:01.082Z"
+      "fetchedAt": "2026-08-11T13:10:42.688Z"
     },
     "terms": {
       "main": {
@@ -8086,7 +8086,7 @@
           ]
         ]
       },
-      "fetchedAt": "2026-08-11T06:53:01.088Z"
+      "fetchedAt": "2026-08-11T13:10:42.694Z"
     }
   }
 }
