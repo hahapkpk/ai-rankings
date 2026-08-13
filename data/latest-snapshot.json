@@ -1,22 +1,370 @@
 {
   "version": "3.0",
-  "fetchedAt": "2026-08-13T07:14:43.659Z",
+  "fetchedAt": "2026-08-13T13:16:14.322Z",
   "sources": {
     "openrouter": {
       "leaderboard": {},
       "topModels": [],
-      "fetchedAt": "2026-08-13T07:14:43.660Z",
+      "fetchedAt": "2026-08-13T13:16:14.323Z",
       "error": "API fetch failed: Unexpected token '<', \"<!DOCTYPE \"... is not valid JSON"
     },
     "valsai": {
-      "swebench": [],
-      "method": "none",
-      "debug": {
-        "tableCount": 0,
-        "bodyLength": 7257,
-        "sampleText": "Benchmarks\n\nModels\n\nComparison\n\nVals-Smith\n\nApp Reports\n\nGovernment\n\nNews\n\nAbout\n\nCODING\n\nSWE-BENCH VERIFIED\n\nSWE-bench Verified\nACADEMIC\n\nUPDATED: 8/12/2026\n\nSolving production software engineering tasks\n\nVIEW:\nALL MODELS\nHARNESS:\nALL HARNESSES\nTASK:\nOVERALL\n\nSystems (82)\n\nHarness\n\nScore\n\nCost/Test\n\nLatency\n\n1\n\nClaude Opus 5\nMini-SWE-agent\n\n97.00\n%\n± 0.76\n\n$1.29\n\n576.99\ns\n\n2\n\nDeepSeek V4 Pro 0813\nMini-SWE-agent\n\n96.40\n%\n± 0.83\n\n$0.02\n\n240.41\ns\n\n3\n\nGPT-5.6 Sol\nMini-SWE-agent\n\n96.20\n%\n± 0.86\n\n$1.15\n\n182.37\ns\n\n4\n\nGrok 4.6\nMini-SWE-agent\n\n95.60\n%\n± 0.92\n\n$0.78\n\n604.49\ns\n\n5\n\nClaude Fable 5\nMini-SWE-agent\n\n95.00\n%\n± 0.98\n\n$2.05\n\n356.18\ns\n\n6\n\nKimi K3\nMini-SWE-agent\n\n93.40\n%\n± 1.11\n\n$0.76\n\n619.49\ns\n\n7\n\nGPT-5.6 Luna\nMini-SWE-agent\n\n93.00\n%\n± 1.14\n\n$0.04\n\n201.07\ns\n\n8\n\nDeepSeek V4 Flash 0731\nMini-SWE-agent\n\n88.80\n%\n± 1.41\n\n$0.01\n\n202.39\ns\n\n9\n\nClaude Opus 4.8\nMini-SWE-agent\n\n88.60\n%\n± 1.42\n\n$1.92\n\n566.95\ns\n\n10\n\nGrok 4.5\nMini-SWE-agent\n\n86.60\n%\n± 1.52\n\n$0.54\n\n199.57\ns\n\nSEE 72 MORE MODELS\nBest Performing\nBest Budget\nBest Speed\nKey Takeaways\n\nFive of the 82 models evaluated reach 95% or better, and the leader, Claude Opus 5 at 97.00%, sits 3.00 percentage points from a perfect score — little room is left to separate frontier models on this benchmark alone.\n\nOpen-weight models have reached the very top: DeepSeek V4 Pro 0813 is second overall at 96.40%, within 0.60 points of the closed leader, with Kimi K3 (93.40%) also ahead of closed models such as Claude Opus 4.8 (88.60%) and Grok 4.5 (86.60%).\n\nResolution Rate by Task Difficulty\nMODEL\n<15 MIN\n194 tasks\n15M–1H\n261 tasks\n1–4 HR\n42 tasks\n>4 HR\n3 tasks\nClaude Opus 5\n98%\n97%\n90%\n100%\nDeepSeek V4 Pro 0813\n97%\n95%\n100%\n100%\nGPT-5.6 Sol\n97%\n95%\n98%\n100%\nGrok 4.6\n96%\n96%\n93%\n100%\nClaude Fable 5\n96%\n95%\n93%\n100%\nKimi K3\n92%\n95%\n93%\n67%\nGPT-5.6 Luna\n96%\n92%\n86%\n67%\nDeepSeek V4 Flash 0731\n91%\n87%\n90%\n67%\nClaude Opus 4.8\n93%\n88%\n74%\n67%\nGrok 4.5\n94%\n84%\n74%\n67%\nMuse Spark 1.2\n92%\n87%\n64%\n33%\nClaude Opus 4.8\n91%\n84%\n71%\n67%\nQwen 3.8 Max\n93%\n"
-      },
-      "fetchedAt": "2026-08-13T07:15:25.155Z"
+      "swebench": [
+        {
+          "headers": [
+            "",
+            "Systems (82)",
+            "Harness",
+            "Score97.00%±0.7696.40%±0.83",
+            "Cost / Test$1.29$0.02",
+            "Input / Output Cost$0.435/$0.87$0.435/$0.87",
+            "Latency108.54s117.77s",
+            ""
+          ],
+          "cells": [
+            "1",
+            "Claude Opus 5",
+            "Mini-SWE-agent",
+            "97.00%±0.76",
+            "$1.29",
+            "$5/$25",
+            "9m37s",
+            ""
+          ]
+        },
+        {
+          "headers": [
+            "",
+            "Systems (82)",
+            "Harness",
+            "Score97.00%±0.7696.40%±0.83",
+            "Cost / Test$1.29$0.02",
+            "Input / Output Cost$0.435/$0.87$0.435/$0.87",
+            "Latency108.54s117.77s",
+            ""
+          ],
+          "cells": [
+            "2",
+            "DeepSeek V4 Pro 0813",
+            "Mini-SWE-agent",
+            "96.40%±0.83",
+            "$0.02",
+            "$0.435/$0.87",
+            "4m00s",
+            ""
+          ]
+        },
+        {
+          "headers": [
+            "",
+            "Systems (82)",
+            "Harness",
+            "Score97.00%±0.7696.40%±0.83",
+            "Cost / Test$1.29$0.02",
+            "Input / Output Cost$0.435/$0.87$0.435/$0.87",
+            "Latency108.54s117.77s",
+            ""
+          ],
+          "cells": [
+            "3",
+            "GPT-5.6 Sol",
+            "Mini-SWE-agent",
+            "96.20%±0.86",
+            "$1.15",
+            "$5/$30",
+            "3m02s",
+            ""
+          ]
+        },
+        {
+          "headers": [
+            "",
+            "Systems (82)",
+            "Harness",
+            "Score97.00%±0.7696.40%±0.83",
+            "Cost / Test$1.29$0.02",
+            "Input / Output Cost$0.435/$0.87$0.435/$0.87",
+            "Latency108.54s117.77s",
+            ""
+          ],
+          "cells": [
+            "4",
+            "Grok 4.6",
+            "Mini-SWE-agent",
+            "95.60%±0.92",
+            "$0.78",
+            "$2/$6",
+            "10m04s",
+            ""
+          ]
+        },
+        {
+          "headers": [
+            "",
+            "Systems (82)",
+            "Harness",
+            "Score97.00%±0.7696.40%±0.83",
+            "Cost / Test$1.29$0.02",
+            "Input / Output Cost$0.435/$0.87$0.435/$0.87",
+            "Latency108.54s117.77s",
+            ""
+          ],
+          "cells": [
+            "5",
+            "Claude Fable 5",
+            "Mini-SWE-agent",
+            "95.00%±0.98",
+            "$2.05",
+            "$10/$50",
+            "5m56s",
+            ""
+          ]
+        },
+        {
+          "headers": [
+            "",
+            "Systems (82)",
+            "Harness",
+            "Score97.00%±0.7696.40%±0.83",
+            "Cost / Test$1.29$0.02",
+            "Input / Output Cost$0.435/$0.87$0.435/$0.87",
+            "Latency108.54s117.77s",
+            ""
+          ],
+          "cells": [
+            "6",
+            "Kimi K3",
+            "Mini-SWE-agent",
+            "93.40%±1.11",
+            "$0.76",
+            "$3/$15",
+            "10m19s",
+            ""
+          ]
+        },
+        {
+          "headers": [
+            "",
+            "Systems (82)",
+            "Harness",
+            "Score97.00%±0.7696.40%±0.83",
+            "Cost / Test$1.29$0.02",
+            "Input / Output Cost$0.435/$0.87$0.435/$0.87",
+            "Latency108.54s117.77s",
+            ""
+          ],
+          "cells": [
+            "7",
+            "GPT-5.6 Luna",
+            "Mini-SWE-agent",
+            "93.00%±1.14",
+            "$0.04",
+            "$0.2/$1.2",
+            "3m21s",
+            ""
+          ]
+        },
+        {
+          "headers": [
+            "",
+            "Systems (82)",
+            "Harness",
+            "Score97.00%±0.7696.40%±0.83",
+            "Cost / Test$1.29$0.02",
+            "Input / Output Cost$0.435/$0.87$0.435/$0.87",
+            "Latency108.54s117.77s",
+            ""
+          ],
+          "cells": [
+            "8",
+            "DeepSeek V4 Flash 0731",
+            "Mini-SWE-agent",
+            "88.80%±1.41",
+            "$0.01",
+            "$0.14/$0.28",
+            "3m22s",
+            ""
+          ]
+        },
+        {
+          "headers": [
+            "",
+            "Systems (82)",
+            "Harness",
+            "Score97.00%±0.7696.40%±0.83",
+            "Cost / Test$1.29$0.02",
+            "Input / Output Cost$0.435/$0.87$0.435/$0.87",
+            "Latency108.54s117.77s",
+            ""
+          ],
+          "cells": [
+            "9",
+            "Claude Opus 4.8",
+            "Mini-SWE-agent",
+            "88.60%±1.42",
+            "$1.92",
+            "$5/$25",
+            "9m27s",
+            ""
+          ]
+        },
+        {
+          "headers": [
+            "",
+            "Systems (82)",
+            "Harness",
+            "Score97.00%±0.7696.40%±0.83",
+            "Cost / Test$1.29$0.02",
+            "Input / Output Cost$0.435/$0.87$0.435/$0.87",
+            "Latency108.54s117.77s",
+            ""
+          ],
+          "cells": [
+            "10",
+            "Grok 4.5",
+            "Mini-SWE-agent",
+            "86.60%±1.52",
+            "$0.54",
+            "$2/$6",
+            "3m20s",
+            ""
+          ]
+        },
+        {
+          "headers": [
+            "",
+            "Systems (82)",
+            "Harness",
+            "Score97.00%±0.7696.40%±0.83",
+            "Cost / Test$1.29$0.02",
+            "Input / Output Cost$0.435/$0.87$0.435/$0.87",
+            "Latency108.54s117.77s",
+            ""
+          ],
+          "cells": [
+            "11",
+            "Muse Spark 1.2",
+            "Mini-SWE-agent",
+            "86.60%±1.52",
+            "$0.55",
+            "$1.25/$4.25",
+            "8m07s",
+            ""
+          ]
+        },
+        {
+          "headers": [
+            "",
+            "Systems (82)",
+            "Harness",
+            "Score97.00%±0.7696.40%±0.83",
+            "Cost / Test$1.29$0.02",
+            "Input / Output Cost$0.435/$0.87$0.435/$0.87",
+            "Latency108.54s117.77s",
+            ""
+          ],
+          "cells": [
+            "12",
+            "Claude Opus 4.8",
+            "Claude Code",
+            "85.80%±1.56",
+            "$0.67",
+            "N/A",
+            "2m15s",
+            ""
+          ]
+        },
+        {
+          "headers": [
+            "",
+            "Systems (82)",
+            "Harness",
+            "Score97.00%±0.7696.40%±0.83",
+            "Cost / Test$1.29$0.02",
+            "Input / Output Cost$0.435/$0.87$0.435/$0.87",
+            "Latency108.54s117.77s",
+            ""
+          ],
+          "cells": [
+            "13",
+            "Qwen 3.8 Max",
+            "Mini-SWE-agent",
+            "85.60%±1.57",
+            "$1.13",
+            "$2/$6",
+            "41m42s",
+            ""
+          ]
+        },
+        {
+          "headers": [
+            "",
+            "Systems (82)",
+            "Harness",
+            "Score97.00%±0.7696.40%±0.83",
+            "Cost / Test$1.29$0.02",
+            "Input / Output Cost$0.435/$0.87$0.435/$0.87",
+            "Latency108.54s117.77s",
+            ""
+          ],
+          "cells": [
+            "14",
+            "GLM 5.2",
+            "Mini-SWE-agent",
+            "82.80%±1.69",
+            "$0.71",
+            "$1.4/$4.4",
+            "11m10s",
+            ""
+          ]
+        },
+        {
+          "headers": [
+            "",
+            "Systems (82)",
+            "Harness",
+            "Score97.00%±0.7696.40%±0.83",
+            "Cost / Test$1.29$0.02",
+            "Input / Output Cost$0.435/$0.87$0.435/$0.87",
+            "Latency108.54s117.77s",
+            ""
+          ],
+          "cells": [
+            "15",
+            "GPT 5.5",
+            "Mini-SWE-agent",
+            "82.60%±1.70",
+            "$1.36",
+            "$5/$30",
+            "7m06s",
+            ""
+          ]
+        },
+        {
+          "headers": [
+            "",
+            "Systems (82)",
+            "Harness",
+            "Score97.00%±0.7696.40%±0.83",
+            "Cost / Test$1.29$0.02",
+            "Input / Output Cost$0.435/$0.87$0.435/$0.87",
+            "Latency108.54s117.77s",
+            ""
+          ],
+          "cells": [
+            "16",
+            "Inkling Small",
+            "Mini-SWE-agent",
+            "82.20%±1.71",
+            "$0.13",
+            "$0.3/$1.2",
+            "4m05s",
+            ""
+          ]
+        }
+      ],
+      "method": "table",
+      "fetchedAt": "2026-08-13T13:16:31.708Z"
     },
     "arena": {
       "textLeaderboard": [
@@ -1536,7 +1884,7 @@
             "qwen3.5-397b-a17bAlibaba · Apache 2.0",
             "1442±4",
             "66,749",
-            "$0.45 / $3",
+            "$0.50 / $3.60",
             "262.1K"
           ]
         },
@@ -2816,7 +3164,7 @@
             "qwen3-next-80b-a3b-instructAlibaba · Apache 2.0",
             "1401±5",
             "23,025",
-            "$0.09 / $1.10",
+            "$0.10 / $1.10",
             "262.1K"
           ]
         },
@@ -3056,7 +3404,7 @@
             "minimax-m2.5MiniMax · Modified MIT",
             "1390±4",
             "41,071",
-            "$0.22 / $0.90",
+            "$0.23 / $0.90",
             "204.8K"
           ]
         },
@@ -7841,7 +8189,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-08-13T07:15:33.667Z"
+      "fetchedAt": "2026-08-13T13:16:40.915Z"
     },
     "terms": {
       "main": {
@@ -8166,7 +8514,7 @@
           ]
         ]
       },
-      "fetchedAt": "2026-08-13T07:15:33.674Z"
+      "fetchedAt": "2026-08-13T13:16:40.921Z"
     }
   }
 }
