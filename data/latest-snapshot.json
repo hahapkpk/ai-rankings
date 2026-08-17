@@ -1,11 +1,11 @@
 {
   "version": "3.0",
-  "fetchedAt": "2026-08-17T00:56:42.518Z",
+  "fetchedAt": "2026-08-17T06:36:52.597Z",
   "sources": {
     "openrouter": {
       "leaderboard": {},
       "topModels": [],
-      "fetchedAt": "2026-08-17T00:56:42.519Z",
+      "fetchedAt": "2026-08-17T06:36:52.598Z",
       "error": "API fetch failed: Unexpected token '<', \"<!DOCTYPE \"... is not valid JSON"
     },
     "valsai": {
@@ -364,7 +364,7 @@
         }
       ],
       "method": "table",
-      "fetchedAt": "2026-08-17T00:56:59.121Z"
+      "fetchedAt": "2026-08-17T06:37:08.847Z"
     },
     "arena": {
       "textLeaderboard": [
@@ -1404,7 +1404,7 @@
             "deepseek-v4-proDeepSeek · MIT",
             "1458±4",
             "54,397",
-            "$1.17 / $2.34",
+            "$0.66 / $1.98",
             "1M"
           ]
         },
@@ -1524,7 +1524,7 @@
             "deepseek-v4-pro-high-previewDeepSeek · MIT",
             "1456±4",
             "51,759",
-            "$1.17 / $2.34",
+            "$0.66 / $1.98",
             "1M"
           ]
         },
@@ -2824,7 +2824,7 @@
             "qwen3-vl-235b-a22b-instructAlibaba · Apache 2.0",
             "1414±6",
             "11,561",
-            "$0.26 / $1.04",
+            "$0.21 / $1.90",
             "262.1K"
           ]
         },
@@ -8189,7 +8189,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-08-17T00:57:08.304Z"
+      "fetchedAt": "2026-08-17T06:37:17.630Z"
     },
     "terms": {
       "main": {
@@ -8514,7 +8514,7 @@
           ]
         ]
       },
-      "fetchedAt": "2026-08-17T00:57:08.310Z"
+      "fetchedAt": "2026-08-17T06:37:17.636Z"
     }
   }
 }
