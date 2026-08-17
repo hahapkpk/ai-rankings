@@ -1,11 +1,11 @@
 {
   "version": "3.0",
-  "fetchedAt": "2026-08-16T12:42:20.760Z",
+  "fetchedAt": "2026-08-17T00:56:42.518Z",
   "sources": {
     "openrouter": {
       "leaderboard": {},
       "topModels": [],
-      "fetchedAt": "2026-08-16T12:42:20.761Z",
+      "fetchedAt": "2026-08-17T00:56:42.519Z",
       "error": "API fetch failed: Unexpected token '<', \"<!DOCTYPE \"... is not valid JSON"
     },
     "valsai": {
@@ -13,7 +13,7 @@
         {
           "headers": [
             "",
-            "Systems (82)",
+            "Systems (83)",
             "Harness",
             "Score97.00%±0.7696.40%±0.83",
             "Cost / Test$1.29$0.02",
@@ -35,7 +35,7 @@
         {
           "headers": [
             "",
-            "Systems (82)",
+            "Systems (83)",
             "Harness",
             "Score97.00%±0.7696.40%±0.83",
             "Cost / Test$1.29$0.02",
@@ -57,7 +57,7 @@
         {
           "headers": [
             "",
-            "Systems (82)",
+            "Systems (83)",
             "Harness",
             "Score97.00%±0.7696.40%±0.83",
             "Cost / Test$1.29$0.02",
@@ -79,7 +79,7 @@
         {
           "headers": [
             "",
-            "Systems (82)",
+            "Systems (83)",
             "Harness",
             "Score97.00%±0.7696.40%±0.83",
             "Cost / Test$1.29$0.02",
@@ -101,7 +101,7 @@
         {
           "headers": [
             "",
-            "Systems (82)",
+            "Systems (83)",
             "Harness",
             "Score97.00%±0.7696.40%±0.83",
             "Cost / Test$1.29$0.02",
@@ -123,7 +123,7 @@
         {
           "headers": [
             "",
-            "Systems (82)",
+            "Systems (83)",
             "Harness",
             "Score97.00%±0.7696.40%±0.83",
             "Cost / Test$1.29$0.02",
@@ -145,7 +145,7 @@
         {
           "headers": [
             "",
-            "Systems (82)",
+            "Systems (83)",
             "Harness",
             "Score97.00%±0.7696.40%±0.83",
             "Cost / Test$1.29$0.02",
@@ -167,7 +167,7 @@
         {
           "headers": [
             "",
-            "Systems (82)",
+            "Systems (83)",
             "Harness",
             "Score97.00%±0.7696.40%±0.83",
             "Cost / Test$1.29$0.02",
@@ -189,7 +189,7 @@
         {
           "headers": [
             "",
-            "Systems (82)",
+            "Systems (83)",
             "Harness",
             "Score97.00%±0.7696.40%±0.83",
             "Cost / Test$1.29$0.02",
@@ -211,7 +211,7 @@
         {
           "headers": [
             "",
-            "Systems (82)",
+            "Systems (83)",
             "Harness",
             "Score97.00%±0.7696.40%±0.83",
             "Cost / Test$1.29$0.02",
@@ -233,7 +233,7 @@
         {
           "headers": [
             "",
-            "Systems (82)",
+            "Systems (83)",
             "Harness",
             "Score97.00%±0.7696.40%±0.83",
             "Cost / Test$1.29$0.02",
@@ -255,7 +255,7 @@
         {
           "headers": [
             "",
-            "Systems (82)",
+            "Systems (83)",
             "Harness",
             "Score97.00%±0.7696.40%±0.83",
             "Cost / Test$1.29$0.02",
@@ -277,7 +277,7 @@
         {
           "headers": [
             "",
-            "Systems (82)",
+            "Systems (83)",
             "Harness",
             "Score97.00%±0.7696.40%±0.83",
             "Cost / Test$1.29$0.02",
@@ -299,7 +299,7 @@
         {
           "headers": [
             "",
-            "Systems (82)",
+            "Systems (83)",
             "Harness",
             "Score97.00%±0.7696.40%±0.83",
             "Cost / Test$1.29$0.02",
@@ -321,7 +321,7 @@
         {
           "headers": [
             "",
-            "Systems (82)",
+            "Systems (83)",
             "Harness",
             "Score97.00%±0.7696.40%±0.83",
             "Cost / Test$1.29$0.02",
@@ -343,7 +343,7 @@
         {
           "headers": [
             "",
-            "Systems (82)",
+            "Systems (83)",
             "Harness",
             "Score97.00%±0.7696.40%±0.83",
             "Cost / Test$1.29$0.02",
@@ -364,7 +364,7 @@
         }
       ],
       "method": "table",
-      "fetchedAt": "2026-08-16T12:42:37.505Z"
+      "fetchedAt": "2026-08-17T00:56:59.121Z"
     },
     "arena": {
       "textLeaderboard": [
@@ -8189,7 +8189,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-08-16T12:42:46.758Z"
+      "fetchedAt": "2026-08-17T00:57:08.304Z"
     },
     "terms": {
       "main": {
@@ -8514,7 +8514,7 @@
           ]
         ]
       },
-      "fetchedAt": "2026-08-16T12:42:46.764Z"
+      "fetchedAt": "2026-08-17T00:57:08.310Z"
     }
   }
 }
