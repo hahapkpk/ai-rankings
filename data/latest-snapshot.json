@@ -1,11 +1,11 @@
 {
   "version": "3.0",
-  "fetchedAt": "2026-08-17T06:36:52.597Z",
+  "fetchedAt": "2026-08-17T12:47:51.712Z",
   "sources": {
     "openrouter": {
       "leaderboard": {},
       "topModels": [],
-      "fetchedAt": "2026-08-17T06:36:52.598Z",
+      "fetchedAt": "2026-08-17T12:47:51.713Z",
       "error": "API fetch failed: Unexpected token '<', \"<!DOCTYPE \"... is not valid JSON"
     },
     "valsai": {
@@ -364,7 +364,7 @@
         }
       ],
       "method": "table",
-      "fetchedAt": "2026-08-17T06:37:08.847Z"
+      "fetchedAt": "2026-08-17T12:48:08.156Z"
     },
     "arena": {
       "textLeaderboard": [
@@ -2464,7 +2464,7 @@
             "glm-4.6Z.ai · MIT",
             "1424±4",
             "35,848",
-            "$0.55 / $2.20",
+            "$0.50 / $2",
             "204.8K"
           ]
         },
@@ -8189,7 +8189,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-08-17T06:37:17.630Z"
+      "fetchedAt": "2026-08-17T12:48:17.141Z"
     },
     "terms": {
       "main": {
@@ -8514,7 +8514,7 @@
           ]
         ]
       },
-      "fetchedAt": "2026-08-17T06:37:17.636Z"
+      "fetchedAt": "2026-08-17T12:48:17.147Z"
     }
   }
 }
