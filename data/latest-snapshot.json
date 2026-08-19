@@ -1,11 +1,11 @@
 {
   "version": "3.0",
-  "fetchedAt": "2026-08-19T06:29:37.194Z",
+  "fetchedAt": "2026-08-19T12:51:24.124Z",
   "sources": {
     "openrouter": {
       "leaderboard": {},
       "topModels": [],
-      "fetchedAt": "2026-08-19T06:29:37.195Z",
+      "fetchedAt": "2026-08-19T12:51:24.125Z",
       "error": "API fetch failed: Unexpected token '<', \"<!DOCTYPE \"... is not valid JSON"
     },
     "valsai": {
@@ -13,7 +13,7 @@
         {
           "headers": [
             "",
-            "Systems (83)",
+            "Systems (84)",
             "Harness",
             "Score97.00%±0.7696.40%±0.83",
             "Cost / Test$1.29$0.10",
@@ -35,7 +35,7 @@
         {
           "headers": [
             "",
-            "Systems (83)",
+            "Systems (84)",
             "Harness",
             "Score97.00%±0.7696.40%±0.83",
             "Cost / Test$1.29$0.10",
@@ -57,7 +57,7 @@
         {
           "headers": [
             "",
-            "Systems (83)",
+            "Systems (84)",
             "Harness",
             "Score97.00%±0.7696.40%±0.83",
             "Cost / Test$1.29$0.10",
@@ -79,7 +79,7 @@
         {
           "headers": [
             "",
-            "Systems (83)",
+            "Systems (84)",
             "Harness",
             "Score97.00%±0.7696.40%±0.83",
             "Cost / Test$1.29$0.10",
@@ -101,7 +101,7 @@
         {
           "headers": [
             "",
-            "Systems (83)",
+            "Systems (84)",
             "Harness",
             "Score97.00%±0.7696.40%±0.83",
             "Cost / Test$1.29$0.10",
@@ -111,6 +111,28 @@
           ],
           "cells": [
             "5",
+            "GLM 5.3",
+            "Mini-SWE-agent",
+            "95.40%±0.94",
+            "$0.34",
+            "$1.4/$4.4",
+            "14m01s",
+            ""
+          ]
+        },
+        {
+          "headers": [
+            "",
+            "Systems (84)",
+            "Harness",
+            "Score97.00%±0.7696.40%±0.83",
+            "Cost / Test$1.29$0.10",
+            "Input / Output Cost$0.435/$0.87$0.075/$0.22",
+            "Latency108.54s117.77s",
+            ""
+          ],
+          "cells": [
+            "6",
             "Claude Fable 5",
             "Mini-SWE-agent",
             "95.00%±0.98",
@@ -123,7 +145,7 @@
         {
           "headers": [
             "",
-            "Systems (83)",
+            "Systems (84)",
             "Harness",
             "Score97.00%±0.7696.40%±0.83",
             "Cost / Test$1.29$0.10",
@@ -132,7 +154,7 @@
             ""
           ],
           "cells": [
-            "6",
+            "7",
             "Kimi K3",
             "Mini-SWE-agent",
             "93.40%±1.11",
@@ -145,7 +167,7 @@
         {
           "headers": [
             "",
-            "Systems (83)",
+            "Systems (84)",
             "Harness",
             "Score97.00%±0.7696.40%±0.83",
             "Cost / Test$1.29$0.10",
@@ -154,7 +176,7 @@
             ""
           ],
           "cells": [
-            "7",
+            "8",
             "GPT-5.6 Luna",
             "Mini-SWE-agent",
             "93.00%±1.14",
@@ -167,7 +189,7 @@
         {
           "headers": [
             "",
-            "Systems (83)",
+            "Systems (84)",
             "Harness",
             "Score97.00%±0.7696.40%±0.83",
             "Cost / Test$1.29$0.10",
@@ -176,7 +198,7 @@
             ""
           ],
           "cells": [
-            "8",
+            "9",
             "DeepSeek V4 Flash 0731",
             "Mini-SWE-agent",
             "88.80%±1.41",
@@ -189,7 +211,7 @@
         {
           "headers": [
             "",
-            "Systems (83)",
+            "Systems (84)",
             "Harness",
             "Score97.00%±0.7696.40%±0.83",
             "Cost / Test$1.29$0.10",
@@ -198,7 +220,7 @@
             ""
           ],
           "cells": [
-            "9",
+            "10",
             "Claude Opus 4.8",
             "Mini-SWE-agent",
             "88.60%±1.42",
@@ -211,7 +233,7 @@
         {
           "headers": [
             "",
-            "Systems (83)",
+            "Systems (84)",
             "Harness",
             "Score97.00%±0.7696.40%±0.83",
             "Cost / Test$1.29$0.10",
@@ -220,7 +242,7 @@
             ""
           ],
           "cells": [
-            "10",
+            "11",
             "Grok 4.5",
             "Mini-SWE-agent",
             "86.60%±1.52",
@@ -233,7 +255,7 @@
         {
           "headers": [
             "",
-            "Systems (83)",
+            "Systems (84)",
             "Harness",
             "Score97.00%±0.7696.40%±0.83",
             "Cost / Test$1.29$0.10",
@@ -242,7 +264,7 @@
             ""
           ],
           "cells": [
-            "11",
+            "12",
             "Muse Spark 1.2",
             "Mini-SWE-agent",
             "86.60%±1.52",
@@ -255,7 +277,7 @@
         {
           "headers": [
             "",
-            "Systems (83)",
+            "Systems (84)",
             "Harness",
             "Score97.00%±0.7696.40%±0.83",
             "Cost / Test$1.29$0.10",
@@ -264,7 +286,7 @@
             ""
           ],
           "cells": [
-            "12",
+            "13",
             "Claude Opus 4.8",
             "Claude Code",
             "85.80%±1.56",
@@ -277,7 +299,7 @@
         {
           "headers": [
             "",
-            "Systems (83)",
+            "Systems (84)",
             "Harness",
             "Score97.00%±0.7696.40%±0.83",
             "Cost / Test$1.29$0.10",
@@ -286,7 +308,7 @@
             ""
           ],
           "cells": [
-            "13",
+            "14",
             "Qwen 3.8 Max",
             "Mini-SWE-agent",
             "85.60%±1.57",
@@ -299,7 +321,7 @@
         {
           "headers": [
             "",
-            "Systems (83)",
+            "Systems (84)",
             "Harness",
             "Score97.00%±0.7696.40%±0.83",
             "Cost / Test$1.29$0.10",
@@ -308,7 +330,7 @@
             ""
           ],
           "cells": [
-            "14",
+            "15",
             "GLM 5.2",
             "Mini-SWE-agent",
             "82.80%±1.69",
@@ -321,29 +343,7 @@
         {
           "headers": [
             "",
-            "Systems (83)",
-            "Harness",
-            "Score97.00%±0.7696.40%±0.83",
-            "Cost / Test$1.29$0.10",
-            "Input / Output Cost$0.435/$0.87$0.075/$0.22",
-            "Latency108.54s117.77s",
-            ""
-          ],
-          "cells": [
-            "15",
-            "GPT 5.5",
-            "Mini-SWE-agent",
-            "82.60%±1.70",
-            "$1.36",
-            "$5/$30",
-            "7m06s",
-            ""
-          ]
-        },
-        {
-          "headers": [
-            "",
-            "Systems (83)",
+            "Systems (84)",
             "Harness",
             "Score97.00%±0.7696.40%±0.83",
             "Cost / Test$1.29$0.10",
@@ -353,18 +353,18 @@
           ],
           "cells": [
             "16",
-            "Inkling Small",
+            "GPT 5.5",
             "Mini-SWE-agent",
-            "82.20%±1.71",
-            "$0.13",
-            "$0.3/$1.2",
-            "4m05s",
+            "82.60%±1.70",
+            "$1.36",
+            "$5/$30",
+            "7m06s",
             ""
           ]
         }
       ],
       "method": "table",
-      "fetchedAt": "2026-08-19T06:29:54.432Z"
+      "fetchedAt": "2026-08-19T12:51:41.172Z"
     },
     "arena": {
       "textLeaderboard": [
@@ -8209,7 +8209,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-08-19T06:30:03.642Z"
+      "fetchedAt": "2026-08-19T12:51:50.400Z"
     },
     "terms": {
       "main": {
@@ -8534,7 +8534,7 @@
           ]
         ]
       },
-      "fetchedAt": "2026-08-19T06:30:03.648Z"
+      "fetchedAt": "2026-08-19T12:51:50.406Z"
     }
   }
 }
