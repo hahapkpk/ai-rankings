@@ -1,11 +1,11 @@
 {
   "version": "3.0",
-  "fetchedAt": "2026-08-25T12:51:06.325Z",
+  "fetchedAt": "2026-08-26T00:58:35.683Z",
   "sources": {
     "openrouter": {
       "leaderboard": {},
       "topModels": [],
-      "fetchedAt": "2026-08-25T12:51:06.326Z",
+      "fetchedAt": "2026-08-26T00:58:35.684Z",
       "error": "API fetch failed: Unexpected token '<', \"<!DOCTYPE \"... is not valid JSON"
     },
     "valsai": {
@@ -364,7 +364,7 @@
         }
       ],
       "method": "table",
-      "fetchedAt": "2026-08-25T12:51:23.524Z"
+      "fetchedAt": "2026-08-26T00:58:52.859Z"
     },
     "arena": {
       "textLeaderboard": [
@@ -1465,7 +1465,7 @@
             "1457±4",
             "27,850",
             "$1 / $3.20",
-            "202.8K"
+            "204.8K"
           ]
         },
         {
@@ -1984,7 +1984,7 @@
             "qwen3.8-27bAlibaba · Apache 2.0",
             "1440±10",
             "3,205",
-            "$0.50 / $3",
+            "$0.40 / $3",
             "N/A"
           ]
         },
@@ -3004,7 +3004,7 @@
             "gemini-2.5-flashGoogle · Proprietary",
             "1410±2",
             "124,731",
-            "$0.15 / $1.25",
+            "$0.30 / $2.50",
             "1M"
           ]
         },
@@ -8249,7 +8249,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-08-25T12:51:33.025Z"
+      "fetchedAt": "2026-08-26T00:59:01.283Z"
     },
     "terms": {
       "main": {
@@ -8574,7 +8574,7 @@
           ]
         ]
       },
-      "fetchedAt": "2026-08-25T12:51:33.031Z"
+      "fetchedAt": "2026-08-26T00:59:01.288Z"
     }
   }
 }
