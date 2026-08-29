@@ -1,11 +1,11 @@
 {
   "version": "3.0",
-  "fetchedAt": "2026-08-28T21:51:03.016Z",
+  "fetchedAt": "2026-08-29T05:17:04.285Z",
   "sources": {
     "openrouter": {
       "leaderboard": {},
       "topModels": [],
-      "fetchedAt": "2026-08-28T21:51:03.017Z",
+      "fetchedAt": "2026-08-29T05:17:04.286Z",
       "error": "API fetch failed: Unexpected token '<', \"<!DOCTYPE \"... is not valid JSON"
     },
     "valsai": {
@@ -364,7 +364,7 @@
         }
       ],
       "method": "table",
-      "fetchedAt": "2026-08-28T21:51:20.906Z"
+      "fetchedAt": "2026-08-29T05:17:21.277Z"
     },
     "arena": {
       "textLeaderboard": [
@@ -1544,7 +1544,7 @@
             "Tencenthy3Tencent · Apache 2.0",
             "1456±8",
             "6,466",
-            "$0.08 / $0.33",
+            "$0.13 / $0.53",
             "262.1K"
           ]
         },
@@ -2484,7 +2484,7 @@
             "deepseek-v3.2DeepSeek · MIT",
             "1425±4",
             "46,493",
-            "$0.27 / $0.40",
+            "$0.26 / $0.38",
             "163.8K"
           ]
         },
@@ -2584,7 +2584,7 @@
             "deepseek-v3.2-thinkingDeepSeek · MIT",
             "1423±4",
             "40,513",
-            "$0.27 / $0.40",
+            "$0.26 / $0.38",
             "163.8K"
           ]
         },
@@ -3104,8 +3104,8 @@
             "Thinking MachinesInkling SmallThinky · Apache 2.0",
             "1407±6",
             "13,438",
-            "$0.45 / $1.20",
-            "1M"
+            "$0.50 / $1.20",
+            "524.3K"
           ]
         },
         {
@@ -8269,7 +8269,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-08-28T21:51:29.075Z"
+      "fetchedAt": "2026-08-29T05:17:29.409Z"
     },
     "terms": {
       "main": {
@@ -8594,7 +8594,7 @@
           ]
         ]
       },
-      "fetchedAt": "2026-08-28T21:51:29.081Z"
+      "fetchedAt": "2026-08-29T05:17:29.415Z"
     }
   }
 }
