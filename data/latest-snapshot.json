@@ -1,11 +1,11 @@
 {
   "version": "3.0",
-  "fetchedAt": "2026-08-29T16:23:56.994Z",
+  "fetchedAt": "2026-08-30T03:10:08.368Z",
   "sources": {
     "openrouter": {
       "leaderboard": {},
       "topModels": [],
-      "fetchedAt": "2026-08-29T16:23:56.994Z",
+      "fetchedAt": "2026-08-30T03:10:08.369Z",
       "error": "API fetch failed: Unexpected token '<', \"<!DOCTYPE \"... is not valid JSON"
     },
     "valsai": {
@@ -364,7 +364,7 @@
         }
       ],
       "method": "table",
-      "fetchedAt": "2026-08-29T16:24:14.578Z"
+      "fetchedAt": "2026-08-30T03:10:26.043Z"
     },
     "arena": {
       "textLeaderboard": [
@@ -2324,7 +2324,7 @@
             "grok-4-1-fast-reasoningSpaceXAI · Proprietary",
             "1430±3",
             "55,434",
-            "$0.20 / $0.50",
+            "$1.25 / $2.50",
             "2M"
           ]
         },
@@ -2484,7 +2484,7 @@
             "deepseek-v3.2DeepSeek · MIT",
             "1425±4",
             "46,493",
-            "$0.27 / $0.40",
+            "$0.26 / $0.38",
             "163.8K"
           ]
         },
@@ -2584,7 +2584,7 @@
             "deepseek-v3.2-thinkingDeepSeek · MIT",
             "1423±4",
             "40,513",
-            "$0.27 / $0.40",
+            "$0.26 / $0.38",
             "163.8K"
           ]
         },
@@ -3024,7 +3024,7 @@
             "grok-4-0709SpaceXAI · Proprietary",
             "1411±4",
             "39,297",
-            "$3 / $15",
+            "$1.25 / $2.50",
             "256K"
           ]
         },
@@ -3124,7 +3124,7 @@
             "grok-4-fast-reasoningSpaceXAI · Proprietary",
             "1405±5",
             "17,967",
-            "$0.20 / $0.50",
+            "$1.25 / $2.50",
             "2M"
           ]
         },
@@ -3284,7 +3284,7 @@
             "qwen3-next-80b-a3b-instructAlibaba · Apache 2.0",
             "1399±5",
             "22,523",
-            "$0.10 / $1.10",
+            "$0.09 / $1.10",
             "262.1K"
           ]
         },
@@ -4184,7 +4184,7 @@
             "grok-3-mini-betaSpaceXAI · Proprietary",
             "1358±5",
             "20,837",
-            "$0.30 / $0.50",
+            "$1.25 / $2.50",
             "131.1K"
           ]
         },
@@ -8269,7 +8269,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-08-29T16:24:24.021Z"
+      "fetchedAt": "2026-08-30T03:10:34.545Z"
     },
     "terms": {
       "main": {
@@ -8594,7 +8594,7 @@
           ]
         ]
       },
-      "fetchedAt": "2026-08-29T16:24:24.027Z"
+      "fetchedAt": "2026-08-30T03:10:34.551Z"
     }
   }
 }
