@@ -1,11 +1,11 @@
 {
   "version": "3.0",
-  "fetchedAt": "2026-08-30T16:17:01.402Z",
+  "fetchedAt": "2026-08-31T03:04:01.637Z",
   "sources": {
     "openrouter": {
       "leaderboard": {},
       "topModels": [],
-      "fetchedAt": "2026-08-30T16:17:01.402Z",
+      "fetchedAt": "2026-08-31T03:04:01.637Z",
       "error": "API fetch failed: Unexpected token '<', \"<!DOCTYPE \"... is not valid JSON"
     },
     "valsai": {
@@ -364,7 +364,7 @@
         }
       ],
       "method": "table",
-      "fetchedAt": "2026-08-30T16:17:18.629Z"
+      "fetchedAt": "2026-08-31T03:04:18.672Z"
     },
     "arena": {
       "textLeaderboard": [
@@ -2284,7 +2284,7 @@
             "kimi-k2.5-instantMoonshot · Modified MIT",
             "1431±7",
             "7,992",
-            "$0.60 / $3",
+            "$0.45 / $2.25",
             "262.1K"
           ]
         },
@@ -8269,7 +8269,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-08-30T16:17:25.953Z"
+      "fetchedAt": "2026-08-31T03:04:25.902Z"
     },
     "terms": {
       "main": {
@@ -8594,7 +8594,7 @@
           ]
         ]
       },
-      "fetchedAt": "2026-08-30T16:17:25.958Z"
+      "fetchedAt": "2026-08-31T03:04:25.906Z"
     }
   }
 }
