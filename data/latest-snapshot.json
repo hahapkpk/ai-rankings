@@ -1,11 +1,11 @@
 {
   "version": "3.0",
-  "fetchedAt": "2026-08-31T12:17:11.358Z",
+  "fetchedAt": "2026-08-31T18:55:45.345Z",
   "sources": {
     "openrouter": {
       "leaderboard": {},
       "topModels": [],
-      "fetchedAt": "2026-08-31T12:17:11.359Z",
+      "fetchedAt": "2026-08-31T18:55:45.345Z",
       "error": "API fetch failed: Unexpected token '<', \"<!DOCTYPE \"... is not valid JSON"
     },
     "valsai": {
@@ -13,12 +13,12 @@
         {
           "headers": [
             "",
-            "Systems (86)",
+            "Systems (87)",
             "Harness",
             "Score97.00%±0.7696.40%±0.83",
             "Cost / Test$1.29$0.10",
-            "Input / Output Cost$0.435/$0.87$0.075/$0.22",
-            "Latency108.54s117.77s",
+            "Input / Output Cost$0.075/$0.25$0.435/$0.87",
+            "Duration108.54s117.77s",
             ""
           ],
           "cells": [
@@ -35,12 +35,12 @@
         {
           "headers": [
             "",
-            "Systems (86)",
+            "Systems (87)",
             "Harness",
             "Score97.00%±0.7696.40%±0.83",
             "Cost / Test$1.29$0.10",
-            "Input / Output Cost$0.435/$0.87$0.075/$0.22",
-            "Latency108.54s117.77s",
+            "Input / Output Cost$0.075/$0.25$0.435/$0.87",
+            "Duration108.54s117.77s",
             ""
           ],
           "cells": [
@@ -57,12 +57,12 @@
         {
           "headers": [
             "",
-            "Systems (86)",
+            "Systems (87)",
             "Harness",
             "Score97.00%±0.7696.40%±0.83",
             "Cost / Test$1.29$0.10",
-            "Input / Output Cost$0.435/$0.87$0.075/$0.22",
-            "Latency108.54s117.77s",
+            "Input / Output Cost$0.075/$0.25$0.435/$0.87",
+            "Duration108.54s117.77s",
             ""
           ],
           "cells": [
@@ -79,12 +79,12 @@
         {
           "headers": [
             "",
-            "Systems (86)",
+            "Systems (87)",
             "Harness",
             "Score97.00%±0.7696.40%±0.83",
             "Cost / Test$1.29$0.10",
-            "Input / Output Cost$0.435/$0.87$0.075/$0.22",
-            "Latency108.54s117.77s",
+            "Input / Output Cost$0.075/$0.25$0.435/$0.87",
+            "Duration108.54s117.77s",
             ""
           ],
           "cells": [
@@ -101,12 +101,12 @@
         {
           "headers": [
             "",
-            "Systems (86)",
+            "Systems (87)",
             "Harness",
             "Score97.00%±0.7696.40%±0.83",
             "Cost / Test$1.29$0.10",
-            "Input / Output Cost$0.435/$0.87$0.075/$0.22",
-            "Latency108.54s117.77s",
+            "Input / Output Cost$0.075/$0.25$0.435/$0.87",
+            "Duration108.54s117.77s",
             ""
           ],
           "cells": [
@@ -123,12 +123,12 @@
         {
           "headers": [
             "",
-            "Systems (86)",
+            "Systems (87)",
             "Harness",
             "Score97.00%±0.7696.40%±0.83",
             "Cost / Test$1.29$0.10",
-            "Input / Output Cost$0.435/$0.87$0.075/$0.22",
-            "Latency108.54s117.77s",
+            "Input / Output Cost$0.075/$0.25$0.435/$0.87",
+            "Duration108.54s117.77s",
             ""
           ],
           "cells": [
@@ -145,12 +145,12 @@
         {
           "headers": [
             "",
-            "Systems (86)",
+            "Systems (87)",
             "Harness",
             "Score97.00%±0.7696.40%±0.83",
             "Cost / Test$1.29$0.10",
-            "Input / Output Cost$0.435/$0.87$0.075/$0.22",
-            "Latency108.54s117.77s",
+            "Input / Output Cost$0.075/$0.25$0.435/$0.87",
+            "Duration108.54s117.77s",
             ""
           ],
           "cells": [
@@ -167,12 +167,12 @@
         {
           "headers": [
             "",
-            "Systems (86)",
+            "Systems (87)",
             "Harness",
             "Score97.00%±0.7696.40%±0.83",
             "Cost / Test$1.29$0.10",
-            "Input / Output Cost$0.435/$0.87$0.075/$0.22",
-            "Latency108.54s117.77s",
+            "Input / Output Cost$0.075/$0.25$0.435/$0.87",
+            "Duration108.54s117.77s",
             ""
           ],
           "cells": [
@@ -189,12 +189,12 @@
         {
           "headers": [
             "",
-            "Systems (86)",
+            "Systems (87)",
             "Harness",
             "Score97.00%±0.7696.40%±0.83",
             "Cost / Test$1.29$0.10",
-            "Input / Output Cost$0.435/$0.87$0.075/$0.22",
-            "Latency108.54s117.77s",
+            "Input / Output Cost$0.075/$0.25$0.435/$0.87",
+            "Duration108.54s117.77s",
             ""
           ],
           "cells": [
@@ -211,16 +211,38 @@
         {
           "headers": [
             "",
-            "Systems (86)",
+            "Systems (87)",
             "Harness",
             "Score97.00%±0.7696.40%±0.83",
             "Cost / Test$1.29$0.10",
-            "Input / Output Cost$0.435/$0.87$0.075/$0.22",
-            "Latency108.54s117.77s",
+            "Input / Output Cost$0.075/$0.25$0.435/$0.87",
+            "Duration108.54s117.77s",
             ""
           ],
           "cells": [
             "10",
+            "GLM 5.3 Flash",
+            "Mini-SWE-agent",
+            "92.00%±1.21",
+            "$0.02",
+            "$0.075/$0.25",
+            "1h04m",
+            ""
+          ]
+        },
+        {
+          "headers": [
+            "",
+            "Systems (87)",
+            "Harness",
+            "Score97.00%±0.7696.40%±0.83",
+            "Cost / Test$1.29$0.10",
+            "Input / Output Cost$0.075/$0.25$0.435/$0.87",
+            "Duration108.54s117.77s",
+            ""
+          ],
+          "cells": [
+            "11",
             "DeepSeek V4 Flash 0731",
             "Mini-SWE-agent",
             "88.80%±1.41",
@@ -233,16 +255,16 @@
         {
           "headers": [
             "",
-            "Systems (86)",
+            "Systems (87)",
             "Harness",
             "Score97.00%±0.7696.40%±0.83",
             "Cost / Test$1.29$0.10",
-            "Input / Output Cost$0.435/$0.87$0.075/$0.22",
-            "Latency108.54s117.77s",
+            "Input / Output Cost$0.075/$0.25$0.435/$0.87",
+            "Duration108.54s117.77s",
             ""
           ],
           "cells": [
-            "11",
+            "12",
             "Claude Opus 4.8",
             "Mini-SWE-agent",
             "88.60%±1.42",
@@ -255,16 +277,16 @@
         {
           "headers": [
             "",
-            "Systems (86)",
+            "Systems (87)",
             "Harness",
             "Score97.00%±0.7696.40%±0.83",
             "Cost / Test$1.29$0.10",
-            "Input / Output Cost$0.435/$0.87$0.075/$0.22",
-            "Latency108.54s117.77s",
+            "Input / Output Cost$0.075/$0.25$0.435/$0.87",
+            "Duration108.54s117.77s",
             ""
           ],
           "cells": [
-            "12",
+            "13",
             "Grok 4.5",
             "Mini-SWE-agent",
             "86.60%±1.52",
@@ -277,16 +299,16 @@
         {
           "headers": [
             "",
-            "Systems (86)",
+            "Systems (87)",
             "Harness",
             "Score97.00%±0.7696.40%±0.83",
             "Cost / Test$1.29$0.10",
-            "Input / Output Cost$0.435/$0.87$0.075/$0.22",
-            "Latency108.54s117.77s",
+            "Input / Output Cost$0.075/$0.25$0.435/$0.87",
+            "Duration108.54s117.77s",
             ""
           ],
           "cells": [
-            "13",
+            "14",
             "Muse Spark 1.2",
             "Mini-SWE-agent",
             "86.60%±1.52",
@@ -299,16 +321,16 @@
         {
           "headers": [
             "",
-            "Systems (86)",
+            "Systems (87)",
             "Harness",
             "Score97.00%±0.7696.40%±0.83",
             "Cost / Test$1.29$0.10",
-            "Input / Output Cost$0.435/$0.87$0.075/$0.22",
-            "Latency108.54s117.77s",
+            "Input / Output Cost$0.075/$0.25$0.435/$0.87",
+            "Duration108.54s117.77s",
             ""
           ],
           "cells": [
-            "14",
+            "15",
             "Qwen 3.8 27B",
             "Mini-SWE-agent",
             "86.00%±1.55",
@@ -321,16 +343,16 @@
         {
           "headers": [
             "",
-            "Systems (86)",
+            "Systems (87)",
             "Harness",
             "Score97.00%±0.7696.40%±0.83",
             "Cost / Test$1.29$0.10",
-            "Input / Output Cost$0.435/$0.87$0.075/$0.22",
-            "Latency108.54s117.77s",
+            "Input / Output Cost$0.075/$0.25$0.435/$0.87",
+            "Duration108.54s117.77s",
             ""
           ],
           "cells": [
-            "15",
+            "16",
             "Claude Opus 4.8",
             "Claude Code",
             "85.80%±1.56",
@@ -339,32 +361,10 @@
             "2m15s",
             ""
           ]
-        },
-        {
-          "headers": [
-            "",
-            "Systems (86)",
-            "Harness",
-            "Score97.00%±0.7696.40%±0.83",
-            "Cost / Test$1.29$0.10",
-            "Input / Output Cost$0.435/$0.87$0.075/$0.22",
-            "Latency108.54s117.77s",
-            ""
-          ],
-          "cells": [
-            "16",
-            "Qwen 3.8 Max",
-            "Mini-SWE-agent",
-            "85.60%±1.57",
-            "$1.13",
-            "$2/$6",
-            "41m42s",
-            ""
-          ]
         }
       ],
       "method": "table",
-      "fetchedAt": "2026-08-31T12:17:31.538Z"
+      "fetchedAt": "2026-08-31T18:56:03.115Z"
     },
     "arena": {
       "textLeaderboard": [
@@ -1544,7 +1544,7 @@
             "Tencenthy3Tencent · Apache 2.0",
             "1456±8",
             "6,466",
-            "$0.13 / $0.53",
+            "$0.08 / $0.33",
             "262.1K"
           ]
         },
@@ -1824,7 +1824,7 @@
             "gemini-2.5-proGoogle · Proprietary",
             "1446±2",
             "122,589",
-            "$0.63 / $5",
+            "$1.25 / $10",
             "1M"
           ]
         },
@@ -8269,7 +8269,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-08-31T12:17:39.920Z"
+      "fetchedAt": "2026-08-31T18:56:11.281Z"
     },
     "terms": {
       "main": {
@@ -8594,7 +8594,7 @@
           ]
         ]
       },
-      "fetchedAt": "2026-08-31T12:17:39.925Z"
+      "fetchedAt": "2026-08-31T18:56:11.287Z"
     }
   }
 }
