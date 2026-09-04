@@ -1,11 +1,11 @@
 {
   "version": "3.0",
-  "fetchedAt": "2026-09-03T16:00:43.129Z",
+  "fetchedAt": "2026-09-04T02:35:51.288Z",
   "sources": {
     "openrouter": {
       "leaderboard": {},
       "topModels": [],
-      "fetchedAt": "2026-09-03T16:00:43.130Z",
+      "fetchedAt": "2026-09-04T02:35:51.289Z",
       "error": "API fetch failed: Unexpected token '<', \"<!DOCTYPE \"... is not valid JSON"
     },
     "valsai": {
@@ -364,7 +364,7 @@
         }
       ],
       "method": "table",
-      "fetchedAt": "2026-09-03T16:01:00.773Z"
+      "fetchedAt": "2026-09-04T02:36:08.954Z"
     },
     "arena": {
       "textLeaderboard": [
@@ -1564,7 +1564,7 @@
             "Tencenthy3Tencent · Apache 2.0",
             "1455±8",
             "6,958",
-            "$0.13 / $0.53",
+            "$0.08 / $0.33",
             "262.1K"
           ]
         },
@@ -2425,7 +2425,7 @@
             "1427±7",
             "11,017",
             "$0.75 / $3.75",
-            "262.1K"
+            "32.8K"
           ]
         },
         {
@@ -6824,8 +6824,8 @@
             "mistral-mediumMistral · Proprietary",
             "1222±5",
             "34,550",
-            "$2.70 / $8.10",
-            "32K"
+            "$1.50 / $7.50",
+            "262.1K"
           ]
         },
         {
@@ -8369,7 +8369,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-09-03T16:01:09.842Z"
+      "fetchedAt": "2026-09-04T02:36:16.836Z"
     },
     "terms": {
       "main": {
@@ -8694,7 +8694,7 @@
           ]
         ]
       },
-      "fetchedAt": "2026-09-03T16:01:09.848Z"
+      "fetchedAt": "2026-09-04T02:36:16.842Z"
     }
   }
 }
