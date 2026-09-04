@@ -1,11 +1,11 @@
 {
   "version": "3.0",
-  "fetchedAt": "2026-09-04T02:35:51.288Z",
+  "fetchedAt": "2026-09-04T10:16:14.142Z",
   "sources": {
     "openrouter": {
       "leaderboard": {},
       "topModels": [],
-      "fetchedAt": "2026-09-04T02:35:51.289Z",
+      "fetchedAt": "2026-09-04T10:16:14.143Z",
       "error": "API fetch failed: Unexpected token '<', \"<!DOCTYPE \"... is not valid JSON"
     },
     "valsai": {
@@ -71,7 +71,7 @@
             "Mini-SWE-agent",
             "96.20%±0.86",
             "$1.15",
-            "$5/$30",
+            "$4/$20",
             "3m02s",
             ""
           ]
@@ -364,7 +364,7 @@
         }
       ],
       "method": "table",
-      "fetchedAt": "2026-09-04T02:36:08.954Z"
+      "fetchedAt": "2026-09-04T10:16:39.506Z"
     },
     "arena": {
       "textLeaderboard": [
@@ -1564,7 +1564,7 @@
             "Tencenthy3Tencent · Apache 2.0",
             "1455±8",
             "6,958",
-            "$0.08 / $0.33",
+            "$0.13 / $0.53",
             "262.1K"
           ]
         },
@@ -1944,7 +1944,7 @@
             "grok-4.3SpaceXAI · Proprietary",
             "1443±4",
             "65,316",
-            "$1.25 / $2.50",
+            "$1 / $2",
             "1M"
           ]
         },
@@ -8369,7 +8369,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-09-04T02:36:16.836Z"
+      "fetchedAt": "2026-09-04T10:16:50.734Z"
     },
     "terms": {
       "main": {
@@ -8694,7 +8694,7 @@
           ]
         ]
       },
-      "fetchedAt": "2026-09-04T02:36:16.842Z"
+      "fetchedAt": "2026-09-04T10:16:50.740Z"
     }
   }
 }
