@@ -1,12 +1,12 @@
 {
   "version": "3.0",
-  "fetchedAt": "2026-09-05T14:48:23.577Z",
+  "fetchedAt": "2026-09-06T02:30:47.764Z",
   "sources": {
     "openrouter": {
       "leaderboard": {},
       "topModels": [],
-      "fetchedAt": "2026-09-05T14:48:23.578Z",
-      "error": "Navigation timeout of 30000 ms exceeded"
+      "fetchedAt": "2026-09-06T02:30:47.765Z",
+      "error": "API fetch failed: Unexpected token '<', \"<!DOCTYPE \"... is not valid JSON"
     },
     "valsai": {
       "swebench": [
@@ -364,7 +364,7 @@
         }
       ],
       "method": "table",
-      "fetchedAt": "2026-09-05T14:49:06.360Z"
+      "fetchedAt": "2026-09-06T02:31:04.915Z"
     },
     "arena": {
       "textLeaderboard": [
@@ -1564,7 +1564,7 @@
             "Tencenthy3Tencent · Apache 2.0",
             "1455±8",
             "6,958",
-            "$0.13 / $0.53",
+            "$0.08 / $0.33",
             "262.1K"
           ]
         },
@@ -3424,7 +3424,7 @@
             "qwen3.5-35b-a3bAlibaba · Apache 2.0",
             "1395±4",
             "29,065",
-            "$0.08 / $0.75",
+            "$0.31 / $1.25",
             "262.1K"
           ]
         },
@@ -8369,7 +8369,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-09-05T14:49:14.436Z"
+      "fetchedAt": "2026-09-06T02:31:13.242Z"
     },
     "terms": {
       "main": {
@@ -8694,7 +8694,7 @@
           ]
         ]
       },
-      "fetchedAt": "2026-09-05T14:49:14.441Z"
+      "fetchedAt": "2026-09-06T02:31:13.247Z"
     }
   }
 }
