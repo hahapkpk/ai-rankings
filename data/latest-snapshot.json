@@ -1,11 +1,11 @@
 {
   "version": "3.0",
-  "fetchedAt": "2026-09-06T15:07:58.263Z",
+  "fetchedAt": "2026-09-07T02:28:07.743Z",
   "sources": {
     "openrouter": {
       "leaderboard": {},
       "topModels": [],
-      "fetchedAt": "2026-09-06T15:07:58.263Z",
+      "fetchedAt": "2026-09-07T02:28:07.744Z",
       "error": "API fetch failed: Unexpected token '<', \"<!DOCTYPE \"... is not valid JSON"
     },
     "valsai": {
@@ -71,7 +71,7 @@
             "Mini-SWE-agent",
             "96.20%±0.86",
             "$1.15",
-            "$5/$30",
+            "$4/$20",
             "3m02s",
             ""
           ]
@@ -364,7 +364,7 @@
         }
       ],
       "method": "table",
-      "fetchedAt": "2026-09-06T15:08:14.856Z"
+      "fetchedAt": "2026-09-07T02:28:25.982Z"
     },
     "arena": {
       "textLeaderboard": [
@@ -1564,7 +1564,7 @@
             "Tencenthy3Tencent · Apache 2.0",
             "1455±8",
             "6,958",
-            "$0.13 / $0.53",
+            "$0.08 / $0.33",
             "262.1K"
           ]
         },
@@ -2004,7 +2004,7 @@
             "qwen3.5-397b-a17bAlibaba · Apache 2.0",
             "1441±3",
             "73,640",
-            "$0.55 / $3.50",
+            "$0.39 / $2.34",
             "262.1K"
           ]
         },
@@ -8369,7 +8369,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-09-06T15:08:21.897Z"
+      "fetchedAt": "2026-09-07T02:28:34.781Z"
     },
     "terms": {
       "main": {
@@ -8694,7 +8694,7 @@
           ]
         ]
       },
-      "fetchedAt": "2026-09-06T15:08:21.902Z"
+      "fetchedAt": "2026-09-07T02:28:34.787Z"
     }
   }
 }
