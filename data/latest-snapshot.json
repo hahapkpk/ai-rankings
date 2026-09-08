@@ -1,11 +1,11 @@
 {
   "version": "3.0",
-  "fetchedAt": "2026-09-08T02:41:19.903Z",
+  "fetchedAt": "2026-09-08T10:21:01.142Z",
   "sources": {
     "openrouter": {
       "leaderboard": {},
       "topModels": [],
-      "fetchedAt": "2026-09-08T02:41:19.904Z",
+      "fetchedAt": "2026-09-08T10:21:01.143Z",
       "error": "API fetch failed: Unexpected token '<', \"<!DOCTYPE \"... is not valid JSON"
     },
     "valsai": {
@@ -364,7 +364,7 @@
         }
       ],
       "method": "table",
-      "fetchedAt": "2026-09-08T02:41:36.203Z"
+      "fetchedAt": "2026-09-08T10:21:18.250Z"
     },
     "arena": {
       "textLeaderboard": [
@@ -8369,7 +8369,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-09-08T02:41:43.170Z"
+      "fetchedAt": "2026-09-08T10:21:24.822Z"
     },
     "terms": {
       "main": {
@@ -8694,7 +8694,7 @@
           ]
         ]
       },
-      "fetchedAt": "2026-09-08T02:41:43.176Z"
+      "fetchedAt": "2026-09-08T10:21:24.827Z"
     }
   }
 }
