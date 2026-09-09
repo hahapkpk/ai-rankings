@@ -1,11 +1,11 @@
 {
   "version": "3.0",
-  "fetchedAt": "2026-09-08T16:14:52.012Z",
+  "fetchedAt": "2026-09-09T02:41:12.294Z",
   "sources": {
     "openrouter": {
       "leaderboard": {},
       "topModels": [],
-      "fetchedAt": "2026-09-08T16:14:52.013Z",
+      "fetchedAt": "2026-09-09T02:41:12.295Z",
       "error": "API fetch failed: Unexpected token '<', \"<!DOCTYPE \"... is not valid JSON"
     },
     "valsai": {
@@ -364,7 +364,7 @@
         }
       ],
       "method": "table",
-      "fetchedAt": "2026-09-08T16:15:10.017Z"
+      "fetchedAt": "2026-09-09T02:41:30.059Z"
     },
     "arena": {
       "textLeaderboard": [
@@ -944,7 +944,7 @@
             "glm-5.3-flashZ.ai · MIT",
             "1474±9",
             "4,672",
-            "$0.15 / $0.50",
+            "$0.07 / $0.25",
             "1M"
           ]
         },
@@ -1564,7 +1564,7 @@
             "Tencenthy3Tencent · Apache 2.0",
             "1455±8",
             "6,958",
-            "$0.13 / $0.53",
+            "$0.08 / $0.33",
             "262.1K"
           ]
         },
@@ -3604,7 +3604,7 @@
             "o1-previewOpenAI · Proprietary",
             "1388±5",
             "31,122",
-            "$15 / $60",
+            "$15 / $66",
             "N/A"
           ]
         },
@@ -4124,7 +4124,7 @@
             "minimax-m1MiniMax · Apache 2.0",
             "1364±4",
             "34,038",
-            "$0.40 / $2.20",
+            "$0.55 / $2.20",
             "1M"
           ]
         },
@@ -8369,7 +8369,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-09-08T16:15:17.345Z"
+      "fetchedAt": "2026-09-09T02:41:37.398Z"
     },
     "terms": {
       "main": {
@@ -8694,7 +8694,7 @@
           ]
         ]
       },
-      "fetchedAt": "2026-09-08T16:15:17.351Z"
+      "fetchedAt": "2026-09-09T02:41:37.403Z"
     }
   }
 }
