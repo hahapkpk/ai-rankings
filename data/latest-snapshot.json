@@ -1,11 +1,11 @@
 {
   "version": "3.0",
-  "fetchedAt": "2026-09-12T02:45:43.241Z",
+  "fetchedAt": "2026-09-12T09:51:30.440Z",
   "sources": {
     "openrouter": {
       "leaderboard": {},
       "topModels": [],
-      "fetchedAt": "2026-09-12T02:45:43.242Z",
+      "fetchedAt": "2026-09-12T09:51:30.441Z",
       "error": "API fetch failed: Unexpected token '<', \"<!DOCTYPE \"... is not valid JSON"
     },
     "valsai": {
@@ -364,7 +364,7 @@
         }
       ],
       "method": "table",
-      "fetchedAt": "2026-09-12T02:46:00.694Z"
+      "fetchedAt": "2026-09-12T09:51:48.259Z"
     },
     "arena": {
       "textLeaderboard": [
@@ -1544,7 +1544,7 @@
             "Tencenthy3Tencent · Apache 2.0",
             "1456±7",
             "8,023",
-            "$0.08 / $0.33",
+            "$0.13 / $0.53",
             "262.1K"
           ]
         },
@@ -3584,7 +3584,7 @@
             "minimax-m2.5MiniMax · Modified MIT",
             "1390±4",
             "40,852",
-            "$0.27 / $1.08",
+            "$0.30 / $1.20",
             "204.8K"
           ]
         },
@@ -5864,7 +5864,7 @@
             "Metallama-3.1-70b-instructMeta · Llama 3.1 Community",
             "1293±4",
             "55,240",
-            "$0.40 / $0.40",
+            "$0.72 / $0.72",
             "131.1K"
           ]
         },
@@ -8389,7 +8389,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-09-12T02:46:07.403Z"
+      "fetchedAt": "2026-09-12T09:51:56.377Z"
     },
     "terms": {
       "main": {
@@ -8714,7 +8714,7 @@
           ]
         ]
       },
-      "fetchedAt": "2026-09-12T02:46:07.409Z"
+      "fetchedAt": "2026-09-12T09:51:56.382Z"
     }
   }
 }
