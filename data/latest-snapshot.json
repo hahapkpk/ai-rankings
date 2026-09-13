@@ -1,11 +1,11 @@
 {
   "version": "3.0",
-  "fetchedAt": "2026-09-13T02:44:22.781Z",
+  "fetchedAt": "2026-09-13T10:51:49.690Z",
   "sources": {
     "openrouter": {
       "leaderboard": {},
       "topModels": [],
-      "fetchedAt": "2026-09-13T02:44:22.781Z",
+      "fetchedAt": "2026-09-13T10:51:49.691Z",
       "error": "API fetch failed: Unexpected token '<', \"<!DOCTYPE \"... is not valid JSON"
     },
     "valsai": {
@@ -364,7 +364,7 @@
         }
       ],
       "method": "table",
-      "fetchedAt": "2026-09-13T02:44:39.471Z"
+      "fetchedAt": "2026-09-13T10:52:06.890Z"
     },
     "arena": {
       "textLeaderboard": [
@@ -1544,7 +1544,7 @@
             "Tencenthy3Tencent · Apache 2.0",
             "1456±7",
             "8,023",
-            "$0.08 / $0.33",
+            "$0.13 / $0.53",
             "262.1K"
           ]
         },
@@ -3804,7 +3804,7 @@
             "qwen3-30b-a3b-instruct-2507Alibaba · Apache 2.0",
             "1382±5",
             "23,220",
-            "$0.09 / $0.30",
+            "$0.05 / $0.19",
             "262.1K"
           ]
         },
@@ -8389,7 +8389,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-09-13T02:44:46.763Z"
+      "fetchedAt": "2026-09-13T10:52:19.136Z"
     },
     "terms": {
       "main": {
@@ -8714,7 +8714,7 @@
           ]
         ]
       },
-      "fetchedAt": "2026-09-13T02:44:46.769Z"
+      "fetchedAt": "2026-09-13T10:52:19.142Z"
     }
   }
 }
