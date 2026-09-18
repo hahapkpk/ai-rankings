@@ -1,12 +1,12 @@
 {
   "version": "3.0",
-  "fetchedAt": "2026-09-17T16:30:31.786Z",
+  "fetchedAt": "2026-09-18T02:48:26.288Z",
   "sources": {
     "openrouter": {
       "leaderboard": {},
       "topModels": [],
-      "fetchedAt": "2026-09-17T16:30:31.787Z",
-      "error": "API fetch failed: Unexpected token '<', \"<!DOCTYPE \"... is not valid JSON"
+      "fetchedAt": "2026-09-18T02:48:26.289Z",
+      "error": "API fetch failed: [object Object]"
     },
     "valsai": {
       "swebench": [
@@ -364,7 +364,7 @@
         }
       ],
       "method": "table",
-      "fetchedAt": "2026-09-17T16:30:49.189Z"
+      "fetchedAt": "2026-09-18T02:48:45.217Z"
     },
     "arena": {
       "textLeaderboard": [
@@ -381,7 +381,7 @@
           "cells": [
             "1",
             "17",
-            "Anthropicclaude-fable-5Anthropic · Proprietary",
+            "Anthropicclaude-fable-5-highAnthropic · Proprietary",
             "1506±5",
             "30,057",
             "$10 / $50",
@@ -2604,7 +2604,7 @@
             "glm-4.6Z.ai · MIT",
             "1425±4",
             "35,061",
-            "$0.43 / $1.75",
+            "$0.50 / $2",
             "204.8K"
           ]
         },
@@ -8409,7 +8409,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-09-17T16:30:57.541Z"
+      "fetchedAt": "2026-09-18T02:48:52.129Z"
     },
     "terms": {
       "main": {
@@ -8734,7 +8734,7 @@
           ]
         ]
       },
-      "fetchedAt": "2026-09-17T16:30:57.547Z"
+      "fetchedAt": "2026-09-18T02:48:52.135Z"
     }
   }
 }
