@@ -1,11 +1,11 @@
 {
   "version": "3.0",
-  "fetchedAt": "2026-09-19T10:02:05.794Z",
+  "fetchedAt": "2026-09-19T15:34:37.013Z",
   "sources": {
     "openrouter": {
       "leaderboard": {},
       "topModels": [],
-      "fetchedAt": "2026-09-19T10:02:05.795Z",
+      "fetchedAt": "2026-09-19T15:34:37.014Z",
       "error": "API fetch failed: [object Object]"
     },
     "valsai": {
@@ -364,7 +364,7 @@
         }
       ],
       "method": "table",
-      "fetchedAt": "2026-09-19T10:02:25.070Z"
+      "fetchedAt": "2026-09-19T15:34:54.687Z"
     },
     "arena": {
       "textLeaderboard": [
@@ -2604,7 +2604,7 @@
             "glm-4.6Z.ai · MIT",
             "1425±4",
             "35,061",
-            "$0.43 / $1.75",
+            "$0.50 / $2",
             "204.8K"
           ]
         },
@@ -8409,7 +8409,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-09-19T10:02:32.206Z"
+      "fetchedAt": "2026-09-19T15:35:00.913Z"
     },
     "terms": {
       "main": {
@@ -8734,7 +8734,7 @@
           ]
         ]
       },
-      "fetchedAt": "2026-09-19T10:02:32.212Z"
+      "fetchedAt": "2026-09-19T15:35:00.917Z"
     }
   }
 }
