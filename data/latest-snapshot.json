@@ -1,11 +1,11 @@
 {
   "version": "3.0",
-  "fetchedAt": "2026-09-21T02:56:26.578Z",
+  "fetchedAt": "2026-09-21T11:34:47.458Z",
   "sources": {
     "openrouter": {
       "leaderboard": {},
       "topModels": [],
-      "fetchedAt": "2026-09-21T02:56:26.578Z",
+      "fetchedAt": "2026-09-21T11:34:47.459Z",
       "error": "API fetch failed: [object Object]"
     },
     "valsai": {
@@ -364,7 +364,7 @@
         }
       ],
       "method": "table",
-      "fetchedAt": "2026-09-21T02:56:45.401Z"
+      "fetchedAt": "2026-09-21T11:35:05.056Z"
     },
     "arena": {
       "textLeaderboard": [
@@ -8409,7 +8409,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-09-21T02:56:52.943Z"
+      "fetchedAt": "2026-09-21T11:35:12.112Z"
     },
     "terms": {
       "main": {
@@ -8734,7 +8734,7 @@
           ]
         ]
       },
-      "fetchedAt": "2026-09-21T02:56:52.948Z"
+      "fetchedAt": "2026-09-21T11:35:12.118Z"
     }
   }
 }
