@@ -1,11 +1,11 @@
 {
   "version": "3.0",
-  "fetchedAt": "2026-09-22T10:40:43.940Z",
+  "fetchedAt": "2026-09-22T16:32:20.768Z",
   "sources": {
     "openrouter": {
       "leaderboard": {},
       "topModels": [],
-      "fetchedAt": "2026-09-22T10:40:43.940Z",
+      "fetchedAt": "2026-09-22T16:32:20.769Z",
       "error": "API fetch failed: [object Object]"
     },
     "valsai": {
@@ -364,7 +364,7 @@
         }
       ],
       "method": "table",
-      "fetchedAt": "2026-09-22T10:41:01.914Z"
+      "fetchedAt": "2026-09-22T16:32:38.603Z"
     },
     "arena": {
       "textLeaderboard": [
@@ -804,7 +804,7 @@
             "qwen3.8-maxAlibaba · Proprietary",
             "1481±6",
             "16,670",
-            "$2 / $6",
+            "$1.69 / $5.07",
             "1M"
           ]
         },
@@ -944,7 +944,7 @@
             "glm-5.3-flashZ.ai · MIT",
             "1475±7",
             "10,038",
-            "$0.07 / $0.25",
+            "$0.06 / $0.20",
             "1M"
           ]
         },
@@ -5404,7 +5404,7 @@
             "gpt-oss-20bOpenAI · Apache 2.0",
             "1317±6",
             "10,393",
-            "$0.03 / $0.13",
+            "$0.02 / $0.11",
             "131.1K"
           ]
         },
@@ -8409,7 +8409,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-09-22T10:41:09.994Z"
+      "fetchedAt": "2026-09-22T16:32:46.573Z"
     },
     "terms": {
       "main": {
@@ -8734,7 +8734,7 @@
           ]
         ]
       },
-      "fetchedAt": "2026-09-22T10:41:10.000Z"
+      "fetchedAt": "2026-09-22T16:32:46.579Z"
     }
   }
 }
