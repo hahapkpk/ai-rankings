@@ -1,11 +1,11 @@
 {
   "version": "3.0",
-  "fetchedAt": "2026-09-24T02:47:19.996Z",
+  "fetchedAt": "2026-09-24T10:50:08.451Z",
   "sources": {
     "openrouter": {
       "leaderboard": {},
       "topModels": [],
-      "fetchedAt": "2026-09-24T02:47:19.997Z",
+      "fetchedAt": "2026-09-24T10:50:08.452Z",
       "error": "API fetch failed: [object Object]"
     },
     "valsai": {
@@ -364,7 +364,7 @@
         }
       ],
       "method": "table",
-      "fetchedAt": "2026-09-24T02:47:38.488Z"
+      "fetchedAt": "2026-09-24T10:50:25.790Z"
     },
     "arena": {
       "textLeaderboard": [
@@ -3824,7 +3824,7 @@
             "qwen3-30b-a3b-instruct-2507Alibaba · Apache 2.0",
             "1382±5",
             "23,222",
-            "$0.05 / $0.19",
+            "$0.10 / $0.30",
             "262.1K"
           ]
         },
@@ -8409,7 +8409,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-09-24T02:47:45.519Z"
+      "fetchedAt": "2026-09-24T10:50:31.292Z"
     },
     "terms": {
       "main": {
@@ -8734,7 +8734,7 @@
           ]
         ]
       },
-      "fetchedAt": "2026-09-24T02:47:45.525Z"
+      "fetchedAt": "2026-09-24T10:50:31.297Z"
     }
   }
 }
