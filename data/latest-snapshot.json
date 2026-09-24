@@ -1,11 +1,11 @@
 {
   "version": "3.0",
-  "fetchedAt": "2026-09-24T10:50:08.451Z",
+  "fetchedAt": "2026-09-24T16:44:21.034Z",
   "sources": {
     "openrouter": {
       "leaderboard": {},
       "topModels": [],
-      "fetchedAt": "2026-09-24T10:50:08.452Z",
+      "fetchedAt": "2026-09-24T16:44:21.035Z",
       "error": "API fetch failed: [object Object]"
     },
     "valsai": {
@@ -364,7 +364,7 @@
         }
       ],
       "method": "table",
-      "fetchedAt": "2026-09-24T10:50:25.790Z"
+      "fetchedAt": "2026-09-24T16:44:39.864Z"
     },
     "arena": {
       "textLeaderboard": [
@@ -4384,7 +4384,7 @@
             "gpt-oss-120bOpenAI · Apache 2.0",
             "1352±4",
             "29,955",
-            "$0.03 / $0.14",
+            "$0.15 / $0.60",
             "131.1K"
           ]
         },
@@ -8409,7 +8409,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-09-24T10:50:31.292Z"
+      "fetchedAt": "2026-09-24T16:44:47.658Z"
     },
     "terms": {
       "main": {
@@ -8734,7 +8734,7 @@
           ]
         ]
       },
-      "fetchedAt": "2026-09-24T10:50:31.297Z"
+      "fetchedAt": "2026-09-24T16:44:47.664Z"
     }
   }
 }
