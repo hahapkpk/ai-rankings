@@ -1,11 +1,11 @@
 {
   "version": "3.0",
-  "fetchedAt": "2026-09-25T10:53:37.805Z",
+  "fetchedAt": "2026-09-25T16:49:22.086Z",
   "sources": {
     "openrouter": {
       "leaderboard": {},
       "topModels": [],
-      "fetchedAt": "2026-09-25T10:53:37.806Z",
+      "fetchedAt": "2026-09-25T16:49:22.087Z",
       "error": "API fetch failed: [object Object]"
     },
     "valsai": {
@@ -364,7 +364,7 @@
         }
       ],
       "method": "table",
-      "fetchedAt": "2026-09-25T10:53:55.724Z"
+      "fetchedAt": "2026-09-25T16:49:39.602Z"
     },
     "arena": {
       "textLeaderboard": [
@@ -1764,7 +1764,7 @@
             "Anthropicclaude-opus-4-1-20250805-thinking-16kAnthropic · Proprietary",
             "1450±3",
             "48,811",
-            "$7.50 / $37.50",
+            "$15 / $75",
             "200K"
           ]
         },
@@ -8409,7 +8409,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-09-25T10:54:02.343Z"
+      "fetchedAt": "2026-09-25T16:49:45.601Z"
     },
     "terms": {
       "main": {
@@ -8734,7 +8734,7 @@
           ]
         ]
       },
-      "fetchedAt": "2026-09-25T10:54:02.349Z"
+      "fetchedAt": "2026-09-25T16:49:45.606Z"
     }
   }
 }
