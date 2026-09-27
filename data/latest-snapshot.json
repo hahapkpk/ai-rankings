@@ -1,11 +1,11 @@
 {
   "version": "3.0",
-  "fetchedAt": "2026-09-27T11:06:25.245Z",
+  "fetchedAt": "2026-09-27T16:37:24.584Z",
   "sources": {
     "openrouter": {
       "leaderboard": {},
       "topModels": [],
-      "fetchedAt": "2026-09-27T11:06:25.246Z",
+      "fetchedAt": "2026-09-27T16:37:24.585Z",
       "error": "API fetch failed: [object Object]"
     },
     "valsai": {
@@ -364,7 +364,7 @@
         }
       ],
       "method": "table",
-      "fetchedAt": "2026-09-27T11:06:44.153Z"
+      "fetchedAt": "2026-09-27T16:37:43.115Z"
     },
     "arena": {
       "textLeaderboard": [
@@ -3044,7 +3044,7 @@
             "minimax-m2.7MiniMax · Modified MIT",
             "1415±3",
             "77,968",
-            "$0.21 / $0.84",
+            "$0.30 / $1.20",
             "204.8K"
           ]
         },
@@ -8549,7 +8549,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-09-27T11:06:51.901Z"
+      "fetchedAt": "2026-09-27T16:37:49.388Z"
     },
     "terms": {
       "main": {
@@ -8874,7 +8874,7 @@
           ]
         ]
       },
-      "fetchedAt": "2026-09-27T11:06:51.908Z"
+      "fetchedAt": "2026-09-27T16:37:49.394Z"
     }
   }
 }
