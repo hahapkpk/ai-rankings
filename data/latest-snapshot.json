@@ -1,11 +1,11 @@
 {
   "version": "3.0",
-  "fetchedAt": "2026-09-30T11:39:53.405Z",
+  "fetchedAt": "2026-09-30T17:45:54.187Z",
   "sources": {
     "openrouter": {
       "leaderboard": {},
       "topModels": [],
-      "fetchedAt": "2026-09-30T11:39:53.405Z",
+      "fetchedAt": "2026-09-30T17:45:54.188Z",
       "error": "API fetch failed: [object Object]"
     },
     "valsai": {
@@ -364,7 +364,7 @@
         }
       ],
       "method": "table",
-      "fetchedAt": "2026-09-30T11:40:11.595Z"
+      "fetchedAt": "2026-09-30T17:46:13.396Z"
     },
     "arena": {
       "textLeaderboard": [
@@ -3084,7 +3084,7 @@
             "Anthropicclaude-opus-4-20250514Anthropic · Proprietary",
             "1414±4",
             "42,789",
-            "$15 / $75",
+            "$5 / $25",
             "200K"
           ]
         },
@@ -5224,7 +5224,7 @@
             "qwen3-30b-a3bAlibaba · Apache 2.0",
             "1327±5",
             "26,041",
-            "$0.13 / $0.52",
+            "$0.12 / $0.50",
             "131.1K"
           ]
         },
@@ -8549,7 +8549,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-09-30T11:40:18.610Z"
+      "fetchedAt": "2026-09-30T17:46:19.955Z"
     },
     "terms": {
       "main": {
@@ -8874,7 +8874,7 @@
           ]
         ]
       },
-      "fetchedAt": "2026-09-30T11:40:18.616Z"
+      "fetchedAt": "2026-09-30T17:46:19.961Z"
     }
   }
 }
