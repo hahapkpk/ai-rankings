@@ -1,370 +1,1690 @@
 {
   "version": "3.0",
-  "fetchedAt": "2026-10-03T03:26:47.950Z",
+  "fetchedAt": "2026-10-03T10:52:47.928Z",
   "sources": {
     "openrouter": {
       "leaderboard": {},
       "topModels": [],
-      "fetchedAt": "2026-10-03T03:26:47.951Z",
+      "fetchedAt": "2026-10-03T10:52:47.929Z",
       "error": "API fetch failed: [object Object]"
     },
     "valsai": {
       "swebench": [
         {
           "headers": [
-            "",
-            "Systems (88)",
+            "Rank",
+            "Model",
             "Harness",
-            "Score97.00%±0.7696.40%±0.83",
-            "Cost / Test$1.29$0.10",
-            "Input / Output Cost$0.075/$0.25$0.435/$0.87",
-            "Duration108.54s117.77s",
-            ""
+            "Score",
+            "Cost / Test",
+            "Input / Output Cost",
+            "Duration"
           ],
           "cells": [
             "1",
-            "Claude Opus 5",
             "Mini-SWE-agent",
-            "97.00%±0.76",
+            "97.00%",
             "$1.29",
-            "$5/$25",
-            "9m37s",
-            ""
+            "$5 / $25",
+            "9m37s"
           ]
         },
         {
           "headers": [
-            "",
-            "Systems (88)",
+            "Rank",
+            "Model",
             "Harness",
-            "Score97.00%±0.7696.40%±0.83",
-            "Cost / Test$1.29$0.10",
-            "Input / Output Cost$0.075/$0.25$0.435/$0.87",
-            "Duration108.54s117.77s",
-            ""
+            "Score",
+            "Cost / Test",
+            "Input / Output Cost",
+            "Duration"
           ],
           "cells": [
             "2",
-            "DeepSeek V4 Pro 0813",
             "Mini-SWE-agent",
-            "96.40%±0.83",
+            "96.40%",
             "$0.10",
-            "$1.32/$3.96",
-            "4m00s",
-            ""
+            "$1.32 / $3.96",
+            "4m00s"
           ]
         },
         {
           "headers": [
-            "",
-            "Systems (88)",
+            "Rank",
+            "Model",
             "Harness",
-            "Score97.00%±0.7696.40%±0.83",
-            "Cost / Test$1.29$0.10",
-            "Input / Output Cost$0.075/$0.25$0.435/$0.87",
-            "Duration108.54s117.77s",
-            ""
+            "Score",
+            "Cost / Test",
+            "Input / Output Cost",
+            "Duration"
           ],
           "cells": [
             "3",
-            "GPT-5.6 Sol",
             "Mini-SWE-agent",
-            "96.20%±0.86",
+            "96.20%",
             "$1.15",
-            "$4/$20",
-            "3m02s",
-            ""
+            "$4 / $20",
+            "3m02s"
           ]
         },
         {
           "headers": [
-            "",
-            "Systems (88)",
+            "Rank",
+            "Model",
             "Harness",
-            "Score97.00%±0.7696.40%±0.83",
-            "Cost / Test$1.29$0.10",
-            "Input / Output Cost$0.075/$0.25$0.435/$0.87",
-            "Duration108.54s117.77s",
-            ""
+            "Score",
+            "Cost / Test",
+            "Input / Output Cost",
+            "Duration"
           ],
           "cells": [
             "4",
-            "Grok 4.6",
             "Mini-SWE-agent",
-            "95.60%±0.92",
+            "95.60%",
             "$0.78",
-            "$2/$6",
-            "10m04s",
-            ""
+            "$2 / $6",
+            "10m04s"
           ]
         },
         {
           "headers": [
-            "",
-            "Systems (88)",
+            "Rank",
+            "Model",
             "Harness",
-            "Score97.00%±0.7696.40%±0.83",
-            "Cost / Test$1.29$0.10",
-            "Input / Output Cost$0.075/$0.25$0.435/$0.87",
-            "Duration108.54s117.77s",
-            ""
+            "Score",
+            "Cost / Test",
+            "Input / Output Cost",
+            "Duration"
           ],
           "cells": [
             "5",
-            "GPT-5.6 Terra",
             "Mini-SWE-agent",
-            "95.40%±0.94",
+            "95.40%",
             "$0.40",
-            "$2/$12",
-            "3m00s",
-            ""
+            "$2 / $12",
+            "3m00s"
           ]
         },
         {
           "headers": [
-            "",
-            "Systems (88)",
+            "Rank",
+            "Model",
             "Harness",
-            "Score97.00%±0.7696.40%±0.83",
-            "Cost / Test$1.29$0.10",
-            "Input / Output Cost$0.075/$0.25$0.435/$0.87",
-            "Duration108.54s117.77s",
-            ""
+            "Score",
+            "Cost / Test",
+            "Input / Output Cost",
+            "Duration"
           ],
           "cells": [
             "6",
-            "GLM 5.3",
             "Mini-SWE-agent",
-            "95.40%±0.94",
+            "95.40%",
             "$0.34",
-            "$1.4/$4.4",
-            "14m01s",
-            ""
+            "$1.4 / $4.4",
+            "14m01s"
           ]
         },
         {
           "headers": [
-            "",
-            "Systems (88)",
+            "Rank",
+            "Model",
             "Harness",
-            "Score97.00%±0.7696.40%±0.83",
-            "Cost / Test$1.29$0.10",
-            "Input / Output Cost$0.075/$0.25$0.435/$0.87",
-            "Duration108.54s117.77s",
-            ""
+            "Score",
+            "Cost / Test",
+            "Input / Output Cost",
+            "Duration"
           ],
           "cells": [
             "7",
-            "Claude Fable 5",
             "Mini-SWE-agent",
-            "95.00%±0.98",
+            "95.00%",
             "$2.05",
-            "$10/$50",
-            "5m56s",
-            ""
+            "$10 / $50",
+            "5m56s"
           ]
         },
         {
           "headers": [
-            "",
-            "Systems (88)",
+            "Rank",
+            "Model",
             "Harness",
-            "Score97.00%±0.7696.40%±0.83",
-            "Cost / Test$1.29$0.10",
-            "Input / Output Cost$0.075/$0.25$0.435/$0.87",
-            "Duration108.54s117.77s",
-            ""
+            "Score",
+            "Cost / Test",
+            "Input / Output Cost",
+            "Duration"
           ],
           "cells": [
             "8",
-            "Kimi K3",
             "Mini-SWE-agent",
-            "93.40%±1.11",
+            "93.40%",
             "$0.76",
-            "$3/$15",
-            "10m19s",
-            ""
+            "$3 / $15",
+            "10m19s"
           ]
         },
         {
           "headers": [
-            "",
-            "Systems (88)",
+            "Rank",
+            "Model",
             "Harness",
-            "Score97.00%±0.7696.40%±0.83",
-            "Cost / Test$1.29$0.10",
-            "Input / Output Cost$0.075/$0.25$0.435/$0.87",
-            "Duration108.54s117.77s",
-            ""
+            "Score",
+            "Cost / Test",
+            "Input / Output Cost",
+            "Duration"
           ],
           "cells": [
             "9",
-            "GPT-5.6 Luna",
             "Mini-SWE-agent",
-            "93.00%±1.14",
+            "93.00%",
             "$0.04",
-            "$0.2/$1.2",
-            "3m21s",
-            ""
+            "$0.2 / $1.2",
+            "3m21s"
           ]
         },
         {
           "headers": [
-            "",
-            "Systems (88)",
+            "Rank",
+            "Model",
             "Harness",
-            "Score97.00%±0.7696.40%±0.83",
-            "Cost / Test$1.29$0.10",
-            "Input / Output Cost$0.075/$0.25$0.435/$0.87",
-            "Duration108.54s117.77s",
-            ""
+            "Score",
+            "Cost / Test",
+            "Input / Output Cost",
+            "Duration"
           ],
           "cells": [
             "10",
-            "GLM 5.3 Flash",
             "Mini-SWE-agent",
-            "92.00%±1.21",
+            "92.00%",
             "$0.02",
-            "$0.075/$0.25",
-            "1h04m",
-            ""
+            "$0.075 / $0.25",
+            "1h04m"
           ]
         },
         {
           "headers": [
-            "",
-            "Systems (88)",
+            "Rank",
+            "Model",
             "Harness",
-            "Score97.00%±0.7696.40%±0.83",
-            "Cost / Test$1.29$0.10",
-            "Input / Output Cost$0.075/$0.25$0.435/$0.87",
-            "Duration108.54s117.77s",
-            ""
+            "Score",
+            "Cost / Test",
+            "Input / Output Cost",
+            "Duration"
           ],
           "cells": [
             "11",
-            "DeepSeek V4 Flash 0731",
             "Mini-SWE-agent",
-            "88.80%±1.41",
+            "88.80%",
             "$0.01",
-            "$0.44/$1.32",
-            "3m22s",
-            ""
+            "$0.44 / $1.32",
+            "3m22s"
           ]
         },
         {
           "headers": [
-            "",
-            "Systems (88)",
+            "Rank",
+            "Model",
             "Harness",
-            "Score97.00%±0.7696.40%±0.83",
-            "Cost / Test$1.29$0.10",
-            "Input / Output Cost$0.075/$0.25$0.435/$0.87",
-            "Duration108.54s117.77s",
-            ""
+            "Score",
+            "Cost / Test",
+            "Input / Output Cost",
+            "Duration"
           ],
           "cells": [
             "12",
-            "Claude Opus 4.8",
             "Mini-SWE-agent",
-            "88.60%±1.42",
+            "88.60%",
             "$1.92",
-            "$5/$25",
-            "9m27s",
-            ""
+            "$5 / $25",
+            "9m27s"
           ]
         },
         {
           "headers": [
-            "",
-            "Systems (88)",
+            "Rank",
+            "Model",
             "Harness",
-            "Score97.00%±0.7696.40%±0.83",
-            "Cost / Test$1.29$0.10",
-            "Input / Output Cost$0.075/$0.25$0.435/$0.87",
-            "Duration108.54s117.77s",
-            ""
+            "Score",
+            "Cost / Test",
+            "Input / Output Cost",
+            "Duration"
           ],
           "cells": [
             "13",
-            "Grok 4.5",
             "Mini-SWE-agent",
-            "86.60%±1.52",
+            "86.60%",
             "$0.54",
-            "$2/$6",
-            "3m20s",
-            ""
+            "$2 / $6",
+            "3m20s"
           ]
         },
         {
           "headers": [
-            "",
-            "Systems (88)",
+            "Rank",
+            "Model",
             "Harness",
-            "Score97.00%±0.7696.40%±0.83",
-            "Cost / Test$1.29$0.10",
-            "Input / Output Cost$0.075/$0.25$0.435/$0.87",
-            "Duration108.54s117.77s",
-            ""
+            "Score",
+            "Cost / Test",
+            "Input / Output Cost",
+            "Duration"
           ],
           "cells": [
             "14",
-            "Muse Spark 1.2",
             "Mini-SWE-agent",
-            "86.60%±1.52",
+            "86.60%",
             "$0.55",
-            "$1.25/$4.25",
-            "8m07s",
-            ""
+            "$1.25 / $4.25",
+            "8m07s"
           ]
         },
         {
           "headers": [
-            "",
-            "Systems (88)",
+            "Rank",
+            "Model",
             "Harness",
-            "Score97.00%±0.7696.40%±0.83",
-            "Cost / Test$1.29$0.10",
-            "Input / Output Cost$0.075/$0.25$0.435/$0.87",
-            "Duration108.54s117.77s",
-            ""
+            "Score",
+            "Cost / Test",
+            "Input / Output Cost",
+            "Duration"
           ],
           "cells": [
             "15",
-            "Qwen 3.8 27B",
             "Mini-SWE-agent",
-            "86.00%±1.55",
+            "86.00%",
             "$1.08",
-            "$0.5/$3",
-            "10m00s",
-            ""
+            "$0.5 / $3",
+            "10m00s"
           ]
         },
         {
           "headers": [
-            "",
-            "Systems (88)",
+            "Rank",
+            "Model",
             "Harness",
-            "Score97.00%±0.7696.40%±0.83",
-            "Cost / Test$1.29$0.10",
-            "Input / Output Cost$0.075/$0.25$0.435/$0.87",
-            "Duration108.54s117.77s",
-            ""
+            "Score",
+            "Cost / Test",
+            "Input / Output Cost",
+            "Duration"
           ],
           "cells": [
             "16",
-            "Claude Opus 4.8",
             "Claude Code",
-            "85.80%±1.56",
+            "85.80%",
             "$0.67",
             "N/A",
-            "2m15s",
-            ""
+            "2m15s"
+          ]
+        },
+        {
+          "headers": [
+            "Rank",
+            "Model",
+            "Harness",
+            "Score",
+            "Cost / Test",
+            "Input / Output Cost",
+            "Duration"
+          ],
+          "cells": [
+            "17",
+            "Mini-SWE-agent",
+            "85.60%",
+            "$1.13",
+            "$2 / $6",
+            "41m42s"
+          ]
+        },
+        {
+          "headers": [
+            "Rank",
+            "Model",
+            "Harness",
+            "Score",
+            "Cost / Test",
+            "Input / Output Cost",
+            "Duration"
+          ],
+          "cells": [
+            "18",
+            "Mini-SWE-agent",
+            "82.80%",
+            "$0.71",
+            "$1.4 / $4.4",
+            "11m10s"
+          ]
+        },
+        {
+          "headers": [
+            "Rank",
+            "Model",
+            "Harness",
+            "Score",
+            "Cost / Test",
+            "Input / Output Cost",
+            "Duration"
+          ],
+          "cells": [
+            "19",
+            "Mini-SWE-agent",
+            "82.60%",
+            "$1.36",
+            "$5 / $30",
+            "7m06s"
+          ]
+        },
+        {
+          "headers": [
+            "Rank",
+            "Model",
+            "Harness",
+            "Score",
+            "Cost / Test",
+            "Input / Output Cost",
+            "Duration"
+          ],
+          "cells": [
+            "20",
+            "Mini-SWE-agent",
+            "82.20%",
+            "$0.13",
+            "$0.3 / $1.2",
+            "4m05s"
+          ]
+        },
+        {
+          "headers": [
+            "Rank",
+            "Model",
+            "Harness",
+            "Score",
+            "Cost / Test",
+            "Input / Output Cost",
+            "Duration"
+          ],
+          "cells": [
+            "21",
+            "Mini-SWE-agent",
+            "82.00%",
+            "$0.35",
+            "$1.25 / $4.25",
+            "3m29s"
+          ]
+        },
+        {
+          "headers": [
+            "Rank",
+            "Model",
+            "Harness",
+            "Score",
+            "Cost / Test",
+            "Input / Output Cost",
+            "Duration"
+          ],
+          "cells": [
+            "22",
+            "Mini-SWE-agent",
+            "82.00%",
+            "$2.42",
+            "$5 / $25",
+            "7m22s"
+          ]
+        },
+        {
+          "headers": [
+            "Rank",
+            "Model",
+            "Harness",
+            "Score",
+            "Cost / Test",
+            "Input / Output Cost",
+            "Duration"
+          ],
+          "cells": [
+            "23",
+            "Mini-SWE-agent",
+            "80.80%",
+            "$1.44",
+            "$1.5 / $7.5",
+            "5m50s"
+          ]
+        },
+        {
+          "headers": [
+            "Rank",
+            "Model",
+            "Harness",
+            "Score",
+            "Cost / Test",
+            "Input / Output Cost",
+            "Duration"
+          ],
+          "cells": [
+            "24",
+            "Mini-SWE-agent",
+            "80.00%",
+            "$2.19",
+            "$1.5 / $7.5",
+            "11m23s"
+          ]
+        },
+        {
+          "headers": [
+            "Rank",
+            "Model",
+            "Harness",
+            "Score",
+            "Cost / Test",
+            "Input / Output Cost",
+            "Duration"
+          ],
+          "cells": [
+            "25",
+            "Cursor CLI",
+            "79.60%",
+            "N/A",
+            "$0.5 / $2.5",
+            "N/A"
+          ]
+        },
+        {
+          "headers": [
+            "Rank",
+            "Model",
+            "Harness",
+            "Score",
+            "Cost / Test",
+            "Input / Output Cost",
+            "Duration"
+          ],
+          "cells": [
+            "26",
+            "Mini-SWE-agent",
+            "79.60%",
+            "$1.19",
+            "$1.5 / $7.5",
+            "13m08s"
+          ]
+        },
+        {
+          "headers": [
+            "Rank",
+            "Model",
+            "Harness",
+            "Score",
+            "Cost / Test",
+            "Input / Output Cost",
+            "Duration"
+          ],
+          "cells": [
+            "27",
+            "Mini-SWE-agent",
+            "79.60%",
+            "$1.49",
+            "$2 / $10",
+            "16m02s"
+          ]
+        },
+        {
+          "headers": [
+            "Rank",
+            "Model",
+            "Harness",
+            "Score",
+            "Cost / Test",
+            "Input / Output Cost",
+            "Duration"
+          ],
+          "cells": [
+            "28",
+            "Mini-SWE-agent",
+            "78.80%",
+            "$0.95",
+            "$1.5 / $9",
+            "4m14s"
+          ]
+        },
+        {
+          "headers": [
+            "Rank",
+            "Model",
+            "Harness",
+            "Score",
+            "Cost / Test",
+            "Input / Output Cost",
+            "Duration"
+          ],
+          "cells": [
+            "29",
+            "Mini-SWE-agent",
+            "78.80%",
+            "$0.78",
+            "$2 / $12",
+            "5m12s"
+          ]
+        },
+        {
+          "headers": [
+            "Rank",
+            "Model",
+            "Harness",
+            "Score",
+            "Cost / Test",
+            "Input / Output Cost",
+            "Duration"
+          ],
+          "cells": [
+            "30",
+            "Mini-SWE-agent",
+            "78.20%",
+            "$0.80",
+            "$2.5 / $15",
+            "5m07s"
+          ]
+        },
+        {
+          "headers": [
+            "Rank",
+            "Model",
+            "Harness",
+            "Score",
+            "Cost / Test",
+            "Input / Output Cost",
+            "Duration"
+          ],
+          "cells": [
+            "31",
+            "Mini-SWE-agent",
+            "78.20%",
+            "$1.22",
+            "$5 / $25",
+            "5m51s"
+          ]
+        },
+        {
+          "headers": [
+            "Rank",
+            "Model",
+            "Harness",
+            "Score",
+            "Cost / Test",
+            "Input / Output Cost",
+            "Duration"
+          ],
+          "cells": [
+            "32",
+            "Mini-SWE-agent",
+            "78.20%",
+            "$0.27",
+            "$0.95 / $4",
+            "14m57s"
+          ]
+        },
+        {
+          "headers": [
+            "Rank",
+            "Model",
+            "Harness",
+            "Score",
+            "Cost / Test",
+            "Input / Output Cost",
+            "Duration"
+          ],
+          "cells": [
+            "33",
+            "Mini-SWE-agent",
+            "78.00%",
+            "$0.46",
+            "$1.75 / $14",
+            "4m07s"
+          ]
+        },
+        {
+          "headers": [
+            "Rank",
+            "Model",
+            "Harness",
+            "Score",
+            "Cost / Test",
+            "Input / Output Cost",
+            "Duration"
+          ],
+          "cells": [
+            "34",
+            "Mini-SWE-agent",
+            "77.60%",
+            "$0.59",
+            "$1 / $4.05",
+            "6m34s"
+          ]
+        },
+        {
+          "headers": [
+            "Rank",
+            "Model",
+            "Harness",
+            "Score",
+            "Cost / Test",
+            "Input / Output Cost",
+            "Duration"
+          ],
+          "cells": [
+            "35",
+            "Mini-SWE-agent",
+            "77.40%",
+            "$1.30",
+            "$3 / $15",
+            "8m32s"
+          ]
+        },
+        {
+          "headers": [
+            "Rank",
+            "Model",
+            "Harness",
+            "Score",
+            "Cost / Test",
+            "Input / Output Cost",
+            "Duration"
+          ],
+          "cells": [
+            "36",
+            "Mini-SWE-agent",
+            "77.40%",
+            "$0.44",
+            "$1.32 / $3.96",
+            "10m35s"
+          ]
+        },
+        {
+          "headers": [
+            "Rank",
+            "Model",
+            "Harness",
+            "Score",
+            "Cost / Test",
+            "Input / Output Cost",
+            "Duration"
+          ],
+          "cells": [
+            "37",
+            "Codex",
+            "76.40%",
+            "$0.65",
+            "N/A",
+            "108.54s"
+          ]
+        },
+        {
+          "headers": [
+            "Rank",
+            "Model",
+            "Harness",
+            "Score",
+            "Cost / Test",
+            "Input / Output Cost",
+            "Duration"
+          ],
+          "cells": [
+            "38",
+            "Mini-SWE-agent",
+            "76.40%",
+            "$1.05",
+            "$5 / $25",
+            "5m21s"
+          ]
+        },
+        {
+          "headers": [
+            "Rank",
+            "Model",
+            "Harness",
+            "Score",
+            "Cost / Test",
+            "Input / Output Cost",
+            "Duration"
+          ],
+          "cells": [
+            "39",
+            "Mini-SWE-agent",
+            "76.40%",
+            "$0.77",
+            "$2 / $12",
+            "6m34s"
+          ]
+        },
+        {
+          "headers": [
+            "Rank",
+            "Model",
+            "Harness",
+            "Score",
+            "Cost / Test",
+            "Input / Output Cost",
+            "Duration"
+          ],
+          "cells": [
+            "40",
+            "Mini-SWE-agent",
+            "76.40%",
+            "$0.46",
+            "$1 / $3.2",
+            "8m47s"
+          ]
+        },
+        {
+          "headers": [
+            "Rank",
+            "Model",
+            "Harness",
+            "Score",
+            "Cost / Test",
+            "Input / Output Cost",
+            "Duration"
+          ],
+          "cells": [
+            "41",
+            "Factory",
+            "76.20%",
+            "$1.13",
+            "N/A",
+            "6m50s"
+          ]
+        },
+        {
+          "headers": [
+            "Rank",
+            "Model",
+            "Harness",
+            "Score",
+            "Cost / Test",
+            "Input / Output Cost",
+            "Duration"
+          ],
+          "cells": [
+            "42",
+            "Mini-SWE-agent",
+            "76.20%",
+            "$0.27",
+            "$0.95 / $4",
+            "8m40s"
+          ]
+        },
+        {
+          "headers": [
+            "Rank",
+            "Model",
+            "Harness",
+            "Score",
+            "Cost / Test",
+            "Input / Output Cost",
+            "Duration"
+          ],
+          "cells": [
+            "43",
+            "Mini-SWE-agent",
+            "75.80%",
+            "$1.45",
+            "$1.75 / $14",
+            "10m40s"
+          ]
+        },
+        {
+          "headers": [
+            "Rank",
+            "Model",
+            "Harness",
+            "Score",
+            "Cost / Test",
+            "Input / Output Cost",
+            "Duration"
+          ],
+          "cells": [
+            "44",
+            "Mini-SWE-agent",
+            "75.00%",
+            "$0.28",
+            "$0.5 / $3",
+            "4m45s"
+          ]
+        },
+        {
+          "headers": [
+            "Rank",
+            "Model",
+            "Harness",
+            "Score",
+            "Cost / Test",
+            "Input / Output Cost",
+            "Duration"
+          ],
+          "cells": [
+            "45",
+            "Mini-SWE-agent",
+            "75.00%",
+            "$0.31",
+            "$0.3 / $2.5",
+            "7m20s"
+          ]
+        },
+        {
+          "headers": [
+            "Rank",
+            "Model",
+            "Harness",
+            "Score",
+            "Cost / Test",
+            "Input / Output Cost",
+            "Duration"
+          ],
+          "cells": [
+            "46",
+            "Mini-SWE-agent",
+            "75.00%",
+            "$0.42",
+            "$0.6 / $2.4",
+            "12m06s"
+          ]
+        },
+        {
+          "headers": [
+            "Rank",
+            "Model",
+            "Harness",
+            "Score",
+            "Cost / Test",
+            "Input / Output Cost",
+            "Duration"
+          ],
+          "cells": [
+            "47",
+            "Mini-SWE-agent",
+            "74.80%",
+            "$0.44",
+            "$0.3 / $1.2",
+            "6m26s"
+          ]
+        },
+        {
+          "headers": [
+            "Rank",
+            "Model",
+            "Harness",
+            "Score",
+            "Cost / Test",
+            "Input / Output Cost",
+            "Duration"
+          ],
+          "cells": [
+            "48",
+            "Mini-SWE-agent",
+            "74.40%",
+            "N/A",
+            "N/A",
+            "8m15s"
+          ]
+        },
+        {
+          "headers": [
+            "Rank",
+            "Model",
+            "Harness",
+            "Score",
+            "Cost / Test",
+            "Input / Output Cost",
+            "Duration"
+          ],
+          "cells": [
+            "49",
+            "Mini-SWE-agent",
+            "74.20%",
+            "$0.46",
+            "$0.3 / $1.2",
+            "6m43s"
+          ]
+        },
+        {
+          "headers": [
+            "Rank",
+            "Model",
+            "Harness",
+            "Score",
+            "Cost / Test",
+            "Input / Output Cost",
+            "Duration"
+          ],
+          "cells": [
+            "50",
+            "Mini-SWE-agent",
+            "74.00%",
+            "$0.02",
+            "$0.435 / $0.87",
+            "7m51s"
+          ]
+        },
+        {
+          "headers": [
+            "Rank",
+            "Model",
+            "Harness",
+            "Score",
+            "Cost / Test",
+            "Input / Output Cost",
+            "Duration"
+          ],
+          "cells": [
+            "51",
+            "Mini-SWE-agent",
+            "73.80%",
+            "$0.47",
+            "$0.3 / $1.2",
+            "14m46s"
+          ]
+        },
+        {
+          "headers": [
+            "Rank",
+            "Model",
+            "Harness",
+            "Score",
+            "Cost / Test",
+            "Input / Output Cost",
+            "Duration"
+          ],
+          "cells": [
+            "52",
+            "Mini-SWE-agent",
+            "73.40%",
+            "$0.87",
+            "$0.5 / $3",
+            "7m04s"
+          ]
+        },
+        {
+          "headers": [
+            "Rank",
+            "Model",
+            "Harness",
+            "Score",
+            "Cost / Test",
+            "Input / Output Cost",
+            "Duration"
+          ],
+          "cells": [
+            "53",
+            "Mini-SWE-agent",
+            "73.00%",
+            "$0.51",
+            "$0.75 / $4.5",
+            "5m26s"
+          ]
+        },
+        {
+          "headers": [
+            "Rank",
+            "Model",
+            "Harness",
+            "Score",
+            "Cost / Test",
+            "Input / Output Cost",
+            "Duration"
+          ],
+          "cells": [
+            "54",
+            "Mini-SWE-agent",
+            "72.80%",
+            "$1.57",
+            "$1.3 / $7.8",
+            "17m59s"
+          ]
+        },
+        {
+          "headers": [
+            "Rank",
+            "Model",
+            "Harness",
+            "Score",
+            "Cost / Test",
+            "Input / Output Cost",
+            "Duration"
+          ],
+          "cells": [
+            "55",
+            "Mini-SWE-agent",
+            "72.40%",
+            "$0.31",
+            "$1.75 / $14",
+            "3m08s"
+          ]
+        },
+        {
+          "headers": [
+            "Rank",
+            "Model",
+            "Harness",
+            "Score",
+            "Cost / Test",
+            "Input / Output Cost",
+            "Duration"
+          ],
+          "cells": [
+            "56",
+            "Mini-SWE-agent",
+            "72.20%",
+            "$0.52",
+            "$2 / $6",
+            "2m15s"
+          ]
+        },
+        {
+          "headers": [
+            "Rank",
+            "Model",
+            "Harness",
+            "Score",
+            "Cost / Test",
+            "Input / Output Cost",
+            "Duration"
+          ],
+          "cells": [
+            "57",
+            "Mini-SWE-agent",
+            "71.40%",
+            "$0.22",
+            "$1.25 / $2.5",
+            "117.77s"
+          ]
+        },
+        {
+          "headers": [
+            "Rank",
+            "Model",
+            "Harness",
+            "Score",
+            "Cost / Test",
+            "Input / Output Cost",
+            "Duration"
+          ],
+          "cells": [
+            "58",
+            "Mini-SWE-agent",
+            "71.40%",
+            "$0.45",
+            "$1 / $3.2",
+            "8m34s"
+          ]
+        },
+        {
+          "headers": [
+            "Rank",
+            "Model",
+            "Harness",
+            "Score",
+            "Cost / Test",
+            "Input / Output Cost",
+            "Duration"
+          ],
+          "cells": [
+            "59",
+            "Mini-SWE-agent",
+            "71.20%",
+            "$0.96",
+            "$0.4 / $2.4",
+            "8m16s"
+          ]
+        },
+        {
+          "headers": [
+            "Rank",
+            "Model",
+            "Harness",
+            "Score",
+            "Cost / Test",
+            "Input / Output Cost",
+            "Duration"
+          ],
+          "cells": [
+            "60",
+            "Mini-SWE-agent",
+            "71.00%",
+            "$0.01",
+            "$0.14 / $0.28",
+            "4m04s"
+          ]
+        },
+        {
+          "headers": [
+            "Rank",
+            "Model",
+            "Harness",
+            "Score",
+            "Cost / Test",
+            "Input / Output Cost",
+            "Duration"
+          ],
+          "cells": [
+            "61",
+            "Mini-SWE-agent",
+            "70.00%",
+            "$0.17",
+            "$0.6 / $3",
+            "5m39s"
+          ]
+        },
+        {
+          "headers": [
+            "Rank",
+            "Model",
+            "Harness",
+            "Score",
+            "Cost / Test",
+            "Input / Output Cost",
+            "Duration"
+          ],
+          "cells": [
+            "62",
+            "Mini-SWE-agent",
+            "70.00%",
+            "$0.81",
+            "$3 / $15",
+            "6m01s"
+          ]
+        },
+        {
+          "headers": [
+            "Rank",
+            "Model",
+            "Harness",
+            "Score",
+            "Cost / Test",
+            "Input / Output Cost",
+            "Duration"
+          ],
+          "cells": [
+            "63",
+            "Mini-SWE-agent",
+            "70.00%",
+            "$0.91",
+            "$0.6 / $3.6",
+            "17m09s"
+          ]
+        },
+        {
+          "headers": [
+            "Rank",
+            "Model",
+            "Harness",
+            "Score",
+            "Cost / Test",
+            "Input / Output Cost",
+            "Duration"
+          ],
+          "cells": [
+            "64",
+            "Mini-SWE-agent",
+            "69.80%",
+            "$0.10",
+            "$0.2 / $1.25",
+            "4m23s"
+          ]
+        },
+        {
+          "headers": [
+            "Rank",
+            "Model",
+            "Harness",
+            "Score",
+            "Cost / Test",
+            "Input / Output Cost",
+            "Duration"
+          ],
+          "cells": [
+            "65",
+            "Mini-SWE-agent",
+            "69.80%",
+            "$0.71",
+            "$1.25 / $10",
+            "8m21s"
+          ]
+        },
+        {
+          "headers": [
+            "Rank",
+            "Model",
+            "Harness",
+            "Score",
+            "Cost / Test",
+            "Input / Output Cost",
+            "Duration"
+          ],
+          "cells": [
+            "66",
+            "Mini-SWE-agent",
+            "69.40%",
+            "$0.20",
+            "$0.6 / $2.2",
+            "6m06s"
+          ]
+        },
+        {
+          "headers": [
+            "Rank",
+            "Model",
+            "Harness",
+            "Score",
+            "Cost / Test",
+            "Input / Output Cost",
+            "Duration"
+          ],
+          "cells": [
+            "67",
+            "Mini-SWE-agent",
+            "69.00%",
+            "$0.27",
+            "$1.25 / $10",
+            "3m53s"
+          ]
+        },
+        {
+          "headers": [
+            "Rank",
+            "Model",
+            "Harness",
+            "Score",
+            "Cost / Test",
+            "Input / Output Cost",
+            "Duration"
+          ],
+          "cells": [
+            "68",
+            "Mini-SWE-agent",
+            "69.00%",
+            "N/A",
+            "N/A",
+            "4m43s"
+          ]
+        },
+        {
+          "headers": [
+            "Rank",
+            "Model",
+            "Harness",
+            "Score",
+            "Cost / Test",
+            "Input / Output Cost",
+            "Duration"
+          ],
+          "cells": [
+            "69",
+            "Mini-SWE-agent",
+            "68.80%",
+            "$3.23",
+            "$2.5 / $7.5",
+            "16m16s"
+          ]
+        },
+        {
+          "headers": [
+            "Rank",
+            "Model",
+            "Harness",
+            "Score",
+            "Cost / Test",
+            "Input / Output Cost",
+            "Duration"
+          ],
+          "cells": [
+            "70",
+            "Mini-SWE-agent",
+            "67.60%",
+            "$0.67",
+            "$0.56 / $1.68",
+            "8m53s"
+          ]
+        },
+        {
+          "headers": [
+            "Rank",
+            "Model",
+            "Harness",
+            "Score",
+            "Cost / Test",
+            "Input / Output Cost",
+            "Duration"
+          ],
+          "cells": [
+            "71",
+            "Mini-SWE-agent",
+            "66.60%",
+            "$0.37",
+            "$1 / $5",
+            "4m02s"
+          ]
+        },
+        {
+          "headers": [
+            "Rank",
+            "Model",
+            "Harness",
+            "Score",
+            "Cost / Test",
+            "Input / Output Cost",
+            "Duration"
+          ],
+          "cells": [
+            "72",
+            "Mini-SWE-agent",
+            "66.40%",
+            "$4.00",
+            "$1.5 / $7.5",
+            "19m04s"
+          ]
+        },
+        {
+          "headers": [
+            "Rank",
+            "Model",
+            "Harness",
+            "Score",
+            "Cost / Test",
+            "Input / Output Cost",
+            "Duration"
+          ],
+          "cells": [
+            "73",
+            "Mini-SWE-agent",
+            "65.20%",
+            "$0.03",
+            "$0.075 / $0.22",
+            "3m16s"
+          ]
+        },
+        {
+          "headers": [
+            "Rank",
+            "Model",
+            "Harness",
+            "Score",
+            "Cost / Test",
+            "Input / Output Cost",
+            "Duration"
+          ],
+          "cells": [
+            "74",
+            "Mini-SWE-agent",
+            "64.40%",
+            "$0.26",
+            "$0.1 / $0.4",
+            "6m03s"
+          ]
+        },
+        {
+          "headers": [
+            "Rank",
+            "Model",
+            "Harness",
+            "Score",
+            "Cost / Test",
+            "Input / Output Cost",
+            "Duration"
+          ],
+          "cells": [
+            "75",
+            "Mini-SWE-agent",
+            "62.80%",
+            "$0.11",
+            "$0.25 / $1.5",
+            "2m13s"
+          ]
+        },
+        {
+          "headers": [
+            "Rank",
+            "Model",
+            "Harness",
+            "Score",
+            "Cost / Test",
+            "Input / Output Cost",
+            "Duration"
+          ],
+          "cells": [
+            "76",
+            "Mini-SWE-agent",
+            "62.80%",
+            "$0.75",
+            "$0.4 / $2",
+            "4m04s"
+          ]
+        },
+        {
+          "headers": [
+            "Rank",
+            "Model",
+            "Harness",
+            "Score",
+            "Cost / Test",
+            "Input / Output Cost",
+            "Duration"
+          ],
+          "cells": [
+            "77",
+            "Mini-SWE-agent",
+            "60.80%",
+            "$0.05",
+            "$0.25 / $2",
+            "3m07s"
+          ]
+        },
+        {
+          "headers": [
+            "Rank",
+            "Model",
+            "Harness",
+            "Score",
+            "Cost / Test",
+            "Input / Output Cost",
+            "Duration"
+          ],
+          "cells": [
+            "78",
+            "Mini-SWE-agent",
+            "60.20%",
+            "$0.37",
+            "$0.6 / $2.5",
+            "27m12s"
+          ]
+        },
+        {
+          "headers": [
+            "Rank",
+            "Model",
+            "Harness",
+            "Score",
+            "Cost / Test",
+            "Input / Output Cost",
+            "Duration"
+          ],
+          "cells": [
+            "79",
+            "Mini-SWE-agent",
+            "57.80%",
+            "$1.42",
+            "$3 / $15",
+            "9m48s"
+          ]
+        },
+        {
+          "headers": [
+            "Rank",
+            "Model",
+            "Harness",
+            "Score",
+            "Cost / Test",
+            "Input / Output Cost",
+            "Duration"
+          ],
+          "cells": [
+            "80",
+            "Mini-SWE-agent",
+            "57.60%",
+            "N/A",
+            "N/A",
+            "14m46s"
+          ]
+        },
+        {
+          "headers": [
+            "Rank",
+            "Model",
+            "Harness",
+            "Score",
+            "Cost / Test",
+            "Input / Output Cost",
+            "Duration"
+          ],
+          "cells": [
+            "81",
+            "Mini-SWE-agent",
+            "55.20%",
+            "N/A",
+            "N/A",
+            "4m30s"
+          ]
+        },
+        {
+          "headers": [
+            "Rank",
+            "Model",
+            "Harness",
+            "Score",
+            "Cost / Test",
+            "Input / Output Cost",
+            "Duration"
+          ],
+          "cells": [
+            "82",
+            "Mini-SWE-agent",
+            "54.40%",
+            "$0.35",
+            "$1.25 / $10",
+            "3m28s"
+          ]
+        },
+        {
+          "headers": [
+            "Rank",
+            "Model",
+            "Harness",
+            "Score",
+            "Cost / Test",
+            "Input / Output Cost",
+            "Duration"
+          ],
+          "cells": [
+            "83",
+            "Mini-SWE-agent",
+            "52.80%",
+            "$0.03",
+            "$0.05 / $0.2",
+            "15m25s"
+          ]
+        },
+        {
+          "headers": [
+            "Rank",
+            "Model",
+            "Harness",
+            "Score",
+            "Cost / Test",
+            "Input / Output Cost",
+            "Duration"
+          ],
+          "cells": [
+            "84",
+            "Mini-SWE-agent",
+            "45.40%",
+            "$0.05",
+            "$0.2 / $0.5",
+            "2m06s"
+          ]
+        },
+        {
+          "headers": [
+            "Rank",
+            "Model",
+            "Harness",
+            "Score",
+            "Cost / Test",
+            "Input / Output Cost",
+            "Duration"
+          ],
+          "cells": [
+            "85",
+            "Mini-SWE-agent",
+            "41.40%",
+            "$0.03",
+            "$0.2 / $0.5",
+            "2m18s"
+          ]
+        },
+        {
+          "headers": [
+            "Rank",
+            "Model",
+            "Harness",
+            "Score",
+            "Cost / Test",
+            "Input / Output Cost",
+            "Duration"
+          ],
+          "cells": [
+            "86",
+            "Mini-SWE-agent",
+            "41.40%",
+            "$0.32",
+            "$0.5 / $1.5",
+            "3m07s"
+          ]
+        },
+        {
+          "headers": [
+            "Rank",
+            "Model",
+            "Harness",
+            "Score",
+            "Cost / Test",
+            "Input / Output Cost",
+            "Duration"
+          ],
+          "cells": [
+            "87",
+            "Mini-SWE-agent",
+            "33.60%",
+            "$0.17",
+            "$0.15 / $0.6",
+            "4m16s"
+          ]
+        },
+        {
+          "headers": [
+            "Rank",
+            "Model",
+            "Harness",
+            "Score",
+            "Cost / Test",
+            "Input / Output Cost",
+            "Duration"
+          ],
+          "cells": [
+            "88",
+            "Mini-SWE-agent",
+            "7.80%",
+            "$0.21",
+            "$2.5 / $10",
+            "3m48s"
           ]
         }
       ],
       "method": "table",
-      "fetchedAt": "2026-10-03T03:27:06.196Z"
+      "fetchedAt": "2026-10-03T10:53:05.838Z"
     },
     "arena": {
       "textLeaderboard": [
@@ -4064,7 +5384,7 @@
             "qwen3-30b-a3b-instruct-2507Alibaba · Apache 2.0",
             "1383±5",
             "23,174",
-            "$0.10 / $0.30",
+            "$0.05 / $0.19",
             "262.1K"
           ]
         },
@@ -8629,7 +9949,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-10-03T03:27:13.107Z"
+      "fetchedAt": "2026-10-03T10:53:12.850Z"
     },
     "terms": {
       "main": {
@@ -8954,7 +10274,7 @@
           ]
         ]
       },
-      "fetchedAt": "2026-10-03T03:27:13.113Z"
+      "fetchedAt": "2026-10-03T10:53:12.855Z"
     }
   }
 }
