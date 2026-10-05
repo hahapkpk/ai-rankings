@@ -1,11 +1,11 @@
 {
   "version": "3.0",
-  "fetchedAt": "2026-10-05T03:39:03.743Z",
+  "fetchedAt": "2026-10-05T13:09:52.368Z",
   "sources": {
     "openrouter": {
       "leaderboard": {},
       "topModels": [],
-      "fetchedAt": "2026-10-05T03:39:03.744Z",
+      "fetchedAt": "2026-10-05T13:09:52.368Z",
       "error": "API fetch failed: [object Object]"
     },
     "valsai": {
@@ -1684,7 +1684,7 @@
         }
       ],
       "method": "table",
-      "fetchedAt": "2026-10-05T03:39:23.388Z"
+      "fetchedAt": "2026-10-05T13:10:10.973Z"
     },
     "arena": {
       "textLeaderboard": [
@@ -6904,7 +6904,7 @@
             "Metallama-3.3-70b-instructMeta · Llama-3.3",
             "1318±4",
             "54,366",
-            "$0.22 / $0.50",
+            "$0.10 / $0.32",
             "131.1K"
           ]
         },
@@ -9949,7 +9949,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-10-05T03:39:30.025Z"
+      "fetchedAt": "2026-10-05T13:10:16.676Z"
     },
     "terms": {
       "main": {
@@ -10274,7 +10274,7 @@
           ]
         ]
       },
-      "fetchedAt": "2026-10-05T03:39:30.031Z"
+      "fetchedAt": "2026-10-05T13:10:16.682Z"
     }
   }
 }
