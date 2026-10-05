@@ -1,11 +1,11 @@
 {
   "version": "3.0",
-  "fetchedAt": "2026-10-05T13:09:52.368Z",
+  "fetchedAt": "2026-10-05T20:26:04.886Z",
   "sources": {
     "openrouter": {
       "leaderboard": {},
       "topModels": [],
-      "fetchedAt": "2026-10-05T13:09:52.368Z",
+      "fetchedAt": "2026-10-05T20:26:04.887Z",
       "error": "API fetch failed: [object Object]"
     },
     "valsai": {
@@ -1684,7 +1684,7 @@
         }
       ],
       "method": "table",
-      "fetchedAt": "2026-10-05T13:10:10.973Z"
+      "fetchedAt": "2026-10-05T20:26:24.634Z"
     },
     "arena": {
       "textLeaderboard": [
@@ -3024,7 +3024,7 @@
             "Tencenthy3Tencent · Apache 2.0",
             "1456±7",
             "10,476",
-            "$0.13 / $0.53",
+            "$0.08 / $0.33",
             "262.1K"
           ]
         },
@@ -4344,7 +4344,7 @@
             "deepseek-v3.1-terminus-thinkingDeepSeek · MIT",
             "1417±10",
             "3,354",
-            "$0.27 / $1",
+            "$0.30 / $1",
             "163.8K"
           ]
         },
@@ -4444,7 +4444,7 @@
             "deepseek-v3.1-terminusDeepSeek · MIT",
             "1415±10",
             "3,599",
-            "$0.27 / $1",
+            "$0.30 / $1",
             "163.8K"
           ]
         },
@@ -6904,7 +6904,7 @@
             "Metallama-3.3-70b-instructMeta · Llama-3.3",
             "1318±4",
             "54,366",
-            "$0.10 / $0.32",
+            "$0.22 / $0.50",
             "131.1K"
           ]
         },
@@ -9949,7 +9949,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-10-05T13:10:16.676Z"
+      "fetchedAt": "2026-10-05T20:26:33.958Z"
     },
     "terms": {
       "main": {
@@ -10274,7 +10274,7 @@
           ]
         ]
       },
-      "fetchedAt": "2026-10-05T13:10:16.682Z"
+      "fetchedAt": "2026-10-05T20:26:33.964Z"
     }
   }
 }
