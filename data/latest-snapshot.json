@@ -1,11 +1,11 @@
 {
   "version": "3.0",
-  "fetchedAt": "2026-10-08T12:33:01.071Z",
+  "fetchedAt": "2026-10-08T18:35:52.899Z",
   "sources": {
     "openrouter": {
       "leaderboard": {},
       "topModels": [],
-      "fetchedAt": "2026-10-08T12:33:01.071Z",
+      "fetchedAt": "2026-10-08T18:35:52.903Z",
       "error": "API fetch failed: [object Object]"
     },
     "valsai": {
@@ -1684,7 +1684,7 @@
         }
       ],
       "method": "table",
-      "fetchedAt": "2026-10-08T12:33:18.089Z"
+      "fetchedAt": "2026-10-08T18:36:11.242Z"
     },
     "arena": {
       "textLeaderboard": [
@@ -1703,7 +1703,7 @@
             "11",
             "gemini-4-argon-highGoogle · Proprietary",
             "1525±9Preliminary",
-            "4,932",
+            "4,892",
             "$2 / $10",
             "1M"
           ]
@@ -1720,11 +1720,11 @@
           ],
           "cells": [
             "2",
-            "27",
-            "Anthropicclaude-opus-4-6-highAnthropic · Proprietary",
-            "1505±3",
-            "77,636",
-            "$5 / $25",
+            "210",
+            "Anthropicclaude-opus-5.5-highAnthropic · Proprietary",
+            "1507±8",
+            "6,272",
+            "$4 / $20",
             "1M"
           ]
         },
@@ -1740,11 +1740,11 @@
           ],
           "cells": [
             "3",
-            "29",
-            "Anthropicclaude-fable-5-highAnthropic · Proprietary",
-            "1504±4",
-            "38,387",
-            "$10 / $50",
+            "28",
+            "Anthropicclaude-opus-4-6-highAnthropic · Proprietary",
+            "1504±3",
+            "79,415",
+            "$5 / $25",
             "1M"
           ]
         },
@@ -1760,11 +1760,11 @@
           ],
           "cells": [
             "4",
-            "213",
-            "Anthropicclaude-opus-5.5-highAnthropic · Proprietary",
-            "1504±9",
-            "4,552",
-            "$4 / $20",
+            "210",
+            "Anthropicclaude-fable-5-highAnthropic · Proprietary",
+            "1504±4",
+            "40,026",
+            "$10 / $50",
             "1M"
           ]
         },
@@ -1783,7 +1783,7 @@
             "211",
             "Anthropicclaude-opus-4-7-highAnthropic · Proprietary",
             "1501±4",
-            "64,946",
+            "65,192",
             "$5 / $25",
             "1M"
           ]
@@ -1803,7 +1803,7 @@
             "213",
             "Anthropicclaude-fable-5.1-maxAnthropic · Proprietary",
             "1501±6",
-            "11,800",
+            "13,063",
             "$10 / $50",
             "1M"
           ]
@@ -1820,10 +1820,10 @@
           ],
           "cells": [
             "7",
-            "314",
+            "213",
             "Anthropicclaude-opus-4-6Anthropic · Proprietary",
-            "1497±3",
-            "82,189",
+            "1498±3",
+            "84,095",
             "$5 / $25",
             "1M"
           ]
@@ -1840,10 +1840,10 @@
           ],
           "cells": [
             "8",
-            "419",
+            "217",
             "gemini-3.8-flash-highGoogle · Proprietary",
-            "1495±5Preliminary",
-            "26,298",
+            "1497±5Preliminary",
+            "31,437",
             "$0.75 / $3.75",
             "1M"
           ]
@@ -1860,10 +1860,10 @@
           ],
           "cells": [
             "9",
-            "322",
+            "323",
             "Metamuse-spark-1.3-maxMeta · Proprietary",
             "1494±6",
-            "12,343",
+            "14,694",
             "$1.25 / $4.25",
             "1M"
           ]
@@ -1880,10 +1880,10 @@
           ],
           "cells": [
             "10",
-            "418",
+            "519",
             "Anthropicclaude-opus-4-7Anthropic · Proprietary",
             "1494±4",
-            "66,058",
+            "66,315",
             "$5 / $25",
             "1M"
           ]
@@ -1900,10 +1900,10 @@
           ],
           "cells": [
             "11",
-            "227",
+            "328",
             "Metamuse-spark-1.2 (xHigh)Meta · Proprietary",
-            "1494±9",
-            "4,356",
+            "1492±8",
+            "6,118",
             "$1.25 / $4.25",
             "N/A"
           ]
@@ -1920,10 +1920,10 @@
           ],
           "cells": [
             "12",
-            "523",
+            "624",
             "Metamuse-spark-1.1Meta · Proprietary",
             "1491±4",
-            "37,238",
+            "39,847",
             "$1.25 / $4.25",
             "N/A"
           ]
@@ -1943,7 +1943,7 @@
             "824",
             "Anthropicclaude-opus-5-highAnthropic · Proprietary",
             "1490±4",
-            "59,482",
+            "62,934",
             "$5 / $25",
             "1M"
           ]
@@ -1960,10 +1960,10 @@
           ],
           "cells": [
             "14",
-            "727",
+            "828",
             "Anthropicclaude-opus-5-maxAnthropic · Proprietary",
             "1489±5",
-            "28,937",
+            "30,569",
             "$5 / $25",
             "1M"
           ]
@@ -1980,10 +1980,10 @@
           ],
           "cells": [
             "15",
-            "529",
+            "629",
             "Metamuse-sparkMeta · Proprietary",
             "1489±6",
-            "14,120",
+            "14,168",
             "N/A",
             "N/A"
           ]
@@ -2003,7 +2003,7 @@
             "829",
             "kimi-k3-maxMoonshot · Kimi K3 license",
             "1488±5",
-            "28,280",
+            "30,351",
             "N/A",
             "N/A"
           ]
@@ -2020,11 +2020,11 @@
           ],
           "cells": [
             "17",
-            "829",
-            "gemini-3.7-flash-highGoogle · Proprietary",
-            "1488±5Preliminary",
-            "21,539",
-            "$0.75 / $3.75",
+            "928",
+            "gemini-3.1-pro-previewGoogle · Proprietary",
+            "1487±3",
+            "124,675",
+            "$1 / $6",
             "1M"
           ]
         },
@@ -2040,11 +2040,11 @@
           ],
           "cells": [
             "18",
-            "928",
-            "gemini-3.1-pro-previewGoogle · Proprietary",
-            "1487±3",
-            "121,806",
-            "$1 / $6",
+            "931",
+            "gemini-3.7-flash-highGoogle · Proprietary",
+            "1486±5Preliminary",
+            "24,173",
+            "$0.75 / $3.75",
             "1M"
           ]
         },
@@ -2063,7 +2063,7 @@
             "1029",
             "gemini-3-proGoogle · Proprietary",
             "1485±4",
-            "41,910",
+            "42,078",
             "$2 / $12",
             "1M"
           ]
@@ -2080,10 +2080,10 @@
           ],
           "cells": [
             "20",
-            "1036",
+            "1032",
             "gpt-5.6-sol-xhighOpenAI · Proprietary",
-            "1484±4",
-            "36,656",
+            "1485±4",
+            "38,490",
             "$4 / $20",
             "N/A"
           ]
@@ -2100,10 +2100,10 @@
           ],
           "cells": [
             "21",
-            "847",
+            "845",
             "gpt-6.1-sol-maxOpenAI · Proprietary",
-            "1483±11",
-            "3,071",
+            "1484±9",
+            "4,512",
             "$2 / $10",
             "1.1M"
           ]
@@ -2120,30 +2120,10 @@
           ],
           "cells": [
             "22",
-            "1138",
-            "gemini-3.6-flash-highGoogle · Proprietary",
-            "1483±4",
-            "36,070",
-            "$0.75 / $3.75",
-            "1M"
-          ]
-        },
-        {
-          "headers": [
-            "Rank",
-            "Rank Spread",
-            "Model",
-            "Score",
-            "Votes",
-            "Price $/M",
-            "Context"
-          ],
-          "cells": [
-            "23",
-            "1243",
+            "1039",
             "qwen3.8-maxAlibaba · Proprietary",
-            "1482±5",
-            "23,353",
+            "1483±5",
+            "25,378",
             "$2 / $6",
             "1M"
           ]
@@ -2159,13 +2139,33 @@
             "Context"
           ],
           "cells": [
-            "24",
-            "1341",
-            "Anthropicclaude-opus-4-8-highAnthropic · Proprietary",
+            "23",
+            "1141",
+            "gemini-3.6-flash-highGoogle · Proprietary",
             "1482±4",
-            "63,974",
-            "$5 / $25",
+            "36,172",
+            "$0.75 / $3.75",
             "1M"
+          ]
+        },
+        {
+          "headers": [
+            "Rank",
+            "Rank Spread",
+            "Model",
+            "Score",
+            "Votes",
+            "Price $/M",
+            "Context"
+          ],
+          "cells": [
+            "24",
+            "1340",
+            "gpt-5.5-highOpenAI · Proprietary",
+            "1482±4",
+            "69,437",
+            "$5 / $30",
+            "1.1M"
           ]
         },
         {
@@ -2181,11 +2181,11 @@
           "cells": [
             "25",
             "1341",
-            "gpt-5.5-highOpenAI · Proprietary",
+            "Anthropicclaude-opus-4-8-highAnthropic · Proprietary",
             "1481±4",
-            "69,202",
-            "$5 / $30",
-            "1.1M"
+            "64,177",
+            "$5 / $25",
+            "1M"
           ]
         },
         {
@@ -2203,7 +2203,7 @@
             "1050",
             "mimo-v2.6-proXiaomi · MIT",
             "1480±9",
-            "4,056",
+            "4,069",
             "$0.43 / $0.87",
             "1.1M"
           ]
@@ -2220,10 +2220,10 @@
           ],
           "cells": [
             "27",
-            "1546",
+            "1646",
             "glm-5.3-maxZ.ai · MIT",
-            "1478±6",
-            "17,857",
+            "1478±5",
+            "20,049",
             "$1.40 / $4.40",
             "1M"
           ]
@@ -2240,10 +2240,10 @@
           ],
           "cells": [
             "28",
-            "2046",
+            "1946",
             "gemini-3.5-flash-highGoogle · Proprietary",
-            "1477±4",
-            "48,420",
+            "1478±4",
+            "48,533",
             "$0.75 / $4.50",
             "1M"
           ]
@@ -2260,30 +2260,10 @@
           ],
           "cells": [
             "29",
-            "1650",
-            "gpt-6-astra-maxOpenAI · Proprietary",
-            "1477±7",
-            "9,156",
-            "N/A",
-            "N/A"
-          ]
-        },
-        {
-          "headers": [
-            "Rank",
-            "Rank Spread",
-            "Model",
-            "Score",
-            "Votes",
-            "Price $/M",
-            "Context"
-          ],
-          "cells": [
-            "30",
-            "2046",
+            "2146",
             "gpt-5.5OpenAI · Proprietary",
             "1477±4",
-            "70,781",
+            "71,047",
             "$5 / $30",
             "1.1M"
           ]
@@ -2299,11 +2279,11 @@
             "Context"
           ],
           "cells": [
-            "31",
-            "2048",
+            "30",
+            "2148",
             "gemini-3.5-flash-mediumGoogle · Proprietary",
             "1476±4",
-            "47,187",
+            "47,339",
             "$0.75 / $4.50",
             "1M"
           ]
@@ -2319,12 +2299,32 @@
             "Context"
           ],
           "cells": [
-            "32",
-            "2048",
-            "glm-5.2-maxZ.ai · MIT",
+            "31",
+            "2148",
+            "gpt-5.2-chat-latest-20260210OpenAI · Proprietary",
             "1476±4",
-            "45,399",
-            "$1.40 / $4.40",
+            "36,007",
+            "$1.75 / $14",
+            "128K"
+          ]
+        },
+        {
+          "headers": [
+            "Rank",
+            "Rank Spread",
+            "Model",
+            "Score",
+            "Votes",
+            "Price $/M",
+            "Context"
+          ],
+          "cells": [
+            "32",
+            "1357",
+            "Anthropicclaude-sonnet-5.5-xhighAnthropic · Proprietary",
+            "1476±9",
+            "4,838",
+            "$2 / $10",
             "1M"
           ]
         },
@@ -2340,12 +2340,12 @@
           ],
           "cells": [
             "33",
-            "2048",
-            "gpt-5.2-chat-latest-20260210OpenAI · Proprietary",
-            "1476±4",
-            "35,937",
-            "$1.75 / $14",
-            "128K"
+            "2150",
+            "glm-5.2-maxZ.ai · MIT",
+            "1475±4",
+            "47,521",
+            "$1.40 / $4.40",
+            "1M"
           ]
         },
         {
@@ -2363,7 +2363,7 @@
             "2148",
             "gpt-5.4-highOpenAI · Proprietary",
             "1475±4",
-            "64,642",
+            "64,844",
             "$2.50 / $15",
             "1.1M"
           ]
@@ -2380,30 +2380,10 @@
           ],
           "cells": [
             "35",
-            "1359",
-            "qwen3.7-max-previewAlibaba · Proprietary",
-            "1475±10",
-            "3,920",
-            "$1.48 / $4.42",
-            "1M"
-          ]
-        },
-        {
-          "headers": [
-            "Rank",
-            "Rank Spread",
-            "Model",
-            "Score",
-            "Votes",
-            "Price $/M",
-            "Context"
-          ],
-          "cells": [
-            "36",
-            "2151",
-            "grok-4.20-beta1SpaceXAI · Proprietary",
-            "1475±5",
-            "27,827",
+            "1953",
+            "gpt-6-astra-maxOpenAI · Proprietary",
+            "1475±7",
+            "10,536",
             "N/A",
             "N/A"
           ]
@@ -2419,13 +2399,33 @@
             "Context"
           ],
           "cells": [
-            "37",
-            "2250",
-            "Anthropicclaude-opus-4-8Anthropic · Proprietary",
-            "1475±4",
-            "65,072",
-            "$5 / $25",
+            "36",
+            "1359",
+            "qwen3.7-max-previewAlibaba · Proprietary",
+            "1475±10",
+            "3,932",
+            "$1.48 / $4.42",
             "1M"
+          ]
+        },
+        {
+          "headers": [
+            "Rank",
+            "Rank Spread",
+            "Model",
+            "Score",
+            "Votes",
+            "Price $/M",
+            "Context"
+          ],
+          "cells": [
+            "37",
+            "2152",
+            "grok-4.20-beta1SpaceXAI · Proprietary",
+            "1475±5",
+            "27,928",
+            "N/A",
+            "N/A"
           ]
         },
         {
@@ -2440,70 +2440,10 @@
           ],
           "cells": [
             "38",
-            "2057",
-            "deepseek-v4.1-flash-maxDeepSeek · MIT",
-            "1474±7",
-            "8,728",
-            "$0.30 / $1.20",
-            "1M"
-          ]
-        },
-        {
-          "headers": [
-            "Rank",
-            "Rank Spread",
-            "Model",
-            "Score",
-            "Votes",
-            "Price $/M",
-            "Context"
-          ],
-          "cells": [
-            "39",
-            "2452",
-            "Anthropicclaude-opus-4-5-20251101-high-32kAnthropic · Proprietary",
-            "1474±4",
-            "37,448",
-            "$5 / $25",
-            "200K"
-          ]
-        },
-        {
-          "headers": [
-            "Rank",
-            "Rank Spread",
-            "Model",
-            "Score",
-            "Votes",
-            "Price $/M",
-            "Context"
-          ],
-          "cells": [
-            "40",
-            "2256",
-            "gpt-5.5-instantOpenAI · Proprietary",
-            "1473±5",
-            "27,098",
-            "$5 / $30",
-            "1.1M"
-          ]
-        },
-        {
-          "headers": [
-            "Rank",
-            "Rank Spread",
-            "Model",
-            "Score",
-            "Votes",
-            "Price $/M",
-            "Context"
-          ],
-          "cells": [
-            "41",
-            "2257",
+            "2153",
             "glm-5.3-flashZ.ai · MIT",
-            "1473±5",
-            "22,971",
+            "1475±5",
+            "27,678",
             "$0.06 / $0.20",
             "1M"
           ]
@@ -2519,13 +2459,73 @@
             "Context"
           ],
           "cells": [
-            "42",
-            "2456",
-            "gemini-3-flashGoogle · Proprietary",
-            "1473±4",
-            "31,259",
-            "$0.50 / $3",
+            "39",
+            "2057",
+            "deepseek-v4.1-flash-maxDeepSeek · MIT",
+            "1475±7",
+            "10,872",
+            "$0.30 / $1.20",
             "1M"
+          ]
+        },
+        {
+          "headers": [
+            "Rank",
+            "Rank Spread",
+            "Model",
+            "Score",
+            "Votes",
+            "Price $/M",
+            "Context"
+          ],
+          "cells": [
+            "40",
+            "2250",
+            "Anthropicclaude-opus-4-8Anthropic · Proprietary",
+            "1474±4",
+            "65,259",
+            "$5 / $25",
+            "1M"
+          ]
+        },
+        {
+          "headers": [
+            "Rank",
+            "Rank Spread",
+            "Model",
+            "Score",
+            "Votes",
+            "Price $/M",
+            "Context"
+          ],
+          "cells": [
+            "41",
+            "2552",
+            "Anthropicclaude-opus-4-5-20251101-high-32kAnthropic · Proprietary",
+            "1474±4",
+            "37,527",
+            "$5 / $25",
+            "200K"
+          ]
+        },
+        {
+          "headers": [
+            "Rank",
+            "Rank Spread",
+            "Model",
+            "Score",
+            "Votes",
+            "Price $/M",
+            "Context"
+          ],
+          "cells": [
+            "42",
+            "2357",
+            "gpt-5.5-instantOpenAI · Proprietary",
+            "1473±5",
+            "27,187",
+            "$5 / $30",
+            "1.1M"
           ]
         },
         {
@@ -2541,10 +2541,10 @@
           "cells": [
             "43",
             "2553",
-            "Anthropicclaude-sonnet-4-6Anthropic · Proprietary",
-            "1472±4",
-            "70,747",
-            "$1.50 / $7.50",
+            "gemini-3-flashGoogle · Proprietary",
+            "1473±4",
+            "31,337",
+            "$0.50 / $3",
             "1M"
           ]
         },
@@ -2560,11 +2560,11 @@
           ],
           "cells": [
             "44",
-            "2557",
-            "grok-4.20-beta-0309-reasoningSpaceXAI · Proprietary",
+            "2554",
+            "Anthropicclaude-sonnet-4-6Anthropic · Proprietary",
             "1472±4",
-            "66,334",
-            "$1.25 / $2.50",
+            "70,971",
+            "$1.50 / $7.50",
             "1M"
           ]
         },
@@ -2580,11 +2580,11 @@
           ],
           "cells": [
             "45",
-            "2066",
-            "Anthropicclaude-sonnet-5.5-xhighAnthropic · Proprietary",
-            "1471±10",
-            "3,145",
-            "$2 / $10",
+            "2557",
+            "grok-4.20-beta-0309-reasoningSpaceXAI · Proprietary",
+            "1472±4",
+            "66,524",
+            "$1.25 / $2.50",
             "1M"
           ]
         },
@@ -2600,10 +2600,10 @@
           ],
           "cells": [
             "46",
-            "2557",
+            "2657",
             "grok-4.20-multi-agent-beta-0309SpaceXAI · Proprietary",
-            "1471±4",
-            "64,788",
+            "1470±4",
+            "65,008",
             "$1.25 / $2.50",
             "1M"
           ]
@@ -2620,10 +2620,10 @@
           ],
           "cells": [
             "47",
-            "2857",
+            "2957",
             "Anthropicclaude-opus-4-5-20251101Anthropic · Proprietary",
             "1470±3",
-            "72,772",
+            "72,952",
             "$5 / $25",
             "200K"
           ]
@@ -2640,30 +2640,10 @@
           ],
           "cells": [
             "48",
-            "2961",
-            "ernie-5.1Baidu · Proprietary",
-            "1468±5",
-            "39,396",
-            "$0.56 / $2.54",
-            "119K"
-          ]
-        },
-        {
-          "headers": [
-            "Rank",
-            "Rank Spread",
-            "Model",
-            "Score",
-            "Votes",
-            "Price $/M",
-            "Context"
-          ],
-          "cells": [
-            "49",
-            "3361",
+            "3259",
             "mimo-v2.5-proXiaomi · MIT",
             "1468±4",
-            "70,871",
+            "73,197",
             "$0.43 / $0.87",
             "1.1M"
           ]
@@ -2679,13 +2659,13 @@
             "Context"
           ],
           "cells": [
-            "50",
-            "3665",
-            "grok-4.5SpaceXAI · Proprietary",
-            "1466±4",
-            "39,789",
-            "$2 / $6",
-            "500K"
+            "49",
+            "2959",
+            "ernie-5.1Baidu · Proprietary",
+            "1467±5",
+            "39,536",
+            "$0.56 / $2.54",
+            "119K"
           ]
         },
         {
@@ -2699,11 +2679,11 @@
             "Context"
           ],
           "cells": [
-            "51",
-            "3766",
+            "50",
+            "3563",
             "gpt-5.6-terra-xhighOpenAI · Proprietary",
-            "1465±4",
-            "37,663",
+            "1466±4",
+            "40,278",
             "$2 / $12",
             "N/A"
           ]
@@ -2719,11 +2699,31 @@
             "Context"
           ],
           "cells": [
+            "51",
+            "3563",
+            "grok-4.5SpaceXAI · Proprietary",
+            "1466±4",
+            "39,953",
+            "$2 / $6",
+            "500K"
+          ]
+        },
+        {
+          "headers": [
+            "Rank",
+            "Rank Spread",
+            "Model",
+            "Score",
+            "Votes",
+            "Price $/M",
+            "Context"
+          ],
+          "cells": [
             "52",
-            "3963",
+            "4161",
             "grok-4.1-thinkingSpaceXAI · Proprietary",
             "1465±3",
-            "66,366",
+            "66,511",
             "N/A",
             "N/A"
           ]
@@ -2740,10 +2740,10 @@
           ],
           "cells": [
             "53",
-            "3966",
+            "4164",
             "gpt-5.4OpenAI · Proprietary",
             "1465±4",
-            "67,707",
+            "67,932",
             "$2.50 / $15",
             "1.1M"
           ]
@@ -2760,10 +2760,10 @@
           ],
           "cells": [
             "54",
-            "3869",
+            "3767",
             "qwen3.5-max-previewAlibaba · Proprietary",
             "1465±5",
-            "22,555",
+            "22,624",
             "$1.20 / $6",
             "N/A"
           ]
@@ -2780,30 +2780,10 @@
           ],
           "cells": [
             "55",
-            "4166",
-            "glm-5.1Z.ai · MIT",
-            "1465±4",
-            "58,358",
-            "$1.40 / $4.40",
-            "202.8K"
-          ]
-        },
-        {
-          "headers": [
-            "Rank",
-            "Rank Spread",
-            "Model",
-            "Score",
-            "Votes",
-            "Price $/M",
-            "Context"
-          ],
-          "cells": [
-            "56",
-            "3376",
+            "3274",
             "deepseek-v4-pro-high-20260813DeepSeek · MIT",
-            "1464±7",
-            "9,780",
+            "1465±7",
+            "9,815",
             "$1.32 / $3.96",
             "N/A"
           ]
@@ -2819,11 +2799,31 @@
             "Context"
           ],
           "cells": [
+            "56",
+            "4164",
+            "glm-5.1Z.ai · MIT",
+            "1464±4",
+            "60,592",
+            "$1.40 / $4.40",
+            "202.8K"
+          ]
+        },
+        {
+          "headers": [
+            "Rank",
+            "Rank Spread",
+            "Model",
+            "Score",
+            "Votes",
+            "Price $/M",
+            "Context"
+          ],
+          "cells": [
             "57",
-            "4676",
+            "4775",
             "Anthropicclaude-sonnet-5-highAnthropic · Proprietary",
-            "1462±4",
-            "45,739",
+            "1461±4",
+            "47,576",
             "$2 / $10",
             "1M"
           ]
@@ -2840,10 +2840,10 @@
           ],
           "cells": [
             "58",
-            "4677",
+            "4776",
             "kimi-k2.6Moonshot · Modified MIT",
             "1461±4",
-            "39,936",
+            "40,066",
             "$0.95 / $4",
             "262.1K"
           ]
@@ -2860,10 +2860,10 @@
           ],
           "cells": [
             "59",
-            "3982",
+            "4082",
             "qwen3.6-max-previewAlibaba · Proprietary",
             "1460±8",
-            "5,406",
+            "5,426",
             "$1.03 / $6.16",
             "262.1K"
           ]
@@ -2880,10 +2880,10 @@
           ],
           "cells": [
             "60",
-            "4977",
+            "5077",
             "grok-4.1SpaceXAI · Proprietary",
             "1459±3",
-            "68,478",
+            "68,682",
             "N/A",
             "N/A"
           ]
@@ -2900,10 +2900,10 @@
           ],
           "cells": [
             "61",
-            "5178",
+            "5377",
             "gemini-3-flash (thinking-minimal)Google · Proprietary",
             "1458±3",
-            "90,842",
+            "91,105",
             "$0.50 / $3",
             "1M"
           ]
@@ -2920,10 +2920,10 @@
           ],
           "cells": [
             "62",
-            "5079",
+            "5179",
             "deepseek-v4-proDeepSeek · MIT",
             "1458±4",
-            "57,478",
+            "57,657",
             "$1.32 / $3.96",
             "1M"
           ]
@@ -2940,10 +2940,10 @@
           ],
           "cells": [
             "63",
-            "5080",
+            "5180",
             "glm-5Z.ai · MIT",
             "1458±4",
-            "29,174",
+            "29,292",
             "$1 / $3.20",
             "204.8K"
           ]
@@ -2960,30 +2960,10 @@
           ],
           "cells": [
             "64",
-            "4786",
-            "gpt-6-sol-maxOpenAI · Proprietary",
-            "1457±7",
-            "8,787",
-            "$2 / $10",
-            "1.1M"
-          ]
-        },
-        {
-          "headers": [
-            "Rank",
-            "Rank Spread",
-            "Model",
-            "Score",
-            "Votes",
-            "Price $/M",
-            "Context"
-          ],
-          "cells": [
-            "65",
             "5679",
             "Anthropicclaude-sonnet-4-5-20250929-high-32kAnthropic · Proprietary",
-            "1457±3",
-            "83,670",
+            "1456±3",
+            "83,973",
             "$3 / $15",
             "1M"
           ]
@@ -2999,11 +2979,11 @@
             "Context"
           ],
           "cells": [
-            "66",
-            "5581",
+            "65",
+            "5681",
             "Bytedancedola-seed-2.0-proBytedance · Proprietary",
             "1456±3",
-            "78,890",
+            "79,195",
             "N/A",
             "N/A"
           ]
@@ -3019,31 +2999,11 @@
             "Context"
           ],
           "cells": [
-            "67",
-            "4987",
-            "Tencenthy3Tencent · Apache 2.0",
-            "1456±7",
-            "10,476",
-            "$0.13 / $0.53",
-            "262.1K"
-          ]
-        },
-        {
-          "headers": [
-            "Rank",
-            "Rank Spread",
-            "Model",
-            "Score",
-            "Votes",
-            "Price $/M",
-            "Context"
-          ],
-          "cells": [
-            "68",
+            "66",
             "5582",
             "qwen3.7-plusAlibaba · Proprietary",
             "1456±4",
-            "41,908",
+            "42,073",
             "$0.32 / $1.28",
             "1M"
           ]
@@ -3059,11 +3019,31 @@
             "Context"
           ],
           "cells": [
-            "69",
+            "67",
+            "5087",
+            "gpt-6-sol-maxOpenAI · Proprietary",
+            "1456±7",
+            "10,469",
+            "$2 / $10",
+            "1.1M"
+          ]
+        },
+        {
+          "headers": [
+            "Rank",
+            "Rank Spread",
+            "Model",
+            "Score",
+            "Votes",
+            "Price $/M",
+            "Context"
+          ],
+          "cells": [
+            "68",
             "5682",
             "gpt-5.1-highOpenAI · Proprietary",
             "1456±4",
-            "41,577",
+            "41,674",
             "$0.63 / $5",
             "400K"
           ]
@@ -3079,12 +3059,32 @@
             "Context"
           ],
           "cells": [
-            "70",
+            "69",
             "5682",
             "Anthropicclaude-sonnet-4-5-20250929Anthropic · Proprietary",
             "1455±3",
-            "82,425",
+            "82,735",
             "$3 / $15",
+            "1M"
+          ]
+        },
+        {
+          "headers": [
+            "Rank",
+            "Rank Spread",
+            "Model",
+            "Score",
+            "Votes",
+            "Price $/M",
+            "Context"
+          ],
+          "cells": [
+            "70",
+            "5684",
+            "gemini-3.5-flash-liteGoogle · Proprietary",
+            "1455±4",
+            "35,892",
+            "$0.15 / $1.25",
             "1M"
           ]
         },
@@ -3101,29 +3101,9 @@
           "cells": [
             "71",
             "5684",
-            "gemini-3.5-flash-liteGoogle · Proprietary",
-            "1455±4",
-            "35,763",
-            "$0.15 / $1.25",
-            "1M"
-          ]
-        },
-        {
-          "headers": [
-            "Rank",
-            "Rank Spread",
-            "Model",
-            "Score",
-            "Votes",
-            "Price $/M",
-            "Context"
-          ],
-          "cells": [
-            "72",
-            "5683",
             "deepseek-v4-pro-high-previewDeepSeek · MIT",
             "1455±4",
-            "54,767",
+            "54,976",
             "$1.32 / $3.96",
             "1M"
           ]
@@ -3139,11 +3119,11 @@
             "Context"
           ],
           "cells": [
-            "73",
-            "5688",
+            "72",
+            "5687",
             "grok-4.6-highSpaceXAI · Proprietary",
             "1454±5",
-            "23,680",
+            "26,115",
             "$2 / $6",
             "500K"
           ]
@@ -3159,13 +3139,13 @@
             "Context"
           ],
           "cells": [
-            "74",
-            "4798",
-            "StepfunStep 5 PreviewStepFun · Proprietary",
-            "1454±11",
-            "2,701",
-            "N/A",
-            "N/A"
+            "73",
+            "5588",
+            "Tencenthy3Tencent · Apache 2.0",
+            "1454±6",
+            "11,284",
+            "$0.08 / $0.33",
+            "262.1K"
           ]
         },
         {
@@ -3179,11 +3159,11 @@
             "Context"
           ],
           "cells": [
-            "75",
-            "5888",
+            "74",
+            "5887",
             "gpt-5.6-luna-xhighOpenAI · Proprietary",
-            "1453±4",
-            "38,275",
+            "1452±4",
+            "40,917",
             "$0.20 / $1.20",
             "N/A"
           ]
@@ -3199,11 +3179,11 @@
             "Context"
           ],
           "cells": [
-            "76",
-            "5593",
+            "75",
+            "5595",
             "gemma-4-31bGoogle · Apache 2.0",
-            "1453±7",
-            "6,133",
+            "1452±7",
+            "6,145",
             "$0.99 / $1.49",
             "131.1K"
           ]
@@ -3219,13 +3199,33 @@
             "Context"
           ],
           "cells": [
-            "77",
-            "5697",
+            "76",
+            "5797",
             "mimo-v2.6-flashXiaomi · MIT",
-            "1452±8",
-            "6,053",
+            "1451±7",
+            "8,226",
             "$0.14 / $0.28",
             "1M"
+          ]
+        },
+        {
+          "headers": [
+            "Rank",
+            "Rank Spread",
+            "Model",
+            "Score",
+            "Votes",
+            "Price $/M",
+            "Context"
+          ],
+          "cells": [
+            "77",
+            "6191",
+            "gpt-5.3-chat-latestOpenAI · Proprietary",
+            "1450±4",
+            "34,367",
+            "$1.75 / $14",
+            "128K"
           ]
         },
         {
@@ -3243,7 +3243,7 @@
             "6391",
             "kimi-k2.5-thinkingMoonshot · Modified MIT",
             "1450±3",
-            "74,565",
+            "74,811",
             "$0.60 / $3",
             "N/A"
           ]
@@ -3260,30 +3260,10 @@
           ],
           "cells": [
             "79",
-            "6192",
-            "gpt-5.3-chat-latestOpenAI · Proprietary",
-            "1450±4",
-            "34,296",
-            "$1.75 / $14",
-            "128K"
-          ]
-        },
-        {
-          "headers": [
-            "Rank",
-            "Rank Spread",
-            "Model",
-            "Score",
-            "Votes",
-            "Price $/M",
-            "Context"
-          ],
-          "cells": [
-            "80",
             "6491",
             "Anthropicclaude-opus-4-1-20250805-thinking-16kAnthropic · Proprietary",
             "1450±3",
-            "49,306",
+            "49,555",
             "$15 / $75",
             "200K"
           ]
@@ -3299,11 +3279,11 @@
             "Context"
           ],
           "cells": [
-            "81",
-            "6099",
+            "80",
+            "6199",
             "ernie-5.0-preview-1203Baidu · Proprietary",
             "1449±7",
-            "9,788",
+            "9,816",
             "N/A",
             "N/A"
           ]
@@ -3319,11 +3299,11 @@
             "Context"
           ],
           "cells": [
-            "82",
-            "6993",
+            "81",
+            "6994",
             "Anthropicclaude-opus-4-1-20250805Anthropic · Proprietary",
             "1448±3",
-            "76,920",
+            "77,252",
             "$7.50 / $37.50",
             "200K"
           ]
@@ -3339,11 +3319,11 @@
             "Context"
           ],
           "cells": [
-            "83",
-            "6597",
+            "82",
+            "6598",
             "mimo-v2-proXiaomi · Proprietary",
             "1448±5",
-            "25,396",
+            "25,447",
             "$1.10 / $3.30",
             "1M"
           ]
@@ -3359,11 +3339,31 @@
             "Context"
           ],
           "cells": [
+            "83",
+            "59107",
+            "StepfunStep 5 PreviewStepFun · Proprietary",
+            "1447±9",
+            "4,799",
+            "$1 / $2.70",
+            "1M"
+          ]
+        },
+        {
+          "headers": [
+            "Rank",
+            "Rank Spread",
+            "Model",
+            "Score",
+            "Votes",
+            "Price $/M",
+            "Context"
+          ],
+          "cells": [
             "84",
-            "7097",
+            "6998",
             "gpt-5.4-mini-highOpenAI · Proprietary",
             "1447±4",
-            "63,290",
+            "63,493",
             "$0.75 / $4.50",
             "400K"
           ]
@@ -3383,7 +3383,7 @@
             "7199",
             "ernie-5.0-0110Baidu · Proprietary",
             "1446±4",
-            "36,413",
+            "36,525",
             "N/A",
             "N/A"
           ]
@@ -3400,10 +3400,10 @@
           ],
           "cells": [
             "86",
-            "7598",
+            "7498",
             "gemini-2.5-proGoogle · Proprietary",
-            "1446±2",
-            "124,834",
+            "1445±2",
+            "125,379",
             "$1.25 / $10",
             "1M"
           ]
@@ -3440,10 +3440,10 @@
           ],
           "cells": [
             "88",
-            "75104",
+            "75105",
             "qwen3.6-plusAlibaba · Proprietary",
             "1443±4",
-            "48,062",
+            "48,208",
             "$0.33 / $1.95",
             "1M"
           ]
@@ -3460,10 +3460,10 @@
           ],
           "cells": [
             "89",
-            "78102",
+            "78103",
             "chatgpt-4o-latest-20250326OpenAI · Proprietary",
             "1443±3",
-            "81,595",
+            "81,927",
             "$5 / $15",
             "128K"
           ]
@@ -3480,12 +3480,12 @@
           ],
           "cells": [
             "90",
-            "73111",
-            "gpt-6-luna-maxOpenAI · Proprietary",
+            "71113",
+            "grok-4.7-xhighSpaceXAI · Proprietary",
             "1443±7",
-            "10,014",
-            "$0.10 / $0.50",
-            "1.1M"
+            "8,780",
+            "$2 / $6",
+            "500K"
           ]
         },
         {
@@ -3500,12 +3500,12 @@
           ],
           "cells": [
             "91",
-            "72114",
-            "grok-4.7-xhighSpaceXAI · Proprietary",
-            "1442±8",
-            "6,405",
-            "$2 / $6",
-            "500K"
+            "75109",
+            "gpt-6-luna-maxOpenAI · Proprietary",
+            "1443±5",
+            "28,632",
+            "$0.10 / $0.50",
+            "1.1M"
           ]
         },
         {
@@ -3523,7 +3523,7 @@
             "80107",
             "qwen3.5-397b-a17bAlibaba · Apache 2.0",
             "1442±3",
-            "88,660",
+            "91,190",
             "$0.45 / $3",
             "262.1K"
           ]
@@ -3540,30 +3540,10 @@
           ],
           "cells": [
             "93",
-            "75112",
-            "glm-4.7Z.ai · MIT",
-            "1441±6",
-            "12,228",
-            "$0.60 / $2.20",
-            "204.8K"
-          ]
-        },
-        {
-          "headers": [
-            "Rank",
-            "Rank Spread",
-            "Model",
-            "Score",
-            "Votes",
-            "Price $/M",
-            "Context"
-          ],
-          "cells": [
-            "94",
-            "80108",
+            "78108",
             "grok-4.3SpaceXAI · Proprietary",
-            "1441±4",
-            "71,150",
+            "1442±4",
+            "71,448",
             "$1.25 / $2.50",
             "1M"
           ]
@@ -3579,11 +3559,31 @@
             "Context"
           ],
           "cells": [
+            "94",
+            "75114",
+            "glm-4.7Z.ai · MIT",
+            "1441±6",
+            "12,256",
+            "$0.60 / $2.20",
+            "204.8K"
+          ]
+        },
+        {
+          "headers": [
+            "Rank",
+            "Rank Spread",
+            "Model",
+            "Score",
+            "Votes",
+            "Price $/M",
+            "Context"
+          ],
+          "cells": [
             "95",
-            "77109",
+            "78110",
             "Thinking MachinesinklingThinky · Apache 2.0",
-            "1441±5",
-            "35,204",
+            "1441±4",
+            "37,744",
             "$1 / $4.05",
             "524.3K"
           ]
@@ -3600,10 +3600,10 @@
           ],
           "cells": [
             "96",
-            "80112",
+            "80110",
             "minimax-m3MiniMax · MiniMax Community License",
             "1440±4",
-            "58,757",
+            "61,220",
             "$0.30 / $1.20",
             "524.3K"
           ]
@@ -3620,30 +3620,10 @@
           ],
           "cells": [
             "97",
-            "87113",
-            "gpt-5.1OpenAI · Proprietary",
-            "1439±4",
-            "44,298",
-            "$0.63 / $5",
-            "400K"
-          ]
-        },
-        {
-          "headers": [
-            "Rank",
-            "Rank Spread",
-            "Model",
-            "Score",
-            "Votes",
-            "Price $/M",
-            "Context"
-          ],
-          "cells": [
-            "98",
-            "85114",
+            "84114",
             "deepseek-v4-flash-high-previewDeepSeek · MIT",
-            "1438±4",
-            "51,648",
+            "1439±4",
+            "51,859",
             "$0.30 / $1.20",
             "1M"
           ]
@@ -3659,11 +3639,31 @@
             "Context"
           ],
           "cells": [
+            "98",
+            "86114",
+            "gpt-5.1OpenAI · Proprietary",
+            "1439±4",
+            "44,441",
+            "$0.63 / $5",
+            "400K"
+          ]
+        },
+        {
+          "headers": [
+            "Rank",
+            "Rank Spread",
+            "Model",
+            "Score",
+            "Votes",
+            "Price $/M",
+            "Context"
+          ],
+          "cells": [
             "99",
-            "83118",
+            "81118",
             "qwen3.8-27bAlibaba · Apache 2.0",
             "1438±5",
-            "18,462",
+            "20,711",
             "$0.40 / $3",
             "262.1K"
           ]
@@ -3680,10 +3680,10 @@
           ],
           "cells": [
             "100",
-            "80121",
+            "79122",
             "gemma-4-26b-a4bGoogle · Apache 2.0",
-            "1437±7",
-            "6,081",
+            "1438±7",
+            "6,092",
             "N/A",
             "N/A"
           ]
@@ -3700,10 +3700,10 @@
           ],
           "cells": [
             "101",
-            "87114",
+            "86115",
             "gpt-5.2-highOpenAI · Proprietary",
             "1437±4",
-            "49,542",
+            "49,685",
             "$0.88 / $7",
             "400K"
           ]
@@ -3720,10 +3720,10 @@
           ],
           "cells": [
             "102",
-            "87118",
+            "86119",
             "longcat-flash-chat-2602-expMeituan · Proprietary",
-            "1437±5",
-            "29,211",
+            "1436±5",
+            "29,306",
             "N/A",
             "N/A"
           ]
@@ -3740,10 +3740,10 @@
           ],
           "cells": [
             "103",
-            "88118",
+            "86119",
             "deepseek-v4-flashDeepSeek · MIT",
             "1436±4",
-            "51,850",
+            "52,047",
             "$0.30 / $1.20",
             "1M"
           ]
@@ -3760,10 +3760,10 @@
           ],
           "cells": [
             "104",
-            "90118",
+            "89119",
             "gpt-5.2OpenAI · Proprietary",
-            "1436±3",
-            "83,656",
+            "1435±3",
+            "83,928",
             "$0.88 / $7",
             "400K"
           ]
@@ -3780,10 +3780,10 @@
           ],
           "cells": [
             "105",
-            "89121",
+            "87122",
             "gpt-5-highOpenAI · Proprietary",
             "1435±5",
-            "31,489",
+            "31,723",
             "$0.63 / $5",
             "400K"
           ]
@@ -3800,10 +3800,10 @@
           ],
           "cells": [
             "106",
-            "90121",
+            "89122",
             "qwen3-max-previewAlibaba · Proprietary",
             "1434±5",
-            "27,232",
+            "27,379",
             "$0.78 / $3.90",
             "262.1K"
           ]
@@ -3820,10 +3820,10 @@
           ],
           "cells": [
             "107",
-            "91122",
+            "92123",
             "mimo-v2.5Xiaomi · MIT",
             "1434±4",
-            "47,266",
+            "47,402",
             "$0.14 / $0.28",
             "1.1M"
           ]
@@ -3840,10 +3840,10 @@
           ],
           "cells": [
             "108",
-            "88128",
+            "87128",
             "glm-5v-turboZ.ai · Proprietary",
             "1433±6",
-            "10,436",
+            "10,492",
             "$1.20 / $4",
             "202.8K"
           ]
@@ -3860,10 +3860,10 @@
           ],
           "cells": [
             "109",
-            "93122",
+            "95123",
             "gemini-3.1-flash-lite-previewGoogle · Proprietary",
             "1433±4",
-            "64,047",
+            "64,257",
             "$0.25 / $1.50",
             "1M"
           ]
@@ -3880,10 +3880,10 @@
           ],
           "cells": [
             "110",
-            "96125",
+            "96124",
             "o3-2025-04-16OpenAI · Proprietary",
             "1432±4",
-            "58,583",
+            "58,913",
             "$2 / $8",
             "200K"
           ]
@@ -3900,10 +3900,10 @@
           ],
           "cells": [
             "111",
-            "93130",
+            "95131",
             "mimo-v2-omniXiaomi · Proprietary",
             "1431±6",
-            "20,596",
+            "20,667",
             "$0.44 / $2.20",
             "256K"
           ]
@@ -3920,12 +3920,12 @@
           ],
           "cells": [
             "112",
-            "92133",
-            "kimi-k2.5-instantMoonshot · Modified MIT",
-            "1431±7",
-            "8,356",
-            "$0.45 / $2.25",
-            "262.1K"
+            "100127",
+            "grok-4-1-fast-reasoningSpaceXAI · Proprietary",
+            "1430±3",
+            "57,574",
+            "$0.20 / $0.50",
+            "128K"
           ]
         },
         {
@@ -3940,12 +3940,12 @@
           ],
           "cells": [
             "113",
-            "100128",
-            "grok-4-1-fast-reasoningSpaceXAI · Proprietary",
-            "1430±3",
-            "57,427",
-            "$0.20 / $0.50",
-            "128K"
+            "93134",
+            "kimi-k2.5-instantMoonshot · Modified MIT",
+            "1430±7",
+            "8,378",
+            "$0.45 / $2.25",
+            "262.1K"
           ]
         },
         {
@@ -3963,7 +3963,7 @@
             "100128",
             "kimi-k2-thinking-turboMoonshot · Modified MIT",
             "1430±3",
-            "63,210",
+            "63,390",
             "$0.57 / $2.30",
             "131.1K"
           ]
@@ -3980,12 +3980,12 @@
           ],
           "cells": [
             "115",
-            "100137",
-            "mistral-medium-3.5Mistral · Modified MIT",
-            "1427±6",
-            "11,757",
-            "$0.75 / $3.75",
-            "262.1K"
+            "91139",
+            "mistral-large-4Mistral · Proprietary",
+            "1429±9",
+            "4,179",
+            "$0.68 / $2.09",
+            "524.3K"
           ]
         },
         {
@@ -4000,11 +4000,11 @@
           ],
           "cells": [
             "116",
-            "104137",
-            "gpt-5-chatOpenAI · Proprietary",
-            "1427±4",
-            "31,009",
-            "$5 / $30",
+            "95143",
+            "amazon-nova-experimental-chat-26-02-10Amazon · Proprietary",
+            "1426±10",
+            "3,523",
+            "N/A",
             "N/A"
           ]
         },
@@ -4020,12 +4020,12 @@
           ],
           "cells": [
             "117",
-            "94142",
-            "amazon-nova-experimental-chat-26-02-10Amazon · Proprietary",
-            "1427±10",
-            "3,519",
-            "N/A",
-            "N/A"
+            "101140",
+            "mistral-medium-3.5Mistral · Modified MIT",
+            "1426±6",
+            "11,803",
+            "$0.75 / $3.75",
+            "262.1K"
           ]
         },
         {
@@ -4040,11 +4040,11 @@
           ],
           "cells": [
             "118",
-            "100139",
-            "nvidia-nemotron-3-ultra-550b-a55b-nvfp4Nvidia · OpenMDW-1.1",
-            "1426±7",
-            "11,515",
-            "N/A",
+            "104138",
+            "gpt-5-chatOpenAI · Proprietary",
+            "1426±4",
+            "31,203",
+            "$5 / $30",
             "N/A"
           ]
         },
@@ -4060,10 +4060,10 @@
           ],
           "cells": [
             "119",
-            "104137",
+            "104138",
             "Anthropicclaude-opus-4-20250514-thinking-16kAnthropic · Proprietary",
             "1426±4",
-            "35,691",
+            "35,913",
             "$15 / $75",
             "200K"
           ]
@@ -4080,10 +4080,10 @@
           ],
           "cells": [
             "120",
-            "97147",
-            "Metamuse-glimmerMeta · Apache-2.0",
-            "1425±10",
-            "3,893",
+            "100140",
+            "nvidia-nemotron-3-ultra-550b-a55b-nvfp4Nvidia · OpenMDW-1.1",
+            "1426±7",
+            "11,571",
             "N/A",
             "N/A"
           ]
@@ -4100,10 +4100,10 @@
           ],
           "cells": [
             "121",
-            "104142",
+            "104143",
             "deepseek-v3.2-exp-thinkingDeepSeek · MIT",
             "1425±7",
-            "8,947",
+            "9,008",
             "$0.27 / $0.41",
             "163.8K"
           ]
@@ -4120,10 +4120,10 @@
           ],
           "cells": [
             "122",
-            "109137",
+            "109138",
             "deepseek-v3.2DeepSeek · MIT",
             "1425±3",
-            "47,999",
+            "48,114",
             "$0.26 / $0.42",
             "163.8K"
           ]
@@ -4140,150 +4140,10 @@
           ],
           "cells": [
             "123",
-            "109138",
-            "glm-4.6Z.ai · MIT",
-            "1424±4",
-            "35,662",
-            "$0.43 / $1.75",
-            "204.8K"
-          ]
-        },
-        {
-          "headers": [
-            "Rank",
-            "Rank Spread",
-            "Model",
-            "Score",
-            "Votes",
-            "Price $/M",
-            "Context"
-          ],
-          "cells": [
-            "124",
-            "107143",
-            "qwen3-max-2025-09-23Alibaba · Proprietary",
-            "1423±7",
-            "8,969",
-            "$0.78 / $3.90",
-            "262.1K"
-          ]
-        },
-        {
-          "headers": [
-            "Rank",
-            "Rank Spread",
-            "Model",
-            "Score",
-            "Votes",
-            "Price $/M",
-            "Context"
-          ],
-          "cells": [
-            "125",
-            "113139",
-            "deepseek-v3.2-thinkingDeepSeek · MIT",
-            "1423±4",
-            "41,975",
-            "$0.26 / $0.42",
-            "163.8K"
-          ]
-        },
-        {
-          "headers": [
-            "Rank",
-            "Rank Spread",
-            "Model",
-            "Score",
-            "Votes",
-            "Price $/M",
-            "Context"
-          ],
-          "cells": [
-            "126",
-            "114139",
-            "qwen3-235b-a22b-instruct-2507Alibaba · Apache 2.0",
-            "1422±3",
-            "97,788",
-            "$0.26 / $1.06",
-            "N/A"
-          ]
-        },
-        {
-          "headers": [
-            "Rank",
-            "Rank Spread",
-            "Model",
-            "Score",
-            "Votes",
-            "Price $/M",
-            "Context"
-          ],
-          "cells": [
-            "127",
-            "109147",
-            "deepseek-v3.2-expDeepSeek · MIT",
-            "1422±6",
-            "11,944",
-            "$0.27 / $0.41",
-            "163.8K"
-          ]
-        },
-        {
-          "headers": [
-            "Rank",
-            "Rank Spread",
-            "Model",
-            "Score",
-            "Votes",
-            "Price $/M",
-            "Context"
-          ],
-          "cells": [
-            "128",
-            "110146",
-            "deepseek-r1-0528DeepSeek · MIT",
-            "1422±6",
-            "18,059",
-            "$0.50 / $2.15",
-            "163.8K"
-          ]
-        },
-        {
-          "headers": [
-            "Rank",
-            "Rank Spread",
-            "Model",
-            "Score",
-            "Votes",
-            "Price $/M",
-            "Context"
-          ],
-          "cells": [
-            "129",
-            "113150",
-            "grok-4-fast-chatSpaceXAI · Proprietary",
-            "1419±8",
-            "6,320",
-            "$3 / $15",
-            "256K"
-          ]
-        },
-        {
-          "headers": [
-            "Rank",
-            "Rank Spread",
-            "Model",
-            "Score",
-            "Votes",
-            "Price $/M",
-            "Context"
-          ],
-          "cells": [
-            "130",
-            "110153",
-            "ernie-5.0-preview-1022Baidu · Proprietary",
-            "1419±9",
-            "4,724",
+            "99149",
+            "Metamuse-glimmerMeta · Apache-2.0",
+            "1425±10",
+            "3,892",
             "N/A",
             "N/A"
           ]
@@ -4299,11 +4159,171 @@
             "Context"
           ],
           "cells": [
+            "124",
+            "110139",
+            "glm-4.6Z.ai · MIT",
+            "1424±4",
+            "35,828",
+            "$0.43 / $1.75",
+            "204.8K"
+          ]
+        },
+        {
+          "headers": [
+            "Rank",
+            "Rank Spread",
+            "Model",
+            "Score",
+            "Votes",
+            "Price $/M",
+            "Context"
+          ],
+          "cells": [
+            "125",
+            "107143",
+            "qwen3-max-2025-09-23Alibaba · Proprietary",
+            "1423±6",
+            "9,029",
+            "$0.78 / $3.90",
+            "262.1K"
+          ]
+        },
+        {
+          "headers": [
+            "Rank",
+            "Rank Spread",
+            "Model",
+            "Score",
+            "Votes",
+            "Price $/M",
+            "Context"
+          ],
+          "cells": [
+            "126",
+            "113140",
+            "deepseek-v3.2-thinkingDeepSeek · MIT",
+            "1423±4",
+            "42,076",
+            "$0.26 / $0.42",
+            "163.8K"
+          ]
+        },
+        {
+          "headers": [
+            "Rank",
+            "Rank Spread",
+            "Model",
+            "Score",
+            "Votes",
+            "Price $/M",
+            "Context"
+          ],
+          "cells": [
+            "127",
+            "114140",
+            "qwen3-235b-a22b-instruct-2507Alibaba · Apache 2.0",
+            "1422±3",
+            "98,167",
+            "$0.26 / $1.06",
+            "N/A"
+          ]
+        },
+        {
+          "headers": [
+            "Rank",
+            "Rank Spread",
+            "Model",
+            "Score",
+            "Votes",
+            "Price $/M",
+            "Context"
+          ],
+          "cells": [
+            "128",
+            "110148",
+            "deepseek-v3.2-expDeepSeek · MIT",
+            "1421±6",
+            "11,999",
+            "$0.27 / $0.41",
+            "163.8K"
+          ]
+        },
+        {
+          "headers": [
+            "Rank",
+            "Rank Spread",
+            "Model",
+            "Score",
+            "Votes",
+            "Price $/M",
+            "Context"
+          ],
+          "cells": [
+            "129",
+            "111148",
+            "deepseek-r1-0528DeepSeek · MIT",
+            "1421±6",
+            "18,171",
+            "$0.50 / $2.15",
+            "163.8K"
+          ]
+        },
+        {
+          "headers": [
+            "Rank",
+            "Rank Spread",
+            "Model",
+            "Score",
+            "Votes",
+            "Price $/M",
+            "Context"
+          ],
+          "cells": [
+            "130",
+            "113151",
+            "grok-4-fast-chatSpaceXAI · Proprietary",
+            "1419±8",
+            "6,343",
+            "$3 / $15",
+            "256K"
+          ]
+        },
+        {
+          "headers": [
+            "Rank",
+            "Rank Spread",
+            "Model",
+            "Score",
+            "Votes",
+            "Price $/M",
+            "Context"
+          ],
+          "cells": [
             "131",
-            "114149",
+            "110154",
+            "ernie-5.0-preview-1022Baidu · Proprietary",
+            "1419±9",
+            "4,752",
+            "N/A",
+            "N/A"
+          ]
+        },
+        {
+          "headers": [
+            "Rank",
+            "Rank Spread",
+            "Model",
+            "Score",
+            "Votes",
+            "Price $/M",
+            "Context"
+          ],
+          "cells": [
+            "132",
+            "114150",
             "kimi-k2-0905-previewMoonshot · Modified MIT",
-            "1419±7",
-            "11,531",
+            "1418±7",
+            "11,592",
             "$0.60 / $2.50",
             "262.1K"
           ]
@@ -4319,11 +4339,11 @@
             "Context"
           ],
           "cells": [
-            "132",
-            "115148",
+            "133",
+            "115150",
             "kimi-k2-0711-previewMoonshot · Modified MIT",
             "1418±5",
-            "26,959",
+            "27,148",
             "$0.60 / $2.50",
             "131.1K"
           ]
@@ -4339,31 +4359,11 @@
             "Context"
           ],
           "cells": [
-            "133",
-            "110156",
-            "deepseek-v3.1-terminus-thinkingDeepSeek · MIT",
-            "1417±10",
-            "3,354",
-            "$0.27 / $1",
-            "163.8K"
-          ]
-        },
-        {
-          "headers": [
-            "Rank",
-            "Rank Spread",
-            "Model",
-            "Score",
-            "Votes",
-            "Price $/M",
-            "Context"
-          ],
-          "cells": [
             "134",
-            "115150",
+            "115151",
             "deepseek-v3.1DeepSeek · MIT",
             "1417±6",
-            "14,540",
+            "14,610",
             "$1.23 / $4.94",
             "N/A"
           ]
@@ -4380,10 +4380,10 @@
           ],
           "cells": [
             "135",
-            "119150",
+            "118150",
             "qwen3.5-122b-a10bAlibaba · Apache 2.0",
             "1416±4",
-            "29,651",
+            "29,734",
             "$0.26 / $2.08",
             "262.1K"
           ]
@@ -4400,50 +4400,10 @@
           ],
           "cells": [
             "136",
-            "115153",
-            "deepseek-v3.1-thinkingDeepSeek · MIT",
-            "1416±7",
-            "11,409",
-            "$1.23 / $4.94",
-            "N/A"
-          ]
-        },
-        {
-          "headers": [
-            "Rank",
-            "Rank Spread",
-            "Model",
-            "Score",
-            "Votes",
-            "Price $/M",
-            "Context"
-          ],
-          "cells": [
-            "137",
-            "123150",
-            "minimax-m2.7MiniMax · Modified MIT",
-            "1415±3",
-            "79,944",
-            "$0.30 / $1.20",
-            "204.8K"
-          ]
-        },
-        {
-          "headers": [
-            "Rank",
-            "Rank Spread",
-            "Model",
-            "Score",
-            "Votes",
-            "Price $/M",
-            "Context"
-          ],
-          "cells": [
-            "138",
-            "114161",
-            "deepseek-v3.1-terminusDeepSeek · MIT",
-            "1415±10",
-            "3,599",
+            "113161",
+            "deepseek-v3.1-terminus-thinkingDeepSeek · MIT",
+            "1416±10",
+            "3,377",
             "$0.27 / $1",
             "163.8K"
           ]
@@ -4459,11 +4419,71 @@
             "Context"
           ],
           "cells": [
+            "137",
+            "115154",
+            "deepseek-v3.1-thinkingDeepSeek · MIT",
+            "1416±7",
+            "11,458",
+            "$1.23 / $4.94",
+            "N/A"
+          ]
+        },
+        {
+          "headers": [
+            "Rank",
+            "Rank Spread",
+            "Model",
+            "Score",
+            "Votes",
+            "Price $/M",
+            "Context"
+          ],
+          "cells": [
+            "138",
+            "124151",
+            "minimax-m2.7MiniMax · Modified MIT",
+            "1415±3",
+            "82,436",
+            "$0.30 / $1.20",
+            "204.8K"
+          ]
+        },
+        {
+          "headers": [
+            "Rank",
+            "Rank Spread",
+            "Model",
+            "Score",
+            "Votes",
+            "Price $/M",
+            "Context"
+          ],
+          "cells": [
             "139",
-            "123150",
+            "114162",
+            "deepseek-v3.1-terminusDeepSeek · MIT",
+            "1415±10",
+            "3,609",
+            "$0.27 / $1",
+            "163.8K"
+          ]
+        },
+        {
+          "headers": [
+            "Rank",
+            "Rank Spread",
+            "Model",
+            "Score",
+            "Votes",
+            "Price $/M",
+            "Context"
+          ],
+          "cells": [
+            "140",
+            "124151",
             "gpt-4.1-2025-04-14OpenAI · Proprietary",
             "1415±4",
-            "49,991",
+            "50,314",
             "$2 / $8",
             "1M"
           ]
@@ -4479,11 +4499,11 @@
             "Context"
           ],
           "cells": [
-            "140",
-            "123153",
+            "141",
+            "124154",
             "Anthropicclaude-opus-4-20250514Anthropic · Proprietary",
             "1414±4",
-            "42,792",
+            "43,055",
             "$5 / $25",
             "200K"
           ]
@@ -4499,31 +4519,11 @@
             "Context"
           ],
           "cells": [
-            "141",
-            "125150",
-            "mistral-large-3Mistral · Apache 2.0",
-            "1414±3",
-            "79,452",
-            "$0.50 / $1.50",
-            "N/A"
-          ]
-        },
-        {
-          "headers": [
-            "Rank",
-            "Rank Spread",
-            "Model",
-            "Score",
-            "Votes",
-            "Price $/M",
-            "Context"
-          ],
-          "cells": [
             "142",
-            "126150",
+            "127151",
             "Anthropicclaude-haiku-4-5-20251001Anthropic · Proprietary",
             "1414±2",
-            "143,402",
+            "146,351",
             "$1 / $5",
             "200K"
           ]
@@ -4540,10 +4540,30 @@
           ],
           "cells": [
             "143",
-            "120157",
+            "127151",
+            "mistral-large-3Mistral · Apache 2.0",
+            "1414±3",
+            "81,759",
+            "$0.50 / $1.50",
+            "N/A"
+          ]
+        },
+        {
+          "headers": [
+            "Rank",
+            "Rank Spread",
+            "Model",
+            "Score",
+            "Votes",
+            "Price $/M",
+            "Context"
+          ],
+          "cells": [
+            "144",
+            "120156",
             "qwen3-vl-235b-a22b-instructAlibaba · Apache 2.0",
             "1413±7",
-            "11,241",
+            "11,325",
             "$0.29 / $1.15",
             "262.1K"
           ]
@@ -4559,11 +4579,11 @@
             "Context"
           ],
           "cells": [
-            "144",
+            "145",
             "115163",
             "amazon-nova-experimental-chat-26-01-10Amazon · Proprietary",
             "1413±10",
-            "3,534",
+            "3,545",
             "N/A",
             "N/A"
           ]
@@ -4579,11 +4599,11 @@
             "Context"
           ],
           "cells": [
-            "145",
+            "146",
             "127156",
             "grok-3-preview-02-24SpaceXAI · Proprietary",
             "1411±4",
-            "32,386",
+            "32,502",
             "$3 / $15",
             "131.1K"
           ]
@@ -4599,31 +4619,11 @@
             "Context"
           ],
           "cells": [
-            "146",
-            "126159",
-            "glm-4.5Z.ai · MIT",
-            "1411±5",
-            "23,661",
-            "$0.60 / $2.20",
-            "131.1K"
-          ]
-        },
-        {
-          "headers": [
-            "Rank",
-            "Rank Spread",
-            "Model",
-            "Score",
-            "Votes",
-            "Price $/M",
-            "Context"
-          ],
-          "cells": [
             "147",
-            "129157",
+            "129156",
             "grok-4-0709SpaceXAI · Proprietary",
             "1411±4",
-            "39,398",
+            "39,691",
             "$1.25 / $2.50",
             "256K"
           ]
@@ -4640,10 +4640,30 @@
           ],
           "cells": [
             "148",
-            "131157",
+            "127161",
+            "glm-4.5Z.ai · MIT",
+            "1411±5",
+            "23,803",
+            "$0.60 / $2.20",
+            "131.1K"
+          ]
+        },
+        {
+          "headers": [
+            "Rank",
+            "Rank Spread",
+            "Model",
+            "Score",
+            "Votes",
+            "Price $/M",
+            "Context"
+          ],
+          "cells": [
+            "149",
+            "133156",
             "gemini-2.5-flashGoogle · Proprietary",
             "1409±2",
-            "125,012",
+            "125,562",
             "$0.30 / $2.50",
             "1M"
           ]
@@ -4659,11 +4679,11 @@
             "Context"
           ],
           "cells": [
-            "149",
-            "126165",
+            "150",
+            "127166",
             "Tencenthunyuan-hy3-previewTencent · tencent-hunyuan-community",
             "1409±7",
-            "6,874",
+            "6,893",
             "$0.29 / $1.17",
             "262.1K"
           ]
@@ -4679,11 +4699,11 @@
             "Context"
           ],
           "cells": [
-            "150",
-            "130161",
+            "151",
+            "130162",
             "qwen3.5-27bAlibaba · Apache 2.0",
             "1409±4",
-            "28,612",
+            "28,677",
             "$0.26 / $2.60",
             "262.1K"
           ]
@@ -4699,11 +4719,11 @@
             "Context"
           ],
           "cells": [
-            "151",
-            "138160",
+            "152",
+            "139161",
             "mistral-medium-2508Mistral · Proprietary",
             "1408±3",
-            "94,966",
+            "95,354",
             "$0.40 / $2",
             "131.1K"
           ]
@@ -4719,11 +4739,11 @@
             "Context"
           ],
           "cells": [
-            "152",
-            "138165",
+            "153",
+            "139166",
             "Thinking MachinesInkling SmallThinky · Apache 2.0",
             "1405±5",
-            "27,070",
+            "29,528",
             "$0.45 / $1.20",
             "524.3K"
           ]
@@ -4739,11 +4759,11 @@
             "Context"
           ],
           "cells": [
-            "153",
-            "138165",
+            "154",
+            "139166",
             "grok-4-fast-reasoningSpaceXAI · Proprietary",
             "1405±5",
-            "18,142",
+            "18,276",
             "$0.20 / $0.50",
             "N/A"
           ]
@@ -4759,11 +4779,11 @@
             "Context"
           ],
           "cells": [
-            "154",
-            "141167",
+            "155",
+            "142168",
             "gemini-2.5-flash-preview-09-2025Google · Proprietary",
             "1403±4",
-            "32,839",
+            "32,993",
             "$0.30 / $2.50",
             "1M"
           ]
@@ -4779,28 +4799,8 @@
             "Context"
           ],
           "cells": [
-            "155",
-            "143168",
-            "qwen3-235b-a22b-no-thinkingAlibaba · Apache 2.0",
-            "1403±5",
-            "37,279",
-            "$0.46 / $1.82",
-            "131.1K"
-          ]
-        },
-        {
-          "headers": [
-            "Rank",
-            "Rank Spread",
-            "Model",
-            "Score",
-            "Votes",
-            "Price $/M",
-            "Context"
-          ],
-          "cells": [
             "156",
-            "146168",
+            "146169",
             "o1-2024-12-17OpenAI · Proprietary",
             "1402±4",
             "27,807",
@@ -4820,10 +4820,30 @@
           ],
           "cells": [
             "157",
-            "147168",
+            "146169",
+            "qwen3-235b-a22b-no-thinkingAlibaba · Apache 2.0",
+            "1402±5",
+            "37,497",
+            "$0.46 / $1.82",
+            "131.1K"
+          ]
+        },
+        {
+          "headers": [
+            "Rank",
+            "Rank Spread",
+            "Model",
+            "Score",
+            "Votes",
+            "Price $/M",
+            "Context"
+          ],
+          "cells": [
+            "158",
+            "146169",
             "Anthropicclaude-sonnet-4-20250514-thinking-32kAnthropic · Proprietary",
             "1402±4",
-            "33,913",
+            "34,149",
             "$3 / $15",
             "200K"
           ]
@@ -4839,11 +4859,11 @@
             "Context"
           ],
           "cells": [
-            "158",
-            "148168",
+            "159",
+            "149169",
             "gpt-5.4-nano-highOpenAI · Proprietary",
             "1401±4",
-            "62,249",
+            "62,468",
             "$0.20 / $1.25",
             "400K"
           ]
@@ -4859,11 +4879,11 @@
             "Context"
           ],
           "cells": [
-            "159",
-            "141173",
+            "160",
+            "142175",
             "longcat-flash-chatMeituan · MIT",
             "1401±6",
-            "11,123",
+            "11,174",
             "$0.20 / $0.80",
             "131.1K"
           ]
@@ -4879,11 +4899,11 @@
             "Context"
           ],
           "cells": [
-            "160",
-            "146176",
+            "161",
+            "146177",
             "qwen3-235b-a22b-thinking-2507Alibaba · Apache 2.0",
             "1400±7",
-            "8,774",
+            "8,822",
             "$0.23 / $2.30",
             "131.1K"
           ]
@@ -4899,12 +4919,12 @@
             "Context"
           ],
           "cells": [
-            "161",
-            "150175",
+            "162",
+            "151176",
             "qwen3-next-80b-a3b-instructAlibaba · Apache 2.0",
             "1399±5",
-            "22,603",
-            "$0.15 / $1.50",
+            "22,763",
+            "$0.09 / $1.10",
             "262.1K"
           ]
         },
@@ -4919,8 +4939,8 @@
             "Context"
           ],
           "cells": [
-            "162",
-            "151177",
+            "163",
+            "152177",
             "deepseek-r1DeepSeek · MIT",
             "1398±5",
             "18,524",
@@ -4939,32 +4959,12 @@
             "Context"
           ],
           "cells": [
-            "163",
-            "154179",
+            "164",
+            "155180",
             "qwen3.5-flashAlibaba · Proprietary",
             "1396±4",
-            "61,669",
+            "61,845",
             "N/A",
-            "N/A"
-          ]
-        },
-        {
-          "headers": [
-            "Rank",
-            "Rank Spread",
-            "Model",
-            "Score",
-            "Votes",
-            "Price $/M",
-            "Context"
-          ],
-          "cells": [
-            "164",
-            "154181",
-            "deepseek-v3-0324DeepSeek · MIT",
-            "1396±4",
-            "44,758",
-            "$1.14 / $4.56",
             "N/A"
           ]
         },
@@ -4980,10 +4980,30 @@
           ],
           "cells": [
             "165",
-            "151184",
+            "155182",
+            "deepseek-v3-0324DeepSeek · MIT",
+            "1395±4",
+            "44,989",
+            "$1.14 / $4.56",
+            "N/A"
+          ]
+        },
+        {
+          "headers": [
+            "Rank",
+            "Rank Spread",
+            "Model",
+            "Score",
+            "Votes",
+            "Price $/M",
+            "Context"
+          ],
+          "cells": [
+            "166",
+            "152185",
             "qwen3-vl-235b-a22b-thinkingAlibaba · Apache 2.0",
             "1395±7",
-            "7,805",
+            "7,868",
             "$0.40 / $4",
             "131.1K"
           ]
@@ -4999,51 +5019,11 @@
             "Context"
           ],
           "cells": [
-            "166",
-            "141188",
-            "Tencenthunyuan-vision-1.5-thinkingTencent · Proprietary",
-            "1395±12",
-            "2,158",
-            "N/A",
-            "N/A"
-          ]
-        },
-        {
-          "headers": [
-            "Rank",
-            "Rank Spread",
-            "Model",
-            "Score",
-            "Votes",
-            "Price $/M",
-            "Context"
-          ],
-          "cells": [
             "167",
-            "150186",
-            "amazon-nova-experimental-chat-12-10Amazon · Proprietary",
-            "1394±9",
-            "3,728",
-            "N/A",
-            "N/A"
-          ]
-        },
-        {
-          "headers": [
-            "Rank",
-            "Rank Spread",
-            "Model",
-            "Score",
-            "Votes",
-            "Price $/M",
-            "Context"
-          ],
-          "cells": [
-            "168",
-            "155183",
+            "156185",
             "qwen3.5-35b-a3bAlibaba · Apache 2.0",
             "1394±4",
-            "30,408",
+            "30,493",
             "$0.15 / $1",
             "262.1K"
           ]
@@ -5059,11 +5039,31 @@
             "Context"
           ],
           "cells": [
+            "168",
+            "146189",
+            "Tencenthunyuan-vision-1.5-thinkingTencent · Proprietary",
+            "1394±12",
+            "2,171",
+            "N/A",
+            "N/A"
+          ]
+        },
+        {
+          "headers": [
+            "Rank",
+            "Rank Spread",
+            "Model",
+            "Score",
+            "Votes",
+            "Price $/M",
+            "Context"
+          ],
+          "cells": [
             "169",
-            "159183",
+            "160184",
             "Stepfunstep-3.5-flashStepFun · Apache 2.0",
             "1393±4",
-            "60,207",
+            "60,381",
             "$0.10 / $0.30",
             "262.1K"
           ]
@@ -5080,10 +5080,30 @@
           ],
           "cells": [
             "170",
-            "159184",
+            "152187",
+            "amazon-nova-experimental-chat-12-10Amazon · Proprietary",
+            "1393±9",
+            "3,740",
+            "N/A",
+            "N/A"
+          ]
+        },
+        {
+          "headers": [
+            "Rank",
+            "Rank Spread",
+            "Model",
+            "Score",
+            "Votes",
+            "Price $/M",
+            "Context"
+          ],
+          "cells": [
+            "171",
+            "160185",
             "mimo-v2-flash (non-thinking)Xiaomi · MIT",
             "1392±3",
-            "47,998",
+            "48,117",
             "$0.10 / $0.30",
             "262.1K"
           ]
@@ -5099,31 +5119,11 @@
             "Context"
           ],
           "cells": [
-            "171",
-            "160186",
-            "minimax-m2.5MiniMax · Modified MIT",
-            "1391±4",
-            "42,730",
-            "$0.27 / $1.08",
-            "204.8K"
-          ]
-        },
-        {
-          "headers": [
-            "Rank",
-            "Rank Spread",
-            "Model",
-            "Score",
-            "Votes",
-            "Price $/M",
-            "Context"
-          ],
-          "cells": [
             "172",
-            "159186",
+            "160187",
             "o4-mini-2025-04-16OpenAI · Proprietary",
             "1391±4",
-            "44,626",
+            "44,858",
             "$1.10 / $4.40",
             "200K"
           ]
@@ -5140,10 +5140,10 @@
           ],
           "cells": [
             "173",
-            "159186",
+            "160187",
             "Anthropicclaude-sonnet-4-20250514Anthropic · Proprietary",
             "1391±4",
-            "38,912",
+            "39,172",
             "$3 / $15",
             "200K"
           ]
@@ -5160,10 +5160,30 @@
           ],
           "cells": [
             "174",
-            "160186",
+            "160187",
+            "minimax-m2.5MiniMax · Modified MIT",
+            "1391±4",
+            "42,858",
+            "$0.27 / $1.08",
+            "204.8K"
+          ]
+        },
+        {
+          "headers": [
+            "Rank",
+            "Rank Spread",
+            "Model",
+            "Score",
+            "Votes",
+            "Price $/M",
+            "Context"
+          ],
+          "cells": [
+            "175",
+            "161187",
             "gpt-5-mini-highOpenAI · Proprietary",
             "1390±5",
-            "26,638",
+            "26,810",
             "$0.13 / $1",
             "400K"
           ]
@@ -5179,8 +5199,8 @@
             "Context"
           ],
           "cells": [
-            "175",
-            "161186",
+            "176",
+            "162187",
             "o1-previewOpenAI · Proprietary",
             "1389±5",
             "31,122",
@@ -5199,11 +5219,11 @@
             "Context"
           ],
           "cells": [
-            "176",
-            "163186",
+            "177",
+            "164187",
             "Anthropicclaude-3-7-sonnet-20250219-thinking-32kAnthropic · Proprietary",
             "1388±4",
-            "38,033",
+            "38,162",
             "$3 / $15",
             "200K"
           ]
@@ -5219,31 +5239,11 @@
             "Context"
           ],
           "cells": [
-            "177",
-            "164188",
-            "mistral-medium-2505Mistral · Proprietary",
-            "1388±5",
-            "32,615",
-            "$0.40 / $2",
-            "131.1K"
-          ]
-        },
-        {
-          "headers": [
-            "Rank",
-            "Rank Spread",
-            "Model",
-            "Score",
-            "Votes",
-            "Price $/M",
-            "Context"
-          ],
-          "cells": [
             "178",
-            "163188",
+            "164189",
             "qwen3-coder-480b-a35b-instructAlibaba · Apache 2.0",
-            "1387±5",
-            "25,006",
+            "1388±5",
+            "25,197",
             "$0.65 / $3.25",
             "1M"
           ]
@@ -5260,10 +5260,30 @@
           ],
           "cells": [
             "179",
-            "159190",
+            "165189",
+            "mistral-medium-2505Mistral · Proprietary",
+            "1387±5",
+            "32,786",
+            "$0.40 / $2",
+            "131.1K"
+          ]
+        },
+        {
+          "headers": [
+            "Rank",
+            "Rank Spread",
+            "Model",
+            "Score",
+            "Votes",
+            "Price $/M",
+            "Context"
+          ],
+          "cells": [
+            "180",
+            "160191",
             "Tencenthunyuan-t1-20250711Tencent · Proprietary",
             "1387±9",
-            "4,572",
+            "4,594",
             "N/A",
             "N/A"
           ]
@@ -5279,11 +5299,11 @@
             "Context"
           ],
           "cells": [
-            "180",
-            "162188",
+            "181",
+            "164189",
             "mimo-v2-flash (thinking)Xiaomi · MIT",
-            "1387±6",
-            "11,115",
+            "1386±6",
+            "11,143",
             "$0.10 / $0.30",
             "262.1K"
           ]
@@ -5299,11 +5319,11 @@
             "Context"
           ],
           "cells": [
-            "181",
-            "164188",
+            "182",
+            "165189",
             "solar-pro4Upstage · Proprietary",
             "1386±6",
-            "15,819",
+            "18,407",
             "$0.09 / $0.36",
             "524.3K"
           ]
@@ -5319,33 +5339,13 @@
             "Context"
           ],
           "cells": [
-            "182",
-            "165190",
+            "183",
+            "166190",
             "minimax-m2.1-previewMiniMax · MIT",
             "1385±5",
-            "17,187",
+            "17,248",
             "$0.30 / $1.20",
             "204.8K"
-          ]
-        },
-        {
-          "headers": [
-            "Rank",
-            "Rank Spread",
-            "Model",
-            "Score",
-            "Votes",
-            "Price $/M",
-            "Context"
-          ],
-          "cells": [
-            "183",
-            "169190",
-            "gpt-4.1-mini-2025-04-14OpenAI · Proprietary",
-            "1383±4",
-            "38,547",
-            "$0.40 / $1.60",
-            "1M"
           ]
         },
         {
@@ -5362,8 +5362,8 @@
             "184",
             "167194",
             "Tencenthunyuan-turbos-20250416Tencent · Proprietary",
-            "1383±7",
-            "10,577",
+            "1383±6",
+            "10,624",
             "N/A",
             "N/A"
           ]
@@ -5380,12 +5380,12 @@
           ],
           "cells": [
             "185",
-            "169191",
-            "qwen3-30b-a3b-instruct-2507Alibaba · Apache 2.0",
-            "1383±5",
-            "23,174",
-            "$0.05 / $0.19",
-            "262.1K"
+            "170191",
+            "gpt-4.1-mini-2025-04-14OpenAI · Proprietary",
+            "1383±4",
+            "38,709",
+            "$0.40 / $1.60",
+            "1M"
           ]
         },
         {
@@ -5400,10 +5400,30 @@
           ],
           "cells": [
             "186",
-            "176194",
+            "170192",
+            "qwen3-30b-a3b-instruct-2507Alibaba · Apache 2.0",
+            "1382±5",
+            "23,325",
+            "$0.10 / $0.30",
+            "262.1K"
+          ]
+        },
+        {
+          "headers": [
+            "Rank",
+            "Rank Spread",
+            "Model",
+            "Score",
+            "Votes",
+            "Price $/M",
+            "Context"
+          ],
+          "cells": [
+            "187",
+            "177195",
             "gemini-2.5-flash-lite-preview-09-2025-no-thinkingGoogle · Proprietary",
             "1379±3",
-            "47,254",
+            "47,445",
             "$0.10 / $0.40",
             "1M"
           ]
@@ -5419,11 +5439,11 @@
             "Context"
           ],
           "cells": [
-            "187",
-            "165203",
+            "188",
+            "166203",
             "glm-4.6vZ.ai · MIT",
             "1379±11",
-            "2,830",
+            "2,839",
             "$0.30 / $0.90",
             "131.1K"
           ]
@@ -5439,11 +5459,11 @@
             "Context"
           ],
           "cells": [
-            "188",
-            "176195",
+            "189",
+            "177196",
             "trinity-large-previewApache 2.0",
             "1379±4",
-            "31,201",
+            "31,298",
             "$0.15 / $0.45",
             "131K"
           ]
@@ -5459,11 +5479,11 @@
             "Context"
           ],
           "cells": [
-            "189",
-            "181197",
+            "190",
+            "182198",
             "qwen3-235b-a22bAlibaba · Apache 2.0",
             "1375±5",
-            "25,825",
+            "25,953",
             "$0.46 / $1.82",
             "131.1K"
           ]
@@ -5479,11 +5499,11 @@
             "Context"
           ],
           "cells": [
-            "190",
-            "181197",
+            "191",
+            "183198",
             "gemini-2.5-flash-lite-preview-06-17-thinkingGoogle · Proprietary",
             "1375±5",
-            "32,175",
+            "32,384",
             "$0.10 / $0.40",
             "1M"
           ]
@@ -5499,33 +5519,13 @@
             "Context"
           ],
           "cells": [
-            "191",
-            "185196",
+            "192",
+            "186197",
             "Anthropicclaude-3-5-sonnet-20241022Anthropic · Proprietary",
             "1374±3",
-            "87,638",
+            "87,779",
             "$3 / $15",
             "200K"
-          ]
-        },
-        {
-          "headers": [
-            "Rank",
-            "Rank Spread",
-            "Model",
-            "Score",
-            "Votes",
-            "Price $/M",
-            "Context"
-          ],
-          "cells": [
-            "192",
-            "184197",
-            "qwen2.5-maxAlibaba · Proprietary",
-            "1374±4",
-            "32,411",
-            "N/A",
-            "N/A"
           ]
         },
         {
@@ -5541,129 +5541,9 @@
           "cells": [
             "193",
             "185198",
-            "glm-4.5-airZ.ai · MIT",
-            "1373±4",
-            "30,454",
-            "$0.13 / $0.85",
-            "131.1K"
-          ]
-        },
-        {
-          "headers": [
-            "Rank",
-            "Rank Spread",
-            "Model",
-            "Score",
-            "Votes",
-            "Price $/M",
-            "Context"
-          ],
-          "cells": [
-            "194",
-            "185200",
-            "Anthropicclaude-3-7-sonnet-20250219Anthropic · Proprietary",
-            "1373±4",
-            "42,401",
-            "$3 / $15",
-            "200K"
-          ]
-        },
-        {
-          "headers": [
-            "Rank",
-            "Rank Spread",
-            "Model",
-            "Score",
-            "Votes",
-            "Price $/M",
-            "Context"
-          ],
-          "cells": [
-            "195",
-            "187205",
-            "qwen3-next-80b-a3b-thinkingAlibaba · Apache 2.0",
-            "1369±6",
-            "13,371",
-            "$0.15 / $1.20",
-            "262.1K"
-          ]
-        },
-        {
-          "headers": [
-            "Rank",
-            "Rank Spread",
-            "Model",
-            "Score",
-            "Votes",
-            "Price $/M",
-            "Context"
-          ],
-          "cells": [
-            "196",
-            "188207",
-            "trinity-large-thinkingApache 2.0",
-            "1367±5",
-            "30,265",
-            "$0.25 / $0.80",
-            "262.1K"
-          ]
-        },
-        {
-          "headers": [
-            "Rank",
-            "Rank Spread",
-            "Model",
-            "Score",
-            "Votes",
-            "Price $/M",
-            "Context"
-          ],
-          "cells": [
-            "197",
-            "192208",
-            "gemma-3-27b-itGoogle · Gemma",
-            "1365±4",
-            "46,425",
-            "$0.08 / $0.45",
-            "131.1K"
-          ]
-        },
-        {
-          "headers": [
-            "Rank",
-            "Rank Spread",
-            "Model",
-            "Score",
-            "Votes",
-            "Price $/M",
-            "Context"
-          ],
-          "cells": [
-            "198",
-            "189211",
-            "glm-4.7-flashZ.ai · MIT",
-            "1365±6",
-            "11,977",
-            "$0.06 / $0.40",
-            "200K"
-          ]
-        },
-        {
-          "headers": [
-            "Rank",
-            "Rank Spread",
-            "Model",
-            "Score",
-            "Votes",
-            "Price $/M",
-            "Context"
-          ],
-          "cells": [
-            "199",
-            "194210",
-            "amazon-nova-experimental-chat-11-10Amazon · Proprietary",
-            "1364±4",
-            "25,995",
+            "qwen2.5-maxAlibaba · Proprietary",
+            "1374±4",
+            "32,489",
             "N/A",
             "N/A"
           ]
@@ -5679,11 +5559,171 @@
             "Context"
           ],
           "cells": [
+            "194",
+            "186200",
+            "glm-4.5-airZ.ai · MIT",
+            "1373±4",
+            "30,658",
+            "$0.13 / $0.85",
+            "131.1K"
+          ]
+        },
+        {
+          "headers": [
+            "Rank",
+            "Rank Spread",
+            "Model",
+            "Score",
+            "Votes",
+            "Price $/M",
+            "Context"
+          ],
+          "cells": [
+            "195",
+            "187201",
+            "Anthropicclaude-3-7-sonnet-20250219Anthropic · Proprietary",
+            "1372±4",
+            "42,573",
+            "$3 / $15",
+            "200K"
+          ]
+        },
+        {
+          "headers": [
+            "Rank",
+            "Rank Spread",
+            "Model",
+            "Score",
+            "Votes",
+            "Price $/M",
+            "Context"
+          ],
+          "cells": [
+            "196",
+            "188206",
+            "qwen3-next-80b-a3b-thinkingAlibaba · Apache 2.0",
+            "1369±6",
+            "13,488",
+            "$0.15 / $1.20",
+            "262.1K"
+          ]
+        },
+        {
+          "headers": [
+            "Rank",
+            "Rank Spread",
+            "Model",
+            "Score",
+            "Votes",
+            "Price $/M",
+            "Context"
+          ],
+          "cells": [
+            "197",
+            "189208",
+            "trinity-large-thinkingApache 2.0",
+            "1367±5",
+            "30,365",
+            "$0.25 / $0.80",
+            "262.1K"
+          ]
+        },
+        {
+          "headers": [
+            "Rank",
+            "Rank Spread",
+            "Model",
+            "Score",
+            "Votes",
+            "Price $/M",
+            "Context"
+          ],
+          "cells": [
+            "198",
+            "193208",
+            "gemma-3-27b-itGoogle · Gemma",
+            "1365±4",
+            "46,672",
+            "$0.08 / $0.45",
+            "131.1K"
+          ]
+        },
+        {
+          "headers": [
+            "Rank",
+            "Rank Spread",
+            "Model",
+            "Score",
+            "Votes",
+            "Price $/M",
+            "Context"
+          ],
+          "cells": [
+            "199",
+            "190212",
+            "glm-4.7-flashZ.ai · MIT",
+            "1365±6",
+            "12,020",
+            "$0.06 / $0.40",
+            "200K"
+          ]
+        },
+        {
+          "headers": [
+            "Rank",
+            "Rank Spread",
+            "Model",
+            "Score",
+            "Votes",
+            "Price $/M",
+            "Context"
+          ],
+          "cells": [
             "200",
-            "194210",
+            "195211",
+            "amazon-nova-experimental-chat-11-10Amazon · Proprietary",
+            "1364±4",
+            "26,059",
+            "N/A",
+            "N/A"
+          ]
+        },
+        {
+          "headers": [
+            "Rank",
+            "Rank Spread",
+            "Model",
+            "Score",
+            "Votes",
+            "Price $/M",
+            "Context"
+          ],
+          "cells": [
+            "201",
+            "193212",
+            "grok-3-mini-highSpaceXAI · Proprietary",
+            "1364±5",
+            "15,600",
+            "$0.25 / $1.27",
+            "N/A"
+          ]
+        },
+        {
+          "headers": [
+            "Rank",
+            "Rank Spread",
+            "Model",
+            "Score",
+            "Votes",
+            "Price $/M",
+            "Context"
+          ],
+          "cells": [
+            "202",
+            "195211",
             "minimax-m1MiniMax · Apache 2.0",
             "1364±4",
-            "34,042",
+            "34,313",
             "$0.55 / $2.20",
             "1M"
           ]
@@ -5699,8 +5739,8 @@
             "Context"
           ],
           "cells": [
-            "201",
-            "193211",
+            "203",
+            "194212",
             "o3-mini-highOpenAI · Proprietary",
             "1364±5",
             "18,589",
@@ -5719,31 +5759,11 @@
             "Context"
           ],
           "cells": [
-            "202",
-            "193211",
-            "grok-3-mini-highSpaceXAI · Proprietary",
-            "1363±5",
-            "15,505",
-            "$0.25 / $1.27",
-            "N/A"
-          ]
-        },
-        {
-          "headers": [
-            "Rank",
-            "Rank Spread",
-            "Model",
-            "Score",
-            "Votes",
-            "Price $/M",
-            "Context"
-          ],
-          "cells": [
-            "203",
-            "194222",
+            "204",
+            "196223",
             "nvidia-nemotron-3-super-120b-a12bNvidia · NVIDIA Open Model",
             "1360±7",
-            "7,859",
+            "7,875",
             "N/A",
             "N/A"
           ]
@@ -5759,11 +5779,11 @@
             "Context"
           ],
           "cells": [
-            "204",
-            "195216",
+            "205",
+            "196218",
             "gemini-2.0-flash-001Google · Proprietary",
             "1360±4",
-            "43,310",
+            "43,454",
             "$0.10 / $0.40",
             "1M"
           ]
@@ -5779,8 +5799,8 @@
             "Context"
           ],
           "cells": [
-            "205",
-            "196222",
+            "206",
+            "197223",
             "deepseek-v3DeepSeek · DeepSeek",
             "1358±5",
             "21,770",
@@ -5799,11 +5819,11 @@
             "Context"
           ],
           "cells": [
-            "206",
-            "196223",
+            "207",
+            "197224",
             "grok-3-mini-betaSpaceXAI · Proprietary",
             "1358±5",
-            "20,813",
+            "20,937",
             "$1.25 / $2.50",
             "131.1K"
           ]
@@ -5819,11 +5839,11 @@
             "Context"
           ],
           "cells": [
-            "207",
-            "197226",
+            "208",
+            "199229",
             "mistral-small-2506Mistral · Apache 2.0",
             "1356±5",
-            "17,348",
+            "17,466",
             "$0.10 / $0.30",
             "32K"
           ]
@@ -5839,11 +5859,11 @@
             "Context"
           ],
           "cells": [
-            "208",
-            "195231",
+            "209",
+            "196232",
             "intellect-3MIT",
             "1356±8",
-            "5,417",
+            "5,435",
             "$0.20 / $1.10",
             "131.1K"
           ]
@@ -5859,11 +5879,11 @@
             "Context"
           ],
           "cells": [
-            "209",
-            "203229",
+            "210",
+            "204230",
             "Coherecommand-a-03-2025Cohere · CC-BY-NC-4.0",
             "1354±3",
-            "55,467",
+            "55,769",
             "$2.50 / $10",
             "256K"
           ]
@@ -5879,8 +5899,8 @@
             "Context"
           ],
           "cells": [
-            "210",
-            "203231",
+            "211",
+            "204232",
             "gemini-2.0-flash-lite-preview-02-05Google · Proprietary",
             "1354±4",
             "24,955",
@@ -5899,11 +5919,11 @@
             "Context"
           ],
           "cells": [
-            "211",
-            "198233",
+            "212",
+            "199234",
             "glm-4.5vZ.ai · MIT",
             "1352±8",
-            "4,807",
+            "4,824",
             "$0.60 / $1.80",
             "65.5K"
           ]
@@ -5919,11 +5939,11 @@
             "Context"
           ],
           "cells": [
-            "212",
-            "204231",
+            "213",
+            "204232",
             "gpt-oss-120bOpenAI · Apache 2.0",
             "1352±4",
-            "30,018",
+            "30,218",
             "$0.15 / $0.60",
             "131.1K"
           ]
@@ -5939,8 +5959,8 @@
             "Context"
           ],
           "cells": [
-            "213",
-            "204231",
+            "214",
+            "205232",
             "gemini-1.5-pro-002Google · Proprietary",
             "1351±3",
             "55,606",
@@ -5959,11 +5979,11 @@
             "Context"
           ],
           "cells": [
-            "214",
-            "204233",
+            "215",
+            "205234",
             "nvidia-nemotron-3.5-lightning-30b-a3b-nvfp4Nvidia · OpenMDW-1.1",
-            "1350±6Preliminary",
-            "14,877",
+            "1349±6Preliminary",
+            "17,120",
             "N/A",
             "N/A"
           ]
@@ -5979,11 +5999,11 @@
             "Context"
           ],
           "cells": [
-            "215",
-            "203235",
+            "216",
+            "204236",
             "Stepfunstep-3StepFun · Apache 2.0",
             "1349±8",
-            "6,266",
+            "6,292",
             "$0.57 / $1.42",
             "65.5K"
           ]
@@ -5999,8 +6019,8 @@
             "Context"
           ],
           "cells": [
-            "216",
-            "198243",
+            "217",
+            "199245",
             "Tencenthunyuan-turbos-20250226Tencent · Proprietary",
             "1349±12",
             "2,220",
@@ -6019,31 +6039,11 @@
             "Context"
           ],
           "cells": [
-            "217",
-            "204235",
-            "amazon-nova-experimental-chat-10-20Amazon · Proprietary",
-            "1348±6",
-            "11,590",
-            "N/A",
-            "N/A"
-          ]
-        },
-        {
-          "headers": [
-            "Rank",
-            "Rank Spread",
-            "Model",
-            "Score",
-            "Votes",
-            "Price $/M",
-            "Context"
-          ],
-          "cells": [
             "218",
-            "207232",
+            "208233",
             "o3-miniOpenAI · Proprietary",
             "1348±4",
-            "56,564",
+            "56,750",
             "$0.55 / $2.20",
             "200K"
           ]
@@ -6060,7 +6060,27 @@
           ],
           "cells": [
             "219",
-            "200245",
+            "205236",
+            "amazon-nova-experimental-chat-10-20Amazon · Proprietary",
+            "1348±6",
+            "11,633",
+            "N/A",
+            "N/A"
+          ]
+        },
+        {
+          "headers": [
+            "Rank",
+            "Rank Spread",
+            "Model",
+            "Score",
+            "Votes",
+            "Price $/M",
+            "Context"
+          ],
+          "cells": [
+            "220",
+            "201246",
             "llama-3.1-nemotron-ultra-253b-v1Nvidia · Nvidia Open Model",
             "1348±12",
             "2,549",
@@ -6079,28 +6099,8 @@
             "Context"
           ],
           "cells": [
-            "220",
-            "203245",
-            "amazon-nova-experimental-chat-10-09Amazon · Proprietary",
-            "1347±11",
-            "2,765",
-            "N/A",
-            "N/A"
-          ]
-        },
-        {
-          "headers": [
-            "Rank",
-            "Rank Spread",
-            "Model",
-            "Score",
-            "Votes",
-            "Price $/M",
-            "Context"
-          ],
-          "cells": [
             "221",
-            "203243",
+            "204244",
             "qwen3-32bAlibaba · Apache 2.0",
             "1347±9",
             "3,926",
@@ -6120,7 +6120,27 @@
           ],
           "cells": [
             "222",
-            "209234",
+            "204247",
+            "amazon-nova-experimental-chat-10-09Amazon · Proprietary",
+            "1346±11",
+            "2,781",
+            "N/A",
+            "N/A"
+          ]
+        },
+        {
+          "headers": [
+            "Rank",
+            "Rank Spread",
+            "Model",
+            "Score",
+            "Votes",
+            "Price $/M",
+            "Context"
+          ],
+          "cells": [
+            "223",
+            "210235",
             "gpt-4o-2024-05-13OpenAI · Proprietary",
             "1346±3",
             "112,881",
@@ -6139,8 +6159,8 @@
             "Context"
           ],
           "cells": [
-            "223",
-            "204243",
+            "224",
+            "205244",
             "qwen-plus-0125Alibaba · Proprietary",
             "1346±8",
             "5,819",
@@ -6159,51 +6179,11 @@
             "Context"
           ],
           "cells": [
-            "224",
-            "208244",
-            "ling-flash-2.0Ant Group · MIT",
-            "1344±7",
-            "6,887",
-            "N/A",
-            "N/A"
-          ]
-        },
-        {
-          "headers": [
-            "Rank",
-            "Rank Spread",
-            "Model",
-            "Score",
-            "Votes",
-            "Price $/M",
-            "Context"
-          ],
-          "cells": [
             "225",
-            "208245",
-            "minimax-m2MiniMax · Apache 2.0",
-            "1343±8",
-            "6,817",
-            "$0.30 / $1.20",
-            "204.8K"
-          ]
-        },
-        {
-          "headers": [
-            "Rank",
-            "Rank Spread",
-            "Model",
-            "Score",
-            "Votes",
-            "Price $/M",
-            "Context"
-          ],
-          "cells": [
-            "226",
-            "204247",
+            "205247",
             "mercury-2Inception AI · Proprietary",
-            "1343±11",
-            "3,197",
+            "1344±11",
+            "3,201",
             "$0.25 / $0.75",
             "128K"
           ]
@@ -6219,8 +6199,48 @@
             "Context"
           ],
           "cells": [
+            "226",
+            "209245",
+            "ling-flash-2.0Ant Group · MIT",
+            "1344±7",
+            "6,951",
+            "N/A",
+            "N/A"
+          ]
+        },
+        {
+          "headers": [
+            "Rank",
+            "Rank Spread",
+            "Model",
+            "Score",
+            "Votes",
+            "Price $/M",
+            "Context"
+          ],
+          "cells": [
             "227",
-            "213241",
+            "208246",
+            "minimax-m2MiniMax · Apache 2.0",
+            "1343±8",
+            "6,860",
+            "$0.30 / $1.20",
+            "204.8K"
+          ]
+        },
+        {
+          "headers": [
+            "Rank",
+            "Rank Spread",
+            "Model",
+            "Score",
+            "Votes",
+            "Price $/M",
+            "Context"
+          ],
+          "cells": [
+            "228",
+            "214242",
             "Anthropicclaude-3-5-sonnet-20240620Anthropic · Proprietary",
             "1343±3",
             "82,419",
@@ -6239,11 +6259,11 @@
             "Context"
           ],
           "cells": [
-            "228",
-            "206247",
+            "229",
+            "207248",
             "nvidia-llama-3.3-nemotron-super-49b-v1.5Nvidia · Nvidia Open",
             "1343±10",
-            "3,308",
+            "3,327",
             "$0.10 / $0.40",
             "131.1K"
           ]
@@ -6259,8 +6279,8 @@
             "Context"
           ],
           "cells": [
-            "229",
-            "208246",
+            "230",
+            "208247",
             "glm-4-plus-0111Z.ai · Proprietary",
             "1343±8",
             "5,760",
@@ -6279,8 +6299,8 @@
             "Context"
           ],
           "cells": [
-            "230",
-            "207247",
+            "231",
+            "208248",
             "gemma-3-12b-itGoogle · Gemma",
             "1342±10",
             "3,829",
@@ -6299,8 +6319,8 @@
             "Context"
           ],
           "cells": [
-            "231",
-            "207252",
+            "232",
+            "208253",
             "Tencenthunyuan-turbo-0110Tencent · Proprietary",
             "1341±12",
             "2,290",
@@ -6319,11 +6339,11 @@
             "Context"
           ],
           "cells": [
-            "232",
-            "209252",
+            "233",
+            "210253",
             "granite-4.2-30bIBM · Apache 2.0",
             "1340±10",
-            "3,401",
+            "3,410",
             "N/A",
             "N/A"
           ]
@@ -6339,11 +6359,11 @@
             "Context"
           ],
           "cells": [
-            "233",
-            "214250",
+            "234",
+            "215251",
             "gpt-5-nano-highOpenAI · Proprietary",
-            "1338±7",
-            "8,112",
+            "1337±7",
+            "8,140",
             "$0.03 / $0.20",
             "400K"
           ]
@@ -6359,8 +6379,8 @@
             "Context"
           ],
           "cells": [
-            "234",
-            "219247",
+            "235",
+            "220248",
             "o1-miniOpenAI · Proprietary",
             "1337±4",
             "51,981",
@@ -6379,8 +6399,8 @@
             "Context"
           ],
           "cells": [
-            "235",
-            "219250",
+            "236",
+            "220251",
             "gemini-advanced-0514Google · Proprietary",
             "1336±5",
             "50,148",
@@ -6399,28 +6419,8 @@
             "Context"
           ],
           "cells": [
-            "236",
-            "219248",
-            "qwq-32bAlibaba · Apache 2.0",
-            "1336±4",
-            "25,078",
-            "$0.50 / $1",
-            "16.4K"
-          ]
-        },
-        {
-          "headers": [
-            "Rank",
-            "Rank Spread",
-            "Model",
-            "Score",
-            "Votes",
-            "Price $/M",
-            "Context"
-          ],
-          "cells": [
             "237",
-            "220247",
+            "221248",
             "grok-2-2024-08-13SpaceXAI · Proprietary",
             "1336±4",
             "63,498",
@@ -6440,7 +6440,27 @@
           ],
           "cells": [
             "238",
-            "219248",
+            "220251",
+            "qwq-32bAlibaba · Apache 2.0",
+            "1336±4",
+            "25,181",
+            "$0.50 / $1",
+            "16.4K"
+          ]
+        },
+        {
+          "headers": [
+            "Rank",
+            "Rank Spread",
+            "Model",
+            "Score",
+            "Votes",
+            "Price $/M",
+            "Context"
+          ],
+          "cells": [
+            "239",
+            "220250",
             "gpt-4o-2024-08-06OpenAI · Proprietary",
             "1336±4",
             "45,499",
@@ -6459,8 +6479,8 @@
             "Context"
           ],
           "cells": [
-            "239",
-            "220248",
+            "240",
+            "221248",
             "Metallama-3.1-405b-instruct-bf16Meta · Llama 3.1 Community",
             "1335±4",
             "41,375",
@@ -6479,11 +6499,11 @@
             "Context"
           ],
           "cells": [
-            "240",
-            "219252",
+            "241",
+            "220253",
             "nova-2-liteAmazon · Proprietary",
             "1335±6",
-            "12,392",
+            "12,417",
             "$0.30 / $2.50",
             "1M"
           ]
@@ -6499,28 +6519,8 @@
             "Context"
           ],
           "cells": [
-            "241",
-            "217258",
-            "Stepfunstep-2-16k-exp-202412StepFun · Proprietary",
-            "1334±9",
-            "4,833",
-            "N/A",
-            "N/A"
-          ]
-        },
-        {
-          "headers": [
-            "Rank",
-            "Rank Spread",
-            "Model",
-            "Score",
-            "Votes",
-            "Price $/M",
-            "Context"
-          ],
-          "cells": [
             "242",
-            "223251",
+            "223253",
             "Metallama-3.1-405b-instruct-fp8Meta · Llama 3.1 Community",
             "1334±4",
             "59,656",
@@ -6540,10 +6540,30 @@
           ],
           "cells": [
             "243",
-            "227261",
+            "218259",
+            "Stepfunstep-2-16k-exp-202412StepFun · Proprietary",
+            "1334±9",
+            "4,833",
+            "N/A",
+            "N/A"
+          ]
+        },
+        {
+          "headers": [
+            "Rank",
+            "Rank Spread",
+            "Model",
+            "Score",
+            "Votes",
+            "Price $/M",
+            "Context"
+          ],
+          "cells": [
+            "244",
+            "227262",
             "olmo-3.1-32b-instructAi2 · Apache 2.0",
             "1329±6",
-            "11,801",
+            "11,820",
             "$0.20 / $0.60",
             "65.5K"
           ]
@@ -6559,8 +6579,8 @@
             "Context"
           ],
           "cells": [
-            "244",
-            "228261",
+            "245",
+            "230262",
             "yi-lightningProprietary",
             "1328±5",
             "27,332",
@@ -6579,8 +6599,8 @@
             "Context"
           ],
           "cells": [
-            "245",
-            "219272",
+            "246",
+            "220273",
             "llama-3.3-nemotron-49b-super-v1Nvidia · Nvidia",
             "1328±12",
             "2,218",
@@ -6599,11 +6619,11 @@
             "Context"
           ],
           "cells": [
-            "246",
-            "236261",
+            "247",
+            "236263",
             "Metallama-4-maverick-17b-128e-instructMeta · Llama 4",
             "1327±4",
-            "39,262",
+            "39,453",
             "$0.63 / $1.80",
             "131.1K"
           ]
@@ -6619,11 +6639,11 @@
             "Context"
           ],
           "cells": [
-            "247",
-            "236262",
+            "248",
+            "235263",
             "qwen3-30b-a3bAlibaba · Apache 2.0",
-            "1326±5",
-            "26,037",
+            "1327±5",
+            "26,160",
             "$0.12 / $0.50",
             "131.1K"
           ]
@@ -6639,8 +6659,8 @@
             "Context"
           ],
           "cells": [
-            "248",
-            "224272",
+            "249",
+            "225273",
             "Tencenthunyuan-large-2025-02-10Tencent · Proprietary",
             "1326±10",
             "3,738",
@@ -6659,11 +6679,11 @@
             "Context"
           ],
           "cells": [
-            "249",
-            "242262",
+            "250",
+            "243264",
             "Anthropicclaude-3-5-haiku-20241022Anthropic · Proprietary",
             "1325±3",
-            "68,873",
+            "69,064",
             "$1 / $5",
             "200K"
           ]
@@ -6679,8 +6699,8 @@
             "Context"
           ],
           "cells": [
-            "250",
-            "242266",
+            "251",
+            "243267",
             "gpt-4-turbo-2024-04-09OpenAI · Proprietary",
             "1324±4",
             "98,114",
@@ -6699,8 +6719,8 @@
             "Context"
           ],
           "cells": [
-            "251",
-            "242266",
+            "252",
+            "243267",
             "gemini-1.5-pro-001Google · Proprietary",
             "1324±4",
             "79,138",
@@ -6719,8 +6739,8 @@
             "Context"
           ],
           "cells": [
-            "252",
-            "233272",
+            "253",
+            "235273",
             "deepseek-v2.5-1210DeepSeek · DeepSeek",
             "1323±8",
             "6,795",
@@ -6739,11 +6759,11 @@
             "Context"
           ],
           "cells": [
-            "253",
-            "239272",
+            "254",
+            "239273",
             "ring-flash-2.0Ant Group · MIT",
             "1323±7",
-            "6,932",
+            "6,993",
             "N/A",
             "N/A"
           ]
@@ -6759,8 +6779,8 @@
             "Context"
           ],
           "cells": [
-            "254",
-            "238273",
+            "255",
+            "239273",
             "gpt-4.1-nano-2025-04-14OpenAI · Proprietary",
             "1322±8",
             "6,103",
@@ -6779,8 +6799,8 @@
             "Context"
           ],
           "cells": [
-            "255",
-            "242268",
+            "256",
+            "243269",
             "Anthropicclaude-3-opus-20240229Anthropic · Proprietary",
             "1322±3",
             "194,909",
@@ -6799,11 +6819,11 @@
             "Context"
           ],
           "cells": [
-            "256",
-            "216286",
+            "257",
+            "217288",
             "molmo-2-8bAi2 · Apache 2.0",
             "1322±21",
-            "818",
+            "823",
             "$0.20 / $0.20",
             "36.9K"
           ]
@@ -6819,11 +6839,11 @@
             "Context"
           ],
           "cells": [
-            "257",
-            "242271",
+            "258",
+            "243272",
             "Metallama-4-scout-17b-16e-instructMeta · Llama",
             "1322±5",
-            "29,667",
+            "29,836",
             "$0.05 / $0.10",
             "16.4K"
           ]
@@ -6839,11 +6859,11 @@
             "Context"
           ],
           "cells": [
-            "258",
-            "242275",
+            "259",
+            "243276",
             "Stepfunstep-1o-turbo-202506StepFun · Proprietary",
             "1320±7",
-            "8,845",
+            "8,906",
             "N/A",
             "N/A"
           ]
@@ -6859,8 +6879,8 @@
             "Context"
           ],
           "cells": [
-            "259",
-            "243273",
+            "260",
+            "244274",
             "glm-4-plusZ.ai · Proprietary",
             "1319±5",
             "26,126",
@@ -6879,8 +6899,8 @@
             "Context"
           ],
           "cells": [
-            "260",
-            "243276",
+            "261",
+            "244277",
             "qwen-max-0919Alibaba · Qwen",
             "1318±6",
             "16,478",
@@ -6899,11 +6919,11 @@
             "Context"
           ],
           "cells": [
-            "261",
+            "262",
             "248273",
             "Metallama-3.3-70b-instructMeta · Llama-3.3",
             "1318±4",
-            "54,366",
+            "54,504",
             "$0.10 / $0.32",
             "131.1K"
           ]
@@ -6919,33 +6939,13 @@
             "Context"
           ],
           "cells": [
-            "262",
-            "248274",
+            "263",
+            "249274",
             "gpt-4o-mini-2024-07-18OpenAI · Proprietary",
             "1318±4",
-            "68,697",
+            "68,705",
             "$0.15 / $0.60",
             "128K"
-          ]
-        },
-        {
-          "headers": [
-            "Rank",
-            "Rank Spread",
-            "Model",
-            "Score",
-            "Votes",
-            "Price $/M",
-            "Context"
-          ],
-          "cells": [
-            "263",
-            "243280",
-            "gpt-oss-20bOpenAI · Apache 2.0",
-            "1318±6",
-            "10,368",
-            "$0.02 / $0.11",
-            "131.1K"
           ]
         },
         {
@@ -6962,8 +6962,8 @@
             "264",
             "246277",
             "gemma-3n-e4b-itGoogle · Gemma",
-            "1317±5",
-            "22,042",
+            "1318±5",
+            "22,145",
             "$0.06 / $0.12",
             "32.8K"
           ]
@@ -6980,7 +6980,27 @@
           ],
           "cells": [
             "265",
-            "248281",
+            "244281",
+            "gpt-oss-20bOpenAI · Apache 2.0",
+            "1317±6",
+            "10,418",
+            "$0.02 / $0.11",
+            "131.1K"
+          ]
+        },
+        {
+          "headers": [
+            "Rank",
+            "Rank Spread",
+            "Model",
+            "Score",
+            "Votes",
+            "Price $/M",
+            "Context"
+          ],
+          "cells": [
+            "266",
+            "249282",
             "qwen2.5-plus-1127Alibaba · Proprietary",
             "1315±6",
             "10,187",
@@ -6999,8 +7019,8 @@
             "Context"
           ],
           "cells": [
-            "266",
-            "251280",
+            "267",
+            "252281",
             "mistral-large-2407Mistral · Mistral Research",
             "1314±4",
             "45,459",
@@ -7019,8 +7039,8 @@
             "Context"
           ],
           "cells": [
-            "267",
-            "251281",
+            "268",
+            "252282",
             "athene-v2-chatNexusFlow",
             "1314±5",
             "24,739",
@@ -7039,11 +7059,11 @@
             "Context"
           ],
           "cells": [
-            "268",
-            "250281",
+            "269",
+            "251282",
             "nvidia-nemotron-3-nano-30b-a3b-bf16Nvidia · NVIDIA Open Model",
             "1314±5",
-            "15,722",
+            "15,779",
             "$0.06 / $0.24",
             "262.1K"
           ]
@@ -7059,8 +7079,8 @@
             "Context"
           ],
           "cells": [
-            "269",
-            "251281",
+            "270",
+            "252282",
             "gpt-4-0125-previewOpenAI · Proprietary",
             "1313±4",
             "93,439",
@@ -7079,8 +7099,8 @@
             "Context"
           ],
           "cells": [
-            "270",
-            "252281",
+            "271",
+            "253282",
             "gpt-4-1106-previewOpenAI · Proprietary",
             "1313±4",
             "100,105",
@@ -7099,8 +7119,8 @@
             "Context"
           ],
           "cells": [
-            "271",
-            "248285",
+            "272",
+            "249286",
             "Tencenthunyuan-standard-2025-02-10Tencent · Proprietary",
             "1311±10",
             "3,904",
@@ -7119,8 +7139,8 @@
             "Context"
           ],
           "cells": [
-            "272",
-            "260284",
+            "273",
+            "261285",
             "gemini-1.5-flash-002Google · Proprietary",
             "1309±4",
             "34,902",
@@ -7139,8 +7159,8 @@
             "Context"
           ],
           "cells": [
-            "273",
-            "263284",
+            "274",
+            "264285",
             "grok-2-mini-2024-08-13SpaceXAI · Proprietary",
             "1308±4",
             "52,567",
@@ -7159,8 +7179,8 @@
             "Context"
           ],
           "cells": [
-            "274",
-            "263285",
+            "275",
+            "264286",
             "deepseek-v2.5DeepSeek · DeepSeek",
             "1307±5",
             "24,572",
@@ -7179,8 +7199,8 @@
             "Context"
           ],
           "cells": [
-            "275",
-            "262286",
+            "276",
+            "264288",
             "athene-70b-0725CC-BY-NC-4.0",
             "1307±6",
             "19,621",
@@ -7199,11 +7219,11 @@
             "Context"
           ],
           "cells": [
-            "276",
-            "256287",
+            "277",
+            "259288",
             "olmo-3-32b-thinkAi2 · Apache 2.0",
             "1306±8",
-            "5,811",
+            "5,830",
             "$0.15 / $0.50",
             "65.5K"
           ]
@@ -7219,8 +7239,28 @@
             "Context"
           ],
           "cells": [
-            "277",
-            "265286",
+            "278",
+            "251298",
+            "mercuryInception AI · Proprietary",
+            "1306±14",
+            "1,963",
+            "$0.25 / $0.75",
+            "128K"
+          ]
+        },
+        {
+          "headers": [
+            "Rank",
+            "Rank Spread",
+            "Model",
+            "Score",
+            "Votes",
+            "Price $/M",
+            "Context"
+          ],
+          "cells": [
+            "279",
+            "266288",
             "mistral-large-2411Mistral · MRL",
             "1306±4",
             "28,073",
@@ -7239,31 +7279,11 @@
             "Context"
           ],
           "cells": [
-            "278",
-            "250297",
-            "mercuryInception AI · Proprietary",
-            "1305±14",
-            "1,949",
-            "$0.25 / $0.75",
-            "128K"
-          ]
-        },
-        {
-          "headers": [
-            "Rank",
-            "Rank Spread",
-            "Model",
-            "Score",
-            "Votes",
-            "Price $/M",
-            "Context"
-          ],
-          "cells": [
-            "279",
-            "263287",
+            "280",
+            "264288",
             "magistral-medium-2506Mistral · Proprietary",
             "1305±6",
-            "11,432",
+            "11,513",
             "$2 / $5",
             "40K"
           ]
@@ -7279,11 +7299,11 @@
             "Context"
           ],
           "cells": [
-            "280",
-            "259294",
+            "281",
+            "261296",
             "granite-4.1-8bIBM · Apache 2.0",
             "1304±10",
-            "4,161",
+            "4,184",
             "$0.05 / $0.10",
             "131.1K"
           ]
@@ -7299,8 +7319,8 @@
             "Context"
           ],
           "cells": [
-            "281",
-            "261294",
+            "282",
+            "262296",
             "gemma-3-4b-itGoogle · Gemma",
             "1303±9",
             "4,171",
@@ -7319,28 +7339,8 @@
             "Context"
           ],
           "cells": [
-            "282",
-            "270287",
-            "mistral-small-3.1-24b-instruct-2503Mistral · Apache 2.0",
-            "1303±5",
-            "32,551",
-            "$0.10 / $0.30",
-            "32K"
-          ]
-        },
-        {
-          "headers": [
-            "Rank",
-            "Rank Spread",
-            "Model",
-            "Score",
-            "Votes",
-            "Price $/M",
-            "Context"
-          ],
-          "cells": [
             "283",
-            "270287",
+            "271288",
             "qwen2.5-72b-instructAlibaba · Qwen",
             "1303±4",
             "39,406",
@@ -7360,7 +7360,27 @@
           ],
           "cells": [
             "284",
-            "270298",
+            "271288",
+            "mistral-small-3.1-24b-instruct-2503Mistral · Apache 2.0",
+            "1303±5",
+            "32,744",
+            "$0.10 / $0.30",
+            "32K"
+          ]
+        },
+        {
+          "headers": [
+            "Rank",
+            "Rank Spread",
+            "Model",
+            "Score",
+            "Votes",
+            "Price $/M",
+            "Context"
+          ],
+          "cells": [
+            "285",
+            "271299",
             "llama-3.1-nemotron-70b-instructNvidia · Llama 3.1",
             "1299±8",
             "7,140",
@@ -7379,11 +7399,11 @@
             "Context"
           ],
           "cells": [
-            "285",
-            "272300",
+            "286",
+            "273301",
             "Tencenthunyuan-large-visionTencent · Proprietary",
             "1294±9",
-            "5,248",
+            "5,280",
             "N/A",
             "N/A"
           ]
@@ -7399,8 +7419,8 @@
             "Context"
           ],
           "cells": [
-            "286",
-            "281298",
+            "287",
+            "282299",
             "Metallama-3.1-70b-instructMeta · Llama 3.1 Community",
             "1293±4",
             "55,240",
@@ -7419,8 +7439,28 @@
             "Context"
           ],
           "cells": [
-            "287",
-            "281299",
+            "288",
+            "275308",
+            "granite-4.2-8bIBM · Apache 2.0",
+            "1290±11",
+            "3,253",
+            "$0.06 / $0.25",
+            "131.1K"
+          ]
+        },
+        {
+          "headers": [
+            "Rank",
+            "Rank Spread",
+            "Model",
+            "Score",
+            "Votes",
+            "Price $/M",
+            "Context"
+          ],
+          "cells": [
+            "289",
+            "282300",
             "amazon-nova-pro-v1.0Amazon · Proprietary",
             "1290±5",
             "24,745",
@@ -7439,11 +7479,11 @@
             "Context"
           ],
           "cells": [
-            "288",
-            "274308",
+            "290",
+            "275309",
             "granite-4.2-3bIBM · Apache 2.0",
             "1290±12",
-            "3,247",
+            "3,251",
             "N/A",
             "N/A"
           ]
@@ -7459,8 +7499,8 @@
             "Context"
           ],
           "cells": [
-            "289",
-            "283299",
+            "291",
+            "284300",
             "gemma-2-27b-itGoogle · Gemma license",
             "1289±3",
             "75,754",
@@ -7479,8 +7519,8 @@
             "Context"
           ],
           "cells": [
-            "290",
-            "281302",
+            "292",
+            "282303",
             "jamba-1.5-largeJamba Open",
             "1289±7",
             "8,662",
@@ -7499,28 +7539,8 @@
             "Context"
           ],
           "cells": [
-            "291",
-            "277308",
-            "granite-4.2-8bIBM · Apache 2.0",
-            "1288±11",
-            "3,237",
-            "$0.06 / $0.25",
-            "131.1K"
-          ]
-        },
-        {
-          "headers": [
-            "Rank",
-            "Rank Spread",
-            "Model",
-            "Score",
-            "Votes",
-            "Price $/M",
-            "Context"
-          ],
-          "cells": [
-            "292",
-            "281302",
+            "293",
+            "282303",
             "reka-core-20240904Proprietary",
             "1288±7",
             "7,312",
@@ -7539,8 +7559,8 @@
             "Context"
           ],
           "cells": [
-            "293",
-            "283300",
+            "294",
+            "284301",
             "gpt-4-0314OpenAI · Proprietary",
             "1288±5",
             "54,173",
@@ -7559,11 +7579,11 @@
             "Context"
           ],
           "cells": [
-            "294",
-            "281308",
+            "295",
+            "282308",
             "ibm-granite-h-smallIBM · Apache 2.0",
             "1287±8",
-            "5,576",
+            "5,635",
             "N/A",
             "N/A"
           ]
@@ -7579,8 +7599,28 @@
             "Context"
           ],
           "cells": [
-            "295",
-            "281308",
+            "296",
+            "282307",
+            "olmo-3.1-32b-thinkAi2 · Apache 2.0",
+            "1287±7",
+            "8,301",
+            "$0.15 / $0.50",
+            "65.5K"
+          ]
+        },
+        {
+          "headers": [
+            "Rank",
+            "Rank Spread",
+            "Model",
+            "Score",
+            "Votes",
+            "Price $/M",
+            "Context"
+          ],
+          "cells": [
+            "297",
+            "282309",
             "llama-3.1-nemotron-51b-instructNvidia · Llama 3.1",
             "1287±10",
             "3,749",
@@ -7599,10 +7639,10 @@
             "Context"
           ],
           "cells": [
-            "296",
-            "284302",
+            "298",
+            "285303",
             "gemini-1.5-flash-001Google · Proprietary",
-            "1286±5",
+            "1287±5",
             "62,833",
             "$0.07 / $0.30",
             "1M"
@@ -7619,28 +7659,8 @@
             "Context"
           ],
           "cells": [
-            "297",
-            "283307",
-            "olmo-3.1-32b-thinkAi2 · Apache 2.0",
-            "1286±7",
-            "8,278",
-            "$0.15 / $0.50",
-            "65.5K"
-          ]
-        },
-        {
-          "headers": [
-            "Rank",
-            "Rank Spread",
-            "Model",
-            "Score",
-            "Votes",
-            "Price $/M",
-            "Context"
-          ],
-          "cells": [
-            "298",
-            "281308",
+            "299",
+            "282309",
             "llama-3.1-tulu-3-70bAi2 · Llama 3.1",
             "1286±10",
             "2,846",
@@ -7659,8 +7679,8 @@
             "Context"
           ],
           "cells": [
-            "299",
-            "288308",
+            "300",
+            "289309",
             "Anthropicclaude-3-sonnet-20240229Anthropic · Proprietary",
             "1281±4",
             "109,284",
@@ -7679,8 +7699,8 @@
             "Context"
           ],
           "cells": [
-            "300",
-            "286308",
+            "301",
+            "287309",
             "gemma-2-9b-it-simpoMIT",
             "1280±7",
             "10,072",
@@ -7699,8 +7719,8 @@
             "Context"
           ],
           "cells": [
-            "301",
-            "290309",
+            "302",
+            "291310",
             "nemotron-4-340b-instructNvidia · NVIDIA Open Model",
             "1277±5",
             "19,659",
@@ -7719,8 +7739,8 @@
             "Context"
           ],
           "cells": [
-            "302",
-            "293308",
+            "303",
+            "294309",
             "Metallama-3-70b-instructMeta · Llama 3 Community",
             "1277±4",
             "156,876",
@@ -7739,8 +7759,8 @@
             "Context"
           ],
           "cells": [
-            "303",
-            "290311",
+            "304",
+            "291312",
             "Coherecommand-r-plus-08-2024Cohere · CC-BY-NC-4.0",
             "1276±7",
             "9,866",
@@ -7759,8 +7779,8 @@
             "Context"
           ],
           "cells": [
-            "304",
-            "293309",
+            "305",
+            "294310",
             "gpt-4-0613OpenAI · Proprietary",
             "1276±4",
             "88,723",
@@ -7779,8 +7799,8 @@
             "Context"
           ],
           "cells": [
-            "305",
-            "293311",
+            "306",
+            "294312",
             "mistral-small-24b-instruct-2501Mistral · Apache 2.0",
             "1274±6",
             "14,681",
@@ -7799,8 +7819,8 @@
             "Context"
           ],
           "cells": [
-            "306",
-            "293312",
+            "307",
+            "294313",
             "glm-4-0520Z.ai · Proprietary",
             "1273±7",
             "9,788",
@@ -7819,8 +7839,8 @@
             "Context"
           ],
           "cells": [
-            "307",
-            "293314",
+            "308",
+            "295315",
             "reka-flash-20240904Proprietary",
             "1272±7",
             "7,536",
@@ -7839,8 +7859,8 @@
             "Context"
           ],
           "cells": [
-            "308",
-            "294316",
+            "309",
+            "297317",
             "qwen2.5-coder-32b-instructAlibaba · Apache 2.0",
             "1271±8",
             "5,432",
@@ -7859,8 +7879,8 @@
             "Context"
           ],
           "cells": [
-            "309",
-            "302317",
+            "310",
+            "303318",
             "Coherec4ai-aya-expanse-32bCohere · CC-BY-NC-4.0",
             "1267±5",
             "27,124",
@@ -7879,8 +7899,8 @@
             "Context"
           ],
           "cells": [
-            "310",
-            "304315",
+            "311",
+            "305316",
             "gemma-2-9b-itGoogle · Gemma license",
             "1267±4",
             "54,611",
@@ -7899,8 +7919,8 @@
             "Context"
           ],
           "cells": [
-            "311",
-            "304318",
+            "312",
+            "305319",
             "deepseek-coder-v2DeepSeek · DeepSeek License",
             "1265±6",
             "15,147",
@@ -7919,8 +7939,8 @@
             "Context"
           ],
           "cells": [
-            "312",
-            "306319",
+            "313",
+            "307320",
             "qwen2-72b-instructAlibaba · Qianwen LICENSE",
             "1262±5",
             "37,325",
@@ -7939,8 +7959,8 @@
             "Context"
           ],
           "cells": [
-            "313",
-            "307318",
+            "314",
+            "308319",
             "Coherecommand-r-plusCohere · CC-BY-NC-4.0",
             "1262±4",
             "77,554",
@@ -7959,8 +7979,8 @@
             "Context"
           ],
           "cells": [
-            "314",
-            "308318",
+            "315",
+            "309319",
             "Anthropicclaude-3-haiku-20240307Anthropic · Proprietary",
             "1262±4",
             "117,701",
@@ -7979,8 +7999,8 @@
             "Context"
           ],
           "cells": [
-            "315",
-            "307319",
+            "316",
+            "308320",
             "amazon-nova-lite-v1.0Amazon · Proprietary",
             "1260±5",
             "19,372",
@@ -7999,8 +8019,8 @@
             "Context"
           ],
           "cells": [
-            "316",
-            "309319",
+            "317",
+            "310320",
             "gemini-1.5-flash-8b-001Google · Proprietary",
             "1259±4",
             "35,558",
@@ -8019,8 +8039,8 @@
             "Context"
           ],
           "cells": [
-            "317",
-            "311319",
+            "318",
+            "312320",
             "phi-4Microsoft · MIT",
             "1256±5",
             "24,126",
@@ -8039,8 +8059,8 @@
             "Context"
           ],
           "cells": [
-            "318",
-            "310326",
+            "319",
+            "311327",
             "olmo-2-0325-32b-instructAi2 · Apache-2.0",
             "1252±11",
             "3,334",
@@ -8059,8 +8079,8 @@
             "Context"
           ],
           "cells": [
-            "319",
-            "314325",
+            "320",
+            "315326",
             "Coherecommand-r-08-2024Cohere · CC-BY-NC-4.0",
             "1250±7",
             "10,140",
@@ -8079,10 +8099,10 @@
             "Context"
           ],
           "cells": [
-            "320",
-            "318328",
+            "321",
+            "319329",
             "mistral-large-2402Mistral · Proprietary",
-            "1242±5",
+            "1243±5",
             "62,436",
             "$8 / $24",
             "32K"
@@ -8099,8 +8119,8 @@
             "Context"
           ],
           "cells": [
-            "321",
-            "318328",
+            "322",
+            "319329",
             "amazon-nova-micro-v1.0Amazon · Proprietary",
             "1241±5",
             "19,364",
@@ -8119,8 +8139,8 @@
             "Context"
           ],
           "cells": [
-            "322",
-            "318331",
+            "323",
+            "319332",
             "jamba-1.5-miniJamba Open",
             "1240±7",
             "8,858",
@@ -8139,8 +8159,8 @@
             "Context"
           ],
           "cells": [
-            "323",
-            "318335",
+            "324",
+            "319336",
             "ministral-8b-2410Mistral · MRL",
             "1238±9",
             "4,781",
@@ -8159,8 +8179,8 @@
             "Context"
           ],
           "cells": [
-            "324",
-            "318335",
+            "325",
+            "319336",
             "gemini-pro-dev-apiGoogle · Proprietary",
             "1237±7",
             "18,354",
@@ -8179,8 +8199,8 @@
             "Context"
           ],
           "cells": [
-            "325",
-            "320335",
+            "326",
+            "321336",
             "qwen1.5-110b-chatAlibaba · Qianwen LICENSE",
             "1234±6",
             "26,195",
@@ -8199,10 +8219,10 @@
             "Context"
           ],
           "cells": [
-            "326",
-            "319337",
+            "327",
+            "320338",
             "reka-flash-21b-20240226-onlineProprietary",
-            "1233±7",
+            "1234±7",
             "15,450",
             "N/A",
             "N/A"
@@ -8219,10 +8239,10 @@
             "Context"
           ],
           "cells": [
-            "327",
-            "320335",
+            "328",
+            "321336",
             "qwen1.5-72b-chatAlibaba · Qianwen LICENSE",
-            "1233±5",
+            "1234±5",
             "39,302",
             "N/A",
             "N/A"
@@ -8239,8 +8259,8 @@
             "Context"
           ],
           "cells": [
-            "328",
-            "318338",
+            "329",
+            "319339",
             "Tencenthunyuan-standard-256kTencent · Proprietary",
             "1233±12",
             "2,728",
@@ -8259,8 +8279,8 @@
             "Context"
           ],
           "cells": [
-            "329",
-            "322337",
+            "330",
+            "323338",
             "mixtral-8x22b-instruct-v0.1Mistral · Apache 2.0",
             "1230±5",
             "51,416",
@@ -8279,8 +8299,8 @@
             "Context"
           ],
           "cells": [
-            "330",
-            "323338",
+            "331",
+            "324339",
             "Coherecommand-rCohere · CC-BY-NC-4.0",
             "1227±5",
             "54,036",
@@ -8299,8 +8319,8 @@
             "Context"
           ],
           "cells": [
-            "331",
-            "322338",
+            "332",
+            "323339",
             "reka-flash-21b-20240226Proprietary",
             "1227±6",
             "24,806",
@@ -8319,8 +8339,8 @@
             "Context"
           ],
           "cells": [
-            "332",
-            "323338",
+            "333",
+            "324339",
             "gpt-3.5-turbo-0125OpenAI · Proprietary",
             "1226±5",
             "66,207",
@@ -8339,8 +8359,8 @@
             "Context"
           ],
           "cells": [
-            "333",
-            "327338",
+            "334",
+            "328339",
             "Metallama-3-8b-instructMeta · Llama 3 Community",
             "1224±4",
             "104,642",
@@ -8359,8 +8379,8 @@
             "Context"
           ],
           "cells": [
-            "334",
-            "322342",
+            "335",
+            "323343",
             "gemini-proGoogle · Proprietary",
             "1224±12",
             "6,390",
@@ -8379,8 +8399,8 @@
             "Context"
           ],
           "cells": [
-            "335",
-            "323340",
+            "336",
+            "324341",
             "Coherec4ai-aya-expanse-8bCohere · CC-BY-NC-4.0",
             "1223±7",
             "9,818",
@@ -8399,8 +8419,8 @@
             "Context"
           ],
           "cells": [
-            "336",
-            "327340",
+            "337",
+            "328341",
             "mistral-mediumMistral · Proprietary",
             "1223±5",
             "34,550",
@@ -8419,10 +8439,10 @@
             "Context"
           ],
           "cells": [
-            "337",
-            "323343",
+            "338",
+            "324344",
             "llama-3.1-tulu-3-8bAi2 · Llama 3.1",
-            "1220±11",
+            "1221±11",
             "2,896",
             "N/A",
             "N/A"
@@ -8439,8 +8459,8 @@
             "Context"
           ],
           "cells": [
-            "338",
-            "329345",
+            "339",
+            "330346",
             "zephyr-orpo-141b-A35b-v0.1Apache 2.0",
             "1213±11",
             "4,652",
@@ -8459,8 +8479,8 @@
             "Context"
           ],
           "cells": [
-            "339",
-            "334343",
+            "340",
+            "335344",
             "yi-1.5-34b-chatApache-2.0",
             "1213±5",
             "24,146",
@@ -8479,8 +8499,8 @@
             "Context"
           ],
           "cells": [
-            "340",
-            "336343",
+            "341",
+            "337344",
             "Metallama-3.1-8b-instructMeta · Llama 3.1 Community",
             "1211±4",
             "49,605",
@@ -8499,10 +8519,10 @@
             "Context"
           ],
           "cells": [
-            "341",
-            "334349",
+            "342",
+            "335350",
             "granite-3.1-8b-instructIBM · Apache 2.0",
-            "1208±11",
+            "1209±11",
             "3,090",
             "N/A",
             "N/A"
@@ -8519,8 +8539,8 @@
             "Context"
           ],
           "cells": [
-            "342",
-            "336350",
+            "343",
+            "337351",
             "gpt-3.5-turbo-1106OpenAI · Proprietary",
             "1204±9",
             "16,619",
@@ -8539,8 +8559,8 @@
             "Context"
           ],
           "cells": [
-            "343",
-            "337349",
+            "344",
+            "338350",
             "qwen1.5-32b-chatAlibaba · Qianwen LICENSE",
             "1204±6",
             "21,741",
@@ -8559,8 +8579,8 @@
             "Context"
           ],
           "cells": [
-            "344",
-            "340350",
+            "345",
+            "341351",
             "gemma-2-2b-itGoogle · Gemma license",
             "1200±4",
             "46,616",
@@ -8579,8 +8599,8 @@
             "Context"
           ],
           "cells": [
-            "345",
-            "340351",
+            "346",
+            "341352",
             "phi-3-medium-4k-instructMicrosoft · MIT",
             "1198±5",
             "25,055",
@@ -8599,8 +8619,8 @@
             "Context"
           ],
           "cells": [
-            "346",
-            "341351",
+            "347",
+            "342352",
             "mixtral-8x7b-instruct-v0.1Mistral · Apache 2.0",
             "1197±4",
             "73,503",
@@ -8619,8 +8639,8 @@
             "Context"
           ],
           "cells": [
-            "347",
-            "341356",
+            "348",
+            "342357",
             "dbrx-instruct-previewDBRX LICENSE",
             "1195±6",
             "32,191",
@@ -8639,8 +8659,8 @@
             "Context"
           ],
           "cells": [
-            "348",
-            "341360",
+            "349",
+            "342361",
             "qwen1.5-14b-chatAlibaba · Qianwen LICENSE",
             "1191±7",
             "17,839",
@@ -8659,8 +8679,8 @@
             "Context"
           ],
           "cells": [
-            "349",
-            "341360",
+            "350",
+            "342361",
             "internlm2_5-20b-chatOther",
             "1191±7",
             "9,901",
@@ -8679,8 +8699,8 @@
             "Context"
           ],
           "cells": [
-            "350",
-            "343367",
+            "351",
+            "344368",
             "deepseek-llm-67b-chatDeepSeek · DeepSeek License",
             "1185±11",
             "4,932",
@@ -8699,8 +8719,8 @@
             "Context"
           ],
           "cells": [
-            "351",
-            "345366",
+            "352",
+            "346367",
             "wizardlm-70bMicrosoft · Llama 2 Community",
             "1185±9",
             "8,214",
@@ -8719,8 +8739,8 @@
             "Context"
           ],
           "cells": [
-            "352",
-            "347363",
+            "353",
+            "348364",
             "yi-34b-chatYi License",
             "1184±7",
             "15,483",
@@ -8739,8 +8759,8 @@
             "Context"
           ],
           "cells": [
-            "353",
-            "347367",
+            "354",
+            "348368",
             "granite-3.0-8b-instructIBM · Apache 2.0",
             "1183±9",
             "6,638",
@@ -8759,8 +8779,8 @@
             "Context"
           ],
           "cells": [
-            "354",
-            "347367",
+            "355",
+            "348368",
             "openchat-3.5Apache-2.0",
             "1183±10",
             "7,968",
@@ -8779,8 +8799,8 @@
             "Context"
           ],
           "cells": [
-            "355",
-            "347366",
+            "356",
+            "348367",
             "openchat-3.5-0106Apache-2.0",
             "1183±8",
             "12,637",
@@ -8799,8 +8819,8 @@
             "Context"
           ],
           "cells": [
-            "356",
-            "348363",
+            "357",
+            "349364",
             "gemma-1.1-7b-itGoogle · Gemma license",
             "1183±6",
             "23,893",
@@ -8819,8 +8839,8 @@
             "Context"
           ],
           "cells": [
-            "357",
-            "348367",
+            "358",
+            "349368",
             "snowflake-arctic-instructApache 2.0",
             "1180±6",
             "32,832",
@@ -8839,8 +8859,8 @@
             "Context"
           ],
           "cells": [
-            "358",
-            "347367",
+            "359",
+            "348368",
             "granite-3.1-2b-instructIBM · Apache 2.0",
             "1179±11",
             "3,188",
@@ -8859,8 +8879,8 @@
             "Context"
           ],
           "cells": [
-            "359",
-            "348367",
+            "360",
+            "349368",
             "tulu-2-dpo-70bAI2 ImpACT Low-risk",
             "1178±10",
             "6,535",
@@ -8879,8 +8899,8 @@
             "Context"
           ],
           "cells": [
-            "360",
-            "348371",
+            "361",
+            "349372",
             "openhermes-2.5-mistral-7bApache-2.0",
             "1176±10",
             "5,006",
@@ -8899,8 +8919,8 @@
             "Context"
           ],
           "cells": [
-            "361",
-            "350369",
+            "362",
+            "351370",
             "vicuna-33bNon-commercial",
             "1173±6",
             "22,479",
@@ -8919,8 +8939,8 @@
             "Context"
           ],
           "cells": [
-            "362",
-            "350371",
+            "363",
+            "351372",
             "phi-3-small-8k-instructMicrosoft · MIT",
             "1171±6",
             "17,766",
@@ -8939,8 +8959,8 @@
             "Context"
           ],
           "cells": [
-            "363",
-            "350373",
+            "364",
+            "351374",
             "starling-lm-7b-betaApache-2.0",
             "1171±7",
             "16,056",
@@ -8959,8 +8979,8 @@
             "Context"
           ],
           "cells": [
-            "364",
-            "352371",
+            "365",
+            "353372",
             "Metallama-2-70b-chatMeta · Llama 2 Community",
             "1171±5",
             "38,492",
@@ -8979,8 +8999,8 @@
             "Context"
           ],
           "cells": [
-            "365",
-            "352374",
+            "366",
+            "353375",
             "starling-lm-7b-alphaCC-BY-NC-4.0",
             "1167±8",
             "10,224",
@@ -8999,8 +9019,8 @@
             "Context"
           ],
           "cells": [
-            "366",
-            "354374",
+            "367",
+            "355375",
             "Metallama-3.2-3b-instructMeta · Llama 3.2",
             "1167±8",
             "7,936",
@@ -9019,8 +9039,8 @@
             "Context"
           ],
           "cells": [
-            "367",
-            "352377",
+            "368",
+            "353378",
             "nous-hermes-2-mixtral-8x7b-dpoApache-2.0",
             "1164±12",
             "3,777",
@@ -9039,8 +9059,8 @@
             "Context"
           ],
           "cells": [
-            "368",
-            "364380",
+            "369",
+            "365381",
             "granite-3.0-2b-instructIBM · Apache 2.0",
             "1157±8",
             "6,837",
@@ -9059,8 +9079,8 @@
             "Context"
           ],
           "cells": [
-            "369",
-            "360385",
+            "370",
+            "361386",
             "llama2-70b-steerlm-chatNvidia · Llama 2 Community",
             "1155±13",
             "3,585",
@@ -9079,8 +9099,8 @@
             "Context"
           ],
           "cells": [
-            "370",
-            "361384",
+            "371",
+            "362385",
             "qwq-32b-previewAlibaba · Apache 2.0",
             "1154±11",
             "3,231",
@@ -9099,8 +9119,8 @@
             "Context"
           ],
           "cells": [
-            "371",
-            "361387",
+            "372",
+            "362388",
             "solar-10.7b-instruct-v1.0CC-BY-NC-4.0",
             "1152±13",
             "4,155",
@@ -9119,8 +9139,8 @@
             "Context"
           ],
           "cells": [
-            "372",
-            "360389",
+            "373",
+            "361390",
             "dolphin-2.2.1-mistral-7bApache-2.0",
             "1152±15",
             "1,679",
@@ -9139,8 +9159,8 @@
             "Context"
           ],
           "cells": [
-            "373",
-            "365387",
+            "374",
+            "366388",
             "mpt-30b-chatCC-BY-NC-SA-4.0",
             "1151±12",
             "2,572",
@@ -9159,10 +9179,10 @@
             "Context"
           ],
           "cells": [
-            "374",
-            "367385",
+            "375",
+            "368386",
             "wizardlm-13bMicrosoft · Llama 2 Community",
-            "1149±9",
+            "1150±9",
             "7,044",
             "$0.30 / $0.30",
             "N/A"
@@ -9179,8 +9199,8 @@
             "Context"
           ],
           "cells": [
-            "375",
-            "367384",
+            "376",
+            "368385",
             "mistral-7b-instruct-v0.2Mistral · Apache-2.0",
             "1149±7",
             "19,402",
@@ -9199,8 +9219,8 @@
             "Context"
           ],
           "cells": [
-            "376",
-            "364391",
+            "377",
+            "365392",
             "falcon-180b-chatFalcon-180B TII License",
             "1148±17",
             "1,295",
@@ -9219,8 +9239,8 @@
             "Context"
           ],
           "cells": [
-            "377",
-            "367390",
+            "378",
+            "368391",
             "qwen1.5-7b-chatAlibaba · Qianwen LICENSE",
             "1144±10",
             "4,737",
@@ -9239,8 +9259,8 @@
             "Context"
           ],
           "cells": [
-            "378",
-            "368389",
+            "379",
+            "369390",
             "phi-3-mini-4k-instruct-june-2024Microsoft · MIT",
             "1143±6",
             "12,297",
@@ -9259,8 +9279,8 @@
             "Context"
           ],
           "cells": [
-            "379",
-            "369389",
+            "380",
+            "370390",
             "vicuna-13bLlama 2 Community",
             "1142±7",
             "19,367",
@@ -9279,8 +9299,8 @@
             "Context"
           ],
           "cells": [
-            "380",
-            "369389",
+            "381",
+            "370390",
             "Metallama-2-13b-chatMeta · Llama 2 Community",
             "1141±7",
             "19,174",
@@ -9299,8 +9319,8 @@
             "Context"
           ],
           "cells": [
-            "381",
-            "368392",
+            "382",
+            "369393",
             "qwen-14b-chatAlibaba · Qianwen LICENSE",
             "1139±11",
             "4,964",
@@ -9319,8 +9339,8 @@
             "Context"
           ],
           "cells": [
-            "382",
-            "368391",
+            "383",
+            "369392",
             "palm-2Google · Proprietary",
             "1139±9",
             "8,554",
@@ -9339,8 +9359,8 @@
             "Context"
           ],
           "cells": [
-            "383",
-            "369392",
+            "384",
+            "370393",
             "gemma-7b-itGoogle · Gemma license",
             "1138±9",
             "8,925",
@@ -9359,8 +9379,8 @@
             "Context"
           ],
           "cells": [
-            "384",
-            "369392",
+            "385",
+            "370393",
             "Metacodellama-34b-instructMeta · Llama 2 Community",
             "1137±9",
             "7,366",
@@ -9379,8 +9399,8 @@
             "Context"
           ],
           "cells": [
-            "385",
-            "373394",
+            "386",
+            "374395",
             "zephyr-7b-betaMIT",
             "1131±9",
             "11,118",
@@ -9399,8 +9419,8 @@
             "Context"
           ],
           "cells": [
-            "386",
-            "375394",
+            "387",
+            "376395",
             "phi-3-mini-128k-instructMicrosoft · MIT",
             "1130±7",
             "20,685",
@@ -9419,8 +9439,8 @@
             "Context"
           ],
           "cells": [
-            "387",
-            "379394",
+            "388",
+            "380395",
             "phi-3-mini-4k-instructMicrosoft · MIT",
             "1128±6",
             "20,118",
@@ -9439,8 +9459,8 @@
             "Context"
           ],
           "cells": [
-            "388",
-            "373396",
+            "389",
+            "374397",
             "guanaco-33bNon-commercial",
             "1127±12",
             "2,921",
@@ -9459,8 +9479,8 @@
             "Context"
           ],
           "cells": [
-            "389",
-            "371397",
+            "390",
+            "372398",
             "zephyr-7b-alphaMIT",
             "1127±16",
             "1,785",
@@ -9479,8 +9499,8 @@
             "Context"
           ],
           "cells": [
-            "390",
-            "380397",
+            "391",
+            "381398",
             "stripedhyena-nous-7bApache 2.0",
             "1122±11",
             "5,182",
@@ -9499,8 +9519,8 @@
             "Context"
           ],
           "cells": [
-            "391",
-            "375398",
+            "392",
+            "376399",
             "Metacodellama-70b-instructMeta · Llama 2 Community",
             "1119±18",
             "1,143",
@@ -9519,8 +9539,8 @@
             "Context"
           ],
           "cells": [
-            "392",
-            "385397",
+            "393",
+            "386398",
             "gemma-1.1-2b-itGoogle · Gemma license",
             "1117±8",
             "10,854",
@@ -9539,8 +9559,8 @@
             "Context"
           ],
           "cells": [
-            "393",
-            "385397",
+            "394",
+            "386398",
             "vicuna-7bLlama 2 Community",
             "1115±9",
             "6,923",
@@ -9559,8 +9579,8 @@
             "Context"
           ],
           "cells": [
-            "394",
-            "382399",
+            "395",
+            "383400",
             "smollm2-1.7b-instructApache 2.0",
             "1115±14",
             "2,199",
@@ -9579,8 +9599,8 @@
             "Context"
           ],
           "cells": [
-            "395",
-            "388398",
+            "396",
+            "389399",
             "Metallama-3.2-1b-instructMeta · Llama 3.2",
             "1111±8",
             "8,045",
@@ -9599,8 +9619,8 @@
             "Context"
           ],
           "cells": [
-            "396",
-            "388398",
+            "397",
+            "389399",
             "mistral-7b-instructMistral · Apache 2.0",
             "1110±9",
             "8,977",
@@ -9619,8 +9639,8 @@
             "Context"
           ],
           "cells": [
-            "397",
-            "389398",
+            "398",
+            "390399",
             "Metallama-2-7b-chatMeta · Llama 2 Community",
             "1108±7",
             "14,148",
@@ -9639,8 +9659,8 @@
             "Context"
           ],
           "cells": [
-            "398",
-            "393401",
+            "399",
+            "394402",
             "gemma-2b-itGoogle · Gemma license",
             "1094±11",
             "4,780",
@@ -9659,8 +9679,8 @@
             "Context"
           ],
           "cells": [
-            "399",
-            "397401",
+            "400",
+            "398402",
             "qwen1.5-4b-chatAlibaba · Qianwen LICENSE",
             "1091±9",
             "7,597",
@@ -9679,8 +9699,8 @@
             "Context"
           ],
           "cells": [
-            "400",
-            "398405",
+            "401",
+            "399406",
             "olmo-7b-instructAi2 · Apache-2.0",
             "1074±11",
             "6,328",
@@ -9699,8 +9719,8 @@
             "Context"
           ],
           "cells": [
-            "401",
-            "400405",
+            "402",
+            "401406",
             "koala-13bNon-commercial",
             "1071±10",
             "6,965",
@@ -9719,8 +9739,8 @@
             "Context"
           ],
           "cells": [
-            "402",
-            "400405",
+            "403",
+            "401406",
             "alpaca-13bNon-commercial",
             "1070±11",
             "5,745",
@@ -9739,8 +9759,8 @@
             "Context"
           ],
           "cells": [
-            "403",
-            "398406",
+            "404",
+            "399407",
             "gpt4all-13b-snoozyNon-commercial",
             "1068±15",
             "1,743",
@@ -9759,8 +9779,8 @@
             "Context"
           ],
           "cells": [
-            "404",
-            "400406",
+            "405",
+            "401407",
             "mpt-7b-chatCC-BY-NC-SA-4.0",
             "1063±12",
             "3,924",
@@ -9779,8 +9799,8 @@
             "Context"
           ],
           "cells": [
-            "405",
-            "400406",
+            "406",
+            "401407",
             "chatglm3-6bApache-2.0",
             "1057±12",
             "4,658",
@@ -9799,8 +9819,8 @@
             "Context"
           ],
           "cells": [
-            "406",
-            "403408",
+            "407",
+            "404409",
             "RWKV-4-Raven-14BApache 2.0",
             "1042±11",
             "4,845",
@@ -9819,8 +9839,8 @@
             "Context"
           ],
           "cells": [
-            "407",
-            "406408",
+            "408",
+            "407409",
             "chatglm2-6bApache-2.0",
             "1025±14",
             "2,658",
@@ -9839,8 +9859,8 @@
             "Context"
           ],
           "cells": [
-            "408",
-            "406408",
+            "409",
+            "407409",
             "oasst-pythia-12bApache 2.0",
             "1023±11",
             "6,310",
@@ -9859,8 +9879,8 @@
             "Context"
           ],
           "cells": [
-            "409",
-            "409412",
+            "410",
+            "410413",
             "chatglm-6bNon-commercial",
             "996±12",
             "4,914",
@@ -9879,10 +9899,10 @@
             "Context"
           ],
           "cells": [
-            "410",
-            "409412",
+            "411",
+            "410413",
             "fastchat-t5-3bApache 2.0",
-            "992±12",
+            "993±12",
             "4,203",
             "N/A",
             "N/A"
@@ -9899,8 +9919,8 @@
             "Context"
           ],
           "cells": [
-            "411",
-            "409412",
+            "412",
+            "410413",
             "dolly-v2-12bMIT",
             "982±13",
             "3,412",
@@ -9919,8 +9939,8 @@
             "Context"
           ],
           "cells": [
-            "412",
-            "409413",
+            "413",
+            "410414",
             "Metallama-13bMeta · Non-commercial",
             "975±16",
             "2,391",
@@ -9939,8 +9959,8 @@
             "Context"
           ],
           "cells": [
-            "413",
-            "412413",
+            "414",
+            "413414",
             "stablelm-tuned-alpha-7bCC-BY-NC-SA-4.0",
             "953±13",
             "3,287",
@@ -9949,7 +9969,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-10-08T12:33:23.776Z"
+      "fetchedAt": "2026-10-08T18:36:17.779Z"
     },
     "terms": {
       "main": {
@@ -10274,7 +10294,7 @@
           ]
         ]
       },
-      "fetchedAt": "2026-10-08T12:33:23.780Z"
+      "fetchedAt": "2026-10-08T18:36:17.785Z"
     }
   }
 }
