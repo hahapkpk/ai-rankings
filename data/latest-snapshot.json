@@ -1,11 +1,11 @@
 {
   "version": "3.0",
-  "fetchedAt": "2026-10-10T03:57:03.670Z",
+  "fetchedAt": "2026-10-10T11:39:47.078Z",
   "sources": {
     "openrouter": {
       "leaderboard": {},
       "topModels": [],
-      "fetchedAt": "2026-10-10T03:57:03.671Z",
+      "fetchedAt": "2026-10-10T11:39:47.079Z",
       "error": "API fetch failed: [object Object]"
     },
     "valsai": {
@@ -1684,7 +1684,7 @@
         }
       ],
       "method": "table",
-      "fetchedAt": "2026-10-10T03:57:22.874Z"
+      "fetchedAt": "2026-10-10T11:40:05.672Z"
     },
     "arena": {
       "textLeaderboard": [
@@ -3944,7 +3944,7 @@
             "kimi-k2.5-instantMoonshot · Modified MIT",
             "1430±7",
             "8,378",
-            "$0.45 / $2.25",
+            "$0.50 / $2.50",
             "262.1K"
           ]
         },
@@ -4124,7 +4124,7 @@
             "deepseek-v3.2DeepSeek · MIT",
             "1425±3",
             "48,114",
-            "$0.26 / $0.42",
+            "$0.26 / $0.80",
             "163.8K"
           ]
         },
@@ -4204,7 +4204,7 @@
             "deepseek-v3.2-thinkingDeepSeek · MIT",
             "1423±4",
             "42,076",
-            "$0.26 / $0.42",
+            "$0.26 / $0.80",
             "163.8K"
           ]
         },
@@ -9969,7 +9969,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-10-10T03:57:29.703Z"
+      "fetchedAt": "2026-10-10T11:40:12.527Z"
     },
     "terms": {
       "main": {
@@ -10294,7 +10294,7 @@
           ]
         ]
       },
-      "fetchedAt": "2026-10-10T03:57:29.709Z"
+      "fetchedAt": "2026-10-10T11:40:12.533Z"
     }
   }
 }
