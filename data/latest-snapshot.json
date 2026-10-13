@@ -1,11 +1,11 @@
 {
   "version": "3.0",
-  "fetchedAt": "2026-10-12T21:02:47.848Z",
+  "fetchedAt": "2026-10-13T05:05:29.232Z",
   "sources": {
     "openrouter": {
       "leaderboard": {},
       "topModels": [],
-      "fetchedAt": "2026-10-12T21:02:47.848Z",
+      "fetchedAt": "2026-10-13T05:05:29.233Z",
       "error": "API fetch failed: [object Object]"
     },
     "valsai": {
@@ -1684,7 +1684,7 @@
         }
       ],
       "method": "table",
-      "fetchedAt": "2026-10-12T21:03:06.972Z"
+      "fetchedAt": "2026-10-13T05:05:48.172Z"
     },
     "arena": {
       "textLeaderboard": [
@@ -3144,7 +3144,7 @@
             "Tencenthy3Tencent · Apache 2.0",
             "1454±6",
             "11,284",
-            "$0.08 / $0.33",
+            "$0.13 / $0.53",
             "262.1K"
           ]
         },
@@ -6924,7 +6924,7 @@
             "Metallama-3.3-70b-instructMeta · Llama-3.3",
             "1318±4",
             "54,504",
-            "$0.22 / $0.50",
+            "$0.59 / $0.79",
             "131.1K"
           ]
         },
@@ -9969,7 +9969,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-10-12T21:03:13.292Z"
+      "fetchedAt": "2026-10-13T05:05:55.735Z"
     },
     "terms": {
       "main": {
@@ -10294,7 +10294,7 @@
           ]
         ]
       },
-      "fetchedAt": "2026-10-12T21:03:13.298Z"
+      "fetchedAt": "2026-10-13T05:05:55.741Z"
     }
   }
 }
