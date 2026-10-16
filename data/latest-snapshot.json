@@ -1,11 +1,11 @@
 {
   "version": "3.0",
-  "fetchedAt": "2026-10-16T02:48:18.750Z",
+  "fetchedAt": "2026-10-16T10:24:20.756Z",
   "sources": {
     "openrouter": {
       "leaderboard": {},
       "topModels": [],
-      "fetchedAt": "2026-10-16T02:48:18.751Z",
+      "fetchedAt": "2026-10-16T10:24:20.756Z",
       "error": "API fetch failed: [object Object]"
     },
     "valsai": {
@@ -1684,7 +1684,7 @@
         }
       ],
       "method": "table",
-      "fetchedAt": "2026-10-16T02:48:37.394Z"
+      "fetchedAt": "2026-10-16T10:24:40.225Z"
     },
     "arena": {
       "textLeaderboard": [
@@ -1701,7 +1701,7 @@
           "cells": [
             "1",
             "13",
-            "gemini-4-argon-highGoogle · Proprietary",
+            "Gemini 4 Argon (High)Google · Proprietary",
             "1524±9Preliminary",
             "4,904",
             "$2 / $10",
@@ -1721,7 +1721,7 @@
           "cells": [
             "2",
             "111",
-            "Metamuse-wonder-maxMeta · Proprietary",
+            "MetaMuse Wonder (Max)Meta · Proprietary",
             "1509±11",
             "3,247",
             "$4 / $20",
@@ -1741,7 +1741,7 @@
           "cells": [
             "3",
             "18",
-            "Anthropicclaude-opus-5.5-highAnthropic · Proprietary",
+            "AnthropicClaude Opus 5.5 (High)Anthropic · Proprietary",
             "1508±7",
             "8,300",
             "$4 / $20",
@@ -1761,7 +1761,7 @@
           "cells": [
             "4",
             "211",
-            "Anthropicclaude-fable-5-highAnthropic · Proprietary",
+            "AnthropicClaude Fable 5 (High)Anthropic · Proprietary",
             "1504±4",
             "42,004",
             "$10 / $50",
@@ -1781,7 +1781,7 @@
           "cells": [
             "5",
             "211",
-            "Anthropicclaude-opus-4-6-highAnthropic · Proprietary",
+            "AnthropicClaude Opus 4.6 (High)Anthropic · Proprietary",
             "1503±3",
             "81,394",
             "$5 / $25",
@@ -1801,7 +1801,7 @@
           "cells": [
             "6",
             "212",
-            "Anthropicclaude-fable-5.1-maxAnthropic · Proprietary",
+            "AnthropicClaude Fable 5.1 (Max)Anthropic · Proprietary",
             "1502±6",
             "14,590",
             "$10 / $50",
@@ -1821,7 +1821,7 @@
           "cells": [
             "7",
             "212",
-            "Anthropicclaude-opus-4-7-highAnthropic · Proprietary",
+            "AnthropicClaude Opus 4.7 (High)Anthropic · Proprietary",
             "1501±4",
             "65,116",
             "$5 / $25",
@@ -1841,7 +1841,7 @@
           "cells": [
             "8",
             "315",
-            "Anthropicclaude-opus-4-6Anthropic · Proprietary",
+            "AnthropicClaude Opus 4.6Anthropic · Proprietary",
             "1497±3",
             "86,071",
             "$5 / $25",
@@ -1861,7 +1861,7 @@
           "cells": [
             "9",
             "218",
-            "gemini-3.8-flash-highGoogle · Proprietary",
+            "Gemini 3.8 Flash (High)Google · Proprietary",
             "1496±5Preliminary",
             "37,454",
             "$0.75 / $3.75",
@@ -1881,7 +1881,7 @@
           "cells": [
             "10",
             "322",
-            "Metamuse-spark-1.3-maxMeta · Proprietary",
+            "MetaMuse Spark 1.3 (Max)Meta · Proprietary",
             "1494±6",
             "17,561",
             "$1.25 / $4.25",
@@ -1901,7 +1901,7 @@
           "cells": [
             "11",
             "620",
-            "Anthropicclaude-opus-4-7Anthropic · Proprietary",
+            "AnthropicClaude Opus 4.7Anthropic · Proprietary",
             "1494±4",
             "66,216",
             "$5 / $25",
@@ -1921,7 +1921,7 @@
           "cells": [
             "12",
             "325",
-            "Metamuse-spark-1.2 (xHigh)Meta · Proprietary",
+            "MetaMuse Spark 1.2 (xHigh)Meta · Proprietary",
             "1493±7",
             "8,248",
             "$1.25 / $4.25",
@@ -1941,7 +1941,7 @@
           "cells": [
             "13",
             "825",
-            "Metamuse-spark-1.1Meta · Proprietary",
+            "MetaMuse Spark 1.1Meta · Proprietary",
             "1490±4",
             "42,810",
             "$1.25 / $4.25",
@@ -1961,7 +1961,7 @@
           "cells": [
             "14",
             "827",
-            "Anthropicclaude-opus-5-maxAnthropic · Proprietary",
+            "AnthropicClaude Opus 5 (Max)Anthropic · Proprietary",
             "1490±5",
             "32,495",
             "$5 / $25",
@@ -1981,7 +1981,7 @@
           "cells": [
             "15",
             "925",
-            "Anthropicclaude-opus-5-highAnthropic · Proprietary",
+            "AnthropicClaude Opus 5 (High)Anthropic · Proprietary",
             "1490±4",
             "66,824",
             "$5 / $25",
@@ -2001,7 +2001,7 @@
           "cells": [
             "16",
             "830",
-            "Metamuse-sparkMeta · Proprietary",
+            "MetaMuse SparkMeta · Proprietary",
             "1489±6",
             "14,150",
             "N/A",
@@ -2021,7 +2021,7 @@
           "cells": [
             "17",
             "930",
-            "gemini-3.7-flash-highGoogle · Proprietary",
+            "Gemini 3.7 Flash (High)Google · Proprietary",
             "1488±5Preliminary",
             "27,232",
             "$0.75 / $3.75",
@@ -2041,7 +2041,7 @@
           "cells": [
             "18",
             "1031",
-            "kimi-k3-maxMoonshot · Kimi K3 license",
+            "Kimi K3 (Max)Moonshot · Kimi K3 license",
             "1487±5",
             "32,795",
             "N/A",
@@ -2061,7 +2061,7 @@
           "cells": [
             "19",
             "1028",
-            "gemini-3.1-pro-previewGoogle · Proprietary",
+            "Gemini 3.1 Pro PreviewGoogle · Proprietary",
             "1487±3",
             "127,649",
             "$1 / $6",
@@ -2081,7 +2081,7 @@
           "cells": [
             "20",
             "1131",
-            "gemini-3-proGoogle · Proprietary",
+            "Gemini 3 ProGoogle · Proprietary",
             "1485±4",
             "42,072",
             "$2 / $12",
@@ -10009,7 +10009,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-10-16T02:48:45.159Z"
+      "fetchedAt": "2026-10-16T10:24:46.728Z"
     },
     "terms": {
       "main": {
@@ -10334,7 +10334,7 @@
           ]
         ]
       },
-      "fetchedAt": "2026-10-16T02:48:45.165Z"
+      "fetchedAt": "2026-10-16T10:24:46.734Z"
     }
   }
 }
