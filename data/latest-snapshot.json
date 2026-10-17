@@ -1,11 +1,11 @@
 {
   "version": "3.0",
-  "fetchedAt": "2026-10-17T09:56:52.925Z",
+  "fetchedAt": "2026-10-17T15:12:12.504Z",
   "sources": {
     "openrouter": {
       "leaderboard": {},
       "topModels": [],
-      "fetchedAt": "2026-10-17T09:56:52.926Z",
+      "fetchedAt": "2026-10-17T15:12:12.505Z",
       "error": "API fetch failed: [object Object]"
     },
     "valsai": {
@@ -1684,7 +1684,7 @@
         }
       ],
       "method": "table",
-      "fetchedAt": "2026-10-17T09:57:12.747Z"
+      "fetchedAt": "2026-10-17T15:12:30.126Z"
     },
     "arena": {
       "textLeaderboard": [
@@ -4544,7 +4544,7 @@
             "AnthropicClaude Opus 4 (20250514)Anthropic · Proprietary",
             "1414±4",
             "43,043",
-            "$5 / $25",
+            "$15 / $75",
             "200K"
           ]
         },
@@ -10009,7 +10009,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-10-17T09:57:20.211Z"
+      "fetchedAt": "2026-10-17T15:12:36.969Z"
     },
     "terms": {
       "main": {
@@ -10334,7 +10334,7 @@
           ]
         ]
       },
-      "fetchedAt": "2026-10-17T09:57:20.217Z"
+      "fetchedAt": "2026-10-17T15:12:36.974Z"
     }
   }
 }
