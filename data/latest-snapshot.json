@@ -1,11 +1,11 @@
 {
   "version": "3.0",
-  "fetchedAt": "2026-10-19T11:42:02.445Z",
+  "fetchedAt": "2026-10-19T18:29:16.998Z",
   "sources": {
     "openrouter": {
       "leaderboard": {},
       "topModels": [],
-      "fetchedAt": "2026-10-19T11:42:02.446Z",
+      "fetchedAt": "2026-10-19T18:29:16.999Z",
       "error": "API fetch failed: [object Object]"
     },
     "valsai": {
@@ -1684,7 +1684,7 @@
         }
       ],
       "method": "table",
-      "fetchedAt": "2026-10-19T11:42:26.136Z"
+      "fetchedAt": "2026-10-19T18:29:35.509Z"
     },
     "arena": {
       "textLeaderboard": [
@@ -4984,8 +4984,8 @@
             "DeepSeek-R1DeepSeek · MIT",
             "1398±5",
             "18,524",
-            "$0.70 / $2.50",
-            "64K"
+            "$1.35 / $5.40",
+            "N/A"
           ]
         },
         {
@@ -10009,7 +10009,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-10-19T11:42:36.585Z"
+      "fetchedAt": "2026-10-19T18:29:43.007Z"
     },
     "terms": {
       "main": {
@@ -10334,7 +10334,7 @@
           ]
         ]
       },
-      "fetchedAt": "2026-10-19T11:42:36.591Z"
+      "fetchedAt": "2026-10-19T18:29:43.013Z"
     }
   }
 }
