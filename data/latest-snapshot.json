@@ -1,11 +1,11 @@
 {
   "version": "3.0",
-  "fetchedAt": "2026-10-18T15:33:37.475Z",
+  "fetchedAt": "2026-10-19T02:54:27.129Z",
   "sources": {
     "openrouter": {
       "leaderboard": {},
       "topModels": [],
-      "fetchedAt": "2026-10-18T15:33:37.475Z",
+      "fetchedAt": "2026-10-19T02:54:27.129Z",
       "error": "API fetch failed: [object Object]"
     },
     "valsai": {
@@ -1684,7 +1684,7 @@
         }
       ],
       "method": "table",
-      "fetchedAt": "2026-10-18T15:33:57.642Z"
+      "fetchedAt": "2026-10-19T02:54:53.114Z"
     },
     "arena": {
       "textLeaderboard": [
@@ -2441,7 +2441,7 @@
           "cells": [
             "38",
             "2157",
-            "DeepSeek-V4.1-Flash (Max)DeepSeek · MIT",
+            "DeepSeek-V4.1-Flash-20260910 (Max)DeepSeek · MIT",
             "1475±6",
             "12,793",
             "$0.30 / $1.20",
@@ -4744,7 +4744,7 @@
             "Qwen3.5-27BAlibaba · Apache 2.0",
             "1409±4",
             "28,671",
-            "$0.26 / $2.60",
+            "$0.20 / $1.56",
             "262.1K"
           ]
         },
@@ -9064,7 +9064,7 @@
             "MetaLlama 3.2 3B InstructMeta · Llama 3.2",
             "1167±8",
             "7,936",
-            "$0.05 / $0.33",
+            "$0.05 / $0.34",
             "131.1K"
           ]
         },
@@ -10009,7 +10009,7 @@
           ]
         }
       ],
-      "fetchedAt": "2026-10-18T15:34:05.190Z"
+      "fetchedAt": "2026-10-19T02:55:07.333Z"
     },
     "terms": {
       "main": {
@@ -10334,7 +10334,7 @@
           ]
         ]
       },
-      "fetchedAt": "2026-10-18T15:34:05.196Z"
+      "fetchedAt": "2026-10-19T02:55:07.339Z"
     }
   }
 }
