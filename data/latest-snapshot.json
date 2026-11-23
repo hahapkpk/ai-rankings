@@ -1,12 +1,12 @@
 {
   "version": "3.0",
-  "fetchedAt": "2026-11-22T19:12:30.615Z",
+  "fetchedAt": "2026-11-23T05:20:11.810Z",
   "sources": {
     "openrouter": {
       "leaderboard": {},
       "topModels": [],
-      "fetchedAt": "2026-11-22T19:12:30.616Z",
-      "error": "API fetch failed: [object Object]"
+      "fetchedAt": "2026-11-23T05:20:11.810Z",
+      "error": "Navigation timeout of 30000 ms exceeded"
     },
     "valsai": {
       "swebench": [
@@ -1684,11 +1684,11 @@
         }
       ],
       "method": "table",
-      "fetchedAt": "2026-11-22T19:12:48.536Z"
+      "fetchedAt": "2026-11-23T05:20:54.455Z"
     },
     "arena": {
       "textLeaderboard": [],
-      "fetchedAt": "2026-11-22T19:13:11.550Z"
+      "fetchedAt": "2026-11-23T05:21:18.252Z"
     },
     "terms": {
       "main": {
@@ -2013,7 +2013,7 @@
           ]
         ]
       },
-      "fetchedAt": "2026-11-22T19:13:11.551Z"
+      "fetchedAt": "2026-11-23T05:21:18.253Z"
     }
   }
 }
