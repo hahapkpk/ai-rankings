@@ -1,11 +1,11 @@
 {
   "version": "3.0",
-  "fetchedAt": "2026-11-28T05:57:40.299Z",
+  "fetchedAt": "2026-11-28T14:49:27.497Z",
   "sources": {
     "openrouter": {
       "leaderboard": {},
       "topModels": [],
-      "fetchedAt": "2026-11-28T05:57:40.300Z",
+      "fetchedAt": "2026-11-28T14:49:27.498Z",
       "error": "Navigation timeout of 30000 ms exceeded"
     },
     "valsai": {
@@ -1684,11 +1684,11 @@
         }
       ],
       "method": "table",
-      "fetchedAt": "2026-11-28T05:58:23.293Z"
+      "fetchedAt": "2026-11-28T14:50:10.458Z"
     },
     "arena": {
       "textLeaderboard": [],
-      "fetchedAt": "2026-11-28T05:58:49.587Z"
+      "fetchedAt": "2026-11-28T14:50:36.486Z"
     },
     "terms": {
       "main": {
@@ -2013,7 +2013,7 @@
           ]
         ]
       },
-      "fetchedAt": "2026-11-28T05:58:49.588Z"
+      "fetchedAt": "2026-11-28T14:50:36.487Z"
     }
   }
 }
